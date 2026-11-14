@@ -1,10 +1,10 @@
 # Index
 
-Every page in the wiki, one line each. An agent reads this first. Updated on every ingest. Last update: 2026-11-14 (66 sources, 35 concepts, 28 entities).
+Every page in the wiki, one line each. An agent reads this first. Updated on every ingest. Last update: 2026-11-14 (67 sources, 36 concepts, 28 entities).
 
 ## Start here
 - [Overview: what this wiki holds so far](wiki/overview.md): what the wiki holds so far, by Bob's six themes, and what is missing.
-- [Open questions](wiki/open-questions.md): 40 contradictions, doubtful numbers and gaps waiting for a source or for Bob, and 3 settled by a primary document.
+- [Open questions](wiki/open-questions.md): 41 contradictions, doubtful numbers and gaps waiting for a source or for Bob, and 3 settled by a primary document.
 - [Schema](CLAUDE.md): how the wiki is kept. [Log](log.md): what was done and when.
 
 ## Concepts
@@ -20,6 +20,7 @@ Hydrology
 - [Runoff surfaces and subarea routing](wiki/concepts/runoff-surfaces-and-subarea-routing.md): three subareas, three routing options, and their ICM equivalents.
 - [Subcatchment width](wiki/concepts/subcatchment-width.md): a fitting knob presented as a length; Bob's objection to one width for all subareas.
 - [Infiltration methods](wiki/concepts/infiltration-methods.md): Curve Number, Horton, Modified Horton and Green-Ampt by their entry points in the code.
+- [Green-Ampt Newton test order](wiki/concepts/green-ampt-newton-test-order.md): a candidate finding in `infil.c`: the correction is tested before it is applied; one clay run lost 21 % of its infiltration at a 15 s wet step. Not rerun.
 - [RDII unit hydrographs (RTK)](wiki/concepts/rdii-unit-hydrographs.md): R, T and K, unit hydrograph groups, and the interface file format.
 - [Two-layer soil infiltration (SOIL2)](wiki/concepts/two-layer-infiltration.md): Bob's SOIL2 proposal, a second soil layer through the LID machinery.
 - [Design storms and temporal patterns](wiki/concepts/design-storm-patterns.md): hyetographs from mass curves, who each pattern is credited to, and why a closed volume does not make a pattern right.
@@ -117,6 +118,7 @@ Notes and data
 - [S05](wiki/sources/S05-swmm5org-article-facts.md) (2026-10-16): fact sheet measured from the chat archive.
 - [S09](wiki/sources/S09-openswmm-thread-list.md) (2026-11-01): OpenSWMM thread list, 1995 to 2026.
 - [S10](wiki/sources/S10-openswmm-top25-problems.md) (2026-11-06): top 25 problems tagged from thread titles.
+- [S67](wiki/sources/S67-note-green-ampt-newton-test-order.md) (2026-11-14): note, the Green-Ampt Newton loop tests its correction before applying it.
 
 The old swmm-brain repository
 - [S55](wiki/sources/S55-swmm-brain-readme.md) (2026-08-22): README: enhancements, apps, scripts, timeline.

@@ -137,3 +137,13 @@ Found at ingest. Q42: the article lists HEC-HMS export as coming; the app's chan
 Noted for the next lint: the Robert Dickinson page is about 790 words, past the 600-word rule, and should be split.
 
 After this ingest: 316 raw files, 66 ingested, 247 queued, 3 duplicate; 131 pages; 40 questions open, 3 settled.
+
+## [2026-11-14] ingest | S67, Bob's first note on the template: Green-Ampt Newton test order
+
+Bob uploaded `raw/notes/green-ampt-newton-test-order.md`, written on `raw/notes/_TEMPLATE.md`. Read in full. Its AI-use line says Claude drafted it from test runs Claude made in a chat with Bob, and that the runs have not been rerun; its status line reads "working". The wiki uses that status and upgrades nothing.
+
+Pages created: S67 and [Green-Ampt Newton test order](wiki/concepts/green-ampt-newton-test-order.md). Pages changed: infiltration methods, continuity is not validation (a fifth case), the findings register, EPA SWMM 5, overview, open questions, index, README.
+
+Checked at ingest. The ten quoted lines of `grnampt_getF2` were compared with `src/solver/infil.c` at tag v5.2.4 in USEPA/Stormwater-Management-Model, fetched on 14 November 2026: identical, at lines 847 to 856 as the note says. The note's threshold of 0.432 follows from those lines, and its two break points (F above 0.67 in at 15 s, above 2.86 in at 30 s) follow from the threshold. None of the run results was checked: the test `.inp`, the patch and the longer write-up the note links to are not in the repository (Q44).
+
+After this ingest: 317 raw files, 67 ingested, 247 queued, 3 duplicate; 133 pages; 41 questions open, 3 settled.

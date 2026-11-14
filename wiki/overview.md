@@ -2,11 +2,11 @@
 title: Overview: what this wiki holds so far
 type: synthesis
 updated: 2026-11-14
-sources: [S01, S04, S05, S06, S10, S19, S20, S22, S23, S24, S29, S35, S41, S43, S54, S55, S56, S57, S58, S59, S60, S61, S62, S63, S64, S65, S66]
+sources: [S01, S04, S05, S06, S10, S19, S20, S22, S23, S24, S29, S35, S41, S43, S54, S55, S56, S57, S58, S59, S60, S61, S62, S63, S64, S65, S66, S67]
 tags: [overview]
 reviewed: no
 ---
-The state of the wiki after the ingest of six sources on three Lovable apps, arranged by the six topics of [swmm5.org](entities/swmm5-org.md) [S06](sources/S06-swmm5org-topics-index.md). Sixty-six of 316 raw files are ingested, one of them (the EPA hydraulics manual) in part. The wiki is deepest on SWMM's history, the insides of SWMM 5 and the translations of SWMM 5 and SWMM6; thin on ICM; and on SWMM6 it holds the translations but not yet the solvers.
+The state of the wiki after the ingest of Bob's first note written on the template, arranged by the six topics of [swmm5.org](entities/swmm5-org.md) [S06](sources/S06-swmm5org-topics-index.md). Sixty-seven of 317 raw files are ingested, one of them (the EPA hydraulics manual) in part. The wiki is deepest on SWMM's history, the insides of SWMM 5 and the translations of SWMM 5 and SWMM6; thin on ICM; and on SWMM6 it holds the translations but not yet the solvers.
 
 ## 1. SWMM history
 - The timeline from 1969 to 2026 is on [SWMM version history, 1969 to 2026](concepts/swmm-version-history.md), with four places where Bob's own articles disagree with each other or with primary documents.
@@ -19,6 +19,7 @@ The state of the wiki after the ingest of six sources on three Lovable apps, arr
 - Hydraulics: [Dynamic wave routing](concepts/dynamic-wave-routing.md), [Kinematic wave and steady flow routing](concepts/kinematic-wave-and-steady-flow.md), [Preissmann slot and surcharge](concepts/preissmann-slot-and-surcharge.md), [Conduit lengthening](concepts/conduit-lengthening.md), [Force main friction](concepts/force-main-friction.md).
 - Hydrology: [Runoff surfaces and subarea routing](concepts/runoff-surfaces-and-subarea-routing.md), [Subcatchment width](concepts/subcatchment-width.md), [Infiltration methods](concepts/infiltration-methods.md), [RDII unit hydrographs (RTK)](concepts/rdii-unit-hydrographs.md).
 - Proposed changes to the engine: [Two-layer soil infiltration (SOIL2)](concepts/two-layer-infiltration.md), and five planned dynamic-wave fixes listed on [Dynamic wave routing](concepts/dynamic-wave-routing.md) [S55](sources/S55-swmm-brain-readme.md).
+- A candidate finding from Bob's first template note: [Green-Ampt Newton test order](concepts/green-ampt-newton-test-order.md), a convergence test placed one line too early in `infil.c`; status "working", not rerun [S67](sources/S67-note-green-ampt-newton-test-order.md).
 - LID and soils: [LID bio-retention layers](concepts/lid-bioretention-layers.md), [Topsoil over compacted clay](concepts/topsoil-over-compacted-clay.md), [Evaporation during rain (DRY_ONLY)](concepts/evaporation-during-rain.md), and the variant engine [swmm524-perched](entities/swmm524-perched.md). On one soil pair, five SWMM setups capture from 67.1 % (perched with van Genuchten) to 100.0 % (LID with the clay as the storage layer) of the big winter storms, and two 5.2.4 defects, D1 and D2, came out of the study [S59](sources/S59-topsoil-recovery-check-app-md.md).
 - Output and documentation: [Reading SWMM output](concepts/reading-swmm-output.md), [The missing specification](concepts/the-missing-specification.md).
 - [SWMM5 language translations](entities/swmm5-language-ports.md): EPA SWMM 5.2.4 in 19 languages, each byte-identical to EPA on every gate model it finished; 15 models stopped at the time limit in R and 2 each in Ruby and Perl [S41](sources/S41-swmm5-go-readme.md) [S54](sources/S54-swmm5-r-readme.md). The work measured EPA too: 1,524,961,124 calls to glibc's math over the 480 models, and 43 models that change when glibc uses its generic routines [S41](sources/S41-swmm5-go-readme.md).
@@ -47,7 +48,7 @@ The state of the wiki after the ingest of six sources on three Lovable apps, arr
 - A third Lovable app, on rainfall: [World Rainfall Pattern Painter (app)](entities/world-rainfall-pattern-painter.md), 339 design-storm patterns of which it grades 3 High confidence and 279 Low; the method is on [Design storms and temporal patterns](concepts/design-storm-patterns.md) [S65](sources/S65-world-rainfall-pattern-painter-app-md.md). All three Lovable summaries share one habit worth noting: they write "not checked" where the project holds no record.
 
 ## Three things the first ingest showed
-1. **Bob's published articles contradict each other on dates and credits.** Forty-three items are in [Open questions](open-questions.md); three were settled on 14 November by the EPA hydraulics manual, the first primary document ingested. The primary documents (the 1971 listing, EPA's update notes) settle some; others need Bob.
+1. **Bob's published articles contradict each other on dates and credits.** Forty-four items are in [Open questions](open-questions.md); three were settled on 14 November by the EPA hydraulics manual, the first primary document ingested. The primary documents (the 1971 listing, EPA's update notes) settle some; others need Bob.
 2. **Much of the article text is AI-written, and the newest articles say so while the older ones do not.** Each source page records how it was written. Claims that rest only on an AI-written passage are flagged.
 3. **The strongest pages rest on the app .md files and the register, not on the articles.** Those sources carry procedures and numbers. The pattern argues for ingesting every app's .md before the remaining articles.
 

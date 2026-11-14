@@ -2,7 +2,7 @@
 title: Open questions
 type: synthesis
 updated: 2026-11-14
-sources: [S01, S04, S05, S07, S08, S10, S11, S12, S14, S19, S20, S21, S22, S23, S27, S28, S29, S34, S35, S38, S41, S43, S44, S45, S46, S47, S48, S49, S50, S51, S52, S53, S54, S55, S59, S60, S61, S62, S63, S64, S65, S66]
+sources: [S01, S04, S05, S07, S08, S10, S11, S12, S14, S19, S20, S21, S22, S23, S27, S28, S29, S34, S35, S38, S41, S43, S44, S45, S46, S47, S48, S49, S50, S51, S52, S53, S54, S55, S59, S60, S61, S62, S63, S64, S65, S66, S67]
 tags: [lint, contradictions]
 reviewed: no
 ---
@@ -64,3 +64,4 @@ Contradictions, doubtful numbers and gaps found while ingesting and linting. An 
 - [ ] Q34 (2026-11-14): [S59](sources/S59-topsoil-recovery-check-app-md.md) says the swmm524-perched repository states no license, while the engine it changes is public domain. Bob to decide the license.
 - [ ] Q38 (2026-11-14): Review grades with no reviewer on record: 76/100 (C) and A-/A (about 90/100) for the Cost Allocation Explorer [S61](sources/S61-cost-allocation-explorer-app-md.md); 83/100, 85/100 and 80/100 for Rules for Responsible Modeling [S62](sources/S62-rules-for-responsible-modeling-app-md.md). Both summaries say the project cannot tell whether a person or an AI gave them. Bob to say which tool or person, so the grades can be cited or dropped. Added later on 2026-11-14: also B- from a "method fidelity review" of the World Rainfall Pattern Painter on 2026-11-02, reviewer and tool not recorded [S65](sources/S65-world-rainfall-pattern-painter-app-md.md).
 - [ ] Q39 (2026-11-14): Which build of EPA SWMM is `swmm5.wasm` in the Rules for Responsible Modeling app? [S62](sources/S62-rules-for-responsible-modeling-app-md.md) declares 5.2.4 from a code comment and gives the binary's SHA-256, with the source commit, compiler flags and license audit "not checked" and no run against a native build. A hash match against a pinned build, or one model run both ways, would settle it.
+- [ ] Q44 (2026-11-14): The Green-Ampt note [S67](sources/S67-note-green-ampt-newton-test-order.md) needs three things before its numbers can be cited as more than "working". (a) A rerun: the runs were made once, by Claude. (b) The files it points to, none of which is in the repository: `greenampt_clay_15s.inp`, `swmm524_greenampt_alternates.patch`, and the full write-up `green-ampt-newton-stop-2026-11-14.md`. (c) A register ID (see Q18 and Q33; the next free number is F-0015). It also does not name the "four independent solvers". The quoted code was checked against EPA's `infil.c` at tag v5.2.4 at ingest and matches.

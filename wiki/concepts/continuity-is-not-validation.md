@@ -2,16 +2,17 @@
 title: Continuity is not validation
 type: concept
 updated: 2026-11-14
-sources: [S01, S04, S05, S20, S59, S60, S62, S65]
+sources: [S01, S04, S05, S20, S59, S60, S62, S65, S67]
 tags: [verification, method]
 reviewed: no
 ---
-A closed mass balance shows that water was not lost. It does not show that the answer is right. Four cases from the sources:
+A closed mass balance shows that water was not lost. It does not show that the answer is right. Five cases from the sources:
 
 1. **A sign error that conserves mass perfectly.** With the Audusse well-balancing correction applied to the wrong side of a cell face, still water is destroyed completely while mass conservation is unaffected. After the fix, 39 of 39 analytic cases pass (F-0003, status fixed) [S04](../sources/S04-findings-register-seed.md).
 2. **Storage that does not exist.** [Conduit lengthening](conduit-lengthening.md) adds about 106,000 cu ft (3,000 m³ in the source) of storage to 150 short stubs, and continuity closes throughout (F-0007, unconfirmed) [S04](../sources/S04-findings-register-seed.md).
 3. **A continuity check that was itself wrong.** In the 1971 listing of [SWMM 1 (1971)](../entities/swmm-1.md), card `HYDR137` leaves `WAREA(J)` out of the pervious storage term. On the Cincinnati deck the printed continuity error is 17.76170 %; with the factor added in an experimental build it is 0.07075 %, and the rest of the printout is identical. The flows were right; the check was wrong [S01](../sources/S01-swmm1-engine-app-md.md).
 4. **Two solvers, two typical error bands.** SWMM 5 typically reports 0.1 to 0.5 % and ICM 0.01 to 0.1 %, which the source puts down to ICM's volume accounting at several points per conduit [S20](../sources/S20-li-edition-54-two-solvers.md).
+5. **A solver that drops a term on some steps.** In a note not yet rerun, a Green-Ampt run at a 15 s wet step infiltrates 0.868 in where four other step sizes give 1.096 to 1.097 in, and its continuity error is -0.001 % [S67](../sources/S67-note-green-ampt-newton-test-order.md). See [Green-Ampt Newton test order](green-ampt-newton-test-order.md).
 
 **When the check does catch it.** Defect D2 in [LID bio-retention layers](lid-bioretention-layers.md): a drain on a bio-retention cell with no storage layer reports 232.85 in of drain flow from 20.55 in of rain, and the runoff continuity error is -1,100.9 %. The made-up flow is proportional to the drain coefficient, 2.3 in at 0.001 [S59](../sources/S59-topsoil-recovery-check-app-md.md).
 

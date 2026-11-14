@@ -267,6 +267,7 @@ raw/manuals/swmm44/TRANSWQDOC.TXT,manuals,,*,8056,ea07094729a8d35f148f5e079df370
 raw/manuals/swmm44/TRANSWQtestDOC.TXT,manuals,,*,6637,e33461f9ff3d520bc085c9a0aa7c8f5f26ce852f37f32e6bc2fb162f41ee9221,queued,,,
 raw/notes/findings-register-seed.md,notes,,SWMM Findings Register — seed,1595,b1bc137dc65ce480c6174a271722af6100062ce66ffe1ad8456c7c41f5a7678d,ingested,wiki/sources/S04-findings-register-seed.md,,
 raw/notes/findings-register.md,notes,,SWMM Findings Register — format and seed,724,e81757e6ffb58e1fb8f38ecc1e3f2b563f6eac5df0bdc2baea308e7dac47d022,ingested,wiki/sources/S03-findings-register-format.md,,
+raw/notes/green-ampt-newton-test-order.md,notes,,"SWMM5's Green-Ampt solver tests the Newton correction before applying it, so some wet steps infiltrate at Ksat alone",639,74b7e0810e013dd40d948a937906a4e5c87be61c368b579354514900bed478f5,ingested,wiki/sources/S67-note-green-ampt-newton-test-order.md,,
 raw/notes/swmm1-engine-build-notes.md,notes,,SWMM 1 full reconstruction — working notes (state file; re-read after any context reset),5828,353330dc554dccea77c9966f992e31bbc343f74d303120c11a120783bea1a53b,queued,,,
 raw/notes/swmm1-engine-doubts.md,notes,,Doubtful readings (page is the authority; these could not be settled from the scan alone),451,e0079137404cc909eeafa84c484cf2a4909ef8b745c623aada6e4f0faede0e5a,queued,,,
 raw/openswmm/threads-1995-2026.csv,openswmm,,"date,title,role,my_posts,total_posts,started_by,participants,url",75965,f41402c1ba457c0ed5e06143099be157df88dac132384ce097c9daf81fb4a24e,ingested,wiki/sources/S09-openswmm-thread-list.md,,

@@ -9,7 +9,7 @@ It is not a search index. Each source is read once and compiled into pages; a qu
 | Path | What |
 |---|---|
 | `raw/` | Sources. 313 files, about 1,060,000 words. Never edited. `raw/MANIFEST.csv` has a hash and a status for each |
-| `wiki/` | 131 pages, about 57,000 words: 66 sources, 35 concepts, 28 entities, an overview and an open-questions list |
+| `wiki/` | 133 pages, about 58,000 words: 67 sources, 36 concepts, 28 entities, an overview and an open-questions list |
 | `index.md` | Catalog of every page. Start here |
 | `log.md` | What was done and when |
 | `CLAUDE.md` | The schema: page rules and the three operations |
@@ -33,8 +33,8 @@ To read the wiki yourself, open the folder in Obsidian (the graph view shows hub
 
 ## State on 14 November 2026
 
-- 66 of 316 raw files ingested. The queue is in `index.md`.
-- 40 open questions in `wiki/open-questions.md`, and 3 settled. Several are contradictions between Bob's own articles.
+- 67 of 317 raw files ingested. The queue is in `index.md`.
+- 41 open questions in `wiki/open-questions.md`, and 3 settled. Several are contradictions between Bob's own articles.
 - No page has been reviewed by Bob. Every page says `reviewed: no` until he has read it.
 
 ## What is not here
@@ -60,6 +60,6 @@ Treat it as a working notebook, not a reference:
 
 ## AI use
 
-This repository was set up on 14 November 2026 by Claude, Anthropic's AI model, at Bob's direction. Claude converted the LinkedIn export, copied the other sources in, wrote the schema, the tools and all 131 wiki pages across several sessions, computed the OpenSWMM counts, and found the 43 open questions. The mechanical checks are `tools/lint.py` (links, front matter, citations, raw-file hashes). The content checks were Claude rereading each page against its sources; no person has read any wiki page yet, and each page says so in its front matter. Many of the sources themselves contain AI-written passages; each source page records what is known about how it was written.
+This repository was set up on 14 November 2026 by Claude, Anthropic's AI model, at Bob's direction. Claude converted the LinkedIn export, copied the other sources in, wrote the schema, the tools and all 133 wiki pages across several sessions, computed the OpenSWMM counts, and found the 44 open questions. The mechanical checks are `tools/lint.py` (links, front matter, citations, raw-file hashes). The content checks were Claude rereading each page against its sources; no person has read any wiki page yet, and each page says so in its front matter. Many of the sources themselves contain AI-written passages; each source page records what is known about how it was written.
 
 No license has been set.

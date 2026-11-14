@@ -2,7 +2,7 @@
 title: Infiltration methods
 type: concept
 updated: 2026-11-14
-sources: [S01, S03, S08, S10, S15, S55, S59]
+sources: [S01, S03, S08, S10, S15, S55, S59, S67]
 tags: [hydrology, swmm5, infiltration]
 reviewed: no
 ---
@@ -23,6 +23,7 @@ The table is from [S15](../sources/S15-li-hydrology-code-story.md), an AI-writte
 
 **Findings and apps**
 - `MODIFIED_HORTON` and MaxInfil behavior is a register candidate with status confirmed; no detail is given [S03](../sources/S03-findings-register-format.md). [S59](../sources/S59-topsoil-recovery-check-app-md.md) gives the detail as its defect D1: in EPA 5.2.4, `infil.c` line 545 uses MAX where MIN is meant (`infil->Fe = MAX(infil->Fe, infil->Fmax)`), and 4.0 in of rain infiltrates 0.002 in. On an 8 in storm with a 3 in cap the capped Modified Horton infiltrates 0.001 in, and 3.00 in with OpenSWMM 5.3.0's fix ported to 5.2.4 [S59](../sources/S59-topsoil-recovery-check-app-md.md).
+- Green-Ampt: a candidate finding in `grnampt_getF2`, `infil.c` lines 847 to 856. The Newton correction is tested before it is applied, and one clay test lost 21 % of its infiltration at a 15 s wet step and nothing at 5, 30, 60 or 300 s. Status in the note: working, not rerun [S67](../sources/S67-note-green-ampt-newton-test-order.md). See [Green-Ampt Newton test order](green-ampt-newton-test-order.md).
 - All of these treat the soil as one uniform layer. Bob's [two-layer proposal](two-layer-infiltration.md) adds a second layer through the LID soil machinery [S55](../sources/S55-swmm-brain-readme.md). ([S55](../sources/S55-swmm-brain-readme.md) counts three built-in methods, leaving out Modified Horton.)
 - Bob's fork of EPA SWMM has a branch with six Curve Number changes [S08](../sources/S08-swmm5org-topic-inside-swmm5.md).
 - [Topsoil Recovery Check (app)](../entities/topsoil-recovery-check.md) compares Horton with the LID two-layer soil for decompacted topsoil in EPA SWMM 5.2.4, and The Bowl Is Full expresses compaction as an apparent Curve Number [S08](../sources/S08-swmm5org-topic-inside-swmm5.md). Its results are on [Topsoil over compacted clay](topsoil-over-compacted-clay.md) [S59](../sources/S59-topsoil-recovery-check-app-md.md).
