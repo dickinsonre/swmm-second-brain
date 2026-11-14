@@ -2,7 +2,7 @@
 title: EPA SWMM 5
 type: entity
 updated: 2026-11-14
-sources: [S02, S04, S08, S11, S15, S17, S19, S20, S21, S22]
+sources: [S02, S04, S08, S11, S15, S17, S19, S20, S21, S22, S23]
 tags: [swmm5, engine]
 reviewed: no
 ---
@@ -20,7 +20,11 @@ The C rewrite of SWMM, first released as 5.0 build 001 on 29 October 2004 [S22](
 - Output: [Reading SWMM output](../concepts/reading-swmm-output.md).
 - Documentation: [The missing specification](../concepts/the-missing-specification.md).
 
-**Bob's variants.** A fork with branches for a staggered grid, a Preissmann box, node surface area and six Curve Number changes; swmm5-kw; swmm524-perched; and versions in C++, Rust, Fortran, C#, Python, TypeScript, Java and Go [S08](../sources/S08-swmm5org-topic-inside-swmm5.md).
+**Size.** More than 40 C source files [S23](../sources/S23-swmm-brain-readme.md).
+
+**In the browser.** Compiled to WebAssembly with Emscripten, exporting `swmm_run`, `swmm_open`, `swmm_start`, `swmm_step` and `swmm_end`; the model, report and output files live in the module's in-memory file system [S23](../sources/S23-swmm-brain-readme.md).
+
+**Bob's variants.** A [two-layer infiltration](../concepts/two-layer-infiltration.md) proposal [S23](../sources/S23-swmm-brain-readme.md). A fork with branches for a staggered grid, a Preissmann box, node surface area and six Curve Number changes; swmm5-kw; swmm524-perched; and versions in C++, Rust, Fortran, C#, Python, TypeScript, Java and Go [S08](../sources/S08-swmm5org-topic-inside-swmm5.md).
 
 **Inside other products.** InfoSWMM uses the SWMM 5 C code as its engine [S11](../sources/S11-li-my-history-with-swmm.md). ICM SWMM runs the SWMM5 dynamic wave [S17](../sources/S17-li-routing-options.md).
 

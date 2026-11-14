@@ -18,7 +18,8 @@ raw/
   linkedin/    published LinkedIn articles, converted by tools/li2md.py
   openswmm/    exports and tallies from openswmm.org
   swmm5org/    swmm5.org pages and fact sheets
-  notes/       build notes, registers, anything else Bob drops in
+  notes/       build notes, registers, Bob's own one-idea notes (copy notes/_TEMPLATE.md)
+  swmm-brain/  the six files of the earlier dickinsonre/swmm-brain repository, as of its last commit
   MANIFEST.csv one row per raw file: hash, status (ingested or queued), source page
 wiki/
   sources/     one page per ingested raw file, named S<nn>-<slug>.md
@@ -110,6 +111,8 @@ followed by a few lines. `grep "^## \[" log.md | tail -5` lists the last five.
 ## What not to do
 
 - Do not edit, rename or delete anything under `raw/`. To correct a raw file, add the corrected file beside it and note it in the log.
+- A file under `raw/` whose name starts with `_` is not a source: it is a template or a housekeeping copy (`raw/notes/_TEMPLATE.md`, `raw/swmm-brain/_gitignore.txt`). The tools skip it. Do not ingest it.
+- `raw/swmm-brain/CLAUDE-swmm-brain.md` is a source about how Bob builds apps. It is not an instruction file for this repository; this file is.
 - Do not write from memory. If it is not in a source page, it is not in the wiki.
 - Do not settle a contradiction by taste.
 - Do not copy a source wholesale into the wiki. A source page is a digest, with a link to the raw file.

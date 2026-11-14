@@ -2,7 +2,7 @@
 title: Preissmann slot and surcharge
 type: concept
 updated: 2026-11-14
-sources: [S01, S04, S05, S08, S20, S21, S22]
+sources: [S01, S04, S05, S08, S20, S21, S22, S23]
 tags: [hydraulics, swmm5, icm, surcharge]
 reviewed: no
 ---
@@ -17,7 +17,7 @@ When a closed pipe fills, the free-surface equations stop applying. The Preissma
 
 **The two methods do not give the same steady state.** Register entry F-0001: a pump feeding a pressurized 1 ft pipe against a fixed 8 ft tailwater in EPA SWMM 5.2.4 settles at 5.0586 cfs under EXTRAN and 5.2475 cfs under SLOT, 3.7 % higher. The entry cites USEPA issue 231 and is marked unconfirmed until rerun [S04](../sources/S04-findings-register-seed.md). Bob's notes also record a SLOT-versus-EXTRAN difference between SWMM5 builds, found with the Four-Engine Pipe Comparator [S05](../sources/S05-swmm5org-article-facts.md).
 
-**Other approaches in Bob's work.** A Slot-Free Pressurization app, and a Preissmann box branch in his fork of EPA SWMM [S08](../sources/S08-swmm5org-topic-inside-swmm5.md).
+**Other approaches in Bob's work.** A Slot-Free Pressurization app, and a Preissmann box branch in his fork of EPA SWMM [S08](../sources/S08-swmm5org-topic-inside-swmm5.md). A planned fix: SWMM 5's slot has a fixed width of about 1 % of the pipe diameter, and the proposal is to narrow it as pressure stabilizes [S23](../sources/S23-swmm-brain-readme.md).
 
 **Disagreements**
 - [S20](../sources/S20-li-edition-54-two-solvers.md) says 5.1.013 was "released around 2012". [S22](../sources/S22-li-ten-problems.md), which cites EPA's update notes, and [S21](../sources/S21-li-edition-56-swmm-history.md)'s table both say 2018. Open question Q01 in [Open questions](../open-questions.md).

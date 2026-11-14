@@ -44,8 +44,8 @@ def walk(top, exts=None):
     out = []
     for d, _, files in os.walk(top):
         for fn in sorted(files):
-            if fn.startswith('.'):
-                continue
+            if fn.startswith('.') or fn.startswith('_'):
+                continue  # dotfiles, and templates such as raw/notes/_TEMPLATE.md
             if exts and not fn.lower().endswith(exts):
                 continue
             out.append(os.path.join(d, fn))

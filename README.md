@@ -8,8 +8,8 @@ It is not a search index. Each source is read once and compiled into pages; a qu
 
 | Path | What |
 |---|---|
-| `raw/` | Sources. 248 files, about 324,000 words. Never edited. `raw/MANIFEST.csv` has a hash and a status for each |
-| `wiki/` | 61 pages, about 19,000 words: 22 sources, 22 concepts, 15 entities, an overview and an open-questions list |
+| `raw/` | Sources. 252 files, about 326,000 words. Never edited. `raw/MANIFEST.csv` has a hash and a status for each |
+| `wiki/` | 70 pages, about 22,000 words: 26 sources, 25 concepts, 17 entities, an overview and an open-questions list |
 | `index.md` | Catalog of every page. Start here |
 | `log.md` | What was done and when |
 | `CLAUDE.md` | The schema: page rules and the three operations |
@@ -25,12 +25,14 @@ Attach the repository to a Claude session (or open it in Claude Code) and say on
 
 To add a source, drop the file in the right folder under `raw/` and say "ingest". For a new LinkedIn export, run `python3 tools/li2md.py PATH/TO/Articles/Articles` first.
 
+To add an idea of your own, copy `raw/notes/_TEMPLATE.md` to a new file in `raw/notes/`, write one idea in it, and say "ingest". The template came from the earlier `swmm-brain` repository, which this one replaces; its contents are in `raw/swmm-brain/`.
+
 To read the wiki yourself, open the folder in Obsidian (the graph view shows hubs and orphans) or browse it on GitHub; every link is a plain relative link and works in both.
 
 ## State on 14 November 2026
 
-- 22 of 248 raw files ingested. The queue is in `index.md`.
-- 19 open questions in `wiki/open-questions.md`. Several are contradictions between Bob's own articles.
+- 26 of 252 raw files ingested. The queue is in `index.md`.
+- 21 open questions in `wiki/open-questions.md`. Several are contradictions between Bob's own articles.
 - No page has been reviewed by Bob. Every page says `reviewed: no` until he has read it.
 
 ## What is not here
@@ -56,6 +58,6 @@ Treat it as a working notebook, not a reference:
 
 ## AI use
 
-This repository was set up on 14 November 2026 by Claude, Anthropic's AI model, at Bob's direction. Claude converted the LinkedIn export, copied the other sources in, wrote the schema, the tools and all 61 wiki pages, computed the OpenSWMM counts, and found the 19 open questions. The mechanical checks are `tools/lint.py` (links, front matter, citations, raw-file hashes). The content checks were Claude rereading each page against its sources; no person has read any wiki page yet, and each page says so in its front matter. Many of the sources themselves contain AI-written passages; each source page records what is known about how it was written.
+This repository was set up on 14 November 2026 by Claude, Anthropic's AI model, at Bob's direction. Claude converted the LinkedIn export, copied the other sources in, wrote the schema, the tools and all 70 wiki pages, computed the OpenSWMM counts, and found the 21 open questions. The mechanical checks are `tools/lint.py` (links, front matter, citations, raw-file hashes). The content checks were Claude rereading each page against its sources; no person has read any wiki page yet, and each page says so in its front matter. Many of the sources themselves contain AI-written passages; each source page records what is known about how it was written.
 
 No license has been set.

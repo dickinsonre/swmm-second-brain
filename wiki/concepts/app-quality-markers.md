@@ -31,4 +31,4 @@ Share of each quarter's app-building conversations showing the marker [S05](../s
 - The patterns must be published with the numbers. A first "found a defect" pattern read 73 % for 2026Q3 and the tightened one 47 %; an older workbook's 65 % cannot be reproduced.
 - A second channel matters: tool calls that ran an engine are invisible to a text search. That channel alone found 268 conversations; 87 compiled an engine and 142 ran a test script.
 
-See [Negative results](negative-results.md), [Continuity is not validation](continuity-is-not-validation.md), [The SWMM findings register](findings-register.md).
+See [Negative results](negative-results.md), [Continuity is not validation](continuity-is-not-validation.md), [The SWMM findings register](findings-register.md), [App build contract (four working principles)](app-build-contract.md).

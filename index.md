@@ -1,10 +1,10 @@
 # Index
 
-Every page in the wiki, one line each. An agent reads this first. Updated on every ingest. Last update: 2026-11-14 (22 sources, 22 concepts, 15 entities).
+Every page in the wiki, one line each. An agent reads this first. Updated on every ingest. Last update: 2026-11-14 (26 sources, 25 concepts, 17 entities).
 
 ## Start here
 - [Overview: what this wiki holds so far](wiki/overview.md): what the wiki holds so far, by Bob's six themes, and what is missing.
-- [Open questions](wiki/open-questions.md): 19 contradictions, doubtful numbers and gaps waiting for a source or for Bob.
+- [Open questions](wiki/open-questions.md): 21 contradictions, doubtful numbers and gaps waiting for a source or for Bob.
 - [Schema](CLAUDE.md): how the wiki is kept. [Log](log.md): what was done and when.
 
 ## Concepts
@@ -21,6 +21,7 @@ Hydrology
 - [Subcatchment width](wiki/concepts/subcatchment-width.md): a fitting knob presented as a length; Bob's objection to one width for all subareas.
 - [Infiltration methods](wiki/concepts/infiltration-methods.md): Curve Number, Horton, Modified Horton and Green-Ampt by their entry points in the code.
 - [RDII unit hydrographs (RTK)](wiki/concepts/rdii-unit-hydrographs.md): R, T and K, unit hydrograph groups, and the interface file format.
+- [Two-layer soil infiltration (SOIL2)](wiki/concepts/two-layer-infiltration.md): Bob's SOIL2 proposal, a second soil layer through the LID machinery.
 
 Reading and trusting results
 - [Reading SWMM output](wiki/concepts/reading-swmm-output.md): why the summary table says 73.9 cfs and the .out file 71.18 cfs for the same conduit.
@@ -40,6 +41,8 @@ Measurement and method
 - [Negative results](wiki/concepts/negative-results.md): five ideas that did not work, kept on purpose.
 - [App complexity index (HydroCouple = 100)](wiki/concepts/app-complexity-index.md): the eight-dimension index with HydroCouple = 100, and nine scores on record.
 - [Six quality markers for app-building work](wiki/concepts/app-quality-markers.md): six markers of checking in Bob's app-building conversations, by quarter.
+- [App build contract (four working principles)](wiki/concepts/app-build-contract.md): four working principles and the floor every app ships with.
+- [A surrogate distilled from SWMM](wiki/concepts/surrogate-distilled-from-swmm.md): an idea at seed stage: train the emulator on SWMM's own storms.
 
 ## Entities
 
@@ -61,6 +64,10 @@ Sites
 - [OpenSWMM.org (the forum)](wiki/entities/openswmm-forum.md): Bob's 4,014 posts in 2,879 threads since 1995.
 - [swmm5.org](wiki/entities/swmm5-org.md): the WordPress site and its six topic pages.
 
+Repositories
+- [Bob's GitHub repositories (where the rest of the material lives)](wiki/entities/bobs-github-repositories.md): 30 repositories named in the sources, with Bob's description of each; the map for future ingests.
+- [swmm-brain (the old brain repository)](wiki/entities/swmm-brain-repo.md): the earlier brain repository this one replaced, and what carried over.
+
 People
 - [Robert (Bob) Dickinson](wiki/entities/robert-dickinson.md): professional timeline from his own articles, with the dates that disagree.
 - [Lewis A. (Lew) Rossman](wiki/entities/lew-rossman.md): author of EPANET and of the SWMM 5 engine.
@@ -78,6 +85,12 @@ Notes and data
 - [S05](wiki/sources/S05-swmm5org-article-facts.md) (2026-10-16): fact sheet measured from the chat archive.
 - [S09](wiki/sources/S09-openswmm-thread-list.md) (2026-11-01): OpenSWMM thread list, 1995 to 2026.
 - [S10](wiki/sources/S10-openswmm-top25-problems.md) (2026-11-06): top 25 problems tagged from thread titles.
+
+The old swmm-brain repository
+- [S23](wiki/sources/S23-swmm-brain-readme.md) (2026-08-22): README: enhancements, apps, scripts, timeline.
+- [S24](wiki/sources/S24-swmm-brain-note-surrogate.md) (2026-06-29): note, a surrogate distilled from SWMM's own storms.
+- [S25](wiki/sources/S25-swmm-brain-setup-script.md) (2026-08-22): setup.sh, the list of knowledge repositories.
+- [S26](wiki/sources/S26-swmm-brain-working-principles.md) (2026-08-22): four working principles for building apps.
 
 swmm5.org pages
 - [S06](wiki/sources/S06-swmm5org-topics-index.md) (2026-11-01): Topics landing page.

@@ -2,7 +2,7 @@
 title: Infiltration methods
 type: concept
 updated: 2026-11-14
-sources: [S01, S03, S08, S10, S15]
+sources: [S01, S03, S08, S10, S15, S23]
 tags: [hydrology, swmm5, infiltration]
 reviewed: no
 ---
@@ -23,6 +23,7 @@ The table is from [S15](../sources/S15-li-hydrology-code-story.md), an AI-writte
 
 **Findings and apps**
 - `MODIFIED_HORTON` and MaxInfil behavior is a register candidate with status confirmed; no detail is given [S03](../sources/S03-findings-register-format.md).
+- All of these treat the soil as one uniform layer. Bob's [two-layer proposal](two-layer-infiltration.md) adds a second layer through the LID soil machinery [S23](../sources/S23-swmm-brain-readme.md). ([S23](../sources/S23-swmm-brain-readme.md) counts three built-in methods, leaving out Modified Horton.)
 - Bob's fork of EPA SWMM has a branch with six Curve Number changes [S08](../sources/S08-swmm5org-topic-inside-swmm5.md).
 - Topsoil Recovery Check compares Horton with the LID two-layer soil for decompacted topsoil in EPA SWMM 5.2.4, and The Bowl Is Full expresses compaction as an apparent Curve Number [S08](../sources/S08-swmm5org-topic-inside-swmm5.md).
 

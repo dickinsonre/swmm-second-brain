@@ -2,7 +2,7 @@
 title: Dynamic wave routing
 type: concept
 updated: 2026-11-14
-sources: [S08, S10, S17, S18, S20, S22]
+sources: [S08, S10, S17, S18, S20, S22, S23]
 tags: [hydraulics, swmm5, routing]
 reviewed: no
 ---
@@ -19,6 +19,16 @@ Dynamic wave routing solves the full one-dimensional St. Venant equations: conti
 **The stability options carry history.** Conduit lengthening, minimum surface area, inertial damping and the surcharge iteration each fixed an instability; the manual listed them as options and said little about when to use them. "Add a dummy node, cut the time step" spread as folklore. Bob's comment: "True, very true." [S22](../sources/S22-li-ten-problems.md) See [Conduit lengthening](conduit-lengthening.md) and [Preissmann slot and surcharge](preissmann-slot-and-surcharge.md).
 
 **How often it hurts.** Dynamic-wave stability, continuity and surcharge is the largest problem group in Bob's OpenSWMM threads: 224 of 2,879 thread titles [S10](../sources/S10-openswmm-top25-problems.md).
+
+**Fixes Bob has planned** (status in the source: planned; each "informed by how InfoWorks ICM handles the same problem") [S23](../sources/S23-swmm-brain-readme.md)
+
+| Problem | SWMM 5 now, per the source | Proposed |
+|---|---|---|
+| Preissmann slot | Fixed width, about 1 % of pipe diameter | Narrow it as pressure stabilizes |
+| Crown transition | Oscillation at the boundary between surcharge and free surface | Damped transition with a hysteresis band |
+| Supercritical flow | Abrupt cutoff by the Froude limiter | Smooth blending across flow regimes |
+| Junction losses | Continuity only, no head loss at junctions | Optional momentum-based head loss |
+| Pond and pipe coupling | Instability when storage surface area is small | A relaxation factor for stiff coupling |
 
 **Compared with ICM.** See [SWMM 5 versus ICM InfoWorks](swmm5-versus-icm-infoworks.md).
 
