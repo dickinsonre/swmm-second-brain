@@ -2,7 +2,7 @@
 title: Robert (Bob) Dickinson
 type: entity
 updated: 2026-11-14
-sources: [S07, S09, S11, S12, S18, S19, S21, S22]
+sources: [S07, S09, S11, S12, S18, S19, S21, S22, S23, S29]
 tags: [people]
 reviewed: no
 ---
@@ -25,6 +25,7 @@ Author of every source in this wiki. Professional record only, as he has publish
 | January 2008 | Joins MWH Soft (Innovyze) as Product Sector Leader | [S11](../sources/S11-li-my-history-with-swmm.md) |
 | 1995 to 2026 | 4,014 posts in 2,879 OpenSWMM threads | [S09](../sources/S09-openswmm-thread-list.md) |
 | 2026 | Chairs the SWMM5+ Technical Advisory Committee | [S21](../sources/S21-li-edition-56-swmm-history.md) |
+| November 2026 | Directs translations of the OpenSWMM 6 engine into 13 languages, published under SWMMBobSWMM6; Claude writes the translators and runtimes (see [SWMM6 language translations](swmm6-language-ports.md)) | [S23](../sources/S23-swmm6-csharp-readme.md) [S29](../sources/S29-swmm6-rust-readme.md) |
 
 **Positions he has taken**
 - One subcatchment width for pervious and impervious subareas is wrong in principle [S22](../sources/S22-li-ten-problems.md). See [Subcatchment width](../concepts/subcatchment-width.md).

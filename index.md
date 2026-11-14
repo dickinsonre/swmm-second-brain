@@ -1,10 +1,10 @@
 # Index
 
-Every page in the wiki, one line each. An agent reads this first. Updated on every ingest. Last update: 2026-11-14 (22 sources, 22 concepts, 15 entities).
+Every page in the wiki, one line each. An agent reads this first. Updated on every ingest. Last update: 2026-11-14 (35 sources, 24 concepts, 18 entities).
 
 ## Start here
 - [Overview: what this wiki holds so far](wiki/overview.md): what the wiki holds so far, by Bob's six themes, and what is missing.
-- [Open questions](wiki/open-questions.md): 19 contradictions, doubtful numbers and gaps waiting for a source or for Bob.
+- [Open questions](wiki/open-questions.md): 23 contradictions, doubtful numbers and gaps waiting for a source or for Bob.
 - [Schema](CLAUDE.md): how the wiki is kept. [Log](log.md): what was done and when.
 
 ## Concepts
@@ -40,6 +40,8 @@ Measurement and method
 - [Negative results](wiki/concepts/negative-results.md): five ideas that did not work, kept on purpose.
 - [App complexity index (HydroCouple = 100)](wiki/concepts/app-complexity-index.md): the eight-dimension index with HydroCouple = 100, and nine scores on record.
 - [Six quality markers for app-building work](wiki/concepts/app-quality-markers.md): six markers of checking in Bob's app-building conversations, by quarter.
+- [Byte-for-byte gate](wiki/concepts/byte-for-byte-gate.md): how a translation is held to its original: identical `.out`, `.rpt` but three clock lines, same exit code, on 480 + 452 decks.
+- [Matching glibc math in a translation](wiki/concepts/glibc-math-in-translation.md): 19 math functions, two routes (translate glibc's code, or call the system glibc), and how each is tested.
 
 ## Entities
 
@@ -49,13 +51,18 @@ Engines and programs
 - [EPA SWMM 5](wiki/entities/swmm-5.md): the C rewrite of 2004: origin, releases, status, Bob's variants.
 - [InfoWorks ICM](wiki/entities/infoworks-icm.md): the Wallingford and Autodesk engine: solver, surcharge, network types.
 - [InfoSWMM and InfoSewer](wiki/entities/infoswmm-and-infosewer.md): the two Innovyze products Bob led from 2008.
-- [OpenSWMM 6 and HydroCouple](wiki/entities/openswmm-6-and-hydrocouple.md): the little the ingested sources say so far, and four findings.
+- [OpenSWMM 6 and HydroCouple](wiki/entities/openswmm-6-and-hydrocouple.md): the commit the translations start from, licence, modules, and four findings.
+- [SWMM6 language translations (swmm6-*)](wiki/entities/swmm6-language-ports.md): thirteen languages, results table, how each was made and rechecked.
+- [swmm6-rust](wiki/entities/swmm6-rust.md): OpenSWMM 6 in safe Rust, 1D on 932 decks and 2D on 1,315 of 1,415, with state-level gates.
 
 Apps
 - [SWMM 1 Engine (app)](wiki/entities/swmm-1-engine-app.md): three engines in one page, version 3.6.
 - [SWMM App Complexity Meter (app)](wiki/entities/swmm-app-complexity-meter.md): version 1.9.1, its checks and limits.
 - [SWMM and ICM St. Venant comparison (app)](wiki/entities/swmm-icm-st-venant-app.md): the Replit comparison app behind Edition 54.
 - [Claude chat archive (app)](wiki/entities/claude-chat-archive.md): 1,671 conversations and 800 apps as of 14 October 2026.
+
+Data
+- [1729-SWMM5-Models-2030 (the corpus)](wiki/entities/corpus-1729.md): Bob's public model repository; 480 of its models are the translations' gate set.
 
 Sites
 - [OpenSWMM.org (the forum)](wiki/entities/openswmm-forum.md): Bob's 4,014 posts in 2,879 threads since 1995.
@@ -97,6 +104,21 @@ LinkedIn articles
 - [S20](wiki/sources/S20-li-edition-54-two-solvers.md) (2026-02-23): Edition 54, Two Solvers, One Equation.
 - [S21](wiki/sources/S21-li-edition-56-swmm-history.md) (2026-03-02): Edition 56, The $350,000 Model.
 - [S22](wiki/sources/S22-li-ten-problems.md) (2026-11-05): Ten Problems with How SWMM Was Developed and Explained.
+
+Repository READMEs (SWMM6 translations)
+- [S23](wiki/sources/S23-swmm6-csharp-readme.md) (2026-11-04): swmm6-csharp, the OpenSWMM 6 engine in C#; 480 of 480, 452 of 452.
+- [S24](wiki/sources/S24-swmm6-go-readme.md) (2026-11-04): swmm6-go, the OpenSWMM 6 engine in Go; 480 of 480, 452 of 452.
+- [S25](wiki/sources/S25-swmm6-java-readme.md) (2026-11-04): swmm6-java, the OpenSWMM 6 engine in Java; 480 of 480, 452 of 452.
+- [S26](wiki/sources/S26-swmm6-typescript-readme.md) (2026-11-05): swmm6-typescript, the OpenSWMM 6 engine in TypeScript; 480 of 480, 452 of 452.
+- [S27](wiki/sources/S27-swmm6-fortran-readme.md) (2026-11-04): swmm6-fortran, the OpenSWMM 6 engine in Fortran; 480 of 480, 452 of 452.
+- [S28](wiki/sources/S28-swmm6-python-readme.md) (2026-11-06): swmm6-python, the OpenSWMM 6 engine in Python; 412 of 413 run, 450 of 452.
+- [S29](wiki/sources/S29-swmm6-rust-readme.md) (2026-11-12): swmm6-rust, the OpenSWMM 6 engine in Rust; 1D on all 932 decks; 2D on 1,315 of 1,415.
+- [S30](wiki/sources/S30-swmm6-kotlin-readme.md) (2026-11-10): swmm6-kotlin, the OpenSWMM 6 engine in Kotlin; 480 of 480, 452 of 452.
+- [S31](wiki/sources/S31-swmm6-groovy-readme.md) (2026-11-10): swmm6-groovy, the OpenSWMM 6 engine in Groovy; 480 of 480, 452 of 452.
+- [S32](wiki/sources/S32-swmm6-javascript-readme.md) (2026-11-10): swmm6-javascript, the OpenSWMM 6 engine in JavaScript; 480 of 480, 452 of 452.
+- [S33](wiki/sources/S33-swmm6-fsharp-readme.md) (2026-11-10): swmm6-fsharp, the OpenSWMM 6 engine in F#; 480 of 480, 452 of 452.
+- [S34](wiki/sources/S34-swmm6-hy-readme.md) (2026-11-10): swmm6-hy, the OpenSWMM 6 engine in Hy; 478 of 480, 450 of 452.
+- [S35](wiki/sources/S35-swmm6-ruby-readme.md) (2026-11-12): swmm6-ruby, the OpenSWMM 6 engine in Ruby; 478 of 480, 450 of 452.
 
 ## Queue
 

@@ -2,11 +2,11 @@
 title: Overview: what this wiki holds so far
 type: synthesis
 updated: 2026-11-14
-sources: [S01, S04, S05, S06, S10, S19, S20, S22]
+sources: [S01, S04, S05, S06, S10, S19, S20, S22, S23, S24, S29, S35]
 tags: [overview]
 reviewed: no
 ---
-The state of the wiki after the first ingest, arranged by the six topics of [swmm5.org](entities/swmm5-org.md) [S06](sources/S06-swmm5org-topics-index.md). Twenty-two of 248 raw files are ingested. The wiki is deepest on SWMM's history and on the insides of SWMM 5, thin on ICM, and nearly empty on SWMM6.
+The state of the wiki after the second ingest, arranged by the six topics of [swmm5.org](entities/swmm5-org.md) [S06](sources/S06-swmm5org-topics-index.md). Thirty-five of 280 raw files are ingested. The wiki is deepest on SWMM's history and on the insides of SWMM 5, thin on ICM, and on SWMM6 holds the translations but not yet the solvers.
 
 ## 1. SWMM history
 - The timeline from 1969 to 2026 is on [SWMM version history, 1969 to 2026](concepts/swmm-version-history.md), with four places where Bob's own articles disagree with each other or with primary documents.
@@ -27,11 +27,15 @@ The state of the wiki after the first ingest, arranged by the six topics of [swm
 - This is where the queue is longest: 141 queued LinkedIn articles name ICM or InfoWorks in the title.
 
 ## 4 and 5. ICM and SWMM6; inside SWMM6
-- One page, [OpenSWMM 6 and HydroCouple](entities/openswmm-6-and-hydrocouple.md), holding four findings and the HydroCouple measurements. Nothing yet on the solvers, 2D or the input format.
+- [OpenSWMM 6 and HydroCouple](entities/openswmm-6-and-hydrocouple.md) now names the commit every translation starts from (88329d6 on `swmm6_rel`, 6.0.0-alpha.4), the licence and the modules, from the translation READMEs [S29](sources/S29-swmm6-rust-readme.md).
+- [SWMM6 language translations](entities/swmm6-language-ports.md): thirteen languages, each held byte for byte to the C++ engine on 480 corpus models and 452 extra decks. No translation reports a model that ran to the end and differed [S23](sources/S23-swmm6-csharp-readme.md) [S35](sources/S35-swmm6-ruby-readme.md).
+- [swmm6-rust](entities/swmm6-rust.md) is the one that covers 2D: 1,315 of 1,415 gate decks identical with 2D on [S29](sources/S29-swmm6-rust-readme.md).
+- Still nothing on how the solvers work, or on ICM against SWMM6.
 
 ## 6. Comparing models with AI
 - The discipline: [Continuity is not validation](concepts/continuity-is-not-validation.md), [The SWMM findings register](concepts/findings-register.md), [Negative results](concepts/negative-results.md).
 - The measurements of Bob's own practice: [Six quality markers for app-building work](concepts/app-quality-markers.md) (verification against engine output rose from 28 % to 60 % of app-building conversations between 2026Q2 and 2026Q3 [S05](sources/S05-swmm5org-article-facts.md)) and [App complexity index (HydroCouple = 100)](concepts/app-complexity-index.md).
+- Method from the translations: [Byte-for-byte gate](concepts/byte-for-byte-gate.md) (the parity contract, reruns from clean copies, and runs stopped at a time limit counted as not run) and [Matching glibc math in a translation](concepts/glibc-math-in-translation.md) (19 functions, translated from glibc or called in the system library) [S23](sources/S23-swmm6-csharp-readme.md) [S24](sources/S24-swmm6-go-readme.md).
 - Apps as subjects: [SWMM 1 Engine (app)](entities/swmm-1-engine-app.md), [SWMM App Complexity Meter (app)](entities/swmm-app-complexity-meter.md), [Claude chat archive (app)](entities/claude-chat-archive.md).
 
 ## Three things the first ingest showed

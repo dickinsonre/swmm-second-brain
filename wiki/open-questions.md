@@ -2,7 +2,7 @@
 title: Open questions
 type: synthesis
 updated: 2026-11-14
-sources: [S01, S04, S05, S07, S08, S11, S12, S14, S19, S20, S21, S22]
+sources: [S01, S04, S05, S07, S08, S11, S12, S14, S19, S20, S21, S22, S23, S27, S28, S29, S34, S35]
 tags: [lint, contradictions]
 reviewed: no
 ---
@@ -18,6 +18,7 @@ Contradictions, doubtful numbers and gaps found while ingesting and linting. An 
 - [ ] Q12 (2026-11-14): Is SWMM 5's dynamic wave solution implicit or explicit? [S20](sources/S20-li-edition-54-two-solvers.md) calls the EXTRAN lineage "implicit backward Euler time integration" with successive relaxation. [S08](sources/S08-swmm5org-topic-inside-swmm5.md) lists an app on "why SWMM5's explicit dynamic wave solution stays robust" and a 2013 post on successive under-relaxation. The 2013 post and the 2006 QA report, both listed in [S08](sources/S08-swmm5org-topic-inside-swmm5.md) but not in raw, should settle the wording.
 - [ ] Q13 (2026-11-14): [S20](sources/S20-li-edition-54-two-solvers.md) calls SWMM 5 "the only platform with built in LID and water quality modeling". Queued articles by Bob have titles on SUDS and LID usage in ICM InfoWorks, and on buildup and washoff in ICM InfoWorks. Ingest those and correct the comparison table.
 - [ ] Q14 (2026-11-14): When did EXTRAN enter SWMM? [S21](sources/S21-li-edition-56-swmm-history.md) says SWMM 2 (1975) added it. [S20](sources/S20-li-edition-54-two-solvers.md) calls it a module "of the original EPA Storm Water Management Model". The October 1971 listing has no EXTRAN block [S01](sources/S01-swmm1-engine-app-md.md). [S21](sources/S21-li-edition-56-swmm-history.md) is the only dated statement and its history rests on AI searching by its own account.
+- [ ] Q20 (2026-11-14): [S22](sources/S22-li-ten-problems.md) says the four lines moving forward from SWMM 5 share no common test models. The SWMM6 translations are gated on 480 models drawn from 1729-SWMM5-Models-2030, "the one the SWMM5 ports were checked on" [S23](sources/S23-swmm6-csharp-readme.md), and swmm6-rust's `census/` compares OpenSWMM 6 with EPA SWMM 5.2.4 on a corpus of SWMM5 models [S29](sources/S29-swmm6-rust-readme.md). Not a contradiction of fact (the gates compare each translation with its own original, not one line with another), but S22 may need a date or a note. Bob to say.
 
 ## Arithmetic and wording to check
 
@@ -26,6 +27,7 @@ Contradictions, doubtful numbers and gaps found while ingesting and linting. An 
 - [ ] Q07 (2026-11-14): [S14](sources/S14-li-subarea-routing.md), section 5, is captioned "Impervious in SWMM, Impervious to Pervious in InfoWorks". Section 1 of the same article defines IMPERV as pervious runoff draining to the impervious area. Which pairing did the test networks use? The screenshots that would show it are not in the export.
 - [ ] Q15 (2026-11-14): [S21](sources/S21-li-edition-56-swmm-history.md) says SWMM 5 "has evolved through eight significant releases" and its table has seven dated rows; it also says "four universities" without naming them.
 - [ ] Q09 (2026-11-14): [S07](sources/S07-swmm5org-topic-swmm-history.md) describes the SWMM 1 Engine app as "the 1971 SWMM 1 Runoff engine"; since version 2.0 it runs all five blocks [S01](sources/S01-swmm1-engine-app-md.md). [S07](sources/S07-swmm5org-topic-swmm-history.md) links the app on Netlify, while [S01](sources/S01-swmm1-engine-app-md.md) records `netlify: none`. One of the two needs updating.
+- [ ] Q21 (2026-11-14): [S35](sources/S35-swmm6-ruby-readme.md) says the Python port took 4,056 s on `SCANLON.inp` and did not finish `legacy_small.inp` and `refactored_small.inp` in 7,000 s. [S28](sources/S28-swmm6-python-readme.md) names the 7,000 s limit only for `72_H&H_Elements(2).inp` and does not give the limit for the extra decks. Check against the Python gate records (`gate/evidence/py2.json`, `py_x2.json` in swmm6-python).
 
 ## Open inside a single source
 
@@ -38,3 +40,6 @@ Contradictions, doubtful numbers and gaps found while ingesting and linting. An 
 
 - [ ] Q18 (2026-11-14): The 14 faults found in the 1971 SWMM 1 listing [S01](sources/S01-swmm1-engine-app-md.md) have no findings-register IDs. The seed's next free number is F-0015 [S04](sources/S04-findings-register-seed.md). Bob to say whether they get numbers.
 - [ ] Q19 (2026-11-14): Several source pages could not say which AI tool wrote which passages ([S11](sources/S11-li-my-history-with-swmm.md), [S12](sources/S12-li-diamond-village.md), [S16](sources/S16-li-rdii-in-swmm5.md), [S20](sources/S20-li-edition-54-two-solvers.md)). If Bob remembers, a line on each source page would replace "reads as".
+- [ ] Q22 (2026-11-14): The SWMM6 Python port ran 413 of the 480 corpus models and stopped "by choice" [S28](sources/S28-swmm6-python-readme.md), while the Hy port, at about Python's speed, ran all 480 [S34](sources/S34-swmm6-hy-readme.md). Bob to decide whether the other 67 get run.
+- [ ] Q23 (2026-11-14): The swmm6-csharp and swmm6-fortran READMEs do not say how those ports reach glibc's math [S23](sources/S23-swmm6-csharp-readme.md) [S27](sources/S27-swmm6-fortran-readme.md); the other ports do. A line in each README would close it.
+
