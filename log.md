@@ -174,3 +174,13 @@ What the batch added to the synthesis. The translations page rested on each repo
 Found at ingest. Q46: the size of the 5.2.4 solver is given as 51,080 and 50,788 lines and as 969, 962 and 968 functions. Q48: the What If app's list of empty repositories is older than two READMEs already here. Arithmetic checked and found right: the 28 test scripts of S68, the 376 checks of S69, 21 x 7 x 2 = 294 in S70, and 351,187 / 51,080 = 6.9 for "about seven times".
 
 After this ingest: 321 raw files, 72 ingested, 246 queued, 3 duplicate; 144 pages; 46 questions open, 3 settled.
+
+## [2026-11-14] setup | The 75-site Netlify list: triage, and four more summaries queued
+
+Bob sent the 75 sites on the first page of his Netlify account. For the 31 that match a published Claude artifact by name, the page was read and searched for an embedded summary (`script#app-md`).
+
+Added to `raw/apps/`, byte for byte from the pages, and left queued: `swmm1-runoff-engine-v3.13.md` (so 3.12, never ingested, is now `superseded`), `swmm-icm-knowledge-library-v70.md`, `bob-usefulness-index-v2.2.md`, `fractal-swmm-generator-v2.3.md`. Three more embedded summaries (EXTRAN III Workbench 1.6.0, Under Load 1.4.0, Speak 100) are identical to files already queued here, so nothing was added for them.
+
+Twenty apps have a readable page and no summary inside; about forty-four have no artifact that matches by name, and their Netlify pages cannot be downloaded from this workspace (the proxy refuses the host). Nothing was written for either group in this step.
+
+After this step: 325 raw files, 72 ingested, 249 queued, 1 superseded, 3 duplicate.
