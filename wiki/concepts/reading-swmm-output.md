@@ -2,7 +2,7 @@
 title: Reading SWMM output
 type: concept
 updated: 2026-11-14
-sources: [S03, S10, S22, S60]
+sources: [S03, S10, S22, S60, S69, S72]
 tags: [swmm5, output, reporting]
 reviewed: no
 ---
@@ -18,6 +18,8 @@ A large share of "SWMM is wrong" questions come from comparing two honest number
 - three different continuity errors
 
 **A related defect.** Two interpolations of the same quantity, `output.c:590` against `routing.c:592`, are listed as root-caused under USEPA issue 229 [S03](../sources/S03-findings-register-format.md).
+
+**One file layout, two engines.** EPA SWMM 5 and OpenSWMM 6 write the same binary `.out` layout with the same magic number, 516114522. The version field tells them apart: 60000 for OpenSWMM, 5xxxx for SWMM 5. Node type codes differ: OpenSWMM stores DIVIDER as 2 and STORAGE as 3 (`plugins/DefaultOutputPlugin.cpp:451`), and SWMM 5 has the two the other way round, so a reader built for SWMM 5 would call an OpenSWMM storage node a divider [S69](../sources/S69-swmm6-code-house-app-md.md). The [SWMM6 Code House (app)](../entities/swmm6-code-house.md) reads the code by version, and saw the case in a real file, `baseline.out` [S72](../sources/S72-li-swmm6-code-house-article.md).
 
 **How often it is asked** (tags on Bob's 2,879 OpenSWMM thread titles) [S10](../sources/S10-openswmm-top25-problems.md)
 

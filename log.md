@@ -147,3 +147,30 @@ Pages created: S67 and [Green-Ampt Newton test order](wiki/concepts/green-ampt-n
 Checked at ingest. The ten quoted lines of `grnampt_getF2` were compared with `src/solver/infil.c` at tag v5.2.4 in USEPA/Stormwater-Management-Model, fetched on 14 November 2026: identical, at lines 847 to 856 as the note says. The note's threshold of 0.432 follows from those lines, and its two break points (F above 0.67 in at 15 s, above 2.86 in at 30 s) follow from the threshold. None of the run results was checked: the test `.inp`, the patch and the longer write-up the note links to are not in the repository (Q44).
 
 After this ingest: 317 raw files, 67 ingested, 247 queued, 3 duplicate; 133 pages; 41 questions open, 3 settled.
+
+## [2026-11-14] setup | App summaries pulled from the apps themselves (Netlify batch 1)
+
+Bob gave six Netlify names and addresses and asked for their .md files. They are five apps. Each address was checked against his Netlify account and each app's source was read from his published Claude artifact.
+
+| Netlify site | App | What went into `raw/apps/` |
+|---|---|---|
+| swmm5-code-house | SWMM5 Code House | `swmm5-code-house-v1.15.1.md`, extracted from the page's `script#app-md` |
+| heartfelt-daffodil-ca3a6a | a second copy of SWMM5 Code House | nothing; same app |
+| swmm6-code-house | SWMM6 Code House | `swmm6-code-house-v1.2.1.md`, extracted |
+| swmm-app-complexity-vs-hydrocouple | SWMM App Complexity Meter | nothing; the embedded summary equals `swmm-app-complexity-meter.md` (S02) but for one leading blank line |
+| swmm5-engine-what-if | SWMM Engine What If | `swmm-engine-what-if-v1.4.md`, extracted |
+| nine-swmm5-engines-not-c | SWMM Engines, Byte for Byte | `swmm-engines-v2026-11-06.md`, written by Claude from the page |
+
+Three files are byte-for-byte copies of what the apps carry. The fourth is new writing: the Byte for Byte page ships no summary, so Claude wrote one from the page's About tab and its embedded results object, with every number read from that object by script and nothing rerun. Its front matter and its source page say so, and Bob has been asked to read it (Q49).
+
+All five public sites serve older builds than these summaries describe (Q45). A plain download of a Netlify address from the workspace failed; the pages were read through the web fetch tool, which sees the page source and not what scripts change.
+
+## [2026-11-14] ingest | S68 to S72: the Code Houses, Engine What If, Byte for Byte
+
+Read in full and ingested: the four summaries above (S68 to S71) and the queued LinkedIn article on the SWMM6 Code House of 4 November 2026 (S72). Pages created: S68 to S72; [SWMM5 Code House (app)](wiki/entities/swmm5-code-house.md), [SWMM6 Code House (app)](wiki/entities/swmm6-code-house.md), [SWMM Engine What If (app)](wiki/entities/swmm-engine-what-if.md), [SWMM Engines, Byte for Byte (app)](wiki/entities/swmm-engines-byte-for-byte.md); [Wrap, translate or extend](wiki/concepts/wrap-translate-or-extend.md), [SWMM5 translations: the re-run of 12 November 2026](wiki/concepts/swmm5-ports-rerun-2026-11.md). Pages changed: both translation pages, glibc math, byte-for-byte gate, where languages part from C, reading SWMM output, EPA SWMM 5, OpenSWMM 6 and HydroCouple, swmm524-perched, Lew Rossman, the findings register, overview, open questions, index, README.
+
+What the batch added to the synthesis. The translations page rested on each repository's own README; S70 is one session that rebuilt twenty of them and timed them together, which narrows Q27 to R and to long models. S71 and S72 add findings from reading and translating the engines: five numbered EPA 5.2.4 defects, a possible culvert defect, and 20 reading notes on OpenSWMM 6 that their own source calls hypotheses (Q47).
+
+Found at ingest. Q46: the size of the 5.2.4 solver is given as 51,080 and 50,788 lines and as 969, 962 and 968 functions. Q48: the What If app's list of empty repositories is older than two READMEs already here. Arithmetic checked and found right: the 28 test scripts of S68, the 376 checks of S69, 21 x 7 x 2 = 294 in S70, and 351,187 / 51,080 = 6.9 for "about seven times".
+
+After this ingest: 321 raw files, 72 ingested, 246 queued, 3 duplicate; 144 pages; 46 questions open, 3 settled.

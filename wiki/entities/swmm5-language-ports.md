@@ -2,7 +2,7 @@
 title: SWMM5 language translations (swmm5-*)
 type: entity
 updated: 2026-11-14
-sources: [S36, S37, S38, S39, S40, S41, S42, S43, S44, S45, S46, S47, S48, S49, S50, S51, S52, S53, S54]
+sources: [S36, S37, S38, S39, S40, S41, S42, S43, S44, S45, S46, S47, S48, S49, S50, S51, S52, S53, S54, S70, S71]
 tags: [swmm5, translation, verification]
 reviewed: no
 ---
@@ -32,6 +32,8 @@ Nineteen public repositories under SWMMBobSWMM6, each EPA SWMM 5.2.4 "written by
 No port reports a model that ran to the end and differed from EPA. Every shortfall is a model stopped at the 1,800 s limit, counted as not run [S54](../sources/S54-swmm5-r-readme.md). The two that stop the slow ports are `SCANLON.inp` and `72_H&H_Elements(2).inp`, the models EPA itself takes longest on (34.8 s and 38.6 s) [S45](../sources/S45-swmm5-ruby-readme.md). EPA's reference run took 256 s for all 480 [S43](../sources/S43-swmm5-pascal-readme.md).
 
 The speeds were measured three different ways (interleaved CPU benchmarks, the gate's clock on a shared machine, ratios to another port's stored times), so the column does not compare across rows. Several READMEs say no interleaved benchmark was run [S43](../sources/S43-swmm5-pascal-readme.md) [S48](../sources/S48-swmm5-fsharp-readme.md).
+
+**A later re-run of all of them but R.** On 12 November 2026 twenty translations (the eighteen here other than R, with swmm5-cplus and swmm5-rust) were rebuilt on one machine, gated again and timed by one benchmark [S70](../sources/S70-swmm-engine-what-if-app-md.md). See [SWMM5 translations: the re-run of 12 November 2026](../concepts/swmm5-ports-rerun-2026-11.md). Stored results for eight of them are in [SWMM Engines, Byte for Byte (app)](swmm-engines-byte-for-byte.md) [S71](../sources/S71-swmm-engines-byte-for-byte-summary.md).
 
 **Rechecks.** From Ruby on, the main session checked each port from a clean clone on 48 models drawn with seed 20261109 [S45](../sources/S45-swmm5-ruby-readme.md). From JavaScript on, each port also had an independent rerun from a clean checkout with the engine regenerated (a sample for R) [S46](../sources/S46-swmm5-javascript-readme.md) [S47](../sources/S47-swmm5-php-readme.md) [S54](../sources/S54-swmm5-r-readme.md).
 

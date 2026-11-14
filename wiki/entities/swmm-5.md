@@ -2,7 +2,7 @@
 title: EPA SWMM 5
 type: entity
 updated: 2026-11-14
-sources: [S02, S04, S08, S11, S15, S17, S19, S20, S21, S22, S41, S55, S59, S62, S67]
+sources: [S02, S04, S08, S11, S15, S17, S19, S20, S21, S22, S41, S55, S59, S62, S67, S68, S70, S71, S72]
 tags: [swmm5, engine]
 reviewed: no
 ---
@@ -32,8 +32,10 @@ The C rewrite of SWMM, first released as 5.0 build 001 on 29 October 2004 [S22](
 
 **In a browser page.** The [Rules for Responsible Modeling (app)](rules-for-responsible-modeling-app.md) runs a WebAssembly build declared as 5.2.4 in a web worker. Its summary gives the binary's SHA-256 but marks the source commit, compiler flags and license audit "not checked" (Q39) [S62](../sources/S62-rules-for-responsible-modeling-app-md.md). The [Topsoil Recovery Check (app)](topsoil-recovery-check.md) pins its 5.2.4 build to tag v5.2.4, commit 7952ca83 [S59](../sources/S59-topsoil-recovery-check-app-md.md).
 
-**Defects in 5.2.4 found by one study.** D1, Modified Horton with MaxInfil (`infil.c` line 545; see [Infiltration methods](../concepts/infiltration-methods.md)), and D2, a drain on a bio-retention cell with no storage layer (see [LID bio-retention layers](../concepts/lid-bioretention-layers.md)) [S59](../sources/S59-topsoil-recovery-check-app-md.md). A third candidate, not yet rerun: the Green-Ampt Newton loop in `infil.c` lines 847 to 856 tests its correction before applying it (see [Green-Ampt Newton test order](../concepts/green-ampt-newton-test-order.md)) [S67](../sources/S67-note-green-ampt-newton-test-order.md).
+**Defects in 5.2.4 found by one study.** D1, Modified Horton with MaxInfil (`infil.c` line 545; see [Infiltration methods](../concepts/infiltration-methods.md)), and D2, a drain on a bio-retention cell with no storage layer (see [LID bio-retention layers](../concepts/lid-bioretention-layers.md)) [S59](../sources/S59-topsoil-recovery-check-app-md.md). Five more, found by translating the engine and numbered in [SWMM Engines, Byte for Byte (app)](swmm-engines-byte-for-byte.md): `inlet.c:146`, `gage.c:251`, `swmm5.c:1593`, `output.c:523`, `project.c:421` [S71](../sources/S71-swmm-engines-byte-for-byte-summary.md). A possible one in `culvert.c`, Form 1 culverts, seen only in a JavaScript copy [S72](../sources/S72-li-swmm6-code-house-article.md). A third candidate, not yet rerun: the Green-Ampt Newton loop in `infil.c` lines 847 to 856 tests its correction before applying it (see [Green-Ampt Newton test order](../concepts/green-ampt-newton-test-order.md)) [S67](../sources/S67-note-green-ampt-newton-test-order.md).
 
 **Back-compatibility hazard.** SWMM 5.2.4 stops with ERROR 205 on SWMM6 `[OPTIONS]` keywords; legacy 5.3 silently ignores them (F-0005, partly unconfirmed) [S04](../sources/S04-findings-register-seed.md).
+
+**The code as a place.** [SWMM5 Code House (app)](swmm5-code-house.md) puts all of it on walls: 51,080 lines, 54 files, 969 functions [S68](../sources/S68-swmm5-code-house-app-md.md). The engine keeps a model in 415 mutable file-scope and program-scope variables, which is why one process holds one model [S70](../sources/S70-swmm-engine-what-if-app-md.md).
 
 **Complexity index.** 69.2 with HydroCouple = 100 [S02](../sources/S02-complexity-meter-app-md.md).

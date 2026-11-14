@@ -2,7 +2,7 @@
 title: The SWMM findings register
 type: concept
 updated: 2026-11-14
-sources: [S03, S04, S05, S59, S67]
+sources: [S03, S04, S05, S59, S67, S71, S72]
 tags: [findings, verification, method]
 reviewed: no
 ---
@@ -32,6 +32,8 @@ A numbered, dated record of what was checked and what came back, proposed in Oct
 **Not yet in the register.** [S03](../sources/S03-findings-register-format.md) lists twenty candidates. [S05](../sources/S05-swmm5org-article-facts.md) lists five named engine findings from Bob's notes, among them a `dt`-rounding bug and 23 documented deviations from SWMM5 in the Rust `hydra` engine. The 14 faults found in the 1971 SWMM 1 listing (see [SWMM 1 (1971)](../entities/swmm-1.md)) have no register IDs. [S59](../sources/S59-topsoil-recovery-check-app-md.md) numbers its own defects D1 (Modified Horton with MaxInfil, see [Infiltration methods](infiltration-methods.md)) and D2 (a drain with no storage layer, see [LID bio-retention layers](lid-bioretention-layers.md)); D1 matches the `MODIFIED_HORTON` candidate in [S03](../sources/S03-findings-register-format.md). Neither has a register ID (Q33 in [Open questions](../open-questions.md)). [S04](../sources/S04-findings-register-seed.md) expects 30 to 40 more entries from the archive before June 2026.
 
 **A new candidate.** [Green-Ampt Newton test order](green-ampt-newton-test-order.md): a note of 14 November 2026 that asks for a register ID; status in the note "working", runs not rerun [S67](../sources/S67-note-green-ampt-newton-test-order.md).
+
+**More candidates from the apps.** Five numbered defects in EPA 5.2.4 found by translating it [S71](../sources/S71-swmm-engines-byte-for-byte-summary.md); a possible `culvert.c` defect and 20 reading notes on OpenSWMM 6, all from source reading and JavaScript copies [S72](../sources/S72-li-swmm6-code-house-article.md). None has a register ID (Q47).
 
 **Linked pages.** [Preissmann slot and surcharge](preissmann-slot-and-surcharge.md) (F-0001), [Continuity is not validation](continuity-is-not-validation.md) (F-0003, F-0007), [OpenSWMM 6 and HydroCouple](../entities/openswmm-6-and-hydrocouple.md) (F-0005).
 

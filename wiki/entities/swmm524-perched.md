@@ -2,7 +2,7 @@
 title: swmm524-perched
 type: entity
 updated: 2026-11-14
-sources: [S08, S59, S55]
+sources: [S08, S55, S59, S70]
 tags: [swmm5, engine, lid, infiltration]
 reviewed: no
 ---
@@ -20,6 +20,8 @@ One of Bob's variants of [EPA SWMM 5](swmm-5.md) [S08](../sources/S08-swmm5org-t
 - With no SOIL2, VG or STRUCT line it writes the same `.out` and LID report as EPA 5.2.4, byte for byte, on 930 of 930 inputs.
 - The build with OPTION support matches the build before VG on 1,346 of 1,346 inputs without VG lines, and the first VG build on 27 of 27 VG inputs without OPTION lines.
 - WebAssembly and native `.out` byte-identical on 38 of 38 VG inputs, OPTION cases included.
+
+**A later count.** At commit 6f253a4 the change is 310 lines added and 2 changed in `lid.c`, `lid.h` and `lidproc.c`; with no SOIL2 line 598 of 598 test inputs write the same `.out` bytes as EPA 5.2.4; and with a subsoil conductivity of 1,000 in/hr runoff equals the stock result to 0.000 in across 64 recovery cases [S70](../sources/S70-swmm-engine-what-if-app-md.md). It is one of four engines on the extend road: see [Wrap, translate or extend](../concepts/wrap-translate-or-extend.md).
 
 **Results on one soil pair** are on [Topsoil over compacted clay](../concepts/topsoil-over-compacted-clay.md): 83.0 % of big winter storms captured, 67.1 % with van Genuchten [S59](../sources/S59-topsoil-recovery-check-app-md.md).
 

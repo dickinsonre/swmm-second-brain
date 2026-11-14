@@ -2,11 +2,13 @@
 title: Where languages part from C
 type: concept
 updated: 2026-11-14
-sources: [S38, S39, S40, S43, S44, S45, S46, S47, S48, S49, S50, S51, S53, S54]
+sources: [S38, S39, S40, S43, S44, S45, S46, S47, S48, S49, S50, S51, S53, S54, S70]
 tags: [translation, numerics]
 reviewed: no
 ---
 The traps the SWMM5 translations met: places where a language computes something other than what EPA's C computes on x86-64. Each README lists its own; these are the ones with numbers or a found case.
+
+On 12 November 2026, 24 of these traps were rerun as probes of a few lines each, and 24 reproduced [S70](../sources/S70-swmm-engine-what-if-app-md.md).
 
 **The sign of zero and of NaN**
 - Perl adds, subtracts and multiplies whole-number doubles as 64-bit integers, so `0.0 * -3.0` is +0.0 in Perl and -0.0 in C [S49](../sources/S49-swmm5-perl-readme.md).

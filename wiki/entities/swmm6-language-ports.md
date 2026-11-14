@@ -2,7 +2,7 @@
 title: SWMM6 language translations (swmm6-*)
 type: entity
 updated: 2026-11-14
-sources: [S23, S24, S25, S26, S27, S28, S29, S30, S31, S32, S33, S34, S35]
+sources: [S23, S24, S25, S26, S27, S28, S29, S30, S31, S32, S33, S34, S35, S70, S71]
 tags: [swmm6, translation, verification]
 reviewed: no
 ---
@@ -29,6 +29,8 @@ Thirteen public repositories under SWMMBobSWMM6, each a translation of the OpenS
 | Rust | 480 | 452 | not given | not stated | [S29](../sources/S29-swmm6-rust-readme.md) |
 
 No port reports a model that ran to the end and differed. Every shortfall in the table is a run that did not finish within its limit, counted as "untested, not failed" [S28](../sources/S28-swmm6-python-readme.md) [S34](../sources/S34-swmm6-hy-readme.md) [S35](../sources/S35-swmm6-ruby-readme.md). Python stopped by choice after 413 models; its 67 slowest were not run on that build [S28](../sources/S28-swmm6-python-readme.md). The same four decks stopped Hy and Ruby at 1,800 s: `SCANLON.inp`, `72_H&H_Elements(2).inp`, `legacy_small.inp`, `refactored_small.inp` [S34](../sources/S34-swmm6-hy-readme.md) [S35](../sources/S35-swmm6-ruby-readme.md).
+
+**As two apps count them.** [SWMM Engine What If (app)](swmm-engine-what-if.md) lists 12 translations, read on 11 November 2026, and names swmm6-ruby among the repositories then empty [S70](../sources/S70-swmm-engine-what-if-app-md.md); the swmm6-ruby README here is later (Q48). [SWMM Engines, Byte for Byte (app)](swmm-engines-byte-for-byte.md) stores six, as of 6 November [S71](../sources/S71-swmm-engines-byte-for-byte-summary.md). Neither app re-ran the SWMM6 ports.
 
 **Checks beyond the first gate.** From Kotlin on, each port had an independent rerun from a clean copy, with the engine regenerated and compared byte for byte with the committed files: all 480 for Kotlin, Groovy, JavaScript and F#, a sample of 142 for Hy and Ruby. Then a second check from a clean clone on 48 corpus models and 12 extra decks [S30](../sources/S30-swmm6-kotlin-readme.md) [S33](../sources/S33-swmm6-fsharp-readme.md) [S34](../sources/S34-swmm6-hy-readme.md) [S35](../sources/S35-swmm6-ruby-readme.md).
 

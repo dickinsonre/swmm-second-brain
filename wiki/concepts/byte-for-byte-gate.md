@@ -2,7 +2,7 @@
 title: Byte-for-byte gate
 type: concept
 updated: 2026-11-14
-sources: [S23, S28, S29, S30, S34, S35, S41]
+sources: [S23, S28, S29, S30, S34, S35, S41, S70, S71]
 tags: [verification, method, translation]
 reviewed: no
 ---
@@ -24,6 +24,8 @@ The test every SWMM5 and SWMM6 translation is held to: run the translation and t
 **Rechecks.** Later ports added two: an independent rerun from a clean copy, with the engine regenerated and compared with the committed files before it is gated, and a second check from a clean clone on a random sample (seed 20261110) plus the three decks that SAVE and USE `cho.txt` [S30](../sources/S30-swmm6-kotlin-readme.md). Slow ports reran a sample instead of the full set [S34](../sources/S34-swmm6-hy-readme.md).
 
 **A stronger form.** [swmm6-rust](../entities/swmm6-rust.md) adds a state gate: every member of the engine's context, dumped as hex bits after each routing step and compared, because "a float32 `.out` can hide" a difference. It also checks leaf functions against upstream's own code [S29](../sources/S29-swmm6-rust-readme.md).
+
+**Where the verdicts can be read.** [SWMM Engines, Byte for Byte (app)](../entities/swmm-engines-byte-for-byte.md) stores every model's verdict and fingerprints for eight SWMM 5 translations [S71](../sources/S71-swmm-engines-byte-for-byte-summary.md). All twenty were gated again on 12 November 2026 [S70](../sources/S70-swmm-engine-what-if-app-md.md).
 
 **What a pass does not show.** Agreement on models outside the 480 and the 452: "a feature no gate model or deck uses is untested" [S23](../sources/S23-swmm6-csharp-readme.md).
 

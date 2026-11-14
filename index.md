@@ -1,10 +1,10 @@
 # Index
 
-Every page in the wiki, one line each. An agent reads this first. Updated on every ingest. Last update: 2026-11-14 (67 sources, 36 concepts, 28 entities).
+Every page in the wiki, one line each. An agent reads this first. Updated on every ingest. Last update: 2026-11-14 (72 sources, 38 concepts, 32 entities).
 
 ## Start here
 - [Overview: what this wiki holds so far](wiki/overview.md): what the wiki holds so far, by Bob's six themes, and what is missing.
-- [Open questions](wiki/open-questions.md): 41 contradictions, doubtful numbers and gaps waiting for a source or for Bob, and 3 settled by a primary document.
+- [Open questions](wiki/open-questions.md): 46 contradictions, doubtful numbers and gaps waiting for a source or for Bob, and 3 settled by a primary document.
 - [Schema](CLAUDE.md): how the wiki is kept. [Log](log.md): what was done and when.
 
 ## Concepts
@@ -52,6 +52,8 @@ Measurement and method
 - [Matching glibc math in a translation](wiki/concepts/glibc-math-in-translation.md): 19 math functions, two routes (translate glibc's code, or call the system glibc), and how each is tested.
 - [What the gate cannot see](wiki/concepts/gate-blind-spots.md): controls, checked builds, runtime replays, untested paths, and models stopped at the limit.
 - [Where languages part from C](wiki/concepts/where-languages-part-from-c.md): the traps the SWMM5 translations met, from the sign of zero to HotSpot's method-size limit.
+- [Wrap, translate or extend](wiki/concepts/wrap-translate-or-extend.md): three roads to SWMM in another language or with new physics, and the four engines that extend EPA's C.
+- [SWMM5 translations: the re-run of 12 November 2026](wiki/concepts/swmm5-ports-rerun-2026-11.md): twenty translations rebuilt on one machine, gated again and timed by one benchmark.
 - [Calibration, validation and uncertainty](wiki/concepts/calibration-validation-uncertainty.md): William James's rules as Bob reports them, and the thresholds his app teaches (NSE 0.7, peak 15 %, volume 10 %).
 
 Economics
@@ -79,6 +81,10 @@ Apps
 - [Topsoil Recovery Check (app)](wiki/entities/topsoil-recovery-check.md): five engines in one page, verify.py with 1,181 cases, version 2026-11-12.
 - [Rules for Responsible Modeling (app)](wiki/entities/rules-for-responsible-modeling-app.md): the Lovable edition of William James's book, with EPA SWMM 5.2.4 in the page; 61 of 61 tests, version 2026.1.2.
 - [Cost Allocation Game Theory Explorer (app)](wiki/entities/cost-allocation-explorer.md): the Lovable app of the 1982 Heaney and Dickinson paper; five methods, 101 of 101 tests, version 1.0.1.
+- [SWMM5 Code House (app)](wiki/entities/swmm5-code-house.md): the 5.2.4 source as a walkable house, 58 rooms and 51,080 lines, with the engine running inside; version 1.15.1.
+- [SWMM6 Code House (app)](wiki/entities/swmm6-code-house.md): the OpenSWMM 6 source as a house, 102 rooms and 351,187 lines; reads results, runs nothing; version 1.2.1.
+- [SWMM Engine What If (app)](wiki/entities/swmm-engine-what-if.md): which language, for which job, by which road; version 1.4 re-ran all twenty SWMM 5 translations.
+- [SWMM Engines, Byte for Byte (app)](wiki/entities/swmm-engines-byte-for-byte.md): stored gate verdicts for eight SWMM 5 and six SWMM6 translations, and five EPA 5.2.4 defects.
 - [World Rainfall Pattern Painter (app)](wiki/entities/world-rainfall-pattern-painter.md): the Lovable design-storm generator; 339 patterns (3 High, 57 Medium, 279 Low confidence), 1,502 of 1,502 tests, version 3.2.0.
 
 Data
@@ -108,6 +114,10 @@ App summaries
 - [S61](wiki/sources/S61-cost-allocation-explorer-app-md.md) (2026-11-14): Cost Allocation Game Theory Explorer, technical summary, v1.0.1.
 - [S62](wiki/sources/S62-rules-for-responsible-modeling-app-md.md) (2026-11-14): Rules for Responsible Modeling, technical summary, v2026.1.2.
 - [S65](wiki/sources/S65-world-rainfall-pattern-painter-app-md.md) (2026-11-14): World Rainfall Pattern Painter, technical summary, v3.2.0.
+- [S68](wiki/sources/S68-swmm5-code-house-app-md.md) (2026-11-11): SWMM5 Code House, technical summary, v1.15.1.
+- [S69](wiki/sources/S69-swmm6-code-house-app-md.md) (2026-11-11): SWMM6 Code House, technical summary, v1.2.1.
+- [S70](wiki/sources/S70-swmm-engine-what-if-app-md.md) (2026-11-12): SWMM Engine What If, technical summary, v1.4.
+- [S71](wiki/sources/S71-swmm-engines-byte-for-byte-summary.md) (2026-11-14): SWMM Engines, Byte for Byte, summary written from the page by Claude.
 
 Manuals and reports (primary documents)
 - [S60](wiki/sources/S60-epa-swmm5-reference-manual-vol2-hydraulics.md) (2017-05): EPA SWMM Reference Manual, Volume II, Hydraulics, by L. A. Rossman. Read in part: section 1.1 and Chapter 3.
@@ -147,6 +157,7 @@ LinkedIn articles
 - [S63](wiki/sources/S63-li-edition-53-measure-of-honest-numbers.md) (2026-02-23): Edition 53, The Measure of Honest Numbers: William James and the app of his book.
 - [S64](wiki/sources/S64-li-heaney-1982-paper-cost-allocation-app.md) (2026-03-08): From a 1982 Water Resources Paper to an Interactive App: Jim Heaney and the cost allocation app.
 - [S66](wiki/sources/S66-li-design-storm-app-66-patterns.md) (2026-02-25): Design Storm App for 6 Continents and 66 Patterns: the rainfall app as announced.
+- [S72](wiki/sources/S72-li-swmm6-code-house-article.md) (2026-11-04): SWMM6 Code House, Every Line of OpenSWMM 6 on a Wall: both houses, and 20 reading notes.
 
 Repository READMEs (SWMM6 translations)
 - [S23](wiki/sources/S23-swmm6-csharp-readme.md) (2026-11-04): swmm6-csharp, the OpenSWMM 6 engine in C#; 480 of 480, 452 of 452.
@@ -186,7 +197,7 @@ Repository READMEs (SWMM5 translations)
 
 ## Queue
 
-247 raw files are queued: 213 LinkedIn articles, 19 manual files in `raw/manuals/` (8 EPA, USGS and FHWA documents not yet started, and 11 SWMM 4.4 documentation files), 9 app files, 4 swmm5.org topic pages and 2 SWMM 1 build notes. Three more LinkedIn files are byte-identical copies of others and are marked `duplicate`. One queued app file, SWMM 1 Engine 3.12, is a newer version of an ingested one (3.6) and should go early. `raw/MANIFEST.csv` lists them all. Suggested next batches, in order:
+246 raw files are queued: 212 LinkedIn articles, 19 manual files in `raw/manuals/` (8 EPA, USGS and FHWA documents not yet started, and 11 SWMM 4.4 documentation files), 9 app files, 4 swmm5.org topic pages and 2 SWMM 1 build notes. Three more LinkedIn files are byte-identical copies of others and are marked `duplicate`. One queued app file, SWMM 1 Engine 3.12, is a newer version of an ingested one (3.6) and should go early. `raw/MANIFEST.csv` lists them all. Suggested next batches, in order:
 
 0. The rest of the EPA hydraulics manual, a chapter at a time (S60 is read in part), then the 2006 quality assurance report and the SWMM 5.1 User's Manual. These are the primary documents; ingesting them first lets later articles be checked against them.
 1. The four remaining swmm5.org topic pages and the SWMM 1 build notes (small, and they complete themes 3 to 6).

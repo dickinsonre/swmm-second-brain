@@ -2,7 +2,7 @@
 title: OpenSWMM 6 and HydroCouple
 type: entity
 updated: 2026-11-14
-sources: [S02, S03, S04, S05, S21, S22, S23, S29, S59]
+sources: [S02, S03, S04, S05, S21, S22, S23, S29, S59, S69, S72]
 tags: [swmm6, engine, hydrocouple]
 reviewed: no
 ---
@@ -27,6 +27,8 @@ OpenSWMM 6 is the SWMM line developed at HydroCouple [S22](../sources/S22-li-ten
 - Anderson acceleration gave no speedup on one test case (F-0013) [S04](../sources/S04-findings-register-seed.md).
 - 6.0.0-alpha.4 ignores an unknown LID layer keyword (SOIL2) instead of reporting it; an issue was drafted with a tested patch [S59](../sources/S59-topsoil-recovery-check-app-md.md).
 - Defect D2, a drain on a bio-retention cell with no storage layer, gives the same -1,100.9 % continuity error in OpenSWMM 5.3.0-beta.3 and 6.0.0-alpha.4 as in EPA 5.2.4; and OpenSWMM 6 keeps 5.2.4's rule that LID soil evaporation stops while water infiltrates (`LID.cpp` line 907). See [LID bio-retention layers](../concepts/lid-bioretention-layers.md) [S59](../sources/S59-topsoil-recovery-check-app-md.md).
+
+**Size and shape, from reading it.** 351,187 lines in 675 files at 6.0.0-alpha.4, commit 9648837 [S69](../sources/S69-swmm6-code-house-app-md.md). A run's state lives in one `SimulationContext`, one per concurrent simulation, and a node is an index into arrays; output is written by a separate IO thread; a fourth routing model, FV, is an explicit finite volume method [S72](../sources/S72-li-swmm6-code-house-article.md). The [SWMM6 Code House (app)](swmm6-code-house.md) holds 20 reading notes on this code, all hypotheses.
 
 **Builds on record.** Branch swmm6_rel, commit 13746831, licensed Apache-2.0: OpenSWMM 6.0.0-alpha.4 and the legacy engine 5.3.0-beta.3, both built to WebAssembly for the [Topsoil Recovery Check (app)](topsoil-recovery-check.md) and rebuilt byte-identical from the pinned sources with Zig 0.17.0 [S59](../sources/S59-topsoil-recovery-check-app-md.md).
 

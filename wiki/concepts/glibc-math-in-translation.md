@@ -2,7 +2,7 @@
 title: Matching glibc math in a translation
 type: concept
 updated: 2026-11-14
-sources: [S23, S24, S27, S28, S30, S32, S33, S34, S35, S41, S44, S51, S52, S54]
+sources: [S23, S24, S27, S28, S30, S32, S33, S34, S35, S41, S44, S51, S52, S54, S70]
 tags: [translation, numerics, verification]
 reviewed: no
 ---
@@ -15,6 +15,8 @@ A byte-for-byte translation needs every math function to return the same bits as
 - Ruby: Fiddle calls where MRI decides or has no function: `cbrt`, `expm1`, `log1p`, `fmod`, `remainder`, `nextafter`, `pow` of a negative base, and `acos`, `asin` and the logarithms outside their domains [S35](../sources/S35-swmm6-ruby-readme.md).
 
 **In the SWMM5 translations.** EPA calls ten glibc functions (exp, log, log10, pow, sin, cos, tan, asin, acos, atan) 1,524,961,124 times over the 480 gate models. On x86-64, glibc picks versions compiled with fused multiply-add at start-up when the processor has FMA and AVX2, and EPA run on the generic routines changes 43 of 480 models [S41](../sources/S41-swmm5-go-readme.md). So the routes split: a port carrying translated glibc (Go, Java, TypeScript, Kotlin, JavaScript, Groovy) matches EPA on an FMA processor anywhere, but would not follow EPA onto one without; a port that calls the system glibc (Fortran, C#, Zig, Free Pascal, Ruby, PHP, F#, Perl, Hy, Mojo, R) should follow EPA there, which was not tested [S41](../sources/S41-swmm5-go-readme.md) [S44](../sources/S44-swmm5-zig-readme.md). Lua does both: glibc at run time, plus translated `pow` for an exponent of 2 and `atan` [S51](../sources/S51-swmm5-lua-readme.md). Calling glibc is not enough on its own: the binary must bind the symbol versions EPA binds (`exp@GLIBC_2.29` and so on), and the language must not decide some cases itself. CPython and lupa bind the older SVID wrappers, and R, Ruby, Perl and PHP each decide some zero, NaN or domain-error cases on their own [S52](../sources/S52-swmm5-hy-readme.md) [S51](../sources/S51-swmm5-lua-readme.md) [S54](../sources/S54-swmm5-r-readme.md). See [Where languages part from C](where-languages-part-from-c.md).
+
+**Which ports follow EPA off FMA, measured.** On 12 November 2026 glibc was forced to its generic routines (`GLIBC_TUNABLES=glibc.cpu.hwcaps=-AVX2,-FMA,-FMA4`). EPA's output changed on 43 of 480 models. Fourteen ports followed EPA to the new answers on every affected model run: C++, Rust, Fortran, Zig, Pascal, Mojo, C#, F#, Python, PHP, Ruby, Lua, Hy, Perl. Six kept the FMA answers: Go, Java, Kotlin, Groovy, TypeScript, JavaScript. The test forces the routines on an FMA machine; it was not run on a processor without FMA [S70](../sources/S70-swmm-engine-what-if-app-md.md).
 
 **How each route is proved.** Each translated function is tested against the system's glibc 2.39 on about a million arguments, special values and NaN payloads included, with no difference. The READMEs call that "a test, not a proof" [S24](../sources/S24-swmm6-go-readme.md). The math tests of each newer port are kept in its `results/libm_tests.txt` [S30](../sources/S30-swmm6-kotlin-readme.md).
 
