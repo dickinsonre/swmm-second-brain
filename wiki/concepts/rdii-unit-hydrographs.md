@@ -2,7 +2,7 @@
 title: RDII unit hydrographs (RTK)
 type: concept
 updated: 2026-11-14
-sources: [S16]
+sources: [S16, S55]
 tags: [hydrology, rdii, swmm5]
 reviewed: no
 ---
@@ -30,4 +30,6 @@ A blank parameter is taken as 0 [S16](../sources/S16-li-rdii-in-swmm5.md).
 
 **A use beyond RDII.** With calibrated unit hydrographs the RDII procedure can replace the subcatchment rainfall-runoff procedure, in which case "RDII" at a node is really overland runoff [S16](../sources/S16-li-rdii-in-swmm5.md).
 
-**Not in the sources yet.** How InfoSWMM and ICM treat RDII (the article's title promises it, but those parts were images), and Bob's own account of coding the RTK method. Queued: "InfoSWMM, InfoSWMM SA RDII Analyst 3.0 with EPA SSOAP Tools" (2017, 4,019 words).
+**Who wrote it.** Bob coded the RTK/RDII implementation for SWMM 5 during the CRADA project with EPA [S55](../sources/S55-swmm-brain-readme.md). His later tools on it: an RTK Hydrograph Generator app, the RDII Analyst at Innovyze, and Ruby scripts for RTK parameter fitting in ICM [S55](../sources/S55-swmm-brain-readme.md).
+
+**Not in the sources yet.** How InfoSWMM and ICM treat RDII (the article's title promises it, but those parts were images), and a description of the method from the code. Queued: "InfoSWMM, InfoSWMM SA RDII Analyst 3.0 with EPA SSOAP Tools" (2017, 4,019 words).

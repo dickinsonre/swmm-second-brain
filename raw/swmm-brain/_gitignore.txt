@@ -1,0 +1,5 @@
+/*/
+!/notes/
+!/notes/**
+.DS_Store
+*.swp

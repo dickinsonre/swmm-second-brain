@@ -2,7 +2,7 @@
 title: SWMM version history, 1969 to 2026
 type: concept
 updated: 2026-11-14
-sources: [S01, S07, S11, S12, S19, S21, S22]
+sources: [S01, S07, S11, S12, S19, S20, S21, S22, S55, S60]
 tags: [swmm-history, timeline]
 reviewed: no
 ---
@@ -18,6 +18,7 @@ The timeline as the ingested sources give it. Where two sources differ, both are
 | 1978 | Bob begins work on SWMM itself, starting with SWMM 2.5 | [S07](../sources/S07-swmm5org-topic-swmm-history.md) |
 | November 1981 | SWMM 3 User's Manual (Huber, Heaney, Nix, Dickinson, Polmann) | [S19](../sources/S19-li-edition-29-engine-speed.md) |
 | 1981 | EXTRAN 3 test model, later SWMM 5's Extran1.INP | [S19](../sources/S19-li-edition-29-engine-speed.md) |
+| 1981 | CDM publishes the Extran manual, with 7 test files | [S55](../sources/S55-swmm-brain-readme.md) |
 | August 1988 | SWMM 4 User's Manual (Huber and Dickinson) and EXTRAN Addendum (Roesner, Aldrich, Dickinson) | [S19](../sources/S19-li-edition-29-engine-speed.md) |
 | 1988 to 2004 | No major version for sixteen years | [S21](../sources/S21-li-edition-56-swmm-history.md) |
 | 1969 to 1992 | Years the article gives for SWMM development at Black Hall, University of Florida | [S12](../sources/S12-li-diamond-village.md) |
@@ -37,12 +38,25 @@ The timeline as the ingested sources give it. Where two sources differ, both are
 
 There were 42 builds of SWMM 5 from 5.0.001 to 5.2.4 [S22](../sources/S22-li-ten-problems.md).
 
+**EPA's own summary** (Table 1-1 of the hydraulics reference manual) [S60](../sources/S60-epa-swmm5-reference-manual-vol2-hydraulics.md)
+
+| Version | Year | Contributors | What it added |
+|---|---|---|---|
+| SWMM I | 1971 | Metcalf & Eddy, Water Resources Engineers, University of Florida | First version; focus on combined sewer overflows |
+| SWMM II | 1975 | University of Florida | First widely distributed version |
+| SWMM 3 | 1981 | University of Florida, Camp Dresser & McKee | Full dynamic wave routine, Green-Ampt infiltration, snow melt, continuous simulation |
+| SWMM 3.3 | 1983 | US EPA | First PC version |
+| SWMM 4 | 1988 | Oregon State University, Camp Dresser & McKee | Groundwater, RDII, irregular channel cross-sections, over a series of updates through the 1990s |
+| SWMM 5 | 2005 | US EPA, CDM-Smith | Complete rewrite in C, graphical interface, LID |
+
 **After SWMM 5.** Four lines move forward separately: SWMM5+ at CIMM, OpenSWMM 6 at HydroCouple, EPA's 5.2 line and the vendor engines. They share no common test models and no shared definition of "agrees with SWMM5" [S22](../sources/S22-li-ten-problems.md).
 
 **Disagreements** (all in [Open questions](../open-questions.md))
-- Q02. Who built SWMM 1: [S21](../sources/S21-li-edition-56-swmm-history.md) names Camp Dresser & McKee where [S01](../sources/S01-swmm1-engine-app-md.md) and [S07](../sources/S07-swmm5org-topic-swmm-history.md) name Water Resources Engineers.
-- Q14. [S21](../sources/S21-li-edition-56-swmm-history.md) says SWMM 2 (1975) added EXTRAN. No other ingested source dates EXTRAN's arrival.
+- Q02, settled: EPA's table gives Water Resources Engineers, not Camp Dresser & McKee, for SWMM I [S60](../sources/S60-epa-swmm5-reference-manual-vol2-hydraulics.md).
+- Q14, settled: EXTRAN and the dynamic wave routine arrived with SWMM 3 in 1981 [S60](../sources/S60-epa-swmm5-reference-manual-vol2-hydraulics.md), not with SWMM 2 as [S21](../sources/S21-li-edition-56-swmm-history.md) says.
+- Q31 and Q32, new: EPA's table dates the first PC version to SWMM 3.3 in 1983 and SWMM 5 to 2005 [S60](../sources/S60-epa-swmm5-reference-manual-vol2-hydraulics.md); other sources say 1988 and October 2004.
 - Q01. [S20](../sources/S20-li-edition-54-two-solvers.md) dates 5.1.013 to "around 2012".
-- Q06. Bob's own start dates differ between articles.
+- Q06. Bob's own start dates differ between articles: first model run in 1974 [S55](../sources/S55-swmm-brain-readme.md), punch cards from 1977 [S19](../sources/S19-li-edition-29-engine-speed.md), on SWMM itself since 1978 [S07](../sources/S07-swmm5org-topic-swmm-history.md).
+- Q29. Bob's years at Innovyze: from 2005 [S55](../sources/S55-swmm-brain-readme.md) or from January 2008 [S11](../sources/S11-li-my-history-with-swmm.md).
 
 Pages for the versions: [SWMM 1 (1971)](../entities/swmm-1.md), [EXTRAN](../entities/extran.md), [EPA SWMM 5](../entities/swmm-5.md), [OpenSWMM 6 and HydroCouple](../entities/openswmm-6-and-hydrocouple.md). Cited once here: [S20](../sources/S20-li-edition-54-two-solvers.md).

@@ -28,6 +28,6 @@ Where the two engines differ, from the four comparison sources ingested so far. 
 
 **Geometry.** The two compute the area, hydraulic radius and top width of a partly full circular pipe by different approximations; the flow difference is typically under 1 % [S20](../sources/S20-li-edition-54-two-solvers.md).
 
-**Not in the sources yet.** Most of Bob's SWMM5-and-ICM writing. Of the 219 queued LinkedIn articles, 141 name ICM or InfoWorks in the title, among them the 2023 "Top 100 Reasons" list.
+**Not in the sources yet.** Most of Bob's SWMM5-and-ICM writing. Of the 216 queued LinkedIn articles, 139 name ICM or InfoWorks in the title, among them the 2023 "Top 100 Reasons" list.
 
 See [InfoWorks ICM](../entities/infoworks-icm.md), [EPA SWMM 5](../entities/swmm-5.md), [Dynamic wave routing](dynamic-wave-routing.md), [Preissmann slot and surcharge](preissmann-slot-and-surcharge.md).

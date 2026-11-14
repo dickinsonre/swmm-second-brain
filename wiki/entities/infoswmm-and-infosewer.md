@@ -18,6 +18,6 @@ Two Innovyze products. Bob was their Product Sector Leader from January 2008, al
 
 **Company history, as [S11](../sources/S11-li-my-history-with-swmm.md) tells it.** MWH Soft became Innovyze. In 2017 EQT owned both Innovyze (bought from Stantec, via MWH) and XP Solutions (bought from Cardno), which sells XP-SWMM [S11](../sources/S11-li-my-history-with-swmm.md).
 
-**Not in the sources yet.** The ISDB file layout, the InfoSewer engine, manhole loads, and the migration to ICM. Queued: 51 LinkedIn articles name InfoSewer or InfoSWMM in the title, among them "From Legacy to Future: Recalling the Engine of InfoSewer" (2024).
+**Not in the sources yet.** The ISDB file layout, the InfoSewer engine, manhole loads, and the migration to ICM. Queued: 50 LinkedIn articles name InfoSewer or InfoSWMM in the title, among them "From Legacy to Future: Recalling the Engine of InfoSewer" (2024).
 
 See [Kinematic wave and steady flow routing](../concepts/kinematic-wave-and-steady-flow.md), [InfoWorks ICM](infoworks-icm.md).

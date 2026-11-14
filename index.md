@@ -1,10 +1,10 @@
 # Index
 
-Every page in the wiki, one line each. An agent reads this first. Updated on every ingest. Last update: 2026-11-14 (23 sources, 25 concepts, 17 entities).
+Every page in the wiki, one line each. An agent reads this first. Updated on every ingest. Last update: 2026-11-14 (60 sources, 32 concepts, 23 entities).
 
 ## Start here
 - [Overview: what this wiki holds so far](wiki/overview.md): what the wiki holds so far, by Bob's six themes, and what is missing.
-- [Open questions](wiki/open-questions.md): 21 contradictions, doubtful numbers and gaps waiting for a source or for Bob.
+- [Open questions](wiki/open-questions.md): 31 contradictions, doubtful numbers and gaps waiting for a source or for Bob, and 3 settled by a primary document.
 - [Schema](CLAUDE.md): how the wiki is kept. [Log](log.md): what was done and when.
 
 ## Concepts
@@ -21,6 +21,7 @@ Hydrology
 - [Subcatchment width](wiki/concepts/subcatchment-width.md): a fitting knob presented as a length; Bob's objection to one width for all subareas.
 - [Infiltration methods](wiki/concepts/infiltration-methods.md): Curve Number, Horton, Modified Horton and Green-Ampt by their entry points in the code.
 - [RDII unit hydrographs (RTK)](wiki/concepts/rdii-unit-hydrographs.md): R, T and K, unit hydrograph groups, and the interface file format.
+- [Two-layer soil infiltration (SOIL2)](wiki/concepts/two-layer-infiltration.md): Bob's SOIL2 proposal, a second soil layer through the LID machinery.
 - [LID bio-retention layers](wiki/concepts/lid-bioretention-layers.md): the storage-layer and no-storage setups, soil ET off while infiltrating, and defect D2 (a drain with no storage layer makes water).
 - [Topsoil over compacted clay](wiki/concepts/topsoil-over-compacted-clay.md): one soil pair, five SWMM setups, 67.1 to 100.0 % of big winter storms captured.
 - [Evaporation during rain (DRY_ONLY)](wiki/concepts/evaporation-during-rain.md): switching it off moves capture by 1.3 points at most, and why.
@@ -43,6 +44,12 @@ Measurement and method
 - [Negative results](wiki/concepts/negative-results.md): five ideas that did not work, kept on purpose.
 - [App complexity index (HydroCouple = 100)](wiki/concepts/app-complexity-index.md): the eight-dimension index with HydroCouple = 100, and nine scores on record.
 - [Six quality markers for app-building work](wiki/concepts/app-quality-markers.md): six markers of checking in Bob's app-building conversations, by quarter.
+- [App build contract (four working principles)](wiki/concepts/app-build-contract.md): four working principles and the floor every app ships with.
+- [A surrogate distilled from SWMM](wiki/concepts/surrogate-distilled-from-swmm.md): an idea at seed stage: train the emulator on SWMM's own storms.
+- [Byte-for-byte gate](wiki/concepts/byte-for-byte-gate.md): how a translation is held to its original: identical `.out`, `.rpt` but three clock lines, same exit code, on 480 + 452 decks.
+- [Matching glibc math in a translation](wiki/concepts/glibc-math-in-translation.md): 19 math functions, two routes (translate glibc's code, or call the system glibc), and how each is tested.
+- [What the gate cannot see](wiki/concepts/gate-blind-spots.md): controls, checked builds, runtime replays, untested paths, and models stopped at the limit.
+- [Where languages part from C](wiki/concepts/where-languages-part-from-c.md): the traps the SWMM5 translations met, from the sign of zero to HotSpot's method-size limit.
 
 ## Entities
 
@@ -52,7 +59,10 @@ Engines and programs
 - [EPA SWMM 5](wiki/entities/swmm-5.md): the C rewrite of 2004: origin, releases, status, Bob's variants.
 - [InfoWorks ICM](wiki/entities/infoworks-icm.md): the Wallingford and Autodesk engine: solver, surcharge, network types.
 - [InfoSWMM and InfoSewer](wiki/entities/infoswmm-and-infosewer.md): the two Innovyze products Bob led from 2008.
-- [OpenSWMM 6 and HydroCouple](wiki/entities/openswmm-6-and-hydrocouple.md): the little the ingested sources say so far, six findings, the swmm6_rel builds on record.
+- [OpenSWMM 6 and HydroCouple](wiki/entities/openswmm-6-and-hydrocouple.md): the commit the translations start from, licence, modules, and four findings.
+- [SWMM6 language translations (swmm6-*)](wiki/entities/swmm6-language-ports.md): thirteen languages, results table, how each was made and rechecked.
+- [SWMM5 language translations (swmm5-*)](wiki/entities/swmm5-language-ports.md): EPA SWMM 5.2.4 in 19 languages, results and speeds as published, how the back ends descend from each other.
+- [swmm6-rust](wiki/entities/swmm6-rust.md): OpenSWMM 6 in safe Rust, 1D on 932 decks and 2D on 1,315 of 1,415, with state-level gates.
 - [swmm524-perched](wiki/entities/swmm524-perched.md): EPA 5.2.4 plus SOIL2, van Genuchten and STRUCT lines; byte-identical to 5.2.4 without them.
 
 Apps
@@ -62,9 +72,16 @@ Apps
 - [Claude chat archive (app)](wiki/entities/claude-chat-archive.md): 1,671 conversations and 800 apps as of 14 October 2026.
 - [Topsoil Recovery Check (app)](wiki/entities/topsoil-recovery-check.md): five engines in one page, verify.py with 1,181 cases, version 2026-11-12.
 
+Data
+- [1729-SWMM5-Models-2030 (the corpus)](wiki/entities/corpus-1729.md): Bob's public model repository; 480 of its models are the translations' gate set.
+
 Sites
 - [OpenSWMM.org (the forum)](wiki/entities/openswmm-forum.md): Bob's 4,014 posts in 2,879 threads since 1995.
 - [swmm5.org](wiki/entities/swmm5-org.md): the WordPress site and its six topic pages.
+
+Repositories
+- [Bob's GitHub repositories (where the rest of the material lives)](wiki/entities/bobs-github-repositories.md): 30 repositories named in the sources, with Bob's description of each; the map for future ingests.
+- [swmm-brain (the old brain repository)](wiki/entities/swmm-brain-repo.md): the earlier brain repository this one replaced, and what carried over.
 
 People
 - [Robert (Bob) Dickinson](wiki/entities/robert-dickinson.md): professional timeline from his own articles, with the dates that disagree.
@@ -78,12 +95,21 @@ App summaries
 - [S02](wiki/sources/S02-complexity-meter-app-md.md) (2026-11-11): SWMM App Complexity Meter, technical summary, v1.9.1.
 - [S59](wiki/sources/S59-topsoil-recovery-check-app-md.md) (2026-11-12): Topsoil Recovery Check, technical summary, version 2026-11-12.
 
+Manuals and reports (primary documents)
+- [S60](wiki/sources/S60-epa-swmm5-reference-manual-vol2-hydraulics.md) (2017-05): EPA SWMM Reference Manual, Volume II, Hydraulics, by L. A. Rossman. Read in part: section 1.1 and Chapter 3.
+
 Notes and data
 - [S03](wiki/sources/S03-findings-register-format.md) (2026-10-09): findings register, format and twenty candidates.
 - [S04](wiki/sources/S04-findings-register-seed.md) (2026-10-09): findings register, seed entries F-0001 to F-0014.
 - [S05](wiki/sources/S05-swmm5org-article-facts.md) (2026-10-16): fact sheet measured from the chat archive.
 - [S09](wiki/sources/S09-openswmm-thread-list.md) (2026-11-01): OpenSWMM thread list, 1995 to 2026.
 - [S10](wiki/sources/S10-openswmm-top25-problems.md) (2026-11-06): top 25 problems tagged from thread titles.
+
+The old swmm-brain repository
+- [S55](wiki/sources/S55-swmm-brain-readme.md) (2026-08-22): README: enhancements, apps, scripts, timeline.
+- [S56](wiki/sources/S56-swmm-brain-note-surrogate.md) (2026-06-29): note, a surrogate distilled from SWMM's own storms.
+- [S57](wiki/sources/S57-swmm-brain-setup-script.md) (2026-08-22): setup.sh, the list of knowledge repositories.
+- [S58](wiki/sources/S58-swmm-brain-working-principles.md) (2026-08-22): four working principles for building apps.
 
 swmm5.org pages
 - [S06](wiki/sources/S06-swmm5org-topics-index.md) (2026-11-01): Topics landing page.
@@ -104,10 +130,47 @@ LinkedIn articles
 - [S21](wiki/sources/S21-li-edition-56-swmm-history.md) (2026-03-02): Edition 56, The $350,000 Model.
 - [S22](wiki/sources/S22-li-ten-problems.md) (2026-11-05): Ten Problems with How SWMM Was Developed and Explained.
 
+Repository READMEs (SWMM6 translations)
+- [S23](wiki/sources/S23-swmm6-csharp-readme.md) (2026-11-04): swmm6-csharp, the OpenSWMM 6 engine in C#; 480 of 480, 452 of 452.
+- [S24](wiki/sources/S24-swmm6-go-readme.md) (2026-11-04): swmm6-go, the OpenSWMM 6 engine in Go; 480 of 480, 452 of 452.
+- [S25](wiki/sources/S25-swmm6-java-readme.md) (2026-11-04): swmm6-java, the OpenSWMM 6 engine in Java; 480 of 480, 452 of 452.
+- [S26](wiki/sources/S26-swmm6-typescript-readme.md) (2026-11-05): swmm6-typescript, the OpenSWMM 6 engine in TypeScript; 480 of 480, 452 of 452.
+- [S27](wiki/sources/S27-swmm6-fortran-readme.md) (2026-11-04): swmm6-fortran, the OpenSWMM 6 engine in Fortran; 480 of 480, 452 of 452.
+- [S28](wiki/sources/S28-swmm6-python-readme.md) (2026-11-06): swmm6-python, the OpenSWMM 6 engine in Python; 412 of 413 run, 450 of 452.
+- [S29](wiki/sources/S29-swmm6-rust-readme.md) (2026-11-12): swmm6-rust, the OpenSWMM 6 engine in Rust; 1D on all 932 decks; 2D on 1,315 of 1,415.
+- [S30](wiki/sources/S30-swmm6-kotlin-readme.md) (2026-11-10): swmm6-kotlin, the OpenSWMM 6 engine in Kotlin; 480 of 480, 452 of 452.
+- [S31](wiki/sources/S31-swmm6-groovy-readme.md) (2026-11-10): swmm6-groovy, the OpenSWMM 6 engine in Groovy; 480 of 480, 452 of 452.
+- [S32](wiki/sources/S32-swmm6-javascript-readme.md) (2026-11-10): swmm6-javascript, the OpenSWMM 6 engine in JavaScript; 480 of 480, 452 of 452.
+- [S33](wiki/sources/S33-swmm6-fsharp-readme.md) (2026-11-10): swmm6-fsharp, the OpenSWMM 6 engine in F#; 480 of 480, 452 of 452.
+- [S34](wiki/sources/S34-swmm6-hy-readme.md) (2026-11-10): swmm6-hy, the OpenSWMM 6 engine in Hy; 478 of 480, 450 of 452.
+- [S35](wiki/sources/S35-swmm6-ruby-readme.md) (2026-11-12): swmm6-ruby, the OpenSWMM 6 engine in Ruby; 478 of 480, 450 of 452.
+
+Repository READMEs (SWMM5 translations)
+- [S36](wiki/sources/S36-swmm5-fortran-readme.md) (2026-11-06): swmm5-fortran, EPA SWMM 5.2.4 in Fortran; 480 of 480.
+- [S37](wiki/sources/S37-swmm5-csharp-readme.md) (2026-11-06): swmm5-csharp, EPA SWMM 5.2.4 in C#; 480 of 480.
+- [S38](wiki/sources/S38-swmm5-python-readme.md) (2026-11-06): swmm5-python, EPA SWMM 5.2.4 in Python; 465 (14 of 29 slow sampled).
+- [S39](wiki/sources/S39-swmm5-typescript-readme.md) (2026-11-06): swmm5-typescript, EPA SWMM 5.2.4 in TypeScript; 480 of 480.
+- [S40](wiki/sources/S40-swmm5-java-readme.md) (2026-11-06): swmm5-java, EPA SWMM 5.2.4 in Java; 480 of 480.
+- [S41](wiki/sources/S41-swmm5-go-readme.md) (2026-11-06): swmm5-go, EPA SWMM 5.2.4 in Go; 480 of 480; the corpus, controls and math census.
+- [S42](wiki/sources/S42-swmm5-kotlin-readme.md) (2026-11-08): swmm5-kotlin, EPA SWMM 5.2.4 in Kotlin; 480 of 480.
+- [S43](wiki/sources/S43-swmm5-pascal-readme.md) (2026-11-08): swmm5-pascal, EPA SWMM 5.2.4 in Free Pascal; 480 of 480.
+- [S44](wiki/sources/S44-swmm5-zig-readme.md) (2026-11-08): swmm5-zig, EPA SWMM 5.2.4 in Zig; 480 of 480.
+- [S45](wiki/sources/S45-swmm5-ruby-readme.md) (2026-11-09): swmm5-ruby, EPA SWMM 5.2.4 in Ruby; 478 of 480, 2 not run.
+- [S46](wiki/sources/S46-swmm5-javascript-readme.md) (2026-11-09): swmm5-javascript, EPA SWMM 5.2.4 in JavaScript; 480 of 480.
+- [S47](wiki/sources/S47-swmm5-php-readme.md) (2026-11-09): swmm5-php, EPA SWMM 5.2.4 in PHP; 480 of 480.
+- [S48](wiki/sources/S48-swmm5-fsharp-readme.md) (2026-11-09): swmm5-fsharp, EPA SWMM 5.2.4 in F#; 480 of 480.
+- [S49](wiki/sources/S49-swmm5-perl-readme.md) (2026-11-09): swmm5-perl, EPA SWMM 5.2.4 in Perl; 478 of 480, 2 not run.
+- [S50](wiki/sources/S50-swmm5-groovy-readme.md) (2026-11-09): swmm5-groovy, EPA SWMM 5.2.4 in Groovy; 480 of 480.
+- [S51](wiki/sources/S51-swmm5-lua-readme.md) (2026-11-09): swmm5-lua, EPA SWMM 5.2.4 in Lua; 480 of 480.
+- [S52](wiki/sources/S52-swmm5-hy-readme.md) (2026-11-10): swmm5-hy, EPA SWMM 5.2.4 in Hy; 480 of 480.
+- [S53](wiki/sources/S53-swmm5-mojo-readme.md) (2026-11-10): swmm5-mojo, EPA SWMM 5.2.4 in Mojo; 480 of 480.
+- [S54](wiki/sources/S54-swmm5-r-readme.md) (2026-11-12): swmm5-r, EPA SWMM 5.2.4 in R; 465 of 480, 15 not run.
+
 ## Queue
 
-226 raw files are not yet ingested: 219 LinkedIn articles, 4 swmm5.org topic pages, 2 SWMM 1 build notes and 1 app summary. `raw/MANIFEST.csv` lists them. Suggested next batches, in order:
+250 raw files are queued: 216 LinkedIn articles, 19 manual files in `raw/manuals/` (8 EPA, USGS and FHWA documents not yet started, and 11 SWMM 4.4 documentation files), 9 app files, 4 swmm5.org topic pages and 2 SWMM 1 build notes. Three more LinkedIn files are byte-identical copies of others and are marked `duplicate`. One queued app file, SWMM 1 Engine 3.12, is a newer version of an ingested one (3.6) and should go early. `raw/MANIFEST.csv` lists them all. Suggested next batches, in order:
 
+0. The rest of the EPA hydraulics manual, a chapter at a time (S60 is read in part), then the 2006 quality assurance report and the SWMM 5.1 User's Manual. These are the primary documents; ingesting them first lets later articles be checked against them.
 1. The four remaining swmm5.org topic pages and the SWMM 1 build notes (small, and they complete themes 3 to 6).
 2. EXTRAN: the six test-file articles and Edition 38. Settles Q14.
 3. SWMM history: Edition 40, "SWMM1 to SWMM5 Documentation Archive", "Reviving 1988 SWMM4 Models with AI", "SWMM 44H Fortran Code".

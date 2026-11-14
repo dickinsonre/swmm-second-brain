@@ -2,7 +2,7 @@
 title: swmm524-perched
 type: entity
 updated: 2026-11-14
-sources: [S08, S59]
+sources: [S08, S59, S55]
 tags: [swmm5, engine, lid, infiltration]
 reviewed: no
 ---
@@ -13,6 +13,8 @@ One of Bob's variants of [EPA SWMM 5](swmm-5.md) [S08](../sources/S08-swmm5org-t
 - Optional `VG` lines. Head comes from van Genuchten curves (theta_s = porosity); drive = (h1 - h2)/dz + 1 with dz = 14 in; downward flow = K1 min(drive, 1), capped by Green-Ampt; upward flow = -K2 min(-drive, GMAX = 10); SOIL2 drains at K2(theta2) with no field-capacity cutoff. Curves: topsoil (0.1018, 0.04633 1/in, 1.3764), clay (0.2053, 0.02377 1/in, 1.5383).
 - `VG OPTION TOPFC | FCDRAIN | SOIL2ET | FCHEAD | STEP`, each restoring one perched rule, for ablation.
 - An experimental `STRUCT` Ksat decay, with illustrative rates.
+
+**Relation to the SOIL2 proposal.** The README of the old swmm-brain repository describes a two-layer design with `SOIL2` and a `UseAsInfil` flag [S55](../sources/S55-swmm-brain-readme.md). This engine has the `SOIL2` keyword with a different flow rule. See [Two-layer soil infiltration (SOIL2)](../concepts/two-layer-infiltration.md).
 
 **Checks** [S59](../sources/S59-topsoil-recovery-check-app-md.md)
 - With no SOIL2, VG or STRUCT line it writes the same `.out` and LID report as EPA 5.2.4, byte for byte, on 930 of 930 inputs.
