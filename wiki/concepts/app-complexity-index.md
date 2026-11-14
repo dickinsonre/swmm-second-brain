@@ -4,7 +4,7 @@ type: concept
 updated: 2026-11-14
 sources: [S01, S02]
 tags: [apps, measurement]
-reviewed: no
+reviewed: 2026-11-14
 ---
 A number for how big and how tangled a modeling program's source is, on a scale where the HydroCouple GitHub organization is fixed at 100 [S02](../sources/S02-complexity-meter-app-md.md). Computed by the [SWMM App Complexity Meter (app)](../entities/swmm-app-complexity-meter.md).
 
