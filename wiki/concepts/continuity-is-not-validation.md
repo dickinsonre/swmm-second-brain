@@ -1,0 +1,20 @@
+---
+title: Continuity is not validation
+type: concept
+updated: 2026-11-14
+sources: [S01, S04, S05, S20]
+tags: [verification, method]
+reviewed: no
+---
+A closed mass balance shows that water was not lost. It does not show that the answer is right. Four cases from the sources:
+
+1. **A sign error that conserves mass perfectly.** With the Audusse well-balancing correction applied to the wrong side of a cell face, still water is destroyed completely while mass conservation is unaffected. After the fix, 39 of 39 analytic cases pass (F-0003, status fixed) [S04](../sources/S04-findings-register-seed.md).
+2. **Storage that does not exist.** [Conduit lengthening](conduit-lengthening.md) adds about 106,000 cu ft (3,000 m³ in the source) of storage to 150 short stubs, and continuity closes throughout (F-0007, unconfirmed) [S04](../sources/S04-findings-register-seed.md).
+3. **A continuity check that was itself wrong.** In the 1971 listing of [SWMM 1 (1971)](../entities/swmm-1.md), card `HYDR137` leaves `WAREA(J)` out of the pervious storage term. On the Cincinnati deck the printed continuity error is 17.76170 %; with the factor added in an experimental build it is 0.07075 %, and the rest of the printout is identical. The flows were right; the check was wrong [S01](../sources/S01-swmm1-engine-app-md.md).
+4. **Two solvers, two typical error bands.** SWMM 5 typically reports 0.1 to 0.5 % and ICM 0.01 to 0.1 %, which the source puts down to ICM's volume accounting at several points per conduit [S20](../sources/S20-li-edition-54-two-solvers.md).
+
+**The rule the register draws from this.** Its entries say "checked against the engine" rather than "continuity closed" because of this class of bug [S04](../sources/S04-findings-register-seed.md).
+
+**The practice is growing.** The share of Bob's app-building conversations that verified against engine output rose from 28 % in 2026Q2 to 60 % in 2026Q3 [S05](../sources/S05-swmm5org-article-facts.md). See [Six quality markers for app-building work](app-quality-markers.md).
+
+See also [Verification against printed runs](verification-against-printed-runs.md) and [The SWMM findings register](findings-register.md).
