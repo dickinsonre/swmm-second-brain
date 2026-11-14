@@ -39,7 +39,10 @@ def describe(path):
 def app_key(path):
     """(app, version, sort key) for a summary under raw/apps/, from its front matter."""
     fm, _ = front_matter(read(path).lstrip())
-    app = (fm.get('file') or fm.get('name') or os.path.basename(path)).split('#')[0].strip().lower()
+    app = (fm.get('file') or '').split('#')[0].strip().lower()
+    app = re.split(r'\s+\(', app)[0]                 # drop a trailing "(single-page web app)"
+    if app in ('', 'index.html', 'index.htm'):       # every Lovable and Replit app is index.html
+        app = (fm.get('name') or os.path.basename(path)).strip().lower()
     app = re.sub(r'\.html?$', '', app)
     version = (fm.get('version') or '').split('#')[0].strip()
     nums = tuple(int(x) for x in re.findall(r'\d+', version)[:4])
