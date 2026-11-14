@@ -113,7 +113,7 @@ LinkedIn articles
 
 ## Queue
 
-226 raw files are not yet ingested: 219 LinkedIn articles, 4 swmm5.org topic pages, 2 SWMM 1 build notes and 1 app summary. `raw/MANIFEST.csv` lists them. Suggested next batches, in order:
+223 raw files are queued: 216 LinkedIn articles, 4 swmm5.org topic pages, 2 SWMM 1 build notes and 1 app summary. Three more LinkedIn files are byte-identical copies of others (LinkedIn exported those articles twice) and are marked `duplicate`. `raw/MANIFEST.csv` lists them all. Suggested next batches, in order:
 
 1. The four remaining swmm5.org topic pages and the SWMM 1 build notes (small, and they complete themes 3 to 6).
 2. EXTRAN: the six test-file articles and Edition 38. Settles Q14.

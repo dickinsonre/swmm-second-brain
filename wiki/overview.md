@@ -25,7 +25,7 @@ The state of the wiki after the first ingest, arranged by the six topics of [swm
 ## 3. SWMM 5 and ICM InfoWorks
 - One comparison page, [SWMM 5 versus ICM InfoWorks](concepts/swmm5-versus-icm-infoworks.md), built from four articles. Its numbers on solver differences come from an app's calculators, not from engine runs [S20](sources/S20-li-edition-54-two-solvers.md).
 - Entities: [InfoWorks ICM](entities/infoworks-icm.md), [InfoSWMM and InfoSewer](entities/infoswmm-and-infosewer.md), [SWMM and ICM St. Venant comparison (app)](entities/swmm-icm-st-venant-app.md).
-- This is where the queue is longest: 141 queued LinkedIn articles name ICM or InfoWorks in the title.
+- This is where the queue is longest: 139 queued LinkedIn articles name ICM or InfoWorks in the title.
 
 ## 4 and 5. ICM and SWMM6; inside SWMM6
 - One page, [OpenSWMM 6 and HydroCouple](entities/openswmm-6-and-hydrocouple.md), holding four findings and the HydroCouple measurements. Nothing yet on the solvers, 2D or the input format.

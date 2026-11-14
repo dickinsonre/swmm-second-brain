@@ -60,6 +60,16 @@ A source page has `raw:` (the path of its raw file), `ingested:` (date), `kind:`
 9. **People.** Entity pages for people hold what the person has published or done in public, professionally. Nothing about health, family, money or private life goes into the wiki, even when a raw source mentions it.
 10. **Length.** A concept or entity page fits on one or two screens. When a page passes about 600 words, split it.
 
+## App summaries and versions (`raw/apps/`)
+
+Every app Bob builds ships with a technical summary, `APPNAME.md`. That file is the app's source here.
+
+1. **One file per released version**, named `<app file name without .html>-v<version>.md`, for example `one-swmm-v0.3.0.md`. Files added before this rule keep the names they have.
+2. **Add a version when it ships** (deployed, or delivered as final), not after every build. Ten builds in a day are one file: the last.
+3. **Never overwrite.** Uploading new content under an existing name edits a raw file; `tools/lint.py` reports it as an error.
+4. `tools/manifest.py` groups summaries by the `file:` line of their front matter and orders them by `date:` and `version:`. The newest is the current one. An older one that was never ingested gets status `superseded` and is not ingested. A file byte-identical to another gets status `duplicate` and is skipped.
+5. **When a newer version of an already ingested app arrives:** write a new source page for it; add `superseded_by: S<nn>` to the old source page's front matter and leave the rest of that page alone; update the app's entity page and every page that cites a number the new version changed, citing the new source.
+
 ## The three operations
 
 ### Ingest

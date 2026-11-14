@@ -25,6 +25,8 @@ Attach the repository to a Claude session (or open it in Claude Code) and say on
 
 To add a source, drop the file in the right folder under `raw/` and say "ingest". For a new LinkedIn export, run `python3 tools/li2md.py PATH/TO/Articles/Articles` first.
 
+To add an app, upload its technical summary, named `APPNAME-vVERSION.md`, to `raw/apps/` (on GitHub: https://github.com/dickinsonre/swmm-second-brain/upload/main/raw/apps) and say "ingest". One file per released version; never upload over an existing name. Older versions that were never ingested are marked `superseded` and skipped, and identical files are marked `duplicate`, so extra uploads do not pile up in the queue. The rules are in `CLAUDE.md` under "App summaries and versions".
+
 To add an idea of your own, copy `raw/notes/_TEMPLATE.md` to a new file in `raw/notes/`, write one idea in it, and say "ingest". The template came from the earlier `swmm-brain` repository, which this one replaces; its contents are in `raw/swmm-brain/`.
 
 To read the wiki yourself, open the folder in Obsidian (the graph view shows hubs and orphans) or browse it on GitHub; every link is a plain relative link and works in both.

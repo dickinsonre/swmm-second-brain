@@ -35,3 +35,9 @@ Contradictions found: Q20 (Innovyze from 2005 or from 2008), additions to Q06 (f
 ## [2026-11-14] lint | After the swmm-brain ingest
 
 `tools/lint.py`: 0 errors. 21 open questions.
+
+## [2026-11-14] schema | App summaries and versions
+
+Bob asked for a rule that every app .md is added to `raw/apps/`, without piling up duplicates. `CLAUDE.md` gains the section "App summaries and versions": one file per released version, named `APPNAME-vVERSION.md`; never overwrite; the newest version of an app is the current one. `tools/manifest.py` now gives two more statuses: `superseded` (an older, never-ingested version of an app) and `duplicate` (a byte-identical file), and adds `app` and `version` columns. `tools/lint.py` warns when an app's newest summary is not the one ingested.
+
+First run found 3 duplicates already in `raw/linkedin/`: LinkedIn's export held three articles twice. The queue is 223, not 226; counts on four pages corrected.

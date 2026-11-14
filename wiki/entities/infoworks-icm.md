@@ -18,4 +18,4 @@ The commercial integrated catchment model developed by Wallingford Software in E
 
 Full comparison: [SWMM 5 versus ICM InfoWorks](../concepts/swmm5-versus-icm-infoworks.md).
 
-**Not in the sources yet.** Ruby and SQL scripting, the results file, RDII and ground infiltration, sediment, the 12 runoff surfaces. Of the 219 queued LinkedIn articles, 141 name ICM or InfoWorks in the title and 70 name Ruby.
+**Not in the sources yet.** Ruby and SQL scripting, the results file, RDII and ground infiltration, sediment, the 12 runoff surfaces. Of the 216 queued LinkedIn articles, 139 name ICM or InfoWorks in the title and 70 name Ruby.

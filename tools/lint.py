@@ -4,7 +4,8 @@
 Errors (exit 1): broken links, missing front matter, a wiki page that cites
 no source page, a source page whose raw file is missing, a raw file whose
 hash changed, a page missing from index.md.
-Warnings: orphan pages, em dashes, pages not yet reviewed, open questions.
+Warnings: orphan pages, em dashes, an app whose newest summary is not the
+one ingested. Also reports pages not yet reviewed and open questions.
 
 This finds structural faults only. Contradictions between sources, stale
 claims and missing concept pages need a reader: see "Lint" in CLAUDE.md.
@@ -72,6 +73,7 @@ for p in pages:
 
 man = os.path.join(RAW, 'MANIFEST.csv')
 queued = ingested = 0
+other, apps = {}, {}
 if os.path.exists(man):
     with open(man, newline='', encoding='utf-8') as f:
         for row in csv.DictReader(f):
@@ -82,6 +84,12 @@ if os.path.exists(man):
                 errors.append('raw file changed after it was recorded: ' + row['path'])
             ingested += row['status'] == 'ingested'
             queued += row['status'] == 'queued'
+            other[row['status']] = other.get(row['status'], 0) + 1
+            if row.get('app'):
+                apps.setdefault(row['app'], []).append(row)
+    for app, items in apps.items():
+        if any(x['status'] == 'ingested' for x in items) and any(x['status'] == 'queued' for x in items):
+            warns.append('app %s: a newer summary is queued while an older one is ingested; ingest it and mark the old source page superseded' % app)
     listed = set()
     with open(man, newline='', encoding='utf-8') as f:
         listed = {row['path'] for row in csv.DictReader(f)}
@@ -99,7 +107,7 @@ for p, t in texts.items():
     ty = front_matter(t)[0].get('type', 'special')
     types[ty] = types.get(ty, 0) + 1
 print('pages:', ', '.join('%s %d' % kv for kv in sorted(types.items())))
-print('raw files: %d ingested, %d queued' % (ingested, queued))
+print('raw files: %d ingested, %d queued' % (ingested, queued) + ''.join(', %d %s' % (v, k) for k, v in sorted(other.items()) if k not in ('ingested', 'queued')))
 print('open questions: %d   pages not yet reviewed by Bob: %d' % (open_q, unreviewed))
 for w in warns:
     print('WARN ', w)
