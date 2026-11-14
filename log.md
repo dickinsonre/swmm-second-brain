@@ -184,3 +184,9 @@ Added to `raw/apps/`, byte for byte from the pages, and left queued: `swmm1-runo
 Twenty apps have a readable page and no summary inside; about forty-four have no artifact that matches by name, and their Netlify pages cannot be downloaded from this workspace (the proxy refuses the host). Nothing was written for either group in this step.
 
 After this step: 325 raw files, 72 ingested, 249 queued, 1 superseded, 3 duplicate.
+
+## [2026-11-14] setup | Branch `ingest-netlify-batch-1` merged into main
+
+While the branch was open, Bob marked two pages reviewed on main (App build contract, App complexity index: `reviewed: 2026-11-14`) and uploaded `raw/apps/swmm-icm-knowledge-library.md`. His upload is byte-identical to the `swmm-icm-knowledge-library-v70.md` extracted on the branch, so the branch's copy was dropped before the merge and his file is the one kept. No conflict.
+
+After the merge: 325 raw files, 72 ingested, 249 queued, 1 superseded, 3 duplicate; 144 pages, 2 of them reviewed by Bob; 46 questions open, 3 settled.

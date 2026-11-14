@@ -14,7 +14,7 @@ raw/apps/st-venant-solver-rosetta-stone (1).md,apps,2026-11-13,St. Venant Solver
 raw/apps/swmm-app-complexity-meter.md,apps,2026-11-11,SWMM App Complexity Meter,2026,c0b7985d8a982156b88c221ea9c0e848f37bc4c897de621606b0e7144759896b,ingested,wiki/sources/S02-complexity-meter-app-md.md,swmm-app-complexity-meter,1.9.1
 raw/apps/swmm-engine-what-if-v1.4.md,apps,2026-11-12,SWMM Engine What If,4837,48af8aee8248716a799d0b8b947964a876207113417db877a13ceaf39eda8a51,ingested,wiki/sources/S70-swmm-engine-what-if-app-md.md,swmm-engine-what-if,1.4
 raw/apps/swmm-engines-v2026-11-06.md,apps,2026-11-14,"SWMM Engines, Byte for Byte",1657,83fb2d9abe50129ebefdac2ed5cb7091d4dd79d59606c153b9f20aba2aa1c580,ingested,wiki/sources/S71-swmm-engines-byte-for-byte-summary.md,swmm-engines,2026-11-06
-raw/apps/swmm-icm-knowledge-library-v70.md,apps,2026-11-14,SWMM & ICM Knowledge Library,1547,879f5e7871b4566273fb726290547037312996e5c6ded3d6697d4d5cfa127650,queued,,swmm-icm-knowledge-library,artifact v70
+raw/apps/swmm-icm-knowledge-library.md,apps,2026-11-14,SWMM & ICM Knowledge Library,1547,879f5e7871b4566273fb726290547037312996e5c6ded3d6697d4d5cfa127650,queued,,swmm-icm-knowledge-library,artifact v70
 raw/apps/swmm1-runoff-engine (7).md,apps,2026-11-13,SWMM 1 Engine,12689,a0c62ad17e9d7dc2006181e97814a187d9a806719e657b10f970917e3be43ebc,superseded,,swmm1-runoff-engine,3.12
 raw/apps/swmm1-runoff-engine-v3.13.md,apps,2026-11-13,SWMM 1 Engine,13377,a4c006b97d0e3038fa5d11a2c7d04b65ecb57a1e4c2cedb09093fabe63c1c433,queued,,swmm1-runoff-engine,3.13
 raw/apps/swmm1-runoff-engine.md,apps,2026-11-13,SWMM 1 Engine,6390,1f04a14beed46eaa98a26eaff77e89736584ae46cd981e51711816dba5ab7caa,ingested,wiki/sources/S01-swmm1-engine-app-md.md,swmm1-runoff-engine,3.6
