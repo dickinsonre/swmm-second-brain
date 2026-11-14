@@ -1,10 +1,10 @@
 # Index
 
-Every page in the wiki, one line each. An agent reads this first. Updated on every ingest. Last update: 2026-11-14 (35 sources, 24 concepts, 18 entities).
+Every page in the wiki, one line each. An agent reads this first. Updated on every ingest. Last update: 2026-11-14 (54 sources, 26 concepts, 19 entities).
 
 ## Start here
 - [Overview: what this wiki holds so far](wiki/overview.md): what the wiki holds so far, by Bob's six themes, and what is missing.
-- [Open questions](wiki/open-questions.md): 23 contradictions, doubtful numbers and gaps waiting for a source or for Bob.
+- [Open questions](wiki/open-questions.md): 28 contradictions, doubtful numbers and gaps waiting for a source or for Bob.
 - [Schema](CLAUDE.md): how the wiki is kept. [Log](log.md): what was done and when.
 
 ## Concepts
@@ -42,6 +42,8 @@ Measurement and method
 - [Six quality markers for app-building work](wiki/concepts/app-quality-markers.md): six markers of checking in Bob's app-building conversations, by quarter.
 - [Byte-for-byte gate](wiki/concepts/byte-for-byte-gate.md): how a translation is held to its original: identical `.out`, `.rpt` but three clock lines, same exit code, on 480 + 452 decks.
 - [Matching glibc math in a translation](wiki/concepts/glibc-math-in-translation.md): 19 math functions, two routes (translate glibc's code, or call the system glibc), and how each is tested.
+- [What the gate cannot see](wiki/concepts/gate-blind-spots.md): controls, checked builds, runtime replays, untested paths, and models stopped at the limit.
+- [Where languages part from C](wiki/concepts/where-languages-part-from-c.md): the traps the SWMM5 translations met, from the sign of zero to HotSpot's method-size limit.
 
 ## Entities
 
@@ -53,6 +55,7 @@ Engines and programs
 - [InfoSWMM and InfoSewer](wiki/entities/infoswmm-and-infosewer.md): the two Innovyze products Bob led from 2008.
 - [OpenSWMM 6 and HydroCouple](wiki/entities/openswmm-6-and-hydrocouple.md): the commit the translations start from, licence, modules, and four findings.
 - [SWMM6 language translations (swmm6-*)](wiki/entities/swmm6-language-ports.md): thirteen languages, results table, how each was made and rechecked.
+- [SWMM5 language translations (swmm5-*)](wiki/entities/swmm5-language-ports.md): EPA SWMM 5.2.4 in 19 languages, results and speeds as published, how the back ends descend from each other.
 - [swmm6-rust](wiki/entities/swmm6-rust.md): OpenSWMM 6 in safe Rust, 1D on 932 decks and 2D on 1,315 of 1,415, with state-level gates.
 
 Apps
@@ -120,9 +123,30 @@ Repository READMEs (SWMM6 translations)
 - [S34](wiki/sources/S34-swmm6-hy-readme.md) (2026-11-10): swmm6-hy, the OpenSWMM 6 engine in Hy; 478 of 480, 450 of 452.
 - [S35](wiki/sources/S35-swmm6-ruby-readme.md) (2026-11-12): swmm6-ruby, the OpenSWMM 6 engine in Ruby; 478 of 480, 450 of 452.
 
+Repository READMEs (SWMM5 translations)
+- [S36](wiki/sources/S36-swmm5-fortran-readme.md) (2026-11-06): swmm5-fortran, EPA SWMM 5.2.4 in Fortran; 480 of 480.
+- [S37](wiki/sources/S37-swmm5-csharp-readme.md) (2026-11-06): swmm5-csharp, EPA SWMM 5.2.4 in C#; 480 of 480.
+- [S38](wiki/sources/S38-swmm5-python-readme.md) (2026-11-06): swmm5-python, EPA SWMM 5.2.4 in Python; 465 (14 of 29 slow sampled).
+- [S39](wiki/sources/S39-swmm5-typescript-readme.md) (2026-11-06): swmm5-typescript, EPA SWMM 5.2.4 in TypeScript; 480 of 480.
+- [S40](wiki/sources/S40-swmm5-java-readme.md) (2026-11-06): swmm5-java, EPA SWMM 5.2.4 in Java; 480 of 480.
+- [S41](wiki/sources/S41-swmm5-go-readme.md) (2026-11-06): swmm5-go, EPA SWMM 5.2.4 in Go; 480 of 480; the corpus, controls and math census.
+- [S42](wiki/sources/S42-swmm5-kotlin-readme.md) (2026-11-08): swmm5-kotlin, EPA SWMM 5.2.4 in Kotlin; 480 of 480.
+- [S43](wiki/sources/S43-swmm5-pascal-readme.md) (2026-11-08): swmm5-pascal, EPA SWMM 5.2.4 in Free Pascal; 480 of 480.
+- [S44](wiki/sources/S44-swmm5-zig-readme.md) (2026-11-08): swmm5-zig, EPA SWMM 5.2.4 in Zig; 480 of 480.
+- [S45](wiki/sources/S45-swmm5-ruby-readme.md) (2026-11-09): swmm5-ruby, EPA SWMM 5.2.4 in Ruby; 478 of 480, 2 not run.
+- [S46](wiki/sources/S46-swmm5-javascript-readme.md) (2026-11-09): swmm5-javascript, EPA SWMM 5.2.4 in JavaScript; 480 of 480.
+- [S47](wiki/sources/S47-swmm5-php-readme.md) (2026-11-09): swmm5-php, EPA SWMM 5.2.4 in PHP; 480 of 480.
+- [S48](wiki/sources/S48-swmm5-fsharp-readme.md) (2026-11-09): swmm5-fsharp, EPA SWMM 5.2.4 in F#; 480 of 480.
+- [S49](wiki/sources/S49-swmm5-perl-readme.md) (2026-11-09): swmm5-perl, EPA SWMM 5.2.4 in Perl; 478 of 480, 2 not run.
+- [S50](wiki/sources/S50-swmm5-groovy-readme.md) (2026-11-09): swmm5-groovy, EPA SWMM 5.2.4 in Groovy; 480 of 480.
+- [S51](wiki/sources/S51-swmm5-lua-readme.md) (2026-11-09): swmm5-lua, EPA SWMM 5.2.4 in Lua; 480 of 480.
+- [S52](wiki/sources/S52-swmm5-hy-readme.md) (2026-11-10): swmm5-hy, EPA SWMM 5.2.4 in Hy; 480 of 480.
+- [S53](wiki/sources/S53-swmm5-mojo-readme.md) (2026-11-10): swmm5-mojo, EPA SWMM 5.2.4 in Mojo; 480 of 480.
+- [S54](wiki/sources/S54-swmm5-r-readme.md) (2026-11-12): swmm5-r, EPA SWMM 5.2.4 in R; 465 of 480, 15 not run.
+
 ## Queue
 
-226 raw files are not yet ingested: 219 LinkedIn articles, 4 swmm5.org topic pages, 2 SWMM 1 build notes and 1 app summary. `raw/MANIFEST.csv` lists them. Suggested next batches, in order:
+226 raw files are not yet ingested: 219 LinkedIn articles, 4 swmm5.org topic pages, 2 SWMM 1 build notes and 1 app summary. All 32 translation READMEs in `raw/ports/` are ingested. `raw/MANIFEST.csv` lists them. Suggested next batches, in order:
 
 1. The four remaining swmm5.org topic pages and the SWMM 1 build notes (small, and they complete themes 3 to 6).
 2. EXTRAN: the six test-file articles and Edition 38. Settles Q14.

@@ -2,11 +2,11 @@
 title: Overview: what this wiki holds so far
 type: synthesis
 updated: 2026-11-14
-sources: [S01, S04, S05, S06, S10, S19, S20, S22, S23, S24, S29, S35]
+sources: [S01, S04, S05, S06, S10, S19, S20, S22, S23, S24, S29, S35, S41, S43, S54]
 tags: [overview]
 reviewed: no
 ---
-The state of the wiki after the second ingest, arranged by the six topics of [swmm5.org](entities/swmm5-org.md) [S06](sources/S06-swmm5org-topics-index.md). Thirty-five of 280 raw files are ingested. The wiki is deepest on SWMM's history and on the insides of SWMM 5, thin on ICM, and on SWMM6 holds the translations but not yet the solvers.
+The state of the wiki after the third ingest, arranged by the six topics of [swmm5.org](entities/swmm5-org.md) [S06](sources/S06-swmm5org-topics-index.md). Fifty-four of 280 raw files are ingested. The wiki is deepest on SWMM's history, the insides of SWMM 5 and the translations of SWMM 5 and SWMM6; thin on ICM; and on SWMM6 it holds the translations but not yet the solvers.
 
 ## 1. SWMM history
 - The timeline from 1969 to 2026 is on [SWMM version history, 1969 to 2026](concepts/swmm-version-history.md), with four places where Bob's own articles disagree with each other or with primary documents.
@@ -19,6 +19,7 @@ The state of the wiki after the second ingest, arranged by the six topics of [sw
 - Hydraulics: [Dynamic wave routing](concepts/dynamic-wave-routing.md), [Kinematic wave and steady flow routing](concepts/kinematic-wave-and-steady-flow.md), [Preissmann slot and surcharge](concepts/preissmann-slot-and-surcharge.md), [Conduit lengthening](concepts/conduit-lengthening.md), [Force main friction](concepts/force-main-friction.md).
 - Hydrology: [Runoff surfaces and subarea routing](concepts/runoff-surfaces-and-subarea-routing.md), [Subcatchment width](concepts/subcatchment-width.md), [Infiltration methods](concepts/infiltration-methods.md), [RDII unit hydrographs (RTK)](concepts/rdii-unit-hydrographs.md).
 - Output and documentation: [Reading SWMM output](concepts/reading-swmm-output.md), [The missing specification](concepts/the-missing-specification.md).
+- [SWMM5 language translations](entities/swmm5-language-ports.md): EPA SWMM 5.2.4 in 19 languages, each byte-identical to EPA on every gate model it finished; 15 models stopped at the time limit in R and 2 each in Ruby and Perl [S41](sources/S41-swmm5-go-readme.md) [S54](sources/S54-swmm5-r-readme.md). The work measured EPA too: 1,524,961,124 calls to glibc's math over the 480 models, and 43 models that change when glibc uses its generic routines [S41](sources/S41-swmm5-go-readme.md).
 - The single most-asked subject in 31 years of forum threads is dynamic-wave stability, tied with reading the output, at 224 threads each [S10](sources/S10-openswmm-top25-problems.md). See [The top 25 problems in 31 years of forum threads](concepts/forum-problems-top-25.md).
 
 ## 3. SWMM 5 and ICM InfoWorks
@@ -36,6 +37,7 @@ The state of the wiki after the second ingest, arranged by the six topics of [sw
 - The discipline: [Continuity is not validation](concepts/continuity-is-not-validation.md), [The SWMM findings register](concepts/findings-register.md), [Negative results](concepts/negative-results.md).
 - The measurements of Bob's own practice: [Six quality markers for app-building work](concepts/app-quality-markers.md) (verification against engine output rose from 28 % to 60 % of app-building conversations between 2026Q2 and 2026Q3 [S05](sources/S05-swmm5org-article-facts.md)) and [App complexity index (HydroCouple = 100)](concepts/app-complexity-index.md).
 - Method from the translations: [Byte-for-byte gate](concepts/byte-for-byte-gate.md) (the parity contract, reruns from clean copies, and runs stopped at a time limit counted as not run) and [Matching glibc math in a translation](concepts/glibc-math-in-translation.md) (19 functions, translated from glibc or called in the system library) [S23](sources/S23-swmm6-csharp-readme.md) [S24](sources/S24-swmm6-go-readme.md).
+- From the SWMM5 translations: [What the gate cannot see](concepts/gate-blind-spots.md) (null and positive controls, checked builds, the runtime replayed against glibc because the gate passed a strtod that was wrong on 115,302 of 200,052 cases) and [Where languages part from C](concepts/where-languages-part-from-c.md) [S43](sources/S43-swmm5-pascal-readme.md).
 - Apps as subjects: [SWMM 1 Engine (app)](entities/swmm-1-engine-app.md), [SWMM App Complexity Meter (app)](entities/swmm-app-complexity-meter.md), [Claude chat archive (app)](entities/claude-chat-archive.md).
 
 ## Three things the first ingest showed

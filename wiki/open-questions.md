@@ -2,7 +2,7 @@
 title: Open questions
 type: synthesis
 updated: 2026-11-14
-sources: [S01, S04, S05, S07, S08, S11, S12, S14, S19, S20, S21, S22, S23, S27, S28, S29, S34, S35]
+sources: [S01, S04, S05, S07, S08, S11, S12, S14, S19, S20, S21, S22, S23, S27, S28, S29, S34, S35, S38, S41, S43, S44, S45, S46, S47, S48, S49, S50, S51, S52, S53, S54]
 tags: [lint, contradictions]
 reviewed: no
 ---
@@ -19,6 +19,8 @@ Contradictions, doubtful numbers and gaps found while ingesting and linting. An 
 - [ ] Q13 (2026-11-14): [S20](sources/S20-li-edition-54-two-solvers.md) calls SWMM 5 "the only platform with built in LID and water quality modeling". Queued articles by Bob have titles on SUDS and LID usage in ICM InfoWorks, and on buildup and washoff in ICM InfoWorks. Ingest those and correct the comparison table.
 - [ ] Q14 (2026-11-14): When did EXTRAN enter SWMM? [S21](sources/S21-li-edition-56-swmm-history.md) says SWMM 2 (1975) added it. [S20](sources/S20-li-edition-54-two-solvers.md) calls it a module "of the original EPA Storm Water Management Model". The October 1971 listing has no EXTRAN block [S01](sources/S01-swmm1-engine-app-md.md). [S21](sources/S21-li-edition-56-swmm-history.md) is the only dated statement and its history rests on AI searching by its own account.
 - [ ] Q20 (2026-11-14): [S22](sources/S22-li-ten-problems.md) says the four lines moving forward from SWMM 5 share no common test models. The SWMM6 translations are gated on 480 models drawn from 1729-SWMM5-Models-2030, "the one the SWMM5 ports were checked on" [S23](sources/S23-swmm6-csharp-readme.md), and swmm6-rust's `census/` compares OpenSWMM 6 with EPA SWMM 5.2.4 on a corpus of SWMM5 models [S29](sources/S29-swmm6-rust-readme.md). Not a contradiction of fact (the gates compare each translation with its own original, not one line with another), but S22 may need a date or a note. Bob to say.
+- [ ] Q24 (2026-11-14): The one printf case the runtimes miss is `%#g` of 999999.75 in [S43](sources/S43-swmm5-pascal-readme.md) and [S44](sources/S44-swmm5-zig-readme.md), and `%#g` of 999999.5 in [S45](sources/S45-swmm5-ruby-readme.md), [S46](sources/S46-swmm5-javascript-readme.md), [S47](sources/S47-swmm5-php-readme.md), [S48](sources/S48-swmm5-fsharp-readme.md), [S49](sources/S49-swmm5-perl-readme.md), [S50](sources/S50-swmm5-groovy-readme.md), [S52](sources/S52-swmm5-hy-readme.md) and [S53](sources/S53-swmm5-mojo-readme.md). Each calls it the same case the Go check reports. One value is wrong; `crtcheck_result.txt` in either repository would settle it.
+
 
 ## Arithmetic and wording to check
 
@@ -28,6 +30,8 @@ Contradictions, doubtful numbers and gaps found while ingesting and linting. An 
 - [ ] Q15 (2026-11-14): [S21](sources/S21-li-edition-56-swmm-history.md) says SWMM 5 "has evolved through eight significant releases" and its table has seven dated rows; it also says "four universities" without naming them.
 - [ ] Q09 (2026-11-14): [S07](sources/S07-swmm5org-topic-swmm-history.md) describes the SWMM 1 Engine app as "the 1971 SWMM 1 Runoff engine"; since version 2.0 it runs all five blocks [S01](sources/S01-swmm1-engine-app-md.md). [S07](sources/S07-swmm5org-topic-swmm-history.md) links the app on Netlify, while [S01](sources/S01-swmm1-engine-app-md.md) records `netlify: none`. One of the two needs updating.
 - [ ] Q21 (2026-11-14): [S35](sources/S35-swmm6-ruby-readme.md) says the Python port took 4,056 s on `SCANLON.inp` and did not finish `legacy_small.inp` and `refactored_small.inp` in 7,000 s. [S28](sources/S28-swmm6-python-readme.md) names the 7,000 s limit only for `72_H&H_Elements(2).inp` and does not give the limit for the extra decks. Check against the Python gate records (`gate/evidence/py2.json`, `py_x2.json` in swmm6-python).
+- [ ] Q25 (2026-11-14): [S47](sources/S47-swmm5-php-readme.md), [S48](sources/S48-swmm5-fsharp-readme.md), [S49](sources/S49-swmm5-perl-readme.md), [S52](sources/S52-swmm5-hy-readme.md) and [S53](sources/S53-swmm5-mojo-readme.md) call the `%#g` case "the case every runtime reports", but the Lua and R runtimes report 0 differences, `%#g` included ([S51](sources/S51-swmm5-lua-readme.md), [S54](sources/S54-swmm5-r-readme.md)). Later ports overtook the wording.
+
 
 ## Open inside a single source
 
@@ -42,4 +46,6 @@ Contradictions, doubtful numbers and gaps found while ingesting and linting. An 
 - [ ] Q19 (2026-11-14): Several source pages could not say which AI tool wrote which passages ([S11](sources/S11-li-my-history-with-swmm.md), [S12](sources/S12-li-diamond-village.md), [S16](sources/S16-li-rdii-in-swmm5.md), [S20](sources/S20-li-edition-54-two-solvers.md)). If Bob remembers, a line on each source page would replace "reads as".
 - [ ] Q22 (2026-11-14): The SWMM6 Python port ran 413 of the 480 corpus models and stopped "by choice" [S28](sources/S28-swmm6-python-readme.md), while the Hy port, at about Python's speed, ran all 480 [S34](sources/S34-swmm6-hy-readme.md). Bob to decide whether the other 67 get run.
 - [ ] Q23 (2026-11-14): The swmm6-csharp and swmm6-fortran READMEs do not say how those ports reach glibc's math [S23](sources/S23-swmm6-csharp-readme.md) [S27](sources/S27-swmm6-fortran-readme.md); the other ports do. A line in each README would close it.
-
+- [ ] Q26 (2026-11-14): 38 of the 518 distinct models in the six gate folders were left out of the SWMM5 gate set by an early 12-second timing survey "whose records were not kept"; re-timed, 13 of them ran past 30 s [S41](sources/S41-swmm5-go-readme.md). Bob to decide whether the fast ports should run them.
+- [ ] Q27 (2026-11-14): The SWMM5 ports' speeds were measured three ways (interleaved CPU benchmarks for six ports and Kotlin, the gate's clock, ratios to another port's stored times), so they do not compare ([SWMM5 language translations](entities/swmm5-language-ports.md)). One interleaved benchmark of all of them on the same models would.
+- [ ] Q28 (2026-11-14): The SWMM5 Python port ran a 14-model sample of its 29 slow models [S38](sources/S38-swmm5-python-readme.md); the Hy port, built on the same translation, ran all 480 [S52](sources/S52-swmm5-hy-readme.md). Bob to decide whether Python's other 15 get run.

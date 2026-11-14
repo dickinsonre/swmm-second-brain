@@ -2,18 +2,20 @@
 title: Byte-for-byte gate
 type: concept
 updated: 2026-11-14
-sources: [S23, S28, S29, S30, S34, S35]
+sources: [S23, S28, S29, S30, S34, S35, S41]
 tags: [verification, method, translation]
 reviewed: no
 ---
-The test every SWMM6 translation is held to: run the translation and the original engine on the same decks and compare the files they write, byte for byte [S23](../sources/S23-swmm6-csharp-readme.md).
+The test every SWMM5 and SWMM6 translation is held to: run the translation and the original engine on the same decks and compare the files they write, byte for byte [S23](../sources/S23-swmm6-csharp-readme.md) [S41](../sources/S41-swmm5-go-readme.md).
 
 **What passes** [S23](../sources/S23-swmm6-csharp-readme.md)
 - The `.out` file is byte-identical to the reference's, when the reference writes one.
 - The `.rpt` is identical after three lines are removed: "Analysis begun", "Analysis ended" and "Total elapsed time".
-- The exit code is the same. The command line exits nonzero when a model stops on an input error, so an input error must be caught the same way.
+- The exit code is the same. SWMM6's command line exits nonzero when a model stops on an input error, so an input error must be caught the same way.
 
-**The reference.** The C++ engine built from the same commit and run on one thread (`OMP_NUM_THREADS=1`). Results with OpenMP threads "can differ in the last bits", so the parallel runs are not what is matched [S23](../sources/S23-swmm6-csharp-readme.md).
+**For SWMM5** the reference is EPA SWMM 5.2.4 from the USEPA v5.2.4 tag, built with gcc 13.3 `-O2` and `_FORTIFY_SOURCE` off on x86-64 Linux with glibc 2.39. When an input error stops EPA before it writes results, the translation must not write a results file either; 49 of the 480 stop that way. "Nothing else is excused" [S41](../sources/S41-swmm5-go-readme.md). Controls and checked builds test the gate itself: see [What the gate cannot see](gate-blind-spots.md).
+
+**For SWMM6 the reference.** The C++ engine built from the same commit and run on one thread (`OMP_NUM_THREADS=1`). Results with OpenMP threads "can differ in the last bits", so the parallel runs are not what is matched [S23](../sources/S23-swmm6-csharp-readme.md).
 
 **The decks.** 480 models drawn from [1729-SWMM5-Models-2030 (the corpus)](../entities/corpus-1729.md), and 452 extra decks: upstream's own test inputs and synthetic decks that reach the finite-volume solver, structure coupling, the newer hydrology and the input checks, which the corpus cannot reach [S23](../sources/S23-swmm6-csharp-readme.md).
 
