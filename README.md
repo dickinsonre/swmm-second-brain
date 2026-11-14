@@ -33,7 +33,7 @@ To read the wiki yourself, open the folder in Obsidian (the graph view shows hub
 
 ## State on 14 November 2026
 
-- 72 of 325 raw files ingested. The queue is in `index.md`.
+- 72 of 330 raw files ingested. The queue is in `index.md`.
 - 46 open questions in `wiki/open-questions.md`, and 3 settled. Several are contradictions between Bob's own articles.
 - No page has been reviewed by Bob. Every page says `reviewed: no` until he has read it.
 

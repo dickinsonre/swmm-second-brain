@@ -3,11 +3,15 @@ raw/apps/1729-SWMM5-Models-2030 README (1).md,apps,,1729-SWMM5-Models-2030,1986,
 raw/apps/Master SWMM PDF.md,apps,,**Master SWMM PDF**A cited library of SWMM and rainfall–runoff literature,2909,1f86f01d9cb61afedf98c27b0955598fc047164316dcbe15926da3484dbc22f3,queued,,master swmm pdf.md,
 raw/apps/PyBME-issue-drafts.md,apps,,PyBME issue drafts (commit 034799d),6197,3ba527119950647517268c83df2c46311503ab042cbcd823c63018213a9c5029,queued,,pybme-issue-drafts.md,
 raw/apps/Rules for Responsible Modeling lessons and browser drainage experiments.md,apps,2026-11-14,Rules for Responsible Modeling,3905,b17db0964e33dccc64fa462d9c0845d121b2eea94bcc8931bfa04d0a9d70c58e,ingested,wiki/sources/S62-rules-for-responsible-modeling-app-md.md,rules for responsible modeling,2026.1.2
+raw/apps/bellinge-v2.0.md,apps,2026-10-18,Bellinge,2534,116afb46e7127bca1fce54e6593e806f89260c65dcfd0f37425f41c15bf76d94,queued,,bellinge,2.0
 raw/apps/bob-usefulness-index-v2.2.md,apps,2026-11-11,Bob Usefulness Index,2896,d8a0b6bdc3906a0a72370ce2e1dea5d749b9e7261bf2ec069fc66a875dbcd87a,queued,,bob-usefulness-index,2.2
+raw/apps/control-section-lab-v1.2.md,apps,2026-10-18,Control Section Lab,2254,b3f9945af577b919b2a483953e57b264bd3b21b44c3796e3a123e94e5e1fcd99,queued,,control-section-lab,1.2
 raw/apps/cost-allocation-explorer-v1.0.1.md,apps,2026-11-14,Cost Allocation Game Theory Explorer,2844,b46649f738f5fc441927445ab99342ec7af619f3c453b57773111827d5ab822a,ingested,wiki/sources/S61-cost-allocation-explorer-app-md.md,cost allocation game theory explorer,1.0.1
 raw/apps/extran3-workbench.md,apps,2026-11-11,EXTRAN III Workbench,2497,40dbb2371cec0f73b33d4a58048c9ee18dc955417b025cff046ac3876f66df83,queued,,extran3-workbench,1.6.0
 raw/apps/fractal-swmm-generator-v2.3.md,apps,2026-11-12,Fractal SWMM5/SWMM6 Network Generator,2538,e2229dc098f045873505d3af153a6ea3423a25265562cdb5ee70cc8faa9eefeb,queued,,fractal-swmm-generator-v2.3,2.3
 raw/apps/inside-the-network-cfd.md,apps,2026-11-12,Inside the Network,5425,848015a9f0cab332230b21cb082e59fe0765621762ad06f9d6a403aa1c92ad6d,queued,,inside-the-network-cfd,1.1.0
+raw/apps/mirab-test-bench-v1.0.md,apps,2026-10-24,Mirab Test Bench,2017,5e3bc15de5d28e82e8a9b40042fafdcc0c74ff42a216356ec3b2f5541f838515,queued,,mirab-test-bench,1.0
+raw/apps/people-as-pollutants-v1.0.0.md,apps,2026-10-29,People as Pollutants,2086,34bc1e182b14f4389316f13b314fe108b61b5942c6d8c8e04e36b967c3092d12,queued,,people-as-pollutants,1.0.0
 raw/apps/rain-canvas-studio-v2026.1.2.md,apps,2026-11-14,World Rainfall Pattern Painter,4981,1964a32bd8d4231700fe4c90d6a72bb76f06eb37513b40a5b41a06b19a690db2,ingested,wiki/sources/S65-world-rainfall-pattern-painter-app-md.md,world rainfall pattern painter,3.2.0
 raw/apps/speak-100-chinese.md,apps,2026-11-13,Speak 100,920,2ac2d2bf1519e418f90717e5b4a19783d0d7de0374e64d6ee599b678c05e0dea,queued,,speak-100-chinese,2026.11.13b (travel and grandkids decks)
 raw/apps/st-venant-solver-rosetta-stone (1).md,apps,2026-11-13,St. Venant Solver Rosetta Stone,8745,d7787099ba3322c27728820995352c278a0e4b95fcf32035d98b3f6baf4ac3e2,queued,,st-venant-solver-rosetta-stone,2.4.0
@@ -20,6 +24,7 @@ raw/apps/swmm1-runoff-engine-v3.13.md,apps,2026-11-13,SWMM 1 Engine,13377,a4c006
 raw/apps/swmm1-runoff-engine.md,apps,2026-11-13,SWMM 1 Engine,6390,1f04a14beed46eaa98a26eaff77e89736584ae46cd981e51711816dba5ab7caa,ingested,wiki/sources/S01-swmm1-engine-app-md.md,swmm1-runoff-engine,3.6
 raw/apps/swmm5-code-house-v1.15.1.md,apps,2026-11-11,SWMM5 Code House,1352,db7bd438ed0f2e76e39e2866d4301dd962c68df503a1b4c11188c42a661a1e86,ingested,wiki/sources/S68-swmm5-code-house-app-md.md,swmm5-code-house,1.15.1
 raw/apps/swmm6-code-house-v1.2.1.md,apps,2026-11-11,SWMM6 Code House,1479,843c133ee50a5807249909c0fafdb017385157c93404e67868d3e2b5956be63f,ingested,wiki/sources/S69-swmm6-code-house-app-md.md,swmm6-code-house,1.2.1
+raw/apps/teacher-forced-swmm-v1.0.md,apps,2026-10-25,Teacher-Forced SWMM,2150,530b1dbe48352bf6287e34c7d2e613dfd04c4abdcc2f1e9f0dea48a9b66d9d9c,queued,,teacher-forced-swmm,1.0
 raw/apps/topsoil-recovery-check.md,apps,2026-11-12,Topsoil Recovery Check,2220,a565589011d60d51830da115a81ec9aad4902a13c954daab1664e6531fd78c5b,ingested,wiki/sources/S59-topsoil-recovery-check-app-md.md,topsoil recovery check,2026-11-12
 raw/apps/under-load.md,apps,2026-11-11,Under Load,2062,69f1dc2f4423fd09de3f25f5c06fa2bd7dd6042e824ead19ad0df8ac09301445,queued,,under-load,1.4.0
 raw/linkedin/2015-07-15-qaqc-process-import-xp-swmm-model-infoworks-icm-6-robert-dickinson.md,linkedin,2015-07-15,QA/QC Process for the Import of an XP-SWMM model to InfoWorks ICM  6 - ICM 7.5,1431,749ea501f623927be14adf34458e9d0e386714663745a7eafd764cc01d5d03f4,queued,,,

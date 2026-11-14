@@ -190,3 +190,22 @@ After this step: 325 raw files, 72 ingested, 249 queued, 1 superseded, 3 duplica
 While the branch was open, Bob marked two pages reviewed on main (App build contract, App complexity index: `reviewed: 2026-11-14`) and uploaded `raw/apps/swmm-icm-knowledge-library.md`. His upload is byte-identical to the `swmm-icm-knowledge-library-v70.md` extracted on the branch, so the branch's copy was dropped before the merge and his file is the one kept. No conflict.
 
 After the merge: 325 raw files, 72 ingested, 249 queued, 1 superseded, 3 duplicate; 144 pages, 2 of them reviewed by Bob; 46 questions open, 3 settled.
+
+## [2026-11-14] setup | Five app summaries written from page source (not ingested)
+
+Bob asked for summaries of five apps whose pages carry none. Claude wrote one file for each from the published artifact's page source and embedded records, in the form of `swmm-engines-v2026-11-06.md`. No engine was run and nothing was rerun. Each file says so in its front matter (`written_from:`) and under "What this does not show".
+
+Added to `raw/apps/`, all queued:
+- `mirab-test-bench-v1.0.md` (app dated 2026-10-24)
+- `teacher-forced-swmm-v1.0.md` (2026-10-25)
+- `control-section-lab-v1.2.md` (2026-10-18)
+- `bellinge-v2.0.md` (2026-10-18)
+- `people-as-pollutants-v1.0.0.md` (2026-10-29)
+
+In these five the `date:` line is the app's own build date and a new `written:` line gives the day the summary was written. The earlier written summary (`swmm-engines-v2026-11-06.md`) put the writing date in `date:`; it is left as it is.
+
+Checked before commit: every number in the five files was searched for in its page's source. The only numbers not found are unit conversions made by the summaries (feet from meters, inches from mm), which each file's `units:` line declares.
+
+Noted while writing, for the ingest: the Bellinge essay's byline reads "Robert Dickinson, with Claude"; its section 9 cites Table 3 for numbers that are in Table 4; its test table is dated 19 October 2026 against a build record of 18 October. Each app keeps its own finding IDs (S, C, M, P; R and D; F1 to F9; D-1 to D-3), none mapped to the findings register. The Netlify pages of the five were not read.
+
+After this step: 330 raw files, 72 ingested, 254 queued, 1 superseded, 3 duplicate. Wiki pages unchanged at 144.

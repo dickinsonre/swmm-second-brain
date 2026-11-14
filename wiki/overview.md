@@ -6,7 +6,7 @@ sources: [S01, S04, S05, S06, S10, S19, S20, S22, S23, S24, S29, S35, S41, S43, 
 tags: [overview]
 reviewed: no
 ---
-The state of the wiki after the first batch of summaries pulled from Bob's Netlify apps, arranged by the six topics of [swmm5.org](entities/swmm5-org.md) [S06](sources/S06-swmm5org-topics-index.md). Seventy-two of 325 raw files are ingested, one of them (the EPA hydraulics manual) in part. The wiki is deepest on SWMM's history, the insides of SWMM 5 and the translations of SWMM 5 and SWMM6; thin on ICM; and on SWMM6 it holds the translations but not yet the solvers.
+The state of the wiki after the first batch of summaries pulled from Bob's Netlify apps, arranged by the six topics of [swmm5.org](entities/swmm5-org.md) [S06](sources/S06-swmm5org-topics-index.md). Seventy-two of 330 raw files are ingested, one of them (the EPA hydraulics manual) in part. The wiki is deepest on SWMM's history, the insides of SWMM 5 and the translations of SWMM 5 and SWMM6; thin on ICM; and on SWMM6 it holds the translations but not yet the solvers.
 
 ## 1. SWMM history
 - The timeline from 1969 to 2026 is on [SWMM version history, 1969 to 2026](concepts/swmm-version-history.md), with four places where Bob's own articles disagree with each other or with primary documents.
@@ -57,6 +57,6 @@ The state of the wiki after the first batch of summaries pulled from Bob's Netli
 - The contents of Bob's repositories. [Bob's GitHub repositories (where the rest of the material lives)](entities/bobs-github-repositories.md) lists 30 of them from [S57](sources/S57-swmm-brain-setup-script.md) and the topic pages; the six his earlier [swmm-brain](entities/swmm-brain-repo.md) cloned by default are the place to start.
 - The text of the 4,014 OpenSWMM posts (see [OpenSWMM.org (the forum)](entities/openswmm-forum.md)).
 - The swmm5.org and swmmfive.com posts.
-- The .md of most apps. Ten app summaries are ingested and twelve more app files are queued in `raw/apps/`. Apps built before November 2026 have none.
+- The .md of most apps. Ten app summaries are ingested and seventeen more app files are queued in `raw/apps/`. Apps built before November 2026 have none.
 - The 440 or more Ruby scripts and their READMEs.
 - The rest of the EPA documentation. Nine U.S. government reports and the SWMM 4.4 block documentation are now in `raw/manuals/`; one, the hydraulics reference manual, is read in part [S60](sources/S60-epa-swmm5-reference-manual-vol2-hydraulics.md). Still absent: the hydrology volume of the reference manual, and the 1971 to 1988 reports as text (they are scanned PDFs).
