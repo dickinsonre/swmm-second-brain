@@ -4,7 +4,7 @@ type: concept
 updated: 2026-11-14
 sources: [S01, S02, S05, S58]
 tags: [apps, method]
-reviewed: no
+reviewed: 2026-11-14
 ---
 The rules Bob set for building his single-file browser apps, as written in the instruction file of the old swmm-brain repository [S58](../sources/S58-swmm-brain-working-principles.md). The full contract lives in his swmm-vibe-coding-apps skill, which is not in `raw/` [S58](../sources/S58-swmm-brain-working-principles.md).
 
