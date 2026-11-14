@@ -76,3 +76,19 @@ Still unmerged: branch `ingest-topsoil-recovery-check` (another session), whose 
 
 Lesson for the schema, not yet written into it: one session at a time should hold the next source number, or sessions should take numbers at merge time.
 
+## [2026-11-14] setup | Primary documents added to raw/manuals/
+
+Bob pointed to his repository `SWMMEnablement/SWMM_MD_Documents` (commit 6a6b317). Copied byte for byte into `raw/manuals/`: nine U.S. government reports as markdown (the SWMM 5.1 User's Manual, Reference Manual volumes II and III, the 2006 quality assurance report, the SWMM 3 User's Manual in two parts, the SWMM-CAT guide, a 1980 USGS report, FHWA HDS-5) and eleven text files of SWMM 4.4 block documentation. About 630,000 words. `raw/manuals/_SOURCE.md` lists each file and what was left in the source repository and why: a commercial textbook, a dissertation and a thesis, Innovyze and Autodesk product documentation, source code, and scanned PDFs.
+
+## [2026-11-14] schema | Long documents
+
+`CLAUDE.md` gains "Long documents": a manual is ingested a chapter at a time, its source page carries `coverage: partial` and `read: [...]`, and claims come only from the parts read. Equations in the converted manuals are not to be copied without checking the PDF. `tools/lint.py` reports how many long documents are read in part.
+
+## [2026-11-14] ingest | S60, EPA Reference Manual Volume II, Hydraulics (in part)
+
+Read in full: section 1.1 with Table 1-1, and Chapter 3, Dynamic Wave Analysis. Source number S60 (S59 is left for the unmerged Topsoil Recovery Check branch). Pages updated: dynamic wave routing (the six-step solution procedure, the stability devices), Preissmann slot and surcharge (how the EXTRAN-method surcharge works), reading SWMM output (flooding against ponding), continuity is not validation, version history (EPA's own table), EXTRAN, SWMM 1, Lew Rossman, overview.
+
+Three open questions settled by this primary document and ticked: Q02 (SWMM I was built by Metcalf & Eddy, Water Resources Engineers and the University of Florida), Q12 (SWMM 5 is implicit in time, uncoupled in space; its predecessors were explicit) and Q14 (EXTRAN arrived with SWMM 3 in 1981). Two new ones: Q31 (first PC version: 1983 or 1988) and Q32 (SWMM 5 dated 2005 or October 2004).
+
+`tools/lint.py`: 0 errors, 1 warning (SWMM 1 Engine 3.12 is queued behind the ingested 3.6). 29 questions open, 3 settled.
+

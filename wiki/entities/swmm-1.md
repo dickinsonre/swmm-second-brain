@@ -2,7 +2,7 @@
 title: SWMM 1 (1971)
 type: entity
 updated: 2026-11-14
-sources: [S01, S07, S21, S22]
+sources: [S01, S07, S21, S22, S60]
 tags: [swmm-history, swmm1, engine]
 reviewed: no
 ---
@@ -35,5 +35,5 @@ All from [S01](../sources/S01-swmm1-engine-app-md.md). None has a register ID ye
 **Running it today.** [SWMM 1 Engine (app)](swmm-1-engine-app.md). How it was checked: [Verification against printed runs](../concepts/verification-against-printed-runs.md).
 
 **Disagreements**
-- Q02. [S21](../sources/S21-li-edition-56-swmm-history.md) names Camp Dresser & McKee, not Water Resources Engineers, as the third builder. [S07](../sources/S07-swmm5org-topic-swmm-history.md) agrees with [S01](../sources/S01-swmm1-engine-app-md.md), whose credits come from the report itself.
+- Q02, settled by the EPA reference manual: its development-history table credits SWMM I to Metcalf & Eddy, Water Resources Engineers and the University of Florida [S60](../sources/S60-epa-swmm5-reference-manual-vol2-hydraulics.md), matching [S01](../sources/S01-swmm1-engine-app-md.md) and [S07](../sources/S07-swmm5org-topic-swmm-history.md). Camp Dresser & McKee first appears in that table at SWMM 3 (1981), so [S21](../sources/S21-li-edition-56-swmm-history.md) is the one in error.
 - [S21](../sources/S21-li-edition-56-swmm-history.md) gives SWMM 1 four blocks; the listing has five counting the Executive [S01](../sources/S01-swmm1-engine-app-md.md).

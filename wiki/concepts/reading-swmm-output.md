@@ -2,7 +2,7 @@
 title: Reading SWMM output
 type: concept
 updated: 2026-11-14
-sources: [S03, S10, S22]
+sources: [S03, S10, S22, S60]
 tags: [swmm5, output, reporting]
 reviewed: no
 ---
@@ -13,7 +13,7 @@ A large share of "SWMM is wrong" questions come from comparing two honest number
 **Worked case.** Conduit C11 in EPA Example 1, run in EPA SWMM 5.2.4 on 5 November 2026: peak 73.9 cfs in the Link Flow Summary, 71.18 cfs in the .out file at 5-minute reporting. Nothing in the report says which is which [S22](../sources/S22-li-ten-problems.md).
 
 **Other pairs that get confused** [S22](../sources/S22-li-ten-problems.md)
-- flooding and ponding
+- flooding and ponding. In the engine's own terms: a node whose head would pass its maximum is flooded, and the excess is lost from the system, the same as flow leaving an outfall. If the node has a ponded area, the water is stored above it and returns as capacity allows [S60](../sources/S60-epa-swmm5-reference-manual-vol2-hydraulics.md).
 - maximum depth and maximum HGL
 - three different continuity errors
 

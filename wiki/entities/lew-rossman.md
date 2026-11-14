@@ -2,7 +2,7 @@
 title: Lewis A. (Lew) Rossman
 type: entity
 updated: 2026-11-14
-sources: [S09, S11, S19, S21, S22, S41]
+sources: [S09, S11, S19, S21, S22, S41, S60]
 tags: [people, swmm5, epa]
 reviewed: no
 ---
@@ -10,6 +10,7 @@ Of EPA's Office of Research and Development. Author of EPANET, and architect and
 
 - Wrote and carried the SWMM 5 engine for about twenty years [S22](../sources/S22-li-ten-problems.md).
 - 5.2.0 (1 February 2022) is called his final major release [S21](../sources/S21-li-edition-56-swmm-history.md), [S22](../sources/S22-li-ten-problems.md).
+- Author of the SWMM 5 Reference Manual, Volume II, Hydraulics (EPA/600/R-17/111, May 2017), the primary description of what the engine computes [S60](../sources/S60-epa-swmm5-reference-manual-vol2-hydraulics.md).
 - First author of the WEFTEC 2003 paper on the redevelopment of SWMM [S19](../sources/S19-li-edition-29-engine-speed.md).
 - Appears in 213 of the 2,879 OpenSWMM threads Bob posted in, more than anyone else [S09](../sources/S09-openswmm-thread-list.md).
 

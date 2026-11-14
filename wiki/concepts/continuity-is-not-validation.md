@@ -2,7 +2,7 @@
 title: Continuity is not validation
 type: concept
 updated: 2026-11-14
-sources: [S01, S04, S05, S20]
+sources: [S01, S04, S05, S20, S60]
 tags: [verification, method]
 reviewed: no
 ---
@@ -14,6 +14,8 @@ A closed mass balance shows that water was not lost. It does not show that the a
 4. **Two solvers, two typical error bands.** SWMM 5 typically reports 0.1 to 0.5 % and ICM 0.01 to 0.1 %, which the source puts down to ICM's volume accounting at several points per conduit [S20](../sources/S20-li-edition-54-two-solvers.md).
 
 **The rule the register draws from this.** Its entries say "checked against the engine" rather than "continuity closed" because of this class of bug [S04](../sources/S04-findings-register-seed.md).
+
+**What the EPA manual claims for the continuity error.** Only this: a system continuity error above 5 to 10 percent may be a sign of numerical instability, "although other factors can affect the continuity error as well". [S60](../sources/S60-epa-swmm5-reference-manual-vol2-hydraulics.md).
 
 **The practice is growing.** The share of Bob's app-building conversations that verified against engine output rose from 28 % in 2026Q2 to 60 % in 2026Q3 [S05](../sources/S05-swmm5org-article-facts.md). See [Six quality markers for app-building work](app-quality-markers.md).
 

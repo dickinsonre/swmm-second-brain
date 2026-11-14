@@ -21,6 +21,7 @@ raw/
   notes/       build notes, registers, Bob's own one-idea notes (copy notes/_TEMPLATE.md)
   swmm-brain/  the six files of the earlier dickinsonre/swmm-brain repository, as of its last commit
   ports/       READMEs of the SWMM5 and SWMM6 language-translation repositories, named by last-commit date
+  manuals/     EPA, USGS and FHWA reports and the SWMM 4.4 block documentation (see manuals/_SOURCE.md)
   MANIFEST.csv one row per raw file: hash, status (ingested or queued), source page
 wiki/
   sources/     one page per ingested raw file, named S<nn>-<slug>.md
@@ -70,6 +71,16 @@ Every app Bob builds ships with a technical summary, `APPNAME.md`. That file is 
 3. **Never overwrite.** Uploading new content under an existing name edits a raw file; `tools/lint.py` reports it as an error.
 4. `tools/manifest.py` groups summaries by the `file:` line of their front matter and orders them by `date:` and `version:`. The newest is the current one. An older one that was never ingested gets status `superseded` and is not ingested. A file byte-identical to another gets status `duplicate` and is skipped.
 5. **When a newer version of an already ingested app arrives:** write a new source page for it; add `superseded_by: S<nn>` to the old source page's front matter and leave the rest of that page alone; update the app's entity page and every page that cites a number the new version changed, citing the new source.
+
+## Long documents (`raw/manuals/` and anything over about 15,000 words)
+
+A manual is read and ingested a chapter at a time, not in one sitting.
+
+1. One source page per document. Its front matter carries `coverage: partial` and `read: [...]`, the list of chapters or sections read in full so far.
+2. Claims in the wiki come only from the parts listed in `read:`. Each later ingest of the same document adds to `read:`, to the source page's claims and to the pages they touch; when every chapter is read, `coverage:` becomes `full`.
+3. These are primary documents. Where one contradicts an article or a recollection, say so, cite both, and tick the open question with the manual named as what settled it.
+4. The markdown in `raw/manuals/` lost most of its equations in conversion. Do not copy an equation from it into the wiki without checking the PDF; describe the equation in words and cite the section.
+5. Third-party books, theses and vendor documentation do not go into `raw/` without Bob's say, even when a copy sits in another repository of his.
 
 ## The three operations
 

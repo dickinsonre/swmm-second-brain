@@ -1,10 +1,10 @@
 # Index
 
-Every page in the wiki, one line each. An agent reads this first. Updated on every ingest. Last update: 2026-11-14 (58 sources, 29 concepts, 21 entities).
+Every page in the wiki, one line each. An agent reads this first. Updated on every ingest. Last update: 2026-11-14 (59 sources, 29 concepts, 21 entities).
 
 ## Start here
 - [Overview: what this wiki holds so far](wiki/overview.md): what the wiki holds so far, by Bob's six themes, and what is missing.
-- [Open questions](wiki/open-questions.md): 30 contradictions, doubtful numbers and gaps waiting for a source or for Bob.
+- [Open questions](wiki/open-questions.md): 29 contradictions, doubtful numbers and gaps waiting for a source or for Bob, and 3 settled by a primary document.
 - [Schema](CLAUDE.md): how the wiki is kept. [Log](log.md): what was done and when.
 
 ## Concepts
@@ -89,6 +89,9 @@ App summaries
 - [S01](wiki/sources/S01-swmm1-engine-app-md.md) (2026-11-13): SWMM 1 Engine, technical summary, v3.6.
 - [S02](wiki/sources/S02-complexity-meter-app-md.md) (2026-11-11): SWMM App Complexity Meter, technical summary, v1.9.1.
 
+Manuals and reports (primary documents)
+- [S60](wiki/sources/S60-epa-swmm5-reference-manual-vol2-hydraulics.md) (2017-05): EPA SWMM Reference Manual, Volume II, Hydraulics, by L. A. Rossman. Read in part: section 1.1 and Chapter 3.
+
 Notes and data
 - [S03](wiki/sources/S03-findings-register-format.md) (2026-10-09): findings register, format and twenty candidates.
 - [S04](wiki/sources/S04-findings-register-seed.md) (2026-10-09): findings register, seed entries F-0001 to F-0014.
@@ -159,8 +162,9 @@ Repository READMEs (SWMM5 translations)
 
 ## Queue
 
-231 raw files are queued: 216 LinkedIn articles, 9 app files (8 that Bob uploaded on 14 November), 4 swmm5.org topic pages and 2 SWMM 1 build notes. Three more LinkedIn files are byte-identical copies of others (LinkedIn exported those articles twice) and are marked `duplicate`. All 32 translation READMEs in `raw/ports/` and the four files of the old swmm-brain repository are ingested. One queued app file, SWMM 1 Engine 3.12, is a newer version of an ingested one (3.6) and should go first. `raw/MANIFEST.csv` lists them all. Suggested next batches, in order:
+250 raw files are queued: 216 LinkedIn articles, 19 manual files in `raw/manuals/` (8 EPA, USGS and FHWA documents not yet started, and 11 SWMM 4.4 documentation files), 9 app files, 4 swmm5.org topic pages and 2 SWMM 1 build notes. Three more LinkedIn files are byte-identical copies of others and are marked `duplicate`. One queued app file, SWMM 1 Engine 3.12, is a newer version of an ingested one (3.6) and should go early. `raw/MANIFEST.csv` lists them all. Suggested next batches, in order:
 
+0. The rest of the EPA hydraulics manual, a chapter at a time (S60 is read in part), then the 2006 quality assurance report and the SWMM 5.1 User's Manual. These are the primary documents; ingesting them first lets later articles be checked against them.
 1. The four remaining swmm5.org topic pages and the SWMM 1 build notes (small, and they complete themes 3 to 6).
 2. EXTRAN: the six test-file articles and Edition 38. Settles Q14.
 3. SWMM history: Edition 40, "SWMM1 to SWMM5 Documentation Archive", "Reviving 1988 SWMM4 Models with AI", "SWMM 44H Fortran Code".

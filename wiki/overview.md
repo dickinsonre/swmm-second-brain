@@ -2,11 +2,11 @@
 title: Overview: what this wiki holds so far
 type: synthesis
 updated: 2026-11-14
-sources: [S01, S04, S05, S06, S10, S19, S20, S22, S23, S24, S29, S35, S41, S43, S54, S55, S56, S57, S58]
+sources: [S01, S04, S05, S06, S10, S19, S20, S22, S23, S24, S29, S35, S41, S43, S54, S55, S56, S57, S58, S60]
 tags: [overview]
 reviewed: no
 ---
-The state of the wiki after the fourth ingest, arranged by the six topics of [swmm5.org](entities/swmm5-org.md) [S06](sources/S06-swmm5org-topics-index.md). Fifty-eight of 292 raw files are ingested. The wiki is deepest on SWMM's history, the insides of SWMM 5 and the translations of SWMM 5 and SWMM6; thin on ICM; and on SWMM6 it holds the translations but not yet the solvers.
+The state of the wiki after the fifth ingest, arranged by the six topics of [swmm5.org](entities/swmm5-org.md) [S06](sources/S06-swmm5org-topics-index.md). Fifty-nine of 312 raw files are ingested, one of them (the EPA hydraulics manual) in part. The wiki is deepest on SWMM's history, the insides of SWMM 5 and the translations of SWMM 5 and SWMM6; thin on ICM; and on SWMM6 it holds the translations but not yet the solvers.
 
 ## 1. SWMM history
 - The timeline from 1969 to 2026 is on [SWMM version history, 1969 to 2026](concepts/swmm-version-history.md), with four places where Bob's own articles disagree with each other or with primary documents.
@@ -43,7 +43,7 @@ The state of the wiki after the fourth ingest, arranged by the six topics of [sw
 - An idea at seed stage: [A surrogate distilled from SWMM](concepts/surrogate-distilled-from-swmm.md) [S56](sources/S56-swmm-brain-note-surrogate.md).
 
 ## Three things the first ingest showed
-1. **Bob's published articles contradict each other on dates and credits.** Thirty items are in [Open questions](open-questions.md). The primary documents (the 1971 listing, EPA's update notes) settle some; others need Bob.
+1. **Bob's published articles contradict each other on dates and credits.** Thirty-two items are in [Open questions](open-questions.md); three were settled on 14 November by the EPA hydraulics manual, the first primary document ingested. The primary documents (the 1971 listing, EPA's update notes) settle some; others need Bob.
 2. **Much of the article text is AI-written, and the newest articles say so while the older ones do not.** Each source page records how it was written. Claims that rest only on an AI-written passage are flagged.
 3. **The strongest pages rest on the app .md files and the register, not on the articles.** Those sources carry procedures and numbers. The pattern argues for ingesting every app's .md before the remaining articles.
 
@@ -53,4 +53,4 @@ The state of the wiki after the fourth ingest, arranged by the six topics of [sw
 - The swmm5.org and swmmfive.com posts.
 - The .md of every app except three. Apps built before November 2026 have none.
 - The 440 or more Ruby scripts and their READMEs.
-- The EPA manuals and the 1971 to 1988 reports, as text.
+- The rest of the EPA documentation. Nine U.S. government reports and the SWMM 4.4 block documentation are now in `raw/manuals/`; one, the hydraulics reference manual, is read in part [S60](sources/S60-epa-swmm5-reference-manual-vol2-hydraulics.md). Still absent: the hydrology volume of the reference manual, and the 1971 to 1988 reports as text (they are scanned PDFs).

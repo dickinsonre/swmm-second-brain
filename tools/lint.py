@@ -23,6 +23,7 @@ REQUIRED = {'source': ['title', 'type', 'raw', 'ingested', 'reviewed'],
             'entity': ['title', 'type', 'updated', 'sources', 'reviewed'],
             'synthesis': ['title', 'type', 'updated', 'reviewed']}
 unreviewed = 0
+partial = []
 for p, t in texts.items():
     r = rel(p)
     fm, body = front_matter(t)
@@ -39,6 +40,8 @@ for p, t in texts.items():
                 errors.append('%s: raw file not found: %s' % (r, fm['raw']))
             if fm.get('reviewed', 'no') == 'no':
                 unreviewed += 1
+            if ty == 'source' and fm.get('coverage') == 'partial':
+                partial.append(r)
     cites = 0
     for text, target in links(body):
         if re.match(r'^[a-z][a-z0-9+.-]*:', target) or target.startswith('#'):
@@ -109,6 +112,8 @@ for p, t in texts.items():
 print('pages:', ', '.join('%s %d' % kv for kv in sorted(types.items())))
 print('raw files: %d ingested, %d queued' % (ingested, queued) + ''.join(', %d %s' % (v, k) for k, v in sorted(other.items()) if k not in ('ingested', 'queued')))
 print('open questions: %d   pages not yet reviewed by Bob: %d' % (open_q, unreviewed))
+if partial:
+    print('long documents read in part: %d (%s)' % (len(partial), ', '.join(os.path.basename(x)[:3] for x in partial)))
 for w in warns:
     print('WARN ', w)
 for e in errors:
