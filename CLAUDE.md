@@ -20,6 +20,7 @@ raw/
   swmm5org/    swmm5.org pages and fact sheets
   notes/       build notes, registers, Bob's own one-idea notes (copy notes/_TEMPLATE.md)
   swmm-brain/  the six files of the earlier dickinsonre/swmm-brain repository, as of its last commit
+  ports/       READMEs of the SWMM5 and SWMM6 language-translation repositories, named by last-commit date
   MANIFEST.csv one row per raw file: hash, status (ingested or queued), source page
 wiki/
   sources/     one page per ingested raw file, named S<nn>-<slug>.md

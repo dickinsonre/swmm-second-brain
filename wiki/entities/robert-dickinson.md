@@ -2,7 +2,7 @@
 title: Robert (Bob) Dickinson
 type: entity
 updated: 2026-11-14
-sources: [S07, S09, S11, S12, S18, S19, S21, S22, S55]
+sources: [S07, S09, S11, S12, S18, S19, S21, S22, S23, S29, S41, S45, S55]
 tags: [people]
 reviewed: no
 ---
@@ -28,6 +28,8 @@ Author of every source in this wiki. Professional record only, as he has publish
 | 1995 to 2026 | 4,014 posts in 2,879 OpenSWMM threads | [S09](../sources/S09-openswmm-thread-list.md) |
 | 2023 | Becomes chair of the SWMM5+ Technical Advisory Committee at CIMM.org | [S55](../sources/S55-swmm-brain-readme.md) |
 | 2024 | Autodesk Water | [S55](../sources/S55-swmm-brain-readme.md) |
+| November 2026 | Directs translations of EPA SWMM 5.2.4 into 19 languages for his Code Rosetta Stone app, each held byte for byte to EPA; chose Ruby over Scala as "the scripting language of InfoWorks ICM" (see [SWMM5 language translations](swmm5-language-ports.md)) | [S41](../sources/S41-swmm5-go-readme.md) [S45](../sources/S45-swmm5-ruby-readme.md) |
+| November 2026 | Directs translations of the OpenSWMM 6 engine into 13 languages, published under SWMMBobSWMM6; Claude writes the translators and runtimes (see [SWMM6 language translations](swmm6-language-ports.md)) | [S23](../sources/S23-swmm6-csharp-readme.md) [S29](../sources/S29-swmm6-rust-readme.md) |
 
 **Positions he has taken**
 - One subcatchment width for pervious and impervious subareas is wrong in principle [S22](../sources/S22-li-ten-problems.md). See [Subcatchment width](../concepts/subcatchment-width.md).
