@@ -2,7 +2,7 @@
 title: OpenSWMM.org (the forum)
 type: entity
 updated: 2026-11-14
-sources: [S09, S10, S22]
+sources: [S09, S10, S22, S23]
 tags: [openswmm, forum]
 reviewed: no
 ---
@@ -28,6 +28,8 @@ The SWMM users' forum at openswmm.org. Bob has posted there since 1995 [S09](../
 | 2020s (to October 2026) | 1,059 |
 
 Busiest years: 2019 with 291 threads, 2018 with 220, 2020 with 212 [S09](../sources/S09-openswmm-thread-list.md).
+
+**Ideas from a list thread, tested.** The [Topsoil Recovery Check (app)](topsoil-recovery-check.md) ran four ideas from replies on the SWMM-USERS list at OpenSWMM.org as its Experiment H: evaporation during rain, depression storage as the topsoil bowl, how long an infiltration test must run, and a curb-cut drain, which found defect D2 [S23](../sources/S23-topsoil-recovery-check-app-md.md). See [Evaporation during rain (DRY_ONLY)](../concepts/evaporation-during-rain.md) and [LID bio-retention layers](../concepts/lid-bioretention-layers.md).
 
 **Who else is in those threads** [S09](../sources/S09-openswmm-thread-list.md): Lew Rossman 213, Mitchell Heineman 201, Michael Gregory 187, Peter Klaver 128, Rob James 111, Joseph Pang 100.
 

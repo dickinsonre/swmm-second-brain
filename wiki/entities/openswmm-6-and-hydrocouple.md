@@ -2,7 +2,7 @@
 title: OpenSWMM 6 and HydroCouple
 type: entity
 updated: 2026-11-14
-sources: [S02, S03, S04, S05, S21, S22]
+sources: [S02, S03, S04, S05, S21, S22, S23]
 tags: [swmm6, engine, hydrocouple]
 reviewed: no
 ---
@@ -19,5 +19,9 @@ OpenSWMM 6 is the SWMM line developed at HydroCouple [S22](../sources/S22-li-ten
 - A metric-units fault in the 6.0.0-alpha.2 timeseries inflow path, found with the Self-Play Lab [S05](../sources/S05-swmm5org-article-facts.md); listed as a register candidate, status confirmed [S03](../sources/S03-findings-register-format.md).
 - A virtual-junction crash in alpha.2, and a CHANGELOG that lists 17 `FV_` keys where `OptionsHandler.cpp` parses 21: register candidates [S03](../sources/S03-findings-register-format.md).
 - Anderson acceleration gave no speedup on one test case (F-0013) [S04](../sources/S04-findings-register-seed.md).
+- 6.0.0-alpha.4 ignores an unknown LID layer keyword (SOIL2) instead of reporting it; an issue was drafted with a tested patch [S23](../sources/S23-topsoil-recovery-check-app-md.md).
+- Defect D2, a drain on a bio-retention cell with no storage layer, gives the same -1,100.9 % continuity error in OpenSWMM 5.3.0-beta.3 and 6.0.0-alpha.4 as in EPA 5.2.4; and OpenSWMM 6 keeps 5.2.4's rule that LID soil evaporation stops while water infiltrates (`LID.cpp` line 907). See [LID bio-retention layers](../concepts/lid-bioretention-layers.md) [S23](../sources/S23-topsoil-recovery-check-app-md.md).
 
-**Not in the sources yet.** Almost everything: the solvers, 2D, the GUI, the input format, the license. Queued: "SWMM6 Code House" (2026-11-04, 4,427 words), "Forking without Drowning on GitHub for #SWMM6" (2026-08-14), the swmm5.org topic pages "Inside SWMM6" and "ICM InfoWorks and SWMM6".
+**Builds on record.** Branch swmm6_rel, commit 13746831, licensed Apache-2.0: OpenSWMM 6.0.0-alpha.4 and the legacy engine 5.3.0-beta.3, both built to WebAssembly for the [Topsoil Recovery Check (app)](topsoil-recovery-check.md) and rebuilt byte-identical from the pinned sources with Zig 0.17.0 [S23](../sources/S23-topsoil-recovery-check-app-md.md).
+
+**Not in the sources yet.** Almost everything: the solvers, 2D, the GUI, the input format. The license of the swmm6_rel branch, Apache-2.0, is in [S23](../sources/S23-topsoil-recovery-check-app-md.md). Queued: "SWMM6 Code House" (2026-11-04, 4,427 words), "Forking without Drowning on GitHub for #SWMM6" (2026-08-14), the swmm5.org topic pages "Inside SWMM6" and "ICM InfoWorks and SWMM6".

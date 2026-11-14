@@ -2,11 +2,11 @@
 title: Overview: what this wiki holds so far
 type: synthesis
 updated: 2026-11-14
-sources: [S01, S04, S05, S06, S10, S19, S20, S22]
+sources: [S01, S04, S05, S06, S10, S19, S20, S22, S23]
 tags: [overview]
 reviewed: no
 ---
-The state of the wiki after the first ingest, arranged by the six topics of [swmm5.org](entities/swmm5-org.md) [S06](sources/S06-swmm5org-topics-index.md). Twenty-two of 248 raw files are ingested. The wiki is deepest on SWMM's history and on the insides of SWMM 5, thin on ICM, and nearly empty on SWMM6.
+The state of the wiki after two ingests, arranged by the six topics of [swmm5.org](entities/swmm5-org.md) [S06](sources/S06-swmm5org-topics-index.md). Twenty-three of 249 raw files are ingested. The wiki is deepest on SWMM's history and on the insides of SWMM 5, thin on ICM, and nearly empty on SWMM6.
 
 ## 1. SWMM history
 - The timeline from 1969 to 2026 is on [SWMM version history, 1969 to 2026](concepts/swmm-version-history.md), with four places where Bob's own articles disagree with each other or with primary documents.
@@ -18,6 +18,7 @@ The state of the wiki after the first ingest, arranged by the six topics of [swm
 ## 2. Inside SWMM 5
 - Hydraulics: [Dynamic wave routing](concepts/dynamic-wave-routing.md), [Kinematic wave and steady flow routing](concepts/kinematic-wave-and-steady-flow.md), [Preissmann slot and surcharge](concepts/preissmann-slot-and-surcharge.md), [Conduit lengthening](concepts/conduit-lengthening.md), [Force main friction](concepts/force-main-friction.md).
 - Hydrology: [Runoff surfaces and subarea routing](concepts/runoff-surfaces-and-subarea-routing.md), [Subcatchment width](concepts/subcatchment-width.md), [Infiltration methods](concepts/infiltration-methods.md), [RDII unit hydrographs (RTK)](concepts/rdii-unit-hydrographs.md).
+- LID and soils: [LID bio-retention layers](concepts/lid-bioretention-layers.md), [Topsoil over compacted clay](concepts/topsoil-over-compacted-clay.md), [Evaporation during rain (DRY_ONLY)](concepts/evaporation-during-rain.md), and the variant engine [swmm524-perched](entities/swmm524-perched.md). On one soil pair, five SWMM setups capture from 67.1 % (perched with van Genuchten) to 100.0 % (LID with the clay as the storage layer) of the big winter storms, and two 5.2.4 defects, D1 and D2, came out of the study [S23](sources/S23-topsoil-recovery-check-app-md.md).
 - Output and documentation: [Reading SWMM output](concepts/reading-swmm-output.md), [The missing specification](concepts/the-missing-specification.md).
 - The single most-asked subject in 31 years of forum threads is dynamic-wave stability, tied with reading the output, at 224 threads each [S10](sources/S10-openswmm-top25-problems.md). See [The top 25 problems in 31 years of forum threads](concepts/forum-problems-top-25.md).
 
@@ -27,12 +28,12 @@ The state of the wiki after the first ingest, arranged by the six topics of [swm
 - This is where the queue is longest: 141 queued LinkedIn articles name ICM or InfoWorks in the title.
 
 ## 4 and 5. ICM and SWMM6; inside SWMM6
-- One page, [OpenSWMM 6 and HydroCouple](entities/openswmm-6-and-hydrocouple.md), holding four findings and the HydroCouple measurements. Nothing yet on the solvers, 2D or the input format.
+- One page, [OpenSWMM 6 and HydroCouple](entities/openswmm-6-and-hydrocouple.md), holding six findings, the HydroCouple measurements and the swmm6_rel builds on record. Nothing yet on the solvers, 2D or the input format.
 
 ## 6. Comparing models with AI
 - The discipline: [Continuity is not validation](concepts/continuity-is-not-validation.md), [The SWMM findings register](concepts/findings-register.md), [Negative results](concepts/negative-results.md).
 - The measurements of Bob's own practice: [Six quality markers for app-building work](concepts/app-quality-markers.md) (verification against engine output rose from 28 % to 60 % of app-building conversations between 2026Q2 and 2026Q3 [S05](sources/S05-swmm5org-article-facts.md)) and [App complexity index (HydroCouple = 100)](concepts/app-complexity-index.md).
-- Apps as subjects: [SWMM 1 Engine (app)](entities/swmm-1-engine-app.md), [SWMM App Complexity Meter (app)](entities/swmm-app-complexity-meter.md), [Claude chat archive (app)](entities/claude-chat-archive.md).
+- Apps as subjects: [SWMM 1 Engine (app)](entities/swmm-1-engine-app.md), [SWMM App Complexity Meter (app)](entities/swmm-app-complexity-meter.md), [Claude chat archive (app)](entities/claude-chat-archive.md), [Topsoil Recovery Check (app)](entities/topsoil-recovery-check.md), whose verify script reruns 1,181 cases against a manifest of expected counts [S23](sources/S23-topsoil-recovery-check-app-md.md).
 
 ## Three things the first ingest showed
 1. **Bob's published articles contradict each other on dates and credits.** Nineteen items are in [Open questions](open-questions.md). The primary documents (the 1971 listing, EPA's update notes) settle some; others need Bob.
@@ -42,6 +43,6 @@ The state of the wiki after the first ingest, arranged by the six topics of [swm
 ## What is missing from raw
 - The text of the 4,014 OpenSWMM posts (see [OpenSWMM.org (the forum)](entities/openswmm-forum.md)).
 - The swmm5.org and swmmfive.com posts.
-- The .md of every app except three. Apps built before November 2026 have none.
+- The .md of every app except four. Apps built before November 2026 have none.
 - The 440 or more Ruby scripts and their READMEs.
 - The EPA manuals and the 1971 to 1988 reports, as text.

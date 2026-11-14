@@ -13,7 +13,7 @@ What people asked about, counted from the titles of the 2,879 openswmm.org threa
 | 1 | Dynamic-wave stability, continuity and surcharge | 224 | [Dynamic wave routing](dynamic-wave-routing.md) |
 | 2 | Reading the output | 224 | [Reading SWMM output](reading-swmm-output.md) |
 | 3 | Rainfall and time-series input | 221 | |
-| 4 | LID | 216 | |
+| 4 | [LID](lid-bioretention-layers.md) | 216 | |
 | 5 | Error messages | 197 | |
 | 6 | Moving models and results in and out | 180 | |
 | 7 | Water quality buildup and washoff | 170 | |

@@ -19,7 +19,7 @@ Where the two engines differ, from the four comparison sources ingested so far. 
 | Force main friction | User picks Manning, Hazen-Williams or Darcy-Weisbach | Built into a dedicated link type | [S20](../sources/S20-li-edition-54-two-solvers.md) |
 | Dry or intermittent flow | Handled natively | Keeps a minimum base flow | [S20](../sources/S20-li-edition-54-two-solvers.md) |
 | 2D surface flooding | No | Yes, mesh-based | [S20](../sources/S20-li-edition-54-two-solvers.md) |
-| LID and water quality | Dedicated LID module; the source calls SWMM 5 "the only platform with built in LID and water quality modeling" | Not described in the source. Queued articles on SUDS and buildup and washoff in ICM InfoWorks suggest otherwise: open question Q13 | [S20](../sources/S20-li-edition-54-two-solvers.md) |
+| LID and water quality | Dedicated [LID](lid-bioretention-layers.md) module; the source calls SWMM 5 "the only platform with built in LID and water quality modeling" | Not described in the source. Queued articles on SUDS and buildup and washoff in ICM InfoWorks suggest otherwise: open question Q13 | [S20](../sources/S20-li-edition-54-two-solvers.md) |
 | Runoff surfaces | Three subareas from two percentages | Three runoff surfaces tied by a Land Use ID | [S13](../sources/S13-li-three-runoff-surfaces.md) |
 | Subarea routing | OUTLET, IMPERV, PERV | Direct, To pervious, To impervious | [S14](../sources/S14-li-subarea-routing.md) |
 | Cost and source | Free, public domain, open source | Commercial | [S20](../sources/S20-li-edition-54-two-solvers.md) |
