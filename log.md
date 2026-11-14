@@ -125,3 +125,15 @@ Left out by page rule 9: family details and the memorial link in S64.
 `CLAUDE.md`, "App summaries and versions", rule 4 now says what the `file:` line must be and what the tool does when two apps share one. `tools/manifest.py`: summaries that share `file:` but differ in `name:` are grouped by name, with a note; of byte-identical files the ingested copy is kept, else the shortest name. `tools/lint.py`: `%20` in a link is read as a space, so a source page can link a raw file whose name has spaces.
 
 After this ingest: 316 raw files, 64 ingested, 248 queued, 4 duplicate; 127 pages; 38 questions open, 3 settled.
+
+## [2026-11-14] ingest | S65, S66: World Rainfall Pattern Painter
+
+A raw file was changed, by Bob. At 16:19 on 14 November he replaced the content of `raw/apps/rain-canvas-studio-v2026.1.2.md` on GitHub (commit fc42e96) with the World Rainfall Pattern Painter summary, version 3.2.0. Until then the file was a byte-identical second copy of the Rules for Responsible Modeling summary, marked `duplicate` and cited by no page, so nothing in the wiki rested on the old content, and that content survives in the file S62 cites. `tools/manifest.py` reports the change once and records the new hash. The file name still says v2026.1.2, another app's version; raw files are not renamed, so the name stays and the source page says so.
+
+Read in full and ingested: that summary (S65) and the queued LinkedIn article that announced the app on 25 February 2026 (S66). Pages created: S65, S66, [World Rainfall Pattern Painter (app)](wiki/entities/world-rainfall-pattern-painter.md), [Design storms and temporal patterns](wiki/concepts/design-storm-patterns.md). Pages changed: continuity is not validation, InfoWorks ICM, the two other Lovable app pages, S62, overview, open questions, index, README.
+
+Found at ingest. Q42: the article lists HEC-HMS export as coming; the app's change list dates it three months earlier. Q43: two oddities in the climate uplift table, and no factor checked against published guidance. Q35, Q38 and Q19 extended. Arithmetic checked and found right: 19 test files sum to 1,502; 3 + 57 + 279 = 339; 1,017 and 9,153 are 339 times 3 and 27; the credits table has 37 rows.
+
+Noted for the next lint: the Robert Dickinson page is about 790 words, past the 600-word rule, and should be split.
+
+After this ingest: 316 raw files, 66 ingested, 247 queued, 3 duplicate; 131 pages; 40 questions open, 3 settled.

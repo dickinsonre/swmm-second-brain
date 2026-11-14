@@ -2,7 +2,7 @@
 title: InfoWorks ICM
 type: entity
 updated: 2026-11-14
-sources: [S03, S13, S14, S17, S20]
+sources: [S03, S13, S14, S17, S20, S65]
 tags: [icm, engine, comparison]
 reviewed: no
 ---
@@ -15,7 +15,8 @@ The commercial integrated catchment model developed by Wallingford Software in E
 - **2D.** Mesh-based overland flow coupled to the 1D network [S20](../sources/S20-li-edition-54-two-solvers.md).
 - **Hydrology carried over from SWMM.** Three runoff surfaces per SWMM subcatchment, tied by Land Use ID [S13](../sources/S13-li-three-runoff-surfaces.md); subarea routing as Direct, To pervious, To impervious since version 6.5, November 2015 [S14](../sources/S14-li-subarea-routing.md).
 - **A recorded correction.** `hw_storage` and `hw_outfall` are "phantom tables" in the ICM results file: a register candidate, status corrected, no detail given [S03](../sources/S03-findings-register-format.md).
+- **Rainfall in.** The [World Rainfall Pattern Painter (app)](world-rainfall-pattern-painter.md) writes ICM rainfall event files (CSV, type=RED) after Autodesk's "Events - CSV File Formats". Its tests check the exact text of the file; import into ICM itself has not been checked [S65](../sources/S65-world-rainfall-pattern-painter-app-md.md).
 
 Full comparison: [SWMM 5 versus ICM InfoWorks](../concepts/swmm5-versus-icm-infoworks.md).
 
-**Not in the sources yet.** Ruby and SQL scripting, the results file, RDII and ground infiltration, sediment, the 12 runoff surfaces. Of the 216 queued LinkedIn articles, 139 name ICM or InfoWorks in the title and 70 name Ruby.
+**Not in the sources yet.** Ruby and SQL scripting, the results file, RDII and ground infiltration, sediment, the 12 runoff surfaces. Of the 213 queued LinkedIn articles, 139 name ICM or InfoWorks in the title and 70 name Ruby.

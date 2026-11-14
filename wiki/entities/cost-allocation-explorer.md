@@ -37,4 +37,4 @@ The March column comes from a passage that reads as AI-drafted and was not check
 
 **Who did what.** Lovable built the interface, the methods and the tests. Bob co-authored the paper, directed the work, and reviewed the interface and the mathematics [S61](../sources/S61-cost-allocation-explorer-app-md.md).
 
-**Open.** The summary's front matter carries another app's identifier (Q35), and one difference in its table is larger than the largest it reports (Q36). See [Open questions](../open-questions.md).
+**Open.** The summary's front matter carries the identifier of another app, the [World Rainfall Pattern Painter (app)](world-rainfall-pattern-painter.md) (Q35), and one difference in its table is larger than the largest it reports (Q36). See [Open questions](../open-questions.md).

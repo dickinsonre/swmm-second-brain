@@ -2,7 +2,7 @@
 title: Continuity is not validation
 type: concept
 updated: 2026-11-14
-sources: [S01, S04, S05, S20, S59, S60, S62]
+sources: [S01, S04, S05, S20, S59, S60, S62, S65]
 tags: [verification, method]
 reviewed: no
 ---
@@ -24,5 +24,7 @@ A closed mass balance shows that water was not lost. It does not show that the a
 **Checks that fail loudly.** The [Topsoil Recovery Check (app)](../entities/topsoil-recovery-check.md) verify script checks each group's case count against a manifest and exits 1 on a missing engine, failed run, missing file, count mismatch or moved number; 1,181 of 1,181 cases passed on 12 November 2026 [S59](../sources/S59-topsoil-recovery-check-app-md.md).
 
 **A passing test suite is not validation either.** The summary of the [Rules for Responsible Modeling (app)](../entities/rules-for-responsible-modeling-app.md) reports 61 of 61 tests and a tutorial run with continuity errors of -0.011 % and 0.019 %, and then says: "These are measured software checks, not field validation, native-solver equivalence or engineering approval." The app's own checklist takes continuity below 1 % as one item among several, with validation and a data audit as separate items [S62](../sources/S62-rules-for-responsible-modeling-app-md.md). See [Calibration, validation and uncertainty](calibration-validation-uncertainty.md).
+
+**The rainfall form of the same point.** All 339 patterns of the [World Rainfall Pattern Painter (app)](../entities/world-rainfall-pattern-painter.md) return their depth to within 1.776e-15 in, yet only 3 are benchmarked against published ordinates and 279 are graded Low confidence [S65](../sources/S65-world-rainfall-pattern-painter-app-md.md). See [Design storms and temporal patterns](design-storm-patterns.md).
 
 See also [Verification against printed runs](verification-against-printed-runs.md) and [The SWMM findings register](findings-register.md).

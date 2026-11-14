@@ -37,4 +37,4 @@ Bob's interactive edition of the 2005 book by [William (Bill) James](william-jam
 
 **What it says of itself.** "These are measured software checks, not field validation, native-solver equivalence or engineering approval" [S62](../sources/S62-rules-for-responsible-modeling-app-md.md). The 17 chapter mappings to the printed book have not been checked by a person, and the chat answers are not verified against the book's text [S62](../sources/S62-rules-for-responsible-modeling-app-md.md).
 
-**Open.** The summary was uploaded twice, once under another app's name, and its front matter carries that app's identifier (Q35). See [Open questions](../open-questions.md).
+**Open.** The summary's front matter carries the identifier of another app, the [World Rainfall Pattern Painter (app)](world-rainfall-pattern-painter.md) (Q35). See [Open questions](../open-questions.md).

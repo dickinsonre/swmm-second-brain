@@ -1,10 +1,10 @@
 # Index
 
-Every page in the wiki, one line each. An agent reads this first. Updated on every ingest. Last update: 2026-11-14 (64 sources, 34 concepts, 27 entities).
+Every page in the wiki, one line each. An agent reads this first. Updated on every ingest. Last update: 2026-11-14 (66 sources, 35 concepts, 28 entities).
 
 ## Start here
 - [Overview: what this wiki holds so far](wiki/overview.md): what the wiki holds so far, by Bob's six themes, and what is missing.
-- [Open questions](wiki/open-questions.md): 38 contradictions, doubtful numbers and gaps waiting for a source or for Bob, and 3 settled by a primary document.
+- [Open questions](wiki/open-questions.md): 40 contradictions, doubtful numbers and gaps waiting for a source or for Bob, and 3 settled by a primary document.
 - [Schema](CLAUDE.md): how the wiki is kept. [Log](log.md): what was done and when.
 
 ## Concepts
@@ -22,6 +22,7 @@ Hydrology
 - [Infiltration methods](wiki/concepts/infiltration-methods.md): Curve Number, Horton, Modified Horton and Green-Ampt by their entry points in the code.
 - [RDII unit hydrographs (RTK)](wiki/concepts/rdii-unit-hydrographs.md): R, T and K, unit hydrograph groups, and the interface file format.
 - [Two-layer soil infiltration (SOIL2)](wiki/concepts/two-layer-infiltration.md): Bob's SOIL2 proposal, a second soil layer through the LID machinery.
+- [Design storms and temporal patterns](wiki/concepts/design-storm-patterns.md): hyetographs from mass curves, who each pattern is credited to, and why a closed volume does not make a pattern right.
 - [LID bio-retention layers](wiki/concepts/lid-bioretention-layers.md): the storage-layer and no-storage setups, soil ET off while infiltrating, and defect D2 (a drain with no storage layer makes water).
 - [Topsoil over compacted clay](wiki/concepts/topsoil-over-compacted-clay.md): one soil pair, five SWMM setups, 67.1 to 100.0 % of big winter storms captured.
 - [Evaporation during rain (DRY_ONLY)](wiki/concepts/evaporation-during-rain.md): switching it off moves capture by 1.3 points at most, and why.
@@ -77,6 +78,7 @@ Apps
 - [Topsoil Recovery Check (app)](wiki/entities/topsoil-recovery-check.md): five engines in one page, verify.py with 1,181 cases, version 2026-11-12.
 - [Rules for Responsible Modeling (app)](wiki/entities/rules-for-responsible-modeling-app.md): the Lovable edition of William James's book, with EPA SWMM 5.2.4 in the page; 61 of 61 tests, version 2026.1.2.
 - [Cost Allocation Game Theory Explorer (app)](wiki/entities/cost-allocation-explorer.md): the Lovable app of the 1982 Heaney and Dickinson paper; five methods, 101 of 101 tests, version 1.0.1.
+- [World Rainfall Pattern Painter (app)](wiki/entities/world-rainfall-pattern-painter.md): the Lovable design-storm generator; 339 patterns (3 High, 57 Medium, 279 Low confidence), 1,502 of 1,502 tests, version 3.2.0.
 
 Data
 - [1729-SWMM5-Models-2030 (the corpus)](wiki/entities/corpus-1729.md): Bob's public model repository; 480 of its models are the translations' gate set.
@@ -104,6 +106,7 @@ App summaries
 - [S59](wiki/sources/S59-topsoil-recovery-check-app-md.md) (2026-11-12): Topsoil Recovery Check, technical summary, version 2026-11-12.
 - [S61](wiki/sources/S61-cost-allocation-explorer-app-md.md) (2026-11-14): Cost Allocation Game Theory Explorer, technical summary, v1.0.1.
 - [S62](wiki/sources/S62-rules-for-responsible-modeling-app-md.md) (2026-11-14): Rules for Responsible Modeling, technical summary, v2026.1.2.
+- [S65](wiki/sources/S65-world-rainfall-pattern-painter-app-md.md) (2026-11-14): World Rainfall Pattern Painter, technical summary, v3.2.0.
 
 Manuals and reports (primary documents)
 - [S60](wiki/sources/S60-epa-swmm5-reference-manual-vol2-hydraulics.md) (2017-05): EPA SWMM Reference Manual, Volume II, Hydraulics, by L. A. Rossman. Read in part: section 1.1 and Chapter 3.
@@ -141,6 +144,7 @@ LinkedIn articles
 - [S22](wiki/sources/S22-li-ten-problems.md) (2026-11-05): Ten Problems with How SWMM Was Developed and Explained.
 - [S63](wiki/sources/S63-li-edition-53-measure-of-honest-numbers.md) (2026-02-23): Edition 53, The Measure of Honest Numbers: William James and the app of his book.
 - [S64](wiki/sources/S64-li-heaney-1982-paper-cost-allocation-app.md) (2026-03-08): From a 1982 Water Resources Paper to an Interactive App: Jim Heaney and the cost allocation app.
+- [S66](wiki/sources/S66-li-design-storm-app-66-patterns.md) (2026-02-25): Design Storm App for 6 Continents and 66 Patterns: the rainfall app as announced.
 
 Repository READMEs (SWMM6 translations)
 - [S23](wiki/sources/S23-swmm6-csharp-readme.md) (2026-11-04): swmm6-csharp, the OpenSWMM 6 engine in C#; 480 of 480, 452 of 452.
@@ -180,7 +184,7 @@ Repository READMEs (SWMM5 translations)
 
 ## Queue
 
-248 raw files are queued: 214 LinkedIn articles, 19 manual files in `raw/manuals/` (8 EPA, USGS and FHWA documents not yet started, and 11 SWMM 4.4 documentation files), 9 app files, 4 swmm5.org topic pages and 2 SWMM 1 build notes. Three more LinkedIn files are byte-identical copies of others and are marked `duplicate`. One queued app file, SWMM 1 Engine 3.12, is a newer version of an ingested one (3.6) and should go early. `raw/MANIFEST.csv` lists them all. Suggested next batches, in order:
+247 raw files are queued: 213 LinkedIn articles, 19 manual files in `raw/manuals/` (8 EPA, USGS and FHWA documents not yet started, and 11 SWMM 4.4 documentation files), 9 app files, 4 swmm5.org topic pages and 2 SWMM 1 build notes. Three more LinkedIn files are byte-identical copies of others and are marked `duplicate`. One queued app file, SWMM 1 Engine 3.12, is a newer version of an ingested one (3.6) and should go early. `raw/MANIFEST.csv` lists them all. Suggested next batches, in order:
 
 0. The rest of the EPA hydraulics manual, a chapter at a time (S60 is read in part), then the 2006 quality assurance report and the SWMM 5.1 User's Manual. These are the primary documents; ingesting them first lets later articles be checked against them.
 1. The four remaining swmm5.org topic pages and the SWMM 1 build notes (small, and they complete themes 3 to 6).

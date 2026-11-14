@@ -2,11 +2,11 @@
 title: Overview: what this wiki holds so far
 type: synthesis
 updated: 2026-11-14
-sources: [S01, S04, S05, S06, S10, S19, S20, S22, S23, S24, S29, S35, S41, S43, S54, S55, S56, S57, S58, S59, S60, S61, S62, S63, S64]
+sources: [S01, S04, S05, S06, S10, S19, S20, S22, S23, S24, S29, S35, S41, S43, S54, S55, S56, S57, S58, S59, S60, S61, S62, S63, S64, S65, S66]
 tags: [overview]
 reviewed: no
 ---
-The state of the wiki after the ingest of four sources on two Lovable apps, arranged by the six topics of [swmm5.org](entities/swmm5-org.md) [S06](sources/S06-swmm5org-topics-index.md). Sixty-four of 316 raw files are ingested, one of them (the EPA hydraulics manual) in part. The wiki is deepest on SWMM's history, the insides of SWMM 5 and the translations of SWMM 5 and SWMM6; thin on ICM; and on SWMM6 it holds the translations but not yet the solvers.
+The state of the wiki after the ingest of six sources on three Lovable apps, arranged by the six topics of [swmm5.org](entities/swmm5-org.md) [S06](sources/S06-swmm5org-topics-index.md). Sixty-six of 316 raw files are ingested, one of them (the EPA hydraulics manual) in part. The wiki is deepest on SWMM's history, the insides of SWMM 5 and the translations of SWMM 5 and SWMM6; thin on ICM; and on SWMM6 it holds the translations but not yet the solvers.
 
 ## 1. SWMM history
 - The timeline from 1969 to 2026 is on [SWMM version history, 1969 to 2026](concepts/swmm-version-history.md), with four places where Bob's own articles disagree with each other or with primary documents.
@@ -44,9 +44,10 @@ The state of the wiki after the ingest of four sources on two Lovable apps, arra
 - An idea at seed stage: [A surrogate distilled from SWMM](concepts/surrogate-distilled-from-swmm.md) [S56](sources/S56-swmm-brain-note-surrogate.md).
 - A second app as subject, with its own engine variant: [Topsoil Recovery Check (app)](entities/topsoil-recovery-check.md) and [swmm524-perched](entities/swmm524-perched.md) [S59](sources/S59-topsoil-recovery-check-app-md.md).
 - Two apps built with Lovable, each from someone else's work Bob learned from, each with its announcing article: [Rules for Responsible Modeling (app)](entities/rules-for-responsible-modeling-app.md), after [William (Bill) James](entities/william-james.md), and [Cost Allocation Game Theory Explorer (app)](entities/cost-allocation-explorer.md), after the 1982 paper with [James P. (Jim) Heaney](entities/james-heaney.md). The subjects are on [Calibration, validation and uncertainty](concepts/calibration-validation-uncertainty.md) and [Cost allocation by cooperative game theory](concepts/cost-allocation-methods.md). Their summaries report tests per file and mark what no person checked [S61](sources/S61-cost-allocation-explorer-app-md.md) [S62](sources/S62-rules-for-responsible-modeling-app-md.md).
+- A third Lovable app, on rainfall: [World Rainfall Pattern Painter (app)](entities/world-rainfall-pattern-painter.md), 339 design-storm patterns of which it grades 3 High confidence and 279 Low; the method is on [Design storms and temporal patterns](concepts/design-storm-patterns.md) [S65](sources/S65-world-rainfall-pattern-painter-app-md.md). All three Lovable summaries share one habit worth noting: they write "not checked" where the project holds no record.
 
 ## Three things the first ingest showed
-1. **Bob's published articles contradict each other on dates and credits.** Forty-one items are in [Open questions](open-questions.md); three were settled on 14 November by the EPA hydraulics manual, the first primary document ingested. The primary documents (the 1971 listing, EPA's update notes) settle some; others need Bob.
+1. **Bob's published articles contradict each other on dates and credits.** Forty-three items are in [Open questions](open-questions.md); three were settled on 14 November by the EPA hydraulics manual, the first primary document ingested. The primary documents (the 1971 listing, EPA's update notes) settle some; others need Bob.
 2. **Much of the article text is AI-written, and the newest articles say so while the older ones do not.** Each source page records how it was written. Claims that rest only on an AI-written passage are flagged.
 3. **The strongest pages rest on the app .md files and the register, not on the articles.** Those sources carry procedures and numbers. The pattern argues for ingesting every app's .md before the remaining articles.
 
@@ -54,6 +55,6 @@ The state of the wiki after the ingest of four sources on two Lovable apps, arra
 - The contents of Bob's repositories. [Bob's GitHub repositories (where the rest of the material lives)](entities/bobs-github-repositories.md) lists 30 of them from [S57](sources/S57-swmm-brain-setup-script.md) and the topic pages; the six his earlier [swmm-brain](entities/swmm-brain-repo.md) cloned by default are the place to start.
 - The text of the 4,014 OpenSWMM posts (see [OpenSWMM.org (the forum)](entities/openswmm-forum.md)).
 - The swmm5.org and swmmfive.com posts.
-- The .md of most apps. Five app summaries are ingested and nine more app files are queued in `raw/apps/`. Apps built before November 2026 have none.
+- The .md of most apps. Six app summaries are ingested and nine more app files are queued in `raw/apps/`. Apps built before November 2026 have none.
 - The 440 or more Ruby scripts and their READMEs.
 - The rest of the EPA documentation. Nine U.S. government reports and the SWMM 4.4 block documentation are now in `raw/manuals/`; one, the hydraulics reference manual, is read in part [S60](sources/S60-epa-swmm5-reference-manual-vol2-hydraulics.md). Still absent: the hydrology volume of the reference manual, and the 1971 to 1988 reports as text (they are scanned PDFs).
