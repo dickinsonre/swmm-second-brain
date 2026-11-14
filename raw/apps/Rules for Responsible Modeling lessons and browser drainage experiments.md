@@ -1,0 +1,180 @@
+---
+name: Rules for Responsible Modeling
+file: rain-canvas-studio
+version: 2026.1.2
+date: 2026-11-14
+commit_sha: 22fcc881fda5d285aed92a4e25ac421b018d1c5a
+commit_scope: "Source HEAD inspected before this documentation revision; final revision commit: not checked"
+licence: MIT License
+licence_source: LICENSE:1-3
+author: Robert Dickinson
+links:
+  site: https://rulesforresponsiblemodeling.lovable.app
+  summary: https://rulesforresponsiblemodeling.lovable.app/index.md
+  source_repo: "not checked"
+  build_artifact: "not checked"
+  second_brain_upload: https://github.com/dickinsonre/swmm-second-brain/upload/main/raw/apps
+engines:
+  - name: EPA SWMM
+    declared_version: 5.2.4
+    declaration_source: src/lib/swmm/ensembleSampling.ts:4
+    source_commit: "not checked"
+    compiler_version_and_flags: "not checked"
+    engine_licence: "not checked against retained upstream licence; MIT applies to application LICENSE"
+    binary_sha256: 7a3ac7136a29a629187de122fd529cf690719591e1717471e389ed1113b1304a
+units: "US customary first: CFS, ft, acres, in/hr. Uploaded FLOW_UNITS retained; SI conversion audit: not checked."
+---
+
+# Rules for Responsible Modeling: lessons and browser drainage experiments
+
+## In one sentence.
+
+A fresh run of this project's tutorial delivered 3.100 in of rainfall over 72 reporting periods, with a sampled peak junction depth of 1.2856794595718384 ft and sampled peak pipe flow of 13.327461242675781 cfs.
+
+## In one paragraph.
+
+The app combines chapter lessons, micro-apps, a browser SWMM Playground, a browser-local Model Library and a fictional worked case. On 2026-11-14, `bun test tests` passed 61 tests in 9 files, with 0 failures and 5,064 expectation calls. A fresh tutorial run returned solver code 0, runoff continuity error -0.011% and routing continuity error 0.019%. These are measured software checks, not field validation, native-solver equivalence or engineering approval. The identifier `rain-canvas-studio` is the requested documentation identifier; the code still names the product Rules for Responsible Modeling and serves its summary at /index.md.
+
+## How it computes
+
+Scope: the tested helpers, their model writers, the browser engine boundary and the climate examples below. A complete inventory of every educational page's constants is not checked. Numeric rules below are implementation facts, not published acceptance standards. Paths and line numbers refer to the inspected source revision.
+
+### Solver and binary output
+
+- `runSwmm(inp)` posts `{id, type: 'run', inp}` to a module worker; pending calls time out after 60,000 ms (src/lib/swmm/runner.ts:14,51-61). The worker writes /in.inp, calls `swmm_run('/in.inp', '/out.rpt', '/out.out')`, returns the report and binary results and marks success when rc equals 0 (src/workers/swmmRunner.ts:51-90). Continuity comes from report text; absent entries become NaN (src/workers/swmmRunner.ts:37-48).
+- Parser guard: minimum 56 bytes; closing record length 24 bytes; magic 516114522; non-pollutant variables per subcatchment/node/link are 8/6/5 and system variables 15; variable indices depth/inflow/flooding/link-flow/link-depth are 0/4/5/0/1 (src/lib/swmm/outParser.ts:48-62,73-84). Codes 0-5 map to CFS/GPM/MGD/CMS/LPS/MLD (src/lib/swmm/outParser.ts:48,88,167). Fallback units are CFS; unusual-unit correctness is not checked.
+- Plain-text equations: perPeriodBytes = 8 + 4 * (Nsubc*(8+Npoll) + Nnode*(6+Npoll) + Nlink*(5+Npoll) + 15); elapsedSeconds = round((recordDate - startDate)*86400) (src/lib/swmm/outParser.ts:112-125,139-140).
+- Sampled volume = sum(flow[i]*dtSeconds), in ft3 for CFS; conversion for GPM/MGD/LPS/MLD is not checked (src/lib/swmm/outParser.ts:172-177). No claim that this equals the solver's internal volume integration.
+- Playground bands: sortedSample[clamp(round(q*(N-1)),0,N-1)], q = 0, 0.1, 0.5, 0.9, 1; missing run values use 0 (src/lib/swmm/outParser.ts:180-196). Worked-case quantiles instead interpolate: position=(N-1)*q; value=sorted[floor(position)] + (sorted[ceil(position)]-sorted[floor(position)])*(position-floor(position)) (src/lib/workedCase.ts:253-258).
+
+### Tutorial and builder INP
+
+- Tutorial defaults: n=0.013, imperviousness=60%, rainfall multiplier=1; precision is 4/0/3 decimal places when writing those fields (src/lib/swmm/tutorialModel.ts:108-129). Rain intensity is multiplied by the rainfall multiplier, not replaced by observed data.
+- Tutorial OPTIONS are exactly: CFS, HORTON, DYNWAVE, LINK_OFFSETS DEPTH, MIN_SLOPE 0, ALLOW_PONDING NO, SKIP_STEADY_STATE NO; start/report/end date 01/01/2025, start/report time 00:00:00, end 06:00:00; SWEEP_START 01/01, SWEEP_END 12/31, DRY_DAYS 0; REPORT_STEP 00:05:00, WET_STEP 00:01:00, DRY_STEP 00:05:00, ROUTING_STEP 0:00:15, RULE_STEP 00:00:00; INERTIAL_DAMPING PARTIAL, NORMAL_FLOW_LIMITED BOTH, FORCE_MAIN_EQUATION H-W, VARIABLE_STEP 0.75, LENGTHENING_STEP 0, MIN_SURFAREA 12.557, MAX_TRIALS 8, HEAD_TOLERANCE 0.005, SYS_FLOW_TOL 5, LAT_FLOW_TOL 5, MINIMUM_STEP 0.5, THREADS 1 (src/lib/swmm/tutorialModel.ts:6-39).
+- Tutorial evaporation 0; gage interval 30 min, snow correction 1; S1 area 5 acres, width 500 ft, slope 0.5%; subarea n 0.012/0.10, storage 0.05/0.05 in, zero-storage fraction 25%; Horton max/min rates 3/0.5 in/hr, decay 4, dry time 7, max infiltration 0; junction invert 96 ft, max depth 4 ft, outfall 90 ft; pipe length 400 ft, n=0.013, diameter 1.5 ft, offsets/initial/max flow 0, barrels 1 (src/lib/swmm/tutorialModel.ts:41-81). Solver interpretation of each option is not independently checked.
+- Rainfall depth in inches = sum(intensityInPerHour)*0.5 h. Seven intensities are 0, 0.5, 1.5, 3, 1, 0.2, 0 in/hr (src/lib/swmm/tutorialModel.ts:83-92); tests verify 3.1 in and 6.2 in after doubling (tests/modelingMath.test.ts:33-39).
+- Builder defaults, including every initial node/pipe/subcatchment value, are retained in src/lib/swmm/modelBuilder.ts:22-40. Validation requires nonblank unique IDs, an outfall, connected endpoints, no self-loop, positive pipe length/diameter/n, positive subcatchment area/width and positive duration (src/lib/swmm/modelBuilder.ts:45-69). The writer still floors duration at 1 hour (src/lib/swmm/modelBuilder.ts:72-74).
+- Builder OPTIONS: CFS, HORTON, chosen DYNWAVE/KINWAVE, DEPTH offsets; dates 01/01/2025, start/report 00:00:00, chosen end; REPORT/WET/DRY/ROUTING steps 5 min/1 min/5 min/15 s, no ponding, VARIABLE_STEP 0.75, MIN_SURFAREA 12.557, THREADS 1 (src/lib/swmm/modelBuilder.ts:77-82). Gage correction 1, subarea n 0.012/0.10, storage 0.05/0.05, zero fraction 25%; Horton 3/0.5/4/7/0; node initial/surcharge/ponded values 0; FREE outfalls; circular single-barrel pipes, offsets/initial/max flow 0 (src/lib/swmm/modelBuilder.ts:83-95). Rain is bracketed by 0; polygons use offsets 60 by 40 drawing units, not surveyed geometry (src/lib/swmm/modelBuilder.ts:97-104).
+
+### Climate uplift and seeded sampling
+
+- Climate example factors are 1.0, 1.1, 1.2, 1.3, equivalent to 0%, 10%, 20%, 30% intensity uplift using upliftPercent=(factor*100)-100 (src/components/SoftwareExamples.tsx:1028-1035; duplicated in src/components/RubyScriptsSearch.tsx:1025-1032). The snippet only prints scenarios; execution and published RCP attribution are not checked.
+- Playground's executable baseline and double-rain factors are 1.0 and 2.0 (src/pages/Playground.tsx:116-118). They are illustrative, not climate projections.
+- Uniform sample = lower + random*(upper-lower); n range [0.011,0.025), rainfall factor [0.7,1.5), imperviousness [45,75)% (src/lib/swmm/ensembleSampling.ts:6-10,32-44). Run seed=floor(masterRandom*2^31) (src/lib/swmm/ensembleSampling.ts:48-50).
+- mulberry32 uses increment 0x6d2b79f5, shifts 15/7/14, OR values 1/61 and divisor 4294967296; exact integer operations are retained in src/lib/swmm/ensembleSampling.ts:13-21. Algorithm author and publication year: not checked.
+
+### Fictional worked case
+
+- Rain step 15 min, report step 5 min, simulation 10 h; event arrays A/B/C/D are at src/lib/workedCase.ts:24-33. Depth=sum(intensities)*(15/60)*factor (src/lib/workedCase.ts:148-150). Starting values 60%/1.5/3.5 in/hr, hidden values 38%/0.6/1.8 in/hr; modeled/hidden n 0.013/0.016; selectable ranges 10-80% step 1, width factor 0.25-3 step 0.05, infiltration 0.5-5 step 0.1 in/hr (src/lib/workedCase.ts:38-48).
+- Subcatchment areas 40/30/25 acres, widths 1400/1100/900 ft, slopes 1.2/0.9/0.7%; gauged C3 diameter 4 ft, slope 0.005 (src/lib/workedCase.ts:50-58). Full-pipe reference: A=pi*D^2/4; R=D/4; Q=(1.486/n)*A*R^(2/3)*sqrt(S) (src/lib/workedCase.ts:60-66). This reference is not a pressurized-flow limit.
+- Writer uses rainfall factor default 1, subarea n 0.012/0.15, storage 0.05/0.15, zero fraction 20%; Horton minimum 0.3, decay 4, dry time 7, maximum-volume cap 0 (src/lib/workedCase.ts:70-76). OPTIONS and fixed geometry, including DRY_DAYS 7, routing step 10 s, VARIABLE_STEP 0.75, MINIMUM_STEP 0.5, THREADS 1, evaporation 0, junction inverts 110/105/101 ft and depths 8 ft, outfall 98 ft, pipe lengths 1000/800/600 ft, diameters 3/3.5/4 ft, are verbatim at src/lib/workedCase.ts:80-144.
+- Synthetic Gaussian value=sqrt(-2*ln(1-r1))*cos(2*pi*r2). Observation=max(0,truth*(1+0.06*gaussian)+0.08*gaussian); event seeds A/B/C/D=1101/2202/3303/4404; gap indices 40-46 in A; spike index min(last,60) in B becomes max(value,1)*3+25; round to 0.01 cfs (src/lib/workedCase.ts:153-165).
+- Audit flags spikes when value>5 cfs and value>2*max(neighbours) (src/lib/workedCase.ts:171-180). Runoff ratio=sum(flow)*dtMin*60 / ((rainIn/12)*areaAcres*43560), ignoring NaN (src/lib/workedCase.ts:184-188).
+- Fit: NSE=1-sum((observed-simulated)^2)/sum((observed-meanObserved)^2); peakErrorPercent=100*(simPeak-obsPeak)/obsPeak; volumeErrorPercent=100*(sumSim-sumObs)/sumObs; timingErrorMin=(simPeakIndex-obsPeakIndex)*dtMin. Missing/excluded records are omitted; zero denominators become NaN (src/lib/workedCase.ts:194-213).
+- Illustrative targets: NSE>=0.7; absolute peak error<=15%; absolute volume error<=10%; absolute timing error<=15 min (src/lib/workedCase.ts:215-226).
+- Worked-case uncertainty: imperviousness=center*uniform(0.85,1.15) clamped to 10-80%; width=center*uniform(0.7,1.4); infiltration=max(0.1,center*uniform(0.7,1.3)); rain factor uniform(0.9,1.1); n uniform(0.011,0.018); seeds floor(masterRandom*2^31) (src/lib/workedCase.ts:233-250).
+- Coverage=usable observations inside bounds / usable observations; inclusion tolerance 1e-9 (src/lib/workedCase.ts:260-268). Continuity=max(abs(runoffError),abs(flowError)); any unknown result stays unknown (src/lib/workedCase.ts:272-290).
+- Checklist thresholds: continuity<1%; calibrationTrials>0; ensemble>=20; coverage>=0.8; band 5-95%; validation and audit must be recorded (src/lib/workedCase.ts:313-339). These are illustrative rules, not independently sourced standards.
+- Surcharge=count(depth>4+1e-6)*dtMin; waterLevel=101+max(depth) ft; floodVolume=sum(max(0,floodRate))*dtMin*60 ft3 (src/lib/workedCase.ts:344,361-371). Ensemble flooding fraction counts volume>0.5 ft3; quantiles 0.5/0.95 (src/lib/workedCase.ts:386-396).
+- Run sizes 20/40/100/200. Convergence compares first half with all values at q=0.5/0.95; needs halfN>=5 and both changes<5%; change=100*abs(halfQuantile-fullQuantile)/abs(fullQuantile), with 0 when fullQuantile=0 (src/lib/workedCase.ts:400-414). Diagnosis returns nothing for coverage>=0.8 and flags too few runs at n<40 (src/lib/workedCase.ts:419-431).
+
+### Other tested teaching helpers
+
+- Coach hourly synthetic flows are 0/2/8/25/45/38/22/12/6/3/1/0; perfect parameters 1/0/0/1, starting parameters 0.6/1.5/4/1.4 (src/lib/calibrationCoach.ts:3-17). Interpolation=value[i]*(1-f)+value[i+1]*f, with zero outside the record; falling-limb sourceTime=peakTime+(localTime-peakTime)/recession; flow=max(0,interpolated*peakScale+baseflow). NSE uses the equation above, but returns 0 for zero observed variance (src/lib/calibrationCoach.ts:20-43).
+- Water-budget helper retains metric-input teaching constants; it is not converted merely by this US-first summary. imp=impPercent/100; veg=vegPercent/100; potentialET=min(P*0.8,50+temp*30+veg*200); actualET=max(0,min(P,potentialET*(1-imp*0.7)*(0.5+veg*0.5))); infiltration=min(P-ET,max(0,(P-ET)*(infRate/50)*(1-imp)*0.6)); runoff=max(0,P-ET-infiltration); baseflow=0.4*infiltration; deepPercolation=0.6*infiltration (src/lib/modelingMath.ts:2-10). These empirical constants have no published calibration in these tests.
+- Equifinality flow=47+(0.015-n)*800+(impPercent-60)*0.4 cfs; four presets 0.010/50, 0.013/56, 0.018/66, 0.020/70 (src/lib/modelingMath.ts:13-20). Runoff coefficient=100*runoff/rainfall, rainfall default 50, effectiveRain=max(0,rainfall-storage), runoff=effectiveRain*imp+max(0,effectiveRain-infiltrationRate*0.5)*(1-imp) (src/lib/modelingMath.ts:23-29). Sensitivity high>=20%, medium>=5%; physicalSample=clamp(base*(1+z*percent/100),min,max) (src/lib/modelingMath.ts:31-37).
+- Hosted chat accepts up to 30 messages, 4,000 characters each and 24,000 total; up to 4 source summaries, 1,000 characters each, chapters 1-17, section names truncated to 120 characters (supabase/functions/chat/index.ts:9-11,36-50). This API returns chat text, not rainfall/depth totals.
+
+## Inputs and outputs
+
+- Playground and Model Library read .inp text; the drawing builder does not import uploaded geometry. Builder section list is at src/lib/swmm/modelBuilder.ts:76-104. Worker outputs .rpt and .out (src/workers/swmmRunner.ts:57-85).
+- US models use CFS and ft; uploaded models retain the binary flow-unit code. Full multi-app US/SI consistency is not checked.
+- Model Library persistence uses IndexedDB (src/lib/swmm/modelLibrary.ts); worked-case sessions use browser storage and JSON (src/lib/workedCaseSession.ts). Clearing browser data can remove saved work. CSV and review ZIP writers are in src/pages/Playground.tsx and src/lib/workedCasePackage.ts.
+
+## Checks
+
+### Fresh automated run
+
+Executed 2026-11-14 with Bun 1.4.4: `bun test tests`. Result: 61 passed, 0 failed, 5,064 expectation calls across 9 files. Expectation calls are not independent benchmarks. Numeric differences below come from fresh evaluation of the same helper fixtures; they do not imply published-reference agreement.
+
+| Test file | Tests passed | Published reference (document, table) | Implemented tolerance | Largest difference found |
+| --- | ---: | --- | --- | --- |
+| tests/calibrationCoach.test.ts | 4 | not checked; synthetic fixtures | close-to precision 10: <5e-11; initial NSE<0.5 | 0 for perfect NSE, shifted-peak and unchanged rising-limb comparisons; initial NSE=0.1698536991240438 |
+| tests/chatHistory.test.ts | 3 | not checked; server limits fixture | exact limits and upper-bound predicates | not checked numerically; predicates passed |
+| tests/ensembleSampling.test.ts | 4 | not checked; seed/range fixtures | exact seed replay; inclusive lower/exclusive upper bounds | not checked numerically; predicates passed |
+| tests/modelBuilder.test.ts | 5 | not checked; structure and rename fixtures | exact values and strings | not checked numerically; predicates passed |
+| tests/modelLibrary.test.ts | 6 | not checked; object/flow fixtures | exact integer/string values | not checked numerically; predicates passed |
+| tests/modelingMath.test.ts | 7 | Parser comment cites EPA SWMM 5 Programmer's Manual, Binary Output File; document edition/table not checked. Other fixtures have no published reference. | close-to precision 10: <5e-11; exact timestamp 300 s | water-budget closure/partition max 5.684341886080802e-14 over 729 cases; equifinality, storm-depth and timestamp absolute differences 0 |
+| tests/reviewFixes.test.ts | 9 | not checked; continuity/seed/reverse-flow/source fixtures | close-to precision 10: <5e-11 for 0.3%; otherwise exact/predicate | not checked numerically; predicates passed |
+| tests/workedCase.test.ts | 11 | not checked; Manning expression and synthetic fixtures | capacity precision 1: <0.05 cfs; range slack 1e-9; otherwise exact/predicate | capacity 101.57113917082049 vs 101.6 cfs: 0.028860829179507164 cfs; other maxima not checked |
+| tests/workedCaseReview83.test.ts | 12 | not checked; session/hydraulic/convergence fixtures | capacity precision 0: <0.5 cfs; otherwise exact/predicate | max capacity difference 0.061380979939414715 cfs (120.03861902006058 vs 120.1); surcharge/HGL/flood absolute differences 0 |
+| Total | 61 | No published benchmark table verified | No universal tolerance | No global cross-unit maximum claimed |
+
+Fresh browser engine request: tutorial `runSwmm(TUTORIAL_INP)` returned rc=0, 72 periods, report precipitation 3.100 in, sampled max node depth 1.2856794595718384 ft and sampled max link flow 13.327461242675781 cfs. Report continuity -0.011% runoff and 0.019% routing. Reference is this project input, not a published benchmark; tolerance and published-reference largest difference: not checked. Peaks from sampled output need not equal internal solver maxima. Binary SHA-256 was freshly computed with `sha256sum public/wasm/swmm5.wasm`.
+
+### AI review
+
+The review log records grades 83/100 dated 2026-11-02, 85/100 and 80/100 dated 2026-11-01 (src/data/reviewLog.ts:10-32). Reviewer AI tool/maker and whether these were AI reviews: not checked. They cannot be asserted as human review or as a fresh AI grade. Current documentation revision tool: Lovable; date 2026-11-14; grade: not checked. Automatic test results are not an AI grade.
+
+### Human review
+
+No named person's review procedure or signed result for this revision is recorded in the inspected code. Human reviews verified for this revision: 0. Historical outside-review identities and human status: not checked. Robert Dickinson's application-author credit does not establish that he checked every calculation.
+
+## What this does not show
+
+1. Original solver source commit, compiler flags and upstream licence audit: not checked. Native/WASM equivalence benchmarks run in this revision: 0.
+2. Published numerical benchmark comparisons with identified tables: 0 verified in this revision. The 61 passing tests use helper/structural fixtures.
+3. Field calibration or field validation datasets used in these checks: 0. Worked-case observations are synthetic (src/lib/workedCase.ts:1-5,153-165).
+4. Complete educational constant inventory, climate/RCP source validation and method author/year verification: not checked.
+5. Printed-book chapter mapping and quotations, unusual uploaded models, large-network performance and cross-app unit conversion: not checked in this revision.
+6. Human checks of this revision's 61 tests and 1 solver run: not checked. Independent human verification of the 17 chapter mappings recorded by the app's history: not checked (src/data/changelog.ts:182-187).
+7. A rainfall/depth-total HTTP API does not exist in the inspected function code. The only hosted application function inspected is chat; no depth-total response can honestly be supplied for it.
+
+## How to reproduce
+
+Source inspected: this Lovable project's checkout at /dev-server, HEAD 22fcc881fda5d285aed92a4e25ac421b018d1c5a. A public source repository URL is not checked. The hosted site is not a substitute for source. Run these commands from a copy of this project:
+
+```text
+bun install --frozen-lockfile
+bun test tests
+sha256sum public/wasm/swmm5.wasm
+bun run dev -- --host 0.0.0.0 --port 8080
+```
+
+Fresh checks used the existing preview at http://localhost:8080, not a second server. In a browser opened on that origin, this is the real local solver API request used in the fresh check:
+
+```javascript
+const { TUTORIAL_INP } = await import('/src/lib/swmm/tutorialModel.ts');
+const { runSwmm } = await import('/src/lib/swmm/runner.ts');
+const { parseSwmmOut } = await import('/src/lib/swmm/outParser.ts');
+const result = await runSwmm(TUTORIAL_INP);
+const series = parseSwmmOut(result.out);
+console.log(result.rc, series.numPeriods);
+console.log(Math.max(...series.nodeDepth[0]));
+console.log(result.rpt);
+```
+
+The actual worker request is `{id: sequenceNumber, type: 'run', inp: TUTORIAL_INP}` (src/lib/swmm/runner.ts:51-61). Expected rainfall depth total: 3.100 in in the report; expected reporting periods: 72; expected sampled peak junction depth: 1.2856794595718384 ft in this run. Repeatability tolerance across machines: not checked. Summing junction depths is not a physically meaningful rainfall depth total. This is a browser API, not an invented HTTP endpoint. Hosted chat request shape is `POST` with `{"messages":[{"role":"user","content":"Explain calibration"}],"sources":[]}` (supabase/functions/chat/index.ts:82-96); its live response was not checked this revision and expected depth total is not applicable.
+
+For measured helper differences, rerun the fixtures in tests/modelingMath.test.ts:4-14,33-50 and capacity evaluations in tests/workedCase.test.ts:13-15 and tests/workedCaseReview83.test.ts:35-51. Evaluate `c3CapacityFor(0.018)` and `c3CapacityFor(0.011)` to obtain 73.35693384559258 and 120.03861902006058 cfs. Fresh `rainDepthIn(EVENTS.A/B/C/D)` results are approximately 1.15/1.65/1.45/2.95 in; binary rounding in A and B produces 1.1499999999999997 and 1.6499999999999997 (src/lib/workedCase.ts:148-150).
+
+## Credits and licenses
+
+- Robert Dickinson, 2026: application copyright under MIT License (LICENSE:1-3); application-author credit in src/pages/AboutAuthor.tsx:310. Individual numerical-method authorship is not recorded.
+- William James, 2005: Rules for Responsible Modeling, 4th Edition, as identified by src/pages/AboutAuthor.tsx:205-206. Original [CHI R184 publication link](https://www.chiwater.com/Company/Staff/WJamesWebpage/original/homepage/Research/R184Pweb.html). Method/page verification is not checked.
+- EPA SWMM: institution named by src/lib/swmm/ensembleSampling.ts:4; release year and individual engine-method authors: not checked. Original engine licence is not retained alongside the binary and is not checked here.
+- Manning full-pipe method (src/lib/workedCase.ts:60-66): historical author and year not recorded in this project's cited source, so not checked.
+- Horton infiltration (src/lib/swmm/tutorialModel.ts:8): historical author, year and primary document/table not recorded, so not checked.
+- Nash-Sutcliffe efficiency (src/lib/calibrationCoach.ts:38-43): full author names, year and primary document not recorded, so not checked.
+- Gaussian transform, mulberry32, interpolation, quantiles, sampled-volume integration and teaching water-budget/equifinality/runoff-score methods: individual authors and years not recorded in the helper files, so not checked. Do not attach historical author/year claims from memory.
+- React, Vite, Recharts, Mermaid, Fuse.js, fflate, jsPDF and Emscripten glue are identifiable in package.json or src/lib/swmm/swmm5.js. Individual contributors, creation years and dependency licence audit: not checked. Application MIT License is not a blanket replacement for dependency licences.
+
+## AI use
+
+Recorded AI tool: Lovable; maker and exact development model: not checked in project code. This documentation revision is dated November 2026. Robert Dickinson is credited as application author in LICENSE and About; his task-by-task implementation and review activity is not checked. AI tasks recorded in the prior disclosure are code generation, code revision and educational-text generation; this revision rewrites documentation, measures helper results, runs tests and checks a browser engine request. Ask James is configured with google/gemini-3-flash-preview; maker attribution beyond that provider identifier and deployment month are not checked. It answers from app-written summaries, not verified book text. Automated checks passed 61 tests in 9 files; 0 human checks of this revision are recorded. Human verification of those 61 tests, the 1 fresh solver run, the 17 chapter mappings and all method citations is not checked.
+
+## Changes
+
+- 2026.1.2 (2026-11-14): source-revision identification; fresh per-file tests and solver measurements; plain-text equations and numeric climate factors; separate review categories; explicit unchecked references and authorship; synchronized disclosure.
+- 2026.1.1 (2026-11-14): separate and embedded summary, About links and public AI index (src/data/changelog.ts, technical-summary entry).
+- 2026.1 (2026-11-02): prior summary's snapshot identifier for resumable worked-case and hydraulic checks; independently versioned source release not checked. Milestone date is recorded in src/data/changelog.ts, worked-case entry.
