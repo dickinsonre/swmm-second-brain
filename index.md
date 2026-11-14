@@ -146,7 +146,7 @@ Repository READMEs (SWMM5 translations)
 
 ## Queue
 
-226 raw files are not yet ingested: 219 LinkedIn articles, 4 swmm5.org topic pages, 2 SWMM 1 build notes and 1 app summary. All 32 translation READMEs in `raw/ports/` are ingested. `raw/MANIFEST.csv` lists them. Suggested next batches, in order:
+234 raw files are not yet ingested: 219 LinkedIn articles, 9 app files (8 that Bob uploaded on 14 November), 4 swmm5.org topic pages and 2 SWMM 1 build notes. All 32 translation READMEs in `raw/ports/` are ingested. `raw/MANIFEST.csv` lists them. Suggested next batches, in order:
 
 1. The four remaining swmm5.org topic pages and the SWMM 1 build notes (small, and they complete themes 3 to 6).
 2. EXTRAN: the six test-file articles and Edition 38. Settles Q14.

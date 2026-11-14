@@ -1,7 +1,15 @@
 path,kind,date,title,words,sha256,status,source_page
+raw/apps/1729-SWMM5-Models-2030 README (1).md,apps,,1729-SWMM5-Models-2030,1986,541698484f3c2fac7f9aa266fc0accd72ec105945109253ee2d52049731b70a4,queued,
+raw/apps/Master SWMM PDF.md,apps,,**Master SWMM PDF**A cited library of SWMM and rainfall–runoff literature,2909,1f86f01d9cb61afedf98c27b0955598fc047164316dcbe15926da3484dbc22f3,queued,
+raw/apps/PyBME-issue-drafts.md,apps,,PyBME issue drafts (commit 034799d),6197,3ba527119950647517268c83df2c46311503ab042cbcd823c63018213a9c5029,queued,
+raw/apps/extran3-workbench.md,apps,2026-11-11,EXTRAN III Workbench,2497,40dbb2371cec0f73b33d4a58048c9ee18dc955417b025cff046ac3876f66df83,queued,
+raw/apps/inside-the-network-cfd.md,apps,2026-11-12,Inside the Network,5425,848015a9f0cab332230b21cb082e59fe0765621762ad06f9d6a403aa1c92ad6d,queued,
 raw/apps/speak-100-chinese.md,apps,2026-11-13,Speak 100,920,2ac2d2bf1519e418f90717e5b4a19783d0d7de0374e64d6ee599b678c05e0dea,queued,
+raw/apps/st-venant-solver-rosetta-stone (1).md,apps,2026-11-13,St. Venant Solver Rosetta Stone,8745,d7787099ba3322c27728820995352c278a0e4b95fcf32035d98b3f6baf4ac3e2,queued,
 raw/apps/swmm-app-complexity-meter.md,apps,,"SWMM App Complexity Meter: how big and how tangled is a modeling app, with HydroCouple = 100",2026,c0b7985d8a982156b88c221ea9c0e848f37bc4c897de621606b0e7144759896b,ingested,wiki/sources/S02-complexity-meter-app-md.md
+raw/apps/swmm1-runoff-engine (7).md,apps,2026-11-13,SWMM 1 Engine,12689,a0c62ad17e9d7dc2006181e97814a187d9a806719e657b10f970917e3be43ebc,queued,
 raw/apps/swmm1-runoff-engine.md,apps,2026-11-13,SWMM 1 Engine,6390,1f04a14beed46eaa98a26eaff77e89736584ae46cd981e51711816dba5ab7caa,ingested,wiki/sources/S01-swmm1-engine-app-md.md
+raw/apps/under-load.md,apps,2026-11-11,Under Load,2062,69f1dc2f4423fd09de3f25f5c06fa2bd7dd6042e824ead19ad0df8ac09301445,queued,
 raw/linkedin/2015-07-15-qaqc-process-import-xp-swmm-model-infoworks-icm-6-robert-dickinson.md,linkedin,2015-07-15,QA/QC Process for the Import of an XP-SWMM model to InfoWorks ICM  6 - ICM 7.5,1431,749ea501f623927be14adf34458e9d0e386714663745a7eafd764cc01d5d03f4,queued,
 raw/linkedin/2015-07-27-advanced-calibration-graphs-reference-graphical-13-robert-dickinson.md,linkedin,2015-07-27,"Advanced Calibration Graphs and Advanced Reference Graphical Comparisons in InfoSWMM 13, 14, 14.5",1351,58ba6ede55df630e003a4788c5ca8b945a57ad12070306af63b674588f8138cd,queued,
 raw/linkedin/2016-11-18-my-history-various-versions-swmm-swmm3-swmm4-swmm5-robert-dickinson.md,linkedin,2016-11-18,"My History with Various Versions of SWMM: SWMM3, SWMM4, XP-SWMM, SWMM5, SWMM5+, SWMM Networks in ICM and InfoSWMM - 2023 Update",2078,4861b03e56869f73f1bf1bc5b1cbba60d117a0c5d1d5d2896b42af6a8bf519b8,ingested,wiki/sources/S11-li-my-history-with-swmm.md

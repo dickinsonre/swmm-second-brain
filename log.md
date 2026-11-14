@@ -41,3 +41,7 @@ This makes three ingests; a lint read-through is due (schema: after every third 
 ## [2026-11-14] lint | After the third ingest
 
 `tools/lint.py`: 0 errors, 0 warnings (two orphan source pages, S36 and S37, were linked from the SWMM5 translations page). Read-through of the pages made today: no claim stated two ways across pages; the open items are Q20 to Q28, filed during the ingests. Arithmetic checked where the sources allow it, and it holds: 480 + 38 = 518 gate-folder models (S41); F#'s 1,785 + 551 = 2,336 returns and 85 + 1 = 86 continues (S48); R's 37,055 s against EPA's 91.4 s is 405 times, "about 400" (S54), and against Hy's 4,402 s is 8.4 times (S54); Ruby SWMM6's stopped runs, 42,334,342 of 78,975,850 bytes = 53.6 % and 17,545,557 of 155,158,965 = 11.3 % (S35); 336 + 116 = 452 extra decks (S29 against S23).
+
+## [2026-11-14] setup | Bob's upload merged
+
+While the third batch was being ingested, Bob uploaded 8 files to `raw/apps/` through GitHub (commit f6fac51): the 1729-SWMM5-Models-2030 README, Master SWMM PDF, PyBME issue drafts, extran3-workbench, inside-the-network-cfd, st-venant-solver-rosetta-stone, swmm1-runoff-engine (a newer copy) and under-load. The ingest commits were rebased onto his; the manifest now lists the 8 as queued (288 raw files, 54 ingested).
