@@ -1,5 +1,5 @@
 ---
-title: "S23: Topsoil Recovery Check, technical summary (app .md, 2026-11-12)"
+title: "S59: Topsoil Recovery Check, technical summary (app .md, 2026-11-12)"
 type: source
 raw: raw/apps/topsoil-recovery-check.md
 kind: app-md

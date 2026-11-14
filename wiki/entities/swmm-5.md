@@ -2,7 +2,7 @@
 title: EPA SWMM 5
 type: entity
 updated: 2026-11-14
-sources: [S02, S04, S08, S11, S15, S17, S19, S20, S21, S22, S23]
+sources: [S02, S04, S08, S11, S15, S17, S19, S20, S21, S22, S59]
 tags: [swmm5, engine]
 reviewed: no
 ---
@@ -24,7 +24,7 @@ The C rewrite of SWMM, first released as 5.0 build 001 on 29 October 2004 [S22](
 
 **Inside other products.** InfoSWMM uses the SWMM 5 C code as its engine [S11](../sources/S11-li-my-history-with-swmm.md). ICM SWMM runs the SWMM5 dynamic wave [S17](../sources/S17-li-routing-options.md).
 
-**Defects in 5.2.4 found by one study.** D1, Modified Horton with MaxInfil (`infil.c` line 545; see [Infiltration methods](../concepts/infiltration-methods.md)), and D2, a drain on a bio-retention cell with no storage layer (see [LID bio-retention layers](../concepts/lid-bioretention-layers.md)) [S23](../sources/S23-topsoil-recovery-check-app-md.md).
+**Defects in 5.2.4 found by one study.** D1, Modified Horton with MaxInfil (`infil.c` line 545; see [Infiltration methods](../concepts/infiltration-methods.md)), and D2, a drain on a bio-retention cell with no storage layer (see [LID bio-retention layers](../concepts/lid-bioretention-layers.md)) [S59](../sources/S59-topsoil-recovery-check-app-md.md).
 
 **Back-compatibility hazard.** SWMM 5.2.4 stops with ERROR 205 on SWMM6 `[OPTIONS]` keywords; legacy 5.3 silently ignores them (F-0005, partly unconfirmed) [S04](../sources/S04-findings-register-seed.md).
 

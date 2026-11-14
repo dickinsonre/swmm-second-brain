@@ -2,7 +2,7 @@
 title: Open questions
 type: synthesis
 updated: 2026-11-14
-sources: [S01, S04, S05, S07, S08, S11, S12, S14, S19, S20, S21, S22, S23]
+sources: [S01, S04, S05, S07, S08, S11, S12, S14, S19, S20, S21, S22, S59]
 tags: [lint, contradictions]
 reviewed: no
 ---
@@ -38,5 +38,5 @@ Contradictions, doubtful numbers and gaps found while ingesting and linting. An 
 
 - [ ] Q18 (2026-11-14): The 14 faults found in the 1971 SWMM 1 listing [S01](sources/S01-swmm1-engine-app-md.md) have no findings-register IDs. The seed's next free number is F-0015 [S04](sources/S04-findings-register-seed.md). Bob to say whether they get numbers.
 - [ ] Q19 (2026-11-14): Several source pages could not say which AI tool wrote which passages ([S11](sources/S11-li-my-history-with-swmm.md), [S12](sources/S12-li-diamond-village.md), [S16](sources/S16-li-rdii-in-swmm5.md), [S20](sources/S20-li-edition-54-two-solvers.md)). If Bob remembers, a line on each source page would replace "reads as".
-- [ ] Q20 (2026-11-14): [S23](sources/S23-topsoil-recovery-check-app-md.md) numbers two engine defects D1 (Modified Horton with MaxInfil, EPA 5.2.4 `infil.c` line 545) and D2 (a drain on a bio-retention cell with no storage layer makes water, in EPA 5.2.4 and both OpenSWMM engines). D1 matches the confirmed `MODIFIED_HORTON` candidate in [S03](sources/S03-findings-register-format.md). Bob to say whether they get register IDs from F-0015 on (see Q18).
-- [ ] Q21 (2026-11-14): [S23](sources/S23-topsoil-recovery-check-app-md.md) says the swmm524-perched repository states no license, while the engine it changes is public domain. Bob to decide the license.
+- [ ] Q33 (2026-11-14): [S59](sources/S59-topsoil-recovery-check-app-md.md) numbers two engine defects D1 (Modified Horton with MaxInfil, EPA 5.2.4 `infil.c` line 545) and D2 (a drain on a bio-retention cell with no storage layer makes water, in EPA 5.2.4 and both OpenSWMM engines). D1 matches the confirmed `MODIFIED_HORTON` candidate in [S03](sources/S03-findings-register-format.md). Bob to say whether they get register IDs from F-0015 on (see Q18).
+- [ ] Q34 (2026-11-14): [S59](sources/S59-topsoil-recovery-check-app-md.md) says the swmm524-perched repository states no license, while the engine it changes is public domain. Bob to decide the license.
