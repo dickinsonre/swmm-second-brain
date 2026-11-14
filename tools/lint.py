@@ -11,6 +11,7 @@ This finds structural faults only. Contradictions between sources, stale
 claims and missing concept pages need a reader: see "Lint" in CLAUDE.md.
 """
 import csv, os, re, sys
+from urllib.parse import unquote
 from common import ROOT, RAW, WIKI, read, front_matter, sha256, walk, rel, wiki_pages, links
 
 errors, warns = [], []
@@ -46,7 +47,7 @@ for p, t in texts.items():
     for text, target in links(body):
         if re.match(r'^[a-z][a-z0-9+.-]*:', target) or target.startswith('#'):
             continue
-        path = os.path.normpath(os.path.join(os.path.dirname(p), target.split('#')[0]))
+        path = os.path.normpath(os.path.join(os.path.dirname(p), unquote(target.split('#')[0])))   # %20 in a link is a space in the file name
         if not os.path.exists(path):
             errors.append('%s: broken link -> %s' % (r, target))
             continue

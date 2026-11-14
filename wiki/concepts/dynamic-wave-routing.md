@@ -2,7 +2,7 @@
 title: Dynamic wave routing
 type: concept
 updated: 2026-11-14
-sources: [S08, S10, S17, S18, S20, S22, S55, S60]
+sources: [S08, S10, S17, S18, S20, S22, S55, S60, S62]
 tags: [hydraulics, swmm5, routing]
 reviewed: no
 ---
@@ -25,7 +25,7 @@ Dynamic wave routing solves the full one-dimensional St. Venant equations: conti
 The method is implicit in time (backward Euler, solved by Picard iteration); earlier SWMM versions used an explicit Modified Euler method [S60](../sources/S60-epa-swmm5-reference-manual-vol2-hydraulics.md). Flows and heads are updated one conduit and one node at a time, with no spatial coupling, so the Courant condition still applies, though less strictly [S60](../sources/S60-epa-swmm5-reference-manual-vol2-hydraulics.md). A 2,000 ft conduit split into 10 sections of 200 ft has a stable step near 25 s; run at a fixed 120 s it goes completely unstable, and with 120 s as the cap of a variable step it is stable [S60](../sources/S60-epa-swmm5-reference-manual-vol2-hydraulics.md).
 
 **Devices that keep it stable** [S60](../sources/S60-epa-swmm5-reference-manual-vol2-hydraulics.md)
-- Minimum nodal surface area, default 12.56 sq ft (a 4 ft manhole). It adds no volume.
+- Minimum nodal surface area, default 12.56 sq ft (a 4 ft manhole). It adds no volume. One app's tutorial input writes `MIN_SURFAREA 12.557`, with `MAX_TRIALS 8` and `HEAD_TOLERANCE 0.005`, the manual's defaults for the other two [S62](../sources/S62-rules-for-responsible-modeling-app-md.md).
 - Inertial damping by Froude number: full inertia up to 0.5, none at 1 or above.
 - A normal-flow limit when the water surface slope is less than the conduit slope, or the Froude number exceeds 1.
 - Upstream weighting of area and hydraulic radius as flow nears supercritical.

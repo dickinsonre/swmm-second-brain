@@ -2,7 +2,7 @@
 title: EPA SWMM 5
 type: entity
 updated: 2026-11-14
-sources: [S02, S04, S08, S11, S15, S17, S19, S20, S21, S22, S41, S55, S59]
+sources: [S02, S04, S08, S11, S15, S17, S19, S20, S21, S22, S41, S55, S59, S62]
 tags: [swmm5, engine]
 reviewed: no
 ---
@@ -29,6 +29,8 @@ The C rewrite of SWMM, first released as 5.0 build 001 on 29 October 2004 [S22](
 **Translations.** Nineteen translations of 5.2.4 by Bob, each byte-identical to EPA on every one of the 480 gate models it finished: see [SWMM5 language translations](swmm5-language-ports.md) [S41](../sources/S41-swmm5-go-readme.md). Over those models EPA makes 1,524,961,124 calls to glibc's math library, and its results change on 43 of 480 models when glibc uses its generic routines instead of the FMA ones [S41](../sources/S41-swmm5-go-readme.md).
 
 **Inside other products.** InfoSWMM uses the SWMM 5 C code as its engine [S11](../sources/S11-li-my-history-with-swmm.md). ICM SWMM runs the SWMM5 dynamic wave [S17](../sources/S17-li-routing-options.md).
+
+**In a browser page.** The [Rules for Responsible Modeling (app)](rules-for-responsible-modeling-app.md) runs a WebAssembly build declared as 5.2.4 in a web worker. Its summary gives the binary's SHA-256 but marks the source commit, compiler flags and license audit "not checked" (Q39) [S62](../sources/S62-rules-for-responsible-modeling-app-md.md). The [Topsoil Recovery Check (app)](topsoil-recovery-check.md) pins its 5.2.4 build to tag v5.2.4, commit 7952ca83 [S59](../sources/S59-topsoil-recovery-check-app-md.md).
 
 **Defects in 5.2.4 found by one study.** D1, Modified Horton with MaxInfil (`infil.c` line 545; see [Infiltration methods](../concepts/infiltration-methods.md)), and D2, a drain on a bio-retention cell with no storage layer (see [LID bio-retention layers](../concepts/lid-bioretention-layers.md)) [S59](../sources/S59-topsoil-recovery-check-app-md.md).
 

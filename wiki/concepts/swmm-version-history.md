@@ -2,7 +2,7 @@
 title: SWMM version history, 1969 to 2026
 type: concept
 updated: 2026-11-14
-sources: [S01, S07, S11, S12, S19, S20, S21, S22, S55, S60]
+sources: [S01, S07, S11, S12, S19, S20, S21, S22, S55, S60, S63]
 tags: [swmm-history, timeline]
 reviewed: no
 ---
@@ -15,10 +15,12 @@ The timeline as the ingested sources give it. Where two sources differ, both are
 | July to October 1971 | Four report volumes, EPA 11024 DOC 07/71 to 10/71; Volume IV is the program listing | [S01](../sources/S01-swmm1-engine-app-md.md) |
 | 1975 | SWMM 2 | [S21](../sources/S21-li-edition-56-swmm-history.md) |
 | 1977 to 1980 | Bob runs SWMM on punch cards; SWMM 2.5 and SWMM 3 fill ten boxes | [S19](../sources/S19-li-edition-29-engine-speed.md) |
+| 1978 | [William (Bill) James](../entities/william-james.md) and Mark Robinson teach a SWMM 2 class at the University of Florida; thirty students run it on a Boeing mainframe in Seattle through one modem | [S63](../sources/S63-li-edition-53-measure-of-honest-numbers.md) |
 | 1978 | Bob begins work on SWMM itself, starting with SWMM 2.5 | [S07](../sources/S07-swmm5org-topic-swmm-history.md) |
 | November 1981 | SWMM 3 User's Manual (Huber, Heaney, Nix, Dickinson, Polmann) | [S19](../sources/S19-li-edition-29-engine-speed.md) |
 | 1981 | EXTRAN 3 test model, later SWMM 5's Extran1.INP | [S19](../sources/S19-li-edition-29-engine-speed.md) |
 | 1981 | CDM publishes the Extran manual, with 7 test files | [S55](../sources/S55-swmm-brain-readme.md) |
+| 1983 | PCSWMM becomes available; Bob is one of its first users (see Q31) | [S63](../sources/S63-li-edition-53-measure-of-honest-numbers.md) |
 | August 1988 | SWMM 4 User's Manual (Huber and Dickinson) and EXTRAN Addendum (Roesner, Aldrich, Dickinson) | [S19](../sources/S19-li-edition-29-engine-speed.md) |
 | 1988 to 2004 | No major version for sixteen years | [S21](../sources/S21-li-edition-56-swmm-history.md) |
 | 1969 to 1992 | Years the article gives for SWMM development at Black Hall, University of Florida | [S12](../sources/S12-li-diamond-village.md) |

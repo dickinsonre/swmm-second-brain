@@ -106,3 +106,22 @@ One connection made at the merge: S59 shows that swmm524-perched implements a `S
 
 After the merge: 313 raw files, 60 ingested, 250 queued, 3 duplicate; 117 pages; 31 questions open, 3 settled; `tools/lint.py` 0 errors, 1 warning (SWMM 1 Engine 3.12 queued behind 3.6). No branch is left unmerged.
 
+## [2026-11-14] ingest | S61 to S64: two Lovable apps and the articles that announced them
+
+Bob uploaded three files to `raw/apps/`. They are two apps. `cost-allocation-explorer-v1.0.1.md` is the Cost Allocation Game Theory Explorer. `rain-canvas-studio-v2026.1.2.md` and `Rules for Responsible Modeling lessons and browser drainage experiments.md` are one summary of Rules for Responsible Modeling, byte for byte the same. No summary of the rain-canvas-studio app itself is in `raw/apps/`.
+
+Both summaries carry `file: rain-canvas-studio`. The cause is the prompt Claude gave Bob for Lovable on 14 November: its example front matter named that one project, and both projects copied it. With that line the manifest had marked the cost allocation summary `superseded`, as an older version of the other app. Raw files are not edited; the next version of each app should carry its own `file:` line (Q35).
+
+Read in full and ingested: the two summaries (S61, S62) and the two queued LinkedIn articles on the same apps, Edition 53 of 23 February 2026 (S63) and the Heaney article of 8 March 2026 (S64). S62 is filed against the file named for the app; the misnamed copy is now `duplicate`.
+
+Pages created: S61 to S64; [Cost Allocation Game Theory Explorer (app)](wiki/entities/cost-allocation-explorer.md), [Rules for Responsible Modeling (app)](wiki/entities/rules-for-responsible-modeling-app.md), [James P. (Jim) Heaney](wiki/entities/james-heaney.md), [William (Bill) James](wiki/entities/william-james.md); [Cost allocation by cooperative game theory](wiki/concepts/cost-allocation-methods.md), [Calibration, validation and uncertainty](wiki/concepts/calibration-validation-uncertainty.md). Pages changed: Robert Dickinson, Wayne Huber, version history, continuity is not validation, dynamic wave routing, EPA SWMM 5, subcatchment width, block architecture, OpenSWMM.org, overview, open questions, index, README.
+
+Found at ingest. Seven open questions, Q35 to Q41: the shared `file:` line; a difference in S61's table larger than the largest it reports; "253 citations" beside a single paper with 144; review grades with no reviewer on record in either app; the SWMM build inside Rules for Responsible Modeling has no pinned source; "the model is never the problem" in S63 against the defects in the register; 1967 against 1969 for the start of the Florida work. Q31 gains a source: S63 has PCSWMM in use in 1983. Q19 gains S63 and S64. Arithmetic checked and found right: both test tables sum to their totals (101 and 61), the Three Towns saving, the tutorial rainfall depth and period count, and three Manning capacities.
+
+Left out by page rule 9: family details and the memorial link in S64.
+
+## [2026-11-14] schema | One `file:` line per app; tools
+
+`CLAUDE.md`, "App summaries and versions", rule 4 now says what the `file:` line must be and what the tool does when two apps share one. `tools/manifest.py`: summaries that share `file:` but differ in `name:` are grouped by name, with a note; of byte-identical files the ingested copy is kept, else the shortest name. `tools/lint.py`: `%20` in a link is read as a space, so a source page can link a raw file whose name has spaces.
+
+After this ingest: 316 raw files, 64 ingested, 248 queued, 4 duplicate; 127 pages; 38 questions open, 3 settled.

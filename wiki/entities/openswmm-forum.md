@@ -16,7 +16,7 @@ The SWMM users' forum at openswmm.org. Bob has posted there since 1995 [S09](../
 | His posts | 4,014 (7 threads show no posts on the page) |
 | All posts in those threads | 12,443 |
 | Threads he started | 135 |
-| First thread | 15 February 1995, "Interface files", started by Bill James |
+| First thread | 15 February 1995, "Interface files", started by [William (Bill) James](william-james.md) |
 | Latest in the file | 24 October 2026 |
 | Different thread starters | 1,357 |
 

@@ -8,7 +8,12 @@ in its `raw:` front matter, otherwise `queued`, with two exceptions:
   superseded  an app summary in raw/apps/ for which a newer version of the
               same app is also in raw/apps/ (same `file:` in the front
               matter, later `date:` or higher `version:`). Not ingested.
-  duplicate   a file whose content is byte-identical to an earlier file. Run after adding raw files and
+              Summaries that share a `file:` line but differ in `name:` are
+              different apps: they are grouped by name and a note is printed.
+  duplicate   a file whose content is byte-identical to another file. The
+              ingested copy is the one kept, else the shortest name.
+
+Run after adding raw files and
 after every ingest. `--check` compares hashes with the existing manifest
 and reports raw files that changed (raw files are never edited).
 """
@@ -37,7 +42,7 @@ def describe(path):
 
 
 def app_key(path):
-    """(app, version, sort key) for a summary under raw/apps/, from its front matter."""
+    """(app, name, version, sort key) for a summary under raw/apps/, from its front matter."""
     fm, _ = front_matter(read(path).lstrip())
     app = (fm.get('file') or '').split('#')[0].strip().lower()
     app = re.split(r'\s+\(', app)[0]                 # drop a trailing "(single-page web app)"
@@ -46,7 +51,8 @@ def app_key(path):
     app = re.sub(r'\.html?$', '', app)
     version = (fm.get('version') or '').split('#')[0].strip()
     nums = tuple(int(x) for x in re.findall(r'\d+', version)[:4])
-    return app, version, ((fm.get('date') or '')[:10], nums, rel(path))
+    name = (fm.get('name') or '').strip().lower()
+    return app, name, version, ((fm.get('date') or '')[:10], nums, rel(path))
 
 
 def main():
@@ -73,7 +79,8 @@ def main():
                      'app': '', 'version': ''})
     notes = []
     seen = {}
-    for x in sorted(rows, key=lambda r: (len(r['path']), r['path'])):   # byte-identical files; the shortest name is kept
+    # byte-identical files: the ingested copy is kept, else the shortest name
+    for x in sorted(rows, key=lambda r: (r['status'] != 'ingested', len(r['path']), r['path'])):
         first = seen.setdefault(x['sha256'], x['path'])
         if first != x['path']:
             notes.append('DUPLICATE content: %s is identical to %s' % (x['path'], first))
@@ -82,13 +89,21 @@ def main():
     groups = {}
     for x in rows:                                   # versions of one app
         if x['kind'] == 'apps' and x['path'].endswith('.md') and x['status'] != 'duplicate':
-            app, version, key = app_key(os.path.join(ROOT, x['path']))
+            app, name, version, key = app_key(os.path.join(ROOT, x['path']))
             x['app'], x['version'] = app, version
-            groups.setdefault(app, []).append((key, x))
+            groups.setdefault(app, []).append((key, x, name))
+    for app in list(groups):                         # one file: line on summaries of different apps
+        names = sorted(set(n for _, _, n in groups[app] if n))
+        if len(names) > 1:
+            notes.append('SAME file: line "%s" on %d different apps (%s); grouped by name instead. Correct file: in the next version of each.'
+                         % (app, len(names), '; '.join(names)))
+            for key, x, n in groups.pop(app):
+                x['app'] = n or app
+                groups.setdefault(x['app'], []).append((key, x, n))
     for app, items in groups.items():
         items.sort(key=lambda kv: kv[0])
         newest = items[-1][1]
-        for _, x in items[:-1]:
+        for _, x, _n in items[:-1]:
             if x['status'] == 'queued':
                 x['status'] = 'superseded'
             elif x['status'] == 'ingested' and newest['status'] != 'ingested':

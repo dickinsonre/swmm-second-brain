@@ -2,7 +2,7 @@
 title: Subcatchment width
 type: concept
 updated: 2026-11-14
-sources: [S10, S22]
+sources: [S10, S22, S63]
 tags: [hydrology, swmm5, calibration]
 reviewed: no
 ---
@@ -12,6 +12,8 @@ Subcatchment width is a fitting parameter that the documentation presents as a l
 - Overland Manning's n and depression storage are "close behind" as calibration knobs explained as physics [S22](../sources/S22-li-ten-problems.md).
 - The cost to users: careful people measured the values, got bad hydrographs and blamed themselves [S22](../sources/S22-li-ten-problems.md).
 - Where it came from, in Bob's words: "This goes back to the SWMM1 and the street models used in SWMM1 - the width makes sense if you are only modeling one street." [S22](../sources/S22-li-ten-problems.md)
+
+**An old teaching aid.** [William (Bill) James](../entities/william-james.md) and Mark Robinson had an expert system that quizzed the user on the width parameter of SWMM 3 [S63](../sources/S63-li-edition-53-measure-of-honest-numbers.md).
 
 **How often it is asked.** "Subcatchment parameters as fitting knobs" tags 128 of Bob's 2,879 OpenSWMM thread titles [S10](../sources/S10-openswmm-top25-problems.md).
 

@@ -26,6 +26,6 @@ The Executive Block reads block names from cards (`WATERSHED`, `TRANSPORT`, `STO
 
 **Why it became a problem.** Each block had its own input conventions and its own manual chapter. That suited 1970s hardware and confused everyone afterward. SWMM 4 decks never converted cleanly to SWMM 5, and some features did not make the trip [S22](../sources/S22-li-ten-problems.md). [S22](../sources/S22-li-ten-problems.md) lists the blocks of SWMM 1 to 4 as Runoff, Transport, EXTRAN, Storage/Treatment and Receiving; the 1971 listing has no EXTRAN block [S01](../sources/S01-swmm1-engine-app-md.md).
 
-**A small confirmation.** The oldest thread in Bob's OpenSWMM list, 15 February 1995, started by Bill James, is titled "Interface files" [S09](../sources/S09-openswmm-thread-list.md).
+**A small confirmation.** The oldest thread in Bob's OpenSWMM list, 15 February 1995, started by [William (Bill) James](../entities/william-james.md), is titled "Interface files" [S09](../sources/S09-openswmm-thread-list.md).
 
 See [SWMM 1 (1971)](../entities/swmm-1.md), [SWMM version history, 1969 to 2026](swmm-version-history.md).

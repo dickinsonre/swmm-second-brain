@@ -2,7 +2,7 @@
 title: Continuity is not validation
 type: concept
 updated: 2026-11-14
-sources: [S01, S04, S05, S20, S59, S60]
+sources: [S01, S04, S05, S20, S59, S60, S62]
 tags: [verification, method]
 reviewed: no
 ---
@@ -22,5 +22,7 @@ A closed mass balance shows that water was not lost. It does not show that the a
 **The practice is growing.** The share of Bob's app-building conversations that verified against engine output rose from 28 % in 2026Q2 to 60 % in 2026Q3 [S05](../sources/S05-swmm5org-article-facts.md). See [Six quality markers for app-building work](app-quality-markers.md).
 
 **Checks that fail loudly.** The [Topsoil Recovery Check (app)](../entities/topsoil-recovery-check.md) verify script checks each group's case count against a manifest and exits 1 on a missing engine, failed run, missing file, count mismatch or moved number; 1,181 of 1,181 cases passed on 12 November 2026 [S59](../sources/S59-topsoil-recovery-check-app-md.md).
+
+**A passing test suite is not validation either.** The summary of the [Rules for Responsible Modeling (app)](../entities/rules-for-responsible-modeling-app.md) reports 61 of 61 tests and a tutorial run with continuity errors of -0.011 % and 0.019 %, and then says: "These are measured software checks, not field validation, native-solver equivalence or engineering approval." The app's own checklist takes continuity below 1 % as one item among several, with validation and a data audit as separate items [S62](../sources/S62-rules-for-responsible-modeling-app-md.md). See [Calibration, validation and uncertainty](calibration-validation-uncertainty.md).
 
 See also [Verification against printed runs](verification-against-printed-runs.md) and [The SWMM findings register](findings-register.md).

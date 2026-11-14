@@ -2,7 +2,7 @@
 title: Robert (Bob) Dickinson
 type: entity
 updated: 2026-11-14
-sources: [S07, S09, S11, S12, S18, S19, S21, S22, S23, S29, S41, S45, S55]
+sources: [S07, S09, S11, S12, S18, S19, S21, S22, S23, S29, S41, S45, S55, S61, S63, S64]
 tags: [people]
 reviewed: no
 ---
@@ -14,10 +14,14 @@ Author of every source in this wiki. Professional record only, as he has publish
 | 1973 | Goes to the University of Florida | [S07](../sources/S07-swmm5org-topic-swmm-history.md) |
 | 1974 | An undergraduate around Black Hall, where Wayne Huber and Jim Heaney have offices on the fourth floor | [S19](../sources/S19-li-edition-29-engine-speed.md) |
 | 1974 | "First model run. Punch cards." | [S55](../sources/S55-swmm-brain-readme.md) |
+| 1976, 1977 | Meets [James P. (Jim) Heaney](james-heaney.md) in a water resources class in 1976; from 1977 works with him on game theory for water resources | [S64](../sources/S64-li-heaney-1982-paper-cost-allocation-app.md) |
 | 1977 to 1980 | Runs SWMM on punch cards | [S19](../sources/S19-li-edition-29-engine-speed.md) |
 | 1978 | Starts work on SWMM itself, with SWMM 2.5 | [S07](../sources/S07-swmm5org-topic-swmm-history.md) |
+| 1978 | Takes a class on SWMM 2 taught at the University of Florida by [William (Bill) James](william-james.md) and Mark Robinson | [S63](../sources/S63-li-edition-53-measure-of-honest-numbers.md) |
 | 1979, 1985 | B.E. and M.E., University of Florida | [S11](../sources/S11-li-my-history-with-swmm.md) |
 | November 1981 | Co-author, SWMM 3 User's Manual | [S19](../sources/S19-li-edition-29-engine-speed.md) |
+| June 1982 | Co-author with Heaney, "Methods for Apportioning the Cost of a Water Resource Project", Water Resources Research 18(3), 476 to 482; the MCRS method is credited to the two of them | [S64](../sources/S64-li-heaney-1982-paper-cost-allocation-app.md) [S61](../sources/S61-cost-allocation-explorer-app-md.md) |
+| 1983 | One of the first users of PCSWMM | [S63](../sources/S63-li-edition-53-measure-of-honest-numbers.md) |
 | August 1988 | Co-author, SWMM 4 User's Manual and the EXTRAN Addendum | [S19](../sources/S19-li-edition-29-engine-speed.md) |
 | Between SWMM 4 and CDM (years not given) | Developer of XP-SWMM at XP Software; Visual Hydro and Visual Culvert at CAiCE | [S11](../sources/S11-li-my-history-with-swmm.md) |
 | Late 2000 | Joins CDM; works on the SWMM 5 upgrade | [S11](../sources/S11-li-my-history-with-swmm.md) |
@@ -29,12 +33,14 @@ Author of every source in this wiki. Professional record only, as he has publish
 | 2023 | Becomes chair of the SWMM5+ Technical Advisory Committee at CIMM.org | [S55](../sources/S55-swmm-brain-readme.md) |
 | 2024 | Autodesk Water | [S55](../sources/S55-swmm-brain-readme.md) |
 | November 2026 | Directs translations of EPA SWMM 5.2.4 into 19 languages for his Code Rosetta Stone app, each held byte for byte to EPA; chose Ruby over Scala as "the scripting language of InfoWorks ICM" (see [SWMM5 language translations](swmm5-language-ports.md)) | [S41](../sources/S41-swmm5-go-readme.md) [S45](../sources/S45-swmm5-ruby-readme.md) |
+| 2026 | Builds two apps with Lovable from other people's work he learned from: [Rules for Responsible Modeling (app)](rules-for-responsible-modeling-app.md) (announced February) and [Cost Allocation Game Theory Explorer (app)](cost-allocation-explorer.md) (announced March) | [S63](../sources/S63-li-edition-53-measure-of-honest-numbers.md) [S64](../sources/S64-li-heaney-1982-paper-cost-allocation-app.md) |
 | November 2026 | Directs translations of the OpenSWMM 6 engine into 13 languages, published under SWMMBobSWMM6; Claude writes the translators and runtimes (see [SWMM6 language translations](swmm6-language-ports.md)) | [S23](../sources/S23-swmm6-csharp-readme.md) [S29](../sources/S29-swmm6-rust-readme.md) |
 
 **Positions he has taken**
 - One subcatchment width for pervious and impervious subareas is wrong in principle [S22](../sources/S22-li-ten-problems.md). See [Subcatchment width](../concepts/subcatchment-width.md).
 - SWMM's openness is what matters most: "you have direct access to the source code so you can verify the computational algorithms" [S11](../sources/S11-li-my-history-with-swmm.md).
 - Lew Rossman's SWMM 5 documentation is the best software documentation in the world [S11](../sources/S11-li-my-history-with-swmm.md).
+- "The model is never the problem": the problem is the person who selects the data, chooses the complexity and interprets the output [S63](../sources/S63-li-edition-53-measure-of-honest-numbers.md). See [Calibration, validation and uncertainty](../concepts/calibration-validation-uncertainty.md) and Q40.
 - Tacit knowledge "may be quantified, I hope" [S22](../sources/S22-li-ten-problems.md).
 
 **Disagreements between his own articles** (see [Open questions](../open-questions.md))
