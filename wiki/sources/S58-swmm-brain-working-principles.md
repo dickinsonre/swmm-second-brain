@@ -1,5 +1,5 @@
 ---
-title: "S26: CLAUDE.md of the old swmm-brain repository (four working principles for apps)"
+title: "S58: CLAUDE.md of the old swmm-brain repository (four working principles for apps)"
 type: source
 raw: raw/swmm-brain/CLAUDE-swmm-brain.md
 kind: note

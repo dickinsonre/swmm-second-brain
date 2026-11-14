@@ -1,5 +1,5 @@
 ---
-title: "S25: setup.sh of the old swmm-brain repository (the list of knowledge repositories)"
+title: "S57: setup.sh of the old swmm-brain repository (the list of knowledge repositories)"
 type: source
 raw: raw/swmm-brain/setup.sh
 kind: script

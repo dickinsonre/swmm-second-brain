@@ -2,7 +2,7 @@
 title: Dynamic wave routing
 type: concept
 updated: 2026-11-14
-sources: [S08, S10, S17, S18, S20, S22, S23]
+sources: [S08, S10, S17, S18, S20, S22, S55]
 tags: [hydraulics, swmm5, routing]
 reviewed: no
 ---
@@ -20,7 +20,7 @@ Dynamic wave routing solves the full one-dimensional St. Venant equations: conti
 
 **How often it hurts.** Dynamic-wave stability, continuity and surcharge is the largest problem group in Bob's OpenSWMM threads: 224 of 2,879 thread titles [S10](../sources/S10-openswmm-top25-problems.md).
 
-**Fixes Bob has planned** (status in the source: planned; each "informed by how InfoWorks ICM handles the same problem") [S23](../sources/S23-swmm-brain-readme.md)
+**Fixes Bob has planned** (status in the source: planned; each "informed by how InfoWorks ICM handles the same problem") [S55](../sources/S55-swmm-brain-readme.md)
 
 | Problem | SWMM 5 now, per the source | Proposed |
 |---|---|---|

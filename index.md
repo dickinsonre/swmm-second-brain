@@ -87,10 +87,10 @@ Notes and data
 - [S10](wiki/sources/S10-openswmm-top25-problems.md) (2026-11-06): top 25 problems tagged from thread titles.
 
 The old swmm-brain repository
-- [S23](wiki/sources/S23-swmm-brain-readme.md) (2026-08-22): README: enhancements, apps, scripts, timeline.
-- [S24](wiki/sources/S24-swmm-brain-note-surrogate.md) (2026-06-29): note, a surrogate distilled from SWMM's own storms.
-- [S25](wiki/sources/S25-swmm-brain-setup-script.md) (2026-08-22): setup.sh, the list of knowledge repositories.
-- [S26](wiki/sources/S26-swmm-brain-working-principles.md) (2026-08-22): four working principles for building apps.
+- [S55](wiki/sources/S55-swmm-brain-readme.md) (2026-08-22): README: enhancements, apps, scripts, timeline.
+- [S56](wiki/sources/S56-swmm-brain-note-surrogate.md) (2026-06-29): note, a surrogate distilled from SWMM's own storms.
+- [S57](wiki/sources/S57-swmm-brain-setup-script.md) (2026-08-22): setup.sh, the list of knowledge repositories.
+- [S58](wiki/sources/S58-swmm-brain-working-principles.md) (2026-08-22): four working principles for building apps.
 
 swmm5.org pages
 - [S06](wiki/sources/S06-swmm5org-topics-index.md) (2026-11-01): Topics landing page.

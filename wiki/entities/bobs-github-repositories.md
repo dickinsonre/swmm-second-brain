@@ -2,13 +2,13 @@
 title: Bob's GitHub repositories (where the rest of the material lives)
 type: entity
 updated: 2026-11-14
-sources: [S07, S08, S23, S25]
+sources: [S07, S08, S55, S57]
 tags: [repositories]
 reviewed: no
 ---
 Every repository named in an ingested source, with the description the source gives. None of their contents is in `raw/` yet. This page is the map for future ingests.
 
-**The six the old brain cloned by default** [S25](../sources/S25-swmm-brain-setup-script.md)
+**The six the old brain cloned by default** [S57](../sources/S57-swmm-brain-setup-script.md)
 
 | Repository | Bob's description |
 |---|---|
@@ -19,7 +19,7 @@ Every repository named in an ingested source, with the description the source gi
 | `Dickinsonre/Innovyze-ICM-Libraries` | open ICM libraries and docs |
 | `Dickinsonre/SwmmHistory` | SWMM5 history |
 
-**Listed there as optional** [S25](../sources/S25-swmm-brain-setup-script.md)
+**Listed there as optional** [S57](../sources/S57-swmm-brain-setup-script.md)
 
 | Repository | Bob's description |
 |---|---|
@@ -49,7 +49,7 @@ Every repository named in an ingested source, with the description the source gi
 | `dickinsonre/alt-swmm5` | catalog of proposed SWMM5 engine features | [S08](../sources/S08-swmm5org-topic-inside-swmm5.md) |
 | `dickinsonre/swmm-brain` | the old brain; see [swmm-brain (the old brain repository)](swmm-brain-repo.md) | [S08](../sources/S08-swmm5org-topic-inside-swmm5.md) |
 
-**Other people's repositories the README points to** [S23](../sources/S23-swmm-brain-readme.md)
+**Other people's repositories the README points to** [S55](../sources/S55-swmm-brain-readme.md)
 
 | Repository | Description |
 |---|---|
@@ -58,6 +58,6 @@ Every repository named in an ingested source, with the description the source gi
 | `pyswmm/pyswmm` | Python wrapper for SWMM5 |
 | `CIMM-ORG/SWMM5plus` | SWMM5+ Fortran engine with a finite volume solver |
 
-**Three owner names carry Bob's own repositories.** `dickinsonre` (written `Dickinsonre` in [S25](../sources/S25-swmm-brain-setup-script.md)), `SWMMEnablement` and `SWMMBobSWMM6`.
+**Three owner names carry Bob's own repositories.** `dickinsonre` (written `Dickinsonre` in [S57](../sources/S57-swmm-brain-setup-script.md)), `SWMMEnablement` and `SWMMBobSWMM6`.
 
 **Suggested order for bringing them into raw.** READMEs first, one source page per repository: the six defaults, then `ReSWMM`, `InfoSewer-to-ICM` and `bobswmmapps`. Code is not a source for this wiki; a repository's README, docs folder and test results are.

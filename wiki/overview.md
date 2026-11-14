@@ -2,7 +2,7 @@
 title: Overview: what this wiki holds so far
 type: synthesis
 updated: 2026-11-14
-sources: [S01, S04, S05, S06, S10, S19, S20, S22, S23, S24, S25, S26]
+sources: [S01, S04, S05, S06, S10, S19, S20, S22, S55, S56, S57, S58]
 tags: [overview]
 reviewed: no
 ---
@@ -18,7 +18,7 @@ The state of the wiki after the first ingest, arranged by the six topics of [swm
 ## 2. Inside SWMM 5
 - Hydraulics: [Dynamic wave routing](concepts/dynamic-wave-routing.md), [Kinematic wave and steady flow routing](concepts/kinematic-wave-and-steady-flow.md), [Preissmann slot and surcharge](concepts/preissmann-slot-and-surcharge.md), [Conduit lengthening](concepts/conduit-lengthening.md), [Force main friction](concepts/force-main-friction.md).
 - Hydrology: [Runoff surfaces and subarea routing](concepts/runoff-surfaces-and-subarea-routing.md), [Subcatchment width](concepts/subcatchment-width.md), [Infiltration methods](concepts/infiltration-methods.md), [RDII unit hydrographs (RTK)](concepts/rdii-unit-hydrographs.md).
-- Proposed changes to the engine: [Two-layer soil infiltration (SOIL2)](concepts/two-layer-infiltration.md), and five planned dynamic-wave fixes listed on [Dynamic wave routing](concepts/dynamic-wave-routing.md) [S23](sources/S23-swmm-brain-readme.md).
+- Proposed changes to the engine: [Two-layer soil infiltration (SOIL2)](concepts/two-layer-infiltration.md), and five planned dynamic-wave fixes listed on [Dynamic wave routing](concepts/dynamic-wave-routing.md) [S55](sources/S55-swmm-brain-readme.md).
 - Output and documentation: [Reading SWMM output](concepts/reading-swmm-output.md), [The missing specification](concepts/the-missing-specification.md).
 - The single most-asked subject in 31 years of forum threads is dynamic-wave stability, tied with reading the output, at 224 threads each [S10](sources/S10-openswmm-top25-problems.md). See [The top 25 problems in 31 years of forum threads](concepts/forum-problems-top-25.md).
 
@@ -33,8 +33,8 @@ The state of the wiki after the first ingest, arranged by the six topics of [swm
 ## 6. Comparing models with AI
 - The discipline: [Continuity is not validation](concepts/continuity-is-not-validation.md), [The SWMM findings register](concepts/findings-register.md), [Negative results](concepts/negative-results.md).
 - The measurements of Bob's own practice: [Six quality markers for app-building work](concepts/app-quality-markers.md) (verification against engine output rose from 28 % to 60 % of app-building conversations between 2026Q2 and 2026Q3 [S05](sources/S05-swmm5org-article-facts.md)) and [App complexity index (HydroCouple = 100)](concepts/app-complexity-index.md).
-- Apps as subjects: [SWMM 1 Engine (app)](entities/swmm-1-engine-app.md), [SWMM App Complexity Meter (app)](entities/swmm-app-complexity-meter.md), [Claude chat archive (app)](entities/claude-chat-archive.md). The rules they are built to: [App build contract (four working principles)](concepts/app-build-contract.md) [S26](sources/S26-swmm-brain-working-principles.md).
-- An idea at seed stage: [A surrogate distilled from SWMM](concepts/surrogate-distilled-from-swmm.md) [S24](sources/S24-swmm-brain-note-surrogate.md).
+- Apps as subjects: [SWMM 1 Engine (app)](entities/swmm-1-engine-app.md), [SWMM App Complexity Meter (app)](entities/swmm-app-complexity-meter.md), [Claude chat archive (app)](entities/claude-chat-archive.md). The rules they are built to: [App build contract (four working principles)](concepts/app-build-contract.md) [S58](sources/S58-swmm-brain-working-principles.md).
+- An idea at seed stage: [A surrogate distilled from SWMM](concepts/surrogate-distilled-from-swmm.md) [S56](sources/S56-swmm-brain-note-surrogate.md).
 
 ## Three things the first ingest showed
 1. **Bob's published articles contradict each other on dates and credits.** Twenty-one items are in [Open questions](open-questions.md). The primary documents (the 1971 listing, EPA's update notes) settle some; others need Bob.
@@ -42,7 +42,7 @@ The state of the wiki after the first ingest, arranged by the six topics of [swm
 3. **The strongest pages rest on the app .md files and the register, not on the articles.** Those sources carry procedures and numbers. The pattern argues for ingesting every app's .md before the remaining articles.
 
 ## What is missing from raw
-- The contents of Bob's repositories. [Bob's GitHub repositories (where the rest of the material lives)](entities/bobs-github-repositories.md) lists 30 of them from [S25](sources/S25-swmm-brain-setup-script.md) and the topic pages; the six his earlier [swmm-brain](entities/swmm-brain-repo.md) cloned by default are the place to start.
+- The contents of Bob's repositories. [Bob's GitHub repositories (where the rest of the material lives)](entities/bobs-github-repositories.md) lists 30 of them from [S57](sources/S57-swmm-brain-setup-script.md) and the topic pages; the six his earlier [swmm-brain](entities/swmm-brain-repo.md) cloned by default are the place to start.
 - The text of the 4,014 OpenSWMM posts (see [OpenSWMM.org (the forum)](entities/openswmm-forum.md)).
 - The swmm5.org and swmmfive.com posts.
 - The .md of every app except three. Apps built before November 2026 have none.

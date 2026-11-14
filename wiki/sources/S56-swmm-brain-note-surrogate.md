@@ -1,5 +1,5 @@
 ---
-title: "S24: Note, distill a fast surrogate from SWMM's own storms"
+title: "S56: Note, distill a fast surrogate from SWMM's own storms"
 type: source
 raw: raw/swmm-brain/notes/synthetic-storm-surrogate.md
 kind: note
