@@ -5,7 +5,7 @@ updated: 2026-11-15
 sources: [S01, S04, S05, S07, S08, S10, S11, S12, S14, S19, S20, S21, S22, S23, S27, S28, S29, S34, S35, S38, S41, S43, S44, S45, S46, S47, S48, S49, S50, S51, S52, S53, S54, S55, S59, S60, S61, S62, S63, S64, S65, S66, S67, S68, S69, S70, S71, S72, S73, S74, S75, S76, S77, S78, S79, S80, S81, S82, S83, S84, S85, S86, S87, S88, S89, S90, S91, S92, S93, S94, S95]
 tags: [lint, contradictions]
 reviewed: 2026-11-15
-changed_after_review: "2026-11-15: Q50 to Q59 added; Q16, Q17, Q18, Q38, Q47, Q48 extended; Q60 to Q63 added by the second ingest of the day; Q06 extended and Q64 added by the third; Q64 extended and Q65 added by the fourth, from Bob's answers (S91); Q65 ticked by the fifth, on Bob's word (S92); Q64 extended again for S93; then Q64 ticked, Q06 extended and Q66 added for the post itself (S94); then Q66 ticked on Bob's word (S95)"
+changed_after_review: "2026-11-15, after Bob's re-review that morning: Q64 extended and ticked (S91, S93, S94); Q65 added and ticked (S92); Q66 added and ticked (S95); Q06 extended (S94)"
 ---
 Contradictions, doubtful numbers and gaps found while ingesting and linting. An item is ticked only when a source or Bob settles it, with a note saying which. Newest at the bottom of each section.
 

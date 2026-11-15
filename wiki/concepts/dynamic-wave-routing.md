@@ -5,7 +5,6 @@ updated: 2026-11-15
 sources: [S08, S10, S17, S18, S20, S22, S55, S60, S62, S75, S77, S79, S80]
 tags: [hydraulics, swmm5, routing]
 reviewed: 2026-11-15
-changed_after_review: "2026-11-15: one paragraph added near the end, headed Added 15 November 2026; a second, of one sentence, headed Added 15 November 2026, second ingest of the day"
 ---
 Dynamic wave routing solves the full one-dimensional St. Venant equations: continuity and momentum in the conduits and a volume balance at the nodes [S17](../sources/S17-li-routing-options.md). It is the only SWMM5 routing method that handles backwater, entrance and exit losses, flow reversal, pressurized flow, loops and multiple downstream diversions [S17](../sources/S17-li-routing-options.md).
 

@@ -5,7 +5,6 @@ updated: 2026-11-15
 sources: [S01, S08, S10, S17, S60]
 tags: [hydraulics, swmm5, routing]
 reviewed: 2026-11-15
-changed_after_review: "2026-11-15: one section added at the end, headed Added 15 November 2026, from the EPA hydraulics manual"
 ---
 SWMM5 has two routing methods simpler than [dynamic wave](dynamic-wave-routing.md) [S17](../sources/S17-li-routing-options.md).
 

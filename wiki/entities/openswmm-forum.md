@@ -5,7 +5,6 @@ updated: 2026-11-15
 sources: [S09, S10, S22, S59, S85]
 tags: [openswmm, forum]
 reviewed: 2026-11-15
-changed_after_review: "2026-11-15: paragraph 'Counted again elsewhere' added"
 ---
 The SWMM users' forum at openswmm.org. Bob has posted there since 1995 [S09](../sources/S09-openswmm-thread-list.md).
 

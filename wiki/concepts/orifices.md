@@ -4,7 +4,7 @@ type: concept
 updated: 2026-11-15
 sources: [S60]
 tags: [hydraulics, swmm5, regulators, primary-document]
-reviewed: no
+reviewed: 2026-11-15
 ---
 An orifice is one of SWMM 5's three flow regulator links, with [weirs and outlets](weirs-and-outlets.md) [S60](../sources/S60-epa-swmm5-reference-manual-vol2-hydraulics.md). This page is sections 2.1.7 and 6.2 of the EPA hydraulics manual, a primary document, in digest. The equations did not survive the conversion of the raw file, so they are given in words [S60](../sources/S60-epa-swmm5-reference-manual-vol2-hydraulics.md).
 
