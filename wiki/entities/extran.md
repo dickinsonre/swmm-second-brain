@@ -4,7 +4,7 @@ type: entity
 updated: 2026-11-14
 sources: [S05, S07, S08, S19, S20, S21, S22, S55, S60]
 tags: [swmm-history, hydraulics, engine]
-reviewed: no
+reviewed: 2026-11-15
 ---
 The Extended Transport block: SWMM's dynamic-wave hydraulics before SWMM 5, and the ancestor of SWMM 5's [dynamic wave routing](../concepts/dynamic-wave-routing.md) [S20](../sources/S20-li-edition-54-two-solvers.md).
 
