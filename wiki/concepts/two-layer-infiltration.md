@@ -4,7 +4,7 @@ type: concept
 updated: 2026-11-14
 sources: [S08, S55, S59]
 tags: [hydrology, infiltration, swmm5, enhancement]
-reviewed: no
+reviewed: 2026-11-15
 ---
 Bob's proposed enhancement to SWMM 5: let an ordinary subcatchment infiltrate through two soil layers by reusing the LID control's soil layer [S55](../sources/S55-swmm-brain-readme.md).
 
