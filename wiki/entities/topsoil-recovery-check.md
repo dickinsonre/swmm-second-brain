@@ -4,7 +4,7 @@ type: entity
 updated: 2026-11-14
 sources: [S08, S59]
 tags: [apps, lid, infiltration, swmm5, swmm6, verification]
-reviewed: no
+reviewed: 2026-11-15
 ---
 Bob's page on how SWMM credits decompacted topsoil over compacted clay, deployed as `index.html` in a Netlify folder `topsoil-recovery-site/`. Version 2026-11-12 [S59](../sources/S59-topsoil-recovery-check-app-md.md). swmm5.org lists it as comparing Horton with the LID two-layer soil in EPA SWMM 5.2.4 [S08](../sources/S08-swmm5org-topic-inside-swmm5.md). The subject is on [Topsoil over compacted clay](../concepts/topsoil-over-compacted-clay.md).
 
