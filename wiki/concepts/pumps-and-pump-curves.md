@@ -4,7 +4,7 @@ type: concept
 updated: 2026-11-15
 sources: [S60, S83]
 tags: [hydraulics, swmm5, pumps, primary-document]
-reviewed: no
+reviewed: 2026-11-15
 ---
 SWMM 5 treats a pump as a link whose flow comes from a user-supplied pump curve [S60](../sources/S60-epa-swmm5-reference-manual-vol2-hydraulics.md). Everything on this page is from sections 2.1.6 and 6.1 of the EPA hydraulics manual unless another source is cited.
 
