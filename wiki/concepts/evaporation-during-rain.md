@@ -4,7 +4,7 @@ type: concept
 updated: 2026-11-14
 sources: [S59]
 tags: [hydrology, evaporation, lid, swmm5, swmm6]
-reviewed: no
+reviewed: 2026-11-15
 ---
 **The question.** Whether evaporation should stop while it rains is one of the ideas from the SWMM-USERS list that [S59](../sources/S59-topsoil-recovery-check-app-md.md) tested (its Experiment H). SWMM's switch is `DRY_ONLY` in `[EVAPORATION]`; the study's default is `DRY_ONLY NO` [S59](../sources/S59-topsoil-recovery-check-app-md.md).
 
