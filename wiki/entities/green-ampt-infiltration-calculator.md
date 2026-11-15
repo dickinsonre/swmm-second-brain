@@ -2,7 +2,7 @@
 title: Green-Ampt Infiltration Calculator (app)
 type: entity
 updated: 2026-11-15
-sources: [S107]
+sources: [S107, S139]
 tags: [apps, replit, hydrology, infiltration, green-ampt, horton, curve-number]
 reviewed: no
 ---
@@ -24,5 +24,7 @@ Bob's Replit app Green-Ampt Infiltration Calculator: a browser calculator that e
 **What it does not show.** Interactive controls, exports, presets and comparisons were not exercised. Numerical agreement with EPA SWMM was not checked. The date in the front matter is the inspection date, not a release date. [S107](../sources/S107-green-ampt-calculator-replit-summary.md)
 
 **Noted at ingest.** The three readings of the code are Replit Agent's. The file gives them no status beyond "not tested"; they are unconfirmed here (Q69).
+
+**Added 15 November 2026: a third infiltration app.** [SWMMCRAFT, infiltration simulator (app)](swmmcraft-infiltration-simulator.md) computes Horton, Green-Ampt and Curve Number infiltration for one storm in its own server code [S139](../sources/S139-swmmcraft-infiltration-replit-summary.md).
 
 See [Replit apps and the summaries Replit Agent wrote](../concepts/replit-app-summaries.md), [Infiltration methods](../concepts/infiltration-methods.md), [SWMM5 Runoff and Infiltration (app)](swmm5-runoff-and-infiltration.md).

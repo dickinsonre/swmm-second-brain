@@ -278,3 +278,12 @@ Counts: 136 of 384 raw files ingested, 244 queued.
 
 Bob sent links for the projects BobSWMMWriter and ICMReader. Each was read out of the Replit editor and checked against a SHA-256 computed there: snagit-video-article--robertdickinson-v2.1.0 (app name in the file: BobSWMM Writer) and icm-reader-robertdickinson-v1.0.0 (app name in the file: ICM PRN File Reader). Both match. Neither had an earlier copy in `raw/apps/`. Queued, not ingested, on the branch `replit-summaries-5`.
 Counts: 136 of 386 raw files ingested, 246 queued.
+
+## [2026-11-15] ingest | S137 to S142: six Replit summaries
+
+Ingested the six summaries Replit Agent wrote that came over after S136: S137 SWMM Documents Explorer, S138 SWMM5 Quizzer, S139 SWMMCRAFT (Replit project SWMM-Infiltration), S140 SWMM5Wiki (Replit project GatorSWMM), S141 BobSWMM Writer and S142 ICM PRN File Reader. None runs an engine; one (S142) has a test suite, 24 passing.
+Created: six source pages, six entity pages and the concept page "Replit apps: six more summaries". Changed: the second-batch concept page (one pointer), the Green-Ampt Infiltration Calculator and SWMM5 Runoff and Infiltration pages (a paragraph each on a third infiltration app), Bob's GitHub repositories (a paragraph naming SWMMEnablement/SWMM_MD_Documents; reviewed page, marked changed_after_review), overview (a bullet and the counts), open questions (sentences added to Q74, Q75, Q76, Q77, Q79 and Q80; Q82 added), index, README.
+Contradiction: S139 reports that its Curve Number reference page and server use different denominators; with Ia = 0.2 S the two are the same expression (our algebra). Filed as Q82, not settled.
+Checked at ingest: numbers and code fragments on the new pages were searched for in their raw files; the misses are our own arithmetic, marked as such, and "SHA-256".
+Bob wrote at 17:20 that he is fixing two errors; which two is not yet known. The pages describe the apps as their summaries found them; a fixed version arrives as a new summary file and a new source page.
+Counts: 142 of 386 raw files ingested, 240 queued; 288 wiki pages; 76 open questions and 6 settled.

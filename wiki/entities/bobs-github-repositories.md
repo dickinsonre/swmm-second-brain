@@ -2,10 +2,10 @@
 title: Bob's GitHub repositories (where the rest of the material lives)
 type: entity
 updated: 2026-11-15
-sources: [S07, S08, S55, S57, S96, S97, S101, S103, S115, S119, S124, S126, S128, S129, S130]
+sources: [S07, S08, S55, S57, S96, S97, S101, S103, S115, S119, S124, S126, S128, S129, S130, S137]
 tags: [repositories]
 reviewed: 2026-11-15
-changed_after_review: "2026-11-15 (Replit ingest): one paragraph added at the end, headed Added 15 November 2026, listing four repositories named by Replit apps (S96, S97, S101, S103); 2026-11-15 (second Replit ingest): a second paragraph added at the end, headed Added 15 November 2026, listing seven repositories named by Replit apps (S115, S119, S124, S126, S128, S129, S130)"
+changed_after_review: "2026-11-15 (Replit ingest): one paragraph added at the end, headed Added 15 November 2026, listing four repositories named by Replit apps (S96, S97, S101, S103); 2026-11-15 (second Replit ingest): a second paragraph added at the end, headed Added 15 November 2026, listing seven repositories named by Replit apps (S115, S119, S124, S126, S128, S129, S130); 2026-11-15 (S137 to S142 ingest): a paragraph added at the end, headed Added 15 November 2026, naming SWMMEnablement/SWMM_MD_Documents (S137, S60)"
 ---
 Every repository named in an ingested source, with the description the source gives. None of their contents is in `raw/` yet. This page is the map for future ingests.
 
@@ -66,3 +66,5 @@ Every repository named in an ingested source, with the description the source gi
 **Added 15 November 2026: four repositories named by Replit apps.** `dickinsonre/Swmm5-UI-Engine` [S96](../sources/S96-swmm5-ui-replit-summary.md), `dickinsonre/SWMM-Filebase` [S97](../sources/S97-swmm5-network-miner-replit-summary.md), `dickinsonre/SJ-SWMM5-ManualSearch` [S101](../sources/S101-swmm5-manual-search-replit-summary.md) and `dickinsonre/InfoSWMM-InfoSewer-Reader` [S103](../sources/S103-legacy-model-reader-replit-summary.md). See [Replit apps and the summaries Replit Agent wrote](../concepts/replit-app-summaries.md).
 
 **Added 15 November 2026: seven more repositories named by Replit apps.** `SWMMEnablement/EPANET-SWMM-Experts` [S115](../sources/S115-epanet-for-swmm5-experts-replit-summary.md), `dickinsonre/Code-Rosetta-Stone` [S119](../sources/S119-code-rosetta-stone-replit-summary.md), `SWMMBobSWMM6/BobSWMM-Auto-Research` [S124](../sources/S124-bobswmm-auto-research-replit-summary.md), `dickinsonre/SwmmHistory` [S126](../sources/S126-swmm-ecosystem-replit-summary.md), `dickinsonre/EPANET-SWMM5-Generate` [S128](../sources/S128-epanet-23-generator-replit-summary.md), `dickinsonre/HistoricalWaterInventions` [S129](../sources/S129-historical-water-inventions-replit-summary.md) and `SWMMEnablement/pyswmm`, which the PySWMM Explorer links to [S130](../sources/S130-pyswmm-explorer-replit-summary.md). The Code Rosetta Stone summary also gives an exact commit for each of 30 translation repositories under SWMMBobSWMM6 [S119](../sources/S119-code-rosetta-stone-replit-summary.md). See [Replit apps: the second seventeen summaries](../concepts/replit-app-summaries-second-batch.md).
+
+**Added 15 November 2026: one more repository named by a Replit app.** `SWMMEnablement/SWMM_MD_Documents` is the archive the [SWMM Documents Explorer (app)](swmm-documents-explorer.md) guides [S137](../sources/S137-swmm-documents-explorer-replit-summary.md). The markdown of the EPA hydraulics manual here is a conversion of a PDF kept in it [S60](../sources/S60-epa-swmm5-reference-manual-vol2-hydraulics.md).

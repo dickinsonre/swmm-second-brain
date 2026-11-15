@@ -2,7 +2,7 @@
 title: SWMM5 Runoff and Infiltration (app)
 type: entity
 updated: 2026-11-15
-sources: [S107, S108]
+sources: [S107, S108, S139]
 tags: [apps, replit, hydrology, infiltration, horton, green-ampt, curve-number, lid]
 reviewed: no
 ---
@@ -24,5 +24,7 @@ Bob's Replit app SWMM5 Runoff and Infiltration App: an interactive app for explo
 **What it does not show.** The live deployment was not loaded. Outputs were not compared with independent calculations. The downloads were not opened in other applications. No release date is recorded for 1.0.0. [S108](../sources/S108-runoff-and-infiltration-replit-summary.md)
 
 **Noted at ingest.** The project is named SWMM5RunoffInfiltration and the site horton-model (Q70). It overlaps [S107](../sources/S107-green-ampt-calculator-replit-summary.md) in four of its five methods.
+
+**Added 15 November 2026: a third infiltration app.** [SWMMCRAFT, infiltration simulator (app)](swmmcraft-infiltration-simulator.md) computes Horton, Green-Ampt and Curve Number infiltration for one storm in its own server code [S139](../sources/S139-swmmcraft-infiltration-replit-summary.md).
 
 See [Replit apps and the summaries Replit Agent wrote](../concepts/replit-app-summaries.md), [Infiltration methods](../concepts/infiltration-methods.md), [Green-Ampt Infiltration Calculator (app)](green-ampt-infiltration-calculator.md).

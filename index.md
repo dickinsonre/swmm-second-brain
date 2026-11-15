@@ -69,6 +69,7 @@ Measurement and method
 - [Calibration, validation and uncertainty](wiki/concepts/calibration-validation-uncertainty.md): William James's rules as Bob reports them, and the thresholds his app teaches (NSE 0.7, peak 15 %, volume 10 %).
 - [Replit apps and the summaries Replit Agent wrote](wiki/concepts/replit-app-summaries.md): the first eighteen Replit apps, what their agent-written summaries have in common and where they differ.
 - [Replit apps: the second seventeen summaries](wiki/concepts/replit-app-summaries-second-batch.md): seventeen more Replit apps: which run an engine, which pass their tests, and what the agent found doubtful.
+- [Replit apps: six more summaries](wiki/concepts/replit-app-summaries-third-batch.md): six more Replit apps brought over on the evening of 15 November 2026: none runs an engine, one has a test suite, four have names that do not say what they are.
 - [LinkedIn posts that were well received](wiki/concepts/linkedin-post-reception.md): which of 50 posts were most seen, most reacted to and most answered on 15 November 2026, and where the two posts Bob named stand.
 
 Economics
@@ -153,6 +154,12 @@ Apps
 - [SWMM5 & EPANET INP Explorer (app)](wiki/entities/swmm5-epanet-inp-explorer.md): Replit app, v1.0.0; reference to the SWMM and EPANET input-file formats, with a section builder and a paste-in parser; runs no engine.
 - [SWMM5 .inp File Interactive Viewer (app)](wiki/entities/swmm5-inp-file-interactive-viewer.md): Replit app, v0.1.0; Streamlit page that shows an input file's sections as data grids with statistics and charts; runs no engine.
 - [SWMM5 Topo Network Wizard (app)](wiki/entities/swmm5-topo-network-wizard.md): Replit app, v1.0.0; generates network layouts from 49 topology methods and a particle simulation and exports SWMM5 input files; runs no SWMM engine.
+- [SWMM Documents Explorer (app)](wiki/entities/swmm-documents-explorer.md): Replit app, v1.0.0; guide to the SWMM documentation archive: 8 eras, 13 timeline entries, 29 documents; runs no engine.
+- [SWMM5 Quizzer (app)](wiki/entities/swmm5-quizzer.md): Replit app, v1.0.0; 250 multiple-choice SWMM questions, 25 a quiz, and a Simulation Quiz on stored scenarios; runs no engine.
+- [SWMMCRAFT, infiltration simulator (app)](wiki/entities/swmmcraft-infiltration-simulator.md): Replit app, v1.0.0; Horton, Green-Ampt and Curve Number infiltration for one storm in its own code; runs no engine.
+- [SWMM5Wiki (app)](wiki/entities/swmm5wiki.md): Replit app, v1.0.0; SWMM guide with 5 sections and 8 glossary terms, and a game of 16 challenges; runs no engine.
+- [BobSWMM Writer (app)](wiki/entities/bobswmm-writer.md): Replit app, v2.1.0; drafts posts and articles with Claude from notes and recordings that Gemini transcribes.
+- [ICM PRN File Reader (app)](wiki/entities/icm-prn-file-reader.md): Replit app, v1.0.0; reads InfoWorks ICM PRN output, flags flooding, surcharge and capacity, exports CSV, Excel or PDF; 24 tests pass.
 
 Data
 - [1729-SWMM5-Models-2030 (the corpus)](wiki/entities/corpus-1729.md): Bob's public model repository; 480 of its models are the translations' gate set.
@@ -241,6 +248,12 @@ App summaries
 - [S134](wiki/sources/S134-note-linkedin-two-well-received-posts.md) (2026-11-15): note, two LinkedIn posts that drew a good response, with their counts.
 - [S135](wiki/sources/S135-li-fifty-posts-with-counts.md) (2026-11-15): LinkedIn, fifty of Bob's posts with their reactions, comments and impressions.
 - [S136](wiki/sources/S136-swmm5-topo-network-wizard-replit-summary.md) (2026-11-15): SWMM5 Topo Network Wizard, summary written by Replit Agent, v1.0.0.
+- [S137](wiki/sources/S137-swmm-documents-explorer-replit-summary.md) (2026-02-11): SWMM Documents Explorer, summary written by Replit Agent, v1.0.0.
+- [S138](wiki/sources/S138-swmm5-quizzer-replit-summary.md) (2026-11-15): SWMM5 Quizzer, summary written by Replit Agent, v1.0.0.
+- [S139](wiki/sources/S139-swmmcraft-infiltration-replit-summary.md) (2025-12-25): SWMMCRAFT (Replit project SWMM-Infiltration), summary written by Replit Agent, v1.0.0.
+- [S140](wiki/sources/S140-swmm5wiki-replit-summary.md) (2025-08-28): SWMM5Wiki (Replit project GatorSWMM), summary written by Replit Agent, v1.0.0.
+- [S141](wiki/sources/S141-bobswmm-writer-replit-summary.md) (2026-02-11): BobSWMM Writer, summary written by Replit Agent, v2.1.0.
+- [S142](wiki/sources/S142-icm-prn-file-reader-replit-summary.md) (2025-08-05): ICM PRN File Reader, summary written by Replit Agent, v1.0.0.
 
 Manuals and reports (primary documents)
 - [S60](wiki/sources/S60-epa-swmm5-reference-manual-vol2-hydraulics.md) (2017-05): EPA SWMM Reference Manual, Volume II, Hydraulics, by L. A. Rossman. Read in part: section 1.1 and Chapters 2, 3, 4 and 6 (the raw file lacks pages 64 to 66 and 122).
@@ -328,7 +341,7 @@ Repository READMEs (SWMM5 translations)
 
 ## Queue
 
-246 raw files are queued: 212 LinkedIn articles and the as-pasted copy of the post of 14 November 2026 (kept because raw files are never deleted; its corrected copy is S94, so it is not to be ingested), 19 manual files in `raw/manuals/` (8 EPA, USGS and FHWA documents not yet started, and 11 SWMM 4.4 documentation files), 4 swmm5.org topic pages, 2 SWMM 1 build notes and 8 files in `raw/apps/`. Six, `swmm-documents-explorer-v1.0.0.md`, `quiz-master-robertdickinson-v1.0.0.md`, `swmm-infiltration--robertdickinson-v1.0.0.md`, `gator-swmm-robertdickinson-v1.0.0.md`, `snagit-video-article--robertdickinson-v2.1.0.md` and `icm-reader-robertdickinson-v1.0.0.md`, are summaries Replit Agent wrote of the SWMM Documents Explorer, the SWMM5 Quizzer, SWMMCRAFT (an infiltration simulator, Replit project SWMM-Infiltration), SWMM5Wiki (Replit project GatorSWMM), BobSWMM Writer (Replit project BobSWMMWriter) and the ICM PRN File Reader (Replit project ICMReader), brought over from Replit after the ingest of S136. One, `PyBME-issue-drafts.md`, is not an app summary and was left queued on purpose (Q56). The last, `st-venant-solver-rosetta-stone-v2.6.2.md`, is the newer version of an app already ingested at version 2.4.0 (S75); it was added on 15 November 2026 and bears on Q62. Three more LinkedIn files are byte-identical copies of others and are marked `duplicate`. `raw/MANIFEST.csv` lists them all. Suggested next batches, in order:
+240 raw files are queued: 212 LinkedIn articles and the as-pasted copy of the post of 14 November 2026 (kept because raw files are never deleted; its corrected copy is S94, so it is not to be ingested), 19 manual files in `raw/manuals/` (8 EPA, USGS and FHWA documents not yet started, and 11 SWMM 4.4 documentation files), 4 swmm5.org topic pages, 2 SWMM 1 build notes and 2 files in `raw/apps/`. One, `PyBME-issue-drafts.md`, is not an app summary and was left queued on purpose (Q56). The other, `st-venant-solver-rosetta-stone-v2.6.2.md`, is the newer version of an app already ingested at version 2.4.0 (S75); it was added on 15 November 2026 and bears on Q62. Three more LinkedIn files are byte-identical copies of others and are marked `duplicate`. `raw/MANIFEST.csv` lists them all. Suggested next batches, in order:
 
 0. The rest of the EPA hydraulics manual, a chapter at a time (S60: sections 1.2 to 1.5, Chapter 5, Chapter 7 and the appendices remain), then the 2006 quality assurance report and the SWMM 5.1 User's Manual. With them, the Rosetta Stone summary at version 2.6.2, which tests the pump rule of Q62. These are the primary documents; ingesting them first lets later articles be checked against them.
 1. The four remaining swmm5.org topic pages and the SWMM 1 build notes (small, and they complete themes 3 to 6).

@@ -34,7 +34,7 @@ Seventeen more of Bob's Replit apps got a technical summary from Replit Agent on
 | [SWMM5 .inp File Interactive Viewer (app)](../entities/swmm5-inp-file-interactive-viewer.md) | `swmm5filestats.com` | SWMM5NetworkAnalyzer | [S133](../sources/S133-swmm5-inp-file-interactive-viewer-replit-summary.md) |
 | [SWMM5 Topo Network Wizard (app)](../entities/swmm5-topo-network-wizard.md) | `topo-network-wizard` | SWMM5 Topo Network Wizard | [S136](../sources/S136-swmm5-topo-network-wizard-replit-summary.md) |
 
-Site names are `.replit.app` names except the three given in full. The last four rows came after the seventeen and are not in the counts below.
+Site names are `.replit.app` names except the three given in full. The last four rows came after the seventeen and are not in the counts below. Six that came after these are on [Replit apps: six more summaries](replit-app-summaries-third-batch.md).
 
 **In common.** None records a human review [S114](../sources/S114-swmm5-microgpt-replit-summary.md) [S130](../sources/S130-pyswmm-explorer-replit-summary.md). Checks were made on the development copy; where one looked at the published site, its API answered 404 [S119](../sources/S119-code-rosetta-stone-replit-summary.md).
 
