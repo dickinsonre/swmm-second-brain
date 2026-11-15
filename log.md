@@ -273,3 +273,8 @@ Counts: 136 of 382 raw files ingested, 242 queued.
 
 Bob sent links for the projects SWMM-Infiltration and GatorSWMM. Each was read out of the Replit editor and checked against a SHA-256 computed there: swmm-infiltration--robertdickinson-v1.0.0 (app name in the file: SWMMCRAFT; last commit 2025-12-25) and gator-swmm-robertdickinson-v1.0.0 (app name in the file: SWMM5Wiki; last commit 2025-08-28). Both match. Neither had an earlier copy in `raw/apps/`. The name SWMMCRAFT here belongs to an infiltration simulator; no other SWMMCRAFT summary is in `raw/apps/`. Queued, not ingested, on the branch `replit-summaries-5`.
 Counts: 136 of 384 raw files ingested, 244 queued.
+
+## [2026-11-15] raw | BobSWMM Writer and ICM PRN File Reader summaries brought over
+
+Bob sent links for the projects BobSWMMWriter and ICMReader. Each was read out of the Replit editor and checked against a SHA-256 computed there: snagit-video-article--robertdickinson-v2.1.0 (app name in the file: BobSWMM Writer) and icm-reader-robertdickinson-v1.0.0 (app name in the file: ICM PRN File Reader). Both match. Neither had an earlier copy in `raw/apps/`. Queued, not ingested, on the branch `replit-summaries-5`.
+Counts: 136 of 386 raw files ingested, 246 queued.
