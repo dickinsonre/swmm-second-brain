@@ -4,7 +4,7 @@ type: entity
 updated: 2026-11-14
 sources: [S61, S64]
 tags: [apps, cost-allocation, game-theory, lovable, verification]
-reviewed: no
+reviewed: 2026-11-15
 ---
 Bob's app version of the 1982 paper he wrote with [James P. (Jim) Heaney](james-heaney.md), built with Lovable and served at https://heaneywrr1982.lovable.app [S61](../sources/S61-cost-allocation-explorer-app-md.md) [S64](../sources/S64-li-heaney-1982-paper-cost-allocation-app.md). Version 1.0.1, 14 November 2026, MIT license [S61](../sources/S61-cost-allocation-explorer-app-md.md). The methods are on [Cost allocation by cooperative game theory](../concepts/cost-allocation-methods.md). It has no hydraulics in it: no rainfall, flow or depth file is read or written [S61](../sources/S61-cost-allocation-explorer-app-md.md).
 
