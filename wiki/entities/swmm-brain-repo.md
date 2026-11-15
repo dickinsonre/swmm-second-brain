@@ -4,7 +4,7 @@ type: entity
 updated: 2026-11-14
 sources: [S08, S55, S56, S57, S58]
 tags: [repositories, method]
-reviewed: no
+reviewed: 2026-11-15
 ---
 `dickinsonre/swmm-brain`, Bob's earlier attempt at a knowledge repository, last committed on 22 August 2026 (commit 70348bb) [S55](../sources/S55-swmm-brain-readme.md). Its contents were copied into `raw/swmm-brain/` on 14 November 2026, when this repository replaced it (see the [log](../../log.md)).
 
