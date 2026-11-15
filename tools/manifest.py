@@ -49,7 +49,7 @@ def app_key(path):
     if app in ('', 'index.html', 'index.htm'):       # every Lovable and Replit app is index.html
         app = (fm.get('name') or os.path.basename(path)).strip().lower()
     app = re.sub(r'\.html?$', '', app)
-    version = (fm.get('version') or '').split('#')[0].strip()
+    version = (fm.get('version') or '').split('#')[0].strip().strip('"\'')   # '"0.0.0" # where it came from' is 0.0.0
     nums = tuple(int(x) for x in re.findall(r'\d+', version)[:4])
     name = (fm.get('name') or '').strip().lower()
     return app, name, version, ((fm.get('date') or '')[:10], nums, rel(path))

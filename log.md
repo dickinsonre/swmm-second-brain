@@ -132,3 +132,11 @@ Bob deleted `raw/apps/replit-app-summaries.zip` on main (his commit 1a1ac92). It
 
 Bob sent links to three more summaries, and the agent found others in the projects he had worked in that morning. Read out of the Replit editor and checked against a SHA-256 computed there, as before: micro-gpt-swmm-v2, epanet-swmm-experts-v1.0, swmm-explorer--robertdickinson-v1.0.0, batch-swmm-runner-robertdickinson-v1.1.0, swmm-icm-st-venant--robertdickinson-v1.0.0, code-rosetta-stone-v1.0.0. All six match. Queued, not ingested. The first three settle the note of this morning that EPANET SWMM Experts and SWMM Explorer had no summary.
 Replit projects: MicroGPT SWMM, EPANET SWMM Experts, SWMM Explorer, BatchSWMMRunner, SWMM ICM StVenant, Code Rosetta Stone.
+
+## [2026-11-15] raw | Seven more Replit summaries brought over
+
+Bob kept sending links. Read out of the Replit editor and checked against a SHA-256 computed there, as before: force-main-robertdickinson-v1.0, hindsight-prophet-robertdickinson-v1.0.0, swmmanywhere-explorer-v1.0.0, mirofish-swmm-v0.0.0, bob-swmm-auto-research-v0.0.0, ruby-swmm-router-v2026.11.15, swmm-history-robertdickinson-v1.0.0. All seven match. Queued, not ingested. That makes thirteen Replit summaries waiting, after the eighteen ingested as S96 to S113.
+Replit projects: ForceMain_SWMM5_EPANET_Comparison, HindsightProphet, Swmmanywhere Explorer, Mirofish SWMM, BobSWMM Auto Research, RubySwmmRouter, SwmmHistory.
+Two of his links were for files already here. The Manual Search summary in Replit has the same SHA-256 as the raw file behind S101, and the St. Venant summary has the same SHA-256 as the copy queued earlier today. Neither changed.
+Counts: 113 of 370 raw files ingested, 253 queued. The README and the queue paragraph of the index carry the new counts; the overview keeps its count until the next ingest.
+Tools: `tools/manifest.py` now strips quotation marks from a `version:` value that is followed by a comment (`"0.0.0" # where it came from` was stored as `0.0.0"`).
