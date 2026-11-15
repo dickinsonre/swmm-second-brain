@@ -4,7 +4,7 @@ type: concept
 updated: 2026-11-14
 sources: [S62, S63]
 tags: [calibration, uncertainty, method, verification]
-reviewed: no
+reviewed: 2026-11-15
 ---
 What it takes to trust a model's number, as [William (Bill) James](../entities/william-james.md) set it out in Rules for Responsible Modeling (2005) and as Bob's [Rules for Responsible Modeling (app)](../entities/rules-for-responsible-modeling-app.md) puts it into practice [S63](../sources/S63-li-edition-53-measure-of-honest-numbers.md).
 
