@@ -4,7 +4,7 @@ type: concept
 updated: 2026-11-14
 sources: [S01, S04, S05, S20, S59, S60, S62, S65, S67]
 tags: [verification, method]
-reviewed: no
+reviewed: 2026-11-15
 ---
 A closed mass balance shows that water was not lost. It does not show that the answer is right. Five cases from the sources:
 
