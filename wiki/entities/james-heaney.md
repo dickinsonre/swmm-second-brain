@@ -4,7 +4,7 @@ type: entity
 updated: 2026-11-14
 sources: [S11, S12, S19, S61, S64]
 tags: [people, swmm-history, university-of-florida, cost-allocation]
-reviewed: no
+reviewed: 2026-11-15
 ---
 Of the University of Florida. Co-author of the SWMM 3 User's Manual and first author of the 1982 cost allocation paper with Bob [S19](../sources/S19-li-edition-29-engine-speed.md) [S64](../sources/S64-li-heaney-1982-paper-cost-allocation-app.md). Professional record only.
 
