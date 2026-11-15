@@ -2,9 +2,10 @@
 title: OpenSWMM 6 and HydroCouple
 type: entity
 updated: 2026-11-15
-sources: [S02, S03, S04, S05, S21, S22, S23, S29, S59, S69, S72, S75, S80, S81, S87]
+sources: [S02, S03, S04, S05, S21, S22, S23, S29, S59, S69, S72, S75, S80, S81, S87, S134]
 tags: [swmm6, engine, hydrocouple]
 reviewed: 2026-11-15
+changed_after_review: "2026-11-15 (S134 ingest): one paragraph added, headed Added 15 November 2026, on the reception of a LinkedIn post about OpenSWMM 6 (S134)"
 ---
 OpenSWMM 6 is the SWMM line developed at HydroCouple [S22](../sources/S22-li-ten-problems.md). Caleb Buahin is the lead developer of the HydroCouple platform [S21](../sources/S21-li-edition-56-swmm-history.md).
 
@@ -37,3 +38,5 @@ OpenSWMM 6 is the SWMM line developed at HydroCouple [S22](../sources/S22-li-ten
 **Its tests in Bob's corpus.** The 351 reproducer decks of the HydroCouple swmm-code-review and 335 input files from the engine repository were added to [1729-SWMM5-Models-2030 (the corpus)](corpus-1729.md) on 23 October 2026; 250 of the 335 need OpenSWMM 6 [S87](../sources/S87-corpus-1729-readme.md).
 
 **Not in the sources yet.** How the solvers are derived (the app summaries quote lines and results, not the manual), 2D beyond what the Rust translation covers, the GUI, the input format. Queued: "SWMM6 Code House" (2026-11-04, 4,427 words), "Forking without Drowning on GitHub for #SWMM6" (2026-08-14), the swmm5.org topic pages "Inside SWMM6" and "ICM InfoWorks and SWMM6".
+
+**Added 15 November 2026: a post about it.** A three-slide LinkedIn post of Bob's on OpenSWMM 6 and HydroCouple had 168 reactions, 9 reposts and 16,607 impressions when he looked on 15 November 2026; see [LinkedIn posts that were well received](../concepts/linkedin-post-reception.md) [S134](../sources/S134-note-linkedin-two-well-received-posts.md).

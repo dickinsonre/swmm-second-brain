@@ -224,3 +224,12 @@ No contradiction found. The app runs no engine and has no tests.
 Checked at ingest: every number and every code fragment in backticks on the source page was searched for in the raw file; no misses.
 While this ran, Bob wrote that he has some similar apps on Replit from last year and will combine them or get rid of them. That is not yet filed as a note; the agent asked him whether to file it, since it bears on Q77.
 Counts: 133 of 377 raw files ingested, 240 queued; 270 wiki pages; 74 open questions and 6 settled.
+
+## [2026-11-15] ingest | Note: two LinkedIn posts that drew a good response, S134
+
+Bob wrote that he had got pretty good responses on two posts, one about HydroCouple and one personal post, sent a screenshot of the counts under both, and asked that the repository keep something about his better received LinkedIn posts. The agent filed his sentence and the eight figures as a note on the template, `raw/notes/linkedin-two-well-received-posts-2026-11.md`, and ingested it. The screenshot is not in the repository because it shows a profile photograph.
+Source written: S134. Page created: LinkedIn posts that were well received (concept). Pages changed, each with a paragraph headed "Added 15 November 2026" and a `changed_after_review` line: OpenSWMM 6 and HydroCouple, Robert Dickinson. Q81 added: the links and dates of the two posts, which strip of the screenshot belongs to the personal post, and what a usual post of his gets.
+Page rule 9: Bob names the second post by a member of his family. The raw note keeps his sentence as typed, with no name. The wiki calls it his personal post and says no more.
+Arithmetic at ingest, ours: per 1,000 impressions the engine post had 10.1 reactions, 0.5 comments and 0.5 reposts; the personal post 19.5, 3.4 and 0.1. Impressions ratio 1.96.
+A departure from an earlier choice, at Bob's request: the anecdotes note (S90) left reaction counts out; this note keeps counts because he asked for them.
+Counts: 134 of 378 raw files ingested, 240 queued; 272 wiki pages; 75 open questions and 6 settled.

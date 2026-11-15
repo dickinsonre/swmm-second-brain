@@ -2,10 +2,10 @@
 title: Robert (Bob) Dickinson
 type: entity
 updated: 2026-11-15
-sources: [S07, S09, S11, S12, S18, S19, S21, S22, S23, S29, S41, S45, S55, S61, S63, S64, S84, S85, S90, S91, S93, S94]
+sources: [S07, S09, S11, S12, S18, S19, S21, S22, S23, S29, S41, S45, S55, S61, S63, S64, S84, S85, S90, S91, S93, S94, S134]
 tags: [people]
 reviewed: 2026-11-15
-changed_after_review: "2026-11-15, after Bob's re-review that morning: the paragraph headed Added 15 November 2026 extended with the Canberra dates (S91), the 1993 name change (S93) and two sentences from his post (S94); its wording on SWMM 3 corrected, with a pointer to Q65"
+changed_after_review: "2026-11-15, after Bob's re-review that morning: the paragraph headed Added 15 November 2026 extended with the Canberra dates (S91), the 1993 name change (S93) and two sentences from his post (S94); its wording on SWMM 3 corrected, with a pointer to Q65; 2026-11-15 (S134 ingest): one paragraph added, headed Added 15 November 2026, pointing to the page on his better received LinkedIn posts (S134)"
 ---
 Author of every source in this wiki. Professional record only, as he has published it.
 
@@ -54,3 +54,5 @@ Author of every source in this wiki. Professional record only, as he has publish
 **His record, counted.** The [SWMM & ICM Knowledge Library (app)](swmm-icm-knowledge-library.md) catalogs his published work: 66 newsletter editions, 163 LinkedIn articles, 278 app entries and 243 GitHub repositories at its v70 [S84](../sources/S84-swmm-icm-knowledge-library-app-md.md). The [Bob Usefulness Index (app)](bob-usefulness-index.md) quotes from it 68 publications from 1980 to 2025 and 4,398 LinkedIn comments since September 2016, and scores his usefulness to modelers at 66 of 100 on a rubric he directed; he has not yet reviewed the individual scores [S85](../sources/S85-bob-usefulness-index-app-md.md).
 
 **Added 15 November 2026: in his words and others'.** In comments on a LinkedIn post Bob credits John Haestad with a year in Australia to work on the XP-EXTRAN update, and says his career would have been very different without it; Hubert Jenny recalls meeting him in Canberra in the early 1990s [S90](../sources/S90-note-swmm-anecdotes-linkedin-comments.md). Bob dates that stay: Canberra, November 1991 to December 1992 [S91](../sources/S91-note-q64-answers-canberra-barrels-post-link.md), the first years this page has for the row "Between SWMM 4 and CDM" in the table above. Of the program's name he says "xp-swmm was the original and we changed it to xpswmm in 1993" [S93](../sources/S93-note-xp-swmm-renamed-xpswmm-1993.md). E. R. R. Weaver, who says he helped with SWMM 3 revisions while Bob was a graduate student, credits him with adding "double pipes" for a phosphate plant [S90](../sources/S90-note-swmm-anecdotes-linkedin-comments.md). Bob says double pipes are what SWMM 5 calls barrels, and guesses he added them to SWMM 4 [S91](../sources/S91-note-q64-answers-canberra-barrels-post-link.md); which version it was is Q65. His LinkedIn headline that day began "SWMM since the 1977" [S90](../sources/S90-note-swmm-anecdotes-linkedin-comments.md), one more start date for Q06. The post itself says he learned about SWMM at 17 and started working on it at 22, and that "SWMM 2.5 was 20,000 punch cards" [S94](../sources/S94-li-post-my-earlier-history-with-swmm.md). These are recollections; they are collected on [Anecdotes of SWMM](../concepts/swmm-anecdotes.md).
+
+**Added 15 November 2026: how his posts are received.** Bob asked that the wiki keep track of his better received LinkedIn posts; the first two are on [LinkedIn posts that were well received](../concepts/linkedin-post-reception.md) [S134](../sources/S134-note-linkedin-two-well-received-posts.md).

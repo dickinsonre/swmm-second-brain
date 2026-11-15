@@ -69,6 +69,7 @@ Measurement and method
 - [Calibration, validation and uncertainty](wiki/concepts/calibration-validation-uncertainty.md): William James's rules as Bob reports them, and the thresholds his app teaches (NSE 0.7, peak 15 %, volume 10 %).
 - [Replit apps and the summaries Replit Agent wrote](wiki/concepts/replit-app-summaries.md): the first eighteen Replit apps, what their agent-written summaries have in common and where they differ.
 - [Replit apps: the second seventeen summaries](wiki/concepts/replit-app-summaries-second-batch.md): seventeen more Replit apps: which run an engine, which pass their tests, and what the agent found doubtful.
+- [LinkedIn posts that were well received](wiki/concepts/linkedin-post-reception.md): the counts under two of Bob's posts on 15 November 2026, and what is missing before more can be said.
 
 Economics
 - [Cost allocation by cooperative game theory](wiki/concepts/cost-allocation-methods.md): SCRB, MCRS, Shapley value, nucleolus and equal split on a $7M project for three towns.
@@ -236,6 +237,7 @@ App summaries
 - [S131](wiki/sources/S131-swmm5-control-rule-editor-replit-summary.md) (2026-11-15): SWMM5 Control Rule Editor, summary written by Replit Agent, v0.1.0.
 - [S132](wiki/sources/S132-swmm5-epanet-inp-explorer-replit-summary.md) (2026-11-15): SWMM5 & EPANET INP Explorer, summary written by Replit Agent, v1.0.0.
 - [S133](wiki/sources/S133-swmm5-inp-file-interactive-viewer-replit-summary.md) (2026-11-15): SWMM5 .inp File Interactive Viewer, summary written by Replit Agent, v0.1.0.
+- [S134](wiki/sources/S134-note-linkedin-two-well-received-posts.md) (2026-11-15): note, two LinkedIn posts that drew a good response, with their counts.
 
 Manuals and reports (primary documents)
 - [S60](wiki/sources/S60-epa-swmm5-reference-manual-vol2-hydraulics.md) (2017-05): EPA SWMM Reference Manual, Volume II, Hydraulics, by L. A. Rossman. Read in part: section 1.1 and Chapters 2, 3, 4 and 6 (the raw file lacks pages 64 to 66 and 122).
