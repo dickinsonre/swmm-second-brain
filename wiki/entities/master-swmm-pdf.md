@@ -4,7 +4,7 @@ type: entity
 updated: 2026-11-15
 sources: [S19, S86]
 tags: [apps, literature, citations, swmm-history]
-reviewed: no
+reviewed: 2026-11-15
 ---
 Bob's cited library of SWMM and rainfall-runoff literature: a page where no PDF sits on the shelf without a complete citation. Made in one session on 25 October 2026 [S86](../sources/S86-master-swmm-pdf-page-text.md).
 

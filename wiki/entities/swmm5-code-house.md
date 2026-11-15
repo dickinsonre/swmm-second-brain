@@ -4,7 +4,7 @@ type: entity
 updated: 2026-11-15
 sources: [S68, S71, S72]
 tags: [apps, swmm5, source-code, wasm, verification]
-reviewed: no
+reviewed: 2026-11-15
 ---
 Bob's walkable 3D map of the [EPA SWMM 5](swmm-5.md) 5.2.4 source, with the engine running in the page. Version 1.15.1 [S68](../sources/S68-swmm5-code-house-app-md.md). Its sister app is the [SWMM6 Code House (app)](swmm6-code-house.md).
 

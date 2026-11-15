@@ -4,7 +4,7 @@ type: entity
 updated: 2026-11-15
 sources: [S78]
 tags: [apps, generators, swmm5, swmm6, test-models]
-reviewed: no
+reviewed: 2026-11-15
 ---
 Bob's app that grows a tree-shaped drainage network from a fractal rule, shows every step of the build, writes a runnable SWMM `.inp`, runs it in an embedded EPA SWMM 5.2.4 and audits its hydraulics pipe by pipe. Version 2.3, 12 November 2026. "It is a teaching and test-model generator. It is not a design tool" [S78](../sources/S78-fractal-swmm-generator-app-md.md).
 

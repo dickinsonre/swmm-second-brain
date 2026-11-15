@@ -4,7 +4,7 @@ type: entity
 updated: 2026-11-15
 sources: [S80]
 tags: [apps, hydraulics, open-channel, swmm5, swmm6, icm, findings]
-reviewed: no
+reviewed: 2026-11-15
 ---
 Bob's app on one question of open-channel hydraulics: which section of a channel sets the water surface, and which engines find it. Version 1.2, 18 October 2026 [S80](../sources/S80-control-section-lab-summary.md).
 

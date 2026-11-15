@@ -4,7 +4,7 @@ type: concept
 updated: 2026-11-15
 sources: [S79]
 tags: [swmm5, hot-start, dynamic-wave, findings, verification]
-reviewed: no
+reviewed: 2026-11-15
 ---
 A SWMM hot start file saves the state of a run so that a later run can begin from it. In EPA SWMM 5.2.4 a run restarted from its own hot start file does not reproduce the run that wrote it [S79](../sources/S79-teacher-forced-swmm-summary.md). The [Teacher-Forced SWMM (app)](../entities/teacher-forced-swmm.md) measured this while trying to use the hot start as a tool, and had to repair it first.
 

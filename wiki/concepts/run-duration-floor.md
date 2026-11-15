@@ -4,7 +4,7 @@ type: concept
 updated: 2026-11-15
 sources: [S76, S79]
 tags: [swmm5, findings, time, verification]
-reviewed: no
+reviewed: 2026-11-15
 ---
 EPA SWMM 5.2.4 computes the length of a run by flooring a floating-point product to whole seconds. For some start dates and end times the product falls just under a whole number, and the run comes out one second short. Two of Bob's apps met this independently, eighteen days apart [S79](../sources/S79-teacher-forced-swmm-summary.md), [S76](../sources/S76-inside-the-network-cfd-app-md.md).
 

@@ -4,7 +4,7 @@ type: entity
 updated: 2026-11-15
 sources: [S76]
 tags: [apps, cfd, hydraulics, swmm5, extran]
-reviewed: no
+reviewed: 2026-11-15
 ---
 Bob's app that runs two models of one sewer in the browser and shows where they differ: a free-surface CFD solver that moves particles of water through chambers and box conduits, and EPA SWMM 5.2.4. Version 1.1.0, 12 November 2026. "It is a demonstration, not a design tool" [S76](../sources/S76-inside-the-network-cfd-app-md.md).
 

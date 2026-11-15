@@ -4,7 +4,7 @@ type: concept
 updated: 2026-11-15
 sources: [S60, S74, S75]
 tags: [hydraulics, extran, swmm4, swmm5, swmm6, dynamic-wave]
-reviewed: no
+reviewed: 2026-11-15
 ---
 SWMM 4.4H's Extran block carries three solvers for the St. Venant equations, chosen by the input value ISOL: XROUTE (ISOL 0), YROUTE (ISOL 1) and ZROUTE (ISOL 2). SWMM 5.2.4 has one dynamic-wave solver and OpenSWMM 6 has two [S75](../sources/S75-st-venant-rosetta-stone-app-md.md). The [St. Venant Solver Rosetta Stone (app)](../entities/st-venant-solver-rosetta-stone.md) reads all six side by side and runs them. This page is the Fortran half; the SWMM6 half is on [OpenSWMM 6 solvers, measured](openswmm6-solvers-measured.md).
 

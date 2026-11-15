@@ -4,7 +4,7 @@ type: entity
 updated: 2026-11-15
 sources: [S01, S07, S21, S22, S60, S73]
 tags: [swmm-history, swmm1, engine]
-reviewed: no
+reviewed: 2026-11-15
 ---
 The first Storm Water Management Model, written from 1969 to 1971 by Metcalf & Eddy (Palo Alto), the University of Florida (Gainesville) and Water Resources Engineers (Walnut Creek) for the EPA Water Quality Office [S01](../sources/S01-swmm1-engine-app-md.md). Published as four volumes, EPA 11024 DOC 07/71 to 10/71: Final Report, Verification and Testing, User's Manual, Program Listing [S01](../sources/S01-swmm1-engine-app-md.md).
 

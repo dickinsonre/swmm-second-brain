@@ -4,7 +4,7 @@ type: entity
 updated: 2026-11-15
 sources: [S09, S22, S84, S85]
 tags: [apps, publishing, catalog, linkedin, openswmm]
-reviewed: no
+reviewed: 2026-11-15
 ---
 Bob's catalog of his own published work in one searchable HTML file: newsletter editions, LinkedIn articles, posts and reposts, apps, tools, GitHub repositories, gists, blog posts, papers, OpenSWMM.org threads and LinkedIn comments. It answers "has Robert written or built something on X, and where is it?" Artifact v70, 14 November 2026 [S84](../sources/S84-swmm-icm-knowledge-library-app-md.md).
 

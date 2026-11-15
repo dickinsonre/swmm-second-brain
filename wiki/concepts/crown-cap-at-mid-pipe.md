@@ -4,7 +4,7 @@ type: concept
 updated: 2026-11-15
 sources: [S75]
 tags: [hydraulics, extran, swmm4, swmm5, swmm6, surcharge, findings]
-reviewed: no
+reviewed: 2026-11-15
 ---
 In the EXTRAN line of solvers, the depth at each end of a conduit is capped at the pipe's full depth before the mid-length section is worked out. A conduit surcharged at one end only is therefore given a partly full section at mid-length, and that section's area and hydraulic radius are the ones the momentum equation uses [S75](../sources/S75-st-venant-rosetta-stone-app-md.md). The finding is Register item 20 of the [St. Venant Solver Rosetta Stone (app)](../entities/st-venant-solver-rosetta-stone.md), marked measured.
 

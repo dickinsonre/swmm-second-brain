@@ -4,7 +4,7 @@ type: concept
 updated: 2026-11-15
 sources: [S75, S80, S81]
 tags: [swmm6, hydraulics, dynamic-wave, finite-volume, engine-comparison]
-reviewed: no
+reviewed: 2026-11-15
 ---
 OpenSWMM 6 has two hydraulic solvers: a dynamic wave solver that extends SWMM 5's, and an explicit finite-volume solver (FV) [S75](../sources/S75-st-venant-rosetta-stone-app-md.md). Three of Bob's apps have run them beside EPA SWMM 5.2.4. This page collects what they measured. Every run is on an alpha build, and none is compared with a measurement. For the program see [OpenSWMM 6 and HydroCouple](../entities/openswmm-6-and-hydrocouple.md).
 

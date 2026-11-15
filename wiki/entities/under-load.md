@@ -4,7 +4,7 @@ type: entity
 updated: 2026-11-15
 sources: [S77]
 tags: [apps, swmm5, dynamic-wave, sensitivity, ai-agents, verification]
-reviewed: no
+reviewed: 2026-11-15
 ---
 Bob's app that wraps EPA SWMM 5.2.4, running in the browser, in eight instruments, one per topic of an office-hours conversation. Version 1.4.0, 11 November 2026 [S77](../sources/S77-under-load-app-md.md).
 

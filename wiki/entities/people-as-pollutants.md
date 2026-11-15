@@ -4,7 +4,7 @@ type: entity
 updated: 2026-11-15
 sources: [S76, S83]
 tags: [apps, swmm5, water-quality, pumps, storage, findings]
-reviewed: no
+reviewed: 2026-11-15
 ---
 Bob's app that writes a three-level transit station as an EPA SWMM 5.2.4 input file and runs it with the unmodified engine, reading the water as a crowd. Version 1.0.0, 29 October 2026. The question is Bob's: could SWMM 5 show that station if the water quality were people? [S83](../sources/S83-people-as-pollutants-summary.md)
 

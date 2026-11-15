@@ -4,7 +4,7 @@ type: entity
 updated: 2026-11-15
 sources: [S05, S74, S81]
 tags: [apps, swmm-history, extran, verification, hydraulics]
-reviewed: no
+reviewed: 2026-11-15
 ---
 Bob's browser app that runs EXTRAN III, the 1981 Extended Transport block of SWMM 3, from the FORTRAN listing printed in its user's manual, beside EPA SWMM 5.2.4. Version 1.6.0, 11 November 2026 [S74](../sources/S74-extran3-workbench-app-md.md). The program itself is on [EXTRAN](extran.md).
 

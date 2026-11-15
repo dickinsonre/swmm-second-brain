@@ -4,7 +4,7 @@ type: concept
 updated: 2026-11-15
 sources: [S73, S74, S81]
 tags: [swmm-history, conversion, swmm1, swmm4, extran, swmm5]
-reviewed: no
+reviewed: 2026-11-15
 ---
 Three of Bob's apps take a modern SWMM 5 `.inp` and run it on an engine from 1971, 1981 or 2004. Each needs a converter, and each converter loses something. This page collects what the converters do and what they report as lost.
 

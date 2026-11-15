@@ -4,7 +4,7 @@ type: entity
 updated: 2026-11-15
 sources: [S41, S70, S71, S82]
 tags: [apps, swmm5, swmm6, translation, verification]
-reviewed: no
+reviewed: 2026-11-15
 ---
 Bob's results viewer for the engine translations: every stored verdict of the [Byte-for-byte gate](../concepts/byte-for-byte-gate.md) in one page. It lives in the swmm5-go repository as `app/swmm-engines.html`, with its essay as the Doc tab [S41](../sources/S41-swmm5-go-readme.md). It runs no engine and contains no engine code [S71](../sources/S71-swmm-engines-byte-for-byte-summary.md).
 

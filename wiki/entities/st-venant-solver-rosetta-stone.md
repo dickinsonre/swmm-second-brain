@@ -4,7 +4,7 @@ type: entity
 updated: 2026-11-15
 sources: [S20, S75]
 tags: [apps, hydraulics, extran, swmm4, swmm5, swmm6, dynamic-wave, findings]
-reviewed: no
+reviewed: 2026-11-15
 ---
 Bob's app that sets six dynamic-wave solvers side by side, by source line and by engine run: XROUTE, YROUTE and ZROUTE from SWMM 4.4H, the one solver of EPA SWMM 5.2.4, and the dynamic wave and finite volume solvers of OpenSWMM 6. Version 2.4.0, 13 November 2026 [S75](../sources/S75-st-venant-rosetta-stone-app-md.md). It is not the [SWMM and ICM St. Venant comparison (app)](swmm-icm-st-venant-app.md) of [S20](../sources/S20-li-edition-54-two-solvers.md), which compares SWMM 5 with ICM and runs no engine.
 

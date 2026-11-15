@@ -4,7 +4,7 @@ type: entity
 updated: 2026-11-15
 sources: [S71, S82]
 tags: [apps, mirab, swmm5plus, swmm5, engine-comparison, findings]
-reviewed: no
+reviewed: 2026-11-15
 ---
 Bob's test bench for Mirab, Ehsan Madadi's free desktop application that runs EPA SWMM 5.2 and SWMM5+ in one project. Version 1.0, 24 October 2026 [S82](../sources/S82-mirab-test-bench-summary.md).
 

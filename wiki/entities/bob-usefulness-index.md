@@ -4,7 +4,7 @@ type: entity
 updated: 2026-11-15
 sources: [S09, S84, S85]
 tags: [apps, publishing, measurement]
-reviewed: no
+reviewed: 2026-11-15
 ---
 Bob's 100-point scorecard for one question: did someone become better able to model, decide, learn or help because of what he shared? Version 2.2, 11 November 2026 [S85](../sources/S85-bob-usefulness-index-app-md.md).
 

@@ -4,7 +4,7 @@ type: entity
 updated: 2026-11-15
 sources: [S74, S81]
 tags: [apps, bellinge, swmm5, swmm6, swmm4, extran, engine-comparison]
-reviewed: no
+reviewed: 2026-11-15
 ---
 Bob's app that runs one open Danish sewer model, with its rain record and a set of scenarios, through seven SWMM engines in the browser. Version 2.0, 18 October 2026 [S81](../sources/S81-bellinge-summary.md).
 

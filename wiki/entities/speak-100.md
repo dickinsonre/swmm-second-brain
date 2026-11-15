@@ -4,7 +4,7 @@ type: entity
 updated: 2026-11-15
 sources: [S88]
 tags: [apps, languages, not-swmm]
-reviewed: no
+reviewed: 2026-11-15
 ---
 Bob's English-to-eight-languages speaking trainer in one HTML file. Version 2026.11.13b, 13 November 2026. It is not a SWMM app; it is in this wiki because it is one of his apps and ships a summary on the same form as the others [S88](../sources/S88-speak-100-app-md.md).
 
