@@ -4,7 +4,7 @@ type: entity
 updated: 2026-11-14
 sources: [S07, S09, S11, S12, S18, S19, S21, S22, S23, S29, S41, S45, S55, S61, S63, S64]
 tags: [people]
-reviewed: no
+reviewed: 2026-11-15
 ---
 Author of every source in this wiki. Professional record only, as he has published it.
 
