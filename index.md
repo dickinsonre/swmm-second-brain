@@ -49,7 +49,7 @@ History
 - [SWMM version history, 1969 to 2026](wiki/concepts/swmm-version-history.md): dated timeline, 1969 to 2026, with the disagreements marked.
 - [Block architecture and interface files](wiki/concepts/block-architecture.md): the 1971 blocks, the interface tape, and what SWMM 5 unified.
 - [Engine speed, 1988 to 2024](wiki/concepts/engine-speed-1988-2024.md): the 54,060-fold claim and a check of its arithmetic.
-- [Anecdotes of SWMM](wiki/concepts/swmm-anecdotes.md): recollections in people's own words: the year in Australia for XP-EXTRAN, double pipes for a phosphate plant, reel tapes and card decks.
+- [Anecdotes of SWMM](wiki/concepts/swmm-anecdotes.md): recollections in people's own words: Canberra in 1991 and 1992 for XP-EXTRAN, double pipes (barrels) for a phosphate plant, reel tapes and card decks.
 - [Converting SWMM 5 models for older engines](wiki/concepts/converting-swmm5-models-for-older-engines.md): what three converters to 1971, 1981 and 2004 engines carry, approximate and drop.
 
 Measurement and method
@@ -173,6 +173,7 @@ Notes and data
 - [S87](wiki/sources/S87-corpus-1729-readme.md) (2026-10-23): 1729-SWMM5-Models-2030, repository README and inventory.
 - [S89](wiki/sources/S89-note-corpus-name.md) (2026-11-15): note, what 1729 and 2030 stand for in the corpus name.
 - [S90](wiki/sources/S90-note-swmm-anecdotes-linkedin-comments.md) (2026-11-15): note, SWMM anecdotes from the comments on one of Bob's LinkedIn posts.
+- [S91](wiki/sources/S91-note-q64-answers-canberra-barrels-post-link.md) (2026-11-15): note, Bob's answers to Q64: the post's link, Canberra from November 1991 to December 1992, double pipes are barrels.
 
 The old swmm-brain repository
 - [S55](wiki/sources/S55-swmm-brain-readme.md) (2026-08-22): README: enhancements, apps, scripts, timeline.

@@ -29,6 +29,6 @@ reviewed: no
 - Caleb Buahin thanks Bob for his "support and contributions" on SWMM6.
 - Bob's LinkedIn headline on the day begins "SWMM since the 1977" and ends "99+ free SWMM apps".
 
-**Checked at ingest.** Nothing here can be rerun. One date was compared: the headline's 1977 joins the start dates already listed under Q06. No other page gave a year for the Australian stay, so there was nothing to compare it with.
+**Checked at ingest.** Nothing here can be rerun. One date was compared: the headline's 1977 joins the start dates already listed under Q06. No other page gave a year for the Australian stay, so there was nothing to compare it with. Later on 15 November 2026 Bob answered three of the gaps (the post's link and date, the dates in Canberra, what the double pipes were); his answers are [S91](S91-note-q64-answers-canberra-barrels-post-link.md).
 
 **Feeds:** [Anecdotes of SWMM](../concepts/swmm-anecdotes.md), [Robert (Bob) Dickinson](../entities/robert-dickinson.md), [Open questions](../open-questions.md).
