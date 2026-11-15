@@ -4,7 +4,7 @@ type: concept
 updated: 2026-11-14
 sources: [S05]
 tags: [apps, measurement, method]
-reviewed: no
+reviewed: 2026-11-15
 ---
 Six text patterns, each tested once per app-building conversation in the [Claude chat archive (app)](../entities/claude-chat-archive.md), that show whether checking happened in the transcript [S05](../sources/S05-swmm5org-article-facts.md).
 
