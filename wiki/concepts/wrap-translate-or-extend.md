@@ -4,7 +4,7 @@ type: concept
 updated: 2026-11-14
 sources: [S70, S72]
 tags: [swmm5, swmm6, translation, method]
-reviewed: no
+reviewed: 2026-11-15
 ---
 Three roads for getting SWMM into another language or making it compute something new, as Bob's [SWMM Engine What If (app)](../entities/swmm-engine-what-if.md) sets them out [S70](../sources/S70-swmm-engine-what-if-app-md.md).
 
