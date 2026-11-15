@@ -305,3 +305,8 @@ Counts: 144 of 388 raw files ingested, 240 queued; 290 wiki pages; 76 open quest
 ## [2026-11-15] setup | Main fast-forwarded to S144
 
 Main now holds S144. `replit-summaries-6` is merged and can go.
+
+## [2026-11-15] raw | Four more Replit summaries brought over
+
+Bob sent links for the projects ICMFlowVisualizer, InfoSewerToICMSteps, SWMManywhere-App and Open-SWMM-Core. Each was read out of the Replit editor and checked against a SHA-256 computed there: icm-flow-visualizer-robertdickinson-v1.0.0 (app name in the file: ICM Ruby to Nano Banana Prompt), data-sewer-robertdickinson-v1.0.0 (InfoSewer to InfoWorks ICM), swm-explorer-v1.0.0 (SWMManywhere Explorer) and open-swmm-core-v6.0.0-alpha.1 (OpenSWMM Engine). All four match. None had an earlier copy in `raw/apps/`. The SWMManywhere-App file carries the same app name as `swmmanywhere-explorer-v1.0.0.md` (S122) but a different `file:` line, `swm-explorer`, and runs SWMManywhere 0.1.17 and a SWMM5 WebAssembly engine where S122 gives `engines: none`; the manifest treats them as two apps. Queued, not ingested, on the branch `replit-summaries-7`.
+Counts: 144 of 392 raw files ingested, 244 queued.
