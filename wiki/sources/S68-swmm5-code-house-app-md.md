@@ -7,7 +7,7 @@ author: Robert Dickinson
 published: 2026-11-11
 ingested: 2026-11-14
 tags: [apps, swmm5, source-code, wasm, verification]
-reviewed: no
+reviewed: 2026-11-15
 ---
 **What it is.** The technical summary carried inside the SWMM5 Code House page, version 1.15.1: a walkable 3D map of the EPA SWMM 5.2.4 source with the engine running in the page. Raw file: [raw/apps/swmm5-code-house-v1.15.1.md](../../raw/apps/swmm5-code-house-v1.15.1.md).
 

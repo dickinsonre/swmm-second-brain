@@ -7,7 +7,7 @@ author: Robert Dickinson
 published: 2026-02-25
 ingested: 2026-11-14
 tags: [apps, rainfall, design-storms, lovable]
-reviewed: no
+reviewed: 2026-11-15
 ---
 **What it is.** Bob's article announcing the World Rainfall Pattern Painter as it stood in February 2026. Raw file: [raw/linkedin/2026-02-25-design-storm-app-6-continents-66-patterns-robert-dickinson-ushhe.md](../../raw/linkedin/2026-02-25-design-storm-app-6-continents-66-patterns-robert-dickinson-ushhe.md).
 

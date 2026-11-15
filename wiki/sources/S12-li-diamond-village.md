@@ -7,7 +7,7 @@ author: Robert Dickinson
 published: 2024-12-22
 ingested: 2026-11-14
 tags: [swmm-history, university-of-florida]
-reviewed: no
+reviewed: 2026-11-15
 ---
 **What it is.** A history of Diamond Village, the graduate and family housing at the University of Florida where Bob lived while SWMM 2.5, 3 and 4 were written. Raw file: [raw/linkedin/2024-12-22-diamond-village-university-florida-swmm-25-3-4-xpswmm-dickinson-a4rje.md](../../raw/linkedin/2024-12-22-diamond-village-university-florida-swmm-25-3-4-xpswmm-dickinson-a4rje.md).
 

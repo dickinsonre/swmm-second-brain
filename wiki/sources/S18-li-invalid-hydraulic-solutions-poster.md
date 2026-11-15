@@ -7,7 +7,7 @@ author: Robert Dickinson
 published: 2024-12-22
 ingested: 2026-11-14
 tags: [hydraulics, swmm4, swmm5, history]
-reviewed: no
+reviewed: 2026-11-15
 ---
 **What it is.** Bob's 2024 article about a poster he made with Khalid K. Khan and James T. Smullen of CDM for the 2007 Urban Runoff Modeling Conference at Humboldt State University, comparing the St. Venant terms in SWMM 4 and SWMM 5. Raw file: [raw/linkedin/2024-12-22-detecting-preventing-invalid-hydraulic-solutions-swmm-dickinson-g5oee.md](../../raw/linkedin/2024-12-22-detecting-preventing-invalid-hydraulic-solutions-swmm-dickinson-g5oee.md).
 

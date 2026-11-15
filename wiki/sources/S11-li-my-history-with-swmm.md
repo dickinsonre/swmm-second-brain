@@ -7,7 +7,7 @@ author: Robert Dickinson
 published: 2016-11-18
 ingested: 2026-11-14
 tags: [swmm-history, people, career]
-reviewed: no
+reviewed: 2026-11-15
 ---
 **What it is.** Bob's own account of his years with SWMM 2.5, 3, 4, 5, XP-SWMM, Visual SWMM and InfoSWMM, first published in 2016 and amended in 2017, 2018 and 2023. Raw file: [raw/linkedin/2016-11-18-my-history-various-versions-swmm-swmm3-swmm4-swmm5-robert-dickinson.md](../../raw/linkedin/2016-11-18-my-history-various-versions-swmm-swmm3-swmm4-swmm5-robert-dickinson.md).
 

@@ -7,7 +7,7 @@ author: Robert Dickinson
 published: 2026-10-09
 ingested: 2026-11-14
 tags: [findings, swmm5, swmm6, verification]
-reviewed: no
+reviewed: 2026-11-15
 ---
 **What it is.** Fourteen register entries extracted from Bob's conversation archive for June to August 2026. Raw file: [raw/notes/findings-register-seed.md](../../raw/notes/findings-register-seed.md). Dated by the file, 9 October 2026.
 

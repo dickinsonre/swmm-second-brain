@@ -7,7 +7,7 @@ author: Robert Dickinson
 published: 2026-02-23
 ingested: 2026-11-14
 tags: [apps, calibration, uncertainty, people, swmm-history]
-reviewed: no
+reviewed: 2026-11-15
 ---
 **What it is.** Bob's newsletter edition announcing the app version of William James's book Rules for Responsible Modeling, with his recollections of James from 1978 and 1983. Raw file: [raw/linkedin/2026-02-23-measure-honest-numbers-app-version-rules-responsible-james-dickinson-fdjxc.md](../../raw/linkedin/2026-02-23-measure-honest-numbers-app-version-rules-responsible-james-dickinson-fdjxc.md).
 
