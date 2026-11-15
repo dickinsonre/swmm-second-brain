@@ -127,3 +127,8 @@ While the ingest ran, Bob uploaded the same 18 summaries to `raw/apps/` on main,
 ## [2026-11-15] setup | Bob removed the zip from `raw/apps/`
 
 Bob deleted `raw/apps/replit-app-summaries.zip` on main (his commit 1a1ac92). It was a bundle of the 18 summaries already ingested, not a source. Main was merged into `replit-summaries` again. Counts are back to 113 of 357 raw files ingested and 240 queued.
+
+## [2026-11-15] raw | Six more Replit summaries brought over
+
+Bob sent links to three more summaries, and the agent found others in the projects he had worked in that morning. Read out of the Replit editor and checked against a SHA-256 computed there, as before: micro-gpt-swmm-v2, epanet-swmm-experts-v1.0, swmm-explorer--robertdickinson-v1.0.0, batch-swmm-runner-robertdickinson-v1.1.0, swmm-icm-st-venant--robertdickinson-v1.0.0, code-rosetta-stone-v1.0.0. All six match. Queued, not ingested. The first three settle the note of this morning that EPANET SWMM Experts and SWMM Explorer had no summary.
+Replit projects: MicroGPT SWMM, EPANET SWMM Experts, SWMM Explorer, BatchSWMMRunner, SWMM ICM StVenant, Code Rosetta Stone.
