@@ -119,3 +119,7 @@ Checked at ingest: every number on the new pages was searched for in the raw fil
 Tools: `tools/lint.py` now prints source numbers of any length (it cut S100 to "S10").
 Correction: the log entry for the Sewer Code Search summary was first dated 16 November by mistake; it is 15 November.
 Not ingested, still queued in `raw/apps/`: st-venant-solver-rosetta-stone-v2.6.2 and PyBME-issue-drafts (Q56).
+
+## [2026-11-15] setup | Main merged into `replit-summaries`; a zip is now in `raw/apps/`
+
+While the ingest ran, Bob uploaded the same 18 summaries to `raw/apps/` on main, together with `replit-app-summaries.zip`, the bundle the agent had sent him. The 18 files are byte-identical to the ones already on the branch, so the merge changed nothing in them. The zip is a copy of those files, not a source. The agent does not delete raw files; it stays queued until Bob removes it on GitHub or says to leave it. Counts are now 113 of 358 raw files ingested and 241 queued.
