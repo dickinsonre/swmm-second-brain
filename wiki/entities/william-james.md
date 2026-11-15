@@ -4,7 +4,7 @@ type: entity
 updated: 2026-11-14
 sources: [S09, S62, S63]
 tags: [people, swmm-history, calibration, uncertainty]
-reviewed: no
+reviewed: 2026-11-15
 ---
 Engineer in computational hydraulics, author of Rules for Responsible Modeling, and the person Bob names with PCSWMM [S63](../sources/S63-li-edition-53-measure-of-honest-numbers.md). Professional record only.
 

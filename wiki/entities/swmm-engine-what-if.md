@@ -4,7 +4,7 @@ type: entity
 updated: 2026-11-14
 sources: [S70]
 tags: [apps, swmm5, swmm6, translation, benchmarks, verification]
-reviewed: no
+reviewed: 2026-11-15
 ---
 Bob's decision aid for anyone putting SWMM into another language or changing what it computes: what you gain, what you pay, and what evidence exists. Version 1.4, 12 November 2026 [S70](../sources/S70-swmm-engine-what-if-app-md.md). The argument is on [Wrap, translate or extend](../concepts/wrap-translate-or-extend.md).
 

@@ -4,7 +4,7 @@ type: entity
 updated: 2026-11-15
 sources: [S23, S29, S30, S35, S41, S42, S43, S45, S52, S54, S74, S87, S89, S75, S79]
 tags: [corpus, verification, swmm5, swmm6]
-reviewed: no
+reviewed: 2026-11-15
 ---
 Bob's public repository of SWMM5 models, https://github.com/SWMMBobSWMM6/1729-SWMM5-Models-2030 [S23](../sources/S23-swmm6-csharp-readme.md).
 

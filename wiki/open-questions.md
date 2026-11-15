@@ -4,7 +4,7 @@ type: synthesis
 updated: 2026-11-15
 sources: [S01, S04, S05, S07, S08, S10, S11, S12, S14, S19, S20, S21, S22, S23, S27, S28, S29, S34, S35, S38, S41, S43, S44, S45, S46, S47, S48, S49, S50, S51, S52, S53, S54, S55, S59, S60, S61, S62, S63, S64, S65, S66, S67, S68, S69, S70, S71, S72, S73, S74, S75, S76, S77, S78, S79, S80, S81, S82, S83, S84, S85, S86, S87, S88, S89]
 tags: [lint, contradictions]
-reviewed: no
+reviewed: 2026-11-15
 ---
 Contradictions, doubtful numbers and gaps found while ingesting and linting. An item is ticked only when a source or Bob settles it, with a note saying which. Newest at the bottom of each section.
 

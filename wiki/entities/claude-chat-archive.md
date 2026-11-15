@@ -4,7 +4,7 @@ type: entity
 updated: 2026-11-14
 sources: [S03, S05]
 tags: [apps, archive, measurement]
-reviewed: no
+reviewed: 2026-11-15
 ---
 A single HTML page that holds and searches Bob's conversation history with Claude, with DeepSeek and Claude Code transcripts merged in [S05](../sources/S05-swmm5org-article-facts.md). The fact sheet of 16 October 2026 calls it `claude-chat-archive.html`.
 

@@ -4,7 +4,7 @@ type: entity
 updated: 2026-11-14
 sources: [S65, S66]
 tags: [apps, rainfall, design-storms, lovable, verification]
-reviewed: no
+reviewed: 2026-11-15
 ---
 Bob's design-storm generator, built with Lovable and served at https://rain-canvas-studio.lovable.app, with a public API [S65](../sources/S65-world-rainfall-pattern-painter-app-md.md). Version 3.2.0 of 2 November 2026; summary rewritten 14 November 2026; MIT license [S65](../sources/S65-world-rainfall-pattern-painter-app-md.md). Its site name and `file:` identifier are `rain-canvas-studio` [S65](../sources/S65-world-rainfall-pattern-painter-app-md.md). The method is on [Design storms and temporal patterns](../concepts/design-storm-patterns.md).
 

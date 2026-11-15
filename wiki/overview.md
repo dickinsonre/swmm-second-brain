@@ -4,7 +4,7 @@ type: synthesis
 updated: 2026-11-15
 sources: [S01, S04, S05, S06, S10, S19, S20, S22, S23, S24, S29, S35, S41, S43, S54, S55, S56, S57, S58, S59, S60, S61, S62, S63, S64, S65, S66, S67, S68, S69, S70, S71, S72, S74, S75, S76, S79, S80, S81, S82, S84, S85, S86]
 tags: [overview]
-reviewed: no
+reviewed: 2026-11-15
 ---
 The state of the wiki after sixteen more app files were ingested on 15 November 2026, arranged by the six topics of [swmm5.org](entities/swmm5-org.md) [S06](sources/S06-swmm5org-topics-index.md). Eighty-nine of 331 raw files are ingested, one of them (the EPA hydraulics manual) in part. The wiki is deepest on SWMM's history, the insides of SWMM 5 and the translations of SWMM 5 and SWMM6; thin on ICM; and on SWMM6 it now holds measurements of the two solvers as well as the translations, though not their derivation.
 

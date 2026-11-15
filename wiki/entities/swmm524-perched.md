@@ -4,7 +4,7 @@ type: entity
 updated: 2026-11-14
 sources: [S08, S55, S59, S70]
 tags: [swmm5, engine, lid, infiltration]
-reviewed: no
+reviewed: 2026-11-15
 ---
 One of Bob's variants of [EPA SWMM 5](swmm-5.md) [S08](../sources/S08-swmm5org-topic-inside-swmm5.md). Repository SWMMBobSWMM6/swmm524-perched, branch van-genuchten, commit 548e5fbf; the source says no license is stated in the repo and that the EPA base is public domain [S59](../sources/S59-topsoil-recovery-check-app-md.md).
 

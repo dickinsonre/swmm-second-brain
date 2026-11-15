@@ -7,7 +7,7 @@ author: Robert Dickinson
 published: 2026-11-11
 ingested: 2026-11-14
 tags: [apps, measurement, hydrocouple]
-reviewed: no
+reviewed: 2026-11-15
 ---
 **What it is.** The technical summary of the SWMM App Complexity Meter, version 1.9.1, analyzer 1.7.0, baseline HC-2026-11-10-h. Raw file: [raw/apps/swmm-app-complexity-meter.md](../../raw/apps/swmm-app-complexity-meter.md).
 

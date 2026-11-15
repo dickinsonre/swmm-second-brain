@@ -4,7 +4,7 @@ type: entity
 updated: 2026-11-14
 sources: [S69, S72]
 tags: [apps, swmm6, source-code, openswmm, verification]
-reviewed: no
+reviewed: 2026-11-15
 ---
 Bob's walkable 3D map of the OpenSWMM 6 engine source (see [OpenSWMM 6 and HydroCouple](openswmm-6-and-hydrocouple.md)). Version 1.2.1 [S69](../sources/S69-swmm6-code-house-app-md.md). Its sister app is the [SWMM5 Code House (app)](swmm5-code-house.md).
 

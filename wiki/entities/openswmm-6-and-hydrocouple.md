@@ -4,7 +4,7 @@ type: entity
 updated: 2026-11-15
 sources: [S02, S03, S04, S05, S21, S22, S23, S29, S59, S69, S72, S75, S80, S81, S87]
 tags: [swmm6, engine, hydrocouple]
-reviewed: no
+reviewed: 2026-11-15
 ---
 OpenSWMM 6 is the SWMM line developed at HydroCouple [S22](../sources/S22-li-ten-problems.md). Caleb Buahin is the lead developer of the HydroCouple platform [S21](../sources/S21-li-edition-56-swmm-history.md).
 
