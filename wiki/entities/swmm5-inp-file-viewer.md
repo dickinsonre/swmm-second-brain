@@ -2,7 +2,7 @@
 title: SWMM5 .inp File Viewer (app)
 type: entity
 updated: 2026-11-15
-sources: [S105]
+sources: [S105, S132]
 tags: [apps, replit, swmm5, inp-format]
 reviewed: no
 ---
@@ -22,5 +22,7 @@ Bob's Replit app SWMM5 .inp File Viewer (ala InfoSWMM): a Streamlit app that rea
 **What it does not show.** No user-uploaded file was tested. Browser rendering was not confirmed. [S105](../sources/S105-swmm5-inp-file-viewer-replit-summary.md)
 
 **Noted at ingest.** The full display name ends "(ala InfoSWMM)".
+
+**Added 15 November 2026: a second app with a like name.** [SWMM5 & EPANET INP Explorer (app)](swmm5-epanet-inp-explorer.md) is a different app, a reference to the input-file formats at another address; it reads pasted text and no uploaded file [S132](../sources/S132-swmm5-epanet-inp-explorer-replit-summary.md).
 
 See [Replit apps and the summaries Replit Agent wrote](../concepts/replit-app-summaries.md), [InfoSWMM and InfoSewer](infoswmm-and-infosewer.md), [EPA SWMM 5](swmm-5.md).

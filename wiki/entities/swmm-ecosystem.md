@@ -2,7 +2,7 @@
 title: SWMM Ecosystem (app)
 type: entity
 updated: 2026-11-15
-sources: [S126]
+sources: [S126, S132]
 tags: [apps, replit, swmm-history, reference]
 reviewed: no
 ---
@@ -27,5 +27,7 @@ Bob's Replit app SWMM Ecosystem: a reference app on the history of SWMM and the 
 **What it does not show.** Historical claims, contributor grades, commit totals and linked publications were not checked against outside sources. Live chat, the production build and the published pages were not checked. [S126](../sources/S126-swmm-ecosystem-replit-summary.md)
 
 **Noted at ingest.** The `date:` is the first appearance of package version 1.0.0 in Git, commit `88aef49`, 29 August 2025 (Q75). None of the app's history or grades is copied into this wiki.
+
+**Added 15 November 2026: embedded in another app.** The Docs page of [SWMM5 & EPANET INP Explorer (app)](swmm5-epanet-inp-explorer.md) embeds this app's site [S132](../sources/S132-swmm5-epanet-inp-explorer-replit-summary.md).
 
 See [Replit apps: the second seventeen summaries](../concepts/replit-app-summaries-second-batch.md), [SWMM version history, 1969 to 2026](../concepts/swmm-version-history.md), [Mirab Test Bench (app)](mirab-test-bench.md), [Historical Water Inventions (app)](historical-water-inventions.md).

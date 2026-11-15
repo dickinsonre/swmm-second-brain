@@ -2,7 +2,7 @@
 title: "Replit apps: the second seventeen summaries"
 type: concept
 updated: 2026-11-15
-sources: [S114, S115, S116, S117, S118, S119, S120, S121, S122, S123, S124, S125, S126, S127, S128, S129, S130, S131]
+sources: [S114, S115, S116, S117, S118, S119, S120, S121, S122, S123, S124, S125, S126, S127, S128, S129, S130, S131, S132]
 tags: [apps, replit, verification, ai-agents]
 reviewed: no
 ---
@@ -30,8 +30,9 @@ Seventeen more of Bob's Replit apps got a technical summary from Replit Agent on
 | [Historical Water Inventions (app)](../entities/historical-water-inventions.md) | `historical-mystery-robertdickinson` | 1.0.0 | HistoricalWaterInventions | [S129](../sources/S129-historical-water-inventions-replit-summary.md) |
 | [PySWMM Explorer (app)](../entities/pyswmm-explorer.md) | `pyswmm-explorer` | 1.0.0 | Pyswmm Explorer | [S130](../sources/S130-pyswmm-explorer-replit-summary.md) |
 | [SWMM5 Control Rule Editor (app)](../entities/swmm5-control-rule-editor.md) | `hydro-control` | 0.1.0 | SWMM5ControlRules | [S131](../sources/S131-swmm5-control-rule-editor-replit-summary.md) |
+| [SWMM5 & EPANET INP Explorer (app)](../entities/swmm5-epanet-inp-explorer.md) | `swmm5epanetinpviewer.com` | 1.0.0 | SwmmInpViewer | [S132](../sources/S132-swmm5-epanet-inp-explorer-replit-summary.md) |
 
-Site names are `.replit.app` names except the one given in full. Project names are as the agent saw them in Replit. The last row came after the seventeen and is not in the counts below.
+Site names are `.replit.app` names except the two given in full. The last two rows came after the seventeen and are not in the counts below.
 
 **In common.** None records a human review [S114](../sources/S114-swmm5-microgpt-replit-summary.md) [S130](../sources/S130-pyswmm-explorer-replit-summary.md). Checks were made on the development copy; where one looked at the published site, its API answered 404 [S119](../sources/S119-code-rosetta-stone-replit-summary.md).
 

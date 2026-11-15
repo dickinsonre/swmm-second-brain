@@ -198,3 +198,11 @@ Counts: 131 of 375 raw files ingested, 240 queued; 266 wiki pages; 74 open quest
 Bob sent a link for the project SwmmInpViewer. Read out of the Replit editor and checked against a SHA-256 computed there: swmm-inp-viewer--robertdickinson-v1.0.0 (app name in the file: SWMM5 & EPANET INP Explorer). It matches. Queued, not ingested. This is not the app behind S105, whose file is swmm-5-inp-reader-robertdickinson-v0.1.0.
 He also sent the link for the SWMManywhere Explorer summary; the file in Replit has the same SHA-256 as the raw file behind S122.
 Counts: 131 of 376 raw files ingested, 241 queued.
+
+## [2026-11-15] ingest | SWMM5 & EPANET INP Explorer, S132
+
+Bob said "ingest". The file was read in full. Source written: S132 SWMM5 & EPANET INP Explorer, from the Replit project SwmmInpViewer. Page created: SWMM5 & EPANET INP Explorer (app).
+Pages changed, none of them yet reviewed, so edited in place: the second Replit concept page got a nineteenth row; SWMM5 .inp File Viewer (app) got a paragraph naming this second app with a like name; SWMM Ecosystem (app) got a paragraph saying this app embeds its site. One sentence was added to Q74 and one to Q77. The overview, README and index carry the new counts.
+No contradiction found. The app runs no engine and has no tests; its TypeScript check fails with 22 diagnostics, as reported by Replit Agent and not rerun.
+Checked at ingest: every number and every code fragment in backticks on the source page was searched for in the raw file; no misses.
+Counts: 132 of 376 raw files ingested, 240 queued; 268 wiki pages; 74 open questions and 6 settled.
