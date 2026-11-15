@@ -4,7 +4,7 @@ type: concept
 updated: 2026-11-14
 sources: [S38, S39, S40, S43, S44, S45, S46, S47, S48, S49, S50, S51, S53, S54, S70]
 tags: [translation, numerics]
-reviewed: no
+reviewed: 2026-11-15
 ---
 The traps the SWMM5 translations met: places where a language computes something other than what EPA's C computes on x86-64. Each README lists its own; these are the ones with numbers or a found case.
 
