@@ -2,11 +2,11 @@
 title: Replit apps and the summaries Replit Agent wrote
 type: concept
 updated: 2026-11-15
-sources: [S96, S97, S98, S99, S100, S101, S102, S103, S104, S105, S106, S107, S108, S109, S110, S111, S112, S113]
+sources: [S96, S97, S98, S99, S100, S101, S102, S103, S104, S105, S106, S107, S108, S109, S110, S111, S112, S113, S115, S116]
 tags: [apps, replit, verification, ai-agents]
 reviewed: no
 ---
-Eighteen of Bob's apps live on Replit. On 15 November 2026 each got a technical summary, written inside its project by Replit Agent, and those eighteen files were ingested the same day as [S96](../sources/S96-swmm5-ui-replit-summary.md) to [S113](../sources/S113-geoai-flood-impact-replit-summary.md). Every one ends by saying that Replit Agent wrote it and that Bob has not yet reviewed it (Q67).
+On 15 November 2026 eighteen of Bob's Replit apps each got a technical summary, written inside its project by Replit Agent, and those eighteen files were ingested the same day as [S96](../sources/S96-swmm5-ui-replit-summary.md) to [S113](../sources/S113-geoai-flood-impact-replit-summary.md). Every one ends by saying that Replit Agent wrote it and that Bob has not yet reviewed it (Q67).
 
 **The apps**
 
@@ -48,6 +48,6 @@ The project names are as seen in Replit when the files were copied (see the log)
 
 **Faults the summaries report.** Several files list faults found by reading the code or loading a page. None was rerun. They are listed in Q69.
 
-**Not in the sources.** Two more Replit projects, EPANET SWMM Experts and SWMM Explorer, had no summary when the files were copied (log, 15 November 2026).
+**Later the same day.** The two projects that had no summary when these files were copied, EPANET SWMM Experts and SWMM Explorer, got one, [S115](../sources/S115-epanet-for-swmm5-experts-replit-summary.md) and [S116](../sources/S116-swmm5-explorer-replit-summary.md), among seventeen more: [Replit apps: the second seventeen summaries](replit-app-summaries-second-batch.md).
 
 See [WebAssembly builds against native builds](wasm-against-native-builds.md), [Infiltration methods](infiltration-methods.md), [Bob's GitHub repositories (where the rest of the material lives)](../entities/bobs-github-repositories.md).

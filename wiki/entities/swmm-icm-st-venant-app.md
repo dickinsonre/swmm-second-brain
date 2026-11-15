@@ -2,9 +2,10 @@
 title: SWMM and ICM St. Venant comparison (app)
 type: entity
 updated: 2026-11-15
-sources: [S20]
+sources: [S20, S118]
 tags: [apps, comparison, hydraulics]
 reviewed: 2026-11-15
+changed_after_review: "2026-11-15 (second Replit ingest): one paragraph added at the end, headed Added 15 November 2026, on the summary Replit Agent wrote of this app (S118)"
 ---
 Bob's Replit app that sets SWMM 5's and ICM's solutions of the St. Venant equations side by side, at `swmm-icm-st-venant--robertdickinson.replit.app` [S20](../sources/S20-li-edition-54-two-solvers.md).
 
@@ -20,3 +21,5 @@ Bob's Replit app that sets SWMM 5's and ICM's solutions of the St. Venant equati
 **Not to be confused with** the [St. Venant Solver Rosetta Stone (app)](st-venant-solver-rosetta-stone.md), a different app that compares SWMM 4, SWMM 5 and SWMM6 solvers by engine runs and does have a summary.
 
 **Not in the sources.** An app .md, a version number, a date built, test results. Adding the .md to `raw/apps/` would settle the question above.
+
+**Added 15 November 2026: the app now has a summary.** Replit Agent wrote one from the app's source on 15 November 2026 [S118](../sources/S118-swmm5-vs-icm-infoworks-networks-replit-summary.md); Bob has not read it (Q74). It gives the name SWMM5 vs ICM InfoWorks Networks, package version 1.0.0 and 22 July 2026 as the latest publication in Git. It answers the question above: the app does not call or embed the EPA SWMM 5 or InfoWorks ICM engines, so its outputs are authored data and illustrations [S118](../sources/S118-swmm5-vs-icm-infoworks-networks-replit-summary.md). It counts 13 comparison topics, 16 diagram categories and 118 diagram registry entries, where the article above gives twelve tabs and 117 animations (Q78). `npm run check` passed, no test script exists, and the formulas were not validated against either engine [S118](../sources/S118-swmm5-vs-icm-infoworks-networks-replit-summary.md). The paragraph headed "Not in the sources" is overtaken to that extent.

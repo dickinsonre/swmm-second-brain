@@ -1,10 +1,11 @@
 ---
 title: SWMM6 language translations (swmm6-*)
 type: entity
-updated: 2026-11-14
-sources: [S23, S24, S25, S26, S27, S28, S29, S30, S31, S32, S33, S34, S35, S70, S71]
+updated: 2026-11-15
+sources: [S23, S24, S25, S26, S27, S28, S29, S30, S31, S32, S33, S34, S35, S70, S71, S119]
 tags: [swmm6, translation, verification]
 reviewed: 2026-11-15
+changed_after_review: "2026-11-15 (second Replit ingest): one paragraph added near the end, headed Added 15 November 2026, on the SWMM6 translations inside the Code Rosetta Stone app (S119)"
 ---
 Thirteen public repositories under SWMMBobSWMM6, each a translation of the OpenSWMM 6 1D engine (HydroCouple/openswmm.engine, branch `swmm6_rel`, commit 88329d6) into one language, held to the same `.out` and `.rpt` as the C++ engine [S23](../sources/S23-swmm6-csharp-readme.md). Each README says it is "not SWMM6 and not a HydroCouple or EPA release; it is a translation checked against SWMM6" [S23](../sources/S23-swmm6-csharp-readme.md). How a model passes is on [Byte-for-byte gate](../concepts/byte-for-byte-gate.md).
 
@@ -37,5 +38,7 @@ No port reports a model that ran to the end and differed. Every shortfall in the
 **Licences.** The engine is OpenSWMM's, Apache 2.0; the translators, runtimes and gate are Bob's, Apache 2.0. Ports that carry translated glibc math keep that math under LGPL 2.1 or later [S24](../sources/S24-swmm6-go-readme.md) [S30](../sources/S30-swmm6-kotlin-readme.md).
 
 **Not in the sources.** How long each port took to build, and what each cost. The speeds are medians on a shared two-core machine and "a rough guide, not a benchmark" [S23](../sources/S23-swmm6-csharp-readme.md).
+
+**Added 15 November 2026: ten of them inside an app.** [SWMM5 Rosetta Stone, also called Code Rosetta Stone (app)](code-rosetta-stone.md) imports ten of these at exact commits (Groovy as source only) and compares their results with one another, not with an original OpenSWMM build [S119](../sources/S119-code-rosetta-stone-replit-summary.md). Replit Agent wrote that summary; Bob has not read it (Q74).
 
 See [Matching glibc math in a translation](../concepts/glibc-math-in-translation.md), [OpenSWMM 6 and HydroCouple](openswmm-6-and-hydrocouple.md), [1729-SWMM5-Models-2030 (the corpus)](corpus-1729.md).

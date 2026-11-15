@@ -1,10 +1,11 @@
 ---
 title: SWMM5 language translations (swmm5-*)
 type: entity
-updated: 2026-11-14
-sources: [S36, S37, S38, S39, S40, S41, S42, S43, S44, S45, S46, S47, S48, S49, S50, S51, S52, S53, S54, S70, S71]
+updated: 2026-11-15
+sources: [S36, S37, S38, S39, S40, S41, S42, S43, S44, S45, S46, S47, S48, S49, S50, S51, S52, S53, S54, S70, S71, S119]
 tags: [swmm5, translation, verification]
 reviewed: 2026-11-15
+changed_after_review: "2026-11-15 (second Replit ingest): one paragraph added near the end, headed Added 15 November 2026, on the SWMM5 translations inside the Code Rosetta Stone app (S119)"
 ---
 Nineteen public repositories under SWMMBobSWMM6, each EPA SWMM 5.2.4 "written by a translator that reads EPA's C, and judged against EPA itself" on 480 models [S41](../sources/S41-swmm5-go-readme.md). They are the languages of Bob's Code Rosetta Stone app [S47](../sources/S47-swmm5-php-readme.md). How a model passes is on [Byte-for-byte gate](../concepts/byte-for-byte-gate.md).
 
@@ -40,5 +41,7 @@ The speeds were measured three different ways (interleaved CPU benchmarks, the g
 **Two more engines in the same gate table**: swmm5-cplus and swmm5-rust, 480 of 480 each [S41](../sources/S41-swmm5-go-readme.md). They are not among the 19 sources here.
 
 **Credit and licence.** "Its engine is Lewis Rossman's design, and this port keeps every algorithm as he wrote it." EPA SWMM is public domain; no licence has been chosen yet for the translators and runtimes; translated glibc math stays LGPL 2.1 or later [S41](../sources/S41-swmm5-go-readme.md).
+
+**Added 15 November 2026: the app that runs them.** [SWMM5 Rosetta Stone, also called Code Rosetta Stone (app)](code-rosetta-stone.md) imports 20 SWMM5 translations at exact commits; all 20 matched the pinned EPA 5.2.4 binary-output hash on 3 models, a sampled check beside the 480-model gate above [S119](../sources/S119-code-rosetta-stone-replit-summary.md). Its 20 include C++ and Rust and leave out R (Q48). Replit Agent wrote that summary; Bob has not read it (Q74).
 
 See [What the gate cannot see](../concepts/gate-blind-spots.md), [Where languages part from C](../concepts/where-languages-part-from-c.md), [SWMM6 language translations](swmm6-language-ports.md).

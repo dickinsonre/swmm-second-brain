@@ -9,7 +9,7 @@ It is not a search index. Each source is read once and compiled into pages; a qu
 | Path | What |
 |---|---|
 | `raw/` | Sources. 313 files, about 1,060,000 words. Never edited. `raw/MANIFEST.csv` has a hash and a status for each |
-| `wiki/` | 230 pages, about 114,000 words: 113 sources, 51 concepts, 64 entities, an overview and an open-questions list |
+| `wiki/` | 264 pages, about 131,000 words: 130 sources, 52 concepts, 80 entities, an overview and an open-questions list |
 | `index.md` | Catalog of every page. Start here |
 | `log.md` | What was done and when |
 | `CLAUDE.md` | The schema: page rules and the three operations |
@@ -31,11 +31,11 @@ To add an idea of your own, copy `raw/notes/_TEMPLATE.md` to a new file in `raw/
 
 To read the wiki yourself, open the folder in Obsidian (the graph view shows hubs and orphans) or browse it on GitHub; every link is a plain relative link and works in both.
 
-## State on 14 November 2026
+## State on 15 November 2026
 
-- 113 of 374 raw files ingested, one of them (the EPA hydraulics manual) in part. The queue is in `index.md`.
-- 60 open questions in `wiki/open-questions.md`, and 6 settled. Several are contradictions between Bob's own articles.
-- Bob has read all but 5 of the 193 pages (S91 to S95, added on 15 November 2026). 5 pages carry text added after his review, each marked `changed_after_review:`. A page says `reviewed: no` until he has read it.
+- 130 of 374 raw files ingested, one of them (the EPA hydraulics manual) in part. The queue is in `index.md`.
+- 74 open questions in `wiki/open-questions.md`, and 6 settled. Several are contradictions between Bob's own articles.
+- 76 pages say `reviewed: no`, which means Bob has not read them yet. Most are the 35 summaries Replit Agent wrote of his Replit apps and the app pages built on them. 16 more pages carry text added after his review, each marked `changed_after_review:`.
 
 ## What is not here
 

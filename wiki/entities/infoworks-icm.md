@@ -1,10 +1,11 @@
 ---
 title: InfoWorks ICM
 type: entity
-updated: 2026-11-14
-sources: [S03, S13, S14, S17, S20, S65]
+updated: 2026-11-15
+sources: [S03, S13, S14, S17, S20, S65, S125, S127]
 tags: [icm, engine, comparison]
 reviewed: 2026-11-15
+changed_after_review: "2026-11-15 (second Replit ingest): one paragraph added near the end, headed Added 15 November 2026, on the ICM release history app and the ICM module of the Kinematic Wave Router (S125, S127)"
 ---
 The commercial integrated catchment model developed by Wallingford Software in England and now maintained by Autodesk [S20](../sources/S20-li-edition-54-two-solvers.md).
 
@@ -20,3 +21,5 @@ The commercial integrated catchment model developed by Wallingford Software in E
 Full comparison: [SWMM 5 versus ICM InfoWorks](../concepts/swmm5-versus-icm-infoworks.md).
 
 **Not in the sources yet.** Ruby and SQL scripting, the results file, RDII and ground infiltration, sediment, the 12 runoff surfaces. Of the 213 queued LinkedIn articles, 139 name ICM or InfoWorks in the title and 70 name Ruby.
+
+**Added 15 November 2026: two apps.** [ICM InfoWorks release history (app)](icm-release-history-app.md) holds 50 ICM release records and 822 feature records, from release 1.5 to 2027.2, in a file inside the project and not a live feed; none of it was checked against Autodesk's own sources [S127](../sources/S127-icm-infoworks-release-history-replit-summary.md). [Kinematic Wave Router (app)](kinematic-wave-router.md) has a module that imports from and exports to ICM through its Ruby API, which was not run [S125](../sources/S125-kinematic-wave-router-replit-summary.md). Replit Agent wrote both summaries and Bob has read neither (Q74).

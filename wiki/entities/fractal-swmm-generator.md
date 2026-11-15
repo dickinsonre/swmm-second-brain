@@ -2,10 +2,10 @@
 title: Fractal SWMM5/SWMM6 Network Generator (app)
 type: entity
 updated: 2026-11-15
-sources: [S78, S106]
+sources: [S78, S106, S123, S128]
 tags: [apps, generators, swmm5, swmm6, test-models]
 reviewed: 2026-11-15
-changed_after_review: "2026-11-15 (Replit ingest): one paragraph added near the end, headed Added 15 November 2026, on the SWMM5 Topology Sandbox (S106)"
+changed_after_review: "2026-11-15 (Replit ingest): one paragraph added near the end, headed Added 15 November 2026, on the SWMM5 Topology Sandbox (S106); 2026-11-15 (second Replit ingest): one paragraph added at the end, headed Added 15 November 2026, on two more network generators (S123, S128)"
 ---
 Bob's app that grows a tree-shaped drainage network from a fractal rule, shows every step of the build, writes a runnable SWMM `.inp`, runs it in an embedded EPA SWMM 5.2.4 and audits its hydraulics pipe by pipe. Version 2.3, 12 November 2026. "It is a teaching and test-model generator. It is not a design tool" [S78](../sources/S78-fractal-swmm-generator-app-md.md).
 
@@ -40,3 +40,5 @@ Bob's app that grows a tree-shaped drainage network from a fractal rule, shows e
 **History.** 2.0 on 2 November 2026 added the Build tab and US customary units and fixed six export defects; 2.1 answered nine findings of an outside review by ChatGPT [S78](../sources/S78-fractal-swmm-generator-app-md.md).
 
 **Added 15 November 2026: a second generator.** A separate Replit app, [SWMM5 Topology Sandbox (app)](swmm5-topology-sandbox.md), also offers 22 network patterns. It exports a SWMM5-format INP file but runs no engine, and its hydrographs are estimates [S106](../sources/S106-swmm5-topology-sandbox-replit-summary.md). Neither summary says how the two generators are related (Q73).
+
+**Added 15 November 2026: a third generator.** [EPANET 2.3 Generator (app)](epanet-23-generator.md) builds synthetic water and drainage networks from a seed and runs them in EPANET and in SWMM 5.1.015 in the browser, with 24 starter models [S128](../sources/S128-epanet-23-generator-replit-summary.md). [SWMM5 Modeler (app)](swmm5-modeler.md) also generates and scales up networks, on EPA SWMM5 5.1.14 [S123](../sources/S123-swmm5-modeler-replit-summary.md). No summary says how any of these generators is related to this one (Q73).

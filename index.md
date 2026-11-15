@@ -67,7 +67,8 @@ Measurement and method
 - [Wrap, translate or extend](wiki/concepts/wrap-translate-or-extend.md): three roads to SWMM in another language or with new physics, and the four engines that extend EPA's C.
 - [SWMM5 translations: the re-run of 12 November 2026](wiki/concepts/swmm5-ports-rerun-2026-11.md): twenty translations rebuilt on one machine, gated again and timed by one benchmark.
 - [Calibration, validation and uncertainty](wiki/concepts/calibration-validation-uncertainty.md): William James's rules as Bob reports them, and the thresholds his app teaches (NSE 0.7, peak 15 %, volume 10 %).
-- [Replit apps and the summaries Replit Agent wrote](wiki/concepts/replit-app-summaries.md): the eighteen Replit apps, what their agent-written summaries have in common and where they differ.
+- [Replit apps and the summaries Replit Agent wrote](wiki/concepts/replit-app-summaries.md): the first eighteen Replit apps, what their agent-written summaries have in common and where they differ.
+- [Replit apps: the second seventeen summaries](wiki/concepts/replit-app-summaries-second-batch.md): seventeen more Replit apps: which run an engine, which pass their tests, and what the agent found doubtful.
 
 Economics
 - [Cost allocation by cooperative game theory](wiki/concepts/cost-allocation-methods.md): SCRB, MCRS, Shapley value, nucleolus and equal split on a $7M project for three towns.
@@ -131,6 +132,22 @@ Apps
 - [MapSWMMSewer Code Repository (app)](wiki/entities/mapswmmsewer-code-repository.md): Private Replit app that stores and searches code files for SWMM, sewer analysis and h2oCalc.
 - [City Temperature Explorer (app)](wiki/entities/city-temperature-explorer.md): Replit app comparing city temperatures across decades; not about SWMM.
 - [GeoAI Flood Impact (app)](wiki/entities/geoai-flood-impact.md): Replit app presenting stored flood-exposure records; not about SWMM.
+- [SWMM5 MicroGPT (app)](wiki/entities/swmm5-microgpt.md): Replit app, v2; trains a small character-level GPT on SWMM5 `.INP` text in the browser; runs no engine.
+- [EPANET for SWMM5 Experts (app)](wiki/entities/epanet-for-swmm5-experts.md): Replit app, v1.0; one-page reference that explains EPANET to SWMM5 users, with 32 tabs of calculators; one of its 10 built-in checks fails.
+- [SWMM5 Explorer (app)](wiki/entities/swmm5-explorer.md): Replit app, v1.0.0; browser of the SWMM 5.2.4 source with Sankey diagrams and AI explanations; its browser engine is a stub.
+- [BatchSWMM56 (app)](wiki/entities/batchswmm56.md): Replit app, v1.1.0; batch runner that puts one model through seven engine entries (EPA 5.2.4, a KW/SF extension, OWA, two SWMM6 builds, Hydra) and compares the results.
+- [SWMM5 Rosetta Stone, also called Code Rosetta Stone (app)](wiki/entities/code-rosetta-stone.md): Replit app, v1.0.0; SWMM and EPANET algorithms side by side in 37 languages, and 72 engine selections that include 30 imported translations at exact commits.
+- [ForceMain SWMM5 EPANET Comparison (app)](wiki/entities/forcemain-swmm5-epanet-comparison.md): Replit app, v1.0; Streamlit app that designs force mains, writes paired SWMM5 and EPANET models and runs both through PySWMM and WNTR.
+- [Hindsight Prophet (app)](wiki/entities/hindsight-prophet.md): Replit app, v1.0.0; sends a stormwater-modeling question to a council of four or six AI personas and returns a consensus and roadmap; runs no engine.
+- [SWMManywhere Explorer (app)](wiki/entities/swmmanywhere-explorer.md): Replit app, v1.0.0; static guide to the separate SWMManywhere Python project; generates and simulates nothing.
+- [SWMM5 Modeler (app)](wiki/entities/swmm5-modeler.md): Replit app, v0.0.0; generates or imports a drainage network, runs it in EPA SWMM5 5.1.14 as WebAssembly, grades it and proposes fixes; six rule-based "agents".
+- [bobSWMM Auto Research (app)](wiki/entities/bobswmm-auto-research.md): Replit app, v0.0.0; AI-written research reports and chat on SWMM questions, with browser calculators and `.inp` and `.rpt` inspectors; runs no engine.
+- [Kinematic Wave Router (app)](wiki/entities/kinematic-wave-router.md): Replit app, v2026.11.15; Ruby web app that routes a constant inflow through a SWMM5 network by kinematic wave, splits and loops included; its test suite does not run.
+- [SWMM Ecosystem (app)](wiki/entities/swmm-ecosystem.md): Replit app, v1.0.0; reference app on SWMM's history and the software around it: 51 catalog records, contributor cards, a 285-entry glossary; runs no model.
+- [ICM InfoWorks release history (app)](wiki/entities/icm-release-history-app.md): Replit app, v1.0.0; browser of InfoWorks ICM release history: 50 releases and 822 features held in the project, with AI answers; calls no ICM engine.
+- [EPANET 2.3 Generator (app)](wiki/entities/epanet-23-generator.md): Replit app, v4.6; builds synthetic water and drainage networks from a seed, runs them in EPANET and SWMM 5.1.015 in the browser, and exports the files.
+- [Historical Water Inventions (app)](wiki/entities/historical-water-inventions.md): Replit app, v1.0.0; educational app on the history of water engineering: 1,286 invention records, maps, quizzes and 12 SWMM5 templates; runs no solver.
+- [PySWMM Explorer (app)](wiki/entities/pyswmm-explorer.md): Replit app, v1.0.0; reference and learning app for PySWMM; its Playground prints sample output and runs no Python or SWMM.
 
 Data
 - [1729-SWMM5-Models-2030 (the corpus)](wiki/entities/corpus-1729.md): Bob's public model repository; 480 of its models are the translations' gate set.
@@ -196,6 +213,23 @@ App summaries
 - [S111](wiki/sources/S111-mapswmmsewer-code-repository-replit-summary.md) (2026-03-09): MapSWMMSewer - Code Repository, summary written by Replit Agent, v1.0.0.
 - [S112](wiki/sources/S112-city-temperature-explorer-replit-summary.md) (2026-03-16): City Temperature Explorer, summary written by Replit Agent, v1.0.0.
 - [S113](wiki/sources/S113-geoai-flood-impact-replit-summary.md) (2026-11-15): GeoAI Flood Impact, summary written by Replit Agent, v2.4.1_b.
+- [S114](wiki/sources/S114-swmm5-microgpt-replit-summary.md) (2026-02-16): SWMM5 MicroGPT v2, summary written by Replit Agent, v2.
+- [S115](wiki/sources/S115-epanet-for-swmm5-experts-replit-summary.md) (2026-03-15): EPANET for SWMM5 Experts - The Rosetta Stone, summary written by Replit Agent, v1.0.
+- [S116](wiki/sources/S116-swmm5-explorer-replit-summary.md) (2026-01-29): SWMM5 Explorer, summary written by Replit Agent, v1.0.0.
+- [S117](wiki/sources/S117-batchswmm56-replit-summary.md) (2026-09-12): BatchSWMM56, summary written by Replit Agent, v1.1.0.
+- [S118](wiki/sources/S118-swmm5-vs-icm-infoworks-networks-replit-summary.md) (2026-07-22): SWMM5 vs ICM InfoWorks Networks, summary written by Replit Agent, v1.0.0.
+- [S119](wiki/sources/S119-code-rosetta-stone-replit-summary.md) (2026-11-15): SWMM5 Rosetta Stone, summary written by Replit Agent, v1.0.0.
+- [S120](wiki/sources/S120-forcemain-swmm5-epanet-comparison-replit-summary.md) (2026-11-15): ForceMain SWMM5 EPANET Comparison, summary written by Replit Agent, v1.0.
+- [S121](wiki/sources/S121-hindsight-prophet-replit-summary.md) (2025-11-22): Hindsight Prophet, summary written by Replit Agent, v1.0.0.
+- [S122](wiki/sources/S122-swmmanywhere-explorer-replit-summary.md) (2026-05-13): SWMManywhere Explorer, summary written by Replit Agent, v1.0.0.
+- [S123](wiki/sources/S123-swmm5-modeler-replit-summary.md) (2026-11-15): SWMM5 Modeler, summary written by Replit Agent, v0.0.0.
+- [S124](wiki/sources/S124-bobswmm-auto-research-replit-summary.md) (2026-03-12): bobSWMM Auto Research, summary written by Replit Agent, v0.0.0.
+- [S125](wiki/sources/S125-kinematic-wave-router-replit-summary.md) (2026-11-15): Kinematic Wave Router, summary written by Replit Agent, v2026.11.15.
+- [S126](wiki/sources/S126-swmm-ecosystem-replit-summary.md) (2025-08-29): SWMM Ecosystem, summary written by Replit Agent, v1.0.0.
+- [S127](wiki/sources/S127-icm-infoworks-release-history-replit-summary.md) (2025-11-13): ICM InfoWorks, summary written by Replit Agent, v1.0.0.
+- [S128](wiki/sources/S128-epanet-23-generator-replit-summary.md) (2026-07-20): EPANET 2.3 Generator, summary written by Replit Agent, v4.6.
+- [S129](wiki/sources/S129-historical-water-inventions-replit-summary.md) (2026-11-15): Historical Water Inventions, summary written by Replit Agent, v1.0.0.
+- [S130](wiki/sources/S130-pyswmm-explorer-replit-summary.md) (2026-02-11): PySWMM Explorer, summary written by Replit Agent, v1.0.0.
 
 Manuals and reports (primary documents)
 - [S60](wiki/sources/S60-epa-swmm5-reference-manual-vol2-hydraulics.md) (2017-05): EPA SWMM Reference Manual, Volume II, Hydraulics, by L. A. Rossman. Read in part: section 1.1 and Chapters 2, 3, 4 and 6 (the raw file lacks pages 64 to 66 and 122).
@@ -283,7 +317,7 @@ Repository READMEs (SWMM5 translations)
 
 ## Queue
 
-257 raw files are queued: 212 LinkedIn articles and the as-pasted copy of the post of 14 November 2026 (kept because raw files are never deleted; its corrected copy is S94, so it is not to be ingested), 19 manual files in `raw/manuals/` (8 EPA, USGS and FHWA documents not yet started, and 11 SWMM 4.4 documentation files), 4 swmm5.org topic pages, 2 SWMM 1 build notes and 19 files in `raw/apps/`. Seventeen of those are summaries Replit Agent wrote, brought over from Replit on 15 November 2026 after the first eighteen (S96 to S113) and not yet ingested. One, `PyBME-issue-drafts.md`, is not an app summary and was left queued on purpose (Q56). The last, `st-venant-solver-rosetta-stone-v2.6.2.md`, is the newer version of an app already ingested at version 2.4.0 (S75); it was added on 15 November 2026 and bears on Q62. Three more LinkedIn files are byte-identical copies of others and are marked `duplicate`. `raw/MANIFEST.csv` lists them all. Suggested next batches, in order:
+240 raw files are queued: 212 LinkedIn articles and the as-pasted copy of the post of 14 November 2026 (kept because raw files are never deleted; its corrected copy is S94, so it is not to be ingested), 19 manual files in `raw/manuals/` (8 EPA, USGS and FHWA documents not yet started, and 11 SWMM 4.4 documentation files), 4 swmm5.org topic pages, 2 SWMM 1 build notes and 2 files in `raw/apps/`. One, `PyBME-issue-drafts.md`, is not an app summary and was left queued on purpose (Q56). The other, `st-venant-solver-rosetta-stone-v2.6.2.md`, is the newer version of an app already ingested at version 2.4.0 (S75); it was added on 15 November 2026 and bears on Q62. Three more LinkedIn files are byte-identical copies of others and are marked `duplicate`. `raw/MANIFEST.csv` lists them all. Suggested next batches, in order:
 
 0. The rest of the EPA hydraulics manual, a chapter at a time (S60: sections 1.2 to 1.5, Chapter 5, Chapter 7 and the appendices remain), then the 2006 quality assurance report and the SWMM 5.1 User's Manual. With them, the Rosetta Stone summary at version 2.6.2, which tests the pump rule of Q62. These are the primary documents; ingesting them first lets later articles be checked against them.
 1. The four remaining swmm5.org topic pages and the SWMM 1 build notes (small, and they complete themes 3 to 6).

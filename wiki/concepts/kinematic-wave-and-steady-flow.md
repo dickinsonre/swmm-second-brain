@@ -2,9 +2,10 @@
 title: Kinematic wave and steady flow routing
 type: concept
 updated: 2026-11-15
-sources: [S01, S08, S10, S17, S60]
+sources: [S01, S08, S10, S17, S60, S117, S125]
 tags: [hydraulics, swmm5, routing]
 reviewed: 2026-11-15
+changed_after_review: "2026-11-15 (second Replit ingest): one paragraph added at the end, headed Added 15 November 2026, on the Kinematic Wave Router and the Extended engine of BatchSWMM56 (S117, S125)"
 ---
 SWMM5 has two routing methods simpler than [dynamic wave](dynamic-wave-routing.md) [S17](../sources/S17-li-routing-options.md).
 
@@ -30,3 +31,5 @@ SWMM5 has two routing methods simpler than [dynamic wave](dynamic-wave-routing.m
 - Attenuation: the paragraph above, from Bob's article, says hydrographs are delayed and attenuated [S17](../sources/S17-li-routing-options.md). The manual's section 2.2 says kinematic wave solutions "show no attenuation, no dispersion, and some distortion", and its Table 2-1 answers "no" for hydrograph attenuation; its section 4.4 then reports "a very modest attenuation" on the example and names numerical diffusion as the cause [S60](../sources/S60-epa-swmm5-reference-manual-vol2-hydraulics.md). Q61 in [Open questions](../open-questions.md).
 - History: kinematic wave was in the 1971 release, with an enhancement to approximate backwater in subcritical flow. SWMM 5 dropped the enhancement for the classical formulation [S60](../sources/S60-epa-swmm5-reference-manual-vol2-hydraulics.md).
 - The network objects themselves are on [SWMM 5 network objects, boundary and initial conditions](swmm5-network-objects.md).
+
+**Added 15 November 2026: two apps past the dendritic limit.** [Kinematic Wave Router (app)](../entities/kinematic-wave-router.md), Bob's Ruby kinematic wave, divides flow equally at a split and iterates on loops; its loop fixture did not fully converge after 20 iterations [S125](../sources/S125-kinematic-wave-router-replit-summary.md). [BatchSWMM56 (app)](../entities/batchswmm56.md) carries the 5.2.4 KW/SF extension as its "SWMM5 Extended" engine [S117](../sources/S117-batchswmm56-replit-summary.md). Replit Agent wrote both summaries; Bob has read neither (Q74).
