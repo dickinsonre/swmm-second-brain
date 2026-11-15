@@ -233,3 +233,16 @@ Page rule 9: Bob names the second post by a member of his family. The raw note k
 Arithmetic at ingest, ours: per 1,000 impressions the engine post had 10.1 reactions, 0.5 comments and 0.5 reposts; the personal post 19.5, 3.4 and 0.1. Impressions ratio 1.96.
 A departure from an earlier choice, at Bob's request: the anecdotes note (S90) left reaction counts out; this note keeps counts because he asked for them.
 Counts: 134 of 378 raw files ingested, 240 queued; 272 wiki pages; 75 open questions and 6 settled.
+
+## [2026-11-15] raw | One more Replit summary brought over
+
+Bob sent a link for the project SWMM5 Topo Network Wizard. Read out of the Replit editor and checked against a SHA-256 computed there: topo-network-wizard-v1.0.0 (app name in the file: SWMM5 Topo Network Wizard). It matches. Queued, not ingested. It is a fourth network generator, after those of Q73.
+
+## [2026-11-15] ingest | LinkedIn: fifty posts with their counts, S135
+
+Asked for a LinkedIn analytics export, Bob wrote "let me do this then" and attached a paste of 50 of his posts with their counts, with the words "this might be enough for now". The agent read the whole paste and typed `raw/linkedin/2026-11-15-fifty-posts-with-counts.md` from it: each post's place, age, first twelve words, attached title and counts. The full text of the posts was left out of the public repository because it names many people and one post gives an email address. If Bob wants the paste itself in `raw/`, he can say so.
+Source written: S135. Page rewritten (not yet reviewed, so in place): LinkedIn posts that were well received, now built on the 50 posts. Pages changed: S134 and S94 each got a line; the paragraph added that afternoon to OpenSWMM 6 and HydroCouple was rewritten from the list; sentences were added to Q81.
+Settled by S135, and said so under Q81: the personal post of S134 is the post of 14 November 2026 (S94), and the lower strip of the screenshot is that post's.
+Disagreements recorded under Q81: reposts (9 and 1 on the screenshot, none shown on the list); the age "2d" for a post S91 dates to the day before; "slide" in the note against "GIF" in the post's own text.
+Arithmetic at ingest, ours: middle values of the 50 are 11,941 impressions, 39 reactions and 4 comments. The HydroCouple post is 21st in impressions, 2nd in reactions and 4th in reactions per 1,000 impressions (10.1; middle value 2.1). The post of 14 November is 42nd in impressions, 3rd in reactions, 1st in comments, and 1st in both reactions and comments per 1,000 impressions (19.5 and 3.4; middle values 2.1 and 0.2).
+Counts: 135 of 380 raw files ingested, 241 queued; 273 wiki pages; 75 open questions and 6 settled.

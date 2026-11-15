@@ -30,3 +30,5 @@ reviewed: no
 - SWMM 1 was 12,200 cards in the 1971 listing [S01](S01-swmm1-engine-app-md.md). The post's 20,000 for SWMM 2.5 is a round figure from memory, not a count of a listing.
 
 **Feeds:** [Anecdotes of SWMM](../concepts/swmm-anecdotes.md), [Robert (Bob) Dickinson](../entities/robert-dickinson.md), [Open questions](../open-questions.md).
+
+**How it was received.** On 15 November 2026 LinkedIn showed 165 reactions, 29 comments and 8,481 impressions for this post, the most comments of 50 posts listed [S135](S135-li-fifty-posts-with-counts.md); see [LinkedIn posts that were well received](../concepts/linkedin-post-reception.md).

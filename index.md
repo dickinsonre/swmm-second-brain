@@ -69,7 +69,7 @@ Measurement and method
 - [Calibration, validation and uncertainty](wiki/concepts/calibration-validation-uncertainty.md): William James's rules as Bob reports them, and the thresholds his app teaches (NSE 0.7, peak 15 %, volume 10 %).
 - [Replit apps and the summaries Replit Agent wrote](wiki/concepts/replit-app-summaries.md): the first eighteen Replit apps, what their agent-written summaries have in common and where they differ.
 - [Replit apps: the second seventeen summaries](wiki/concepts/replit-app-summaries-second-batch.md): seventeen more Replit apps: which run an engine, which pass their tests, and what the agent found doubtful.
-- [LinkedIn posts that were well received](wiki/concepts/linkedin-post-reception.md): the counts under two of Bob's posts on 15 November 2026, and what is missing before more can be said.
+- [LinkedIn posts that were well received](wiki/concepts/linkedin-post-reception.md): which of 50 posts were most seen, most reacted to and most answered on 15 November 2026, and where the two posts Bob named stand.
 
 Economics
 - [Cost allocation by cooperative game theory](wiki/concepts/cost-allocation-methods.md): SCRB, MCRS, Shapley value, nucleolus and equal split on a $7M project for three towns.
@@ -238,6 +238,7 @@ App summaries
 - [S132](wiki/sources/S132-swmm5-epanet-inp-explorer-replit-summary.md) (2026-11-15): SWMM5 & EPANET INP Explorer, summary written by Replit Agent, v1.0.0.
 - [S133](wiki/sources/S133-swmm5-inp-file-interactive-viewer-replit-summary.md) (2026-11-15): SWMM5 .inp File Interactive Viewer, summary written by Replit Agent, v0.1.0.
 - [S134](wiki/sources/S134-note-linkedin-two-well-received-posts.md) (2026-11-15): note, two LinkedIn posts that drew a good response, with their counts.
+- [S135](wiki/sources/S135-li-fifty-posts-with-counts.md) (2026-11-15): LinkedIn, fifty of Bob's posts with their reactions, comments and impressions.
 
 Manuals and reports (primary documents)
 - [S60](wiki/sources/S60-epa-swmm5-reference-manual-vol2-hydraulics.md) (2017-05): EPA SWMM Reference Manual, Volume II, Hydraulics, by L. A. Rossman. Read in part: section 1.1 and Chapters 2, 3, 4 and 6 (the raw file lacks pages 64 to 66 and 122).
@@ -325,7 +326,7 @@ Repository READMEs (SWMM5 translations)
 
 ## Queue
 
-240 raw files are queued: 212 LinkedIn articles and the as-pasted copy of the post of 14 November 2026 (kept because raw files are never deleted; its corrected copy is S94, so it is not to be ingested), 19 manual files in `raw/manuals/` (8 EPA, USGS and FHWA documents not yet started, and 11 SWMM 4.4 documentation files), 4 swmm5.org topic pages, 2 SWMM 1 build notes and 2 files in `raw/apps/`. One, `PyBME-issue-drafts.md`, is not an app summary and was left queued on purpose (Q56). The other, `st-venant-solver-rosetta-stone-v2.6.2.md`, is the newer version of an app already ingested at version 2.4.0 (S75); it was added on 15 November 2026 and bears on Q62. Three more LinkedIn files are byte-identical copies of others and are marked `duplicate`. `raw/MANIFEST.csv` lists them all. Suggested next batches, in order:
+241 raw files are queued: 212 LinkedIn articles and the as-pasted copy of the post of 14 November 2026 (kept because raw files are never deleted; its corrected copy is S94, so it is not to be ingested), 19 manual files in `raw/manuals/` (8 EPA, USGS and FHWA documents not yet started, and 11 SWMM 4.4 documentation files), 4 swmm5.org topic pages, 2 SWMM 1 build notes and 3 files in `raw/apps/`. One, `topo-network-wizard-v1.0.0.md`, is a summary Replit Agent wrote of the SWMM5 Topo Network Wizard, brought over from Replit after the ingest of S133. One, `PyBME-issue-drafts.md`, is not an app summary and was left queued on purpose (Q56). The last, `st-venant-solver-rosetta-stone-v2.6.2.md`, is the newer version of an app already ingested at version 2.4.0 (S75); it was added on 15 November 2026 and bears on Q62. Three more LinkedIn files are byte-identical copies of others and are marked `duplicate`. `raw/MANIFEST.csv` lists them all. Suggested next batches, in order:
 
 0. The rest of the EPA hydraulics manual, a chapter at a time (S60: sections 1.2 to 1.5, Chapter 5, Chapter 7 and the appendices remain), then the 2006 quality assurance report and the SWMM 5.1 User's Manual. With them, the Rosetta Stone summary at version 2.6.2, which tests the pump rule of Q62. These are the primary documents; ingesting them first lets later articles be checked against them.
 1. The four remaining swmm5.org topic pages and the SWMM 1 build notes (small, and they complete themes 3 to 6).

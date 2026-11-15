@@ -28,5 +28,6 @@ reviewed: no
 - Which strip belongs to which post is Claude's reading: the upper one sits under a slide naming OpenSWMM 6 and github.com/HydroCouple, and the lower one is matched to the personal post only by the order of Bob's sentence (Q81).
 - The personal post may be the post of 14 November 2026, [S94](S94-li-post-my-earlier-history-with-swmm.md). Bob has not said so (Q81).
 - When [S90](S90-note-swmm-anecdotes-linkedin-comments.md) was made, reaction counts were left out of that note. This note keeps counts because Bob asked for them.
+- Added later the same day: the list in [S135](S135-li-fifty-posts-with-counts.md) shows both posts. The lower strip is the post of 14 November 2026, [S94](S94-li-post-my-earlier-history-with-swmm.md). That post's text calls the picture of the first post a GIF, where this note reads it as a slide.
 
 **Feeds:** [LinkedIn posts that were well received](../concepts/linkedin-post-reception.md), [OpenSWMM 6 and HydroCouple](../entities/openswmm-6-and-hydrocouple.md), [Robert Dickinson](../entities/robert-dickinson.md).
