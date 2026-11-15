@@ -296,3 +296,8 @@ Counts: 143 of 387 raw files ingested, 240 queued; 289 wiki pages; 76 open quest
 ## [2026-11-15] setup | Main fast-forwarded to S143
 
 Main now holds S137 to S143. `replit-summaries-5` is merged and can go.
+
+## [2026-11-15] ingest | S144: which PRN problem Bob fixed
+
+Asked which problem he fixed, Bob answered at 17:28: "the file that anyone can read". Filed in his words as raw/notes/icm-prn-reader-fix-which-2026-11-15.md and ingested as S144. The open file list of the ICM PRN File Reader is now fixed on Bob's word; the differing thresholds stay as reported. Changed: the app page, Q76, overview and README counts, index. On the branch `replit-summaries-6`.
+Counts: 144 of 388 raw files ingested, 240 queued; 290 wiki pages; 76 open questions and 6 settled.

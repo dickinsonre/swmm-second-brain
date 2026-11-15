@@ -254,7 +254,8 @@ App summaries
 - [S140](wiki/sources/S140-swmm5wiki-replit-summary.md) (2025-08-28): SWMM5Wiki (Replit project GatorSWMM), summary written by Replit Agent, v1.0.0.
 - [S141](wiki/sources/S141-bobswmm-writer-replit-summary.md) (2026-02-11): BobSWMM Writer, summary written by Replit Agent, v2.1.0.
 - [S142](wiki/sources/S142-icm-prn-file-reader-replit-summary.md) (2025-08-05): ICM PRN File Reader, summary written by Replit Agent, v1.0.0.
-- [S143](wiki/sources/S143-note-icm-prn-reader-fix.md) (2026-11-15): note, Bob reports that he fixed "the prn problem" in the ICM PRN File Reader; which problem is not said.
+- [S143](wiki/sources/S143-note-icm-prn-reader-fix.md) (2026-11-15): note, Bob reports that he fixed "the prn problem" in the ICM PRN File Reader.
+- [S144](wiki/sources/S144-note-icm-prn-reader-fix-which.md) (2026-11-15): note, the PRN problem Bob fixed was the file list anyone could read.
 
 Manuals and reports (primary documents)
 - [S60](wiki/sources/S60-epa-swmm5-reference-manual-vol2-hydraulics.md) (2017-05): EPA SWMM Reference Manual, Volume II, Hydraulics, by L. A. Rossman. Read in part: section 1.1 and Chapters 2, 3, 4 and 6 (the raw file lacks pages 64 to 66 and 122).

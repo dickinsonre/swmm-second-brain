@@ -2,7 +2,7 @@
 title: "ICM PRN File Reader (app)"
 type: entity
 updated: 2026-11-15
-sources: [S142, S143]
+sources: [S142, S143, S144]
 tags: [apps, replit, icm, results]
 reviewed: no
 ---
@@ -30,6 +30,6 @@ Bob's Replit app ICM PRN File Reader: an app that reads InfoWorks ICM PRN output
 
 **Noted at ingest.** Arithmetic. The thresholds agree with the conversion factors: 10 x 35.3147 = 353.147, 0.05 x 35.3147 = 1.765735 and 0.5 x 3.28084 = 1.64042 (our arithmetic). The `date:`, 5 August 2025, is the first Git record of version 1.0.0; all ten listed changes are from 22 July 2026 (Q75). Git names Replit Agent (Q80). The open file-list route is Replit Agent's reading of the code, not a test (Q76). It is the only one of the six with a test suite. Its continuity percent is computed from the PRN totals and, the file says, is not a mass-conservation audit; see [Continuity is not validation](../concepts/continuity-is-not-validation.md).
 
-**Added 15 November 2026: Bob reports a fix.** Bob wrote that evening that he had fixed "the prn problem" [S143](../sources/S143-note-icm-prn-reader-fix.md). He did not say which of the two problems above, the open file list or the differing thresholds; the summary of the fixed version has not come in (Q76).
+**Added 15 November 2026: Bob reports a fix.** Bob wrote that evening that he had fixed "the prn problem" [S143](../sources/S143-note-icm-prn-reader-fix.md). Asked which, he answered "the file that anyone can read" [S144](../sources/S144-note-icm-prn-reader-fix-which.md): the open file list is fixed on his word, and the differing thresholds are not said to be. The summary of the fixed version has not come in (Q76).
 
 See [Replit apps: six more summaries](../concepts/replit-app-summaries-third-batch.md), [InfoWorks ICM](infoworks-icm.md), [Continuity is not validation](../concepts/continuity-is-not-validation.md).
