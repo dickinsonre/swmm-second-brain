@@ -263,3 +263,8 @@ Main now holds S133 to S136. `replit-summaries-4` is merged and can go.
 
 Bob sent a link for the project SWMM Documents Explorer. Read out of the Replit editor and checked against a SHA-256 computed there: swmm-documents-explorer-v1.0.0 (app name in the file: SWMM Documents Explorer). It matches. Queued, not ingested, on the branch `replit-summaries-5`.
 Counts: 136 of 381 raw files ingested, 241 queued.
+
+## [2026-11-15] raw | The SWMM5 Quizzer summary brought over
+
+Bob sent a link for the project SWMM5QuizMaster. Read out of the Replit editor and checked against a SHA-256 computed there: quiz-master-robertdickinson-v1.0.0 (app name in the file: SWMM5 Quizzer). It matches. No earlier copy was in `raw/apps/`. Queued, not ingested, on the branch `replit-summaries-5`.
+Counts: 136 of 382 raw files ingested, 242 queued.
