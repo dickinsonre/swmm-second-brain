@@ -4,7 +4,7 @@ type: concept
 updated: 2026-11-14
 sources: [S13, S14, S17, S20]
 tags: [comparison, swmm5, icm]
-reviewed: no
+reviewed: 2026-11-15
 ---
 Where the two engines differ, from the four comparison sources ingested so far. ICM also contains a SWMM network type ("ICM SWMM") that runs the SWMM5 dynamic wave [S17](../sources/S17-li-routing-options.md); this page compares SWMM 5 with the InfoWorks engine.
 
