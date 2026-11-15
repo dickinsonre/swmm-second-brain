@@ -2,7 +2,7 @@
 title: "SWMM5 & EPANET INP Explorer (app)"
 type: entity
 updated: 2026-11-15
-sources: [S105, S126, S132]
+sources: [S105, S126, S132, S133]
 tags: [apps, replit, swmm5, epanet, inp-files, reference]
 reviewed: no
 ---
@@ -27,5 +27,7 @@ Bob's Replit app SWMM5 & EPANET INP Explorer: a reference to the SWMM and EPANET
 **What it does not show.** Parser and builder interactions were not exercised. The production pages were not loaded; the page check used the Replit preview. The tracking service and its stored data were not inspected. The embedded history site was not checked. [S132](../sources/S132-swmm5-epanet-inp-explorer-replit-summary.md)
 
 **Noted at ingest.** The site address in the file is `swmm5epanetinpviewer.com`; its `file:` is swmm-inp-viewer--robertdickinson and the Replit project is SwmmInpViewer (Q77). It is not the [SWMM5 .inp File Viewer (app)](swmm5-inp-file-viewer.md) of [S105](../sources/S105-swmm5-inp-file-viewer-replit-summary.md), whose file is swmm-5-inp-reader. The `date:` is the day of the summary (Q75). The history site it embeds is the [SWMM Ecosystem (app)](swmm-ecosystem.md) [S126](../sources/S126-swmm-ecosystem-replit-summary.md). It was brought over after the seventeen on the concept page and is added there as a nineteenth row.
+
+**Added 15 November 2026: a third app with a like name.** [SWMM5 .inp File Interactive Viewer (app)](swmm5-inp-file-interactive-viewer.md) is another app again: a Streamlit page of data grids and statistics for an uploaded input file, at `swmm5filestats.com` [S133](../sources/S133-swmm5-inp-file-interactive-viewer-replit-summary.md).
 
 See [Replit apps: the second seventeen summaries](../concepts/replit-app-summaries-second-batch.md), [SWMM5 .inp File Viewer (app)](swmm5-inp-file-viewer.md), [SWMM5 INP MAKER (app)](swmm5-inp-maker.md), [SWMM Ecosystem (app)](swmm-ecosystem.md).

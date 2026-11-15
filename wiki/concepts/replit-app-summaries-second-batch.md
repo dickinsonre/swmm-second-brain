@@ -2,7 +2,7 @@
 title: "Replit apps: the second seventeen summaries"
 type: concept
 updated: 2026-11-15
-sources: [S114, S115, S116, S117, S118, S119, S120, S121, S122, S123, S124, S125, S126, S127, S128, S129, S130, S131, S132]
+sources: [S114, S115, S116, S117, S118, S119, S120, S121, S122, S123, S124, S125, S126, S127, S128, S129, S130, S131, S132, S133]
 tags: [apps, replit, verification, ai-agents]
 reviewed: no
 ---
@@ -10,29 +10,30 @@ Seventeen more of Bob's Replit apps got a technical summary from Replit Agent on
 
 **The apps**
 
-| App | Site name | Version | Replit project | Source |
-|---|---|---|---|---|
-| [SWMM5 MicroGPT (app)](../entities/swmm5-microgpt.md) | `micro-gpt-swmm` | 2 | MicroGPT SWMM | [S114](../sources/S114-swmm5-microgpt-replit-summary.md) |
-| [EPANET for SWMM5 Experts (app)](../entities/epanet-for-swmm5-experts.md) | `epanet-swmm-experts` | 1.0 | EPANET SWMM Experts | [S115](../sources/S115-epanet-for-swmm5-experts-replit-summary.md) |
-| [SWMM5 Explorer (app)](../entities/swmm5-explorer.md) | `swmm-explorer--robertdickinson` | 1.0.0 | SWMM Explorer | [S116](../sources/S116-swmm5-explorer-replit-summary.md) |
-| [BatchSWMM56 (app)](../entities/batchswmm56.md) | `batch-swmm-runner-robertdickinson` | 1.1.0 | BatchSWMMRunner | [S117](../sources/S117-batchswmm56-replit-summary.md) |
-| [SWMM and ICM St. Venant comparison (app)](../entities/swmm-icm-st-venant-app.md) | `swmm-icm-st-venant--robertdickinson` | 1.0.0 | SWMM ICM StVenant | [S118](../sources/S118-swmm5-vs-icm-infoworks-networks-replit-summary.md) |
-| [SWMM5 Rosetta Stone, also called Code Rosetta Stone (app)](../entities/code-rosetta-stone.md) | `code-rosetta-stone` | 1.0.0 | Code Rosetta Stone | [S119](../sources/S119-code-rosetta-stone-replit-summary.md) |
-| [ForceMain SWMM5 EPANET Comparison (app)](../entities/forcemain-swmm5-epanet-comparison.md) | `forcemainswmm5epanetcomparison.com` | 1.0 | ForceMain_SWMM5_EPANET_Comparison | [S120](../sources/S120-forcemain-swmm5-epanet-comparison-replit-summary.md) |
-| [Hindsight Prophet (app)](../entities/hindsight-prophet.md) | `hindsight-prophet-robertdickinson` | 1.0.0 | HindsightProphet | [S121](../sources/S121-hindsight-prophet-replit-summary.md) |
-| [SWMManywhere Explorer (app)](../entities/swmmanywhere-explorer.md) | `swmmanywhere-explorer` | 1.0.0 | Swmmanywhere Explorer | [S122](../sources/S122-swmmanywhere-explorer-replit-summary.md) |
-| [SWMM5 Modeler (app)](../entities/swmm5-modeler.md) | `mirofish-swmm` | 0.0.0 | Mirofish SWMM | [S123](../sources/S123-swmm5-modeler-replit-summary.md) |
-| [bobSWMM Auto Research (app)](../entities/bobswmm-auto-research.md) | `bob-swmm-auto-research` | 0.0.0 | BobSWMM Auto Research | [S124](../sources/S124-bobswmm-auto-research-replit-summary.md) |
-| [Kinematic Wave Router (app)](../entities/kinematic-wave-router.md) | `ruby-swmm-router` | 2026.11.15 | RubySwmmRouter | [S125](../sources/S125-kinematic-wave-router-replit-summary.md) |
-| [SWMM Ecosystem (app)](../entities/swmm-ecosystem.md) | `swmm-history-robertdickinson` | 1.0.0 | SwmmHistory | [S126](../sources/S126-swmm-ecosystem-replit-summary.md) |
-| [ICM InfoWorks release history (app)](../entities/icm-release-history-app.md) | `icm-new-view-robertdickinson` | 1.0.0 | ICMNewView | [S127](../sources/S127-icm-infoworks-release-history-replit-summary.md) |
-| [EPANET 2.3 Generator (app)](../entities/epanet-23-generator.md) | `epanet-swmm-5-generate` | 4.6 | EPANET SWMM5 Generate | [S128](../sources/S128-epanet-23-generator-replit-summary.md) |
-| [Historical Water Inventions (app)](../entities/historical-water-inventions.md) | `historical-mystery-robertdickinson` | 1.0.0 | HistoricalWaterInventions | [S129](../sources/S129-historical-water-inventions-replit-summary.md) |
-| [PySWMM Explorer (app)](../entities/pyswmm-explorer.md) | `pyswmm-explorer` | 1.0.0 | Pyswmm Explorer | [S130](../sources/S130-pyswmm-explorer-replit-summary.md) |
-| [SWMM5 Control Rule Editor (app)](../entities/swmm5-control-rule-editor.md) | `hydro-control` | 0.1.0 | SWMM5ControlRules | [S131](../sources/S131-swmm5-control-rule-editor-replit-summary.md) |
-| [SWMM5 & EPANET INP Explorer (app)](../entities/swmm5-epanet-inp-explorer.md) | `swmm5epanetinpviewer.com` | 1.0.0 | SwmmInpViewer | [S132](../sources/S132-swmm5-epanet-inp-explorer-replit-summary.md) |
+| App | Site name | Replit project | Source |
+|---|---|---|---|
+| [SWMM5 MicroGPT (app)](../entities/swmm5-microgpt.md) | `micro-gpt-swmm` | MicroGPT SWMM | [S114](../sources/S114-swmm5-microgpt-replit-summary.md) |
+| [EPANET for SWMM5 Experts (app)](../entities/epanet-for-swmm5-experts.md) | `epanet-swmm-experts` | EPANET SWMM Experts | [S115](../sources/S115-epanet-for-swmm5-experts-replit-summary.md) |
+| [SWMM5 Explorer (app)](../entities/swmm5-explorer.md) | `swmm-explorer--robertdickinson` | SWMM Explorer | [S116](../sources/S116-swmm5-explorer-replit-summary.md) |
+| [BatchSWMM56 (app)](../entities/batchswmm56.md) | `batch-swmm-runner-robertdickinson` | BatchSWMMRunner | [S117](../sources/S117-batchswmm56-replit-summary.md) |
+| [SWMM and ICM St. Venant comparison (app)](../entities/swmm-icm-st-venant-app.md) | `swmm-icm-st-venant--robertdickinson` | SWMM ICM StVenant | [S118](../sources/S118-swmm5-vs-icm-infoworks-networks-replit-summary.md) |
+| [SWMM5 Rosetta Stone, also called Code Rosetta Stone (app)](../entities/code-rosetta-stone.md) | `code-rosetta-stone` | Code Rosetta Stone | [S119](../sources/S119-code-rosetta-stone-replit-summary.md) |
+| [ForceMain SWMM5 EPANET Comparison (app)](../entities/forcemain-swmm5-epanet-comparison.md) | `forcemainswmm5epanetcomparison.com` | ForceMain_SWMM5_EPANET_Comparison | [S120](../sources/S120-forcemain-swmm5-epanet-comparison-replit-summary.md) |
+| [Hindsight Prophet (app)](../entities/hindsight-prophet.md) | `hindsight-prophet-robertdickinson` | HindsightProphet | [S121](../sources/S121-hindsight-prophet-replit-summary.md) |
+| [SWMManywhere Explorer (app)](../entities/swmmanywhere-explorer.md) | `swmmanywhere-explorer` | Swmmanywhere Explorer | [S122](../sources/S122-swmmanywhere-explorer-replit-summary.md) |
+| [SWMM5 Modeler (app)](../entities/swmm5-modeler.md) | `mirofish-swmm` | Mirofish SWMM | [S123](../sources/S123-swmm5-modeler-replit-summary.md) |
+| [bobSWMM Auto Research (app)](../entities/bobswmm-auto-research.md) | `bob-swmm-auto-research` | BobSWMM Auto Research | [S124](../sources/S124-bobswmm-auto-research-replit-summary.md) |
+| [Kinematic Wave Router (app)](../entities/kinematic-wave-router.md) | `ruby-swmm-router` | RubySwmmRouter | [S125](../sources/S125-kinematic-wave-router-replit-summary.md) |
+| [SWMM Ecosystem (app)](../entities/swmm-ecosystem.md) | `swmm-history-robertdickinson` | SwmmHistory | [S126](../sources/S126-swmm-ecosystem-replit-summary.md) |
+| [ICM InfoWorks release history (app)](../entities/icm-release-history-app.md) | `icm-new-view-robertdickinson` | ICMNewView | [S127](../sources/S127-icm-infoworks-release-history-replit-summary.md) |
+| [EPANET 2.3 Generator (app)](../entities/epanet-23-generator.md) | `epanet-swmm-5-generate` | EPANET SWMM5 Generate | [S128](../sources/S128-epanet-23-generator-replit-summary.md) |
+| [Historical Water Inventions (app)](../entities/historical-water-inventions.md) | `historical-mystery-robertdickinson` | HistoricalWaterInventions | [S129](../sources/S129-historical-water-inventions-replit-summary.md) |
+| [PySWMM Explorer (app)](../entities/pyswmm-explorer.md) | `pyswmm-explorer` | Pyswmm Explorer | [S130](../sources/S130-pyswmm-explorer-replit-summary.md) |
+| [SWMM5 Control Rule Editor (app)](../entities/swmm5-control-rule-editor.md) | `hydro-control` | SWMM5ControlRules | [S131](../sources/S131-swmm5-control-rule-editor-replit-summary.md) |
+| [SWMM5 & EPANET INP Explorer (app)](../entities/swmm5-epanet-inp-explorer.md) | `swmm5epanetinpviewer.com` | SwmmInpViewer | [S132](../sources/S132-swmm5-epanet-inp-explorer-replit-summary.md) |
+| [SWMM5 .inp File Interactive Viewer (app)](../entities/swmm5-inp-file-interactive-viewer.md) | `swmm5filestats.com` | SWMM5NetworkAnalyzer | [S133](../sources/S133-swmm5-inp-file-interactive-viewer-replit-summary.md) |
 
-Site names are `.replit.app` names except the two given in full. The last two rows came after the seventeen and are not in the counts below.
+Site names are `.replit.app` names except the three given in full. Versions are on the app pages. The last three rows came after the seventeen and are not in the counts below.
 
 **In common.** None records a human review [S114](../sources/S114-swmm5-microgpt-replit-summary.md) [S130](../sources/S130-pyswmm-explorer-replit-summary.md). Checks were made on the development copy; where one looked at the published site, its API answered 404 [S119](../sources/S119-code-rosetta-stone-replit-summary.md).
 
