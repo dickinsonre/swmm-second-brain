@@ -4,7 +4,7 @@ type: concept
 updated: 2026-11-14
 sources: [S61, S64]
 tags: [cost-allocation, game-theory, method]
-reviewed: no
+reviewed: 2026-11-15
 ---
 How to split the cost of a joint water project so that no partner, and no group of partners, would do better alone. The subject of the 1982 paper by [James P. (Jim) Heaney](../entities/james-heaney.md) and Bob, and of the [Cost Allocation Game Theory Explorer (app)](../entities/cost-allocation-explorer.md) [S64](../sources/S64-li-heaney-1982-paper-cost-allocation-app.md).
 
