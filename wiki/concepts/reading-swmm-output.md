@@ -4,7 +4,7 @@ type: concept
 updated: 2026-11-14
 sources: [S03, S10, S22, S60, S69, S72]
 tags: [swmm5, output, reporting]
-reviewed: no
+reviewed: 2026-11-15
 ---
 A large share of "SWMM is wrong" questions come from comparing two honest numbers that measure different things [S22](../sources/S22-li-ten-problems.md).
 
