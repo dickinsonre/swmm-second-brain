@@ -4,7 +4,7 @@ type: concept
 updated: 2026-11-14
 sources: [S01, S08, S10, S17]
 tags: [hydraulics, swmm5, routing]
-reviewed: no
+reviewed: 2026-11-15
 ---
 SWMM5 has two routing methods simpler than [dynamic wave](dynamic-wave-routing.md) [S17](../sources/S17-li-routing-options.md).
 
