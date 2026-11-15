@@ -4,7 +4,7 @@ type: concept
 updated: 2026-11-14
 sources: [S70, S71]
 tags: [swmm5, translation, benchmarks, verification]
-reviewed: no
+reviewed: 2026-11-15
 ---
 On 12 November 2026 all twenty translations of EPA SWMM 5.2.4 were cloned at their listed commits, rebuilt on one machine and run again, for version 1.4 of the [SWMM Engine What If (app)](../entities/swmm-engine-what-if.md) [S70](../sources/S70-swmm-engine-what-if-app-md.md). It is the first time the [SWMM5 language translations](../entities/swmm5-language-ports.md) were all measured the same way. Claude ran it; no person has repeated it [S70](../sources/S70-swmm-engine-what-if-app-md.md).
 
