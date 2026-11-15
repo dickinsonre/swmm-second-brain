@@ -315,3 +315,8 @@ Counts: 144 of 392 raw files ingested, 244 queued.
 
 Bob sent five links. Two were new and were read out of the Replit editor and checked against a SHA-256 computed there: epanet-quizzer-robertdickinson-v1.0.0 (app name in the file: EPANET Quizzer) and ruby-script-ai-v0.1.0 (InfoWorks ICM Ruby Script Runner). Both match. One link to RubyScriptAI came twice. The RubySwmmRouter file hashed the same as `ruby-swmm-router-v2026.11.15.md` already here (S125), so nothing was added for it. The RubyMakerAI link is to `attached_assets/linkedin_article_rubymaker.md`, an article text with no front matter that is not among the LinkedIn articles in `raw/linkedin/`; it was read and hash-checked but not added, pending Bob's word on whether it was published. Queued, not ingested, on the branch `replit-summaries-7`.
 Counts: 144 of 394 raw files ingested, 246 queued.
+
+## [2026-11-15] raw | Bob's note: the OpenSWMM license is no longer MIT
+
+Bob wrote at 18:42: "OpenSWMM license has moved away from MIT". Filed in his words as raw/notes/openswmm-license-not-mit-2026-11-15.md and queued, to be ingested with the OpenSWMM Engine summary (open-swmm-core-v6.0.0-alpha.1), which says MIT. The wiki already gives Apache-2.0 for OpenSWMM `swmm6_rel` from several sources (S59, S69, S96 and the OpenSWMM 6 page); none of its pages says MIT for OpenSWMM. On the branch `replit-summaries-7`.
+Counts: 144 of 395 raw files ingested, 247 queued.
