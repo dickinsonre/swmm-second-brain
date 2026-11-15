@@ -140,3 +140,9 @@ Replit projects: ForceMain_SWMM5_EPANET_Comparison, HindsightProphet, Swmmanywhe
 Two of his links were for files already here. The Manual Search summary in Replit has the same SHA-256 as the raw file behind S101, and the St. Venant summary has the same SHA-256 as the copy queued earlier today. Neither changed.
 Counts: 113 of 370 raw files ingested, 253 queued. The README and the queue paragraph of the index carry the new counts; the overview keeps its count until the next ingest.
 Tools: `tools/manifest.py` now strips quotation marks from a `version:` value that is followed by a comment (`"0.0.0" # where it came from` was stored as `0.0.0"`).
+
+## [2026-11-15] raw | Two more Replit summaries brought over
+
+Bob sent a link for ICMNewView. While in Replit the agent looked again at the three projects that had shown no summary that morning and found one in EPANET SWMM5 Generate. Read out of the Replit editor and checked against a SHA-256 computed there: icm-new-view-robertdickinson-v1.0.0 (app name in the file: ICM InfoWorks) and epanet-swmm-5-generate-v4.6 (app name in the file: EPANET 2.3 Generator). Both match. Queued, not ingested. That makes fifteen Replit summaries waiting.
+HistoricalWaterInventions and Pyswmm Explorer still show no summary file name.
+Counts: 113 of 372 raw files ingested, 255 queued.
