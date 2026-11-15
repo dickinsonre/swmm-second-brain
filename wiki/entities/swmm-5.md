@@ -4,7 +4,7 @@ type: entity
 updated: 2026-11-14
 sources: [S02, S04, S08, S11, S15, S17, S19, S20, S21, S22, S41, S55, S59, S62, S67, S68, S70, S71, S72]
 tags: [swmm5, engine]
-reviewed: no
+reviewed: 2026-11-15
 ---
 The C rewrite of SWMM, first released as 5.0 build 001 on 29 October 2004 [S22](../sources/S22-li-ten-problems.md). Written and carried for about twenty years by Lewis A. Rossman of EPA [S22](../sources/S22-li-ten-problems.md), [S21](../sources/S21-li-edition-56-swmm-history.md). See [Lewis A. (Lew) Rossman](lew-rossman.md).
 
