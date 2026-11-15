@@ -4,7 +4,7 @@ type: entity
 updated: 2026-11-14
 sources: [S06, S07, S08, S22]
 tags: [swmm5org, publishing]
-reviewed: no
+reviewed: 2026-11-15
 ---
 Bob's WordPress site. [S22](../sources/S22-li-ten-problems.md) counts 1,700 or more posts there. His older blog, swmmfive.com, has more than 2,000 [S08](../sources/S08-swmm5org-topic-inside-swmm5.md).
 
