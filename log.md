@@ -146,3 +146,9 @@ Tools: `tools/manifest.py` now strips quotation marks from a `version:` value th
 Bob sent a link for ICMNewView. While in Replit the agent looked again at the three projects that had shown no summary that morning and found one in EPANET SWMM5 Generate. Read out of the Replit editor and checked against a SHA-256 computed there: icm-new-view-robertdickinson-v1.0.0 (app name in the file: ICM InfoWorks) and epanet-swmm-5-generate-v4.6 (app name in the file: EPANET 2.3 Generator). Both match. Queued, not ingested. That makes fifteen Replit summaries waiting.
 HistoricalWaterInventions and Pyswmm Explorer still show no summary file name.
 Counts: 113 of 372 raw files ingested, 255 queued.
+
+## [2026-11-15] raw | One more Replit summary brought over
+
+Bob sent a link for HistoricalWaterInventions. Read out of the Replit editor and checked against a SHA-256 computed there: historical-mystery-robertdickinson-v1.0.0 (app name in the file: Historical Water Inventions). It matches. Queued, not ingested. That makes sixteen Replit summaries waiting.
+Pyswmm Explorer still shows no summary file name.
+Counts: 113 of 373 raw files ingested, 256 queued.
