@@ -9,7 +9,7 @@ It is not a search index. Each source is read once and compiled into pages; a qu
 | Path | What |
 |---|---|
 | `raw/` | Sources. 313 files, about 1,060,000 words. Never edited. `raw/MANIFEST.csv` has a hash and a status for each |
-| `wiki/` | 182 pages, about 91,000 words: 89 sources, 45 concepts, 46 entities, an overview and an open-questions list |
+| `wiki/` | 186 pages, about 96,000 words: 89 sources, 49 concepts, 46 entities, an overview and an open-questions list |
 | `index.md` | Catalog of every page. Start here |
 | `log.md` | What was done and when |
 | `CLAUDE.md` | The schema: page rules and the three operations |
@@ -33,9 +33,9 @@ To read the wiki yourself, open the folder in Obsidian (the graph view shows hub
 
 ## State on 14 November 2026
 
-- 89 of 331 raw files ingested. The queue is in `index.md`.
-- 46 open questions in `wiki/open-questions.md`, and 3 settled. Several are contradictions between Bob's own articles.
-- No page has been reviewed by Bob. Every page says `reviewed: no` until he has read it.
+- 89 of 332 raw files ingested, one of them (the EPA hydraulics manual) in part. The queue is in `index.md`.
+- 60 open questions in `wiki/open-questions.md`, and 3 settled. Several are contradictions between Bob's own articles.
+- Bob has read all but 4 of the 186 pages (the 4 added on 15 November 2026). 27 pages carry text added after his review, each marked `changed_after_review:`. A page says `reviewed: no` until he has read it.
 
 ## What is not here
 

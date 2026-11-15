@@ -1,10 +1,11 @@
 ---
 title: Kinematic wave and steady flow routing
 type: concept
-updated: 2026-11-14
-sources: [S01, S08, S10, S17]
+updated: 2026-11-15
+sources: [S01, S08, S10, S17, S60]
 tags: [hydraulics, swmm5, routing]
 reviewed: 2026-11-15
+changed_after_review: "2026-11-15: one section added at the end, headed Added 15 November 2026, from the EPA hydraulics manual"
 ---
 SWMM5 has two routing methods simpler than [dynamic wave](dynamic-wave-routing.md) [S17](../sources/S17-li-routing-options.md).
 
@@ -21,3 +22,12 @@ SWMM5 has two routing methods simpler than [dynamic wave](dynamic-wave-routing.m
 **Where it started.** The Transport Block of [SWMM 1 (1971)](../entities/swmm-1.md) (1971) routed by kinematic wave, with Newton iteration on normalized flow-area tables for 12 conduit shapes [S01](../sources/S01-swmm1-engine-app-md.md).
 
 **How often it is asked.** "Kinematic or dynamic wave" tags 131 of Bob's 2,879 OpenSWMM thread titles [S10](../sources/S10-openswmm-top25-problems.md).
+
+**Added 15 November 2026: what the EPA hydraulics manual says.** From Chapters 2 and 4 of the primary document [S60](../sources/S60-epa-swmm5-reference-manual-vol2-hydraulics.md):
+- The limits, in the manual's words: directed acyclic networks only; a junction has at most one outlet link, which must be a conduit; a divider has two outlet conduits; a storage node may have any number of outlet links of any type; upstream conduit offsets are ignored except at storage nodes [S60](../sources/S60-epa-swmm5-reference-manual-vol2-hydraulics.md). Pumps, weirs and orifices work only from storage nodes [S60](../sources/S60-epa-swmm5-reference-manual-vol2-hydraulics.md); see [Pumps and pump curves](pumps-and-pump-curves.md), [Orifices](orifices.md) and [Weirs and outlets](weirs-and-outlets.md).
+- Conduits are routed in topologically sorted order, found once by Kahn's algorithm. A loop stops the program with an error [S60](../sources/S60-epa-swmm5-reference-manual-vol2-hydraulics.md). Flow dividers are active only under kinematic wave; under dynamic wave a divider is an ordinary junction [S60](../sources/S60-epa-swmm5-reference-manual-vol2-hydraulics.md).
+- The head reported at a non-storage node is set to the highest water elevation in the connected links, for reporting only [S60](../sources/S60-epa-swmm5-reference-manual-vol2-hydraulics.md).
+- It is unconditionally stable, so it does not use the variable time step [S60](../sources/S60-epa-swmm5-reference-manual-vol2-hydraulics.md). On the manual's 2,000 ft example it is stable at 120 s where dynamic wave needed 25 s [S60](../sources/S60-epa-swmm5-reference-manual-vol2-hydraulics.md).
+- Attenuation: the paragraph above, from Bob's article, says hydrographs are delayed and attenuated [S17](../sources/S17-li-routing-options.md). The manual's section 2.2 says kinematic wave solutions "show no attenuation, no dispersion, and some distortion", and its Table 2-1 answers "no" for hydrograph attenuation; its section 4.4 then reports "a very modest attenuation" on the example and names numerical diffusion as the cause [S60](../sources/S60-epa-swmm5-reference-manual-vol2-hydraulics.md). Q61 in [Open questions](../open-questions.md).
+- History: kinematic wave was in the 1971 release, with an enhancement to approximate backwater in subcritical flow. SWMM 5 dropped the enhancement for the classical formulation [S60](../sources/S60-epa-swmm5-reference-manual-vol2-hydraulics.md).
+- The network objects themselves are on [SWMM 5 network objects, boundary and initial conditions](swmm5-network-objects.md).

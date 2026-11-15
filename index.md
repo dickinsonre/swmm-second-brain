@@ -12,6 +12,10 @@ Every page in the wiki, one line each. An agent reads this first. Updated on eve
 Hydraulics
 - [Dynamic wave routing](wiki/concepts/dynamic-wave-routing.md): SWMM 5's node-link solution of the St. Venant equations, its inherited stability options, and why it tops the forum's problem list.
 - [Kinematic wave and steady flow routing](wiki/concepts/kinematic-wave-and-steady-flow.md): the two simpler routing methods, their dendritic limit, and which products have them.
+- [SWMM 5 network objects, boundary and initial conditions](wiki/concepts/swmm5-network-objects.md): the four node types, conduits, control settings, and how a run starts, from Chapter 2 of the EPA manual.
+- [Pumps and pump curves](wiki/concepts/pumps-and-pump-curves.md): five pump kinds, how a curve is read, and the rule that keeps an inlet node from going dry.
+- [Orifices](wiki/concepts/orifices.md): side and bottom orifices, coefficient 0.6, weir behavior when not submerged, and the surface area kept from the equivalent pipe.
+- [Weirs and outlets](wiki/concepts/weirs-and-outlets.md): weir kinds and coefficients (3.33, 2.5, 2.34 to 3.32), the corrected side weir exponent, submergence, surcharge, and rating-curve outlets.
 - [Preissmann slot and surcharge](wiki/concepts/preissmann-slot-and-surcharge.md): slot against EXTRAN surcharge; SLOT arrived in 5.1.013; the two reach different steady states (F-0001).
 - [Conduit lengthening](wiki/concepts/conduit-lengthening.md): storage that does not exist and that continuity does not flag (F-0007).
 - [Force main friction](wiki/concepts/force-main-friction.md): Manning 2.53, Hazen-Williams 3.21, Darcy-Weisbach 1.58 cfs for one 12 in pipe.
@@ -156,7 +160,7 @@ App summaries
 - [S88](wiki/sources/S88-speak-100-app-md.md) (2026-11-13): Speak 100, technical summary, v2026.11.13b.
 
 Manuals and reports (primary documents)
-- [S60](wiki/sources/S60-epa-swmm5-reference-manual-vol2-hydraulics.md) (2017-05): EPA SWMM Reference Manual, Volume II, Hydraulics, by L. A. Rossman. Read in part: section 1.1 and Chapter 3.
+- [S60](wiki/sources/S60-epa-swmm5-reference-manual-vol2-hydraulics.md) (2017-05): EPA SWMM Reference Manual, Volume II, Hydraulics, by L. A. Rossman. Read in part: section 1.1 and Chapters 2, 3, 4 and 6 (the raw file lacks pages 64 to 66 and 122).
 
 Notes and data
 - [S03](wiki/sources/S03-findings-register-format.md) (2026-10-09): findings register, format and twenty candidates.
@@ -235,9 +239,9 @@ Repository READMEs (SWMM5 translations)
 
 ## Queue
 
-238 raw files are queued: 212 LinkedIn articles, 19 manual files in `raw/manuals/` (8 EPA, USGS and FHWA documents not yet started, and 11 SWMM 4.4 documentation files), 4 swmm5.org topic pages, 2 SWMM 1 build notes and 1 file in `raw/apps/`. That one, `PyBME-issue-drafts.md`, is not an app summary and was left queued on purpose (Q56). Three more LinkedIn files are byte-identical copies of others and are marked `duplicate`. `raw/MANIFEST.csv` lists them all. Suggested next batches, in order:
+239 raw files are queued: 212 LinkedIn articles, 19 manual files in `raw/manuals/` (8 EPA, USGS and FHWA documents not yet started, and 11 SWMM 4.4 documentation files), 4 swmm5.org topic pages, 2 SWMM 1 build notes and 2 files in `raw/apps/`. One, `PyBME-issue-drafts.md`, is not an app summary and was left queued on purpose (Q56). The other, `st-venant-solver-rosetta-stone-v2.6.2.md`, is the newer version of an app already ingested at version 2.4.0 (S75); it was added on 15 November 2026 and bears on Q62. Three more LinkedIn files are byte-identical copies of others and are marked `duplicate`. `raw/MANIFEST.csv` lists them all. Suggested next batches, in order:
 
-0. The rest of the EPA hydraulics manual, a chapter at a time (S60 is read in part), then the 2006 quality assurance report and the SWMM 5.1 User's Manual. These are the primary documents; ingesting them first lets later articles be checked against them.
+0. The rest of the EPA hydraulics manual, a chapter at a time (S60: sections 1.2 to 1.5, Chapter 5, Chapter 7 and the appendices remain), then the 2006 quality assurance report and the SWMM 5.1 User's Manual. With them, the Rosetta Stone summary at version 2.6.2, which tests the pump rule of Q62. These are the primary documents; ingesting them first lets later articles be checked against them.
 1. The four remaining swmm5.org topic pages and the SWMM 1 build notes (small, and they complete themes 3 to 6).
 2. EXTRAN: the six test-file articles and Edition 38. Settles Q14.
 3. SWMM history: Edition 40, "SWMM1 to SWMM5 Documentation Archive", "Reviving 1988 SWMM4 Models with AI", "SWMM 44H Fortran Code".

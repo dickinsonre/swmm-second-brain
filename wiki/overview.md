@@ -5,9 +5,9 @@ updated: 2026-11-15
 sources: [S01, S04, S05, S06, S10, S19, S20, S22, S23, S24, S29, S35, S41, S43, S54, S55, S56, S57, S58, S59, S60, S61, S62, S63, S64, S65, S66, S67, S68, S69, S70, S71, S72, S74, S75, S76, S79, S80, S81, S82, S84, S85, S86]
 tags: [overview]
 reviewed: 2026-11-15
-changed_after_review: "2026-11-15: first paragraph, sections 1 to 6 and the missing-from-raw list updated for S73 to S89"
+changed_after_review: "2026-11-15: first paragraph, sections 1 to 6 and the missing-from-raw list updated for S73 to S89; later the same day, one bullet added to section 2 and the raw-file count changed to 332, for Chapters 2, 4 and 6 of S60"
 ---
-The state of the wiki after sixteen more app files were ingested on 15 November 2026, arranged by the six topics of [swmm5.org](entities/swmm5-org.md) [S06](sources/S06-swmm5org-topics-index.md). Eighty-nine of 331 raw files are ingested, one of them (the EPA hydraulics manual) in part. The wiki is deepest on SWMM's history, the insides of SWMM 5 and the translations of SWMM 5 and SWMM6; thin on ICM; and on SWMM6 it now holds measurements of the two solvers as well as the translations, though not their derivation.
+The state of the wiki after sixteen more app files were ingested on 15 November 2026, arranged by the six topics of [swmm5.org](entities/swmm5-org.md) [S06](sources/S06-swmm5org-topics-index.md). Eighty-nine of 332 raw files are ingested, one of them (the EPA hydraulics manual) in part. The wiki is deepest on SWMM's history, the insides of SWMM 5 and the translations of SWMM 5 and SWMM6; thin on ICM; and on SWMM6 it now holds measurements of the two solvers as well as the translations, though not their derivation.
 
 ## 1. SWMM history
 - The timeline from 1969 to 2026 is on [SWMM version history, 1969 to 2026](concepts/swmm-version-history.md), with four places where Bob's own articles disagree with each other or with primary documents.
@@ -20,6 +20,7 @@ The state of the wiki after sixteen more app files were ingested on 15 November 
 
 ## 2. Inside SWMM 5
 - Hydraulics: [Dynamic wave routing](concepts/dynamic-wave-routing.md), [Kinematic wave and steady flow routing](concepts/kinematic-wave-and-steady-flow.md), [Preissmann slot and surcharge](concepts/preissmann-slot-and-surcharge.md), [Conduit lengthening](concepts/conduit-lengthening.md), [Force main friction](concepts/force-main-friction.md).
+- Added 15 November 2026, from Chapters 2, 4 and 6 of the EPA hydraulics manual, the first pages here that rest on the primary document alone: [SWMM 5 network objects, boundary and initial conditions](concepts/swmm5-network-objects.md), [Pumps and pump curves](concepts/pumps-and-pump-curves.md), [Orifices](concepts/orifices.md), [Weirs and outlets](concepts/weirs-and-outlets.md) [S60](sources/S60-epa-swmm5-reference-manual-vol2-hydraulics.md). The manual says a pump's flow stays within its curve and also that a pump on a dry junction is set to the junction's inflow; which rule wins is Q62 [S60](sources/S60-epa-swmm5-reference-manual-vol2-hydraulics.md).
 - Hydrology: [Runoff surfaces and subarea routing](concepts/runoff-surfaces-and-subarea-routing.md), [Subcatchment width](concepts/subcatchment-width.md), [Infiltration methods](concepts/infiltration-methods.md), [RDII unit hydrographs (RTK)](concepts/rdii-unit-hydrographs.md).
 - Proposed changes to the engine: [Two-layer soil infiltration (SOIL2)](concepts/two-layer-infiltration.md), and five planned dynamic-wave fixes listed on [Dynamic wave routing](concepts/dynamic-wave-routing.md) [S55](sources/S55-swmm-brain-readme.md).
 - A candidate finding from Bob's first template note: [Green-Ampt Newton test order](concepts/green-ampt-newton-test-order.md), a convergence test placed one line too early in `infil.c`; status "working", not rerun [S67](sources/S67-note-green-ampt-newton-test-order.md).

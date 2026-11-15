@@ -257,3 +257,22 @@ After the merge: 68 of 182 pages reviewed by Bob, 22 of them changed since his r
 Before the merge Bob marked more pages reviewed on main, most of the source pages among them. Main was merged into the branch a second time with no conflict. Three more pages he had reviewed are changed by the ingest (SWMM 1 Engine (app), which is rewritten for version 3.13; EPA SWMM 5; SWMM App Complexity Meter) and now carry `changed_after_review:`.
 
 After the merge: 182 wiki pages, 141 reviewed by Bob, 25 of those changed since his review, 41 not yet reviewed. 331 raw files, 89 ingested, 238 queued. 56 questions open, 3 settled.
+
+## [2026-11-15] ingest | S60 continued: Chapters 2, 4 and 6 of the EPA hydraulics manual
+
+"Ingest the next batch", taken as item 0 of the suggested order in `index.md`: the EPA hydraulics manual, a chapter at a time. Read in full, from `raw/manuals/EPA_SWMM_VOLUME_II_HYDRAULICS.md`: Chapter 2 (the hydraulic model), Chapter 4 (kinematic wave) and Chapter 6 (pumps and regulators), about 12,900 words. Chapters 2 and 4 were taken in order; Chapter 6 was taken ahead of 5 because it is prose and procedure, and Chapter 5 is mostly geometry tables. Still unread: sections 1.2 to 1.5, Chapter 5, Chapter 7 and the appendices. S60 stays `coverage: partial`. No raw file changed status.
+
+Pages created (4, all `reviewed: no`): SWMM 5 network objects, boundary and initial conditions; Pumps and pump curves; Orifices; Weirs and outlets. A single regulators page came to 764 words and was split in two before it was kept.
+
+Pages changed (6, all reviewed by Bob, each now marked `changed_after_review:`): S60 (read list, coverage, 31 new claims, feeds); Kinematic wave and steady flow routing (one added section); Dynamic wave routing (one added sentence of links; the page was already over length, Q59); the overview (one bullet, raw count); open questions; plus `index.md` and the state lines of `README.md`, which still said 46 questions and no page reviewed.
+
+Found:
+- Q60, new: the raw file lacks pages 64 to 66 (the end of section 4.1 and all of 4.2, the kinematic wave solution method) and page 122 (section 6.3.6 and four steps of the weir summary). The page numbers in the converted text jump. Nothing in the wiki rests on the missing pages.
+- Q61, new: Bob's article says kinematic wave hydrographs are attenuated (S17); the manual says "no attenuation" in section 2.2 and Table 2-1, and "a very modest attenuation" from numerical diffusion in section 4.4.
+- Q62, new: section 6.1 says a pump's flow stays within its curve, and also that a pump on a non-storage node that would go dry is set to the node's inflow. It does not say which holds when the inflow is above the curve.
+- Q63, new: three wording slips in the converted text (an equation number in the storage-node side bar, "weirs" for orifices in 6.2.6, an equation number in 6.3.2), to check against the PDF.
+- Arithmetic checked: the constants of the pump energy equation (0.7457 and 8.814) are kilowatts per horsepower and 550/62.4. Equations are otherwise described in words, by rule 4 for long documents.
+
+Also added to `raw/apps/`, under the app-version rule and not ingested: `st-venant-solver-rosetta-stone-v2.6.2.md`, the summary of the version delivered on 14 November 2026 (S75 holds version 2.4.0). It describes a pump test deck that bears on Q62.
+
+After this ingest: 332 raw files, 89 ingested, 239 queued, 1 superseded, 3 duplicate. 186 wiki pages: 89 sources, 49 concepts, 46 entities, overview, open questions. 60 questions open, 3 settled. 4 pages not yet reviewed; 27 changed since Bob's review. Work is on branch `ingest-hydraulics-ch2-4-6`.
