@@ -102,3 +102,7 @@ Files: bob-swmm-info-v1.0.0, data-importer-robertdickinson-v1.0.0, fractal-swmm-
 Every one says in its body that Replit Agent wrote it on 15 November 2026 and that Bob has not reviewed it. None is ingested yet; all are queued.
 Held back, not committed: sewer-code-search-v1.0.0 (the app is a private deployment; waiting for Bob's say before it goes into a public repository).
 No summary found in two projects, where Replit Agent stopped and asked to switch to its paid Power mode: EPANET SWMM Experts and SWMM Explorer.
+
+## [2026-11-16] raw | sewer-code-search-v1.0.0 added on Bob's say
+
+Bob was asked whether the Sewer Code Search summary, held back on 15 November because the app is a private deployment, should go into the public repository. He answered yes. The file is now in `raw/apps/`, queued. Its SHA-256 matches the one computed inside Replit (e4ee62fd...d0bc). That makes 18 Replit summaries in this batch.
