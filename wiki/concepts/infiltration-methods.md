@@ -4,7 +4,7 @@ type: concept
 updated: 2026-11-14
 sources: [S01, S03, S08, S10, S15, S55, S59, S67]
 tags: [hydrology, swmm5, infiltration]
-reviewed: no
+reviewed: 2026-11-15
 ---
 SWMM5's infiltration methods, as named in its code [S15](../sources/S15-li-hydrology-code-story.md):
 
