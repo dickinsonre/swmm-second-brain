@@ -4,7 +4,7 @@ type: concept
 updated: 2026-11-14
 sources: [S01, S09, S21, S22]
 tags: [swmm-history, architecture]
-reviewed: no
+reviewed: 2026-11-15
 ---
 SWMM 1 to 4 ran as separate blocks joined by interface files. SWMM 5 is one engine reading one input file [S22](../sources/S22-li-ten-problems.md).
 
