@@ -4,7 +4,7 @@ type: entity
 updated: 2026-11-14
 sources: [S09, S10, S22, S59]
 tags: [openswmm, forum]
-reviewed: no
+reviewed: 2026-11-15
 ---
 The SWMM users' forum at openswmm.org. Bob has posted there since 1995 [S09](../sources/S09-openswmm-thread-list.md).
 
