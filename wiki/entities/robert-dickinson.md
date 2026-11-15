@@ -2,10 +2,10 @@
 title: Robert (Bob) Dickinson
 type: entity
 updated: 2026-11-15
-sources: [S07, S09, S11, S12, S18, S19, S21, S22, S23, S29, S41, S45, S55, S61, S63, S64, S84, S85]
+sources: [S07, S09, S11, S12, S18, S19, S21, S22, S23, S29, S41, S45, S55, S61, S63, S64, S84, S85, S90]
 tags: [people]
 reviewed: 2026-11-15
-changed_after_review: "2026-11-15: paragraph 'His record, counted' added"
+changed_after_review: "2026-11-15: paragraph 'His record, counted' added; later a paragraph headed Added 15 November 2026, in his words and others'"
 ---
 Author of every source in this wiki. Professional record only, as he has published it.
 
@@ -52,3 +52,5 @@ Author of every source in this wiki. Professional record only, as he has publish
 **Not in the wiki by rule.** Family, health and private life, though some sources mention them (CLAUDE.md, page rule 9).
 
 **His record, counted.** The [SWMM & ICM Knowledge Library (app)](swmm-icm-knowledge-library.md) catalogs his published work: 66 newsletter editions, 163 LinkedIn articles, 278 app entries and 243 GitHub repositories at its v70 [S84](../sources/S84-swmm-icm-knowledge-library-app-md.md). The [Bob Usefulness Index (app)](bob-usefulness-index.md) quotes from it 68 publications from 1980 to 2025 and 4,398 LinkedIn comments since September 2016, and scores his usefulness to modelers at 66 of 100 on a rubric he directed; he has not yet reviewed the individual scores [S85](../sources/S85-bob-usefulness-index-app-md.md).
+
+**Added 15 November 2026: in his words and others'.** In comments on a LinkedIn post Bob credits John Haestad with a year in Australia to work on the XP-EXTRAN update, and says his career would have been very different without it; Hubert Jenny recalls meeting him in Canberra in the early 1990s [S90](../sources/S90-note-swmm-anecdotes-linkedin-comments.md). E. R. R. Weaver credits him with adding "double pipes" to SWMM 3 for a phosphate plant [S90](../sources/S90-note-swmm-anecdotes-linkedin-comments.md). His LinkedIn headline that day began "SWMM since the 1977" [S90](../sources/S90-note-swmm-anecdotes-linkedin-comments.md), one more start date for Q06. These are recollections; they are collected on [Anecdotes of SWMM](../concepts/swmm-anecdotes.md).

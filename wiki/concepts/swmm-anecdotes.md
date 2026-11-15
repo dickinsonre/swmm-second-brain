@@ -1,0 +1,23 @@
+---
+title: Anecdotes of SWMM
+type: concept
+updated: 2026-11-15
+sources: [S90]
+tags: [history, recollections, people]
+reviewed: no
+---
+Short recollections of SWMM's history by people who were there, kept in their own words. They are memories, not documents: where one meets a manual, a listing or a dated release note, the document outranks it. Each is cited to the note it came from, and the note names who said it and where [S90](../sources/S90-note-swmm-anecdotes-linkedin-comments.md).
+
+**How Bob got to XP-EXTRAN.** Bob credits John Haestad with a year in Australia "to work on the XP-EXTRAN update". Haestad, he says, "of course" was "the XP-EXTRAN reseller with Jack Cook", and his own career "would have been so different without that trip" [S90](../sources/S90-note-swmm-anecdotes-linkedin-comments.md). Hubert Jenny recalls meeting Bob in Canberra in the early 1990s [S90](../sources/S90-note-swmm-anecdotes-linkedin-comments.md). The wiki's timeline has Bob as a developer of XP-SWMM at XP Software with no years given; see [Robert (Bob) Dickinson](../entities/robert-dickinson.md). The dynamic-wave block itself is on [EXTRAN](../entities/extran.md).
+
+**AutoCAD drainage models in the late 1980s.** Bob remembers Haestad as "so inventive in the late 80s" with AutoCAD drainage models, and asks whether they were mostly the HEC series [S90](../sources/S90-note-swmm-anecdotes-linkedin-comments.md). It is a question in the source, not an answer.
+
+**Double pipes for a phosphate plant.** E. R. R. Weaver started with SWMM on a Prime mainframe in the 1980s, after Bob had left punch cards, and says he "helped with SWMM3 revisions" while Bob was a graduate student at the University of Florida [S90](../sources/S90-note-swmm-anecdotes-linkedin-comments.md). He credits Bob: "You added the double pipes we needed in the phosphate plant" [S90](../sources/S90-note-swmm-anecdotes-linkedin-comments.md). A client he names as Gardinier would not have installed double 48 in HDPE pipes, he says, had the model not got "the backflows working through the ponds", and the flow reversals were the harder problem [S90](../sources/S90-note-swmm-anecdotes-linkedin-comments.md). Flow reversal is one of the things only [dynamic wave routing](dynamic-wave-routing.md) handles.
+
+**Reel tapes and card decks.** Weaver still has the reel tapes from those archives [S90](../sources/S90-note-swmm-anecdotes-linkedin-comments.md). Bob asked him for SWMM 3 card decks with the identifiers in columns 73 to 80, to build "a true runoff and transport 3" [S90](../sources/S90-note-swmm-anecdotes-linkedin-comments.md). That identification field is what the rebuilds of the 1971 and 1981 engines are transcribed and checked by; see [Verification against printed runs](verification-against-printed-runs.md) and [EXTRAN III Workbench (app)](../entities/extran-iii-workbench.md).
+
+**Unfinished business from 1979.** Bob hopes that with AI and SWMM6 he can "wrap up issues I remember from 1979" [S90](../sources/S90-note-swmm-anecdotes-linkedin-comments.md). Caleb Buahin thanks him for his "support and contributions" on SWMM6 [S90](../sources/S90-note-swmm-anecdotes-linkedin-comments.md); see [OpenSWMM 6 and HydroCouple](../entities/openswmm-6-and-hydrocouple.md).
+
+**Water that can be told what to do.** Saša Tomić: in EPANET there is "a very limited" ability to tell water what to do in a pressurized system, while "sewer rolls down the hill" [S90](../sources/S90-note-swmm-anecdotes-linkedin-comments.md). He started his own career on TU Delft's DUFLOW, which he calls the predecessor of SOBEK and D-HYDRO, and tested it in his graduate thesis [S90](../sources/S90-note-swmm-anecdotes-linkedin-comments.md).
+
+**Not in the sources yet.** The LinkedIn post these comments answer; the year of the Australian stay; what the "double pipes" were in the program and which version carried them. These are Q64 in [Open questions](../open-questions.md). More anecdotes are likely in the 212 queued LinkedIn articles and in the forum posts that are not yet in `raw/`.

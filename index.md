@@ -49,6 +49,7 @@ History
 - [SWMM version history, 1969 to 2026](wiki/concepts/swmm-version-history.md): dated timeline, 1969 to 2026, with the disagreements marked.
 - [Block architecture and interface files](wiki/concepts/block-architecture.md): the 1971 blocks, the interface tape, and what SWMM 5 unified.
 - [Engine speed, 1988 to 2024](wiki/concepts/engine-speed-1988-2024.md): the 54,060-fold claim and a check of its arithmetic.
+- [Anecdotes of SWMM](wiki/concepts/swmm-anecdotes.md): recollections in people's own words: the year in Australia for XP-EXTRAN, double pipes for a phosphate plant, reel tapes and card decks.
 - [Converting SWMM 5 models for older engines](wiki/concepts/converting-swmm5-models-for-older-engines.md): what three converters to 1971, 1981 and 2004 engines carry, approximate and drop.
 
 Measurement and method
@@ -171,6 +172,7 @@ Notes and data
 - [S67](wiki/sources/S67-note-green-ampt-newton-test-order.md) (2026-11-14): note, the Green-Ampt Newton loop tests its correction before applying it.
 - [S87](wiki/sources/S87-corpus-1729-readme.md) (2026-10-23): 1729-SWMM5-Models-2030, repository README and inventory.
 - [S89](wiki/sources/S89-note-corpus-name.md) (2026-11-15): note, what 1729 and 2030 stand for in the corpus name.
+- [S90](wiki/sources/S90-note-swmm-anecdotes-linkedin-comments.md) (2026-11-15): note, SWMM anecdotes from the comments on one of Bob's LinkedIn posts.
 
 The old swmm-brain repository
 - [S55](wiki/sources/S55-swmm-brain-readme.md) (2026-08-22): README: enhancements, apps, scripts, timeline.
