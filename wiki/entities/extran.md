@@ -1,8 +1,8 @@
 ---
 title: EXTRAN
 type: entity
-updated: 2026-11-14
-sources: [S05, S07, S08, S19, S20, S21, S22, S55, S60]
+updated: 2026-11-15
+sources: [S05, S07, S08, S19, S20, S21, S22, S55, S60, S74, S75, S76, S81]
 tags: [swmm-history, hydraulics, engine]
 reviewed: no
 ---
@@ -21,4 +21,10 @@ The Extended Transport block: SWMM's dynamic-wave hydraulics before SWMM 5, and 
 - Q14, settled by the EPA reference manual: EXTRAN arrived with SWMM 3 in 1981 [S60](../sources/S60-epa-swmm5-reference-manual-vol2-hydraulics.md), as [S55](../sources/S55-swmm-brain-readme.md) also has it. [S21](../sources/S21-li-edition-56-swmm-history.md), which gives SWMM 2 (1975), is the one in error. The October 1971 listing has no such block; see [SWMM 1 (1971)](swmm-1.md).
 - Q12, settled: EXTRAN was explicit and SWMM 5's descendant of it is implicit in time but uncoupled in space [S60](../sources/S60-epa-swmm5-reference-manual-vol2-hydraulics.md). See [Dynamic wave routing](../concepts/dynamic-wave-routing.md).
 
-**Not in the sources yet.** The EXTRAN equations and surcharge algorithm. Queued: six articles on the EXTRAN manual's test files (2024 to 2025) and Edition 38, "Seven Classic SWMM5 Hydraulics Test Files". The EXTRAN III workbench has no .md in `raw/apps/` yet.
+**Still not in the sources.** The EXTRAN manual's own derivation of the equations. Queued: six articles on the EXTRAN manual's test files (2024 to 2025) and Edition 38, "Seven Classic SWMM5 Hydraulics Test Files".
+
+**The 1981 program, from its listing.** EXTRAN III is the Extended Transport block of SWMM Version III, by Larry A. Roesner, Robert P. Shubinski and John A. Aldrich of Camp Dresser & McKee, user's manual of April 1981; the listing is dated 20-MAY-81 and has 15 program units [S74](../sources/S74-extran3-workbench-app-md.md). Its solver, TRANSX, is an explicit link-node solution by modified Euler, a half step then a full step, and treats a junction above 0.96 of the depth to its highest crown as surcharged. It holds 187 junctions and 187 links [S74](../sources/S74-extran3-workbench-app-md.md). Ten faults in the listing as printed are fixed in a second build of the [EXTRAN III Workbench (app)](extran-iii-workbench.md), which reproduces 2,253 of 2,424 printed 1981 values exactly [S74](../sources/S74-extran3-workbench-app-md.md).
+
+**In SWMM 4.** By SWMM 4.4H the Extran block carried three solvers, XROUTE, YROUTE and ZROUTE. SWMM 5 kept XROUTE's momentum terms and its surcharge rule [S75](../sources/S75-st-venant-rosetta-stone-app-md.md). See [EXTRAN's three solvers: XROUTE, YROUTE, ZROUTE](../concepts/extran-solvers-xroute-yroute-zroute.md) and [The crown cap at mid-pipe](../concepts/crown-cap-at-mid-pipe.md).
+
+**The manual examples in use.** Bob's apps run them constantly: Example 1 in six solvers [S75](../sources/S75-st-venant-rosetta-stone-app-md.md), Examples 1, 2, 7 and 80 beside a CFD solver [S76](../sources/S76-inside-the-network-cfd-app-md.md), and the 1981 engine on a Danish sewer in the [Bellinge (app)](bellinge-app.md) [S81](../sources/S81-bellinge-summary.md).

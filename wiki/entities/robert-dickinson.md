@@ -1,8 +1,8 @@
 ---
 title: Robert (Bob) Dickinson
 type: entity
-updated: 2026-11-14
-sources: [S07, S09, S11, S12, S18, S19, S21, S22, S23, S29, S41, S45, S55, S61, S63, S64]
+updated: 2026-11-15
+sources: [S07, S09, S11, S12, S18, S19, S21, S22, S23, S29, S41, S45, S55, S61, S63, S64, S84, S85]
 tags: [people]
 reviewed: no
 ---
@@ -49,3 +49,5 @@ Author of every source in this wiki. Professional record only, as he has publish
 - Q29. [S55](../sources/S55-swmm-brain-readme.md) gives "2005 to 2023, 18 years at Innovyze". [S11](../sources/S11-li-my-history-with-swmm.md) quotes the announcement of his joining in January 2008.
 
 **Not in the wiki by rule.** Family, health and private life, though some sources mention them (CLAUDE.md, page rule 9).
+
+**His record, counted.** The [SWMM & ICM Knowledge Library (app)](swmm-icm-knowledge-library.md) catalogs his published work: 66 newsletter editions, 163 LinkedIn articles, 278 app entries and 243 GitHub repositories at its v70 [S84](../sources/S84-swmm-icm-knowledge-library-app-md.md). The [Bob Usefulness Index (app)](bob-usefulness-index.md) quotes from it 68 publications from 1980 to 2025 and 4,398 LinkedIn comments since September 2016, and scores his usefulness to modelers at 66 of 100 on a rubric he directed; he has not yet reviewed the individual scores [S85](../sources/S85-bob-usefulness-index-app-md.md).

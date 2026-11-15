@@ -1,8 +1,8 @@
 ---
 title: SWMM Engines, Byte for Byte (app)
 type: entity
-updated: 2026-11-14
-sources: [S41, S70, S71]
+updated: 2026-11-15
+sources: [S41, S70, S71, S82]
 tags: [apps, swmm5, swmm6, translation, verification]
 reviewed: no
 ---
@@ -53,3 +53,5 @@ They have the app's own numbers 1 to 5 and no IDs in [The SWMM findings register
 **What it says it does not show.** "Identical to EPA means EPA's answers, right or wrong." One platform. 49 of the 480 models stop on an input error. No gate model that ran exercises streets and inlets, a climate file, or the USE interface files. No person has read the generated code line by line [S71](../sources/S71-swmm-engines-byte-for-byte-summary.md).
 
 **Open.** The public address nine-swmm5-engines-not-c.netlify.app serves an earlier build titled Nine SWMM5 Engines (Q45). See [Open questions](../open-questions.md).
+
+**One of the five, seen twice.** The `swmm5.c:1593` buffer was also found by the [Mirab Test Bench (app)](mirab-test-bench.md), as its finding P-1: `realpath()` writes into a 260-byte buffer [S82](../sources/S82-mirab-test-bench-summary.md).

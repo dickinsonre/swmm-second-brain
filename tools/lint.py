@@ -24,6 +24,7 @@ REQUIRED = {'source': ['title', 'type', 'raw', 'ingested', 'reviewed'],
             'entity': ['title', 'type', 'updated', 'sources', 'reviewed'],
             'synthesis': ['title', 'type', 'updated', 'reviewed']}
 unreviewed = 0
+rereview = []
 partial = []
 for p, t in texts.items():
     r = rel(p)
@@ -41,6 +42,8 @@ for p, t in texts.items():
                 errors.append('%s: raw file not found: %s' % (r, fm['raw']))
             if fm.get('reviewed', 'no') == 'no':
                 unreviewed += 1
+            elif fm.get('changed_after_review'):       # the agent added to a page Bob had already read
+                rereview.append(r)
             if ty == 'source' and fm.get('coverage') == 'partial':
                 partial.append(r)
     cites = 0
@@ -113,6 +116,8 @@ for p, t in texts.items():
 print('pages:', ', '.join('%s %d' % kv for kv in sorted(types.items())))
 print('raw files: %d ingested, %d queued' % (ingested, queued) + ''.join(', %d %s' % (v, k) for k, v in sorted(other.items()) if k not in ('ingested', 'queued')))
 print('open questions: %d   pages not yet reviewed by Bob: %d' % (open_q, unreviewed))
+if rereview:
+    print('pages changed after Bob reviewed them: %d (%s)' % (len(rereview), ', '.join(os.path.basename(x)[:-3] for x in sorted(rereview))))
 if partial:
     print('long documents read in part: %d (%s)' % (len(partial), ', '.join(os.path.basename(x)[:3] for x in partial)))
 for w in warns:

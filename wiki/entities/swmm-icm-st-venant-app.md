@@ -1,7 +1,7 @@
 ---
 title: SWMM and ICM St. Venant comparison (app)
 type: entity
-updated: 2026-11-14
+updated: 2026-11-15
 sources: [S20]
 tags: [apps, comparison, hydraulics]
 reviewed: no
@@ -16,5 +16,7 @@ Bob's Replit app that sets SWMM 5's and ICM's solutions of the St. Venant equati
 - A nine-question solver recommendation tool. The recommendation is always contextual, never that one solver is better everywhere.
 
 **What kind of evidence it is.** The article cites no run of either engine. The side-by-side hydrographs and typical error ranges come from the app's own calculations [S20](../sources/S20-li-edition-54-two-solvers.md). Until a source shows the app runs the real engines, its numbers on [SWMM 5 versus ICM InfoWorks](../concepts/swmm5-versus-icm-infoworks.md) are illustrations, not measurements.
+
+**Not to be confused with** the [St. Venant Solver Rosetta Stone (app)](st-venant-solver-rosetta-stone.md), a different app that compares SWMM 4, SWMM 5 and SWMM6 solvers by engine runs and does have a summary.
 
 **Not in the sources.** An app .md, a version number, a date built, test results. Adding the .md to `raw/apps/` would settle the question above.

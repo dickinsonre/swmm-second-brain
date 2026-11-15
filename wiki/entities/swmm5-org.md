@@ -1,8 +1,8 @@
 ---
 title: swmm5.org
 type: entity
-updated: 2026-11-14
-sources: [S06, S07, S08, S22]
+updated: 2026-11-15
+sources: [S06, S07, S08, S22, S84, S85]
 tags: [swmm5org, publishing]
 reviewed: no
 ---
@@ -24,3 +24,5 @@ Each topic page has the same sections: Start here, Try a tool, More apps, Work t
 **This wiki follows the same six themes.** See [Overview: what this wiki holds so far](../overview.md).
 
 **Not in raw yet.** The posts themselves. Only three of the seven topic documents are ingested; the other four are queued. A WordPress export of the site would be the largest single addition to `raw/`.
+
+**Counts from the Knowledge Library.** The [SWMM & ICM Knowledge Library (app)](swmm-icm-knowledge-library.md) holds 1,327 swmm5.org posts [S84](../sources/S84-swmm-icm-knowledge-library-app-md.md), described elsewhere as posted since 2009, with 19 posts so far in 2026 against 46 in 2025 [S85](../sources/S85-bob-usefulness-index-app-md.md). That is fewer than the 1,700 or more of [S22](../sources/S22-li-ten-problems.md) (Q54).

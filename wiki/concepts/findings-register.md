@@ -1,10 +1,11 @@
 ---
 title: The SWMM findings register
 type: concept
-updated: 2026-11-14
-sources: [S03, S04, S05, S59, S67, S71, S72]
+updated: 2026-11-15
+sources: [S03, S04, S05, S59, S67, S71, S72, S74, S75, S79, S80, S82, S83]
 tags: [findings, verification, method]
 reviewed: 2026-11-15
+changed_after_review: "2026-11-15: one paragraph added near the end, headed Added 15 November 2026"
 ---
 A numbered, dated record of what was checked and what came back, proposed in October 2026 because Bob's apps are safe on Netlify and GitHub while the findings exist only inside chat transcripts [S03](../sources/S03-findings-register-format.md).
 
@@ -39,3 +40,5 @@ A numbered, dated record of what was checked and what came back, proposed in Oct
 
 **Disagreements**
 - Q08. F-0008 counts 12 defects in hydra; [S05](../sources/S05-swmm5org-article-facts.md) counts 23 deviations. One review or two?
+
+**Added 15 November 2026.** The app summaries ingested today add more unregistered findings, each under its app's own IDs: thirty register items on the SWMM 4.4H, SWMM 5.2.4 and OpenSWMM 6 solvers, marked measured or read [S75](../sources/S75-st-venant-rosetta-stone-app-md.md); five pieces of hot start state, R-1 to R-5, and a run-duration defect, D-1 [S79](../sources/S79-teacher-forced-swmm-summary.md); nine channel findings, F1 to F9 [S80](../sources/S80-control-section-lab-summary.md); ten findings on SWMM5+, Mirab and EPA 5.2.4, S-1 to P-2 [S82](../sources/S82-mirab-test-bench-summary.md); two SWMM defaults and a file-system fault, D-1 to D-3 [S83](../sources/S83-people-as-pollutants-summary.md); and ten faults fixed in the 1981 EXTRAN listing [S74](../sources/S74-extran3-workbench-app-md.md). The labels collide: D-1 means three different things in three apps, and F1 to F9 look like this register's F-0001 series. None has a register ID (Q47). Pages that carry them: [The crown cap at mid-pipe](crown-cap-at-mid-pipe.md), [Hot start: what a restart loses](hot-start-restart-state.md), [Run duration floored to whole seconds](run-duration-floor.md), [WebAssembly builds against native builds](wasm-against-native-builds.md).

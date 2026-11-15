@@ -1,7 +1,7 @@
 ---
 title: SWMM5 Code House (app)
 type: entity
-updated: 2026-11-14
+updated: 2026-11-15
 sources: [S68, S71, S72]
 tags: [apps, swmm5, source-code, wasm, verification]
 reviewed: no
@@ -15,7 +15,7 @@ Bob's walkable 3D map of the [EPA SWMM 5](swmm-5.md) 5.2.4 source, with the engi
 **The engine inside** [S68](../sources/S68-swmm5-code-house-app-md.md)
 - A WebAssembly build of 5.2.4 from USEPA commit 7952ca8, Emscripten 3.1.51, taken from Bob's Seven SWMM Engines app. The build was not repeated for the house.
 - Against stored native 5.2.4 output on 78 corpus models: 78 inside the limits, 75 identical to the last stored digit, 801,567 of 805,991 values exactly equal, largest gap 2.4 % of one series' range.
-- The limits were set after the first comparison, and why three models differ was not traced.
+- The limits were set after the first comparison, and why three models differ was not traced. A candidate cause, the C math library, is on [WebAssembly builds against native builds](../concepts/wasm-against-native-builds.md) (Q55).
 
 **Checks** [S68](../sources/S68-swmm5-code-house-app-md.md)
 - 28 test scripts on the delivered file.

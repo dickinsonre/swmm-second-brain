@@ -4,7 +4,7 @@ Every page in the wiki, one line each. An agent reads this first. Updated on eve
 
 ## Start here
 - [Overview: what this wiki holds so far](wiki/overview.md): what the wiki holds so far, by Bob's six themes, and what is missing.
-- [Open questions](wiki/open-questions.md): 46 contradictions, doubtful numbers and gaps waiting for a source or for Bob, and 3 settled by a primary document.
+- [Open questions](wiki/open-questions.md): 56 contradictions, doubtful numbers and gaps waiting for a source or for Bob, and 3 settled by a primary document.
 - [Schema](CLAUDE.md): how the wiki is kept. [Log](log.md): what was done and when.
 
 ## Concepts
@@ -15,6 +15,11 @@ Hydraulics
 - [Preissmann slot and surcharge](wiki/concepts/preissmann-slot-and-surcharge.md): slot against EXTRAN surcharge; SLOT arrived in 5.1.013; the two reach different steady states (F-0001).
 - [Conduit lengthening](wiki/concepts/conduit-lengthening.md): storage that does not exist and that continuity does not flag (F-0007).
 - [Force main friction](wiki/concepts/force-main-friction.md): Manning 2.53, Hazen-Williams 3.21, Darcy-Weisbach 1.58 cfs for one 12 in pipe.
+- [EXTRAN's three solvers: XROUTE, YROUTE, ZROUTE](wiki/concepts/extran-solvers-xroute-yroute-zroute.md): SWMM 4.4H's three dynamic-wave solvers, what SWMM 5 kept, and how they compare on EXTRAN Example 1.
+- [The crown cap at mid-pipe](wiki/concepts/crown-cap-at-mid-pipe.md): why a pipe surcharged at one end is treated as partly full at mid-length, worth 17,497 to 20,560 ft³ of flooding on one example.
+- [OpenSWMM 6 solvers, measured](wiki/concepts/openswmm6-solvers-measured.md): the dynamic wave and finite-volume solvers beside SWMM 5.2.4 on an example, a channel and the Bellinge sewer.
+- [Hot start: what a restart loses](wiki/concepts/hot-start-restart-state.md): 0 of 282 stock restarts reproduce the run that wrote them; five pieces of state named.
+- [Run duration floored to whole seconds](wiki/concepts/run-duration-floor.md): one line of `project.c` that ends some runs a second early, met independently by two apps.
 
 Hydrology
 - [Runoff surfaces and subarea routing](wiki/concepts/runoff-surfaces-and-subarea-routing.md): three subareas, three routing options, and their ICM equivalents.
@@ -34,11 +39,13 @@ Reading and trusting results
 - [Verification against printed runs](wiki/concepts/verification-against-printed-runs.md): how the rebuilt 1971 and 1981 engines are scored against old printouts.
 - [The missing specification](wiki/concepts/the-missing-specification.md): four of the ten problems are one: no written, testable statement of what the engine does.
 - [SWMM 5 versus ICM InfoWorks](wiki/concepts/swmm5-versus-icm-infoworks.md): thirteen differences in one table.
+- [WebAssembly builds against native builds](wiki/concepts/wasm-against-native-builds.md): 59 of 449 models differ in the browser, all traced to the C math library; and ten builds of one engine.
 
 History
 - [SWMM version history, 1969 to 2026](wiki/concepts/swmm-version-history.md): dated timeline, 1969 to 2026, with the disagreements marked.
 - [Block architecture and interface files](wiki/concepts/block-architecture.md): the 1971 blocks, the interface tape, and what SWMM 5 unified.
 - [Engine speed, 1988 to 2024](wiki/concepts/engine-speed-1988-2024.md): the 54,060-fold claim and a check of its arithmetic.
+- [Converting SWMM 5 models for older engines](wiki/concepts/converting-swmm5-models-for-older-engines.md): what three converters to 1971, 1981 and 2004 engines carry, approximate and drop.
 
 Measurement and method
 - [The top 25 problems in 31 years of forum threads](wiki/concepts/forum-problems-top-25.md): what 2,879 forum threads were about, ranked.
@@ -74,7 +81,7 @@ Engines and programs
 - [swmm524-perched](wiki/entities/swmm524-perched.md): EPA 5.2.4 plus SOIL2, van Genuchten and STRUCT lines; byte-identical to 5.2.4 without them.
 
 Apps
-- [SWMM 1 Engine (app)](wiki/entities/swmm-1-engine-app.md): three engines in one page, version 3.6.
+- [SWMM 1 Engine (app)](wiki/entities/swmm-1-engine-app.md): three engines in one page, version 3.13.
 - [SWMM App Complexity Meter (app)](wiki/entities/swmm-app-complexity-meter.md): version 1.9.1, its checks and limits.
 - [SWMM and ICM St. Venant comparison (app)](wiki/entities/swmm-icm-st-venant-app.md): the Replit comparison app behind Edition 54.
 - [Claude chat archive (app)](wiki/entities/claude-chat-archive.md): 1,671 conversations and 800 apps as of 14 October 2026.
@@ -86,6 +93,20 @@ Apps
 - [SWMM Engine What If (app)](wiki/entities/swmm-engine-what-if.md): which language, for which job, by which road; version 1.4 re-ran all twenty SWMM 5 translations.
 - [SWMM Engines, Byte for Byte (app)](wiki/entities/swmm-engines-byte-for-byte.md): stored gate verdicts for eight SWMM 5 and six SWMM6 translations, and five EPA 5.2.4 defects.
 - [World Rainfall Pattern Painter (app)](wiki/entities/world-rainfall-pattern-painter.md): the Lovable design-storm generator; 339 patterns (3 High, 57 Medium, 279 Low confidence), 1,502 of 1,502 tests, version 3.2.0.
+- [EXTRAN III Workbench (app)](wiki/entities/extran-iii-workbench.md): the 1981 EXTRAN from its printed listing; 2,253 of 2,424 printed values exact; ten faults fixed.
+- [St. Venant Solver Rosetta Stone (app)](wiki/entities/st-venant-solver-rosetta-stone.md): six dynamic-wave solvers by source line and 1,157 engine runs, version 2.4.0.
+- [Inside the Network (app)](wiki/entities/inside-the-network-cfd.md): a particle CFD along one path of a SWMM 5 network, beside SWMM 5.2.4.
+- [Under Load (app)](wiki/entities/under-load.md): how far a design storm is from the next regime change; omega sweep; `.rpt` against `.out` flooding.
+- [Fractal SWMM5/SWMM6 Network Generator (app)](wiki/entities/fractal-swmm-generator.md): 22 fractal patterns to runnable test models, with a replayed build and a pipe-by-pipe audit.
+- [Teacher-Forced SWMM (app)](wiki/entities/teacher-forced-swmm.md): comparing two engine versions by restarting one from the other's state.
+- [Control Section Lab (app)](wiki/entities/control-section-lab.md): one steady channel; where SWMM 5 misses a choke and critical depth, and OpenSWMM 6's finite volume does not.
+- [Bellinge (app)](wiki/entities/bellinge-app.md): an open Danish sewer model through seven SWMM engines, 1981 to 2026.
+- [Mirab Test Bench (app)](wiki/entities/mirab-test-bench.md): Mirab's results against EPA SWMM 5.2.4; a first-pattern defect in SWMM5+.
+- [People as Pollutants (app)](wiki/entities/people-as-pollutants.md): a transit station as a SWMM 5 model, and two SWMM defaults it ran into.
+- [SWMM & ICM Knowledge Library (app)](wiki/entities/swmm-icm-knowledge-library.md): 9,964 records of Bob's published work in one searchable file.
+- [Bob Usefulness Index (app)](wiki/entities/bob-usefulness-index.md): a 100-point scorecard read from the library; baseline 66.
+- [Master SWMM PDF (app)](wiki/entities/master-swmm-pdf.md): 38 SWMM and rainfall-runoff documents, each tied to its citation by a file fingerprint.
+- [Speak 100 (app)](wiki/entities/speak-100.md): an eight-language speaking trainer; not a SWMM app.
 
 Data
 - [1729-SWMM5-Models-2030 (the corpus)](wiki/entities/corpus-1729.md): Bob's public model repository; 480 of its models are the translations' gate set.
@@ -118,6 +139,21 @@ App summaries
 - [S69](wiki/sources/S69-swmm6-code-house-app-md.md) (2026-11-11): SWMM6 Code House, technical summary, v1.2.1.
 - [S70](wiki/sources/S70-swmm-engine-what-if-app-md.md) (2026-11-12): SWMM Engine What If, technical summary, v1.4.
 - [S71](wiki/sources/S71-swmm-engines-byte-for-byte-summary.md) (2026-11-14): SWMM Engines, Byte for Byte, summary written from the page by Claude.
+- [S73](wiki/sources/S73-swmm1-engine-app-md-v3-13.md) (2026-11-13): SWMM 1 Engine, technical summary, v3.13; replaces S01 as the current one.
+- [S74](wiki/sources/S74-extran3-workbench-app-md.md) (2026-11-11): EXTRAN III Workbench, technical summary, v1.6.0.
+- [S75](wiki/sources/S75-st-venant-rosetta-stone-app-md.md) (2026-11-13): St. Venant Solver Rosetta Stone, technical summary, v2.4.0.
+- [S76](wiki/sources/S76-inside-the-network-cfd-app-md.md) (2026-11-12): Inside the Network, technical summary, v1.1.0.
+- [S77](wiki/sources/S77-under-load-app-md.md) (2026-11-11): Under Load, technical summary, v1.4.0.
+- [S78](wiki/sources/S78-fractal-swmm-generator-app-md.md) (2026-11-12): Fractal SWMM5/SWMM6 Network Generator, technical summary, v2.3.
+- [S79](wiki/sources/S79-teacher-forced-swmm-summary.md) (2026-10-25): Teacher-Forced SWMM v1.0, summary written from the page by Claude.
+- [S80](wiki/sources/S80-control-section-lab-summary.md) (2026-10-18): Control Section Lab v1.2, summary written from the page by Claude.
+- [S81](wiki/sources/S81-bellinge-summary.md) (2026-10-18): Bellinge v2.0, summary written from the page by Claude.
+- [S82](wiki/sources/S82-mirab-test-bench-summary.md) (2026-10-24): Mirab Test Bench v1.0, summary written from the page by Claude.
+- [S83](wiki/sources/S83-people-as-pollutants-summary.md) (2026-10-29): People as Pollutants v1.0.0, summary written from the page by Claude.
+- [S84](wiki/sources/S84-swmm-icm-knowledge-library-app-md.md) (2026-11-14): SWMM & ICM Knowledge Library, technical summary, artifact v70.
+- [S85](wiki/sources/S85-bob-usefulness-index-app-md.md) (2026-11-11): Bob Usefulness Index, technical summary, v2.2.
+- [S86](wiki/sources/S86-master-swmm-pdf-page-text.md) (2026-10-25): Master SWMM PDF, text of the page and its Doc essay.
+- [S88](wiki/sources/S88-speak-100-app-md.md) (2026-11-13): Speak 100, technical summary, v2026.11.13b.
 
 Manuals and reports (primary documents)
 - [S60](wiki/sources/S60-epa-swmm5-reference-manual-vol2-hydraulics.md) (2017-05): EPA SWMM Reference Manual, Volume II, Hydraulics, by L. A. Rossman. Read in part: section 1.1 and Chapter 3.
@@ -129,6 +165,8 @@ Notes and data
 - [S09](wiki/sources/S09-openswmm-thread-list.md) (2026-11-01): OpenSWMM thread list, 1995 to 2026.
 - [S10](wiki/sources/S10-openswmm-top25-problems.md) (2026-11-06): top 25 problems tagged from thread titles.
 - [S67](wiki/sources/S67-note-green-ampt-newton-test-order.md) (2026-11-14): note, the Green-Ampt Newton loop tests its correction before applying it.
+- [S87](wiki/sources/S87-corpus-1729-readme.md) (2026-10-23): 1729-SWMM5-Models-2030, repository README and inventory.
+- [S89](wiki/sources/S89-note-corpus-name.md) (2026-11-15): note, what 1729 and 2030 stand for in the corpus name.
 
 The old swmm-brain repository
 - [S55](wiki/sources/S55-swmm-brain-readme.md) (2026-08-22): README: enhancements, apps, scripts, timeline.
@@ -197,7 +235,7 @@ Repository READMEs (SWMM5 translations)
 
 ## Queue
 
-254 raw files are queued: 212 LinkedIn articles, 19 manual files in `raw/manuals/` (8 EPA, USGS and FHWA documents not yet started, and 11 SWMM 4.4 documentation files), 17 app files, 4 swmm5.org topic pages and 2 SWMM 1 build notes. Five of the 17 app files (Mirab Test Bench, Teacher-Forced SWMM, Control Section Lab, Bellinge, People as Pollutants) were written by Claude on 14 November 2026 from each app's page source, because those pages carry no summary; Bob should read them before they are ingested. Three more LinkedIn files are byte-identical copies of others and are marked `duplicate`. One queued app file, SWMM 1 Engine 3.13, is a newer version of an ingested one (3.6) and should go early; 3.12 is marked `superseded` and will not be ingested. `raw/MANIFEST.csv` lists them all. Suggested next batches, in order:
+238 raw files are queued: 212 LinkedIn articles, 19 manual files in `raw/manuals/` (8 EPA, USGS and FHWA documents not yet started, and 11 SWMM 4.4 documentation files), 4 swmm5.org topic pages, 2 SWMM 1 build notes and 1 file in `raw/apps/`. That one, `PyBME-issue-drafts.md`, is not an app summary and was left queued on purpose (Q56). Three more LinkedIn files are byte-identical copies of others and are marked `duplicate`. `raw/MANIFEST.csv` lists them all. Suggested next batches, in order:
 
 0. The rest of the EPA hydraulics manual, a chapter at a time (S60 is read in part), then the 2006 quality assurance report and the SWMM 5.1 User's Manual. These are the primary documents; ingesting them first lets later articles be checked against them.
 1. The four remaining swmm5.org topic pages and the SWMM 1 build notes (small, and they complete themes 3 to 6).

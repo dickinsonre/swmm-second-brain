@@ -1,10 +1,11 @@
 ---
 title: Matching glibc math in a translation
 type: concept
-updated: 2026-11-14
-sources: [S23, S24, S27, S28, S30, S32, S33, S34, S35, S41, S44, S51, S52, S54, S70]
+updated: 2026-11-15
+sources: [S23, S24, S27, S28, S30, S32, S33, S34, S35, S41, S44, S51, S52, S54, S70, S82]
 tags: [translation, numerics, verification]
 reviewed: 2026-11-15
+changed_after_review: "2026-11-15: one paragraph added near the end, headed Added 15 November 2026"
 ---
 A byte-for-byte translation needs every math function to return the same bits as the one the original engine calls. The SWMM6 C++ engine calls glibc 2.39's math library; the SWMM6 ports use 19 of its functions [S24](../sources/S24-swmm6-go-readme.md). The ports took two routes.
 
@@ -21,5 +22,7 @@ A byte-for-byte translation needs every math function to return the same bits as
 **How each route is proved.** Each translated function is tested against the system's glibc 2.39 on about a million arguments, special values and NaN payloads included, with no difference. The READMEs call that "a test, not a proof" [S24](../sources/S24-swmm6-go-readme.md). The math tests of each newer port are kept in its `results/libm_tests.txt` [S30](../sources/S30-swmm6-kotlin-readme.md).
 
 **Not in the sources.** The trade between the routes: route 1 gives an engine that carries its own math; route 2 is less code, but its result is only as fixed as the glibc it runs on. Why glibc and not another C library: the reference engine was built on Linux with glibc, so glibc's last-bit choices are the ones to match. The SWMM6 C# and Fortran READMEs do not say which route those ports took [S23](../sources/S23-swmm6-csharp-readme.md) [S27](../sources/S27-swmm6-fortran-readme.md).
+
+**Added 15 November 2026.** The same problem appears without any translation, between a native build and a WebAssembly build of the same C. In one census 59 of 449 models gave different `.out` files in the browser than in a native glibc build, and all 59 matched a native build linked against musl [S82](../sources/S82-mirab-test-bench-summary.md). See [WebAssembly builds against native builds](wasm-against-native-builds.md).
 
 See [Byte-for-byte gate](byte-for-byte-gate.md), [SWMM6 language translations](../entities/swmm6-language-ports.md).

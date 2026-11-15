@@ -1,8 +1,8 @@
 ---
 title: 1729-SWMM5-Models-2030 (the corpus)
 type: entity
-updated: 2026-11-14
-sources: [S23, S29, S30, S35, S41, S42, S43, S45, S52, S54]
+updated: 2026-11-15
+sources: [S23, S29, S30, S35, S41, S42, S43, S45, S52, S54, S74, S87, S89, S75, S79]
 tags: [corpus, verification, swmm5, swmm6]
 reviewed: no
 ---
@@ -20,6 +20,14 @@ Bob's public repository of SWMM5 models, https://github.com/SWMMBobSWMM6/1729-SW
 
 **Heavy decks.** `Hydrology/sewer_rdii_problem.inp` allocates 3.38 GB of RDII rainfall history in EPA [S42](../sources/S42-swmm5-kotlin-readme.md): 613 unit hydrographs, a 9,900-hour base, a 60-second rain interval, 375 million values EPA almost never touches [S54](../sources/S54-swmm5-r-readme.md). EPA takes 34.8 s on `SCANLON.inp` and 38.6 s on `72_H&H_Elements(2).inp`, its two longest [S45](../sources/S45-swmm5-ruby-readme.md); the second routes a dry year at a 10 s step before its 36-hour storm [S52](../sources/S52-swmm5-hy-readme.md).
 
-**Not in the sources.** What "1729" and "2030" stand for.
+**The name.** The 2030 is for Bob's plans for SWMM in the year 2030, when he will be 75. The 1729 is for Ramanujan the mathematician [S89](../sources/S89-note-corpus-name.md). Bob gave this on 15 November 2026 in answer to this page, which had listed it as not in the sources.
+
+**Inventory, from its README** [S87](../sources/S87-corpus-1729-readme.md). A local inventory of 23 October 2026 counts 22,208 files and 15,977 MB in 44 top-level folders: 4,540 `.inp`, 4,099 `.rpt`, 3,461 `.out` and 4,029 `.md` files. The largest folder by count is XPSWMM, 1,859 models converted from XPSWMM with the XPSWMM Card Reader. The README warns that `.inp` totals "are file counts, not counts of distinct networks or passing tests".
+
+**Added 23 October 2026** [S87](../sources/S87-corpus-1729-readme.md). Three folders: 40 EPA, PySWMM and swmm-python test models found missing by comparing file content; the 351 reproducer decks of the HydroCouple swmm-code-review, of which 11 crash or hang EPA SWMM 5.2.4; and 335 input files from the OpenSWMM engine repository, of which 250 need OpenSWMM 6. Before them, 53 of the review's input-reachable findings had no model in the corpus. See [What the gate cannot see](../concepts/gate-blind-spots.md).
+
+**License.** The repository-level dedication is The Unlicense, but the README says named or contributed folders "require provenance checks before redistribution" and that the two OpenSWMM folders are Apache-2.0 material [S87](../sources/S87-corpus-1729-readme.md).
+
+**Other users of it.** The [EXTRAN III Workbench (app)](extran-iii-workbench.md) ran 257 models of a corpus it names SWMMEnablement/1729-SWMM5-Models [S74](../sources/S74-extran3-workbench-app-md.md); whether that repository and this one hold the same files is Q51. The Workbench's 164 SWMM 4 decks and the [St. Venant Solver Rosetta Stone (app)](st-venant-solver-rosetta-stone.md)'s Example 1 deck come from this repository's `january5_2003_examples` folder [S74](../sources/S74-extran3-workbench-app-md.md), [S75](../sources/S75-st-venant-rosetta-stone-app-md.md); [Teacher-Forced SWMM (app)](teacher-forced-swmm.md) takes its sample models from it [S79](../sources/S79-teacher-forced-swmm-summary.md).
 
 See [Byte-for-byte gate](../concepts/byte-for-byte-gate.md), [SWMM6 language translations](swmm6-language-ports.md).

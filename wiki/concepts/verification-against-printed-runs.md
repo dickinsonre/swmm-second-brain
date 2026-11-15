@@ -1,10 +1,11 @@
 ---
 title: Verification against printed runs
 type: concept
-updated: 2026-11-14
-sources: [S01, S05, S07]
+updated: 2026-11-15
+sources: [S01, S05, S07, S73, S74]
 tags: [verification, method, swmm-history]
 reviewed: 2026-11-15
+changed_after_review: "2026-11-15: one paragraph added near the end, headed Added 15 November 2026"
 ---
 How Bob's rebuilt historical engines are checked: type the printed program listing back in, compile it, feed it the decks printed in the old manuals, and score the output number by number against the old printouts [S01](../sources/S01-swmm1-engine-app-md.md). SWMM 1 and EXTRAN III were rebuilt this way from printed listings; SWMM 4.4H came from its Fortran source [S07](../sources/S07-swmm5org-topic-swmm-history.md).
 
@@ -35,5 +36,7 @@ How Bob's rebuilt historical engines are checked: type the printed program listi
 - For SWMM 1, no person has compared 10,889 of the cards with the page images.
 
 **EXTRAN III.** Bob's notes say each run of the workbench is scored value by value against the printed 1981 output, the SWMM5-to-EXTRAN converter was run against SWMM 5.2.4 on 259 models, and 139 doubtful listing lines are not yet confirmed against page images [S05](../sources/S05-swmm5org-article-facts.md). These figures were copied from his notes and not re-verified.
+
+**Added 15 November 2026.** Two newer summaries update this page. The SWMM 1 Engine is now at version 3.13 with the same six scores; its current source is [S73](../sources/S73-swmm1-engine-app-md-v3-13.md). The EXTRAN III figures no longer rest on Bob's notes alone: the [EXTRAN III Workbench (app)](../entities/extran-iii-workbench.md) summary reports 2,253 of 2,424 printed 1981 values exact with the browser engine (92.9 %), 98.4 % counting last-digit and OCR-confusion differences, and 2,260 exact with a native gfortran build [S74](../sources/S74-extran3-workbench-app-md.md). It gives the converter's corpus as 257 models where the notes above say 259 (Q51), and repeats that the 139 doubtful listing lines are unchecked by any person [S74](../sources/S74-extran3-workbench-app-md.md). Running modern models on these old engines is on [Converting SWMM 5 models for older engines](converting-swmm5-models-for-older-engines.md).
 
 See [SWMM 1 (1971)](../entities/swmm-1.md), [SWMM 1 Engine (app)](../entities/swmm-1-engine-app.md), [EXTRAN](../entities/extran.md), [Continuity is not validation](continuity-is-not-validation.md).

@@ -1,10 +1,11 @@
 ---
 title: SWMM version history, 1969 to 2026
 type: concept
-updated: 2026-11-14
-sources: [S01, S07, S11, S12, S19, S20, S21, S22, S55, S60, S63]
+updated: 2026-11-15
+sources: [S01, S07, S11, S12, S19, S20, S21, S22, S55, S60, S63, S86]
 tags: [swmm-history, timeline]
 reviewed: 2026-11-15
+changed_after_review: "2026-11-15: one paragraph added near the end, headed Added 15 November 2026"
 ---
 The timeline as the ingested sources give it. Where two sources differ, both are shown.
 
@@ -62,3 +63,5 @@ There were 42 builds of SWMM 5 from 5.0.001 to 5.2.4 [S22](../sources/S22-li-ten
 - Q29. Bob's years at Innovyze: from 2005 [S55](../sources/S55-swmm-brain-readme.md) or from January 2008 [S11](../sources/S11-li-my-history-with-swmm.md).
 
 Pages for the versions: [SWMM 1 (1971)](../entities/swmm-1.md), [EXTRAN](../entities/extran.md), [EPA SWMM 5](../entities/swmm-5.md), [OpenSWMM 6 and HydroCouple](../entities/openswmm-6-and-hydrocouple.md). Cited once here: [S20](../sources/S20-li-edition-54-two-solvers.md).
+
+**Added 15 November 2026.** On the manuals themselves, from the [Master SWMM PDF (app)](../entities/master-swmm-pdf.md) essay [S86](../sources/S86-master-swmm-pdf-page-text.md): SWMM's EPA user's manuals are dated 1971, 1975, 1981 and 1988, each an edited descendant of the one before. The 1988 manual was printed twice; the October 1992 second printing changed the title page, the disclaimer, the preface and pages 23, 28 to 32, 124, 220 to 221 and 375 to 377a, and its new preface sends readers to `.DOC` files on the distribution disks for options the book never described. This is the first source here with something dated 1992, which bears on Q17. The essay is AI-written and its citations have not been checked by a person. On SWMM 4.4H's three hydraulic solvers see [EXTRAN's three solvers: XROUTE, YROUTE, ZROUTE](extran-solvers-xroute-yroute-zroute.md).

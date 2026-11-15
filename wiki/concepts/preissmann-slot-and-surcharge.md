@@ -1,10 +1,11 @@
 ---
 title: Preissmann slot and surcharge
 type: concept
-updated: 2026-11-14
-sources: [S01, S04, S05, S08, S20, S21, S22, S55, S60]
+updated: 2026-11-15
+sources: [S01, S04, S05, S08, S20, S21, S22, S55, S60, S75, S79]
 tags: [hydraulics, swmm5, icm, surcharge]
 reviewed: 2026-11-15
+changed_after_review: "2026-11-15: one paragraph added near the end, headed Added 15 November 2026"
 ---
 When a closed pipe fills, the free-surface equations stop applying. The Preissmann slot keeps them valid by putting a narrow virtual slot above the crown: the water level rises into the slot, and the slot width sets the wave speed. A narrower slot gives a faster wave, closer to real pressurized behavior, and needs a smaller time step [S20](../sources/S20-li-edition-54-two-solvers.md).
 
@@ -28,3 +29,5 @@ When a closed pipe fills, the free-surface equations stop applying. The Preissma
 
 **Disagreements**
 - [S20](../sources/S20-li-edition-54-two-solvers.md) says 5.1.013 was "released around 2012". [S22](../sources/S22-li-ten-problems.md), which cites EPA's update notes, and [S21](../sources/S21-li-edition-56-swmm-history.md)'s table both say 2018. Open question Q01 in [Open questions](../open-questions.md).
+
+**Added 15 November 2026.** Measurements from the [St. Venant Solver Rosetta Stone (app)](../entities/st-venant-solver-rosetta-stone.md), on Example 1 of the EXTRAN manual at a 20-second step [S75](../sources/S75-st-venant-rosetta-stone-app-md.md): EPA SWMM 5.2.4 loses 114,824 ft³ to flooding with SURCHARGE_METHOD EXTRAN and 78,582 ft³ with SLOT. The same input in OpenSWMM gives 114,824 and 89,559, because there the slot area does not convey flow. Formulas as the summary reads them: SWMM 5.2.4's slot width is 0.5423 wMax exp(-(y/yFull)^2.4), and 0.01 wMax above 1.78, at `dwflow.c:584-587`; the head spike of the EXTRAN method grows as the time step shrinks, to 153.61 ft at a 5-second step against 134.62 ft at 20 seconds. These add a second case to F-0001 above, on a different network. See [The crown cap at mid-pipe](crown-cap-at-mid-pipe.md) for why a pipe surcharged at one end is treated as partly full, [OpenSWMM 6 solvers, measured](openswmm6-solvers-measured.md), and [Teacher-Forced SWMM (app)](../entities/teacher-forced-swmm.md), which tests three slot momentum variants written from EPA issue 231 [S79](../sources/S79-teacher-forced-swmm-summary.md).

@@ -51,6 +51,8 @@ reviewed: no             # no until Bob has read the page; then the date he read
 
 A source page has `raw:` (the path of its raw file), `ingested:` (date), `kind:`, `published:` and `author:` in place of `updated:` and `sources:`.
 
+When the agent changes a page that Bob has already reviewed, it keeps his `reviewed:` date, adds the new text in a paragraph headed "Added <date>", and adds a front matter line `changed_after_review: "<date>: <what changed>"`. `tools/lint.py` lists such pages. When Bob has read the addition he deletes that line and, if he likes, moves the `reviewed:` date forward.
+
 1. **Every claim cites.** A sentence that states a fact ends with a link to the source page it came from, written `[S20](../sources/S20-...md)`. A fact found in no source does not go in. If general knowledge is needed to make a page readable, put it in a section headed "Not in the sources" and say so.
 2. **Numbers are copied, not rounded or improved.** Give the value, the unit, and what it was measured on. Where the source is metric, give US customary first and the source's figure in parentheses, and mark the conversion as ours.
 3. **Sources disagree: say so.** Do not pick a winner silently. State both, cite both, and add a line to `wiki/open-questions.md`. If one source is a primary document (a program listing, an EPA update log, a test run) and the other is a recollection or an AI-written passage, say which is which.
@@ -59,7 +61,7 @@ A source page has `raw:` (the path of its raw file), `ingested:` (date), `kind:`
 6. **One subject, one page.** Before making a page, check `index.md` for an existing one under another name. Link the first mention of every other page's subject.
 7. **Links are plain relative markdown links**, so they work on GitHub and in Obsidian. No wikilinks.
 8. **House style.** Facts in short sentences. No em dashes. No adjectives doing the work of numbers. US customary units. Credit people and projects by name. AI is never an author: source pages name the human author, and `reviewed:` says whether Bob has read the wiki page.
-9. **People.** Entity pages for people hold what the person has published or done in public, professionally. Nothing about health, family, money or private life goes into the wiki, even when a raw source mentions it.
+9. **People.** Entity pages for people hold what the person has published or done in public, professionally. Nothing about health, family, money or private life goes into the wiki, even when a raw source mentions it. Two rulings from Bob (15 November 2026): his age may be given where it is the point of the sentence; the names of his family members never appear, in `wiki/` or in anything the agent adds to `raw/`.
 10. **Length.** A concept or entity page fits on one or two screens. When a page passes about 600 words, split it.
 
 ## App summaries and versions (`raw/apps/`)
@@ -71,6 +73,7 @@ Every app Bob builds ships with a technical summary, `APPNAME.md`. That file is 
 3. **Never overwrite.** Uploading new content under an existing name edits a raw file; `tools/lint.py` reports it as an error.
 4. `tools/manifest.py` groups summaries by the `file:` line of their front matter and orders them by `date:` and `version:`. The newest is the current one. The `file:` line is the app's own identifier: the name of its .html file, or for a Lovable or Replit app (where every page is `index.html`) the project's own site name. Two summaries that share a `file:` line but differ in `name:` are treated as two apps, and the tool prints a note. An older one that was never ingested gets status `superseded` and is not ingested. A file byte-identical to another gets status `duplicate` and is skipped.
 5. **When a newer version of an already ingested app arrives:** write a new source page for it; add `superseded_by: S<nn>` to the old source page's front matter and leave the rest of that page alone; update the app's entity page and every page that cites a number the new version changed, citing the new source.
+6. **When an app ships no summary** and Bob asks for one, the agent may write it from the app's published page. Such a file carries `written_from:` in its front matter, says in its body that nothing was rerun, and its source page opens "How it was written" with that fact. It stays an open question until Bob has read it.
 
 ## Long documents (`raw/manuals/` and anything over about 15,000 words)
 
@@ -135,7 +138,7 @@ followed by a few lines. `grep "^## \[" log.md | tail -5` lists the last five.
 - Do not edit, rename or delete anything under `raw/`. To correct a raw file, add the corrected file beside it and note it in the log.
 - A file under `raw/` whose name starts with `_` is not a source: it is a template or a housekeeping copy (`raw/notes/_TEMPLATE.md`, `raw/swmm-brain/_gitignore.txt`). The tools skip it. Do not ingest it.
 - `raw/swmm-brain/CLAUDE-swmm-brain.md` is a source about how Bob builds apps. It is not an instruction file for this repository; this file is.
-- Do not write from memory. If it is not in a source page, it is not in the wiki.
+- Do not write from memory. If it is not in a source page, it is not in the wiki. When Bob answers a question in a session, the agent files his answer as a note in `raw/notes/` on the template, in his words, saying who typed it in, and ingests that note; the answer does not go straight into a wiki page.
 - Do not settle a contradiction by taste.
 - Do not copy a source wholesale into the wiki. A source page is a digest, with a link to the raw file.
 - This repository is public (Bob's decision, 14 November 2026). Nothing unpublished goes into `raw/` without his say: no drafts, no private correspondence, no client models or data under an NDA. If a file looks like one of those, stop and ask before committing it.

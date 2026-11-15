@@ -1,8 +1,8 @@
 ---
 title: SWMM 1 (1971)
 type: entity
-updated: 2026-11-14
-sources: [S01, S07, S21, S22, S60]
+updated: 2026-11-15
+sources: [S01, S07, S21, S22, S60, S73]
 tags: [swmm-history, swmm1, engine]
 reviewed: no
 ---
@@ -28,7 +28,7 @@ The first Storm Water Management Model, written from 1969 to 1971 by Metcalf & E
 | `HYDR 26`, `HYDR 51`-`55` | 200 elements cleared in arrays dimensioned 160 | Traced through blank COMMON: nothing corrupted in the f2c build |
 | `INDA314T` | Stability limit `0.75*L/SQRT(32.2*(R+2))` differs from the manual's printout | The manual example's 300 s step exceeds the listing's limit in 9 channels |
 
-All from [S01](../sources/S01-swmm1-engine-app-md.md). None has a register ID yet; see [The SWMM findings register](../concepts/findings-register.md).
+All from [S01](../sources/S01-swmm1-engine-app-md.md), and listed again unchanged at version 3.13 [S73](../sources/S73-swmm1-engine-app-md-v3-13.md), which adds that WSHED reads the rain histogram once per step at its middle (`WSHE 24`) and calls that "a method, not a fault". None has a register ID yet; see [The SWMM findings register](../concepts/findings-register.md).
 
 **Its mark on later versions.** The single subcatchment width goes back to SWMM 1's street models, in Bob's words [S22](../sources/S22-li-ten-problems.md). See [Subcatchment width](../concepts/subcatchment-width.md).
 

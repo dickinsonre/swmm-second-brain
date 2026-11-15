@@ -6,6 +6,7 @@ kind: app-md
 author: Robert Dickinson
 published: 2026-11-13
 ingested: 2026-11-14
+superseded_by: S73
 tags: [swmm-history, swmm1, verification]
 reviewed: no
 ---

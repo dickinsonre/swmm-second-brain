@@ -1,10 +1,11 @@
 ---
 title: SWMM 5 versus ICM InfoWorks
 type: concept
-updated: 2026-11-14
-sources: [S13, S14, S17, S20]
+updated: 2026-11-15
+sources: [S13, S14, S17, S20, S80]
 tags: [comparison, swmm5, icm]
 reviewed: 2026-11-15
+changed_after_review: "2026-11-15: one paragraph added near the end, headed Added 15 November 2026"
 ---
 Where the two engines differ, from the four comparison sources ingested so far. ICM also contains a SWMM network type ("ICM SWMM") that runs the SWMM5 dynamic wave [S17](../sources/S17-li-routing-options.md); this page compares SWMM 5 with the InfoWorks engine.
 
@@ -29,5 +30,7 @@ Where the two engines differ, from the four comparison sources ingested so far. 
 **Geometry.** The two compute the area, hydraulic radius and top width of a partly full circular pipe by different approximations; the flow difference is typically under 1 % [S20](../sources/S20-li-edition-54-two-solvers.md).
 
 **Not in the sources yet.** Most of Bob's SWMM5-and-ICM writing. Of the 216 queued LinkedIn articles, 139 name ICM or InfoWorks in the title, among them the 2023 "Top 100 Reasons" list.
+
+**Added 15 November 2026.** One app draws an "ICM rule" line beside SWMM 5 without running ICM: the steady profile that ICM's documented settings imply (a free outfall at the lesser of normal and critical depth, inertia phased out between a Lower Froude number of 0.8 and an Upper of 1.0, one water level per node). Its essay calls the line "a prediction waiting for a test in ICM", and no person has compared it with an ICM run [S80](../sources/S80-control-section-lab-summary.md). See [Control Section Lab (app)](../entities/control-section-lab.md). Like the comparison numbers questioned in Q16, it is not a run of ICM.
 
 See [InfoWorks ICM](../entities/infoworks-icm.md), [EPA SWMM 5](../entities/swmm-5.md), [Dynamic wave routing](dynamic-wave-routing.md), [Preissmann slot and surcharge](preissmann-slot-and-surcharge.md).

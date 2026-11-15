@@ -1,8 +1,8 @@
 ---
 title: SWMM App Complexity Meter (app)
 type: entity
-updated: 2026-11-14
-sources: [S01, S02]
+updated: 2026-11-15
+sources: [S01, S02, S73, S75]
 tags: [apps, measurement]
 reviewed: no
 ---
@@ -27,6 +27,6 @@ Bob's browser app that reads a program's source (one .html, a folder, a .zip or 
 
 **History.** Nine versions from 1.0.0 (31 October 2026) to 1.9.1. Five outside reviews, produced with ChatGPT and supplied by Bob, were each answered by reproducing the finding as a failing test before fixing it [S02](../sources/S02-complexity-meter-app-md.md).
 
-**Used by.** The SWMM 1 Engine's complexity box runs the same analyzer from the command line [S01](../sources/S01-swmm1-engine-app-md.md).
+**Used by.** The SWMM 1 Engine's complexity box runs the same analyzer from the command line [S01](../sources/S01-swmm1-engine-app-md.md); at v3.13 it reads 72.6 [S73](../sources/S73-swmm1-engine-app-md-v3-13.md). The St. Venant Solver Rosetta Stone page was handed to the meter page itself and reads 51.5 [S75](../sources/S75-st-venant-rosetta-stone-app-md.md).
 
 **Limits.** Routine counts come from pattern rules, not parsers. No license has been set for the meter. No person has checked the dimensions, the weights or the anchor's evidence item by item [S02](../sources/S02-complexity-meter-app-md.md).

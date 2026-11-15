@@ -1,10 +1,11 @@
 ---
 title: What the gate cannot see
 type: concept
-updated: 2026-11-14
-sources: [S39, S40, S41, S43, S44, S45, S47, S49, S50, S54]
+updated: 2026-11-15
+sources: [S39, S40, S41, S43, S44, S45, S47, S49, S50, S54, S87]
 tags: [verification, method, translation]
 reviewed: 2026-11-15
+changed_after_review: "2026-11-15: one paragraph added near the end, headed Added 15 November 2026"
 ---
 A [Byte-for-byte gate](byte-for-byte-gate.md) passes or fails a whole model. The SWMM5 translation READMEs record what it misses and what was added to cover the gaps.
 
@@ -24,5 +25,7 @@ A [Byte-for-byte gate](byte-for-byte-gate.md) passes or fails a whole model. The
 **Speed is not what it seems.** Groovy's gate took 1,114 s and, for the same code rebuilt, 792 s: "the load of the shared machine moves the gate's clock by that much" [S50](../sources/S50-swmm5-groovy-readme.md).
 
 **What no gate shows.** "That SWMM is right: identical to EPA means EPA's answers, good or bad. No observed data enter anywhere" [S41](../sources/S41-swmm5-go-readme.md). See [Continuity is not validation](continuity-is-not-validation.md).
+
+**Added 15 November 2026.** The corpus the gate draws on has been measured against a list of known defects. Before two folders were added on 23 October 2026, 53 of the input-reachable findings of the HydroCouple swmm-code-review (200 findings in all) had no model in the corpus, and 25 had only one to three. The review's 351 reproducer decks are now in the corpus; 11 of them crash or hang EPA SWMM 5.2.4 [S87](../sources/S87-corpus-1729-readme.md). Whether any of the 351 has joined the 480-model gate set is not in the sources. See [1729-SWMM5-Models-2030 (the corpus)](../entities/corpus-1729.md).
 
 See [SWMM5 language translations](../entities/swmm5-language-ports.md), [Where languages part from C](where-languages-part-from-c.md).

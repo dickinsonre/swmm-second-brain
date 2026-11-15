@@ -1,8 +1,8 @@
 ---
 title: OpenSWMM 6 and HydroCouple
 type: entity
-updated: 2026-11-14
-sources: [S02, S03, S04, S05, S21, S22, S23, S29, S59, S69, S72]
+updated: 2026-11-15
+sources: [S02, S03, S04, S05, S21, S22, S23, S29, S59, S69, S72, S75, S80, S81, S87]
 tags: [swmm6, engine, hydrocouple]
 reviewed: no
 ---
@@ -32,4 +32,8 @@ OpenSWMM 6 is the SWMM line developed at HydroCouple [S22](../sources/S22-li-ten
 
 **Builds on record.** Branch swmm6_rel, commit 13746831, licensed Apache-2.0: OpenSWMM 6.0.0-alpha.4 and the legacy engine 5.3.0-beta.3, both built to WebAssembly for the [Topsoil Recovery Check (app)](topsoil-recovery-check.md) and rebuilt byte-identical from the pinned sources with Zig 0.17.0 [S59](../sources/S59-topsoil-recovery-check-app-md.md).
 
-**Not in the sources yet.** How the solvers work (the sources name them but do not explain them), 2D beyond what the Rust translation covers, the GUI, the input format. Queued: "SWMM6 Code House" (2026-11-04, 4,427 words), "Forking without Drowning on GitHub for #SWMM6" (2026-08-14), the swmm5.org topic pages "Inside SWMM6" and "ICM InfoWorks and SWMM6".
+**The solvers, measured.** Three app summaries run its dynamic wave and finite-volume solvers beside EPA SWMM 5.2.4: on EXTRAN Example 1 [S75](../sources/S75-st-venant-rosetta-stone-app-md.md), on a steady channel [S80](../sources/S80-control-section-lab-summary.md) and on the Bellinge sewer across four tags from alpha.1 to swmm6_rel [S81](../sources/S81-bellinge-summary.md). With SWMM 5's options the dynamic wave reproduces SWMM 5; the finite-volume answer depends on its mesh. See [OpenSWMM 6 solvers, measured](../concepts/openswmm6-solvers-measured.md).
+
+**Its tests in Bob's corpus.** The 351 reproducer decks of the HydroCouple swmm-code-review and 335 input files from the engine repository were added to [1729-SWMM5-Models-2030 (the corpus)](corpus-1729.md) on 23 October 2026; 250 of the 335 need OpenSWMM 6 [S87](../sources/S87-corpus-1729-readme.md).
+
+**Not in the sources yet.** How the solvers are derived (the app summaries quote lines and results, not the manual), 2D beyond what the Rust translation covers, the GUI, the input format. Queued: "SWMM6 Code House" (2026-11-04, 4,427 words), "Forking without Drowning on GitHub for #SWMM6" (2026-08-14), the swmm5.org topic pages "Inside SWMM6" and "ICM InfoWorks and SWMM6".

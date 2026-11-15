@@ -209,3 +209,39 @@ Checked before commit: every number in the five files was searched for in its pa
 Noted while writing, for the ingest: the Bellinge essay's byline reads "Robert Dickinson, with Claude"; its section 9 cites Table 3 for numbers that are in Table 4; its test table is dated 19 October 2026 against a build record of 18 October. Each app keeps its own finding IDs (S, C, M, P; R and D; F1 to F9; D-1 to D-3), none mapped to the findings register. The Netlify pages of the five were not read.
 
 After this step: 330 raw files, 72 ingested, 254 queued, 1 superseded, 3 duplicate. Wiki pages unchanged at 144.
+
+## [2026-11-15] ingest | Sixteen app files and one note: S73 to S89
+
+Bob said "ingest the app summaries". Sixteen of the seventeen queued files in `raw/apps/` were read in full and ingested, SWMM 1 Engine v3.13 first. One note was added and ingested in the same pass.
+
+Sources written: S73 SWMM 1 Engine v3.13 (S01, for v3.6, now carries `superseded_by: S73`); S74 EXTRAN III Workbench v1.6.0; S75 St. Venant Solver Rosetta Stone v2.4.0; S76 Inside the Network v1.1.0; S77 Under Load v1.4.0; S78 Fractal SWMM5/SWMM6 Network Generator v2.3; S79 to S83, the five summaries Claude wrote from app pages on 14 November (Teacher-Forced SWMM, Control Section Lab, Bellinge, Mirab Test Bench, People as Pollutants); S84 SWMM & ICM Knowledge Library v70; S85 Bob Usefulness Index v2.2; S86 Master SWMM PDF (page text, not a summary); S87 the corpus README; S88 Speak 100; S89 a note on the corpus name.
+
+Not ingested, on purpose: `raw/apps/PyBME-issue-drafts.md`. It is not an app summary; it holds fourteen draft issues about another person's library. Left queued for Bob to decide (Q56).
+
+The note. While the ingest ran, Bob answered the corpus page's line "Not in the sources. What 1729 and 2030 stand for." Claude filed his answer as `raw/notes/corpus-name-1729-2030.md` on the note template, in his words, and ingested it as S89. One family detail in his message was left out of the public repository; Bob confirmed that, and ruled that his age may be given where it is the point and that family members' names never appear.
+
+Pages created (21). Entities: EXTRAN III Workbench, St. Venant Solver Rosetta Stone, Inside the Network, Under Load, Fractal SWMM5/SWMM6 Network Generator, Teacher-Forced SWMM, Control Section Lab, Bellinge, Mirab Test Bench, People as Pollutants, SWMM & ICM Knowledge Library, Bob Usefulness Index, Master SWMM PDF, Speak 100. Concepts: EXTRAN's three solvers (XROUTE, YROUTE, ZROUTE); The crown cap at mid-pipe; OpenSWMM 6 solvers, measured; Hot start: what a restart loses; Run duration floored to whole seconds; WebAssembly builds against native builds; Converting SWMM 5 models for older engines.
+
+Pages changed (25, with the overview, the open questions, the index and the README besides). Rewritten: SWMM 1 Engine (app). Entities added to: EXTRAN, the corpus, SWMM 1, EPA SWMM 5, OpenSWMM 6 and HydroCouple, OpenSWMM.org, swmm5.org, SWMM App Complexity Meter, SWMM5 Code House, SWMM and ICM St. Venant comparison, SWMM Engines Byte for Byte, Robert (Bob) Dickinson, Wayne C. Huber. Concepts added to, each with one paragraph headed "Added 15 November 2026": Verification against printed runs, App complexity index, The SWMM findings register, Dynamic wave routing, Preissmann slot and surcharge, Continuity is not validation, Reading SWMM output, Matching glibc math in a translation, What the gate cannot see, SWMM version history, SWMM 5 versus ICM InfoWorks.
+
+Those eleven concept pages had been reviewed by Bob on 14 and 15 November. His `reviewed:` dates are kept, and each page now carries `changed_after_review:` in its front matter.
+
+Schema changes (CLAUDE.md), each made in this ingest:
+- A page changed after Bob's review keeps its `reviewed:` date, gets the new text under "Added <date>", and gets a `changed_after_review:` line. `tools/lint.py` now lists such pages.
+- Page rule 9: Bob's age may be given where it is the point; family members' names never appear.
+- App rule 6: a summary the agent writes from an app's page carries `written_from:` and stays an open question until Bob reads it.
+- What not to do: an answer Bob gives in a session is filed as a note in `raw/notes/` and ingested, not written straight into a page.
+
+Contradictions and checks:
+- Q50, new, part settled by a lookup: the Rosetta Stone's "EPA SWMM 5.2.4" is commit 07c371f. `git ls-remote` against the USEPA repository on 15 November 2026 shows that is the head of branch develop; tag v5.2.4 is 7952ca8, which four other sources use.
+- Q51, new: the EXTRAN III converter ran 259 corpus models (S05) or 257 (S74), from a repository named differently from the corpus page's.
+- Q54, new: 1,327 swmm5.org posts (S84) against 1,700 or more (S22).
+- Q57, new: three different SWMM 5 files stand for EXTRAN Example 1 in three sources, with 114,824 and 114,210 ft3 of flooding in two of them.
+- Q55, new: two apps report unexplained browser-against-native differences that the Mirab bench's glibc-against-musl result may explain; neither was rerun.
+- Q52, Q53, Q56, Q58, Q59, new: five Claude-written summaries for Bob to read; small faults in app pages (among them an essay byline "Robert Dickinson, with Claude"); the PyBME file; what the complexity scale's anchor includes; four pages past the length limit.
+- Extended: Q16, Q17 (the 1988 manual's second printing is dated October 1992), Q18, Q38, Q47 (six more sets of app findings with colliding IDs), Q48.
+- Two findings met independently by two sources each: the run-duration floor in `project.c` (S76 and S79), and the 260-byte path buffer in `swmm5.c` (S71 and S82).
+
+Arithmetic checked at ingest is recorded on each source page. Numbers on the new pages were searched for in the raw files they cite; what was not found is arithmetic or a conversion marked as ours.
+
+After this ingest: 331 raw files, 89 ingested, 238 queued, 1 superseded, 3 duplicate. 182 wiki pages: 89 sources, 45 concepts, 46 entities, overview, open questions. 56 questions open, 3 settled. 38 pages reviewed by Bob, 11 of them changed since.

@@ -1,8 +1,8 @@
 ---
 title: OpenSWMM.org (the forum)
 type: entity
-updated: 2026-11-14
-sources: [S09, S10, S22, S59]
+updated: 2026-11-15
+sources: [S09, S10, S22, S59, S85]
 tags: [openswmm, forum]
 reviewed: no
 ---
@@ -38,3 +38,5 @@ Busiest years: 2019 with 291 threads, 2018 with 220, 2020 with 212 [S09](../sour
 **Why it matters.** [S22](../sources/S22-li-ten-problems.md) names the forum, with the SWMM-USERS list and SWMM5.org, as where "the real teaching lived", searchable but not organized, with Bob's 4,014 posts holding a large piece of it. The count in [S22](../sources/S22-li-ten-problems.md) matches the sum in [S09](../sources/S09-openswmm-thread-list.md).
 
 **Not in raw yet.** The full text of the posts. Bob has a 20 MB export; only the thread list is here. Until it is added, this wiki knows what was asked but not what was answered.
+
+**Counted again elsewhere.** The [Bob Usefulness Index (app)](bob-usefulness-index.md) quotes 2,744 threads answered and 135 started, which sum to the 2,879 above, and scores "Unblock a modeler" 4 of 5 on them. Its caution: "2,744 forum answers is not a count of problems solved"; the thread list holds dates, titles and names, not whether a fix worked [S85](../sources/S85-bob-usefulness-index-app-md.md).

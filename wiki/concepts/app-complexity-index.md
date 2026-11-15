@@ -1,10 +1,11 @@
 ---
 title: App complexity index (HydroCouple = 100)
 type: concept
-updated: 2026-11-14
-sources: [S01, S02]
+updated: 2026-11-15
+sources: [S01, S02, S73, S75]
 tags: [apps, measurement]
 reviewed: 2026-11-14
+changed_after_review: "2026-11-15: one paragraph added near the end, headed Added 15 November 2026"
 ---
 A number for how big and how tangled a modeling program's source is, on a scale where the HydroCouple GitHub organization is fixed at 100 [S02](../sources/S02-complexity-meter-app-md.md). Computed by the [SWMM App Complexity Meter (app)](../entities/swmm-app-complexity-meter.md).
 
@@ -44,3 +45,5 @@ Table from [S02](../sources/S02-complexity-meter-app-md.md).
 **What it does not mean.** The index is source footprint, not quality and not capability. It tracks size closely: rank correlation 0.87 with a tokens-only score across 55 repositories. No person has checked the choice of dimensions or weights [S02](../sources/S02-complexity-meter-app-md.md).
 
 **In use.** The SWMM 1 Engine's Doc has carried the index in a complexity box since version 3.6 [S01](../sources/S01-swmm1-engine-app-md.md).
+
+**Added 15 November 2026.** Two more scores are on record. The SWMM 1 Engine app at v3.13 scores 72.6 over 182 source files, with the shipped .html alone at 64.8 [S73](../sources/S73-swmm1-engine-app-md-v3-13.md); the 70.2 in the table above is its v3.6 figure. The [St. Venant Solver Rosetta Stone (app)](../entities/st-venant-solver-rosetta-stone.md) page scores 51.5, with 0.0 for test markers because the page carries no tests of its own [S75](../sources/S75-st-venant-rosetta-stone-app-md.md). Both name the baseline HC-2026-11-10-h. [S75](../sources/S75-st-venant-rosetta-stone-app-md.md) describes the anchor as "the 43 repositories of github.com/HydroCouple"; the table above has a row for all 47 repositories at 106.4 from [S02](../sources/S02-complexity-meter-app-md.md).

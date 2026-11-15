@@ -1,10 +1,11 @@
 ---
 title: Dynamic wave routing
 type: concept
-updated: 2026-11-14
-sources: [S08, S10, S17, S18, S20, S22, S55, S60, S62]
+updated: 2026-11-15
+sources: [S08, S10, S17, S18, S20, S22, S55, S60, S62, S75, S77, S79, S80]
 tags: [hydraulics, swmm5, routing]
 reviewed: 2026-11-15
+changed_after_review: "2026-11-15: one paragraph added near the end, headed Added 15 November 2026"
 ---
 Dynamic wave routing solves the full one-dimensional St. Venant equations: continuity and momentum in the conduits and a volume balance at the nodes [S17](../sources/S17-li-routing-options.md). It is the only SWMM5 routing method that handles backwater, entrance and exit losses, flow reversal, pressurized flow, loops and multiple downstream diversions [S17](../sources/S17-li-routing-options.md).
 
@@ -50,3 +51,5 @@ The method is implicit in time (backward Euler, solved by Picard iteration); ear
 
 **Settled**
 - Q12, implicit or explicit: both words have a basis. The time integration is implicit backward Euler, as [S20](../sources/S20-li-edition-54-two-solvers.md) says, but it is solved element by element without spatial coupling, so it keeps the time-step limit of an explicit scheme [S60](../sources/S60-epa-swmm5-reference-manual-vol2-hydraulics.md). The predecessors of SWMM 5 were explicit [S60](../sources/S60-epa-swmm5-reference-manual-vol2-hydraulics.md).
+
+**Added 15 November 2026.** Four app summaries now measure parts of this page. (1) Lineage: SWMM 5.2.4's inertial terms `dq3` and `dq4` at `dwflow.c:213-240` are XROUTE's, from SWMM 4.4H [S75](../sources/S75-st-venant-rosetta-stone-app-md.md); see [EXTRAN's three solvers: XROUTE, YROUTE, ZROUTE](extran-solvers-xroute-yroute-zroute.md) and [The crown cap at mid-pipe](crown-cap-at-mid-pipe.md). (2) The under-relaxation factor: `dynwave.c` fixes it at 0.5; with it made settable, one test network gives 0 ft³ of flooding at 0.5, 87 ft³ at 0.1 and 40,424 ft³ at 1.5, and results agree from 0.3 to 0.9 [S77](../sources/S77-under-load-app-md.md). (3) Control sections: on a steady channel SWMM 5 carries normal depth, 1.6232 ft, at a slope break where a reference profile has critical depth, 2.3160 ft, and misses a choke at a contraction by up to 1.8964 ft [S80](../sources/S80-control-section-lab-summary.md); see [Control Section Lab (app)](../entities/control-section-lab.md). (4) Restarts: a run restarted from its own hot start does not reproduce itself [S79](../sources/S79-teacher-forced-swmm-summary.md); see [Hot start: what a restart loses](hot-start-restart-state.md). None of the four has been reviewed by a person, and (3) and (4) rest on summaries written from the app pages (Q52).

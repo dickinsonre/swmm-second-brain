@@ -1,8 +1,8 @@
 ---
 title: EPA SWMM 5
 type: entity
-updated: 2026-11-14
-sources: [S02, S04, S08, S11, S15, S17, S19, S20, S21, S22, S41, S55, S59, S62, S67, S68, S70, S71, S72]
+updated: 2026-11-15
+sources: [S02, S04, S08, S11, S15, S17, S19, S20, S21, S22, S41, S55, S59, S62, S67, S68, S70, S71, S72, S75, S76, S79, S80, S82, S83]
 tags: [swmm5, engine]
 reviewed: no
 ---
@@ -39,3 +39,5 @@ The C rewrite of SWMM, first released as 5.0 build 001 on 29 October 2004 [S22](
 **The code as a place.** [SWMM5 Code House (app)](swmm5-code-house.md) puts all of it on walls: 51,080 lines, 54 files, 969 functions [S68](../sources/S68-swmm5-code-house-app-md.md). The engine keeps a model in 415 mutable file-scope and program-scope variables, which is why one process holds one model [S70](../sources/S70-swmm-engine-what-if-app-md.md).
 
 **Complexity index.** 69.2 with HydroCouple = 100 [S02](../sources/S02-complexity-meter-app-md.md).
+
+**Measured by the apps, October and November 2026.** Six pages hold what Bob's apps found by running or reading 5.2.4: [Hot start: what a restart loses](../concepts/hot-start-restart-state.md) [S79](../sources/S79-teacher-forced-swmm-summary.md); [Run duration floored to whole seconds](../concepts/run-duration-floor.md) [S76](../sources/S76-inside-the-network-cfd-app-md.md); [The crown cap at mid-pipe](../concepts/crown-cap-at-mid-pipe.md) [S75](../sources/S75-st-venant-rosetta-stone-app-md.md); [WebAssembly builds against native builds](../concepts/wasm-against-native-builds.md) [S82](../sources/S82-mirab-test-bench-summary.md); the control-section findings of the [Control Section Lab (app)](control-section-lab.md) [S80](../sources/S80-control-section-lab-summary.md); and two defaults, a 1 mm zero-depth test in quality routing and the minimum surface area, on [People as Pollutants (app)](people-as-pollutants.md) [S83](../sources/S83-people-as-pollutants-summary.md). None has been reviewed by a person or given a register ID.

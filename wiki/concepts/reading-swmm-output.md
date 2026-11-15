@@ -1,10 +1,11 @@
 ---
 title: Reading SWMM output
 type: concept
-updated: 2026-11-14
-sources: [S03, S10, S22, S60, S69, S72]
+updated: 2026-11-15
+sources: [S03, S10, S22, S60, S69, S72, S76, S77, S78]
 tags: [swmm5, output, reporting]
 reviewed: 2026-11-15
+changed_after_review: "2026-11-15: one paragraph added near the end, headed Added 15 November 2026"
 ---
 A large share of "SWMM is wrong" questions come from comparing two honest numbers that measure different things [S22](../sources/S22-li-ten-problems.md).
 
@@ -30,5 +31,7 @@ A large share of "SWMM is wrong" questions come from comparing two honest number
 | Flooding versus ponding | 77 |
 
 Bob's comment: he and others have explained for over 25 years why the graphs and the summary table peaks sometimes differ [S22](../sources/S22-li-ten-problems.md).
+
+**Added 15 November 2026.** Three findings from the app summaries. (1) Flooding is not the same curve in the two files: over a fine scan of load, the `.rpt` flooding total never decreased as load rose, while the sum of `.out` frames decreased 9 times; an app's first version had reported a "ragged edge" and a 617x amplification that were `.out` sampling artifacts [S77](../sources/S77-under-load-app-md.md). (2) Without `[REPORT]` lines naming ALL subcatchments, nodes and links, the `.out` holds no series; a generator found its own exports lacked the section [S78](../sources/S78-fractal-swmm-generator-app-md.md). (3) A run can end one report step short of its stated end, so two engines can agree on every record both wrote and still differ in file length [S76](../sources/S76-inside-the-network-cfd-app-md.md); see [Run duration floored to whole seconds](run-duration-floor.md).
 
 See also [The missing specification](the-missing-specification.md) and [Continuity is not validation](continuity-is-not-validation.md).
