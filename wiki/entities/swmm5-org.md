@@ -5,6 +5,7 @@ updated: 2026-11-15
 sources: [S06, S07, S08, S22, S84, S85]
 tags: [swmm5org, publishing]
 reviewed: 2026-11-15
+changed_after_review: "2026-11-15: paragraph 'Counts from the Knowledge Library' added"
 ---
 Bob's WordPress site. [S22](../sources/S22-li-ten-problems.md) counts 1,700 or more posts there. His older blog, swmmfive.com, has more than 2,000 [S08](../sources/S08-swmm5org-topic-inside-swmm5.md).
 

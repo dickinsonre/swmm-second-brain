@@ -9,6 +9,7 @@ ingested: 2026-11-14
 superseded_by: S73
 tags: [swmm-history, swmm1, verification]
 reviewed: 2026-11-15
+changed_after_review: "2026-11-15: front matter only: superseded_by: S73 added"
 ---
 **What it is.** The technical summary that ships with the SWMM 1 Engine app, version 3.6. Raw file: [raw/apps/swmm1-runoff-engine.md](../../raw/apps/swmm1-runoff-engine.md).
 

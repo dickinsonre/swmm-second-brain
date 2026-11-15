@@ -5,6 +5,7 @@ updated: 2026-11-15
 sources: [S05, S07, S08, S19, S20, S21, S22, S55, S60, S74, S75, S76, S81]
 tags: [swmm-history, hydraulics, engine]
 reviewed: 2026-11-15
+changed_after_review: "2026-11-15: paragraphs 'The 1981 program, from its listing', 'In SWMM 4' and 'The manual examples in use' added; the last paragraph reworded"
 ---
 The Extended Transport block: SWMM's dynamic-wave hydraulics before SWMM 5, and the ancestor of SWMM 5's [dynamic wave routing](../concepts/dynamic-wave-routing.md) [S20](../sources/S20-li-edition-54-two-solvers.md).
 

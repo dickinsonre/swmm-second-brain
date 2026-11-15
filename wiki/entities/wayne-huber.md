@@ -5,6 +5,7 @@ updated: 2026-11-15
 sources: [S11, S12, S19, S21, S64, S86]
 tags: [people, swmm-history, university-of-florida]
 reviewed: 2026-11-15
+changed_after_review: "2026-11-15: one sentence on the two printings of the 1988 manual added to the SWMM 4 line"
 ---
 Of the University of Florida; first author of the SWMM 3 and SWMM 4 user's manuals [S19](../sources/S19-li-edition-29-engine-speed.md).
 

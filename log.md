@@ -245,3 +245,9 @@ Contradictions and checks:
 Arithmetic checked at ingest is recorded on each source page. Numbers on the new pages were searched for in the raw files they cite; what was not found is arithmetic or a conversion marked as ours.
 
 After this ingest: 331 raw files, 89 ingested, 238 queued, 1 superseded, 3 duplicate. 182 wiki pages: 89 sources, 45 concepts, 46 entities, overview, open questions. 56 questions open, 3 settled. 38 pages reviewed by Bob, 11 of them changed since.
+
+## [2026-11-15] setup | Main merged into the ingest branch
+
+While the ingest ran, Bob marked 30 more pages reviewed on main: 25 entity pages, the overview, the open questions and three source pages. Main was merged into the branch with no conflict. Eleven of those pages are also changed by this ingest (EXTRAN, the corpus, OpenSWMM 6 and HydroCouple, OpenSWMM.org, Robert (Bob) Dickinson, the SWMM and ICM St. Venant comparison, swmm5.org, Wayne C. Huber, the overview, the open questions, and S01's front matter). Bob's dates are kept, and each carries a `changed_after_review:` line naming the paragraphs that are new.
+
+After the merge: 68 of 182 pages reviewed by Bob, 22 of them changed since his review; 114 not yet reviewed.
