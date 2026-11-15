@@ -4,7 +4,7 @@ type: concept
 updated: 2026-11-15
 sources: [S60]
 tags: [hydraulics, swmm5, regulators, primary-document]
-reviewed: no
+reviewed: 2026-11-15
 ---
 Weirs and outlets are, with [orifices](orifices.md), SWMM 5's flow regulator links [S60](../sources/S60-epa-swmm5-reference-manual-vol2-hydraulics.md). This page is sections 6.3 and 6.4 of the EPA hydraulics manual, a primary document, in digest. The equations did not survive the conversion of the raw file, so they are given in words [S60](../sources/S60-epa-swmm5-reference-manual-vol2-hydraulics.md).
 
