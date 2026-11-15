@@ -4,7 +4,7 @@ type: entity
 updated: 2026-11-14
 sources: [S29]
 tags: [swmm6, translation, verification, 2d, rust]
-reviewed: no
+reviewed: 2026-11-15
 ---
 The OpenSWMM 6 engine translated from C++ into safe Rust (`#![forbid(unsafe_code)]`), 1D first and then 2D surface flow with 1D-2D coupling, each piece checked byte for byte against OpenSWMM 6 built from the same source [S29](../sources/S29-swmm6-rust-readme.md). Upstream is HydroCouple/openswmm.engine, branch `swmm6_rel`, commit 88329d6, 6.0.0-alpha.4 [S29](../sources/S29-swmm6-rust-readme.md).
 
