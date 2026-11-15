@@ -152,3 +152,9 @@ Counts: 113 of 372 raw files ingested, 255 queued.
 Bob sent a link for HistoricalWaterInventions. Read out of the Replit editor and checked against a SHA-256 computed there: historical-mystery-robertdickinson-v1.0.0 (app name in the file: Historical Water Inventions). It matches. Queued, not ingested. That makes sixteen Replit summaries waiting.
 Pyswmm Explorer still shows no summary file name.
 Counts: 113 of 373 raw files ingested, 256 queued.
+
+## [2026-11-15] raw | The Pyswmm Explorer summary brought over
+
+Bob sent a link for Pyswmm Explorer. Read out of the Replit editor and checked against a SHA-256 computed there: pyswmm-explorer-v1.0.0 (app name in the file: PySWMM Explorer). It matches. Queued, not ingested. That makes seventeen Replit summaries waiting, and every project on the list of that morning now has a summary here.
+He also sent the link for the EPANET SWMM5 Generate summary; the file in Replit has the same SHA-256 as the copy brought over an hour earlier.
+Counts: 113 of 374 raw files ingested, 257 queued.
