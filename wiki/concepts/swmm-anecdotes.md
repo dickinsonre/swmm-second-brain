@@ -4,7 +4,7 @@ type: concept
 updated: 2026-11-15
 sources: [S90]
 tags: [history, recollections, people]
-reviewed: no
+reviewed: 2026-11-15
 ---
 Short recollections of SWMM's history by people who were there, kept in their own words. They are memories, not documents: where one meets a manual, a listing or a dated release note, the document outranks it. Each is cited to the note it came from, and the note names who said it and where [S90](../sources/S90-note-swmm-anecdotes-linkedin-comments.md).
 
