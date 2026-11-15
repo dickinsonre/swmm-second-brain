@@ -4,7 +4,7 @@ type: concept
 updated: 2026-11-14
 sources: [S01, S05, S07]
 tags: [verification, method, swmm-history]
-reviewed: no
+reviewed: 2026-11-15
 ---
 How Bob's rebuilt historical engines are checked: type the printed program listing back in, compile it, feed it the decks printed in the old manuals, and score the output number by number against the old printouts [S01](../sources/S01-swmm1-engine-app-md.md). SWMM 1 and EXTRAN III were rebuilt this way from printed listings; SWMM 4.4H came from its Fortran source [S07](../sources/S07-swmm5org-topic-swmm-history.md).
 
