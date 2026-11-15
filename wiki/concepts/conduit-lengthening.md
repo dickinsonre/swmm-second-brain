@@ -4,7 +4,7 @@ type: concept
 updated: 2026-11-14
 sources: [S04, S22]
 tags: [hydraulics, swmm5, stability]
-reviewed: no
+reviewed: 2026-11-15
 ---
 `LENGTHENING_STEP` is one of the [dynamic wave](dynamic-wave-routing.md) stability options SWMM 5 carries from EXTRAN's history [S22](../sources/S22-li-ten-problems.md). Per F-0007, a lengthening step of 10 s stretches every conduit shorter than the distance a wave travels in that time [S04](../sources/S04-findings-register-seed.md).
 
