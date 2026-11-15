@@ -4,7 +4,7 @@ type: concept
 updated: 2026-11-14
 sources: [S01, S04, S05, S08, S20, S21, S22, S55, S60]
 tags: [hydraulics, swmm5, icm, surcharge]
-reviewed: no
+reviewed: 2026-11-15
 ---
 When a closed pipe fills, the free-surface equations stop applying. The Preissmann slot keeps them valid by putting a narrow virtual slot above the crown: the water level rises into the slot, and the slot width sets the wave speed. A narrower slot gives a faster wave, closer to real pressurized behavior, and needs a smaller time step [S20](../sources/S20-li-edition-54-two-solvers.md).
 
