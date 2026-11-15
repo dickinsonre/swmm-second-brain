@@ -4,7 +4,7 @@ type: entity
 updated: 2026-11-14
 sources: [S01, S06, S07]
 tags: [apps, swmm-history, swmm1]
-reviewed: no
+reviewed: 2026-11-15
 ---
 Bob's browser app that runs [SWMM 1 (1971)](swmm-1.md) from its own Fortran. File `swmm1-runoff-engine.html`; the name is kept from version 1.4, when the page ran the Runoff Block only [S01](../sources/S01-swmm1-engine-app-md.md). Version 3.6, 13 November 2026 [S01](../sources/S01-swmm1-engine-app-md.md).
 
