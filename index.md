@@ -176,6 +176,7 @@ Notes and data
 - [S91](wiki/sources/S91-note-q64-answers-canberra-barrels-post-link.md) (2026-11-15): note, Bob's answers to Q64: the post's link, Canberra from November 1991 to December 1992, double pipes are barrels.
 - [S92](wiki/sources/S92-note-barrels-transport-is-not-extran.md) (2026-11-15): note, Bob's answer to Q65: Transport is not Extran, so barrels were added to Extran later.
 - [S93](wiki/sources/S93-note-xp-swmm-renamed-xpswmm-1993.md) (2026-11-15): note, XP-SWMM was the original name, changed to XPSWMM in 1993.
+- [S95](wiki/sources/S95-note-punch-card-box-held-2000-cards.md) (2026-11-15): note, a box of punch cards held 2,000 cards.
 
 The old swmm-brain repository
 - [S55](wiki/sources/S55-swmm-brain-readme.md) (2026-08-22): README: enhancements, apps, scripts, timeline.
@@ -245,7 +246,7 @@ Repository READMEs (SWMM5 translations)
 
 ## Queue
 
-239 raw files are queued: 212 LinkedIn articles, 19 manual files in `raw/manuals/` (8 EPA, USGS and FHWA documents not yet started, and 11 SWMM 4.4 documentation files), 4 swmm5.org topic pages, 2 SWMM 1 build notes and 2 files in `raw/apps/`. One, `PyBME-issue-drafts.md`, is not an app summary and was left queued on purpose (Q56). The other, `st-venant-solver-rosetta-stone-v2.6.2.md`, is the newer version of an app already ingested at version 2.4.0 (S75); it was added on 15 November 2026 and bears on Q62. Three more LinkedIn files are byte-identical copies of others and are marked `duplicate`. `raw/MANIFEST.csv` lists them all. Suggested next batches, in order:
+240 raw files are queued: 212 LinkedIn articles and the as-pasted copy of the post of 14 November 2026 (kept because raw files are never deleted; its corrected copy is S94, so it is not to be ingested), 19 manual files in `raw/manuals/` (8 EPA, USGS and FHWA documents not yet started, and 11 SWMM 4.4 documentation files), 4 swmm5.org topic pages, 2 SWMM 1 build notes and 2 files in `raw/apps/`. One, `PyBME-issue-drafts.md`, is not an app summary and was left queued on purpose (Q56). The other, `st-venant-solver-rosetta-stone-v2.6.2.md`, is the newer version of an app already ingested at version 2.4.0 (S75); it was added on 15 November 2026 and bears on Q62. Three more LinkedIn files are byte-identical copies of others and are marked `duplicate`. `raw/MANIFEST.csv` lists them all. Suggested next batches, in order:
 
 0. The rest of the EPA hydraulics manual, a chapter at a time (S60: sections 1.2 to 1.5, Chapter 5, Chapter 7 and the appendices remain), then the 2006 quality assurance report and the SWMM 5.1 User's Manual. With them, the Rosetta Stone summary at version 2.6.2, which tests the pump rule of Q62. These are the primary documents; ingesting them first lets later articles be checked against them.
 1. The four remaining swmm5.org topic pages and the SWMM 1 build notes (small, and they complete themes 3 to 6).
