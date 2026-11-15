@@ -251,3 +251,9 @@ After this ingest: 331 raw files, 89 ingested, 238 queued, 1 superseded, 3 dupli
 While the ingest ran, Bob marked 30 more pages reviewed on main: 25 entity pages, the overview, the open questions and three source pages. Main was merged into the branch with no conflict. Eleven of those pages are also changed by this ingest (EXTRAN, the corpus, OpenSWMM 6 and HydroCouple, OpenSWMM.org, Robert (Bob) Dickinson, the SWMM and ICM St. Venant comparison, swmm5.org, Wayne C. Huber, the overview, the open questions, and S01's front matter). Bob's dates are kept, and each carries a `changed_after_review:` line naming the paragraphs that are new.
 
 After the merge: 68 of 182 pages reviewed by Bob, 22 of them changed since his review; 114 not yet reviewed.
+
+## [2026-11-15] setup | Branch `ingest-app-summaries` merged into main
+
+Before the merge Bob marked more pages reviewed on main, most of the source pages among them. Main was merged into the branch a second time with no conflict. Three more pages he had reviewed are changed by the ingest (SWMM 1 Engine (app), which is rewritten for version 3.13; EPA SWMM 5; SWMM App Complexity Meter) and now carry `changed_after_review:`.
+
+After the merge: 182 wiki pages, 141 reviewed by Bob, 25 of those changed since his review, 41 not yet reviewed. 331 raw files, 89 ingested, 238 queued. 56 questions open, 3 settled.
