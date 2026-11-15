@@ -4,7 +4,7 @@ type: concept
 updated: 2026-11-14
 sources: [S10, S20, S21, S59]
 tags: [hydrology, lid, swmm5, swmm6]
-reviewed: no
+reviewed: 2026-11-15
 ---
 SWMM 5 added LID controls in 5.0.019 (2010) [S21](../sources/S21-li-edition-56-swmm-history.md). "LID" is the fourth most common subject in Bob's forum thread titles, 216 threads [S10](../sources/S10-openswmm-top25-problems.md). The source that calls SWMM 5 "the only platform with built in LID and water quality modeling" is [S20](../sources/S20-li-edition-54-two-solvers.md) (see Q13 in [Open questions](../open-questions.md)).
 
