@@ -49,7 +49,7 @@ History
 - [SWMM version history, 1969 to 2026](wiki/concepts/swmm-version-history.md): dated timeline, 1969 to 2026, with the disagreements marked.
 - [Block architecture and interface files](wiki/concepts/block-architecture.md): the 1971 blocks, the interface tape, and what SWMM 5 unified.
 - [Engine speed, 1988 to 2024](wiki/concepts/engine-speed-1988-2024.md): the 54,060-fold claim and a check of its arithmetic.
-- [Anecdotes of SWMM](wiki/concepts/swmm-anecdotes.md): recollections in people's own words: Canberra in 1991 and 1992 for XP-EXTRAN, double pipes (barrels) for a phosphate plant, reel tapes and card decks.
+- [Anecdotes of SWMM](wiki/concepts/swmm-anecdotes.md): recollections in people's own words: SWMM 2.5 as 20,000 punch cards, Canberra in 1991 and 1992 for XP-EXTRAN, double pipes (barrels) for a phosphate plant, reel tapes and card decks.
 - [Converting SWMM 5 models for older engines](wiki/concepts/converting-swmm5-models-for-older-engines.md): what three converters to 1971, 1981 and 2004 engines carry, approximate and drop.
 
 Measurement and method
@@ -205,6 +205,7 @@ LinkedIn articles
 - [S64](wiki/sources/S64-li-heaney-1982-paper-cost-allocation-app.md) (2026-03-08): From a 1982 Water Resources Paper to an Interactive App: Jim Heaney and the cost allocation app.
 - [S66](wiki/sources/S66-li-design-storm-app-66-patterns.md) (2026-02-25): Design Storm App for 6 Continents and 66 Patterns: the rainfall app as announced.
 - [S72](wiki/sources/S72-li-swmm6-code-house-article.md) (2026-11-04): SWMM6 Code House, Every Line of OpenSWMM 6 on a Wall: both houses, and 20 reading notes.
+- [S94](wiki/sources/S94-li-post-my-earlier-history-with-swmm.md) (2026-11-14): LinkedIn post, my earlier history with SWMM: SWMM at 17, at work on it at 22, SWMM 2.5 as 20,000 punch cards.
 
 Repository READMEs (SWMM6 translations)
 - [S23](wiki/sources/S23-swmm6-csharp-readme.md) (2026-11-04): swmm6-csharp, the OpenSWMM 6 engine in C#; 480 of 480, 452 of 452.

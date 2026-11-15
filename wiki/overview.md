@@ -2,12 +2,12 @@
 title: Overview: what this wiki holds so far
 type: synthesis
 updated: 2026-11-15
-sources: [S01, S04, S05, S06, S10, S19, S20, S22, S23, S24, S29, S35, S41, S43, S54, S55, S56, S57, S58, S59, S60, S61, S62, S63, S64, S65, S66, S67, S68, S69, S70, S71, S72, S74, S75, S76, S79, S80, S81, S82, S84, S85, S86, S90, S91]
+sources: [S01, S04, S05, S06, S10, S19, S20, S22, S23, S24, S29, S35, S41, S43, S54, S55, S56, S57, S58, S59, S60, S61, S62, S63, S64, S65, S66, S67, S68, S69, S70, S71, S72, S74, S75, S76, S79, S80, S81, S82, S84, S85, S86, S90, S91, S94]
 tags: [overview]
 reviewed: 2026-11-15
-changed_after_review: "2026-11-15: first paragraph, sections 1 to 6 and the missing-from-raw list updated for S73 to S89; later the same day, one bullet added to section 2 and the raw-file count changed to 332, for Chapters 2, 4 and 6 of S60; then one bullet added to section 1 and the counts changed to 90 of 333, for S90; then that bullet extended and the counts changed to 91 of 334, for S91, and to 93 of 336 for S92 and S93"
+changed_after_review: "2026-11-15: first paragraph, sections 1 to 6 and the missing-from-raw list updated for S73 to S89; later the same day, one bullet added to section 2 and the raw-file count changed to 332, for Chapters 2, 4 and 6 of S60; then one bullet added to section 1 and the counts changed to 90 of 333, for S90; then that bullet extended and the counts changed to 91 of 334, for S91, and to 94 of 337 for S92 to S94"
 ---
-The state of the wiki after sixteen more app files were ingested on 15 November 2026, arranged by the six topics of [swmm5.org](entities/swmm5-org.md) [S06](sources/S06-swmm5org-topics-index.md). Ninety-three of 336 raw files are ingested, one of them (the EPA hydraulics manual) in part. The wiki is deepest on SWMM's history, the insides of SWMM 5 and the translations of SWMM 5 and SWMM6; thin on ICM; and on SWMM6 it now holds measurements of the two solvers as well as the translations, though not their derivation.
+The state of the wiki after sixteen more app files were ingested on 15 November 2026, arranged by the six topics of [swmm5.org](entities/swmm5-org.md) [S06](sources/S06-swmm5org-topics-index.md). Ninety-four of 337 raw files are ingested, one of them (the EPA hydraulics manual) in part. The wiki is deepest on SWMM's history, the insides of SWMM 5 and the translations of SWMM 5 and SWMM6; thin on ICM; and on SWMM6 it now holds measurements of the two solvers as well as the translations, though not their derivation.
 
 ## 1. SWMM history
 - The timeline from 1969 to 2026 is on [SWMM version history, 1969 to 2026](concepts/swmm-version-history.md), with four places where Bob's own articles disagree with each other or with primary documents.
@@ -17,7 +17,7 @@ The state of the wiki after sixteen more app files were ingested on 15 November 
 - [Block architecture and interface files](concepts/block-architecture.md) explains how SWMM 1 to 4 were put together and why that confused people later [S22](sources/S22-li-ten-problems.md).
 - [Engine speed, 1988 to 2024](concepts/engine-speed-1988-2024.md): one test model, 5 minutes for 6 simulated hours in 1988 and 5 minutes for 36 simulated years in 2024 [S19](sources/S19-li-edition-29-engine-speed.md).
 - People: [Robert (Bob) Dickinson](entities/robert-dickinson.md), [Wayne C. Huber](entities/wayne-huber.md), [Lewis A. (Lew) Rossman](entities/lew-rossman.md).
-- Added 15 November 2026: [Anecdotes of SWMM](concepts/swmm-anecdotes.md), recollections in people's own words, the first of them from the comments on one of Bob's LinkedIn posts [S90](sources/S90-note-swmm-anecdotes-linkedin-comments.md). They are memories and are marked as such. Bob has since dated the stay in Canberra, November 1991 to December 1992, and said the double pipes are what SWMM 5 calls barrels [S91](sources/S91-note-q64-answers-canberra-barrels-post-link.md).
+- Added 15 November 2026: [Anecdotes of SWMM](concepts/swmm-anecdotes.md), recollections in people's own words, the first of them from one of Bob's LinkedIn posts [S94](sources/S94-li-post-my-earlier-history-with-swmm.md) and the comments under it [S90](sources/S90-note-swmm-anecdotes-linkedin-comments.md). They are memories and are marked as such. Bob has since dated the stay in Canberra, November 1991 to December 1992, and said the double pipes are what SWMM 5 calls barrels [S91](sources/S91-note-q64-answers-canberra-barrels-post-link.md).
 
 ## 2. Inside SWMM 5
 - Hydraulics: [Dynamic wave routing](concepts/dynamic-wave-routing.md), [Kinematic wave and steady flow routing](concepts/kinematic-wave-and-steady-flow.md), [Preissmann slot and surcharge](concepts/preissmann-slot-and-surcharge.md), [Conduit lengthening](concepts/conduit-lengthening.md), [Force main friction](concepts/force-main-friction.md).
