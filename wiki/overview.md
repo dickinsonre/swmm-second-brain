@@ -5,9 +5,9 @@ updated: 2026-11-15
 sources: [S01, S04, S05, S06, S10, S19, S20, S22, S23, S24, S29, S35, S41, S43, S54, S55, S56, S57, S58, S59, S60, S61, S62, S63, S64, S65, S66, S67, S68, S69, S70, S71, S72, S74, S75, S76, S79, S80, S81, S82, S84, S85, S86, S90, S91]
 tags: [overview]
 reviewed: 2026-11-15
-changed_after_review: "2026-11-15: first paragraph, sections 1 to 6 and the missing-from-raw list updated for S73 to S89; later the same day, one bullet added to section 2 and the raw-file count changed to 332, for Chapters 2, 4 and 6 of S60; then one bullet added to section 1 and the counts changed to 90 of 333, for S90; then that bullet extended and the counts changed to 91 of 334, for S91"
+changed_after_review: "2026-11-15: first paragraph, sections 1 to 6 and the missing-from-raw list updated for S73 to S89; later the same day, one bullet added to section 2 and the raw-file count changed to 332, for Chapters 2, 4 and 6 of S60; then one bullet added to section 1 and the counts changed to 90 of 333, for S90; then that bullet extended and the counts changed to 91 of 334, for S91, and to 93 of 336 for S92 and S93"
 ---
-The state of the wiki after sixteen more app files were ingested on 15 November 2026, arranged by the six topics of [swmm5.org](entities/swmm5-org.md) [S06](sources/S06-swmm5org-topics-index.md). Ninety-one of 334 raw files are ingested, one of them (the EPA hydraulics manual) in part. The wiki is deepest on SWMM's history, the insides of SWMM 5 and the translations of SWMM 5 and SWMM6; thin on ICM; and on SWMM6 it now holds measurements of the two solvers as well as the translations, though not their derivation.
+The state of the wiki after sixteen more app files were ingested on 15 November 2026, arranged by the six topics of [swmm5.org](entities/swmm5-org.md) [S06](sources/S06-swmm5org-topics-index.md). Ninety-three of 336 raw files are ingested, one of them (the EPA hydraulics manual) in part. The wiki is deepest on SWMM's history, the insides of SWMM 5 and the translations of SWMM 5 and SWMM6; thin on ICM; and on SWMM6 it now holds measurements of the two solvers as well as the translations, though not their derivation.
 
 ## 1. SWMM history
 - The timeline from 1969 to 2026 is on [SWMM version history, 1969 to 2026](concepts/swmm-version-history.md), with four places where Bob's own articles disagree with each other or with primary documents.
@@ -61,7 +61,7 @@ The state of the wiki after sixteen more app files were ingested on 15 November 
 - Three apps about Bob's own record and library: [SWMM & ICM Knowledge Library](entities/swmm-icm-knowledge-library.md) [S84](sources/S84-swmm-icm-knowledge-library-app-md.md), [Bob Usefulness Index](entities/bob-usefulness-index.md) [S85](sources/S85-bob-usefulness-index-app-md.md) and [Master SWMM PDF](entities/master-swmm-pdf.md) [S86](sources/S86-master-swmm-pdf-page-text.md). One that is not about SWMM: [Speak 100](entities/speak-100.md).
 
 ## Three things the first ingest showed
-1. **Bob's published articles contradict each other on dates and credits.** Sixty-two items are open in [Open questions](open-questions.md); three were settled on 14 November by the EPA hydraulics manual, the first primary document ingested. The primary documents (the 1971 listing, EPA's update notes) settle some; others need Bob.
+1. **Bob's published articles contradict each other on dates and credits.** Sixty-one items are open in [Open questions](open-questions.md); three were settled on 14 November by the EPA hydraulics manual, the first primary document ingested. The primary documents (the 1971 listing, EPA's update notes) settle some; others need Bob.
 2. **Much of the article text is AI-written, and the newest articles say so while the older ones do not.** Each source page records how it was written. Claims that rest only on an AI-written passage are flagged.
 3. **The strongest pages rest on the app .md files and the register, not on the articles.** Those sources carry procedures and numbers. The pattern argues for ingesting every app's .md before the remaining articles.
 

@@ -174,6 +174,8 @@ Notes and data
 - [S89](wiki/sources/S89-note-corpus-name.md) (2026-11-15): note, what 1729 and 2030 stand for in the corpus name.
 - [S90](wiki/sources/S90-note-swmm-anecdotes-linkedin-comments.md) (2026-11-15): note, SWMM anecdotes from the comments on one of Bob's LinkedIn posts.
 - [S91](wiki/sources/S91-note-q64-answers-canberra-barrels-post-link.md) (2026-11-15): note, Bob's answers to Q64: the post's link, Canberra from November 1991 to December 1992, double pipes are barrels.
+- [S92](wiki/sources/S92-note-barrels-transport-is-not-extran.md) (2026-11-15): note, Bob's answer to Q65: Transport is not Extran, so barrels were added to Extran later.
+- [S93](wiki/sources/S93-note-xp-swmm-renamed-xpswmm-1993.md) (2026-11-15): note, XP-SWMM was the original name, changed to XPSWMM in 1993.
 
 The old swmm-brain repository
 - [S55](wiki/sources/S55-swmm-brain-readme.md) (2026-08-22): README: enhancements, apps, scripts, timeline.
