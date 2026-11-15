@@ -206,3 +206,12 @@ Pages changed, none of them yet reviewed, so edited in place: the second Replit 
 No contradiction found. The app runs no engine and has no tests; its TypeScript check fails with 22 diagnostics, as reported by Replit Agent and not rerun.
 Checked at ingest: every number and every code fragment in backticks on the source page was searched for in the raw file; no misses.
 Counts: 132 of 376 raw files ingested, 240 queued; 268 wiki pages; 74 open questions and 6 settled.
+
+## [2026-11-15] setup | Main fast-forwarded to S132
+
+Bob said "merge". Main now holds S131 and S132. `replit-summaries-3` is merged and can go; the agent cannot delete branches on GitHub.
+
+## [2026-11-15] raw | One more Replit summary brought over
+
+Bob sent a link for the project SWMM5NetworkAnalyzer. Read out of the Replit editor and checked against a SHA-256 computed there: social-network-analyzer-robertdickinson-v0.1.0 (app name in the file: SWMM5 .inp File Interactive Viewer). It matches. Queued, not ingested, on the branch `replit-summaries-4`. It is a third app with a name like an INP viewer, after S105 and S132.
+Counts: 132 of 377 raw files ingested, 241 queued.

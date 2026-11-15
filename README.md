@@ -33,7 +33,7 @@ To read the wiki yourself, open the folder in Obsidian (the graph view shows hub
 
 ## State on 15 November 2026
 
-- 132 of 376 raw files ingested, one of them (the EPA hydraulics manual) in part. The queue is in `index.md`.
+- 132 of 377 raw files ingested, one of them (the EPA hydraulics manual) in part. The queue is in `index.md`.
 - 74 open questions in `wiki/open-questions.md`, and 6 settled. Several are contradictions between Bob's own articles.
 - 80 pages say `reviewed: no`, which means Bob has not read them yet. Most are the 37 summaries Replit Agent wrote of his Replit apps and the app pages built on them. 17 more pages carry text added after his review, each marked `changed_after_review:`.
 
