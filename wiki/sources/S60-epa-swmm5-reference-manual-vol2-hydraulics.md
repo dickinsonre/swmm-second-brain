@@ -9,7 +9,7 @@ ingested: 2026-11-14
 coverage: partial
 read: [1.1 Introduction and Table 1-1, "Chapter 3 Dynamic Wave Analysis (3.1 to 3.4)"]
 tags: [swmm5, hydraulics, primary-document, epa]
-reviewed: no
+reviewed: 2026-11-15
 ---
 **What it is.** EPA/600/R-17/111, the hydraulics volume of the SWMM 5 reference manual, by Lewis A. Rossman, U.S. EPA Office of Research and Development. A primary document: the engine's author describing what the engine computes. Raw file: [raw/manuals/EPA_SWMM_VOLUME_II_HYDRAULICS.md](../../raw/manuals/EPA_SWMM_VOLUME_II_HYDRAULICS.md), about 50,000 words.
 

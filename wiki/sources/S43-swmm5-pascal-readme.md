@@ -7,7 +7,7 @@ author: Robert Dickinson
 published: 2026-11-08
 ingested: 2026-11-14
 tags: [swmm5, translation, verification]
-reviewed: no
+reviewed: 2026-11-15
 ---
 **What it is.** The README of the public repository SWMMBobSWMM6/swmm5-pascal, as published on 2026-11-08: EPA SWMM 5.2.4 in Free Pascal, "written by a translator that reads EPA's C, and judged against EPA itself". Raw file: [raw/ports/2026-11-08-swmm5-pascal-README.md](../../raw/ports/2026-11-08-swmm5-pascal-README.md).
 

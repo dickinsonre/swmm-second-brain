@@ -7,7 +7,7 @@ author: Robert Dickinson
 published: 2026-11-01
 ingested: 2026-11-14
 tags: [swmm5org, swmm-history]
-reviewed: no
+reviewed: 2026-11-15
 ---
 **What it is.** The first of the six topic pages: posts, apps, examples and repositories on SWMM's history. Raw file: [raw/swmm5org/topics/01-swmm-history.md](../../raw/swmm5org/topics/01-swmm-history.md).
 

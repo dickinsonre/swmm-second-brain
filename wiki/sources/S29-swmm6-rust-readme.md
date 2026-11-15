@@ -7,7 +7,7 @@ author: Robert Dickinson
 published: 2026-11-12
 ingested: 2026-11-14
 tags: [swmm6, translation, verification, 2d]
-reviewed: no
+reviewed: 2026-11-15
 ---
 **What it is.** The README of the public repository SWMMBobSWMM6/swmm6-rust, as published on 2026-11-12: the OpenSWMM 6 engine's 1D path and its 2D surface flow with 1D-2D coupling, translated from C++ into safe Rust and checked byte for byte against OpenSWMM 6 itself. Unlike the other SWMM6 ports it is translated from the C++, not from the C#. Raw file: [raw/ports/2026-11-12-swmm6-rust-README.md](../../raw/ports/2026-11-12-swmm6-rust-README.md).
 

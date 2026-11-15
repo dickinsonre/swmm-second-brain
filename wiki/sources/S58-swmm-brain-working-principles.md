@@ -7,7 +7,7 @@ author: Robert Dickinson
 published: 2026-08-22
 ingested: 2026-11-14
 tags: [apps, method]
-reviewed: no
+reviewed: 2026-11-15
 ---
 **What it is.** The instruction file of the old repository: four working principles for building single-file browser apps for SWMM5 and EPANET hydraulics. Raw file: [raw/swmm-brain/CLAUDE-swmm-brain.md](../../raw/swmm-brain/CLAUDE-swmm-brain.md). It was named `CLAUDE.md` in the old repository and is stored here under another name so that an agent working in this repository does not load it as instructions. It is a source, not a rule of this wiki.
 

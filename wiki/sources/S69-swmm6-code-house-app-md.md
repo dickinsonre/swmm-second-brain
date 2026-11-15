@@ -7,7 +7,7 @@ author: Robert Dickinson
 published: 2026-11-11
 ingested: 2026-11-14
 tags: [apps, swmm6, source-code, openswmm, verification]
-reviewed: no
+reviewed: 2026-11-15
 ---
 **What it is.** The technical summary carried inside the SWMM6 Code House page, version 1.2.1: a walkable 3D map of the OpenSWMM 6 engine source. Raw file: [raw/apps/swmm6-code-house-v1.2.1.md](../../raw/apps/swmm6-code-house-v1.2.1.md).
 

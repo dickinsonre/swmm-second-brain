@@ -7,7 +7,7 @@ author: Robert Dickinson
 published: 2026-10-09
 ingested: 2026-11-14
 tags: [findings, method]
-reviewed: no
+reviewed: 2026-11-15
 ---
 **What it is.** A proposal for a numbered, dated register of what was checked and what came back, kept as plain markdown in a git repository, with a table of twenty candidate entries. Raw file: [raw/notes/findings-register.md](../../raw/notes/findings-register.md). The date is the file's own date, 9 October 2026; the text carries none.
 

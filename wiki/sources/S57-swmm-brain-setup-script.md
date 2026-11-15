@@ -7,7 +7,7 @@ author: Robert Dickinson
 published: 2026-08-22
 ingested: 2026-11-14
 tags: [repositories, method]
-reviewed: no
+reviewed: 2026-11-15
 ---
 **What it is.** A shell script that clones or updates a list of GitHub repositories as sibling folders, then says "Start the brain: claude". Its value here is the list, with Bob's one-line description of each repository. Raw file: [raw/swmm-brain/setup.sh](../../raw/swmm-brain/setup.sh). Dated by the repository's last commit.
 

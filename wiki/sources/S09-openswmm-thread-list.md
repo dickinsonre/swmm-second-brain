@@ -7,7 +7,7 @@ author: Robert Dickinson
 published: 2026-11-01
 ingested: 2026-11-14
 tags: [openswmm, forum, measurement]
-reviewed: no
+reviewed: 2026-11-15
 ---
 **What it is.** A CSV of every openswmm.org thread Bob posted in: date, title, his role, his post count, total posts, who started it, participants, URL. Raw file: [raw/openswmm/threads-1995-2026.csv](../../raw/openswmm/threads-1995-2026.csv). Titles only; the 20 MB full-text export is not in `raw/` yet.
 

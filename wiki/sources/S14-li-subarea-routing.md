@@ -7,7 +7,7 @@ author: Robert Dickinson
 published: 2024-02-03
 ingested: 2026-11-14
 tags: [hydrology, swmm5, icm]
-reviewed: no
+reviewed: 2026-11-15
 ---
 **What it is.** The three subarea routing options of SWMM5 set beside the three in an ICM InfoWorks network, with two test networks of three scenarios each. Raw file: [raw/linkedin/2024-02-03-subcatchment-subarea-internal-routing-swmm5-icm-swmm-dickinson-ebepe.md](../../raw/linkedin/2024-02-03-subcatchment-subarea-internal-routing-swmm5-icm-swmm-dickinson-ebepe.md). The result screenshots are not in the export, so the test outcomes are not recoverable from this file.
 

@@ -7,7 +7,7 @@ author: Robert Dickinson
 published: 2026-06-29
 ingested: 2026-11-14
 tags: [surrogates, machine-learning, ideas]
-reviewed: no
+reviewed: 2026-11-15
 ---
 **What it is.** The only note in the old swmm-brain repository, written to its one-idea-per-file template. Status in the note: seed. Raw file: [raw/swmm-brain/notes/synthetic-storm-surrogate.md](../../raw/swmm-brain/notes/synthetic-storm-surrogate.md).
 

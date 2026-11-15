@@ -7,7 +7,7 @@ author: Robert Dickinson
 published: 2026-11-12
 ingested: 2026-11-14
 tags: [swmm5, lid, infiltration, swmm6, verification, apps]
-reviewed: no
+reviewed: 2026-11-15
 ---
 **What it is.** The technical summary that ships with the Topsoil Recovery Check page, version 2026-11-12. The page asks how much of a storm 4 in of decompacted, amended topsoil over 24 in of compacted sandy clay captures in SWMM, winter and summer, under several SWMM setups. Raw file: [raw/apps/topsoil-recovery-check.md](../../raw/apps/topsoil-recovery-check.md).
 

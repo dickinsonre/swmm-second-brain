@@ -7,7 +7,7 @@ author: Robert Dickinson
 published: 2026-11-12
 ingested: 2026-11-14
 tags: [apps, swmm5, swmm6, translation, verification, benchmarks]
-reviewed: no
+reviewed: 2026-11-15
 ---
 **What it is.** The technical summary carried inside the SWMM Engine What If page, version 1.4. The app answers one question: to put SWMM into another language or change what it computes, what do I gain, what do I pay, and what evidence exists. Raw file: [raw/apps/swmm-engine-what-if-v1.4.md](../../raw/apps/swmm-engine-what-if-v1.4.md).
 

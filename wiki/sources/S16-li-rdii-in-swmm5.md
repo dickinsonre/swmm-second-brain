@@ -7,7 +7,7 @@ author: Robert Dickinson
 published: 2019-10-04
 ingested: 2026-11-14
 tags: [rdii, hydrology, swmm5]
-reviewed: no
+reviewed: 2026-11-15
 ---
 **What it is.** The SWMM5 help-file text on rainfall-dependent inflow and infiltration, "refactored". Raw file: [raw/linkedin/2019-10-04-how-does-rdii-work-swmm5-infoswmm-infoworks-icm-robert-dickinson.md](../../raw/linkedin/2019-10-04-how-does-rdii-work-swmm5-infoswmm-infoworks-icm-robert-dickinson.md). The title also names InfoSWMM and ICM, but the exported text covers SWMM5 only; those parts were images.
 

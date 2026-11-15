@@ -7,7 +7,7 @@ author: Robert Dickinson
 published: 2026-11-14
 ingested: 2026-11-14
 tags: [apps, calibration, uncertainty, swmm5, wasm, verification, lovable]
-reviewed: no
+reviewed: 2026-11-15
 ---
 **What it is.** The technical summary that ships with Rules for Responsible Modeling, version 2026.1.2, a Lovable app at https://rulesforresponsiblemodeling.lovable.app. The app holds chapter lessons, micro-apps, a browser SWMM Playground, a browser-local Model Library and a fictional worked case. Raw file: [raw/apps/Rules for Responsible Modeling lessons and browser drainage experiments.md](../../raw/apps/Rules%20for%20Responsible%20Modeling%20lessons%20and%20browser%20drainage%20experiments.md).
 

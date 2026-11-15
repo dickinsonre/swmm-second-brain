@@ -7,7 +7,7 @@ author: Robert Dickinson
 published: 2026-11-14
 ingested: 2026-11-14
 tags: [apps, swmm5, swmm6, translation, verification, benchmarks]
-reviewed: no
+reviewed: 2026-11-15
 ---
 **What it is.** A technical summary of the app SWMM Engines, Byte for Byte, which shows the stored gate results for translations of EPA SWMM 5.2.4 and OpenSWMM 6. Raw file: [raw/apps/swmm-engines-v2026-11-06.md](../../raw/apps/swmm-engines-v2026-11-06.md).
 

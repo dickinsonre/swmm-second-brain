@@ -7,7 +7,7 @@ author: Robert Dickinson
 published: 2026-11-05
 ingested: 2026-11-14
 tags: [swmm-history, documentation, swmm5, swmm6]
-reviewed: no
+reviewed: 2026-11-15
 ---
 **What it is.** A ranked list of ten problems, each with a comment by Bob in bold. Raw file: [raw/linkedin/2026-11-05-ten-problems-how-swmm-developed-explained-from-1970-2025-dickinson-hsnae.md](../../raw/linkedin/2026-11-05-ten-problems-how-swmm-developed-explained-from-1970-2025-dickinson-hsnae.md).
 
