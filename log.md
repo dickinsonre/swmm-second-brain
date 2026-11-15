@@ -182,3 +182,13 @@ Bob had said "merge when done". Main now stands at the ingest commit. The agent 
 Bob sent a link for the project SWMM5ControlRules. Read out of the Replit editor and checked against a SHA-256 computed there: hydro-control-v0.1.0 (app name in the file: SWMM5 Control Rule Editor). It matches. Queued, not ingested, on the branch `replit-summaries-3`.
 He also sent the link for the Sewer Code Search summary; the file in Replit has the same SHA-256 as the raw file behind S111, and the EPANET SWMM Experts file has the same SHA-256 as the raw file behind S115.
 Counts: 130 of 375 raw files ingested, 241 queued.
+
+## [2026-11-15] ingest | SWMM5 Control Rule Editor, S131
+
+Bob said "ingest". The file was read in full. Source written: S131 SWMM5 Control Rule Editor, from the Replit project SWMM5ControlRules. Page created: SWMM5 Control Rule Editor (app).
+Pages changed: the second Replit concept page got an eighteenth row and one sentence (it is not yet reviewed, so it was edited in place); Pumps and pump curves got one paragraph headed "Added 15 November 2026" and a `changed_after_review` line; one sentence was added to Q74; the overview, README and index carry the new counts.
+No contradiction found. The app runs no engine and has no tests, and its summary says exported rules were not validated by a simulation.
+Checked at ingest: every number and every code fragment in backticks on the source page was searched for in the raw file; no misses.
+Length: Pumps and pump curves stands at 711 words (666 before); it joins the four pages due for a split at the next lint.
+Branches: Bob deleted the branches on GitHub while this ingest ran. `replit-summaries-3` held the raw file and had not been merged, so the agent pushed it again with this ingest on it. Main is unchanged until Bob says "merge".
+Counts: 131 of 375 raw files ingested, 240 queued; 266 wiki pages; 74 open questions and 6 settled.

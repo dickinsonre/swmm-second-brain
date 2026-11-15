@@ -2,9 +2,10 @@
 title: Pumps and pump curves
 type: concept
 updated: 2026-11-15
-sources: [S60, S83]
+sources: [S60, S83, S131]
 tags: [hydraulics, swmm5, pumps, primary-document]
 reviewed: 2026-11-15
+changed_after_review: "2026-11-15 (S131 ingest): one paragraph added at the end, headed Added 15 November 2026, on the SWMM5 Control Rule Editor app (S131)"
 ---
 SWMM 5 treats a pump as a link whose flow comes from a user-supplied pump curve [S60](../sources/S60-epa-swmm5-reference-manual-vol2-hydraulics.md). Everything on this page is from sections 2.1.6 and 6.1 of the EPA hydraulics manual unless another source is cited.
 
@@ -39,3 +40,5 @@ The manual does not say which rule holds when that inflow is larger than the hig
 **In Bob's apps.** People as Pollutants models every walkway, stair, escalator, gate, lift and train door of a transit station as a TYPE4 pump [S83](../sources/S83-people-as-pollutants-summary.md); see [People as Pollutants (app)](../entities/people-as-pollutants.md).
 
 **Not in the sources yet.** The pump code itself (`link.c`, `dynwave.c`), and any run that tests the dry-node rule. The other structures are on [Orifices](orifices.md) and [Weirs and outlets](weirs-and-outlets.md).
+
+**Added 15 November 2026: an editor for control rules.** [SWMM5 Control Rule Editor (app)](../entities/swmm5-control-rule-editor.md) reads and writes the `[CONTROLS]` section and checks rules for repeated priorities and missing conditions or actions, without running an engine [S131](../sources/S131-swmm5-control-rule-editor-replit-summary.md). Replit Agent wrote that summary; Bob has not read it (Q74).
