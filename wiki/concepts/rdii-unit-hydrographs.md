@@ -4,7 +4,7 @@ type: concept
 updated: 2026-11-14
 sources: [S16, S55]
 tags: [hydrology, rdii, swmm5]
-reviewed: no
+reviewed: 2026-11-15
 ---
 SWMM5 computes rainfall-dependent inflow and infiltration (RDII) from triangular unit hydrographs [S16](../sources/S16-li-rdii-in-swmm5.md).
 
