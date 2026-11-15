@@ -152,6 +152,7 @@ Apps
 - [SWMM5 Control Rule Editor (app)](wiki/entities/swmm5-control-rule-editor.md): Replit app, v0.1.0; browser editor that reads and writes SWMM5 `[CONTROLS]` rules; runs no engine.
 - [SWMM5 & EPANET INP Explorer (app)](wiki/entities/swmm5-epanet-inp-explorer.md): Replit app, v1.0.0; reference to the SWMM and EPANET input-file formats, with a section builder and a paste-in parser; runs no engine.
 - [SWMM5 .inp File Interactive Viewer (app)](wiki/entities/swmm5-inp-file-interactive-viewer.md): Replit app, v0.1.0; Streamlit page that shows an input file's sections as data grids with statistics and charts; runs no engine.
+- [SWMM5 Topo Network Wizard (app)](wiki/entities/swmm5-topo-network-wizard.md): Replit app, v1.0.0; generates network layouts from 49 topology methods and a particle simulation and exports SWMM5 input files; runs no SWMM engine.
 
 Data
 - [1729-SWMM5-Models-2030 (the corpus)](wiki/entities/corpus-1729.md): Bob's public model repository; 480 of its models are the translations' gate set.
@@ -239,6 +240,7 @@ App summaries
 - [S133](wiki/sources/S133-swmm5-inp-file-interactive-viewer-replit-summary.md) (2026-11-15): SWMM5 .inp File Interactive Viewer, summary written by Replit Agent, v0.1.0.
 - [S134](wiki/sources/S134-note-linkedin-two-well-received-posts.md) (2026-11-15): note, two LinkedIn posts that drew a good response, with their counts.
 - [S135](wiki/sources/S135-li-fifty-posts-with-counts.md) (2026-11-15): LinkedIn, fifty of Bob's posts with their reactions, comments and impressions.
+- [S136](wiki/sources/S136-swmm5-topo-network-wizard-replit-summary.md) (2026-11-15): SWMM5 Topo Network Wizard, summary written by Replit Agent, v1.0.0.
 
 Manuals and reports (primary documents)
 - [S60](wiki/sources/S60-epa-swmm5-reference-manual-vol2-hydraulics.md) (2017-05): EPA SWMM Reference Manual, Volume II, Hydraulics, by L. A. Rossman. Read in part: section 1.1 and Chapters 2, 3, 4 and 6 (the raw file lacks pages 64 to 66 and 122).
@@ -326,7 +328,7 @@ Repository READMEs (SWMM5 translations)
 
 ## Queue
 
-241 raw files are queued: 212 LinkedIn articles and the as-pasted copy of the post of 14 November 2026 (kept because raw files are never deleted; its corrected copy is S94, so it is not to be ingested), 19 manual files in `raw/manuals/` (8 EPA, USGS and FHWA documents not yet started, and 11 SWMM 4.4 documentation files), 4 swmm5.org topic pages, 2 SWMM 1 build notes and 3 files in `raw/apps/`. One, `topo-network-wizard-v1.0.0.md`, is a summary Replit Agent wrote of the SWMM5 Topo Network Wizard, brought over from Replit after the ingest of S133. One, `PyBME-issue-drafts.md`, is not an app summary and was left queued on purpose (Q56). The last, `st-venant-solver-rosetta-stone-v2.6.2.md`, is the newer version of an app already ingested at version 2.4.0 (S75); it was added on 15 November 2026 and bears on Q62. Three more LinkedIn files are byte-identical copies of others and are marked `duplicate`. `raw/MANIFEST.csv` lists them all. Suggested next batches, in order:
+240 raw files are queued: 212 LinkedIn articles and the as-pasted copy of the post of 14 November 2026 (kept because raw files are never deleted; its corrected copy is S94, so it is not to be ingested), 19 manual files in `raw/manuals/` (8 EPA, USGS and FHWA documents not yet started, and 11 SWMM 4.4 documentation files), 4 swmm5.org topic pages, 2 SWMM 1 build notes and 2 files in `raw/apps/`. One, `PyBME-issue-drafts.md`, is not an app summary and was left queued on purpose (Q56). The other, `st-venant-solver-rosetta-stone-v2.6.2.md`, is the newer version of an app already ingested at version 2.4.0 (S75); it was added on 15 November 2026 and bears on Q62. Three more LinkedIn files are byte-identical copies of others and are marked `duplicate`. `raw/MANIFEST.csv` lists them all. Suggested next batches, in order:
 
 0. The rest of the EPA hydraulics manual, a chapter at a time (S60: sections 1.2 to 1.5, Chapter 5, Chapter 7 and the appendices remain), then the 2006 quality assurance report and the SWMM 5.1 User's Manual. With them, the Rosetta Stone summary at version 2.6.2, which tests the pump rule of Q62. These are the primary documents; ingesting them first lets later articles be checked against them.
 1. The four remaining swmm5.org topic pages and the SWMM 1 build notes (small, and they complete themes 3 to 6).

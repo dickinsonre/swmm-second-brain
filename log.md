@@ -246,3 +246,15 @@ Settled by S135, and said so under Q81: the personal post of S134 is the post of
 Disagreements recorded under Q81: reposts (9 and 1 on the screenshot, none shown on the list); the age "2d" for a post S91 dates to the day before; "slide" in the note against "GIF" in the post's own text.
 Arithmetic at ingest, ours: middle values of the 50 are 11,941 impressions, 39 reactions and 4 comments. The HydroCouple post is 21st in impressions, 2nd in reactions and 4th in reactions per 1,000 impressions (10.1; middle value 2.1). The post of 14 November is 42nd in impressions, 3rd in reactions, 1st in comments, and 1st in both reactions and comments per 1,000 impressions (19.5 and 3.4; middle values 2.1 and 0.2).
 Counts: 135 of 380 raw files ingested, 241 queued; 273 wiki pages; 75 open questions and 6 settled.
+
+## [2026-11-15] ingest | SWMM5 Topo Network Wizard, S136
+
+Bob said "ingest and then merge". The file was read in full. Source written: S136 SWMM5 Topo Network Wizard, from the Replit project of the same name. Page created: SWMM5 Topo Network Wizard (app).
+Pages changed, none of them yet reviewed, so edited in place: the second Replit concept page got a twenty-first row; SWMM5 Topology Sandbox (app) got a paragraph naming this other generator built on topology. One sentence was added to Q73 and one to Q74. The overview, README and index carry the new counts.
+No contradiction found. The app's three `engines:` entries are its own code; it runs no SWMM engine and has no tests, and its exported INP was not run in EPA SWMM.
+Checked at ingest: every number and every code fragment in backticks on the source page was searched for in the raw file; no misses.
+Counts: 136 of 380 raw files ingested, 240 queued; 275 wiki pages; 75 open questions and 6 settled.
+
+## [2026-11-15] setup | Main fast-forwarded to S136
+
+Main now holds S133 to S136. `replit-summaries-4` is merged and can go.

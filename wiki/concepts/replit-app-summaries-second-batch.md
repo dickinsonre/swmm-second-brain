@@ -2,7 +2,7 @@
 title: "Replit apps: the second seventeen summaries"
 type: concept
 updated: 2026-11-15
-sources: [S114, S115, S116, S117, S118, S119, S120, S121, S122, S123, S124, S125, S126, S127, S128, S129, S130, S131, S132, S133]
+sources: [S114, S115, S116, S117, S118, S119, S120, S121, S122, S123, S124, S125, S126, S127, S128, S129, S130, S131, S132, S133, S136]
 tags: [apps, replit, verification, ai-agents]
 reviewed: no
 ---
@@ -32,8 +32,9 @@ Seventeen more of Bob's Replit apps got a technical summary from Replit Agent on
 | [SWMM5 Control Rule Editor (app)](../entities/swmm5-control-rule-editor.md) | `hydro-control` | SWMM5ControlRules | [S131](../sources/S131-swmm5-control-rule-editor-replit-summary.md) |
 | [SWMM5 & EPANET INP Explorer (app)](../entities/swmm5-epanet-inp-explorer.md) | `swmm5epanetinpviewer.com` | SwmmInpViewer | [S132](../sources/S132-swmm5-epanet-inp-explorer-replit-summary.md) |
 | [SWMM5 .inp File Interactive Viewer (app)](../entities/swmm5-inp-file-interactive-viewer.md) | `swmm5filestats.com` | SWMM5NetworkAnalyzer | [S133](../sources/S133-swmm5-inp-file-interactive-viewer-replit-summary.md) |
+| [SWMM5 Topo Network Wizard (app)](../entities/swmm5-topo-network-wizard.md) | `topo-network-wizard` | SWMM5 Topo Network Wizard | [S136](../sources/S136-swmm5-topo-network-wizard-replit-summary.md) |
 
-Site names are `.replit.app` names except the three given in full. Versions are on the app pages. The last three rows came after the seventeen and are not in the counts below.
+Site names are `.replit.app` names except the three given in full. The last four rows came after the seventeen and are not in the counts below.
 
 **In common.** None records a human review [S114](../sources/S114-swmm5-microgpt-replit-summary.md) [S130](../sources/S130-pyswmm-explorer-replit-summary.md). Checks were made on the development copy; where one looked at the published site, its API answered 404 [S119](../sources/S119-code-rosetta-stone-replit-summary.md).
 
