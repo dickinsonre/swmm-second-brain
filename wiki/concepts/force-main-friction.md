@@ -4,7 +4,7 @@ type: concept
 updated: 2026-11-14
 sources: [S10, S20]
 tags: [hydraulics, swmm5, icm, force-mains]
-reviewed: no
+reviewed: 2026-11-15
 ---
 SWMM 5 offers three friction equations for a pipe under pressure, and the choice can move the answer by a factor of two [S20](../sources/S20-li-edition-54-two-solvers.md).
 
