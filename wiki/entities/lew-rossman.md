@@ -4,7 +4,7 @@ type: entity
 updated: 2026-11-14
 sources: [S09, S11, S19, S21, S22, S41, S60, S68]
 tags: [people, swmm5, epa]
-reviewed: no
+reviewed: 2026-11-15
 ---
 Of EPA's Office of Research and Development. Author of EPANET, and architect and author of the SWMM 5 engine [S21](../sources/S21-li-edition-56-swmm-history.md).
 
