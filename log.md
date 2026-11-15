@@ -276,3 +276,7 @@ Found:
 Also added to `raw/apps/`, under the app-version rule and not ingested: `st-venant-solver-rosetta-stone-v2.6.2.md`, the summary of the version delivered on 14 November 2026 (S75 holds version 2.4.0). It describes a pump test deck that bears on Q62.
 
 After this ingest: 332 raw files, 89 ingested, 239 queued, 1 superseded, 3 duplicate. 186 wiki pages: 89 sources, 49 concepts, 46 entities, overview, open questions. 60 questions open, 3 settled. 4 pages not yet reviewed; 27 changed since Bob's review. Work is on branch `ingest-hydraulics-ch2-4-6`.
+
+## [2026-11-15] setup | Branch `ingest-hydraulics-ch2-4-6` merged into main
+
+Bob said "merge". Main had not moved since the branch was cut at 97806db, so there was nothing to reconcile. After the merge: 186 wiki pages, 4 of them not yet reviewed by Bob (the four new concept pages), 27 changed since his review. 332 raw files, 89 ingested, 239 queued. 60 questions open, 3 settled.
