@@ -123,3 +123,7 @@ Not ingested, still queued in `raw/apps/`: st-venant-solver-rosetta-stone-v2.6.2
 ## [2026-11-15] setup | Main merged into `replit-summaries`; a zip is now in `raw/apps/`
 
 While the ingest ran, Bob uploaded the same 18 summaries to `raw/apps/` on main, together with `replit-app-summaries.zip`, the bundle the agent had sent him. The 18 files are byte-identical to the ones already on the branch, so the merge changed nothing in them. The zip is a copy of those files, not a source. The agent does not delete raw files; it stays queued until Bob removes it on GitHub or says to leave it. Counts are now 113 of 358 raw files ingested and 241 queued.
+
+## [2026-11-15] setup | Bob removed the zip from `raw/apps/`
+
+Bob deleted `raw/apps/replit-app-summaries.zip` on main (his commit 1a1ac92). It was a bundle of the 18 summaries already ingested, not a source. Main was merged into `replit-summaries` again. Counts are back to 113 of 357 raw files ingested and 240 queued.
