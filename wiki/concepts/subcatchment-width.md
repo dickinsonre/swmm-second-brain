@@ -4,7 +4,7 @@ type: concept
 updated: 2026-11-14
 sources: [S10, S22, S63]
 tags: [hydrology, swmm5, calibration]
-reviewed: no
+reviewed: 2026-11-15
 ---
 Subcatchment width is a fitting parameter that the documentation presents as a length you can measure [S22](../sources/S22-li-ten-problems.md).
 
