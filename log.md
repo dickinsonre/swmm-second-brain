@@ -287,3 +287,12 @@ Contradiction: S139 reports that its Curve Number reference page and server use 
 Checked at ingest: numbers and code fragments on the new pages were searched for in their raw files; the misses are our own arithmetic, marked as such, and "SHA-256".
 Bob wrote at 17:20 that he is fixing two errors; which two is not yet known. The pages describe the apps as their summaries found them; a fixed version arrives as a new summary file and a new source page.
 Counts: 142 of 386 raw files ingested, 240 queued; 288 wiki pages; 76 open questions and 6 settled.
+
+## [2026-11-15] ingest | S143: Bob's note that he fixed the PRN problem
+
+Bob wrote at 17:27: "i fixed the prn problem and merge". Filed in his words as raw/notes/icm-prn-reader-fix-2026-11-15.md and ingested as S143. Changed: the ICM PRN File Reader page (a paragraph), Q76 (a sentence), overview and README counts, index. Which of the two problems he fixed (the open file list or the differing thresholds) is not said; the summary of the fixed version has not come in.
+Counts: 143 of 387 raw files ingested, 240 queued; 289 wiki pages; 76 open questions and 6 settled.
+
+## [2026-11-15] setup | Main fast-forwarded to S143
+
+Main now holds S137 to S143. `replit-summaries-5` is merged and can go.
