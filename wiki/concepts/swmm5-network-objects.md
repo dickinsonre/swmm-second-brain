@@ -4,7 +4,7 @@ type: concept
 updated: 2026-11-15
 sources: [S60]
 tags: [hydraulics, swmm5, primary-document]
-reviewed: no
+reviewed: 2026-11-15
 ---
 SWMM 5 models the conveyance system as links joined at nodes. External flows enter at nodes, travel along links, fill and empty storage nodes, and leave at terminal nodes [S60](../sources/S60-epa-swmm5-reference-manual-vol2-hydraulics.md). This page is Chapter 2 of the EPA hydraulics manual, a primary document, in digest [S60](../sources/S60-epa-swmm5-reference-manual-vol2-hydraulics.md).
 
