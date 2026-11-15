@@ -4,7 +4,7 @@ type: concept
 updated: 2026-11-14
 sources: [S23, S28, S29, S30, S34, S35, S41, S70, S71]
 tags: [verification, method, translation]
-reviewed: no
+reviewed: 2026-11-15
 ---
 The test every SWMM5 and SWMM6 translation is held to: run the translation and the original engine on the same decks and compare the files they write, byte for byte [S23](../sources/S23-swmm6-csharp-readme.md) [S41](../sources/S41-swmm5-go-readme.md).
 
