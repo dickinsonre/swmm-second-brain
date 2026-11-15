@@ -4,7 +4,7 @@ type: concept
 updated: 2026-11-14
 sources: [S56]
 tags: [surrogates, machine-learning, ideas]
-reviewed: no
+reviewed: 2026-11-15
 ---
 An idea of Bob's, dated 29 June 2026, status seed: train a fast emulator on SWMM's own output, not on field gauges [S56](../sources/S56-swmm-brain-note-surrogate.md).
 
