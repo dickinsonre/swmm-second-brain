@@ -103,6 +103,19 @@ Every one says in its body that Replit Agent wrote it on 15 November 2026 and th
 Held back, not committed: sewer-code-search-v1.0.0 (the app is a private deployment; waiting for Bob's say before it goes into a public repository).
 No summary found in two projects, where Replit Agent stopped and asked to switch to its paid Power mode: EPANET SWMM Experts and SWMM Explorer.
 
-## [2026-11-16] raw | sewer-code-search-v1.0.0 added on Bob's say
+## [2026-11-15] raw | sewer-code-search-v1.0.0 added on Bob's say
 
 Bob was asked whether the Sewer Code Search summary, held back on 15 November because the app is a private deployment, should go into the public repository. He answered yes. The file is now in `raw/apps/`, queued. Its SHA-256 matches the one computed inside Replit (e4ee62fd...d0bc). That makes 18 Replit summaries in this batch.
+
+## [2026-11-15] ingest | Eighteen Replit app summaries, S96 to S113
+
+Bob said "ingest" for the batch brought over from Replit earlier in the day. Each file was read in full.
+Sources written: S96 SWMM5-UI, S97 SWMM5 Network Miner, S98 SWMM5 INP MAKER, S99 SWMM5 Lego Model, S100 Camel_SWMM, S101 SWMM5 Manual Search, S102 the SWMM Manual Search landing page, S103 InfoSewer and InfoSWMM Legacy Model Reader, S104 XPX to Shapefile Converter, S105 SWMM5 .inp File Viewer, S106 SWMM5 Topology Sandbox, S107 Green-Ampt Infiltration Calculator, S108 SWMM5 Runoff and Infiltration App, S109 SingaPourApps, S110 InfoDrainage Explorer, S111 MapSWMMSewer - Code Repository, S112 City Temperature Explorer, S113 GeoAI Flood Impact.
+Replit project each file came from, as seen in Replit (the files do not carry this name): S96 Swmm UI Engine, S97 SWMM Filebase, S98 SWMM INP Maker, S99 SWMM Lego Model, S100 Swmm5AppEngine, S101 SJ_SWMM5_Manual_Search, S102 Video Search, S103 InfoSWMM-InfoSewer-Reader, S104 XpsToShape, S105 SWMM5InpReader, S106 Fractal SWMMGen, S107 Green Infiltration, S108 SWMM5RunoffInfiltration, S109 SingaPour Site, S110 InfoDrainage Explorer, S111 Sewer Code Search, S112 Temp Monitor, S113 Spatial Impact Insight.
+Pages created: 18 app pages under `wiki/entities/` and one concept page, Replit apps and the summaries Replit Agent wrote.
+Pages changed, each with one paragraph headed "Added 15 November 2026" and a `changed_after_review` line: InfoSWMM and InfoSewer (S103 names tables inside an ISDB model, which the page had listed as not in the sources), Fractal SWMM5/SWMM6 Network Generator (S106), Infiltration methods (S107, S108), Bob's GitHub repositories (four repositories). The overview got one bullet and new counts; the README and index were updated.
+Open questions added: Q67 (none of the eighteen has been read by Bob), Q68 (dates and versions that are not release facts), Q69 (faults Replit Agent reported, none rerun), Q70 (names), Q71 (which AI built each app), Q72 (engine provenance not recorded), Q73 (two generators with 22 patterns).
+Checked at ingest: every number on the new pages was searched for in the raw file it cites; the counts on the concept page (12 with no engine, 14 with no repository, 8 dated with the summary date, 18 with no human review) were counted from the front matter and bodies. In two files the `file:` line is shorter than the site name in `links:` (green-infiltration, singa-pour-site).
+Tools: `tools/lint.py` now prints source numbers of any length (it cut S100 to "S10").
+Correction: the log entry for the Sewer Code Search summary was first dated 16 November by mistake; it is 15 November.
+Not ingested, still queued in `raw/apps/`: st-venant-solver-rosetta-stone-v2.6.2 and PyBME-issue-drafts (Q56).

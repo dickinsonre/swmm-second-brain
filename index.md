@@ -67,6 +67,7 @@ Measurement and method
 - [Wrap, translate or extend](wiki/concepts/wrap-translate-or-extend.md): three roads to SWMM in another language or with new physics, and the four engines that extend EPA's C.
 - [SWMM5 translations: the re-run of 12 November 2026](wiki/concepts/swmm5-ports-rerun-2026-11.md): twenty translations rebuilt on one machine, gated again and timed by one benchmark.
 - [Calibration, validation and uncertainty](wiki/concepts/calibration-validation-uncertainty.md): William James's rules as Bob reports them, and the thresholds his app teaches (NSE 0.7, peak 15 %, volume 10 %).
+- [Replit apps and the summaries Replit Agent wrote](wiki/concepts/replit-app-summaries.md): the eighteen Replit apps, what their agent-written summaries have in common and where they differ.
 
 Economics
 - [Cost allocation by cooperative game theory](wiki/concepts/cost-allocation-methods.md): SCRB, MCRS, Shapley value, nucleolus and equal split on a $7M project for three towns.
@@ -112,6 +113,24 @@ Apps
 - [Bob Usefulness Index (app)](wiki/entities/bob-usefulness-index.md): a 100-point scorecard read from the library; baseline 66.
 - [Master SWMM PDF (app)](wiki/entities/master-swmm-pdf.md): 38 SWMM and rainfall-runoff documents, each tied to its citation by a file fingerprint.
 - [Speak 100 (app)](wiki/entities/speak-100.md): an eight-language speaking trainer; not a SWMM app.
+- [SWMM5-UI (app)](wiki/entities/swmm5-ui.md): Replit app that edits SWMM models and runs them in six engine modes, among them EPA SWMM 5.2.4 and OpenSWMM 6 in the browser.
+- [SWMM5 Network Miner (app)](wiki/entities/swmm5-network-miner.md): Replit app for a library of SWMM model files: search, compare, QA/QC and runs through PySWMM.
+- [SWMM5 INP MAKER (app)](wiki/entities/swmm5-inp-maker.md): Replit app that generates seeded SWMM5 `.inp` models and can run them in EPA SWMM 5.2.4.
+- [SWMM5 Lego Model (app)](wiki/entities/swmm5-lego-model.md): Replit app: paint a drainage layout on a grid and run it in a quick JavaScript simulation or in EPA SWMM5 as WebAssembly.
+- [Camel_SWMM (app)](wiki/entities/camel-swmm.md): Replit Flask app that manages, validates and runs SWMM models through swmm-toolkit, with optional AI review.
+- [SWMM5 Manual Search (app)](wiki/entities/swmm5-manual-search.md): Replit app that searches the SWMM manual: 621 indexed sections, calculators, an `.inp` runner and an AI assistant.
+- [SWMM Manual Search landing page (app)](wiki/entities/swmm-manual-search-landing-page.md): Replit landing page that promotes the separate manual-search site.
+- [InfoSewer and InfoSWMM Legacy Model Reader (app)](wiki/entities/infosewer-infoswmm-legacy-model-reader.md): Replit app that reads InfoSWMM ISDB and InfoSewer IEDB models from their DBF tables and prepares SWMM5 and ICM exports.
+- [XPX to Shapefile Converter (app)](wiki/entities/xpx-to-shapefile-converter.md): Replit app that turns an XPSWMM XPX file into point, line and polygon shapefiles.
+- [SWMM5 .inp File Viewer (app)](wiki/entities/swmm5-inp-file-viewer.md): Replit Streamlit app that shows the sections of a SWMM5 `.inp` file as tables.
+- [SWMM5 Topology Sandbox (app)](wiki/entities/swmm5-topology-sandbox.md): Replit teaching app: 22 network patterns, estimated hydrographs and an INP export, with no engine.
+- [Green-Ampt Infiltration Calculator (app)](wiki/entities/green-ampt-infiltration-calculator.md): Replit calculator for Green-Ampt, Modified Green-Ampt, Horton and Curve Number infiltration in its own code.
+- [SWMM5 Runoff and Infiltration (app)](wiki/entities/swmm5-runoff-and-infiltration.md): Replit app with five infiltration models, LID settings and rainfall from Open-Meteo; no engine.
+- [SingaPourApps (app)](wiki/entities/singapourapps.md): Replit app that parses a SWMM `.inp` file into rainfall, runoff-parameter and discharge summaries.
+- [InfoDrainage Explorer (app)](wiki/entities/infodrainage-explorer.md): Replit reference and quiz app about Autodesk InfoDrainage.
+- [MapSWMMSewer Code Repository (app)](wiki/entities/mapswmmsewer-code-repository.md): Private Replit app that stores and searches code files for SWMM, sewer analysis and h2oCalc.
+- [City Temperature Explorer (app)](wiki/entities/city-temperature-explorer.md): Replit app comparing city temperatures across decades; not about SWMM.
+- [GeoAI Flood Impact (app)](wiki/entities/geoai-flood-impact.md): Replit app presenting stored flood-exposure records; not about SWMM.
 
 Data
 - [1729-SWMM5-Models-2030 (the corpus)](wiki/entities/corpus-1729.md): Bob's public model repository; 480 of its models are the translations' gate set.
@@ -159,6 +178,24 @@ App summaries
 - [S85](wiki/sources/S85-bob-usefulness-index-app-md.md) (2026-11-11): Bob Usefulness Index, technical summary, v2.2.
 - [S86](wiki/sources/S86-master-swmm-pdf-page-text.md) (2026-10-25): Master SWMM PDF, text of the page and its Doc essay.
 - [S88](wiki/sources/S88-speak-100-app-md.md) (2026-11-13): Speak 100, technical summary, v2026.11.13b.
+- [S96](wiki/sources/S96-swmm5-ui-replit-summary.md) (2026-11-15): SWMM5-UI, summary written by Replit Agent, v1.0.0.
+- [S97](wiki/sources/S97-swmm5-network-miner-replit-summary.md) (2026-11-15): SWMM5 Network Miner, summary written by Replit Agent, v1.0.0.
+- [S98](wiki/sources/S98-swmm5-inp-maker-replit-summary.md) (2026-07-20): SWMM5 INP MAKER, summary written by Replit Agent, v1.0.0.
+- [S99](wiki/sources/S99-swmm5-lego-model-replit-summary.md) (2026-11-15): SWMM5 Lego Model, summary written by Replit Agent, v0.0.0.
+- [S100](wiki/sources/S100-camel-swmm-replit-summary.md) (2025-08-18): Camel_SWMM, summary written by Replit Agent, v1.0.0.
+- [S101](wiki/sources/S101-swmm5-manual-search-replit-summary.md) (2026-07-20): SWMM5 Manual Search, summary written by Replit Agent, v5.2.
+- [S102](wiki/sources/S102-swmm-manual-search-landing-page-replit-summary.md) (2026-11-15): SWMM Manual Search, summary written by Replit Agent, v1.0.0.
+- [S103](wiki/sources/S103-legacy-model-reader-replit-summary.md) (2026-07-22): InfoSewer and InfoSWMM Legacy Model Reader, summary written by Replit Agent, v1.0.0.
+- [S104](wiki/sources/S104-xpx-to-shapefile-replit-summary.md) (2026-11-15): XPX to Shapefile Converter, summary written by Replit Agent, v0.1.0.
+- [S105](wiki/sources/S105-swmm5-inp-file-viewer-replit-summary.md) (2025-08-26): SWMM5 .inp File Viewer (ala InfoSWMM), summary written by Replit Agent, v0.1.0.
+- [S106](wiki/sources/S106-swmm5-topology-sandbox-replit-summary.md) (2026-01-19): SWMM5 Topology Sandbox, summary written by Replit Agent, v1.0.0.
+- [S107](wiki/sources/S107-green-ampt-calculator-replit-summary.md) (2026-11-15): Green-Ampt Infiltration Calculator, summary written by Replit Agent, v1.0.0.
+- [S108](wiki/sources/S108-runoff-and-infiltration-replit-summary.md) (2026-11-15): SWMM5 Runoff and Infiltration App, summary written by Replit Agent, v1.0.0.
+- [S109](wiki/sources/S109-singapourapps-replit-summary.md) (2025-12-24): SingaPourApps, summary written by Replit Agent, v1.0.0.
+- [S110](wiki/sources/S110-infodrainage-explorer-replit-summary.md) (2026-02-11): InfoDrainage Explorer, summary written by Replit Agent, v1.0.0.
+- [S111](wiki/sources/S111-mapswmmsewer-code-repository-replit-summary.md) (2026-03-09): MapSWMMSewer - Code Repository, summary written by Replit Agent, v1.0.0.
+- [S112](wiki/sources/S112-city-temperature-explorer-replit-summary.md) (2026-03-16): City Temperature Explorer, summary written by Replit Agent, v1.0.0.
+- [S113](wiki/sources/S113-geoai-flood-impact-replit-summary.md) (2026-11-15): GeoAI Flood Impact, summary written by Replit Agent, v2.4.1_b.
 
 Manuals and reports (primary documents)
 - [S60](wiki/sources/S60-epa-swmm5-reference-manual-vol2-hydraulics.md) (2017-05): EPA SWMM Reference Manual, Volume II, Hydraulics, by L. A. Rossman. Read in part: section 1.1 and Chapters 2, 3, 4 and 6 (the raw file lacks pages 64 to 66 and 122).

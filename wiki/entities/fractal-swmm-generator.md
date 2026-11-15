@@ -2,9 +2,10 @@
 title: Fractal SWMM5/SWMM6 Network Generator (app)
 type: entity
 updated: 2026-11-15
-sources: [S78]
+sources: [S78, S106]
 tags: [apps, generators, swmm5, swmm6, test-models]
 reviewed: 2026-11-15
+changed_after_review: "2026-11-15 (Replit ingest): one paragraph added near the end, headed Added 15 November 2026, on the SWMM5 Topology Sandbox (S106)"
 ---
 Bob's app that grows a tree-shaped drainage network from a fractal rule, shows every step of the build, writes a runnable SWMM `.inp`, runs it in an embedded EPA SWMM 5.2.4 and audits its hydraulics pipe by pipe. Version 2.3, 12 November 2026. "It is a teaching and test-model generator. It is not a design tool" [S78](../sources/S78-fractal-swmm-generator-app-md.md).
 
@@ -37,3 +38,5 @@ Bob's app that grows a tree-shaped drainage network from a fractal rule, shows e
 **Limits.** Diameters follow the rule, not the flow: at depth 7 the Horton trunk is 57.9 in for about 27 cfs. Every network is a tree, with no loops, pumps, weirs or storage. DLA still floods at default settings. No person has reviewed the two generator changes of v2.3 [S78](../sources/S78-fractal-swmm-generator-app-md.md).
 
 **History.** 2.0 on 2 November 2026 added the Build tab and US customary units and fixed six export defects; 2.1 answered nine findings of an outside review by ChatGPT [S78](../sources/S78-fractal-swmm-generator-app-md.md).
+
+**Added 15 November 2026: a second generator.** A separate Replit app, [SWMM5 Topology Sandbox (app)](swmm5-topology-sandbox.md), also offers 22 network patterns. It exports a SWMM5-format INP file but runs no engine, and its hydrographs are estimates [S106](../sources/S106-swmm5-topology-sandbox-replit-summary.md). Neither summary says how the two generators are related (Q73).

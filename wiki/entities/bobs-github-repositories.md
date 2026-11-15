@@ -1,10 +1,11 @@
 ---
 title: Bob's GitHub repositories (where the rest of the material lives)
 type: entity
-updated: 2026-11-14
-sources: [S07, S08, S55, S57]
+updated: 2026-11-15
+sources: [S07, S08, S55, S57, S96, S97, S101, S103]
 tags: [repositories]
 reviewed: 2026-11-15
+changed_after_review: "2026-11-15 (Replit ingest): one paragraph added at the end, headed Added 15 November 2026, listing four repositories named by Replit apps (S96, S97, S101, S103)"
 ---
 Every repository named in an ingested source, with the description the source gives. None of their contents is in `raw/` yet. This page is the map for future ingests.
 
@@ -61,3 +62,5 @@ Every repository named in an ingested source, with the description the source gi
 **Three owner names carry Bob's own repositories.** `dickinsonre` (written `Dickinsonre` in [S57](../sources/S57-swmm-brain-setup-script.md)), `SWMMEnablement` and `SWMMBobSWMM6`.
 
 **Suggested order for bringing them into raw.** READMEs first, one source page per repository: the six defaults, then `ReSWMM`, `InfoSewer-to-ICM` and `bobswmmapps`. Code is not a source for this wiki; a repository's README, docs folder and test results are.
+
+**Added 15 November 2026: four repositories named by Replit apps.** `dickinsonre/Swmm5-UI-Engine` [S96](../sources/S96-swmm5-ui-replit-summary.md), `dickinsonre/SWMM-Filebase` [S97](../sources/S97-swmm5-network-miner-replit-summary.md), `dickinsonre/SJ-SWMM5-ManualSearch` [S101](../sources/S101-swmm5-manual-search-replit-summary.md) and `dickinsonre/InfoSWMM-InfoSewer-Reader` [S103](../sources/S103-legacy-model-reader-replit-summary.md). See [Replit apps and the summaries Replit Agent wrote](../concepts/replit-app-summaries.md).

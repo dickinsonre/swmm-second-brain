@@ -119,7 +119,7 @@ print('open questions: %d   pages not yet reviewed by Bob: %d' % (open_q, unrevi
 if rereview:
     print('pages changed after Bob reviewed them: %d (%s)' % (len(rereview), ', '.join(os.path.basename(x)[:-3] for x in sorted(rereview))))
 if partial:
-    print('long documents read in part: %d (%s)' % (len(partial), ', '.join(os.path.basename(x)[:3] for x in partial)))
+    print('long documents read in part: %d (%s)' % (len(partial), ', '.join(os.path.basename(x).split('-')[0] for x in partial)))
 for w in warns:
     print('WARN ', w)
 for e in errors:

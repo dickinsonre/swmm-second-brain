@@ -1,10 +1,11 @@
 ---
 title: Infiltration methods
 type: concept
-updated: 2026-11-14
-sources: [S01, S03, S08, S10, S15, S55, S59, S67]
+updated: 2026-11-15
+sources: [S01, S03, S08, S10, S15, S55, S59, S67, S107, S108]
 tags: [hydrology, swmm5, infiltration]
 reviewed: 2026-11-15
+changed_after_review: "2026-11-15 (Replit ingest): one paragraph added near the end, headed Added 15 November 2026, on two Replit infiltration calculators (S107, S108)"
 ---
 SWMM5's infiltration methods, as named in its code [S15](../sources/S15-li-hydrology-code-story.md):
 
@@ -31,3 +32,5 @@ The table is from [S15](../sources/S15-li-hydrology-code-story.md), an AI-writte
 - [swmm524-perched](../entities/swmm524-perched.md) adds a second soil layer to the LID with a Green-Ampt cap on flow into it [S59](../sources/S59-topsoil-recovery-check-app-md.md).
 
 **How often it is asked.** "Infiltration methods" tags 146 of Bob's 2,879 OpenSWMM thread titles [S10](../sources/S10-openswmm-top25-problems.md).
+
+**Added 15 November 2026: two calculators outside the engine.** Two of Bob's Replit apps compute these methods in their own TypeScript and call no SWMM engine: [Green-Ampt Infiltration Calculator (app)](../entities/green-ampt-infiltration-calculator.md) [S107](../sources/S107-green-ampt-calculator-replit-summary.md) and [SWMM5 Runoff and Infiltration (app)](../entities/swmm5-runoff-and-infiltration.md) [S108](../sources/S108-runoff-and-infiltration-replit-summary.md). Both use `S = 1000 / CN - 10` for the Curve Number storage. Replit Agent, reading the first app's code, reported that its unit selector does not convert the Green-Ampt and Horton inputs and that its Curve Number branch does not accumulate rainfall; neither was tested (Q69).
