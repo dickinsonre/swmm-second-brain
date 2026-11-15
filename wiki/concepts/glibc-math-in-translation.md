@@ -4,7 +4,7 @@ type: concept
 updated: 2026-11-14
 sources: [S23, S24, S27, S28, S30, S32, S33, S34, S35, S41, S44, S51, S52, S54, S70]
 tags: [translation, numerics, verification]
-reviewed: no
+reviewed: 2026-11-15
 ---
 A byte-for-byte translation needs every math function to return the same bits as the one the original engine calls. The SWMM6 C++ engine calls glibc 2.39's math library; the SWMM6 ports use 19 of its functions [S24](../sources/S24-swmm6-go-readme.md). The ports took two routes.
 
