@@ -192,3 +192,9 @@ Checked at ingest: every number and every code fragment in backticks on the sour
 Length: Pumps and pump curves stands at 711 words (666 before); it joins the four pages due for a split at the next lint.
 Branches: Bob deleted the branches on GitHub while this ingest ran. `replit-summaries-3` held the raw file and had not been merged, so the agent pushed it again with this ingest on it. Main is unchanged until Bob says "merge".
 Counts: 131 of 375 raw files ingested, 240 queued; 266 wiki pages; 74 open questions and 6 settled.
+
+## [2026-11-15] raw | One more Replit summary brought over
+
+Bob sent a link for the project SwmmInpViewer. Read out of the Replit editor and checked against a SHA-256 computed there: swmm-inp-viewer--robertdickinson-v1.0.0 (app name in the file: SWMM5 & EPANET INP Explorer). It matches. Queued, not ingested. This is not the app behind S105, whose file is swmm-5-inp-reader-robertdickinson-v0.1.0.
+He also sent the link for the SWMManywhere Explorer summary; the file in Replit has the same SHA-256 as the raw file behind S122.
+Counts: 131 of 376 raw files ingested, 241 queued.
