@@ -4,7 +4,7 @@ type: concept
 updated: 2026-11-14
 sources: [S03, S04, S05]
 tags: [findings, method]
-reviewed: no
+reviewed: 2026-11-15
 ---
 Ideas that were tried and did not work. The register treats a disproven idea as a finding, and calls this group "the part no other register in this field has" [S03](../sources/S03-findings-register-format.md).
 
