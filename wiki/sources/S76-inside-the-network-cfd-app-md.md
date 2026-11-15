@@ -7,7 +7,7 @@ author: Robert Dickinson
 published: 2026-11-12
 ingested: 2026-11-15
 tags: [apps, cfd, hydraulics, swmm5, extran, wasm, verification]
-reviewed: no
+reviewed: 2026-11-15
 ---
 **What it is.** The technical summary that ships with Inside the Network, version 1.1.0: a 2D vertical-slice free-surface CFD solver run along one path of a SWMM 5 network, beside EPA SWMM 5.2.4 on the whole file. Raw file: [raw/apps/inside-the-network-cfd.md](../../raw/apps/inside-the-network-cfd.md). Bob uploaded it on 14 November 2026.
 

@@ -7,7 +7,7 @@ author: Robert Dickinson
 published: 2026-11-11
 ingested: 2026-11-15
 tags: [apps, publishing, measurement, openswmm, linkedin]
-reviewed: no
+reviewed: 2026-11-15
 ---
 **What it is.** The technical summary carried inside the Bob Usefulness Index, version 2.2: a 100-point scorecard of how useful Bob's shared work is to water modelers, scored against the record in his Knowledge Library. Raw file: [raw/apps/bob-usefulness-index-v2.2.md](../../raw/apps/bob-usefulness-index-v2.2.md). Extracted byte for byte from Bob's artifact on 14 November 2026.
 

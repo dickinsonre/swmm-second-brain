@@ -7,7 +7,7 @@ author: Robert Dickinson
 published: 2026-11-13
 ingested: 2026-11-15
 tags: [swmm-history, swmm1, verification, apps, wasm]
-reviewed: no
+reviewed: 2026-11-15
 ---
 **What it is.** The technical summary carried inside the SWMM 1 Engine page, version 3.13. It replaces [S01](S01-swmm1-engine-app-md.md) (version 3.6) as the current source for the app. Raw file: [raw/apps/swmm1-runoff-engine-v3.13.md](../../raw/apps/swmm1-runoff-engine-v3.13.md). Versions 3.7 to 3.12 were never ingested; 3.12 is marked `superseded`.
 

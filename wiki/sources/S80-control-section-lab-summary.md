@@ -7,7 +7,7 @@ author: Robert Dickinson
 published: 2026-10-18
 ingested: 2026-11-15
 tags: [apps, hydraulics, swmm5, swmm6, icm, open-channel, findings, verification, wasm]
-reviewed: no
+reviewed: 2026-11-15
 ---
 **What it is.** A technical summary of the app Control Section Lab, version 1.2 (18 October 2026): one channel reach at steady flow, a reference profile, and EPA SWMM 5.2.4 and OpenSWMM 6 run on it in the page. Raw file: [raw/apps/control-section-lab-v1.2.md](../../raw/apps/control-section-lab-v1.2.md).
 

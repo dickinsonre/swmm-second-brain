@@ -7,7 +7,7 @@ author: Robert Dickinson
 published: 2026-11-12
 ingested: 2026-11-15
 tags: [apps, generators, swmm5, swmm6, test-models, verification, wasm]
-reviewed: no
+reviewed: 2026-11-15
 ---
 **What it is.** The technical summary carried inside the Fractal SWMM5/SWMM6 Network Generator, version 2.3. Raw file: [raw/apps/fractal-swmm-generator-v2.3.md](../../raw/apps/fractal-swmm-generator-v2.3.md). Extracted byte for byte from Bob's published artifact on 14 November 2026.
 

@@ -7,7 +7,7 @@ author: Robert Dickinson
 published: 2026-10-25
 ingested: 2026-11-15
 tags: [apps, swmm5, hot-start, dynamic-wave, engine-comparison, verification, wasm]
-reviewed: no
+reviewed: 2026-11-15
 ---
 **What it is.** A technical summary of the app Teacher-Forced SWMM, version 1.0 (25 October 2026), which compares two versions of the EPA SWMM 5.2.4 engine by restarting one from the other's exact state. Raw file: [raw/apps/teacher-forced-swmm-v1.0.md](../../raw/apps/teacher-forced-swmm-v1.0.md).
 

@@ -7,7 +7,7 @@ author: Robert Dickinson
 published: 2026-10-23
 ingested: 2026-11-15
 tags: [corpus, swmm5, swmm6, test-models, verification]
-reviewed: no
+reviewed: 2026-11-15
 ---
 **What it is.** The README of Bob's model corpus, SWMMBobSWMM6/1729-SWMM5-Models-2030. It is a repository README, not an app summary, though it sits in `raw/apps/`. Raw file: [raw/apps/1729-SWMM5-Models-2030 README (1).md](../../raw/apps/1729-SWMM5-Models-2030%20README%20%281%29.md). Bob uploaded it on 14 November 2026.
 

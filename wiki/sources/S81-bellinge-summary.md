@@ -7,7 +7,7 @@ author: Robert Dickinson
 published: 2026-10-18
 ingested: 2026-11-15
 tags: [apps, swmm5, swmm6, swmm4, extran, engine-comparison, bellinge, wasm]
-reviewed: no
+reviewed: 2026-11-15
 ---
 **What it is.** A technical summary of the app Bellinge, version 2.0 (18 October 2026): the open Bellinge combined sewer model of Odense, Denmark, run through seven SWMM engines in the browser. Raw file: [raw/apps/bellinge-v2.0.md](../../raw/apps/bellinge-v2.0.md).
 

@@ -7,7 +7,7 @@ author: Robert Dickinson
 published: 2026-11-15
 ingested: 2026-11-15
 tags: [corpus, names]
-reviewed: no
+reviewed: 2026-11-15
 ---
 **What it is.** A one-idea note on the repository's note template: Bob's answer to this wiki's line that the meaning of "1729" and "2030" in the corpus name was not in the sources. Raw file: [raw/notes/corpus-name-1729-2030.md](../../raw/notes/corpus-name-1729-2030.md).
 
