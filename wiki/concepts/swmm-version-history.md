@@ -5,7 +5,6 @@ updated: 2026-11-15
 sources: [S01, S07, S11, S12, S19, S20, S21, S22, S55, S60, S63, S86]
 tags: [swmm-history, timeline]
 reviewed: 2026-11-15
-changed_after_review: "2026-11-15: one paragraph added near the end, headed Added 15 November 2026"
 ---
 The timeline as the ingested sources give it. Where two sources differ, both are shown.
 

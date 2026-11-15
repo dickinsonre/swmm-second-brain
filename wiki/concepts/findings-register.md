@@ -5,7 +5,6 @@ updated: 2026-11-15
 sources: [S03, S04, S05, S59, S67, S71, S72, S74, S75, S79, S80, S82, S83]
 tags: [findings, verification, method]
 reviewed: 2026-11-15
-changed_after_review: "2026-11-15: one paragraph added near the end, headed Added 15 November 2026"
 ---
 A numbered, dated record of what was checked and what came back, proposed in October 2026 because Bob's apps are safe on Netlify and GitHub while the findings exist only inside chat transcripts [S03](../sources/S03-findings-register-format.md).
 

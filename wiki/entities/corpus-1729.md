@@ -5,7 +5,6 @@ updated: 2026-11-15
 sources: [S23, S29, S30, S35, S41, S42, S43, S45, S52, S54, S74, S87, S89, S75, S79]
 tags: [corpus, verification, swmm5, swmm6]
 reviewed: 2026-11-15
-changed_after_review: "2026-11-15: the paragraph 'The name' replaces 'Not in the sources'; paragraphs 'Inventory, from its README', 'Added 23 October 2026', 'License' and 'Other users of it' added"
 ---
 Bob's public repository of SWMM5 models, https://github.com/SWMMBobSWMM6/1729-SWMM5-Models-2030 [S23](../sources/S23-swmm6-csharp-readme.md).
 

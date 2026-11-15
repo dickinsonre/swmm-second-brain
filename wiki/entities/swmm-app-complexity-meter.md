@@ -5,7 +5,6 @@ updated: 2026-11-15
 sources: [S01, S02, S73, S75]
 tags: [apps, measurement]
 reviewed: 2026-11-15
-changed_after_review: "2026-11-15: the 'Used by' paragraph extended with the v3.13 and Rosetta Stone scores"
 ---
 Bob's browser app that reads a program's source (one .html, a folder, a .zip or a GitHub repository) and grades it against the HydroCouple GitHub organization, fixed at 100 [S02](../sources/S02-complexity-meter-app-md.md). Version 1.9.1, 11 November 2026; analyzer `meter-core.js` 1.7.0 [S02](../sources/S02-complexity-meter-app-md.md). The method is on [App complexity index (HydroCouple = 100)](../concepts/app-complexity-index.md).
 

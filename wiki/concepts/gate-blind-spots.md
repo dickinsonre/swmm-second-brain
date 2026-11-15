@@ -5,7 +5,6 @@ updated: 2026-11-15
 sources: [S39, S40, S41, S43, S44, S45, S47, S49, S50, S54, S87]
 tags: [verification, method, translation]
 reviewed: 2026-11-15
-changed_after_review: "2026-11-15: one paragraph added near the end, headed Added 15 November 2026"
 ---
 A [Byte-for-byte gate](byte-for-byte-gate.md) passes or fails a whole model. The SWMM5 translation READMEs record what it misses and what was added to cover the gaps.
 

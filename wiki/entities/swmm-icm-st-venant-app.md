@@ -5,7 +5,6 @@ updated: 2026-11-15
 sources: [S20]
 tags: [apps, comparison, hydraulics]
 reviewed: 2026-11-15
-changed_after_review: "2026-11-15: paragraph 'Not to be confused with' added"
 ---
 Bob's Replit app that sets SWMM 5's and ICM's solutions of the St. Venant equations side by side, at `swmm-icm-st-venant--robertdickinson.replit.app` [S20](../sources/S20-li-edition-54-two-solvers.md).
 
