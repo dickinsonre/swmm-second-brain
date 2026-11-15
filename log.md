@@ -320,3 +320,8 @@ Counts: 144 of 394 raw files ingested, 246 queued.
 
 Bob wrote at 18:42: "OpenSWMM license has moved away from MIT". Filed in his words as raw/notes/openswmm-license-not-mit-2026-11-15.md and queued, to be ingested with the OpenSWMM Engine summary (open-swmm-core-v6.0.0-alpha.1), which says MIT. The wiki already gives Apache-2.0 for OpenSWMM `swmm6_rel` from several sources (S59, S69, S96 and the OpenSWMM 6 page); none of its pages says MIT for OpenSWMM. On the branch `replit-summaries-7`.
 Counts: 144 of 395 raw files ingested, 247 queued.
+
+## [2026-11-15] raw | Bob's note: the Ruby Script Runner is deleted
+
+Bob wrote at 18:55: "it is gonem, it is better to use icm exchange anyway". He had deleted the InfoWorks ICM Ruby Script Runner (Replit project RubyScriptAI) after its summary showed it ran visitors' Ruby on the server and Replit Agent found no sandbox available. Filed in his words as raw/notes/ruby-script-runner-deleted-2026-11-15.md and queued, to be ingested with ruby-script-ai-v0.1.0, which stays as the record of the app. On the branch `replit-summaries-7`.
+Counts: 144 of 396 raw files ingested, 248 queued.
