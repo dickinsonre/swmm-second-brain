@@ -4,7 +4,7 @@ type: concept
 updated: 2026-11-14
 sources: [S01, S13, S14, S15, S22]
 tags: [hydrology, swmm5, icm]
-reviewed: no
+reviewed: 2026-11-15
 ---
 A SWMM5 subcatchment is three subareas: impervious with depression storage, impervious without depression storage, and pervious with depression storage [S13](../sources/S13-li-three-runoff-surfaces.md). Two inputs set them: percent impervious, and the percent of the impervious area with no depression storage [S13](../sources/S13-li-three-runoff-surfaces.md).
 
