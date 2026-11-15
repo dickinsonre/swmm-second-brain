@@ -4,7 +4,7 @@ type: entity
 updated: 2026-11-14
 sources: [S62, S63]
 tags: [apps, calibration, uncertainty, swmm5, wasm, lovable]
-reviewed: no
+reviewed: 2026-11-15
 ---
 Bob's interactive edition of the 2005 book by [William (Bill) James](william-james.md), built with Lovable and served at https://rulesforresponsiblemodeling.lovable.app [S63](../sources/S63-li-edition-53-measure-of-honest-numbers.md). Version 2026.1.2, 14 November 2026, MIT license [S62](../sources/S62-rules-for-responsible-modeling-app-md.md). Its subject is on [Calibration, validation and uncertainty](../concepts/calibration-validation-uncertainty.md).
 
