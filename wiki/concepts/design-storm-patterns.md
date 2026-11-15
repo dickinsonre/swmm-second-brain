@@ -4,7 +4,7 @@ type: concept
 updated: 2026-11-14
 sources: [S62, S65, S66]
 tags: [rainfall, design-storms, hydrology, method]
-reviewed: no
+reviewed: 2026-11-15
 ---
 A design storm is a total depth and a shape. The shape, a hyetograph, says when in the storm the rain falls hardest, and it is the rainfall input a drainage model needs [S66](../sources/S66-li-design-storm-app-66-patterns.md). Bob's [World Rainfall Pattern Painter (app)](../entities/world-rainfall-pattern-painter.md) generates them [S65](../sources/S65-world-rainfall-pattern-painter-app-md.md).
 
