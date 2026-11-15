@@ -172,3 +172,13 @@ Checked at ingest: every number in the claims and limits of the seventeen source
 Length: four reviewed pages now stand over 600 words after their added paragraphs: Kinematic wave and steady flow routing (625), SWMM6 language translations (623), SWMM5 language translations (674, 606 before) and SWMM version history (803, 768 before). They are due for a split at the next lint.
 Counts: 130 of 374 raw files ingested, 240 queued; 264 wiki pages; 74 open questions and 6 settled.
 Not ingested, still queued in `raw/apps/`: st-venant-solver-rosetta-stone-v2.6.2 and PyBME-issue-drafts (Q56).
+
+## [2026-11-15] setup | Main fast-forwarded to the ingest of S114 to S130
+
+Bob had said "merge when done". Main now stands at the ingest commit. The agent cannot delete branches on GitHub; `replit-summaries-2` is merged and can go.
+
+## [2026-11-15] raw | One more Replit summary brought over
+
+Bob sent a link for the project SWMM5ControlRules. Read out of the Replit editor and checked against a SHA-256 computed there: hydro-control-v0.1.0 (app name in the file: SWMM5 Control Rule Editor). It matches. Queued, not ingested, on the branch `replit-summaries-3`.
+He also sent the link for the Sewer Code Search summary; the file in Replit has the same SHA-256 as the raw file behind S111, and the EPANET SWMM Experts file has the same SHA-256 as the raw file behind S115.
+Counts: 130 of 375 raw files ingested, 241 queued.
