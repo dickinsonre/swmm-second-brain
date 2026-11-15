@@ -4,7 +4,7 @@ type: concept
 updated: 2026-11-14
 sources: [S19]
 tags: [swmm-history, performance]
-reviewed: no
+reviewed: 2026-11-15
 ---
 One test model, timed 36 years apart, on the hardware of each day [S19](../sources/S19-li-edition-29-engine-speed.md).
 
