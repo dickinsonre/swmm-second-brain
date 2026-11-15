@@ -4,7 +4,7 @@ type: concept
 updated: 2026-11-14
 sources: [S09, S10, S22]
 tags: [openswmm, forum, measurement]
-reviewed: no
+reviewed: 2026-11-15
 ---
 What people asked about, counted from the titles of the 2,879 openswmm.org threads Bob posted in between 1995 and 2026 [S10](../sources/S10-openswmm-top25-problems.md). Tags are keyword patterns on titles only; a thread can carry several, some are approximate, and 2,190 threads carry at least one [S10](../sources/S10-openswmm-top25-problems.md).
 
