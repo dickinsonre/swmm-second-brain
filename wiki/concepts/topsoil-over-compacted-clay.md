@@ -4,7 +4,7 @@ type: concept
 updated: 2026-11-14
 sources: [S08, S59]
 tags: [hydrology, infiltration, lid, swmm5]
-reviewed: no
+reviewed: 2026-11-15
 ---
 **The question.** How much of a storm does 4 in of decompacted, amended topsoil over 24 in of compacted sandy clay capture in SWMM, in the dormant and the growing season, and how much does the answer depend on which SWMM setup describes the soil? It is studied on the [Topsoil Recovery Check (app)](../entities/topsoil-recovery-check.md) [S59](../sources/S59-topsoil-recovery-check-app-md.md), which compares Horton with the LID two-layer soil in EPA SWMM 5.2.4 [S08](../sources/S08-swmm5org-topic-inside-swmm5.md).
 
