@@ -4,7 +4,7 @@ type: concept
 updated: 2026-11-14
 sources: [S59, S67]
 tags: [swmm5, infiltration, green-ampt, findings, verification]
-reviewed: no
+reviewed: 2026-11-15
 ---
 A candidate finding in [EPA SWMM 5](../entities/swmm-5.md) 5.2.4: the Green-Ampt solver checks whether its Newton correction is small before it applies the correction, so some wet steps infiltrate at the saturated conductivity alone [S67](../sources/S67-note-green-ampt-newton-test-order.md).
 
