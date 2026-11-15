@@ -4,7 +4,7 @@ type: concept
 updated: 2026-11-14
 sources: [S04, S10, S11, S22]
 tags: [documentation, swmm5, swmm6]
-reviewed: no
+reviewed: 2026-11-15
 ---
 Four of the ten problems in [S22](../sources/S22-li-ten-problems.md) are one problem: there has never been a written, testable statement of what the engine does and how to read what it prints [S22](../sources/S22-li-ten-problems.md).
 
