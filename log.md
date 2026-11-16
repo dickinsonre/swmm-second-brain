@@ -325,3 +325,15 @@ Counts: 144 of 395 raw files ingested, 247 queued.
 
 Bob wrote at 18:55: "it is gonem, it is better to use icm exchange anyway". He had deleted the InfoWorks ICM Ruby Script Runner (Replit project RubyScriptAI) after its summary showed it ran visitors' Ruby on the server and Replit Agent found no sandbox available. Filed in his words as raw/notes/ruby-script-runner-deleted-2026-11-15.md and queued, to be ingested with ruby-script-ai-v0.1.0, which stays as the record of the app. On the branch `replit-summaries-7`.
 Counts: 144 of 396 raw files ingested, 248 queued.
+
+## [2026-11-15] ingest | S145 to S152: six Replit summaries and two notes
+
+Ingested S145 ICM Ruby to Nano Banana Prompt, S146 InfoSewer to InfoWorks ICM, S147 SWMManywhere Explorer (swm-explorer), S148 OpenSWMM Engine, S149 EPANET Quizzer and S150 InfoWorks ICM Ruby Script Runner, with Bob's notes S151 (the OpenSWMM license is no longer MIT) and S152 (he deleted the Ruby Script Runner; ICM Exchange is the better way).
+Created: eight source pages, six entity pages and the concept page "Replit apps: a fourth set of six summaries". Changed: the third-batch concept page (one pointer); the SWMManywhere Explorer, InfoSewer and InfoSWMM Legacy Model Reader and SWMM5 Quizzer pages (a paragraph each); OpenSWMM 6 and HydroCouple (reviewed page, a paragraph on the app and the license, marked changed_after_review); overview (a bullet and the counts); open questions (sentences added to Q74, Q75, Q76, Q77, Q79 and Q80); index; README.
+Contradiction: S148 says the OpenSWMM Engine app identifies OpenSWMMCore and HydroCouple as MIT; S59, S69 and S96 give Apache-2.0 for swmm6_rel of HydroCouple/openswmm.engine. Filed as Q83 and settled by Bob (S151): the license has moved away from MIT. Bob also said at 18:44 that he would fix the app now; a fixed version comes as a new summary.
+Checked at ingest: numbers and code fragments on the new pages were searched for in their raw files; the misses are our arithmetic, marked, and "SHA-256".
+Counts: 152 of 396 raw files ingested, 240 queued; 305 wiki pages; 76 open questions and 7 settled.
+
+## [2026-11-15] setup | Main fast-forwarded to S152
+
+Main now holds S145 to S152. `replit-summaries-7` is merged and can go.

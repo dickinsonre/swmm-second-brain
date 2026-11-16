@@ -2,7 +2,7 @@
 title: SWMManywhere Explorer (app)
 type: entity
 updated: 2026-11-15
-sources: [S122]
+sources: [S122, S147]
 tags: [apps, replit, swmm5, model-generation]
 reviewed: no
 ---
@@ -22,5 +22,7 @@ Bob's Replit app SWMManywhere Explorer: a browser guide to the separate SWMManyw
 **What it does not show.** The upstream workflow, equation and dataset descriptions are static reference content, not validated by running SWMManywhere. Tab navigation, search and theme persistence were not checked. The `date:` is the newest date in Git, an entry reading "Published your App." [S122](../sources/S122-swmmanywhere-explorer-replit-summary.md)
 
 **Noted at ingest.** Nothing on the page is computed, so there was no result to check beyond the counts.
+
+**Added 15 November 2026: a second app with the same name.** [SWMManywhere Explorer at swm-explorer (app)](swmmanywhere-explorer-swm.md) has the same app name and a different `file:`, and it runs SWMManywhere 0.1.17 and a SWMM5 WebAssembly engine [S147](../sources/S147-swmmanywhere-explorer-swm-replit-summary.md) (Q77).
 
 See [Replit apps: the second seventeen summaries](../concepts/replit-app-summaries-second-batch.md), [EPA SWMM 5](swmm-5.md), [SWMM5 Explorer (app)](swmm5-explorer.md).

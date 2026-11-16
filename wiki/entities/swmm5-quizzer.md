@@ -2,7 +2,7 @@
 title: "SWMM5 Quizzer (app)"
 type: entity
 updated: 2026-11-15
-sources: [S138, S140]
+sources: [S138, S140, S149]
 tags: [apps, replit, swmm5, education, quiz]
 reviewed: no
 ---
@@ -25,5 +25,7 @@ Bob's Replit app SWMM5 Quizzer: a quiz app of multiple-choice questions about EP
 **What it does not show.** Quiz interactions, API writes, the production pages, responsive layouts and `npm run build` were not checked. No independent human review of technical accuracy or of the stored simulation results is recorded. [S138](../sources/S138-swmm5-quizzer-replit-summary.md)
 
 **Noted at ingest.** The app goes by three names: SWMM5 Quizzer in the file, quiz-master in its `file:` and SWMM5QuizMaster as a Replit project (Q77). The `date:` is the day of the summary; the change list runs from 16 August 2025 to 22 February 2026 (Q75). Its `repo:` is on an internal Replit host, not GitHub (Q79). The four faults above are Replit Agent's reading and were not rerun (Q76). A second quiz app, [SWMM5Wiki (app)](swmm5wiki.md) [S140](../sources/S140-swmm5wiki-replit-summary.md), was ingested with it.
+
+**Added 15 November 2026: an EPANET counterpart.** [EPANET Quizzer (app)](epanet-quizzer.md) also holds 250 questions, on water distribution, in four categories [S149](../sources/S149-epanet-quizzer-replit-summary.md).
 
 See [Replit apps: six more summaries](../concepts/replit-app-summaries-third-batch.md), [SWMM5Wiki (app)](swmm5wiki.md), [InfoDrainage Explorer (app)](infodrainage-explorer.md).

@@ -19,7 +19,7 @@ Six more of Bob's Replit apps got a technical summary from Replit Agent on 15 No
 | [BobSWMM Writer (app)](../entities/bobswmm-writer.md) | `snagit-video-article--robertdickinson` | BobSWMMWriter | [S141](../sources/S141-bobswmm-writer-replit-summary.md) |
 | [ICM PRN File Reader (app)](../entities/icm-prn-file-reader.md) | `icm-reader-robertdickinson` | ICMReader | [S142](../sources/S142-icm-prn-file-reader-replit-summary.md) |
 
-Site names are `.replit.app` names except the two given in full.
+Site names are `.replit.app` names except the two given in full. Six that came after these are on [Replit apps: a fourth set of six summaries](replit-app-summaries-fourth-batch.md).
 
 **In common.** All six give `engines: none` and run no simulation [S137](../sources/S137-swmm-documents-explorer-replit-summary.md) [S138](../sources/S138-swmm5-quizzer-replit-summary.md) [S139](../sources/S139-swmmcraft-infiltration-replit-summary.md) [S140](../sources/S140-swmm5wiki-replit-summary.md) [S141](../sources/S141-bobswmm-writer-replit-summary.md) [S142](../sources/S142-icm-prn-file-reader-replit-summary.md). None records a human review. Each was checked on the development copy, not the published site.
 

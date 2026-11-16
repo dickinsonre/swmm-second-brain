@@ -2,7 +2,7 @@
 title: InfoSewer and InfoSWMM Legacy Model Reader (app)
 type: entity
 updated: 2026-11-15
-sources: [S103]
+sources: [S103, S146]
 tags: [apps, replit, infosewer, infoswmm, legacy, icm, migration]
 reviewed: no
 ---
@@ -26,5 +26,7 @@ Bob's Replit app InfoSewer and InfoSWMM Legacy Model Reader: an app that reads I
 **What it does not show.** The tests cover synthetic fixtures, not every real DBF variant. No hydraulic simulation was run. Uploading, editing and export downloads were not exercised. The production build was not tested. [S103](../sources/S103-legacy-model-reader-replit-summary.md)
 
 **Noted at ingest.** This is the first source here that names tables inside an ISDB or IEDB model. [InfoSWMM and InfoSewer](infoswmm-and-infosewer.md) had listed the file layout as not in the sources.
+
+**Added 15 November 2026: a guide to the next step.** [InfoSewer to InfoWorks ICM (app)](infosewer-to-infoworks-icm-guide.md) is a guide to moving InfoSewer data into InfoWorks ICM, with ID, CSV and SQL checkers; it converts nothing itself [S146](../sources/S146-infosewer-to-infoworks-icm-replit-summary.md).
 
 See [Replit apps and the summaries Replit Agent wrote](../concepts/replit-app-summaries.md), [InfoSWMM and InfoSewer](infoswmm-and-infosewer.md), [InfoWorks ICM](infoworks-icm.md), [Camel_SWMM (app)](camel-swmm.md).

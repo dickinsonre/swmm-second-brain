@@ -2,10 +2,10 @@
 title: OpenSWMM 6 and HydroCouple
 type: entity
 updated: 2026-11-15
-sources: [S02, S03, S04, S05, S21, S22, S23, S29, S59, S69, S72, S75, S80, S81, S87, S134, S135]
+sources: [S02, S03, S04, S05, S21, S22, S23, S29, S59, S69, S72, S75, S80, S81, S87, S134, S135, S148, S151]
 tags: [swmm6, engine, hydrocouple]
 reviewed: 2026-11-15
-changed_after_review: "2026-11-15 (S134 ingest): one paragraph added, headed Added 15 November 2026, on the reception of a LinkedIn post about OpenSWMM 6 (S134); 2026-11-15 (S135 ingest): that paragraph rewritten from the list of 50 posts (S135)"
+changed_after_review: "2026-11-15 (S134 ingest): one paragraph added, headed Added 15 November 2026, on the reception of a LinkedIn post about OpenSWMM 6 (S134); 2026-11-15 (S135 ingest): that paragraph rewritten from the list of 50 posts (S135); 2026-11-15 (S145 to S152 ingest): a paragraph added at the end, headed Added 15 November 2026, on the OpenSWMM Engine app and the license (S148, S151)"
 ---
 OpenSWMM 6 is the SWMM line developed at HydroCouple [S22](../sources/S22-li-ten-problems.md). Caleb Buahin is the lead developer of the HydroCouple platform [S21](../sources/S21-li-edition-56-swmm-history.md).
 
@@ -40,3 +40,5 @@ OpenSWMM 6 is the SWMM line developed at HydroCouple [S22](../sources/S22-li-ten
 **Not in the sources yet.** How the solvers are derived (the app summaries quote lines and results, not the manual), 2D beyond what the Rust translation covers, the GUI, the input format. Queued: "SWMM6 Code House" (2026-11-04, 4,427 words), "Forking without Drowning on GitHub for #SWMM6" (2026-08-14), the swmm5.org topic pages "Inside SWMM6" and "ICM InfoWorks and SWMM6".
 
 **Added 15 November 2026: a post about it.** A LinkedIn post of Bob's that begins "What is #HydroCouple for 1D and 2D stormwater modeling?" had 168 reactions, 8 comments and 16,612 impressions when he listed his posts on 15 November 2026, the second most reactions of 50 posts [S135](../sources/S135-li-fifty-posts-with-counts.md); see [LinkedIn posts that were well received](../concepts/linkedin-post-reception.md) [S134](../sources/S134-note-linkedin-two-well-received-posts.md).
+
+**Added 15 November 2026: a browser app, and the license.** Bob's [OpenSWMM Engine (app)](openswmm-engine-app.md) runs the legacy SWMM engine of HydroCouple/OpenSWMMCore, branch `swmm6_rel`, in the browser, and calls the project MIT [S148](../sources/S148-openswmm-engine-app-replit-summary.md). Bob says the OpenSWMM license has moved away from MIT [S151](../sources/S151-note-openswmm-license-not-mit.md) (Q83).
