@@ -7,6 +7,7 @@ author: Robert Dickinson
 published: 2026-11-16
 ingested: 2026-11-16
 tags: [icm, 2d, rainfall, infiltration, curve-number, note]
+drafted_by: GPT plugin for Autodesk (an AI), per S166
 reviewed: no
 ---
 **What it is.** A note on direct rainfall and infiltration on an ICM 2D mesh where subcatchments overlap it. Raw file: [raw/notes/icm-2d-rainfall-and-infiltration.md](../../raw/notes/icm-2d-rainfall-and-infiltration.md).

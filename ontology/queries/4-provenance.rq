@@ -1,0 +1,13 @@
+# Where the statements come from: each source page, who drafted it, and whether Bob has reviewed it
+PREFIX sb: <https://github.com/dickinsonre/swmm-second-brain/ontology#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+SELECT ?source ?drafted_by ?reviewed (COUNT(*) AS ?statements) WHERE {
+  GRAPH ?g { ?s ?p ?o . FILTER(isIRI(?s)) }
+  ?g dcterms:identifier ?source .
+  OPTIONAL { ?g sb:draftedBy ?d }
+  OPTIONAL { ?g sb:reviewed ?rv }
+  BIND(COALESCE(?d, "a person (no drafted_by line)") AS ?drafted_by)
+  BIND(COALESCE(?rv, "") AS ?reviewed)
+}
+GROUP BY ?source ?drafted_by ?reviewed
+ORDER BY ?source

@@ -1,0 +1,89 @@
+subject,relation,object,note,sources,page
+icm-iw:Fixed2D,is_a,sb:InfiltrationMethod,infiltration types of an Infiltration Surface (2D) in ICM 2025.1,S178,wiki/concepts/icm-2d-rainfall-and-infiltration.md
+icm-iw:Horton2D,is_a,sb:InfiltrationMethod,infiltration types of an Infiltration Surface (2D) in ICM 2025.1,S178,wiki/concepts/icm-2d-rainfall-and-infiltration.md
+icm-iw:ConstInf2D,is_a,sb:InfiltrationMethod,infiltration types of an Infiltration Surface (2D) in ICM 2025.1,S178,wiki/concepts/icm-2d-rainfall-and-infiltration.md
+icm-iw:GreenAmpt2D,is_a,sb:InfiltrationMethod,infiltration types of an Infiltration Surface (2D) in ICM 2025.1,S178,wiki/concepts/icm-2d-rainfall-and-infiltration.md
+icm-iw:DefConLoss2D,is_a,sb:InfiltrationMethod,infiltration types of an Infiltration Surface (2D) in ICM 2025.1,S178,wiki/concepts/icm-2d-rainfall-and-infiltration.md
+icm-iw:CNSWMM2D,is_a,sb:InfiltrationMethod,infiltration types of an Infiltration Surface (2D) in ICM 2025.1,S178,wiki/concepts/icm-2d-rainfall-and-infiltration.md
+icm-iw:Fixed2D,part_of,icm-iw:InfiltrationSurface2D,values of its Infiltration type property,S178,wiki/concepts/icm-2d-rainfall-and-infiltration.md
+icm-iw:Horton2D,part_of,icm-iw:InfiltrationSurface2D,values of its Infiltration type property,S178,wiki/concepts/icm-2d-rainfall-and-infiltration.md
+icm-iw:ConstInf2D,part_of,icm-iw:InfiltrationSurface2D,values of its Infiltration type property,S178,wiki/concepts/icm-2d-rainfall-and-infiltration.md
+icm-iw:GreenAmpt2D,part_of,icm-iw:InfiltrationSurface2D,values of its Infiltration type property,S178,wiki/concepts/icm-2d-rainfall-and-infiltration.md
+icm-iw:DefConLoss2D,part_of,icm-iw:InfiltrationSurface2D,values of its Infiltration type property,S178,wiki/concepts/icm-2d-rainfall-and-infiltration.md
+icm-iw:CNSWMM2D,part_of,icm-iw:InfiltrationSurface2D,values of its Infiltration type property,S178,wiki/concepts/icm-2d-rainfall-and-infiltration.md
+icm-iw:CNSWMM2D,available_in,icm:2025.1,on the 2D mesh,S178,wiki/concepts/icm-2d-rainfall-and-infiltration.md
+icm:2025.1,is_a,sb:Release,,S178,wiki/concepts/icm-2d-rainfall-and-infiltration.md
+icm:2025.1,part_of,icm:ICM,,S178,wiki/concepts/icm-2d-rainfall-and-infiltration.md
+icm-iw:CNSWMM2D,has_parameter,icm-iw:InitialAbstractionFactor,,S178,wiki/concepts/icm-2d-rainfall-and-infiltration.md
+icm-iw:CNSWMM2D,has_parameter,icm-iw:CurveNumber,,S178,wiki/concepts/icm-2d-rainfall-and-infiltration.md
+icm-iw:CNSWMM2D,has_parameter,icm-iw:DryingTime,,S178,wiki/concepts/icm-2d-rainfall-and-infiltration.md
+icm-iw:InitialAbstractionFactor,is_a,sb:Parameter,,S178,wiki/concepts/icm-2d-rainfall-and-infiltration.md
+icm-iw:CurveNumber,is_a,sb:Parameter,,S178,wiki/concepts/icm-2d-rainfall-and-infiltration.md
+icm-iw:DryingTime,is_a,sb:Parameter,,S178,wiki/concepts/icm-2d-rainfall-and-infiltration.md
+icm-iw:CNSWMMAntecedentMoistureCondition,is_a,sb:Parameter,,S178,wiki/concepts/icm-2d-rainfall-and-infiltration.md
+icm-iw:CNSWMMAntecedentMoistureCondition,part_of,icm-iw:InitialConditions2D,the soil moisture before a rainfall event,S178,wiki/concepts/icm-2d-rainfall-and-infiltration.md
+icm-iw:SubcatchmentCN,is_a,sb:InfiltrationMethod,on a pervious runoff surface of a subcatchment,S177,wiki/concepts/icm-2d-rainfall-and-infiltration.md
+icm-iw:SubcatchmentCNSWMM,is_a,sb:InfiltrationMethod,on a pervious runoff surface of a subcatchment,S177,wiki/concepts/icm-2d-rainfall-and-infiltration.md
+icm-iw:Horton2D,approximates,icm-iw:SubcatchmentCN,"2023, before CNSWMM on the mesh: with a constant loss rate set by SQL from the CN peak infiltration rate, peak and volume came close, almost the same for small storms",S177,wiki/concepts/icm-2d-rainfall-and-infiltration.md
+icm-iw:GreenAmpt2D,approximates,icm-iw:SubcatchmentCN,"2023, before CNSWMM on the mesh: with a constant loss rate set by SQL from the CN peak infiltration rate, peak and volume came close, almost the same for small storms",S177,wiki/concepts/icm-2d-rainfall-and-infiltration.md
+icm-iw:ConstInf2D,approximates,icm-iw:SubcatchmentCN,"2023, before CNSWMM on the mesh: with a constant loss rate set by SQL from the CN peak infiltration rate, peak and volume came close, almost the same for small storms",S177,wiki/concepts/icm-2d-rainfall-and-infiltration.md
+icm-iw:OutsideSubcatchments,is_a,sb:Setting,,S169,wiki/concepts/icm-2d-rainfall-and-infiltration.md
+icm-iw:OutsideSubcatchments,part_of,icm-iw:Zone2D,keeps direct mesh rain off the area inside subcatchments,S169,wiki/concepts/icm-2d-rainfall-and-infiltration.md
+ruby:3.4.6,is_a,sb:RubyRuntime,,S160,wiki/concepts/icm-ruby-ui-and-exchange.md
+ruby:2.4.0,is_a,sb:RubyRuntime,,S160,wiki/concepts/icm-ruby-ui-and-exchange.md
+ruby:3.4.6,available_in,icm:2027.0,for UI and Exchange scripting,S160,wiki/concepts/icm-ruby-ui-and-exchange.md
+ruby:3.4.6,replaces,ruby:2.4.0,a script that requires a library that changed or is gone fails with LoadError,S160,wiki/concepts/icm-ruby-ui-and-exchange.md
+icm:2027.0,is_a,sb:Release,,S160,wiki/concepts/icm-ruby-ui-and-exchange.md
+icm:2027.0,part_of,icm:ICM,,S160,wiki/concepts/icm-ruby-ui-and-exchange.md
+icm:ICMExchange,is_a,sb:Program,the command-line runner,S159,wiki/concepts/icm-ruby-ui-and-exchange.md
+icm:ICMExchange,part_of,icm:ICM,,S159,wiki/concepts/icm-ruby-ui-and-exchange.md
+icm:ICMExchange,requires,icm:UltimateLicense,as Autodesk documents it,S159,wiki/concepts/icm-ruby-ui-and-exchange.md
+icm:UltimateLicense,is_a,sb:License,,S159,wiki/concepts/icm-ruby-ui-and-exchange.md
+icm:WSApplication.current_network,is_a,sb:ApiMethod,,S159,wiki/concepts/icm-ruby-ui-and-exchange.md
+icm:WSApplication.open,is_a,sb:ApiMethod,,S159,wiki/concepts/icm-ruby-ui-and-exchange.md
+icm:WSApplication.current_network,part_of,icm:UIScripting,returns the network open in the focused GeoPlan,S159,wiki/concepts/icm-ruby-ui-and-exchange.md
+icm:WSApplication.open,part_of,icm:ICMExchange,a second argument of false skips the database upgrade,S159,wiki/concepts/icm-ruby-ui-and-exchange.md
+icm:WSApplication.connect_local_agent,is_a,sb:ApiMethod,,S161,wiki/concepts/icm-ruby-ui-and-exchange.md
+icm:WSApplication.launch_sims,is_a,sb:ApiMethod,,S161,wiki/concepts/icm-ruby-ui-and-exchange.md
+icm:WSApplication.wait_for_jobs,is_a,sb:ApiMethod,,S161,wiki/concepts/icm-ruby-ui-and-exchange.md
+icm:WSApplication.connect_local_agent,part_of,icm:ICMExchange,,S161,wiki/concepts/icm-ruby-ui-and-exchange.md
+icm:WSApplication.launch_sims,part_of,icm:ICMExchange,,S161,wiki/concepts/icm-ruby-ui-and-exchange.md
+icm:WSApplication.wait_for_jobs,part_of,icm:ICMExchange,,S161,wiki/concepts/icm-ruby-ui-and-exchange.md
+icm:WSApplication.wait_for_jobs,has_parameter,icm:JobTimeout,in milliseconds,S161,wiki/concepts/icm-ruby-ui-and-exchange.md
+icm:InfoWorksNetwork,is_a,sb:NetworkType,,S17,wiki/concepts/icm-tables-and-result-fields.md
+icm:SWMMNetwork,is_a,sb:NetworkType,,S17,wiki/concepts/icm-tables-and-result-fields.md
+icm:InfoWorksNetwork,part_of,icm:ICM,,S17,wiki/concepts/icm-tables-and-result-fields.md
+icm:SWMMNetwork,part_of,icm:ICM,,S17,wiki/concepts/icm-tables-and-result-fields.md
+icm-iw:hw_node,is_a,sb:DataTable,,S162,wiki/concepts/icm-tables-and-result-fields.md
+icm-iw:hw_conduit,is_a,sb:DataTable,,S162,wiki/concepts/icm-tables-and-result-fields.md
+icm-iw:hw_subcatchment,is_a,sb:DataTable,,S162,wiki/concepts/icm-tables-and-result-fields.md
+icm-swmm:sw_node,is_a,sb:DataTable,,S162,wiki/concepts/icm-tables-and-result-fields.md
+icm-swmm:sw_conduit,is_a,sb:DataTable,,S162,wiki/concepts/icm-tables-and-result-fields.md
+icm-swmm:sw_subcatchment,is_a,sb:DataTable,,S162,wiki/concepts/icm-tables-and-result-fields.md
+icm-iw:hw_node,part_of,icm:InfoWorksNetwork,,S162,wiki/concepts/icm-tables-and-result-fields.md
+icm-iw:hw_conduit,part_of,icm:InfoWorksNetwork,,S162,wiki/concepts/icm-tables-and-result-fields.md
+icm-iw:hw_subcatchment,part_of,icm:InfoWorksNetwork,,S162,wiki/concepts/icm-tables-and-result-fields.md
+icm-swmm:sw_node,part_of,icm:SWMMNetwork,,S162,wiki/concepts/icm-tables-and-result-fields.md
+icm-swmm:sw_conduit,part_of,icm:SWMMNetwork,,S162,wiki/concepts/icm-tables-and-result-fields.md
+icm-swmm:sw_subcatchment,part_of,icm:SWMMNetwork,,S162,wiki/concepts/icm-tables-and-result-fields.md
+icm-iw:hw_node,close_match,icm-swmm:sw_node,both hold nodes; the fields differ by network type,S162,wiki/concepts/icm-tables-and-result-fields.md
+icm-iw:hw_conduit,close_match,icm-swmm:sw_conduit,both hold conduits; the fields differ by network type,S162,wiki/concepts/icm-tables-and-result-fields.md
+icm-iw:hw_subcatchment,close_match,icm-swmm:sw_subcatchment,both hold subcatchments; the fields differ by network type,S162,wiki/concepts/icm-tables-and-result-fields.md
+icm-iw:hw_2d_infil_surface,is_a,sb:DataTable,,S178,wiki/concepts/icm-tables-and-result-fields.md
+icm-iw:hw_2d_infil_surface,part_of,icm:InfoWorksNetwork,,S178,wiki/concepts/icm-tables-and-result-fields.md
+icm-iw:InfiltrationSurface2D,stored_in,icm-iw:hw_2d_infil_surface,,S178,wiki/concepts/icm-tables-and-result-fields.md
+icm-iw:DEPNOD,is_a,sb:ResultField,,S163,wiki/concepts/icm-tables-and-result-fields.md
+icm-swmm:HEAD,is_a,sb:ResultField,,S163,wiki/concepts/icm-tables-and-result-fields.md
+icm-swmm:DEPTH,is_a,sb:ResultField,,S163,wiki/concepts/icm-tables-and-result-fields.md
+icm-iw:DEPNOD,part_of,icm:InfoWorksNetwork,,S163,wiki/concepts/icm-tables-and-result-fields.md
+icm-swmm:HEAD,part_of,icm:SWMMNetwork,,S163,wiki/concepts/icm-tables-and-result-fields.md
+icm-swmm:DEPTH,part_of,icm:SWMMNetwork,,S163,wiki/concepts/icm-tables-and-result-fields.md
+icm-iw:DEPNOD,reports,qty:WaterLevel,level at the current timestep,S163,wiki/concepts/icm-tables-and-result-fields.md
+icm-swmm:HEAD,reports,qty:WaterLevel,hydraulic head elevation,S163,wiki/concepts/icm-tables-and-result-fields.md
+icm-swmm:DEPTH,reports,qty:DepthAboveInlet,water depth above the node inlet elevation,S163,wiki/concepts/icm-tables-and-result-fields.md
+icm-iw:DEPNOD,close_match,icm-swmm:HEAD,compare on a common vertical datum,S163,wiki/concepts/icm-tables-and-result-fields.md
+qty:DepthAboveInlet,derived_from,qty:WaterLevel,depth = level - inlet elevation; 109.25 ft - 106.00 ft = 3.25 ft,S163,wiki/concepts/icm-tables-and-result-fields.md
+qty:DepthAboveInlet,derived_from,qty:InletElevation,depth = level - inlet elevation; 109.25 ft - 106.00 ft = 3.25 ft,S163,wiki/concepts/icm-tables-and-result-fields.md
+qty:WaterLevel,is_a,sb:Quantity,,S163,wiki/concepts/icm-tables-and-result-fields.md
+qty:DepthAboveInlet,is_a,sb:Quantity,,S163,wiki/concepts/icm-tables-and-result-fields.md
+qty:InletElevation,is_a,sb:Quantity,,S163,wiki/concepts/icm-tables-and-result-fields.md

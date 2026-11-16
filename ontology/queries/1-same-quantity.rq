@@ -1,0 +1,10 @@
+# Which result fields report the same physical quantity, and in which network type?
+PREFIX sb: <https://github.com/dickinsonre/swmm-second-brain/ontology#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?quantity ?field ?network WHERE {
+  ?f sb:reports ?q .
+  ?q rdfs:label ?quantity .
+  ?f rdfs:label ?field .
+  OPTIONAL { ?f sb:part_of ?n . ?n rdfs:label ?network }
+}
+ORDER BY ?quantity ?field

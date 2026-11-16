@@ -7,6 +7,7 @@ author: Robert Dickinson
 published: 2026-11-16
 ingested: 2026-11-16
 tags: [icm, 2d, continuity, volume-balance, note]
+drafted_by: GPT plugin for Autodesk (an AI), per S166
 reviewed: no
 ---
 **What it is.** A note on volume balance for an ICM 2D model. Raw file: [raw/notes/icm-2d-volume-balance.md](../../raw/notes/icm-2d-volume-balance.md).

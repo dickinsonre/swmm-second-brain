@@ -106,6 +106,16 @@ if os.path.exists(man):
 else:
     errors.append('raw/MANIFEST.csv is missing (run tools/manifest.py)')
 
+# Relations tables (ONTOLOGY.md): unknown relations, prefixes or classes, and rows with no source
+try:
+    from ontology import collect as _collect_relations
+    _st, _vocab, _src, _rel_errors = _collect_relations()
+    errors.extend(_rel_errors)
+    _rel_pages = len({x['page'] for x in _st})
+except Exception as e:  # a broken ONTOLOGY.md must not hide the other checks
+    errors.append('ontology: could not read ONTOLOGY.md or a Relations table: %s' % e)
+    _st, _rel_pages = [], 0
+
 oq = os.path.join(WIKI, 'open-questions.md')
 open_q = len(re.findall(r'^- \[ \]', read(oq), re.M)) if os.path.exists(oq) else 0
 
@@ -116,6 +126,7 @@ for p, t in texts.items():
 print('pages:', ', '.join('%s %d' % kv for kv in sorted(types.items())))
 print('raw files: %d ingested, %d queued' % (ingested, queued) + ''.join(', %d %s' % (v, k) for k, v in sorted(other.items()) if k not in ('ingested', 'queued')))
 print('open questions: %d   pages not yet reviewed by Bob: %d' % (open_q, unreviewed))
+print('relations: %d statements on %d pages (see ONTOLOGY.md)' % (len(_st), _rel_pages))
 if rereview:
     print('pages changed after Bob reviewed them: %d (%s)' % (len(rereview), ', '.join(os.path.basename(x)[:-3] for x in sorted(rereview))))
 if partial:

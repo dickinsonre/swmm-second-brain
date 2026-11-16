@@ -7,6 +7,7 @@ author: Robert Dickinson
 published: 2026-11-16
 ingested: 2026-11-16
 tags: [icm, 2d, subgrid, mesh, note]
+drafted_by: GPT plugin for Autodesk (an AI), per S166
 reviewed: no
 ---
 **What it is.** A note on ICM's subgrid sampling. Raw file: [raw/notes/icm-2d-subgrid-sampling.md](../../raw/notes/icm-2d-subgrid-sampling.md).

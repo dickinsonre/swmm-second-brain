@@ -1,0 +1,4 @@
+# What became available in which ICM release, and what it replaced
+release	thing	replaces
+ICM 2025.1	CNSWMM2D	
+ICM 2027.0	Ruby 3.4.6	Ruby 2.4.0

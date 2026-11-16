@@ -1,0 +1,2099 @@
+{
+ "@graph": [
+  {
+   "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology#",
+   "@type": [
+    "http://www.w3.org/2002/07/owl#Ontology"
+   ],
+   "http://www.w3.org/2000/01/rdf-schema#label": [
+    "SWMM Second Brain ontology (draft)"
+   ],
+   "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+    {
+     "@id": "https://github.com/dickinsonre/swmm-second-brain/blob/main/ONTOLOGY.md"
+    }
+   ]
+  },
+  {
+   "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology#part_of",
+   "@type": [
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+   ],
+   "http://www.w3.org/2000/01/rdf-schema#label": [
+    "part of"
+   ],
+   "http://www.w3.org/2000/01/rdf-schema#comment": [
+    "the subject belongs to the object"
+   ],
+   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+    {
+     "@id": "http://purl.org/dc/terms/isPartOf"
+    }
+   ]
+  },
+  {
+   "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology#same_as",
+   "@type": [
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+   ],
+   "http://www.w3.org/2000/01/rdf-schema#label": [
+    "same as"
+   ],
+   "http://www.w3.org/2000/01/rdf-schema#comment": [
+    "the same thing under another name"
+   ],
+   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+    {
+     "@id": "http://www.w3.org/2004/02/skos/core#exactMatch"
+    }
+   ]
+  },
+  {
+   "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology#close_match",
+   "@type": [
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+   ],
+   "http://www.w3.org/2000/01/rdf-schema#label": [
+    "close match"
+   ],
+   "http://www.w3.org/2000/01/rdf-schema#comment": [
+    "nearly the same; the note says how they differ"
+   ],
+   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+    {
+     "@id": "http://www.w3.org/2004/02/skos/core#closeMatch"
+    }
+   ]
+  },
+  {
+   "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology#approximates",
+   "@type": [
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+   ],
+   "http://www.w3.org/2000/01/rdf-schema#label": [
+    "approximates"
+   ],
+   "http://www.w3.org/2000/01/rdf-schema#comment": [
+    "stands in for the object, under the conditions in the note"
+   ],
+   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+    {
+     "@id": "http://www.w3.org/2004/02/skos/core#relatedMatch"
+    }
+   ]
+  },
+  {
+   "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology#reports",
+   "@type": [
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+   ],
+   "http://www.w3.org/2000/01/rdf-schema#label": [
+    "reports"
+   ],
+   "http://www.w3.org/2000/01/rdf-schema#comment": [
+    "a result field reports this quantity"
+   ]
+  },
+  {
+   "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology#derived_from",
+   "@type": [
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+   ],
+   "http://www.w3.org/2000/01/rdf-schema#label": [
+    "derived from"
+   ],
+   "http://www.w3.org/2000/01/rdf-schema#comment": [
+    "computed from the object; the note gives the rule"
+   ],
+   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+    {
+     "@id": "http://www.w3.org/ns/prov#wasDerivedFrom"
+    }
+   ]
+  },
+  {
+   "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology#has_parameter",
+   "@type": [
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+   ],
+   "http://www.w3.org/2000/01/rdf-schema#label": [
+    "has parameter"
+   ],
+   "http://www.w3.org/2000/01/rdf-schema#comment": [
+    "the method or object takes this input"
+   ]
+  },
+  {
+   "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology#stored_in",
+   "@type": [
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+   ],
+   "http://www.w3.org/2000/01/rdf-schema#label": [
+    "stored in"
+   ],
+   "http://www.w3.org/2000/01/rdf-schema#comment": [
+    "its data are kept in this table"
+   ]
+  },
+  {
+   "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology#available_in",
+   "@type": [
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+   ],
+   "http://www.w3.org/2000/01/rdf-schema#label": [
+    "available in"
+   ],
+   "http://www.w3.org/2000/01/rdf-schema#comment": [
+    "available from this release on"
+   ]
+  },
+  {
+   "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology#replaces",
+   "@type": [
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+   ],
+   "http://www.w3.org/2000/01/rdf-schema#label": [
+    "replaces"
+   ],
+   "http://www.w3.org/2000/01/rdf-schema#comment": [
+    "takes the place of the object"
+   ],
+   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+    {
+     "@id": "http://purl.org/dc/terms/replaces"
+    }
+   ]
+  },
+  {
+   "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology#requires",
+   "@type": [
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+   ],
+   "http://www.w3.org/2000/01/rdf-schema#label": [
+    "requires"
+   ],
+   "http://www.w3.org/2000/01/rdf-schema#comment": [
+    "needs the object to run or to apply"
+   ],
+   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+    {
+     "@id": "http://purl.org/dc/terms/requires"
+    }
+   ]
+  },
+  {
+   "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology#translation_of",
+   "@type": [
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+   ],
+   "http://www.w3.org/2000/01/rdf-schema#label": [
+    "translation of"
+   ],
+   "http://www.w3.org/2000/01/rdf-schema#comment": [
+    "a translation of the object into another programming language"
+   ],
+   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+    {
+     "@id": "http://www.w3.org/ns/prov#wasDerivedFrom"
+    }
+   ]
+  },
+  {
+   "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology#finding_about",
+   "@type": [
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+   ],
+   "http://www.w3.org/2000/01/rdf-schema#label": [
+    "finding about"
+   ],
+   "http://www.w3.org/2000/01/rdf-schema#comment": [
+    "a finding whose subject is the object"
+   ],
+   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+    {
+     "@id": "http://purl.org/dc/terms/subject"
+    }
+   ]
+  },
+  {
+   "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology#Program",
+   "@type": [
+    "http://www.w3.org/2000/01/rdf-schema#Class"
+   ],
+   "http://www.w3.org/2000/01/rdf-schema#label": [
+    "Program"
+   ],
+   "http://www.w3.org/2000/01/rdf-schema#comment": [
+    "a modeling program or engine"
+   ]
+  },
+  {
+   "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology#Release",
+   "@type": [
+    "http://www.w3.org/2000/01/rdf-schema#Class"
+   ],
+   "http://www.w3.org/2000/01/rdf-schema#label": [
+    "Release"
+   ],
+   "http://www.w3.org/2000/01/rdf-schema#comment": [
+    "a numbered release of a program"
+   ]
+  },
+  {
+   "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology#NetworkType",
+   "@type": [
+    "http://www.w3.org/2000/01/rdf-schema#Class"
+   ],
+   "http://www.w3.org/2000/01/rdf-schema#label": [
+    "Network type"
+   ],
+   "http://www.w3.org/2000/01/rdf-schema#comment": [
+    "a kind of model network inside a program"
+   ]
+  },
+  {
+   "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology#DataTable",
+   "@type": [
+    "http://www.w3.org/2000/01/rdf-schema#Class"
+   ],
+   "http://www.w3.org/2000/01/rdf-schema#label": [
+    "Data table"
+   ],
+   "http://www.w3.org/2000/01/rdf-schema#comment": [
+    "a database table of model data"
+   ]
+  },
+  {
+   "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology#ResultField",
+   "@type": [
+    "http://www.w3.org/2000/01/rdf-schema#Class"
+   ],
+   "http://www.w3.org/2000/01/rdf-schema#label": [
+    "Result field"
+   ],
+   "http://www.w3.org/2000/01/rdf-schema#comment": [
+    "a named result a program reports"
+   ]
+  },
+  {
+   "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology#Quantity",
+   "@type": [
+    "http://www.w3.org/2000/01/rdf-schema#Class"
+   ],
+   "http://www.w3.org/2000/01/rdf-schema#label": [
+    "Quantity"
+   ],
+   "http://www.w3.org/2000/01/rdf-schema#comment": [
+    "a physical quantity"
+   ]
+  },
+  {
+   "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology#InfiltrationMethod",
+   "@type": [
+    "http://www.w3.org/2000/01/rdf-schema#Class"
+   ],
+   "http://www.w3.org/2000/01/rdf-schema#label": [
+    "Infiltration method"
+   ],
+   "http://www.w3.org/2000/01/rdf-schema#comment": [
+    "a method for computing infiltration"
+   ]
+  },
+  {
+   "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology#Parameter",
+   "@type": [
+    "http://www.w3.org/2000/01/rdf-schema#Class"
+   ],
+   "http://www.w3.org/2000/01/rdf-schema#label": [
+    "Parameter"
+   ],
+   "http://www.w3.org/2000/01/rdf-schema#comment": [
+    "an input a method or object takes"
+   ]
+  },
+  {
+   "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology#Setting",
+   "@type": [
+    "http://www.w3.org/2000/01/rdf-schema#Class"
+   ],
+   "http://www.w3.org/2000/01/rdf-schema#label": [
+    "Setting"
+   ],
+   "http://www.w3.org/2000/01/rdf-schema#comment": [
+    "an option a user sets on an object or run"
+   ]
+  },
+  {
+   "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology#ApiMethod",
+   "@type": [
+    "http://www.w3.org/2000/01/rdf-schema#Class"
+   ],
+   "http://www.w3.org/2000/01/rdf-schema#label": [
+    "Api method"
+   ],
+   "http://www.w3.org/2000/01/rdf-schema#comment": [
+    "a method of a scripting interface"
+   ]
+  },
+  {
+   "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology#RubyRuntime",
+   "@type": [
+    "http://www.w3.org/2000/01/rdf-schema#Class"
+   ],
+   "http://www.w3.org/2000/01/rdf-schema#label": [
+    "Ruby runtime"
+   ],
+   "http://www.w3.org/2000/01/rdf-schema#comment": [
+    "a Ruby interpreter version"
+   ]
+  },
+  {
+   "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology#License",
+   "@type": [
+    "http://www.w3.org/2000/01/rdf-schema#Class"
+   ],
+   "http://www.w3.org/2000/01/rdf-schema#label": [
+    "License"
+   ],
+   "http://www.w3.org/2000/01/rdf-schema#comment": [
+    "a license level of a program"
+   ]
+  },
+  {
+   "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/icm-iw/CNSWMM2D",
+   "http://www.w3.org/2000/01/rdf-schema#label": [
+    "CNSWMM2D"
+   ],
+   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+    {
+     "@id": "https://github.com/dickinsonre/swmm-second-brain/blob/main/wiki/concepts/icm-2d-rainfall-and-infiltration.md"
+    }
+   ]
+  },
+  {
+   "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/icm-iw/CNSWMMAntecedentMoistureCondition",
+   "http://www.w3.org/2000/01/rdf-schema#label": [
+    "CNSWMMAntecedentMoistureCondition"
+   ],
+   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+    {
+     "@id": "https://github.com/dickinsonre/swmm-second-brain/blob/main/wiki/concepts/icm-2d-rainfall-and-infiltration.md"
+    }
+   ]
+  },
+  {
+   "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/icm-iw/ConstInf2D",
+   "http://www.w3.org/2000/01/rdf-schema#label": [
+    "ConstInf2D"
+   ],
+   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+    {
+     "@id": "https://github.com/dickinsonre/swmm-second-brain/blob/main/wiki/concepts/icm-2d-rainfall-and-infiltration.md"
+    }
+   ]
+  },
+  {
+   "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/icm-iw/CurveNumber",
+   "http://www.w3.org/2000/01/rdf-schema#label": [
+    "CurveNumber"
+   ],
+   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+    {
+     "@id": "https://github.com/dickinsonre/swmm-second-brain/blob/main/wiki/concepts/icm-2d-rainfall-and-infiltration.md"
+    }
+   ]
+  },
+  {
+   "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/icm-iw/DEPNOD",
+   "http://www.w3.org/2000/01/rdf-schema#label": [
+    "DEPNOD"
+   ],
+   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+    {
+     "@id": "https://github.com/dickinsonre/swmm-second-brain/blob/main/wiki/concepts/icm-tables-and-result-fields.md"
+    }
+   ]
+  },
+  {
+   "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/icm-iw/DefConLoss2D",
+   "http://www.w3.org/2000/01/rdf-schema#label": [
+    "DefConLoss2D"
+   ],
+   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+    {
+     "@id": "https://github.com/dickinsonre/swmm-second-brain/blob/main/wiki/concepts/icm-2d-rainfall-and-infiltration.md"
+    }
+   ]
+  },
+  {
+   "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/icm-iw/DryingTime",
+   "http://www.w3.org/2000/01/rdf-schema#label": [
+    "DryingTime"
+   ],
+   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+    {
+     "@id": "https://github.com/dickinsonre/swmm-second-brain/blob/main/wiki/concepts/icm-2d-rainfall-and-infiltration.md"
+    }
+   ]
+  },
+  {
+   "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/icm-iw/Fixed2D",
+   "http://www.w3.org/2000/01/rdf-schema#label": [
+    "Fixed2D"
+   ],
+   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+    {
+     "@id": "https://github.com/dickinsonre/swmm-second-brain/blob/main/wiki/concepts/icm-2d-rainfall-and-infiltration.md"
+    }
+   ]
+  },
+  {
+   "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/icm-iw/GreenAmpt2D",
+   "http://www.w3.org/2000/01/rdf-schema#label": [
+    "GreenAmpt2D"
+   ],
+   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+    {
+     "@id": "https://github.com/dickinsonre/swmm-second-brain/blob/main/wiki/concepts/icm-2d-rainfall-and-infiltration.md"
+    }
+   ]
+  },
+  {
+   "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/icm-iw/Horton2D",
+   "http://www.w3.org/2000/01/rdf-schema#label": [
+    "Horton2D"
+   ],
+   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+    {
+     "@id": "https://github.com/dickinsonre/swmm-second-brain/blob/main/wiki/concepts/icm-2d-rainfall-and-infiltration.md"
+    }
+   ]
+  },
+  {
+   "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/icm-iw/InfiltrationSurface2D",
+   "http://www.w3.org/2000/01/rdf-schema#label": [
+    "InfiltrationSurface2D"
+   ],
+   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+    {
+     "@id": "https://github.com/dickinsonre/swmm-second-brain/blob/main/wiki/concepts/icm-2d-rainfall-and-infiltration.md"
+    },
+    {
+     "@id": "https://github.com/dickinsonre/swmm-second-brain/blob/main/wiki/concepts/icm-tables-and-result-fields.md"
+    }
+   ]
+  },
+  {
+   "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/icm-iw/InitialAbstractionFactor",
+   "http://www.w3.org/2000/01/rdf-schema#label": [
+    "InitialAbstractionFactor"
+   ],
+   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+    {
+     "@id": "https://github.com/dickinsonre/swmm-second-brain/blob/main/wiki/concepts/icm-2d-rainfall-and-infiltration.md"
+    }
+   ]
+  },
+  {
+   "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/icm-iw/InitialConditions2D",
+   "http://www.w3.org/2000/01/rdf-schema#label": [
+    "InitialConditions2D"
+   ],
+   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+    {
+     "@id": "https://github.com/dickinsonre/swmm-second-brain/blob/main/wiki/concepts/icm-2d-rainfall-and-infiltration.md"
+    }
+   ]
+  },
+  {
+   "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/icm-iw/OutsideSubcatchments",
+   "http://www.w3.org/2000/01/rdf-schema#label": [
+    "OutsideSubcatchments"
+   ],
+   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+    {
+     "@id": "https://github.com/dickinsonre/swmm-second-brain/blob/main/wiki/concepts/icm-2d-rainfall-and-infiltration.md"
+    }
+   ]
+  },
+  {
+   "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/icm-iw/SubcatchmentCN",
+   "http://www.w3.org/2000/01/rdf-schema#label": [
+    "SubcatchmentCN"
+   ],
+   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+    {
+     "@id": "https://github.com/dickinsonre/swmm-second-brain/blob/main/wiki/concepts/icm-2d-rainfall-and-infiltration.md"
+    }
+   ]
+  },
+  {
+   "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/icm-iw/SubcatchmentCNSWMM",
+   "http://www.w3.org/2000/01/rdf-schema#label": [
+    "SubcatchmentCNSWMM"
+   ],
+   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+    {
+     "@id": "https://github.com/dickinsonre/swmm-second-brain/blob/main/wiki/concepts/icm-2d-rainfall-and-infiltration.md"
+    }
+   ]
+  },
+  {
+   "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/icm-iw/Zone2D",
+   "http://www.w3.org/2000/01/rdf-schema#label": [
+    "Zone2D"
+   ],
+   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+    {
+     "@id": "https://github.com/dickinsonre/swmm-second-brain/blob/main/wiki/concepts/icm-2d-rainfall-and-infiltration.md"
+    }
+   ]
+  },
+  {
+   "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/icm-iw/hw_2d_infil_surface",
+   "http://www.w3.org/2000/01/rdf-schema#label": [
+    "hw_2d_infil_surface"
+   ],
+   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+    {
+     "@id": "https://github.com/dickinsonre/swmm-second-brain/blob/main/wiki/concepts/icm-tables-and-result-fields.md"
+    }
+   ]
+  },
+  {
+   "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/icm-iw/hw_conduit",
+   "http://www.w3.org/2000/01/rdf-schema#label": [
+    "hw_conduit"
+   ],
+   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+    {
+     "@id": "https://github.com/dickinsonre/swmm-second-brain/blob/main/wiki/concepts/icm-tables-and-result-fields.md"
+    }
+   ]
+  },
+  {
+   "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/icm-iw/hw_node",
+   "http://www.w3.org/2000/01/rdf-schema#label": [
+    "hw_node"
+   ],
+   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+    {
+     "@id": "https://github.com/dickinsonre/swmm-second-brain/blob/main/wiki/concepts/icm-tables-and-result-fields.md"
+    }
+   ]
+  },
+  {
+   "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/icm-iw/hw_subcatchment",
+   "http://www.w3.org/2000/01/rdf-schema#label": [
+    "hw_subcatchment"
+   ],
+   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+    {
+     "@id": "https://github.com/dickinsonre/swmm-second-brain/blob/main/wiki/concepts/icm-tables-and-result-fields.md"
+    }
+   ]
+  },
+  {
+   "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/icm-swmm/DEPTH",
+   "http://www.w3.org/2000/01/rdf-schema#label": [
+    "DEPTH"
+   ],
+   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+    {
+     "@id": "https://github.com/dickinsonre/swmm-second-brain/blob/main/wiki/concepts/icm-tables-and-result-fields.md"
+    }
+   ]
+  },
+  {
+   "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/icm-swmm/HEAD",
+   "http://www.w3.org/2000/01/rdf-schema#label": [
+    "HEAD"
+   ],
+   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+    {
+     "@id": "https://github.com/dickinsonre/swmm-second-brain/blob/main/wiki/concepts/icm-tables-and-result-fields.md"
+    }
+   ]
+  },
+  {
+   "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/icm-swmm/sw_conduit",
+   "http://www.w3.org/2000/01/rdf-schema#label": [
+    "sw_conduit"
+   ],
+   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+    {
+     "@id": "https://github.com/dickinsonre/swmm-second-brain/blob/main/wiki/concepts/icm-tables-and-result-fields.md"
+    }
+   ]
+  },
+  {
+   "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/icm-swmm/sw_node",
+   "http://www.w3.org/2000/01/rdf-schema#label": [
+    "sw_node"
+   ],
+   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+    {
+     "@id": "https://github.com/dickinsonre/swmm-second-brain/blob/main/wiki/concepts/icm-tables-and-result-fields.md"
+    }
+   ]
+  },
+  {
+   "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/icm-swmm/sw_subcatchment",
+   "http://www.w3.org/2000/01/rdf-schema#label": [
+    "sw_subcatchment"
+   ],
+   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+    {
+     "@id": "https://github.com/dickinsonre/swmm-second-brain/blob/main/wiki/concepts/icm-tables-and-result-fields.md"
+    }
+   ]
+  },
+  {
+   "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/icm/2025.1",
+   "http://www.w3.org/2000/01/rdf-schema#label": [
+    "ICM 2025.1"
+   ],
+   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+    {
+     "@id": "https://github.com/dickinsonre/swmm-second-brain/blob/main/wiki/concepts/icm-2d-rainfall-and-infiltration.md"
+    }
+   ]
+  },
+  {
+   "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/icm/2027.0",
+   "http://www.w3.org/2000/01/rdf-schema#label": [
+    "ICM 2027.0"
+   ],
+   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+    {
+     "@id": "https://github.com/dickinsonre/swmm-second-brain/blob/main/wiki/concepts/icm-ruby-ui-and-exchange.md"
+    }
+   ]
+  },
+  {
+   "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/icm/ICM",
+   "http://www.w3.org/2000/01/rdf-schema#label": [
+    "ICM"
+   ],
+   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+    {
+     "@id": "https://github.com/dickinsonre/swmm-second-brain/blob/main/wiki/concepts/icm-2d-rainfall-and-infiltration.md"
+    },
+    {
+     "@id": "https://github.com/dickinsonre/swmm-second-brain/blob/main/wiki/concepts/icm-ruby-ui-and-exchange.md"
+    },
+    {
+     "@id": "https://github.com/dickinsonre/swmm-second-brain/blob/main/wiki/concepts/icm-tables-and-result-fields.md"
+    }
+   ]
+  },
+  {
+   "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/icm/ICMExchange",
+   "http://www.w3.org/2000/01/rdf-schema#label": [
+    "ICMExchange"
+   ],
+   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+    {
+     "@id": "https://github.com/dickinsonre/swmm-second-brain/blob/main/wiki/concepts/icm-ruby-ui-and-exchange.md"
+    }
+   ]
+  },
+  {
+   "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/icm/InfoWorksNetwork",
+   "http://www.w3.org/2000/01/rdf-schema#label": [
+    "InfoWorksNetwork"
+   ],
+   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+    {
+     "@id": "https://github.com/dickinsonre/swmm-second-brain/blob/main/wiki/concepts/icm-tables-and-result-fields.md"
+    }
+   ]
+  },
+  {
+   "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/icm/JobTimeout",
+   "http://www.w3.org/2000/01/rdf-schema#label": [
+    "JobTimeout"
+   ],
+   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+    {
+     "@id": "https://github.com/dickinsonre/swmm-second-brain/blob/main/wiki/concepts/icm-ruby-ui-and-exchange.md"
+    }
+   ]
+  },
+  {
+   "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/icm/SWMMNetwork",
+   "http://www.w3.org/2000/01/rdf-schema#label": [
+    "SWMMNetwork"
+   ],
+   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+    {
+     "@id": "https://github.com/dickinsonre/swmm-second-brain/blob/main/wiki/concepts/icm-tables-and-result-fields.md"
+    }
+   ]
+  },
+  {
+   "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/icm/UIScripting",
+   "http://www.w3.org/2000/01/rdf-schema#label": [
+    "UIScripting"
+   ],
+   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+    {
+     "@id": "https://github.com/dickinsonre/swmm-second-brain/blob/main/wiki/concepts/icm-ruby-ui-and-exchange.md"
+    }
+   ]
+  },
+  {
+   "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/icm/UltimateLicense",
+   "http://www.w3.org/2000/01/rdf-schema#label": [
+    "UltimateLicense"
+   ],
+   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+    {
+     "@id": "https://github.com/dickinsonre/swmm-second-brain/blob/main/wiki/concepts/icm-ruby-ui-and-exchange.md"
+    }
+   ]
+  },
+  {
+   "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/icm/WSApplication.connect_local_agent",
+   "http://www.w3.org/2000/01/rdf-schema#label": [
+    "WSApplication.connect_local_agent"
+   ],
+   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+    {
+     "@id": "https://github.com/dickinsonre/swmm-second-brain/blob/main/wiki/concepts/icm-ruby-ui-and-exchange.md"
+    }
+   ]
+  },
+  {
+   "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/icm/WSApplication.current_network",
+   "http://www.w3.org/2000/01/rdf-schema#label": [
+    "WSApplication.current_network"
+   ],
+   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+    {
+     "@id": "https://github.com/dickinsonre/swmm-second-brain/blob/main/wiki/concepts/icm-ruby-ui-and-exchange.md"
+    }
+   ]
+  },
+  {
+   "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/icm/WSApplication.launch_sims",
+   "http://www.w3.org/2000/01/rdf-schema#label": [
+    "WSApplication.launch_sims"
+   ],
+   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+    {
+     "@id": "https://github.com/dickinsonre/swmm-second-brain/blob/main/wiki/concepts/icm-ruby-ui-and-exchange.md"
+    }
+   ]
+  },
+  {
+   "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/icm/WSApplication.open",
+   "http://www.w3.org/2000/01/rdf-schema#label": [
+    "WSApplication.open"
+   ],
+   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+    {
+     "@id": "https://github.com/dickinsonre/swmm-second-brain/blob/main/wiki/concepts/icm-ruby-ui-and-exchange.md"
+    }
+   ]
+  },
+  {
+   "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/icm/WSApplication.wait_for_jobs",
+   "http://www.w3.org/2000/01/rdf-schema#label": [
+    "WSApplication.wait_for_jobs"
+   ],
+   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+    {
+     "@id": "https://github.com/dickinsonre/swmm-second-brain/blob/main/wiki/concepts/icm-ruby-ui-and-exchange.md"
+    }
+   ]
+  },
+  {
+   "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/qty/DepthAboveInlet",
+   "http://www.w3.org/2000/01/rdf-schema#label": [
+    "Depth above inlet"
+   ],
+   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+    {
+     "@id": "https://github.com/dickinsonre/swmm-second-brain/blob/main/wiki/concepts/icm-tables-and-result-fields.md"
+    }
+   ]
+  },
+  {
+   "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/qty/InletElevation",
+   "http://www.w3.org/2000/01/rdf-schema#label": [
+    "Inlet elevation"
+   ],
+   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+    {
+     "@id": "https://github.com/dickinsonre/swmm-second-brain/blob/main/wiki/concepts/icm-tables-and-result-fields.md"
+    }
+   ]
+  },
+  {
+   "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/qty/WaterLevel",
+   "http://www.w3.org/2000/01/rdf-schema#label": [
+    "Water level"
+   ],
+   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+    {
+     "@id": "https://github.com/dickinsonre/swmm-second-brain/blob/main/wiki/concepts/icm-tables-and-result-fields.md"
+    }
+   ]
+  },
+  {
+   "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/ruby/2.4.0",
+   "http://www.w3.org/2000/01/rdf-schema#label": [
+    "Ruby 2.4.0"
+   ],
+   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+    {
+     "@id": "https://github.com/dickinsonre/swmm-second-brain/blob/main/wiki/concepts/icm-ruby-ui-and-exchange.md"
+    }
+   ]
+  },
+  {
+   "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/ruby/3.4.6",
+   "http://www.w3.org/2000/01/rdf-schema#label": [
+    "Ruby 3.4.6"
+   ],
+   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+    {
+     "@id": "https://github.com/dickinsonre/swmm-second-brain/blob/main/wiki/concepts/icm-ruby-ui-and-exchange.md"
+    }
+   ]
+  },
+  {
+   "@id": "https://github.com/dickinsonre/swmm-second-brain/blob/main/wiki/sources/S17-li-routing-options.md",
+   "@type": [
+    "http://www.w3.org/ns/prov#Entity"
+   ],
+   "http://purl.org/dc/terms/identifier": [
+    "S17"
+   ],
+   "http://purl.org/dc/terms/title": [
+    "S17: Steady State, EPS, Kinematic and Dynamic Wave Options in InfoSewer, SWMM5, InfoSWMM, ICM SWMM and ICM InfoWorks (LinkedIn, 2024)"
+   ],
+   "http://purl.org/dc/terms/date": [
+    "2024-07-28"
+   ],
+   "http://purl.org/dc/terms/creator": [
+    "Robert Dickinson"
+   ],
+   "https://github.com/dickinsonre/swmm-second-brain/ontology#sourceKind": [
+    "linkedin-article"
+   ],
+   "https://github.com/dickinsonre/swmm-second-brain/ontology#reviewed": [
+    "2026-11-15"
+   ]
+  },
+  {
+   "@id": "https://github.com/dickinsonre/swmm-second-brain/blob/main/wiki/sources/S159-note-icm-ruby-ui-vs-exchange.md",
+   "@type": [
+    "http://www.w3.org/ns/prov#Entity"
+   ],
+   "http://purl.org/dc/terms/identifier": [
+    "S159"
+   ],
+   "http://purl.org/dc/terms/title": [
+    "S159: note, the same ICM Ruby query starts differently in GeoPlan and Exchange"
+   ],
+   "http://purl.org/dc/terms/date": [
+    "2026-11-16"
+   ],
+   "http://purl.org/dc/terms/creator": [
+    "Robert Dickinson"
+   ],
+   "https://github.com/dickinsonre/swmm-second-brain/ontology#sourceKind": [
+    "note"
+   ],
+   "https://github.com/dickinsonre/swmm-second-brain/ontology#draftedBy": [
+    "ChatGPT (OpenAI), from Autodesk Help, per S179"
+   ],
+   "https://github.com/dickinsonre/swmm-second-brain/ontology#reviewed": [
+    "no"
+   ]
+  },
+  {
+   "@id": "https://github.com/dickinsonre/swmm-second-brain/blob/main/wiki/sources/S160-note-icm-ruby-version-compatibility.md",
+   "@type": [
+    "http://www.w3.org/ns/prov#Entity"
+   ],
+   "http://purl.org/dc/terms/identifier": [
+    "S160"
+   ],
+   "http://purl.org/dc/terms/title": [
+    "S160: note, an ICM Ruby script needs a test in the embedded runtime"
+   ],
+   "http://purl.org/dc/terms/date": [
+    "2026-11-16"
+   ],
+   "http://purl.org/dc/terms/creator": [
+    "Robert Dickinson"
+   ],
+   "https://github.com/dickinsonre/swmm-second-brain/ontology#sourceKind": [
+    "note"
+   ],
+   "https://github.com/dickinsonre/swmm-second-brain/ontology#draftedBy": [
+    "ChatGPT (OpenAI), from Autodesk Help, per S179"
+   ],
+   "https://github.com/dickinsonre/swmm-second-brain/ontology#reviewed": [
+    "no"
+   ]
+  },
+  {
+   "@id": "https://github.com/dickinsonre/swmm-second-brain/blob/main/wiki/sources/S161-note-icm-exchange-run-lifecycle.md",
+   "@type": [
+    "http://www.w3.org/ns/prov#Entity"
+   ],
+   "http://purl.org/dc/terms/identifier": [
+    "S161"
+   ],
+   "http://purl.org/dc/terms/title": [
+    "S161: note, an Exchange run ends when the intended results can be opened"
+   ],
+   "http://purl.org/dc/terms/date": [
+    "2026-11-16"
+   ],
+   "http://purl.org/dc/terms/creator": [
+    "Robert Dickinson"
+   ],
+   "https://github.com/dickinsonre/swmm-second-brain/ontology#sourceKind": [
+    "note"
+   ],
+   "https://github.com/dickinsonre/swmm-second-brain/ontology#draftedBy": [
+    "ChatGPT (OpenAI), from Autodesk Help, per S179"
+   ],
+   "https://github.com/dickinsonre/swmm-second-brain/ontology#reviewed": [
+    "no"
+   ]
+  },
+  {
+   "@id": "https://github.com/dickinsonre/swmm-second-brain/blob/main/wiki/sources/S162-note-icm-network-tables-and-fields.md",
+   "@type": [
+    "http://www.w3.org/ns/prov#Entity"
+   ],
+   "http://purl.org/dc/terms/identifier": [
+    "S162"
+   ],
+   "http://purl.org/dc/terms/title": [
+    "S162: note, look up the ICM network type before choosing Ruby table and field names"
+   ],
+   "http://purl.org/dc/terms/date": [
+    "2026-11-16"
+   ],
+   "http://purl.org/dc/terms/creator": [
+    "Robert Dickinson"
+   ],
+   "https://github.com/dickinsonre/swmm-second-brain/ontology#sourceKind": [
+    "note"
+   ],
+   "https://github.com/dickinsonre/swmm-second-brain/ontology#draftedBy": [
+    "ChatGPT (OpenAI), from Autodesk Help, per S179"
+   ],
+   "https://github.com/dickinsonre/swmm-second-brain/ontology#reviewed": [
+    "no"
+   ]
+  },
+  {
+   "@id": "https://github.com/dickinsonre/swmm-second-brain/blob/main/wiki/sources/S163-note-icm-results-field-crosswalk.md",
+   "@type": [
+    "http://www.w3.org/ns/prov#Entity"
+   ],
+   "http://purl.org/dc/terms/identifier": [
+    "S163"
+   ],
+   "http://purl.org/dc/terms/title": [
+    "S163: note, compare node level and node depth on the same reference elevation"
+   ],
+   "http://purl.org/dc/terms/date": [
+    "2026-11-16"
+   ],
+   "http://purl.org/dc/terms/creator": [
+    "Robert Dickinson"
+   ],
+   "https://github.com/dickinsonre/swmm-second-brain/ontology#sourceKind": [
+    "note"
+   ],
+   "https://github.com/dickinsonre/swmm-second-brain/ontology#draftedBy": [
+    "ChatGPT (OpenAI), from Autodesk Help, per S179"
+   ],
+   "https://github.com/dickinsonre/swmm-second-brain/ontology#reviewed": [
+    "no"
+   ]
+  },
+  {
+   "@id": "https://github.com/dickinsonre/swmm-second-brain/blob/main/wiki/sources/S169-note-icm-2d-rainfall-and-infiltration.md",
+   "@type": [
+    "http://www.w3.org/ns/prov#Entity"
+   ],
+   "http://purl.org/dc/terms/identifier": [
+    "S169"
+   ],
+   "http://purl.org/dc/terms/title": [
+    "S169: note, assign rainfall and infiltration explicitly where ICM domains overlap"
+   ],
+   "http://purl.org/dc/terms/date": [
+    "2026-11-16"
+   ],
+   "http://purl.org/dc/terms/creator": [
+    "Robert Dickinson"
+   ],
+   "https://github.com/dickinsonre/swmm-second-brain/ontology#sourceKind": [
+    "note"
+   ],
+   "https://github.com/dickinsonre/swmm-second-brain/ontology#draftedBy": [
+    "GPT plugin for Autodesk (an AI), per S166"
+   ],
+   "https://github.com/dickinsonre/swmm-second-brain/ontology#reviewed": [
+    "no"
+   ]
+  },
+  {
+   "@id": "https://github.com/dickinsonre/swmm-second-brain/blob/main/wiki/sources/S177-li-curve-number-approximations-icm-2d.md",
+   "@type": [
+    "http://www.w3.org/ns/prov#Entity"
+   ],
+   "http://purl.org/dc/terms/identifier": [
+    "S177"
+   ],
+   "http://purl.org/dc/terms/title": [
+    "S177: Investigating Curve Number Approximations on an ICM InfoWorks 2D Infiltration Surface (LinkedIn, 2023)"
+   ],
+   "http://purl.org/dc/terms/date": [
+    "2023-09-22"
+   ],
+   "http://purl.org/dc/terms/creator": [
+    "Robert Dickinson"
+   ],
+   "https://github.com/dickinsonre/swmm-second-brain/ontology#sourceKind": [
+    "linkedin-article"
+   ],
+   "https://github.com/dickinsonre/swmm-second-brain/ontology#reviewed": [
+    "no"
+   ]
+  },
+  {
+   "@id": "https://github.com/dickinsonre/swmm-second-brain/blob/main/wiki/sources/S178-li-cnswmm-on-the-icm-2d-mesh.md",
+   "@type": [
+    "http://www.w3.org/ns/prov#Entity"
+   ],
+   "http://purl.org/dc/terms/identifier": [
+    "S178"
+   ],
+   "http://purl.org/dc/terms/title": [
+    "S178: Curve Number or CNSWMM infiltration model for 2D simulations is now in ICM 2025.1 (LinkedIn, 2024)"
+   ],
+   "http://purl.org/dc/terms/date": [
+    "2024-05-28"
+   ],
+   "http://purl.org/dc/terms/creator": [
+    "Robert Dickinson"
+   ],
+   "https://github.com/dickinsonre/swmm-second-brain/ontology#sourceKind": [
+    "linkedin-article"
+   ],
+   "https://github.com/dickinsonre/swmm-second-brain/ontology#reviewed": [
+    "no"
+   ]
+  },
+  {
+   "@id": "https://github.com/dickinsonre/swmm-second-brain/blob/main/wiki/sources/S159-note-icm-ruby-ui-vs-exchange.md",
+   "@graph": [
+    {
+     "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/icm/ICMExchange",
+     "@type": [
+      "https://github.com/dickinsonre/swmm-second-brain/ontology#Program"
+     ],
+     "https://github.com/dickinsonre/swmm-second-brain/ontology#part_of": [
+      {
+       "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/icm/ICM"
+      }
+     ],
+     "https://github.com/dickinsonre/swmm-second-brain/ontology#requires": [
+      {
+       "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/icm/UltimateLicense"
+      }
+     ]
+    },
+    {
+     "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/icm/UltimateLicense",
+     "@type": [
+      "https://github.com/dickinsonre/swmm-second-brain/ontology#License"
+     ]
+    },
+    {
+     "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/icm/WSApplication.current_network",
+     "@type": [
+      "https://github.com/dickinsonre/swmm-second-brain/ontology#ApiMethod"
+     ],
+     "https://github.com/dickinsonre/swmm-second-brain/ontology#part_of": [
+      {
+       "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/icm/UIScripting"
+      }
+     ]
+    },
+    {
+     "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/icm/WSApplication.open",
+     "@type": [
+      "https://github.com/dickinsonre/swmm-second-brain/ontology#ApiMethod"
+     ],
+     "https://github.com/dickinsonre/swmm-second-brain/ontology#part_of": [
+      {
+       "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/icm/ICMExchange"
+      }
+     ]
+    },
+    {
+     "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement",
+     "http://www.w3.org/1999/02/22-rdf-syntax-ns#subject": {
+      "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/icm/ICMExchange"
+     },
+     "http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate": {
+      "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+     },
+     "http://www.w3.org/1999/02/22-rdf-syntax-ns#object": {
+      "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology#Program"
+     },
+     "http://www.w3.org/2000/01/rdf-schema#comment": "the command-line runner"
+    },
+    {
+     "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement",
+     "http://www.w3.org/1999/02/22-rdf-syntax-ns#subject": {
+      "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/icm/ICMExchange"
+     },
+     "http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate": {
+      "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology#requires"
+     },
+     "http://www.w3.org/1999/02/22-rdf-syntax-ns#object": {
+      "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/icm/UltimateLicense"
+     },
+     "http://www.w3.org/2000/01/rdf-schema#comment": "as Autodesk documents it"
+    },
+    {
+     "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement",
+     "http://www.w3.org/1999/02/22-rdf-syntax-ns#subject": {
+      "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/icm/WSApplication.current_network"
+     },
+     "http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate": {
+      "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology#part_of"
+     },
+     "http://www.w3.org/1999/02/22-rdf-syntax-ns#object": {
+      "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/icm/UIScripting"
+     },
+     "http://www.w3.org/2000/01/rdf-schema#comment": "returns the network open in the focused GeoPlan"
+    },
+    {
+     "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement",
+     "http://www.w3.org/1999/02/22-rdf-syntax-ns#subject": {
+      "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/icm/WSApplication.open"
+     },
+     "http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate": {
+      "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology#part_of"
+     },
+     "http://www.w3.org/1999/02/22-rdf-syntax-ns#object": {
+      "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/icm/ICMExchange"
+     },
+     "http://www.w3.org/2000/01/rdf-schema#comment": "a second argument of false skips the database upgrade"
+    }
+   ]
+  },
+  {
+   "@id": "https://github.com/dickinsonre/swmm-second-brain/blob/main/wiki/sources/S160-note-icm-ruby-version-compatibility.md",
+   "@graph": [
+    {
+     "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/ruby/3.4.6",
+     "@type": [
+      "https://github.com/dickinsonre/swmm-second-brain/ontology#RubyRuntime"
+     ],
+     "https://github.com/dickinsonre/swmm-second-brain/ontology#available_in": [
+      {
+       "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/icm/2027.0"
+      }
+     ],
+     "https://github.com/dickinsonre/swmm-second-brain/ontology#replaces": [
+      {
+       "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/ruby/2.4.0"
+      }
+     ]
+    },
+    {
+     "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/ruby/2.4.0",
+     "@type": [
+      "https://github.com/dickinsonre/swmm-second-brain/ontology#RubyRuntime"
+     ]
+    },
+    {
+     "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/icm/2027.0",
+     "@type": [
+      "https://github.com/dickinsonre/swmm-second-brain/ontology#Release"
+     ],
+     "https://github.com/dickinsonre/swmm-second-brain/ontology#part_of": [
+      {
+       "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/icm/ICM"
+      }
+     ]
+    },
+    {
+     "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement",
+     "http://www.w3.org/1999/02/22-rdf-syntax-ns#subject": {
+      "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/ruby/3.4.6"
+     },
+     "http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate": {
+      "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology#available_in"
+     },
+     "http://www.w3.org/1999/02/22-rdf-syntax-ns#object": {
+      "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/icm/2027.0"
+     },
+     "http://www.w3.org/2000/01/rdf-schema#comment": "for UI and Exchange scripting"
+    },
+    {
+     "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement",
+     "http://www.w3.org/1999/02/22-rdf-syntax-ns#subject": {
+      "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/ruby/3.4.6"
+     },
+     "http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate": {
+      "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology#replaces"
+     },
+     "http://www.w3.org/1999/02/22-rdf-syntax-ns#object": {
+      "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/ruby/2.4.0"
+     },
+     "http://www.w3.org/2000/01/rdf-schema#comment": "a script that requires a library that changed or is gone fails with LoadError"
+    }
+   ]
+  },
+  {
+   "@id": "https://github.com/dickinsonre/swmm-second-brain/blob/main/wiki/sources/S161-note-icm-exchange-run-lifecycle.md",
+   "@graph": [
+    {
+     "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/icm/WSApplication.connect_local_agent",
+     "@type": [
+      "https://github.com/dickinsonre/swmm-second-brain/ontology#ApiMethod"
+     ],
+     "https://github.com/dickinsonre/swmm-second-brain/ontology#part_of": [
+      {
+       "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/icm/ICMExchange"
+      }
+     ]
+    },
+    {
+     "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/icm/WSApplication.launch_sims",
+     "@type": [
+      "https://github.com/dickinsonre/swmm-second-brain/ontology#ApiMethod"
+     ],
+     "https://github.com/dickinsonre/swmm-second-brain/ontology#part_of": [
+      {
+       "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/icm/ICMExchange"
+      }
+     ]
+    },
+    {
+     "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/icm/WSApplication.wait_for_jobs",
+     "@type": [
+      "https://github.com/dickinsonre/swmm-second-brain/ontology#ApiMethod"
+     ],
+     "https://github.com/dickinsonre/swmm-second-brain/ontology#part_of": [
+      {
+       "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/icm/ICMExchange"
+      }
+     ],
+     "https://github.com/dickinsonre/swmm-second-brain/ontology#has_parameter": [
+      {
+       "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/icm/JobTimeout"
+      }
+     ]
+    },
+    {
+     "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement",
+     "http://www.w3.org/1999/02/22-rdf-syntax-ns#subject": {
+      "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/icm/WSApplication.wait_for_jobs"
+     },
+     "http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate": {
+      "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology#has_parameter"
+     },
+     "http://www.w3.org/1999/02/22-rdf-syntax-ns#object": {
+      "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/icm/JobTimeout"
+     },
+     "http://www.w3.org/2000/01/rdf-schema#comment": "in milliseconds"
+    }
+   ]
+  },
+  {
+   "@id": "https://github.com/dickinsonre/swmm-second-brain/blob/main/wiki/sources/S162-note-icm-network-tables-and-fields.md",
+   "@graph": [
+    {
+     "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/icm-iw/hw_node",
+     "@type": [
+      "https://github.com/dickinsonre/swmm-second-brain/ontology#DataTable"
+     ],
+     "https://github.com/dickinsonre/swmm-second-brain/ontology#part_of": [
+      {
+       "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/icm/InfoWorksNetwork"
+      }
+     ],
+     "https://github.com/dickinsonre/swmm-second-brain/ontology#close_match": [
+      {
+       "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/icm-swmm/sw_node"
+      }
+     ]
+    },
+    {
+     "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/icm-iw/hw_conduit",
+     "@type": [
+      "https://github.com/dickinsonre/swmm-second-brain/ontology#DataTable"
+     ],
+     "https://github.com/dickinsonre/swmm-second-brain/ontology#part_of": [
+      {
+       "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/icm/InfoWorksNetwork"
+      }
+     ],
+     "https://github.com/dickinsonre/swmm-second-brain/ontology#close_match": [
+      {
+       "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/icm-swmm/sw_conduit"
+      }
+     ]
+    },
+    {
+     "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/icm-iw/hw_subcatchment",
+     "@type": [
+      "https://github.com/dickinsonre/swmm-second-brain/ontology#DataTable"
+     ],
+     "https://github.com/dickinsonre/swmm-second-brain/ontology#part_of": [
+      {
+       "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/icm/InfoWorksNetwork"
+      }
+     ],
+     "https://github.com/dickinsonre/swmm-second-brain/ontology#close_match": [
+      {
+       "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/icm-swmm/sw_subcatchment"
+      }
+     ]
+    },
+    {
+     "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/icm-swmm/sw_node",
+     "@type": [
+      "https://github.com/dickinsonre/swmm-second-brain/ontology#DataTable"
+     ],
+     "https://github.com/dickinsonre/swmm-second-brain/ontology#part_of": [
+      {
+       "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/icm/SWMMNetwork"
+      }
+     ]
+    },
+    {
+     "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/icm-swmm/sw_conduit",
+     "@type": [
+      "https://github.com/dickinsonre/swmm-second-brain/ontology#DataTable"
+     ],
+     "https://github.com/dickinsonre/swmm-second-brain/ontology#part_of": [
+      {
+       "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/icm/SWMMNetwork"
+      }
+     ]
+    },
+    {
+     "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/icm-swmm/sw_subcatchment",
+     "@type": [
+      "https://github.com/dickinsonre/swmm-second-brain/ontology#DataTable"
+     ],
+     "https://github.com/dickinsonre/swmm-second-brain/ontology#part_of": [
+      {
+       "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/icm/SWMMNetwork"
+      }
+     ]
+    },
+    {
+     "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement",
+     "http://www.w3.org/1999/02/22-rdf-syntax-ns#subject": {
+      "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/icm-iw/hw_node"
+     },
+     "http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate": {
+      "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology#close_match"
+     },
+     "http://www.w3.org/1999/02/22-rdf-syntax-ns#object": {
+      "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/icm-swmm/sw_node"
+     },
+     "http://www.w3.org/2000/01/rdf-schema#comment": "both hold nodes; the fields differ by network type"
+    },
+    {
+     "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement",
+     "http://www.w3.org/1999/02/22-rdf-syntax-ns#subject": {
+      "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/icm-iw/hw_conduit"
+     },
+     "http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate": {
+      "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology#close_match"
+     },
+     "http://www.w3.org/1999/02/22-rdf-syntax-ns#object": {
+      "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/icm-swmm/sw_conduit"
+     },
+     "http://www.w3.org/2000/01/rdf-schema#comment": "both hold conduits; the fields differ by network type"
+    },
+    {
+     "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement",
+     "http://www.w3.org/1999/02/22-rdf-syntax-ns#subject": {
+      "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/icm-iw/hw_subcatchment"
+     },
+     "http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate": {
+      "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology#close_match"
+     },
+     "http://www.w3.org/1999/02/22-rdf-syntax-ns#object": {
+      "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/icm-swmm/sw_subcatchment"
+     },
+     "http://www.w3.org/2000/01/rdf-schema#comment": "both hold subcatchments; the fields differ by network type"
+    }
+   ]
+  },
+  {
+   "@id": "https://github.com/dickinsonre/swmm-second-brain/blob/main/wiki/sources/S163-note-icm-results-field-crosswalk.md",
+   "@graph": [
+    {
+     "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/icm-iw/DEPNOD",
+     "@type": [
+      "https://github.com/dickinsonre/swmm-second-brain/ontology#ResultField"
+     ],
+     "https://github.com/dickinsonre/swmm-second-brain/ontology#part_of": [
+      {
+       "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/icm/InfoWorksNetwork"
+      }
+     ],
+     "https://github.com/dickinsonre/swmm-second-brain/ontology#reports": [
+      {
+       "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/qty/WaterLevel"
+      }
+     ],
+     "https://github.com/dickinsonre/swmm-second-brain/ontology#close_match": [
+      {
+       "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/icm-swmm/HEAD"
+      }
+     ]
+    },
+    {
+     "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/icm-swmm/HEAD",
+     "@type": [
+      "https://github.com/dickinsonre/swmm-second-brain/ontology#ResultField"
+     ],
+     "https://github.com/dickinsonre/swmm-second-brain/ontology#part_of": [
+      {
+       "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/icm/SWMMNetwork"
+      }
+     ],
+     "https://github.com/dickinsonre/swmm-second-brain/ontology#reports": [
+      {
+       "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/qty/WaterLevel"
+      }
+     ]
+    },
+    {
+     "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/icm-swmm/DEPTH",
+     "@type": [
+      "https://github.com/dickinsonre/swmm-second-brain/ontology#ResultField"
+     ],
+     "https://github.com/dickinsonre/swmm-second-brain/ontology#part_of": [
+      {
+       "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/icm/SWMMNetwork"
+      }
+     ],
+     "https://github.com/dickinsonre/swmm-second-brain/ontology#reports": [
+      {
+       "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/qty/DepthAboveInlet"
+      }
+     ]
+    },
+    {
+     "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/qty/DepthAboveInlet",
+     "https://github.com/dickinsonre/swmm-second-brain/ontology#derived_from": [
+      {
+       "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/qty/WaterLevel"
+      },
+      {
+       "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/qty/InletElevation"
+      }
+     ],
+     "@type": [
+      "https://github.com/dickinsonre/swmm-second-brain/ontology#Quantity"
+     ]
+    },
+    {
+     "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/qty/WaterLevel",
+     "@type": [
+      "https://github.com/dickinsonre/swmm-second-brain/ontology#Quantity"
+     ]
+    },
+    {
+     "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/qty/InletElevation",
+     "@type": [
+      "https://github.com/dickinsonre/swmm-second-brain/ontology#Quantity"
+     ]
+    },
+    {
+     "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement",
+     "http://www.w3.org/1999/02/22-rdf-syntax-ns#subject": {
+      "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/icm-iw/DEPNOD"
+     },
+     "http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate": {
+      "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology#reports"
+     },
+     "http://www.w3.org/1999/02/22-rdf-syntax-ns#object": {
+      "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/qty/WaterLevel"
+     },
+     "http://www.w3.org/2000/01/rdf-schema#comment": "level at the current timestep"
+    },
+    {
+     "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement",
+     "http://www.w3.org/1999/02/22-rdf-syntax-ns#subject": {
+      "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/icm-swmm/HEAD"
+     },
+     "http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate": {
+      "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology#reports"
+     },
+     "http://www.w3.org/1999/02/22-rdf-syntax-ns#object": {
+      "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/qty/WaterLevel"
+     },
+     "http://www.w3.org/2000/01/rdf-schema#comment": "hydraulic head elevation"
+    },
+    {
+     "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement",
+     "http://www.w3.org/1999/02/22-rdf-syntax-ns#subject": {
+      "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/icm-swmm/DEPTH"
+     },
+     "http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate": {
+      "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology#reports"
+     },
+     "http://www.w3.org/1999/02/22-rdf-syntax-ns#object": {
+      "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/qty/DepthAboveInlet"
+     },
+     "http://www.w3.org/2000/01/rdf-schema#comment": "water depth above the node inlet elevation"
+    },
+    {
+     "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement",
+     "http://www.w3.org/1999/02/22-rdf-syntax-ns#subject": {
+      "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/icm-iw/DEPNOD"
+     },
+     "http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate": {
+      "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology#close_match"
+     },
+     "http://www.w3.org/1999/02/22-rdf-syntax-ns#object": {
+      "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/icm-swmm/HEAD"
+     },
+     "http://www.w3.org/2000/01/rdf-schema#comment": "compare on a common vertical datum"
+    },
+    {
+     "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement",
+     "http://www.w3.org/1999/02/22-rdf-syntax-ns#subject": {
+      "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/qty/DepthAboveInlet"
+     },
+     "http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate": {
+      "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology#derived_from"
+     },
+     "http://www.w3.org/1999/02/22-rdf-syntax-ns#object": {
+      "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/qty/WaterLevel"
+     },
+     "http://www.w3.org/2000/01/rdf-schema#comment": "depth = level - inlet elevation; 109.25 ft - 106.00 ft = 3.25 ft"
+    },
+    {
+     "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement",
+     "http://www.w3.org/1999/02/22-rdf-syntax-ns#subject": {
+      "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/qty/DepthAboveInlet"
+     },
+     "http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate": {
+      "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology#derived_from"
+     },
+     "http://www.w3.org/1999/02/22-rdf-syntax-ns#object": {
+      "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/qty/InletElevation"
+     },
+     "http://www.w3.org/2000/01/rdf-schema#comment": "depth = level - inlet elevation; 109.25 ft - 106.00 ft = 3.25 ft"
+    }
+   ]
+  },
+  {
+   "@id": "https://github.com/dickinsonre/swmm-second-brain/blob/main/wiki/sources/S169-note-icm-2d-rainfall-and-infiltration.md",
+   "@graph": [
+    {
+     "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/icm-iw/OutsideSubcatchments",
+     "@type": [
+      "https://github.com/dickinsonre/swmm-second-brain/ontology#Setting"
+     ],
+     "https://github.com/dickinsonre/swmm-second-brain/ontology#part_of": [
+      {
+       "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/icm-iw/Zone2D"
+      }
+     ]
+    },
+    {
+     "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement",
+     "http://www.w3.org/1999/02/22-rdf-syntax-ns#subject": {
+      "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/icm-iw/OutsideSubcatchments"
+     },
+     "http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate": {
+      "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology#part_of"
+     },
+     "http://www.w3.org/1999/02/22-rdf-syntax-ns#object": {
+      "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/icm-iw/Zone2D"
+     },
+     "http://www.w3.org/2000/01/rdf-schema#comment": "keeps direct mesh rain off the area inside subcatchments"
+    }
+   ]
+  },
+  {
+   "@id": "https://github.com/dickinsonre/swmm-second-brain/blob/main/wiki/sources/S17-li-routing-options.md",
+   "@graph": [
+    {
+     "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/icm/InfoWorksNetwork",
+     "@type": [
+      "https://github.com/dickinsonre/swmm-second-brain/ontology#NetworkType"
+     ],
+     "https://github.com/dickinsonre/swmm-second-brain/ontology#part_of": [
+      {
+       "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/icm/ICM"
+      }
+     ]
+    },
+    {
+     "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/icm/SWMMNetwork",
+     "@type": [
+      "https://github.com/dickinsonre/swmm-second-brain/ontology#NetworkType"
+     ],
+     "https://github.com/dickinsonre/swmm-second-brain/ontology#part_of": [
+      {
+       "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/icm/ICM"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "@id": "https://github.com/dickinsonre/swmm-second-brain/blob/main/wiki/sources/S177-li-curve-number-approximations-icm-2d.md",
+   "@graph": [
+    {
+     "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/icm-iw/SubcatchmentCN",
+     "@type": [
+      "https://github.com/dickinsonre/swmm-second-brain/ontology#InfiltrationMethod"
+     ]
+    },
+    {
+     "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/icm-iw/SubcatchmentCNSWMM",
+     "@type": [
+      "https://github.com/dickinsonre/swmm-second-brain/ontology#InfiltrationMethod"
+     ]
+    },
+    {
+     "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/icm-iw/Horton2D",
+     "https://github.com/dickinsonre/swmm-second-brain/ontology#approximates": [
+      {
+       "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/icm-iw/SubcatchmentCN"
+      }
+     ]
+    },
+    {
+     "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/icm-iw/GreenAmpt2D",
+     "https://github.com/dickinsonre/swmm-second-brain/ontology#approximates": [
+      {
+       "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/icm-iw/SubcatchmentCN"
+      }
+     ]
+    },
+    {
+     "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/icm-iw/ConstInf2D",
+     "https://github.com/dickinsonre/swmm-second-brain/ontology#approximates": [
+      {
+       "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/icm-iw/SubcatchmentCN"
+      }
+     ]
+    },
+    {
+     "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement",
+     "http://www.w3.org/1999/02/22-rdf-syntax-ns#subject": {
+      "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/icm-iw/SubcatchmentCN"
+     },
+     "http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate": {
+      "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+     },
+     "http://www.w3.org/1999/02/22-rdf-syntax-ns#object": {
+      "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology#InfiltrationMethod"
+     },
+     "http://www.w3.org/2000/01/rdf-schema#comment": "on a pervious runoff surface of a subcatchment"
+    },
+    {
+     "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement",
+     "http://www.w3.org/1999/02/22-rdf-syntax-ns#subject": {
+      "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/icm-iw/SubcatchmentCNSWMM"
+     },
+     "http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate": {
+      "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+     },
+     "http://www.w3.org/1999/02/22-rdf-syntax-ns#object": {
+      "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology#InfiltrationMethod"
+     },
+     "http://www.w3.org/2000/01/rdf-schema#comment": "on a pervious runoff surface of a subcatchment"
+    },
+    {
+     "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement",
+     "http://www.w3.org/1999/02/22-rdf-syntax-ns#subject": {
+      "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/icm-iw/Horton2D"
+     },
+     "http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate": {
+      "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology#approximates"
+     },
+     "http://www.w3.org/1999/02/22-rdf-syntax-ns#object": {
+      "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/icm-iw/SubcatchmentCN"
+     },
+     "http://www.w3.org/2000/01/rdf-schema#comment": "2023, before CNSWMM on the mesh: with a constant loss rate set by SQL from the CN peak infiltration rate, peak and volume came close, almost the same for small storms"
+    },
+    {
+     "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement",
+     "http://www.w3.org/1999/02/22-rdf-syntax-ns#subject": {
+      "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/icm-iw/GreenAmpt2D"
+     },
+     "http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate": {
+      "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology#approximates"
+     },
+     "http://www.w3.org/1999/02/22-rdf-syntax-ns#object": {
+      "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/icm-iw/SubcatchmentCN"
+     },
+     "http://www.w3.org/2000/01/rdf-schema#comment": "2023, before CNSWMM on the mesh: with a constant loss rate set by SQL from the CN peak infiltration rate, peak and volume came close, almost the same for small storms"
+    },
+    {
+     "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement",
+     "http://www.w3.org/1999/02/22-rdf-syntax-ns#subject": {
+      "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/icm-iw/ConstInf2D"
+     },
+     "http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate": {
+      "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology#approximates"
+     },
+     "http://www.w3.org/1999/02/22-rdf-syntax-ns#object": {
+      "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/icm-iw/SubcatchmentCN"
+     },
+     "http://www.w3.org/2000/01/rdf-schema#comment": "2023, before CNSWMM on the mesh: with a constant loss rate set by SQL from the CN peak infiltration rate, peak and volume came close, almost the same for small storms"
+    }
+   ]
+  },
+  {
+   "@id": "https://github.com/dickinsonre/swmm-second-brain/blob/main/wiki/sources/S178-li-cnswmm-on-the-icm-2d-mesh.md",
+   "@graph": [
+    {
+     "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/icm-iw/Fixed2D",
+     "@type": [
+      "https://github.com/dickinsonre/swmm-second-brain/ontology#InfiltrationMethod"
+     ],
+     "https://github.com/dickinsonre/swmm-second-brain/ontology#part_of": [
+      {
+       "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/icm-iw/InfiltrationSurface2D"
+      }
+     ]
+    },
+    {
+     "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/icm-iw/Horton2D",
+     "@type": [
+      "https://github.com/dickinsonre/swmm-second-brain/ontology#InfiltrationMethod"
+     ],
+     "https://github.com/dickinsonre/swmm-second-brain/ontology#part_of": [
+      {
+       "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/icm-iw/InfiltrationSurface2D"
+      }
+     ]
+    },
+    {
+     "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/icm-iw/ConstInf2D",
+     "@type": [
+      "https://github.com/dickinsonre/swmm-second-brain/ontology#InfiltrationMethod"
+     ],
+     "https://github.com/dickinsonre/swmm-second-brain/ontology#part_of": [
+      {
+       "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/icm-iw/InfiltrationSurface2D"
+      }
+     ]
+    },
+    {
+     "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/icm-iw/GreenAmpt2D",
+     "@type": [
+      "https://github.com/dickinsonre/swmm-second-brain/ontology#InfiltrationMethod"
+     ],
+     "https://github.com/dickinsonre/swmm-second-brain/ontology#part_of": [
+      {
+       "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/icm-iw/InfiltrationSurface2D"
+      }
+     ]
+    },
+    {
+     "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/icm-iw/DefConLoss2D",
+     "@type": [
+      "https://github.com/dickinsonre/swmm-second-brain/ontology#InfiltrationMethod"
+     ],
+     "https://github.com/dickinsonre/swmm-second-brain/ontology#part_of": [
+      {
+       "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/icm-iw/InfiltrationSurface2D"
+      }
+     ]
+    },
+    {
+     "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/icm-iw/CNSWMM2D",
+     "@type": [
+      "https://github.com/dickinsonre/swmm-second-brain/ontology#InfiltrationMethod"
+     ],
+     "https://github.com/dickinsonre/swmm-second-brain/ontology#part_of": [
+      {
+       "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/icm-iw/InfiltrationSurface2D"
+      }
+     ],
+     "https://github.com/dickinsonre/swmm-second-brain/ontology#available_in": [
+      {
+       "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/icm/2025.1"
+      }
+     ],
+     "https://github.com/dickinsonre/swmm-second-brain/ontology#has_parameter": [
+      {
+       "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/icm-iw/InitialAbstractionFactor"
+      },
+      {
+       "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/icm-iw/CurveNumber"
+      },
+      {
+       "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/icm-iw/DryingTime"
+      }
+     ]
+    },
+    {
+     "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/icm/2025.1",
+     "@type": [
+      "https://github.com/dickinsonre/swmm-second-brain/ontology#Release"
+     ],
+     "https://github.com/dickinsonre/swmm-second-brain/ontology#part_of": [
+      {
+       "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/icm/ICM"
+      }
+     ]
+    },
+    {
+     "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/icm-iw/InitialAbstractionFactor",
+     "@type": [
+      "https://github.com/dickinsonre/swmm-second-brain/ontology#Parameter"
+     ]
+    },
+    {
+     "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/icm-iw/CurveNumber",
+     "@type": [
+      "https://github.com/dickinsonre/swmm-second-brain/ontology#Parameter"
+     ]
+    },
+    {
+     "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/icm-iw/DryingTime",
+     "@type": [
+      "https://github.com/dickinsonre/swmm-second-brain/ontology#Parameter"
+     ]
+    },
+    {
+     "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/icm-iw/CNSWMMAntecedentMoistureCondition",
+     "@type": [
+      "https://github.com/dickinsonre/swmm-second-brain/ontology#Parameter"
+     ],
+     "https://github.com/dickinsonre/swmm-second-brain/ontology#part_of": [
+      {
+       "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/icm-iw/InitialConditions2D"
+      }
+     ]
+    },
+    {
+     "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/icm-iw/hw_2d_infil_surface",
+     "@type": [
+      "https://github.com/dickinsonre/swmm-second-brain/ontology#DataTable"
+     ],
+     "https://github.com/dickinsonre/swmm-second-brain/ontology#part_of": [
+      {
+       "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/icm/InfoWorksNetwork"
+      }
+     ]
+    },
+    {
+     "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/icm-iw/InfiltrationSurface2D",
+     "https://github.com/dickinsonre/swmm-second-brain/ontology#stored_in": [
+      {
+       "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/icm-iw/hw_2d_infil_surface"
+      }
+     ]
+    },
+    {
+     "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement",
+     "http://www.w3.org/1999/02/22-rdf-syntax-ns#subject": {
+      "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/icm-iw/Fixed2D"
+     },
+     "http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate": {
+      "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+     },
+     "http://www.w3.org/1999/02/22-rdf-syntax-ns#object": {
+      "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology#InfiltrationMethod"
+     },
+     "http://www.w3.org/2000/01/rdf-schema#comment": "infiltration types of an Infiltration Surface (2D) in ICM 2025.1"
+    },
+    {
+     "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement",
+     "http://www.w3.org/1999/02/22-rdf-syntax-ns#subject": {
+      "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/icm-iw/Horton2D"
+     },
+     "http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate": {
+      "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+     },
+     "http://www.w3.org/1999/02/22-rdf-syntax-ns#object": {
+      "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology#InfiltrationMethod"
+     },
+     "http://www.w3.org/2000/01/rdf-schema#comment": "infiltration types of an Infiltration Surface (2D) in ICM 2025.1"
+    },
+    {
+     "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement",
+     "http://www.w3.org/1999/02/22-rdf-syntax-ns#subject": {
+      "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/icm-iw/ConstInf2D"
+     },
+     "http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate": {
+      "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+     },
+     "http://www.w3.org/1999/02/22-rdf-syntax-ns#object": {
+      "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology#InfiltrationMethod"
+     },
+     "http://www.w3.org/2000/01/rdf-schema#comment": "infiltration types of an Infiltration Surface (2D) in ICM 2025.1"
+    },
+    {
+     "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement",
+     "http://www.w3.org/1999/02/22-rdf-syntax-ns#subject": {
+      "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/icm-iw/GreenAmpt2D"
+     },
+     "http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate": {
+      "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+     },
+     "http://www.w3.org/1999/02/22-rdf-syntax-ns#object": {
+      "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology#InfiltrationMethod"
+     },
+     "http://www.w3.org/2000/01/rdf-schema#comment": "infiltration types of an Infiltration Surface (2D) in ICM 2025.1"
+    },
+    {
+     "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement",
+     "http://www.w3.org/1999/02/22-rdf-syntax-ns#subject": {
+      "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/icm-iw/DefConLoss2D"
+     },
+     "http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate": {
+      "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+     },
+     "http://www.w3.org/1999/02/22-rdf-syntax-ns#object": {
+      "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology#InfiltrationMethod"
+     },
+     "http://www.w3.org/2000/01/rdf-schema#comment": "infiltration types of an Infiltration Surface (2D) in ICM 2025.1"
+    },
+    {
+     "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement",
+     "http://www.w3.org/1999/02/22-rdf-syntax-ns#subject": {
+      "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/icm-iw/CNSWMM2D"
+     },
+     "http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate": {
+      "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+     },
+     "http://www.w3.org/1999/02/22-rdf-syntax-ns#object": {
+      "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology#InfiltrationMethod"
+     },
+     "http://www.w3.org/2000/01/rdf-schema#comment": "infiltration types of an Infiltration Surface (2D) in ICM 2025.1"
+    },
+    {
+     "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement",
+     "http://www.w3.org/1999/02/22-rdf-syntax-ns#subject": {
+      "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/icm-iw/Fixed2D"
+     },
+     "http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate": {
+      "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology#part_of"
+     },
+     "http://www.w3.org/1999/02/22-rdf-syntax-ns#object": {
+      "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/icm-iw/InfiltrationSurface2D"
+     },
+     "http://www.w3.org/2000/01/rdf-schema#comment": "values of its Infiltration type property"
+    },
+    {
+     "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement",
+     "http://www.w3.org/1999/02/22-rdf-syntax-ns#subject": {
+      "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/icm-iw/Horton2D"
+     },
+     "http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate": {
+      "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology#part_of"
+     },
+     "http://www.w3.org/1999/02/22-rdf-syntax-ns#object": {
+      "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/icm-iw/InfiltrationSurface2D"
+     },
+     "http://www.w3.org/2000/01/rdf-schema#comment": "values of its Infiltration type property"
+    },
+    {
+     "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement",
+     "http://www.w3.org/1999/02/22-rdf-syntax-ns#subject": {
+      "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/icm-iw/ConstInf2D"
+     },
+     "http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate": {
+      "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology#part_of"
+     },
+     "http://www.w3.org/1999/02/22-rdf-syntax-ns#object": {
+      "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/icm-iw/InfiltrationSurface2D"
+     },
+     "http://www.w3.org/2000/01/rdf-schema#comment": "values of its Infiltration type property"
+    },
+    {
+     "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement",
+     "http://www.w3.org/1999/02/22-rdf-syntax-ns#subject": {
+      "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/icm-iw/GreenAmpt2D"
+     },
+     "http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate": {
+      "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology#part_of"
+     },
+     "http://www.w3.org/1999/02/22-rdf-syntax-ns#object": {
+      "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/icm-iw/InfiltrationSurface2D"
+     },
+     "http://www.w3.org/2000/01/rdf-schema#comment": "values of its Infiltration type property"
+    },
+    {
+     "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement",
+     "http://www.w3.org/1999/02/22-rdf-syntax-ns#subject": {
+      "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/icm-iw/DefConLoss2D"
+     },
+     "http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate": {
+      "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology#part_of"
+     },
+     "http://www.w3.org/1999/02/22-rdf-syntax-ns#object": {
+      "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/icm-iw/InfiltrationSurface2D"
+     },
+     "http://www.w3.org/2000/01/rdf-schema#comment": "values of its Infiltration type property"
+    },
+    {
+     "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement",
+     "http://www.w3.org/1999/02/22-rdf-syntax-ns#subject": {
+      "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/icm-iw/CNSWMM2D"
+     },
+     "http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate": {
+      "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology#part_of"
+     },
+     "http://www.w3.org/1999/02/22-rdf-syntax-ns#object": {
+      "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/icm-iw/InfiltrationSurface2D"
+     },
+     "http://www.w3.org/2000/01/rdf-schema#comment": "values of its Infiltration type property"
+    },
+    {
+     "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement",
+     "http://www.w3.org/1999/02/22-rdf-syntax-ns#subject": {
+      "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/icm-iw/CNSWMM2D"
+     },
+     "http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate": {
+      "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology#available_in"
+     },
+     "http://www.w3.org/1999/02/22-rdf-syntax-ns#object": {
+      "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/icm/2025.1"
+     },
+     "http://www.w3.org/2000/01/rdf-schema#comment": "on the 2D mesh"
+    },
+    {
+     "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement",
+     "http://www.w3.org/1999/02/22-rdf-syntax-ns#subject": {
+      "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/icm-iw/CNSWMMAntecedentMoistureCondition"
+     },
+     "http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate": {
+      "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology#part_of"
+     },
+     "http://www.w3.org/1999/02/22-rdf-syntax-ns#object": {
+      "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/icm-iw/InitialConditions2D"
+     },
+     "http://www.w3.org/2000/01/rdf-schema#comment": "the soil moisture before a rainfall event"
+    }
+   ]
+  }
+ ]
+}

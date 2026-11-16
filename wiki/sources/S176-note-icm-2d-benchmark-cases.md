@@ -7,6 +7,7 @@ author: Robert Dickinson
 published: 2026-11-16
 ingested: 2026-11-16
 tags: [icm, 2d, benchmark, note]
+drafted_by: GPT plugin for Autodesk (an AI), per S166
 reviewed: no
 ---
 **What it is.** Three test designs for ICM 2D, for what the note calls the ICM Lab Canon. Raw file: [raw/notes/icm-2d-benchmark-cases.md](../../raw/notes/icm-2d-benchmark-cases.md).

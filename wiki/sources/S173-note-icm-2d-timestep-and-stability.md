@@ -7,6 +7,7 @@ author: Robert Dickinson
 published: 2026-11-16
 ingested: 2026-11-16
 tags: [icm, 2d, timestep, stability, note]
+drafted_by: GPT plugin for Autodesk (an AI), per S166
 reviewed: no
 ---
 **What it is.** A note on the time step settings of an ICM 2D run. Raw file: [raw/notes/icm-2d-timestep-and-stability.md](../../raw/notes/icm-2d-timestep-and-stability.md).

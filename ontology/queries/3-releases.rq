@@ -1,0 +1,9 @@
+# What became available in which ICM release, and what it replaced
+PREFIX sb: <https://github.com/dickinsonre/swmm-second-brain/ontology#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?release ?thing ?replaces WHERE {
+  ?t sb:available_in ?r .
+  ?r rdfs:label ?release . ?t rdfs:label ?thing .
+  OPTIONAL { ?t sb:replaces ?old . ?old rdfs:label ?replaces }
+}
+ORDER BY ?release

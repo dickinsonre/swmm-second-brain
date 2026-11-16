@@ -13,7 +13,8 @@ It is not a search index. Each source is read once and compiled into pages; a qu
 | `index.md` | Catalog of every page. Start here |
 | `log.md` | What was done and when |
 | `CLAUDE.md` | The schema: page rules and the three operations |
-| `tools/` | `manifest.py`, `lint.py`, `search.py`, `li2md.py`; `build_app.py` and `build_app_docx.js`, which build the reader app (one HTML page of the whole wiki) into `build/` |
+| `tools/` | `manifest.py`, `lint.py`, `search.py`, `li2md.py`; `build_app.py` and `build_app_docx.js`, which build the reader app (one HTML page of the whole wiki) into `build/`; `ontology.py`, which builds the typed relations into RDF |
+| `ONTOLOGY.md`, `ontology/` | the draft vocabulary of typed relations, and what `tools/ontology.py` builds from the pages' Relations tables: TriG, JSON-LD, a CSV, a Mermaid graph and sample SPARQL queries |
 
 ## How to use it
 

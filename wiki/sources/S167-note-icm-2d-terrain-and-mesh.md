@@ -7,6 +7,7 @@ author: Robert Dickinson
 published: 2026-11-16
 ingested: 2026-11-16
 tags: [icm, 2d, mesh, terrain, note]
+drafted_by: GPT plugin for Autodesk (an AI), per S166
 reviewed: no
 ---
 **What it is.** A note on building an InfoWorks ICM 2D mesh and checking its terrain. Raw file: [raw/notes/icm-2d-terrain-and-mesh.md](../../raw/notes/icm-2d-terrain-and-mesh.md).

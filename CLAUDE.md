@@ -33,6 +33,8 @@ index.md       catalog of every wiki page, one line each. Read this first.
 log.md         append-only record of every ingest, query and lint
 tools/         manifest.py, lint.py, search.py, li2md.py (standard library, bs4 and pandoc for li2md);
                build_app.py and build_app_docx.js build the reader app into build/ (markdown package; docx and rsvg-convert)
+               ontology.py builds the Relations tables into ontology/ (standard library; --check needs rdflib)
+ONTOLOGY.md    the vocabulary of typed relations (draft); ontology/ holds what ontology.py builds
 ```
 
 ## Page rules
@@ -64,6 +66,7 @@ When the agent changes a page that Bob has already reviewed, it keeps his `revie
 8. **House style.** Facts in short sentences. No em dashes. No adjectives doing the work of numbers. US customary units. Credit people and projects by name. AI is never an author: source pages name the human author, and `reviewed:` says whether Bob has read the wiki page.
 9. **People.** Entity pages for people hold what the person has published or done in public, professionally. Nothing about health, family, money or private life goes into the wiki, even when a raw source mentions it. Two rulings from Bob (15 November 2026): his age may be given where it is the point of the sentence; the names of his family members never appear, in `wiki/` or in anything the agent adds to `raw/`.
 10. **Length.** A concept or entity page fits on one or two screens. When a page passes about 600 words, split it.
+11. **Relations (draft, optional).** A page may end with a `**Relations**` table that states, as typed relations between term IDs, what the page already says with citations. The vocabulary and the rules are in `ONTOLOGY.md`. Every row cites a source, like any claim. `tools/lint.py` checks the tables.
 
 ## App summaries and versions (`raw/apps/`)
 
@@ -99,7 +102,7 @@ Bob says "ingest" with a file, a folder, or "the next batch".
 5. Where the new source contradicts a page, apply page rule 3.
 6. Update `wiki/overview.md` if the synthesis moved.
 7. Update `index.md`. Append to `log.md`.
-8. Run `python3 tools/manifest.py` and `python3 tools/lint.py`. Fix every error before stopping. Then run `python3 tools/build_app.py` (and `node tools/build_app_docx.js`) and republish the reader app.
+8. Run `python3 tools/manifest.py` and `python3 tools/lint.py`. Fix every error before stopping. Then run `python3 tools/ontology.py`, then `python3 tools/build_app.py` (and `node tools/build_app_docx.js`) and republish the reader app.
 9. Tell Bob in a few lines: what was ingested, pages created and changed, and any contradiction found.
 
 ### Query

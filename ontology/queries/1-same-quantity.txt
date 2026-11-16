@@ -1,0 +1,5 @@
+# Which result fields report the same physical quantity, and in which network type?
+quantity	field	network
+Depth above inlet	DEPTH	SWMMNetwork
+Water level	DEPNOD	InfoWorksNetwork
+Water level	HEAD	SWMMNetwork

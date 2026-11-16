@@ -7,6 +7,7 @@ author: Robert Dickinson
 published: 2026-11-16
 ingested: 2026-11-16
 tags: [icm, 2d, river, banks, note]
+drafted_by: GPT plugin for Autodesk (an AI), per S166
 reviewed: no
 ---
 **What it is.** A note on a River Reach spilling to a connected 2D zone over its banks. Raw file: [raw/notes/icm-2d-river-bank-exchange.md](../../raw/notes/icm-2d-river-bank-exchange.md).

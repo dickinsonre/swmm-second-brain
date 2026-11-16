@@ -7,6 +7,7 @@ author: Robert Dickinson
 published: 2026-11-16
 ingested: 2026-11-16
 tags: [icm, 2d, 1d-2d, manholes, note]
+drafted_by: GPT plugin for Autodesk (an AI), per S166
 reviewed: no
 ---
 **What it is.** A note on how an InfoWorks manhole exchanges water with the 2D mesh. Raw file: [raw/notes/icm-1d-2d-node-exchange.md](../../raw/notes/icm-1d-2d-node-exchange.md).
