@@ -7,7 +7,7 @@ author: Robert Dickinson
 published: 2026-11-15
 ingested: 2026-11-15
 tags: [apps, replit, swmm5, model-library, pyswmm]
-reviewed: no
+reviewed: 11/16/2026
 ---
 **What it is.** A technical summary of SWMM5 Network Miner, version 1.0.0: an app for organizing, searching, inspecting, comparing and running a library of SWMM model files. It is one of Bob's Replit apps, at `swmm-filebase--robertdickinson.replit.app`. Raw file: [raw/apps/swmm-filebase--robertdickinson-v1.0.0.md](../../raw/apps/swmm-filebase--robertdickinson-v1.0.0.md).
 
