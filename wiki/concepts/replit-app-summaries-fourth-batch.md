@@ -4,7 +4,7 @@ type: concept
 updated: 2026-11-15
 sources: [S122, S145, S146, S147, S148, S149, S150, S151, S152, S153, S154]
 tags: [apps, replit, verification, ai-agents]
-reviewed: no
+reviewed: 11/16/2026
 ---
 Six more of Bob's Replit apps got a technical summary from Replit Agent on 15 November 2026, after the six on [Replit apps: six more summaries](replit-app-summaries-third-batch.md). They were ingested that evening as [S145](../sources/S145-icm-ruby-nano-banana-prompt-replit-summary.md) to [S150](../sources/S150-icm-ruby-script-runner-replit-summary.md), with two notes of Bob's that answer them, [S151](../sources/S151-note-openswmm-license-not-mit.md) and [S152](../sources/S152-note-ruby-script-runner-deleted.md). Each summary ends by saying that Replit Agent wrote it and that Bob has not yet reviewed it (Q74).
 
