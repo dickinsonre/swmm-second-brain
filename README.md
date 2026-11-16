@@ -8,8 +8,8 @@ It is not a search index. Each source is read once and compiled into pages; a qu
 
 | Path | What |
 |---|---|
-| `raw/` | Sources. 313 files, about 1,060,000 words. Never edited. `raw/MANIFEST.csv` has a hash and a status for each |
-| `wiki/` | 275 pages, about 138,000 words: 136 sources, 53 concepts, 84 entities, an overview and an open-questions list |
+| `raw/` | Sources. 422 files, about 1,330,000 words. Never edited. `raw/MANIFEST.csv` has a hash, a word count and a status for each |
+| `wiki/` | 354 pages, about 176,000 words: 179 sources, 72 concepts, 101 entities, an overview and an open-questions list |
 | `index.md` | Catalog of every page. Start here |
 | `log.md` | What was done and when |
 | `CLAUDE.md` | The schema: page rules and the three operations |
@@ -36,7 +36,7 @@ To read the wiki yourself, open the folder in Obsidian (the graph view shows hub
 
 - 179 of 422 raw files ingested, one of them (the EPA hydraulics manual) in part. The queue is in `index.md`.
 - 82 open questions in `wiki/open-questions.md`, and 8 settled. Several are contradictions between Bob's own articles.
-- Bob reviewed every page on 11/16/2026. Since then, 36 new pages say `reviewed: no` (graph theory, the seventeen AI-written ICM notes and their pages, and two Curve Number articles) and 5 carry `changed_after_review:` (Infiltration methods, InfoWorks ICM, SWMM 5 versus ICM InfoWorks, the open questions and the overview).
+- Bob reviewed every page on 11/16/2026. Since then, 37 new pages say `reviewed: no` (graph theory, the seventeen AI-written ICM notes and their pages, and two Curve Number articles) and 5 carry `changed_after_review:` (Infiltration methods, InfoWorks ICM, SWMM 5 versus ICM InfoWorks, the open questions and the overview).
 - The ontology draft has Relations tables on 3 pages: 89 statements, each filed under the source it cites, with conditions and a `verification` status on the rows that need them. `ontology/queries/5-comparable-fields.txt` answers "which fields can I compare across InfoWorks and ICM SWMM networks, under what conditions, and on what evidence?" for the fields the wiki has so far.
 
 ## What is not here
@@ -49,7 +49,8 @@ Public at https://github.com/dickinsonre/swmm-second-brain since 14 November 202
 
 Treat it as a working notebook, not a reference:
 
-- No wiki page has been read by a person yet.
+- Bob read every wiki page on 11/16/2026. A page added since says `reviewed: no`; a page changed since carries `changed_after_review:`. `python3 tools/lint.py --review` lists both, in the order to read them.
+- Many sources were drafted by an AI (ChatGPT, Claude, the GPT plugin for Autodesk) and say so under "How it was written". A claim resting on one is no stronger than that draft until a run or Bob checks it.
 - Findings marked `unconfirmed` have not been rerun. They are notes, including the ones about other people's code.
 - `wiki/open-questions.md` lists where the sources contradict each other. Until an item is ticked, neither side is settled.
 - The OpenSWMM thread list names the people who started or joined each public forum thread, as openswmm.org shows them.

@@ -696,3 +696,8 @@ New queries: 5-comparable-fields (the test question), 6-approximations, 7-not-ye
 
 ## [2026-11-16] setup | Bob accepted the tightened ontology
 Bob said "merge" on branch ontology-tighten at 17:56 Eastern, which accepts the added sentence in CLAUDE.md page rule 11 (qualifiers and the check of what each relation may connect) and the changes to ONTOLOGY.md, tools/ontology.py and the three Relations tables.
+
+## [2026-11-16] lint | Grok's review: stale README, review queue, AI-dependence count
+Bob passed on a review of the repository by Grok (xAI), graded A− (91/100). Its limits: about 40% ingested, human review incomplete, ontology on few pages, no license, dependence on AI-drafted sources. What it got wrong came from the README, which still said 313 raw files and about 1,060,000 words (now 422 and about 1,330,000) and "No wiki page has been read by a person yet" (Bob read every page on 11/16/2026); both corrected, with the wiki counts (354 pages, about 176,000 words).
+- `tools/lint.py --review` prints the review queue in reading order: additions to pages Bob has read, then unread wiki pages (those resting only on AI-drafted sources first, then the most linked), then unread source pages (AI-drafted first). Today: 5, 15 and 22.
+- `tools/lint.py` now counts source pages with a `drafted_by:` line (17) and pages resting only on them (0). The count is low: 84 more source pages name an AI under "How it was written" and carry no `drafted_by:` line.
