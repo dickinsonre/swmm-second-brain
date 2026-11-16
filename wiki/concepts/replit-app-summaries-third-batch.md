@@ -4,7 +4,7 @@ type: concept
 updated: 2026-11-15
 sources: [S137, S138, S139, S140, S141, S142]
 tags: [apps, replit, verification, ai-agents]
-reviewed: no
+reviewed: 11/16/2026
 ---
 Six more of Bob's Replit apps got a technical summary from Replit Agent on 15 November 2026, after the twenty-one on [Replit apps: the second seventeen summaries](replit-app-summaries-second-batch.md). They were ingested the same evening as [S137](../sources/S137-swmm-documents-explorer-replit-summary.md) to [S142](../sources/S142-icm-prn-file-reader-replit-summary.md). Each ends by saying that Replit Agent wrote it and that Bob has not yet reviewed it (Q74).
 
