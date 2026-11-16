@@ -4,7 +4,7 @@ type: concept
 updated: 2026-11-15
 sources: [S96, S97, S98, S99, S100, S101, S102, S103, S104, S105, S106, S107, S108, S109, S110, S111, S112, S113, S115, S116]
 tags: [apps, replit, verification, ai-agents]
-reviewed: no
+reviewed: 11/16/2026
 ---
 On 15 November 2026 eighteen of Bob's Replit apps each got a technical summary, written inside its project by Replit Agent, and those eighteen files were ingested the same day as [S96](../sources/S96-swmm5-ui-replit-summary.md) to [S113](../sources/S113-geoai-flood-impact-replit-summary.md). Every one ends by saying that Replit Agent wrote it and that Bob has not yet reviewed it (Q67).
 
