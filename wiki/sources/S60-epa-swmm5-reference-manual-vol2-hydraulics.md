@@ -7,9 +7,10 @@ author: Lewis A. Rossman
 published: 2017-05-01
 ingested: 2026-11-14
 coverage: partial
-read: [1.1 Introduction and Table 1-1, "Chapter 2 SWMM's Hydraulic Model (2.1 to 2.3)", "Chapter 3 Dynamic Wave Analysis (3.1 to 3.4)", "Chapter 4 Kinematic Wave Analysis (4.1 in part, 4.3, 4.4; pages 64 to 66 are not in the raw file)", "Chapter 6 Pumps and Regulators (6.1 to 6.4; page 122 is not in the raw file)"]
+read: [1.1 Introduction and Table 1-1, "1.2 to 1.5 (Tables 1-2 to 1-4; Figures 1-1 to 1-6 are not in the raw file)", "Chapter 2 SWMM's Hydraulic Model (2.1 to 2.3)", "Chapter 3 Dynamic Wave Analysis (3.1 to 3.4)", "Chapter 4 Kinematic Wave Analysis (4.1 in part, 4.3, 4.4; pages 64 to 66 are not in the raw file)", "Chapter 6 Pumps and Regulators (6.1 to 6.4; page 122 is not in the raw file)"]
 tags: [swmm5, hydraulics, primary-document, epa]
 reviewed: 2026-11-15
+changed_after_review: "2026-11-16 (sections 1.2 to 1.5 read): read: list extended; one block headed Added 16 November 2026 before Feeds; one page added to Feeds"
 ---
 **What it is.** EPA/600/R-17/111, the hydraulics volume of the SWMM 5 reference manual, by Lewis A. Rossman, U.S. EPA Office of Research and Development. A primary document: the engine's author describing what the engine computes. Raw file: [raw/manuals/EPA_SWMM_VOLUME_II_HYDRAULICS.md](../../raw/manuals/EPA_SWMM_VOLUME_II_HYDRAULICS.md), about 50,000 words.
 
@@ -75,4 +76,17 @@ reviewed: 2026-11-15
 
 *Wording slips seen in the converted text, to check against the PDF (Q63).* The storage-node side bar cites Equation 4-16 for a constant that Equation 4-15 defines. Section 6.2.6 says "side weirs" and "bottom weirs" in the orifice summary and sends step 4 back to "step 2". Section 6.3.2 calls the trapezoidal weir equation 6-18; it is numbered 6-20.
 
-**Feeds:** [Dynamic wave routing](../concepts/dynamic-wave-routing.md), [Preissmann slot and surcharge](../concepts/preissmann-slot-and-surcharge.md), [Reading SWMM output](../concepts/reading-swmm-output.md), [Continuity is not validation](../concepts/continuity-is-not-validation.md), [SWMM version history, 1969 to 2026](../concepts/swmm-version-history.md), [EXTRAN](../entities/extran.md), [SWMM 1 (1971)](../entities/swmm-1.md), [Lewis A. (Lew) Rossman](../entities/lew-rossman.md), [Open questions](../open-questions.md). Added 15 November 2026: [Kinematic wave and steady flow routing](../concepts/kinematic-wave-and-steady-flow.md), [SWMM 5 network objects, boundary and initial conditions](../concepts/swmm5-network-objects.md), [Pumps and pump curves](../concepts/pumps-and-pump-curves.md), [Orifices](../concepts/orifices.md), [Weirs and outlets](../concepts/weirs-and-outlets.md).
+**Added 16 November 2026: sections 1.2 to 1.5**
+
+*Not yet read after this:* Chapters 5 and 7, and the appendices.
+
+- SWMM represents a drainage system as flows between four compartments: Atmosphere, Land Surface, Sub-Surface and Conveyance. A model need not have all four; it can be the Conveyance compartment alone with predefined hydrographs and pollutographs as inputs.
+- Table 1-2 lists the objects by category: hydrology (rain gage, subcatchment, aquifer, snow pack, unit hydrograph), hydraulics (junction, outfall, divider, storage unit, conduit, pump, regulator), water quality (pollutant, land use), treatment (LID control, treatment function) and data (curve, time series, time pattern, control rules). A unit hydrograph is "a response function that describes the amount of sewer inflow/infiltration (RDII) generated over time per unit of instantaneous rainfall".
+- SWMM is "a distributed discrete time simulation model". Equations 1-1 and 1-2, lost in the conversion, compute the new state from the previous state, the inputs and the constant parameters, and the outputs from the state and the parameters.
+- Table 1-3 lists the state variables, "a surprisingly small number"; all other quantities can be computed from them, the external inputs and the fixed parameters. SWMM has over 150 user-supplied constants and coefficients; the groundwater of each subcatchment takes 14.
+- The time loop: runoff is computed repeatedly until the runoff time reaches the end of the routing step; then inflows are routed from T to T1; if a reporting time falls in that interval, results are interpolated from T and T1 and saved.
+- Values between recorded or computed times are interpolated linearly. Precipitation and infiltration rates are the exception: they stay constant within a runoff time step, and "the reported rainfall intensity is the value associated with the start of the runoff time step".
+- Table 1-4 gives the units: US customary acres, sq ft, inches, feet, in/day, cfs or gpm or mgd, in/hr, cu ft, °F, ft/s and mph; Manning's n in seconds per meter^(1/3) in both systems.
+- The input file format is referred to the SWMM 5 Users Manual (US EPA, 2010).
+
+**Feeds:** [Dynamic wave routing](../concepts/dynamic-wave-routing.md), [Preissmann slot and surcharge](../concepts/preissmann-slot-and-surcharge.md), [Reading SWMM output](../concepts/reading-swmm-output.md), [Continuity is not validation](../concepts/continuity-is-not-validation.md), [SWMM version history, 1969 to 2026](../concepts/swmm-version-history.md), [EXTRAN](../entities/extran.md), [SWMM 1 (1971)](../entities/swmm-1.md), [Lewis A. (Lew) Rossman](../entities/lew-rossman.md), [Open questions](../open-questions.md). Added 15 November 2026: [Kinematic wave and steady flow routing](../concepts/kinematic-wave-and-steady-flow.md), [SWMM 5 network objects, boundary and initial conditions](../concepts/swmm5-network-objects.md), [Pumps and pump curves](../concepts/pumps-and-pump-curves.md), [Orifices](../concepts/orifices.md), [Weirs and outlets](../concepts/weirs-and-outlets.md). Added 16 November 2026: [How SWMM 5 is organized: objects, state and the time loop](../concepts/swmm5-objects-state-time-loop.md).
