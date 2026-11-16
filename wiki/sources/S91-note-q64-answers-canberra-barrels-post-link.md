@@ -7,6 +7,7 @@ author: Robert Dickinson
 published: 2026-11-15
 ingested: 2026-11-15
 tags: [history, recollections, xp-swmm, barrels]
+drafted_by: Robert Dickinson (his words, typed in by Claude)
 reviewed: 11/16/2026
 ---
 **What it is.** Bob's three answers to the three gaps that Q64 listed for the anecdotes note [S90](S90-note-swmm-anecdotes-linkedin-comments.md). Raw file: [raw/notes/q64-answers-canberra-barrels-post-link.md](../../raw/notes/q64-answers-canberra-barrels-post-link.md).

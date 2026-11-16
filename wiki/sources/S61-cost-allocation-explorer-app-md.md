@@ -7,6 +7,7 @@ author: Robert Dickinson
 published: 2026-11-14
 ingested: 2026-11-14
 tags: [apps, cost-allocation, game-theory, verification, lovable]
+drafted_by: Lovable (an AI app builder)
 reviewed: 2026-11-15
 ---
 **What it is.** The technical summary that ships with the Cost Allocation Game Theory Explorer, version 1.0.1, a Lovable app at https://heaneywrr1982.lovable.app. The app compares five ways of sharing the cost of a joint water project among 3 or 4 partners. Raw file: [raw/apps/cost-allocation-explorer-v1.0.1.md](../../raw/apps/cost-allocation-explorer-v1.0.1.md).

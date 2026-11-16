@@ -7,6 +7,7 @@ author: Robert Dickinson
 published: 2026-10-24
 ingested: 2026-11-15
 tags: [apps, swmm5, swmm5plus, mirab, engine-comparison, findings, wasm, verification]
+drafted_by: Claude (Anthropic), from the published page
 reviewed: 2026-11-15
 ---
 **What it is.** A technical summary of the app Mirab Test Bench, version 1.0 (24 October 2026): a bench that reads the `.anr` results Ehsan Madadi's Mirab writes, reruns the model in EPA SWMM 5.2.4 in the page, and measures the gap. Raw file: [raw/apps/mirab-test-bench-v1.0.md](../../raw/apps/mirab-test-bench-v1.0.md).

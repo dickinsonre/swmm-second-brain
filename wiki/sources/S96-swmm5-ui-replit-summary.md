@@ -7,6 +7,7 @@ author: Robert Dickinson
 published: 2026-11-15
 ingested: 2026-11-15
 tags: [apps, replit, swmm5, swmm6, engines, wasm, lid]
+drafted_by: Replit Agent (an AI), from the project's source
 reviewed: 11/16/2026
 ---
 **What it is.** A technical summary of SWMM5-UI, version 1.0.0: an app that opens and edits SWMM model files, runs them in browser, server or remote engines, and shows maps, time series, tables, reports and comparisons between runs. It is one of Bob's Replit apps, at `swmm-ui-engine.replit.app`. Raw file: [raw/apps/swmm-ui-engine-v1.0.0.md](../../raw/apps/swmm-ui-engine-v1.0.0.md).

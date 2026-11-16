@@ -7,6 +7,7 @@ author: Robert Dickinson
 published: 2026-02-11
 ingested: 2026-11-15
 tags: [apps, replit, writing, ai-agents]
+drafted_by: Replit Agent (an AI), from the project's source
 reviewed: 11/16/2026
 ---
 **What it is.** A technical summary of BobSWMM Writer, version 2.1.0: an app that turns technical notes, transcripts and recordings into posts and articles by calling Anthropic Claude, with audio transcribed by Google Gemini; it runs no water-management simulation. It is one of Bob's Replit apps, at `snagit-video-article--robertdickinson.replit.app`. Raw file: [raw/apps/snagit-video-article--robertdickinson-v2.1.0.md](../../raw/apps/snagit-video-article--robertdickinson-v2.1.0.md).

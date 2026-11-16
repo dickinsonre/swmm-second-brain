@@ -7,6 +7,7 @@ author: Robert Dickinson
 published: 2026-11-11
 ingested: 2026-11-15
 tags: [apps, swmm5, dynamic-wave, sensitivity, verification, wasm, ai-agents]
+drafted_by: Claude (Anthropic), at Bob's direction
 reviewed: 2026-11-15
 ---
 **What it is.** The technical summary that ships with Under Load, version 1.4.0: eight instruments around EPA SWMM 5.2.4 in the browser, the main one a sweep that finds how far a model's design storm is from its next regime change. Raw file: [raw/apps/under-load.md](../../raw/apps/under-load.md). Bob uploaded it on 14 November 2026.

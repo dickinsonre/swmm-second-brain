@@ -7,6 +7,7 @@ author: Robert Dickinson
 published: 2025-11-13
 ingested: 2026-11-15
 tags: [apps, replit, icm, release-history, ai]
+drafted_by: Replit Agent (an AI), from the project's source
 reviewed: 11/16/2026
 ---
 **What it is.** A technical summary of ICM InfoWorks, version 1.0.0: an app for browsing the release history of Autodesk InfoWorks ICM: a timeline, search, filters, version comparison, learning paths, diagrams and AI answers that cite features. It is one of Bob's Replit apps, at `icm-new-view-robertdickinson.replit.app`. Raw file: [raw/apps/icm-new-view-robertdickinson-v1.0.0.md](../../raw/apps/icm-new-view-robertdickinson-v1.0.0.md).

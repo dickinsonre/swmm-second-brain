@@ -7,6 +7,7 @@ author: Robert Dickinson
 published: 2026-11-14
 ingested: 2026-11-14
 tags: [apps, rainfall, design-storms, verification, lovable, icm, swmm5]
+drafted_by: Lovable (an AI app builder)
 reviewed: 2026-11-15
 ---
 **What it is.** The technical summary that ships with the World Rainfall Pattern Painter, version 3.2.0, a Lovable app at https://rain-canvas-studio.lovable.app. The app and its public API build synthetic design-storm hyetographs from a depth, a duration, a time step and a temporal pattern. Raw file: [raw/apps/rain-canvas-studio-v2026.1.2.md](../../raw/apps/rain-canvas-studio-v2026.1.2.md).

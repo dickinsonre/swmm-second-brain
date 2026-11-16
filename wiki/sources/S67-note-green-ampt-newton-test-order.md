@@ -7,6 +7,7 @@ author: Robert Dickinson
 published: 2026-11-14
 ingested: 2026-11-14
 tags: [swmm5, infiltration, green-ampt, findings, verification]
+drafted_by: Claude (Anthropic), from test runs it made in a chat with Bob
 reviewed: 2026-11-15
 ---
 **What it is.** A one-idea note, on the repository's note template, about four lines of `grnampt_getF2` in EPA SWMM 5.2.4. Its own status line reads "working". Raw file: [raw/notes/green-ampt-newton-test-order.md](../../raw/notes/green-ampt-newton-test-order.md).

@@ -7,6 +7,7 @@ author: Robert Dickinson
 published: 2026-11-15
 ingested: 2026-11-15
 tags: [history, recollections, xp-swmm, names]
+drafted_by: Robert Dickinson (his words, typed in by Claude)
 reviewed: 11/16/2026
 ---
 **What it is.** One sentence from Bob on the name of the XP Software program. Raw file: [raw/notes/xp-swmm-renamed-xpswmm-1993.md](../../raw/notes/xp-swmm-renamed-xpswmm-1993.md).

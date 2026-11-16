@@ -7,6 +7,7 @@ author: Tivadar Danka
 published: 2026-11-11
 ingested: 2026-11-16
 tags: [graph-theory, mathematics, third-party]
+drafted_by: Claude (Anthropic), a digest of Tivadar Danka's article
 reviewed: no
 ---
 **What it is.** A reading note on a third-party article. Citation: Danka, Tivadar. "Graph Theory For Visual Learners: A scenic tour into the heart of graph theory." *The Palindrome* (Substack newsletter), 11 November 2026. https://thepalindrome.org/p/graph-theory-for-visual-learners-320. Raw file: [raw/notes/graph-theory-for-visual-learners-danka-2026-11-11.md](../../raw/notes/graph-theory-for-visual-learners-danka-2026-11-11.md). Author: [Tivadar Danka](../entities/tivadar-danka.md).

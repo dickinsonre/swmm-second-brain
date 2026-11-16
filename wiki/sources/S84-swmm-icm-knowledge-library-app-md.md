@@ -7,6 +7,7 @@ author: Robert Dickinson
 published: 2026-11-14
 ingested: 2026-11-15
 tags: [apps, publishing, catalog, linkedin, openswmm]
+drafted_by: Claude (Anthropic), at Bob's direction
 reviewed: 2026-11-15
 ---
 **What it is.** The technical summary that ships with the SWMM & ICM Knowledge Library, artifact v70: one searchable HTML file of Bob's published work on SWMM3 through SWMM6, InfoWorks ICM, InfoSWMM, InfoSewer and XPSWMM. Raw file: [raw/apps/swmm-icm-knowledge-library.md](../../raw/apps/swmm-icm-knowledge-library.md). Bob uploaded it on 14 November 2026.

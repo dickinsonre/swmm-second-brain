@@ -7,6 +7,7 @@ author: Robert Dickinson
 published: 2026-01-19
 ingested: 2026-11-15
 tags: [apps, replit, swmm5, generators, teaching]
+drafted_by: Replit Agent (an AI), from the project's source
 reviewed: 11/16/2026
 ---
 **What it is.** A technical summary of SWMM5 Topology Sandbox, version 1.0.0: an educational app that generates a drainage network from a chosen pattern, draws it, shows estimated hydrographs and exports a SWMM5-format INP file. It is one of Bob's Replit apps, at `fractal-swmm-gen--robertdickinson.replit.app`. Raw file: [raw/apps/fractal-swmm-gen--robertdickinson-v1.0.0.md](../../raw/apps/fractal-swmm-gen--robertdickinson-v1.0.0.md).

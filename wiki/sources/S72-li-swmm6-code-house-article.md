@@ -7,6 +7,7 @@ author: Robert Dickinson
 published: 2026-11-04
 ingested: 2026-11-14
 tags: [apps, swmm6, swmm5, source-code, openswmm, findings]
+drafted_by: Claude (Anthropic), first draft, in Claude Code; Bob reviews the results
 reviewed: 2026-11-15
 ---
 **What it is.** Bob's article on the SWMM6 Code House at version 1.1.0, with an appendix telling how both houses were built. Raw file: [raw/linkedin/2026-11-04-swmm6-code-house-every-line-openswmm-6-wall-robert-dickinson-ubs3e.md](../../raw/linkedin/2026-11-04-swmm6-code-house-every-line-openswmm-6-wall-robert-dickinson-ubs3e.md).

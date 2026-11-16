@@ -7,6 +7,7 @@ author: Robert Dickinson
 published: 2026-11-16
 ingested: 2026-11-16
 tags: [icm, ai-use, note]
+drafted_by: ChatGPT (OpenAI), a passage Robert Dickinson adopted
 reviewed: no
 ---
 **What it is.** Bob's instruction, with a passage he relayed from ChatGPT, on who drafted the seven ICM notes. Raw file: [raw/notes/icm-notes-drafted-by-chatgpt-2026-11-16.md](../../raw/notes/icm-notes-drafted-by-chatgpt-2026-11-16.md).

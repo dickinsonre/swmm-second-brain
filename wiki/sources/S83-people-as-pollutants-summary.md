@@ -7,6 +7,7 @@ author: Robert Dickinson
 published: 2026-10-29
 ingested: 2026-11-15
 tags: [apps, swmm5, water-quality, pumps, storage, findings, wasm]
+drafted_by: Claude (Anthropic), from the published page
 reviewed: 2026-11-15
 ---
 **What it is.** A technical summary of the app People as Pollutants, version 1.0.0 (29 October 2026): a three-level transit station written as an EPA SWMM 5.2.4 input file, with the water read as a crowd. Raw file: [raw/apps/people-as-pollutants-v1.0.0.md](../../raw/apps/people-as-pollutants-v1.0.0.md).

@@ -15,7 +15,7 @@ claims and missing concept pages need a reader: see "Lint" in CLAUDE.md.
 """
 import csv, os, re, sys
 from urllib.parse import unquote
-from common import ROOT, RAW, WIKI, read, front_matter, sha256, walk, rel, wiki_pages, links
+from common import ROOT, RAW, WIKI, read, front_matter, sha256, walk, rel, wiki_pages, links, ai_drafted
 
 errors, warns = [], []
 pages = wiki_pages()
@@ -122,10 +122,11 @@ except Exception as e:  # a broken ONTOLOGY.md must not hide the other checks
 oq = os.path.join(WIKI, 'open-questions.md')
 open_q = len(re.findall(r'^- \[ \]', read(oq), re.M)) if os.path.exists(oq) else 0
 
-# AI dependence: a source page with a `drafted_by:` line was drafted by an AI; a page whose
-# sources are all such pages rests only on AI-drafted text (page rule 4, ONTOLOGY.md)
+# AI dependence: a source page whose `drafted_by:` line begins with an AI's name was drafted by an AI;
+# a page whose sources are all such pages rests only on AI-drafted text (page rule 4, ONTOLOGY.md)
 fms = {p: front_matter(t)[0] for p, t in texts.items()}
-ai_src = {os.path.basename(p).split('-')[0] for p, f in fms.items() if f.get('type') == 'source' and f.get('drafted_by')}
+src_fm = {os.path.basename(p).split('-')[0]: f for p, f in fms.items() if f.get('type') == 'source'}
+ai_src = {k for k, f in src_fm.items() if ai_drafted(f.get('drafted_by')) == 'yes'}
 
 
 def ai_share(f):
@@ -144,8 +145,8 @@ print('pages:', ', '.join('%s %d' % kv for kv in sorted(types.items())))
 print('raw files: %d ingested, %d queued' % (ingested, queued) + ''.join(', %d %s' % (v, k) for k, v in sorted(other.items()) if k not in ('ingested', 'queued')))
 print('open questions: %d   pages not yet reviewed by Bob: %d' % (open_q, unreviewed))
 print('relations: %d statements on %d pages (see ONTOLOGY.md)' % (len(_st), _rel_pages))
-print('source pages with a drafted_by line: %d   pages resting only on them: %d%s' % (
-    len(ai_src), len(ai_only), (' (%s)' % ', '.join(os.path.basename(x)[:-3] for x in ai_only)) if ai_only else ''))
+print('source pages drafted by an AI: %d of %d (%d say unknown)   wiki pages resting only on them: %d (listed by --review)' % (
+    len(ai_src), len(src_fm), sum(ai_drafted(f.get('drafted_by')) == 'unknown' for f in src_fm.values()), len(ai_only)))
 if rereview:
     print('pages changed after Bob reviewed them: %d (%s)' % (len(rereview), ', '.join(os.path.basename(x)[:-3] for x in sorted(rereview))))
 if partial:
@@ -162,7 +163,7 @@ if '--review' in sys.argv:
                 changed.append((r, f['changed_after_review']))
             continue
         if f.get('type') == 'source':
-            sources_q.append((0 if f.get('drafted_by') else 1, -links_in(p), r, f.get('drafted_by') or ''))
+            sources_q.append((0 if ai_drafted(f.get('drafted_by')) == 'yes' else 1, -links_in(p), r, f.get('drafted_by') or ''))
         else:
             a, n = ai_share(f)
             pages_q.append((0 if n and a == n else 1, -links_in(p), r, a, n))
@@ -177,6 +178,9 @@ if '--review' in sys.argv:
     print('3. Source pages not yet read, AI-drafted first: %d' % len(sources_q))
     for flag, nl, r, d in sorted(sources_q):
         print('   %s%s' % (r, '  drafted by ' + d if d else ''))
+    print('4. Wiki pages, read or not, whose sources were all drafted by an AI (some of those sources report runs; none has been rerun by a person): %d' % len(ai_only))
+    for r in ai_only:
+        print('   %s' % r)
     print()
 for w in warns:
     print('WARN ', w)

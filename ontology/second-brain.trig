@@ -203,7 +203,8 @@
 <https://github.com/dickinsonre/swmm-second-brain/blob/main/wiki/sources/S17-li-routing-options.md> <http://purl.org/dc/terms/date> "2024-07-28" .
 <https://github.com/dickinsonre/swmm-second-brain/blob/main/wiki/sources/S17-li-routing-options.md> <http://purl.org/dc/terms/creator> "Robert Dickinson" .
 <https://github.com/dickinsonre/swmm-second-brain/blob/main/wiki/sources/S17-li-routing-options.md> <https://github.com/dickinsonre/swmm-second-brain/ontology#sourceKind> "linkedin-article" .
-<https://github.com/dickinsonre/swmm-second-brain/blob/main/wiki/sources/S17-li-routing-options.md> <https://github.com/dickinsonre/swmm-second-brain/ontology#draftedBy> "unknown" .
+<https://github.com/dickinsonre/swmm-second-brain/blob/main/wiki/sources/S17-li-routing-options.md> <https://github.com/dickinsonre/swmm-second-brain/ontology#draftedBy> "Robert Dickinson, with generic definitions that read as AI-written" .
+<https://github.com/dickinsonre/swmm-second-brain/blob/main/wiki/sources/S17-li-routing-options.md> <https://github.com/dickinsonre/swmm-second-brain/ontology#aiDrafted> "no" .
 <https://github.com/dickinsonre/swmm-second-brain/blob/main/wiki/sources/S17-li-routing-options.md> <https://github.com/dickinsonre/swmm-second-brain/ontology#reviewed> "2026-11-15" .
 <https://github.com/dickinsonre/swmm-second-brain/blob/main/wiki/sources/S159-note-icm-ruby-ui-vs-exchange.md> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Entity> .
 <https://github.com/dickinsonre/swmm-second-brain/blob/main/wiki/sources/S159-note-icm-ruby-ui-vs-exchange.md> <http://purl.org/dc/terms/identifier> "S159" .
@@ -212,6 +213,7 @@
 <https://github.com/dickinsonre/swmm-second-brain/blob/main/wiki/sources/S159-note-icm-ruby-ui-vs-exchange.md> <http://purl.org/dc/terms/creator> "Robert Dickinson" .
 <https://github.com/dickinsonre/swmm-second-brain/blob/main/wiki/sources/S159-note-icm-ruby-ui-vs-exchange.md> <https://github.com/dickinsonre/swmm-second-brain/ontology#sourceKind> "note" .
 <https://github.com/dickinsonre/swmm-second-brain/blob/main/wiki/sources/S159-note-icm-ruby-ui-vs-exchange.md> <https://github.com/dickinsonre/swmm-second-brain/ontology#draftedBy> "ChatGPT (OpenAI), from Autodesk Help, per S179" .
+<https://github.com/dickinsonre/swmm-second-brain/blob/main/wiki/sources/S159-note-icm-ruby-ui-vs-exchange.md> <https://github.com/dickinsonre/swmm-second-brain/ontology#aiDrafted> "yes" .
 <https://github.com/dickinsonre/swmm-second-brain/blob/main/wiki/sources/S159-note-icm-ruby-ui-vs-exchange.md> <https://github.com/dickinsonre/swmm-second-brain/ontology#reviewed> "no" .
 <https://github.com/dickinsonre/swmm-second-brain/blob/main/wiki/sources/S160-note-icm-ruby-version-compatibility.md> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Entity> .
 <https://github.com/dickinsonre/swmm-second-brain/blob/main/wiki/sources/S160-note-icm-ruby-version-compatibility.md> <http://purl.org/dc/terms/identifier> "S160" .
@@ -220,6 +222,7 @@
 <https://github.com/dickinsonre/swmm-second-brain/blob/main/wiki/sources/S160-note-icm-ruby-version-compatibility.md> <http://purl.org/dc/terms/creator> "Robert Dickinson" .
 <https://github.com/dickinsonre/swmm-second-brain/blob/main/wiki/sources/S160-note-icm-ruby-version-compatibility.md> <https://github.com/dickinsonre/swmm-second-brain/ontology#sourceKind> "note" .
 <https://github.com/dickinsonre/swmm-second-brain/blob/main/wiki/sources/S160-note-icm-ruby-version-compatibility.md> <https://github.com/dickinsonre/swmm-second-brain/ontology#draftedBy> "ChatGPT (OpenAI), from Autodesk Help, per S179" .
+<https://github.com/dickinsonre/swmm-second-brain/blob/main/wiki/sources/S160-note-icm-ruby-version-compatibility.md> <https://github.com/dickinsonre/swmm-second-brain/ontology#aiDrafted> "yes" .
 <https://github.com/dickinsonre/swmm-second-brain/blob/main/wiki/sources/S160-note-icm-ruby-version-compatibility.md> <https://github.com/dickinsonre/swmm-second-brain/ontology#reviewed> "no" .
 <https://github.com/dickinsonre/swmm-second-brain/blob/main/wiki/sources/S161-note-icm-exchange-run-lifecycle.md> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Entity> .
 <https://github.com/dickinsonre/swmm-second-brain/blob/main/wiki/sources/S161-note-icm-exchange-run-lifecycle.md> <http://purl.org/dc/terms/identifier> "S161" .
@@ -228,6 +231,7 @@
 <https://github.com/dickinsonre/swmm-second-brain/blob/main/wiki/sources/S161-note-icm-exchange-run-lifecycle.md> <http://purl.org/dc/terms/creator> "Robert Dickinson" .
 <https://github.com/dickinsonre/swmm-second-brain/blob/main/wiki/sources/S161-note-icm-exchange-run-lifecycle.md> <https://github.com/dickinsonre/swmm-second-brain/ontology#sourceKind> "note" .
 <https://github.com/dickinsonre/swmm-second-brain/blob/main/wiki/sources/S161-note-icm-exchange-run-lifecycle.md> <https://github.com/dickinsonre/swmm-second-brain/ontology#draftedBy> "ChatGPT (OpenAI), from Autodesk Help, per S179" .
+<https://github.com/dickinsonre/swmm-second-brain/blob/main/wiki/sources/S161-note-icm-exchange-run-lifecycle.md> <https://github.com/dickinsonre/swmm-second-brain/ontology#aiDrafted> "yes" .
 <https://github.com/dickinsonre/swmm-second-brain/blob/main/wiki/sources/S161-note-icm-exchange-run-lifecycle.md> <https://github.com/dickinsonre/swmm-second-brain/ontology#reviewed> "no" .
 <https://github.com/dickinsonre/swmm-second-brain/blob/main/wiki/sources/S162-note-icm-network-tables-and-fields.md> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Entity> .
 <https://github.com/dickinsonre/swmm-second-brain/blob/main/wiki/sources/S162-note-icm-network-tables-and-fields.md> <http://purl.org/dc/terms/identifier> "S162" .
@@ -236,6 +240,7 @@
 <https://github.com/dickinsonre/swmm-second-brain/blob/main/wiki/sources/S162-note-icm-network-tables-and-fields.md> <http://purl.org/dc/terms/creator> "Robert Dickinson" .
 <https://github.com/dickinsonre/swmm-second-brain/blob/main/wiki/sources/S162-note-icm-network-tables-and-fields.md> <https://github.com/dickinsonre/swmm-second-brain/ontology#sourceKind> "note" .
 <https://github.com/dickinsonre/swmm-second-brain/blob/main/wiki/sources/S162-note-icm-network-tables-and-fields.md> <https://github.com/dickinsonre/swmm-second-brain/ontology#draftedBy> "ChatGPT (OpenAI), from Autodesk Help, per S179" .
+<https://github.com/dickinsonre/swmm-second-brain/blob/main/wiki/sources/S162-note-icm-network-tables-and-fields.md> <https://github.com/dickinsonre/swmm-second-brain/ontology#aiDrafted> "yes" .
 <https://github.com/dickinsonre/swmm-second-brain/blob/main/wiki/sources/S162-note-icm-network-tables-and-fields.md> <https://github.com/dickinsonre/swmm-second-brain/ontology#reviewed> "no" .
 <https://github.com/dickinsonre/swmm-second-brain/blob/main/wiki/sources/S163-note-icm-results-field-crosswalk.md> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Entity> .
 <https://github.com/dickinsonre/swmm-second-brain/blob/main/wiki/sources/S163-note-icm-results-field-crosswalk.md> <http://purl.org/dc/terms/identifier> "S163" .
@@ -244,6 +249,7 @@
 <https://github.com/dickinsonre/swmm-second-brain/blob/main/wiki/sources/S163-note-icm-results-field-crosswalk.md> <http://purl.org/dc/terms/creator> "Robert Dickinson" .
 <https://github.com/dickinsonre/swmm-second-brain/blob/main/wiki/sources/S163-note-icm-results-field-crosswalk.md> <https://github.com/dickinsonre/swmm-second-brain/ontology#sourceKind> "note" .
 <https://github.com/dickinsonre/swmm-second-brain/blob/main/wiki/sources/S163-note-icm-results-field-crosswalk.md> <https://github.com/dickinsonre/swmm-second-brain/ontology#draftedBy> "ChatGPT (OpenAI), from Autodesk Help, per S179" .
+<https://github.com/dickinsonre/swmm-second-brain/blob/main/wiki/sources/S163-note-icm-results-field-crosswalk.md> <https://github.com/dickinsonre/swmm-second-brain/ontology#aiDrafted> "yes" .
 <https://github.com/dickinsonre/swmm-second-brain/blob/main/wiki/sources/S163-note-icm-results-field-crosswalk.md> <https://github.com/dickinsonre/swmm-second-brain/ontology#reviewed> "no" .
 <https://github.com/dickinsonre/swmm-second-brain/blob/main/wiki/sources/S169-note-icm-2d-rainfall-and-infiltration.md> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Entity> .
 <https://github.com/dickinsonre/swmm-second-brain/blob/main/wiki/sources/S169-note-icm-2d-rainfall-and-infiltration.md> <http://purl.org/dc/terms/identifier> "S169" .
@@ -252,6 +258,7 @@
 <https://github.com/dickinsonre/swmm-second-brain/blob/main/wiki/sources/S169-note-icm-2d-rainfall-and-infiltration.md> <http://purl.org/dc/terms/creator> "Robert Dickinson" .
 <https://github.com/dickinsonre/swmm-second-brain/blob/main/wiki/sources/S169-note-icm-2d-rainfall-and-infiltration.md> <https://github.com/dickinsonre/swmm-second-brain/ontology#sourceKind> "note" .
 <https://github.com/dickinsonre/swmm-second-brain/blob/main/wiki/sources/S169-note-icm-2d-rainfall-and-infiltration.md> <https://github.com/dickinsonre/swmm-second-brain/ontology#draftedBy> "GPT plugin for Autodesk (an AI), per S166" .
+<https://github.com/dickinsonre/swmm-second-brain/blob/main/wiki/sources/S169-note-icm-2d-rainfall-and-infiltration.md> <https://github.com/dickinsonre/swmm-second-brain/ontology#aiDrafted> "yes" .
 <https://github.com/dickinsonre/swmm-second-brain/blob/main/wiki/sources/S169-note-icm-2d-rainfall-and-infiltration.md> <https://github.com/dickinsonre/swmm-second-brain/ontology#reviewed> "no" .
 <https://github.com/dickinsonre/swmm-second-brain/blob/main/wiki/sources/S177-li-curve-number-approximations-icm-2d.md> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Entity> .
 <https://github.com/dickinsonre/swmm-second-brain/blob/main/wiki/sources/S177-li-curve-number-approximations-icm-2d.md> <http://purl.org/dc/terms/identifier> "S177" .
@@ -260,6 +267,7 @@
 <https://github.com/dickinsonre/swmm-second-brain/blob/main/wiki/sources/S177-li-curve-number-approximations-icm-2d.md> <http://purl.org/dc/terms/creator> "Robert Dickinson" .
 <https://github.com/dickinsonre/swmm-second-brain/blob/main/wiki/sources/S177-li-curve-number-approximations-icm-2d.md> <https://github.com/dickinsonre/swmm-second-brain/ontology#sourceKind> "linkedin-article" .
 <https://github.com/dickinsonre/swmm-second-brain/blob/main/wiki/sources/S177-li-curve-number-approximations-icm-2d.md> <https://github.com/dickinsonre/swmm-second-brain/ontology#draftedBy> "unknown" .
+<https://github.com/dickinsonre/swmm-second-brain/blob/main/wiki/sources/S177-li-curve-number-approximations-icm-2d.md> <https://github.com/dickinsonre/swmm-second-brain/ontology#aiDrafted> "unknown" .
 <https://github.com/dickinsonre/swmm-second-brain/blob/main/wiki/sources/S177-li-curve-number-approximations-icm-2d.md> <https://github.com/dickinsonre/swmm-second-brain/ontology#reviewed> "no" .
 <https://github.com/dickinsonre/swmm-second-brain/blob/main/wiki/sources/S178-li-cnswmm-on-the-icm-2d-mesh.md> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Entity> .
 <https://github.com/dickinsonre/swmm-second-brain/blob/main/wiki/sources/S178-li-cnswmm-on-the-icm-2d-mesh.md> <http://purl.org/dc/terms/identifier> "S178" .
@@ -268,6 +276,7 @@
 <https://github.com/dickinsonre/swmm-second-brain/blob/main/wiki/sources/S178-li-cnswmm-on-the-icm-2d-mesh.md> <http://purl.org/dc/terms/creator> "Robert Dickinson" .
 <https://github.com/dickinsonre/swmm-second-brain/blob/main/wiki/sources/S178-li-cnswmm-on-the-icm-2d-mesh.md> <https://github.com/dickinsonre/swmm-second-brain/ontology#sourceKind> "linkedin-article" .
 <https://github.com/dickinsonre/swmm-second-brain/blob/main/wiki/sources/S178-li-cnswmm-on-the-icm-2d-mesh.md> <https://github.com/dickinsonre/swmm-second-brain/ontology#draftedBy> "unknown" .
+<https://github.com/dickinsonre/swmm-second-brain/blob/main/wiki/sources/S178-li-cnswmm-on-the-icm-2d-mesh.md> <https://github.com/dickinsonre/swmm-second-brain/ontology#aiDrafted> "unknown" .
 <https://github.com/dickinsonre/swmm-second-brain/blob/main/wiki/sources/S178-li-cnswmm-on-the-icm-2d-mesh.md> <https://github.com/dickinsonre/swmm-second-brain/ontology#reviewed> "no" .
 
 <https://github.com/dickinsonre/swmm-second-brain/blob/main/wiki/sources/S159-note-icm-ruby-ui-vs-exchange.md> {

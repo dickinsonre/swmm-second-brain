@@ -109,7 +109,7 @@ Example, from the 2023 Curve Number tests:
 
 A statement with a note or qualifiers is also written as an `rdf:Statement` that names its subject, relation and object and carries the qualifiers and comment.
 
-**Who drafted a source, and whether Bob has read it.** Each source page's graph carries `sb:draftedBy` from its `drafted_by:` line, or `unknown` when the page has none, and `sb:reviewed` from its `reviewed:` line. So every statement can be traced to its source, to who or what drafted that source, to whether Bob has read it, and, through `verification`, to whether a run backs it.
+**Who drafted a source, and whether Bob has read it.** Each source page's graph carries `sb:draftedBy` from its `drafted_by:` line, or `unknown` when the page has none; `sb:aiDrafted`, `yes` when that line begins with an AI's name, `no` when it names a person first, `unknown` otherwise; and `sb:reviewed` from its `reviewed:` line. So every statement can be traced to its source, to who or what drafted that source, to whether Bob has read it, and, through `verification`, to whether a run backs it.
 
 ## The test question
 

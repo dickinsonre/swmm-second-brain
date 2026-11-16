@@ -7,6 +7,7 @@ author: Robert Dickinson
 published: 2026-11-15
 ingested: 2026-11-15
 tags: [apps, replit, openswmm, swmm6, wasm]
+drafted_by: Replit Agent (an AI), from the project's source
 reviewed: 11/16/2026
 superseded_by: S153
 ---

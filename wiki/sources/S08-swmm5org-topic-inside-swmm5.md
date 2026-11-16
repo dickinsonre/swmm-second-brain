@@ -7,6 +7,7 @@ author: Robert Dickinson
 published: 2026-11-01
 ingested: 2026-11-14
 tags: [swmm5org, swmm5]
+drafted_by: Claude (Anthropic); Bob chose the topics and layout
 reviewed: 2026-11-15
 ---
 **What it is.** The second topic page: posts, apps and repositories that open up EPA SWMM 5.2.4. Raw file: [raw/swmm5org/topics/02-inside-swmm5.md](../../raw/swmm5org/topics/02-inside-swmm5.md).

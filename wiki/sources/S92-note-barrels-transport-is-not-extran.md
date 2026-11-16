@@ -7,6 +7,7 @@ author: Robert Dickinson
 published: 2026-11-15
 ingested: 2026-11-15
 tags: [history, recollections, barrels, extran, transport]
+drafted_by: Robert Dickinson (his words, typed in by Claude)
 reviewed: 11/16/2026
 ---
 **What it is.** Bob's one-line answer to Q65, the question of which block and version first carried multiple barrels. Raw file: [raw/notes/barrels-transport-is-not-extran.md](../../raw/notes/barrels-transport-is-not-extran.md).

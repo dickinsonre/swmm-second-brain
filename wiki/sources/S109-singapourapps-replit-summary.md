@@ -7,6 +7,7 @@ author: Robert Dickinson
 published: 2025-12-24
 ingested: 2026-11-15
 tags: [apps, replit, swmm5, inp-format]
+drafted_by: Replit Agent (an AI), from the project's source
 reviewed: 11/16/2026
 ---
 **What it is.** A technical summary of SingaPourApps, version 1.0.0: an app that parses a SWMM `.inp` file into three views: rainfall time series, subcatchment parameters, and drainage nodes and conduits. It is one of Bob's Replit apps, at `singa-pour-site--robertdickinson.replit.app`. Raw file: [raw/apps/singa-pour-site-v1.0.0.md](../../raw/apps/singa-pour-site-v1.0.0.md).

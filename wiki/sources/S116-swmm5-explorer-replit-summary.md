@@ -7,6 +7,7 @@ author: Robert Dickinson
 published: 2026-01-29
 ingested: 2026-11-15
 tags: [apps, replit, swmm5, source-code, ai]
+drafted_by: Replit Agent (an AI), from the project's source
 reviewed: 11/16/2026
 ---
 **What it is.** A technical summary of SWMM5 Explorer, version 1.0.0: an app for studying the SWMM source code: a code browser, preset Sankey diagrams of module relationships, an input-file form, an engine page and AI explanations of selected source text. It is one of Bob's Replit apps, at `swmm-explorer--robertdickinson.replit.app`. Raw file: [raw/apps/swmm-explorer--robertdickinson-v1.0.0.md](../../raw/apps/swmm-explorer--robertdickinson-v1.0.0.md).

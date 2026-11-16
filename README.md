@@ -12,6 +12,7 @@ It is not a search index. Each source is read once and compiled into pages; a qu
 | `wiki/` | 354 pages, about 176,000 words: 179 sources, 72 concepts, 101 entities, an overview and an open-questions list |
 | `index.md` | Catalog of every page. Start here |
 | `log.md` | What was done and when |
+| `LICENSE` | MIT for `tools/`, CC BY 4.0 for the text, and the files in `raw/` that keep their own terms |
 | `CLAUDE.md` | The schema: page rules and the three operations |
 | `tools/` | `manifest.py`, `lint.py`, `search.py`, `li2md.py`; `build_app.py` and `build_app_docx.js`, which build the reader app (one HTML page of the whole wiki) into `build/`; `ontology.py`, which builds the typed relations into RDF |
 | `ONTOLOGY.md`, `ontology/` | the draft vocabulary of typed relations, and what `tools/ontology.py` builds from the pages' Relations tables: TriG, JSON-LD, a CSV, a Mermaid graph and sample SPARQL queries |
@@ -63,6 +64,8 @@ Treat it as a working notebook, not a reference:
 
 ## AI use
 
-This repository was set up on 14 November 2026 by Claude, Anthropic's AI model, at Bob's direction. Claude converted the LinkedIn export, copied the other sources in, wrote the schema, the tools and all 144 wiki pages across several sessions, computed the OpenSWMM counts, and found the 49 open questions. The mechanical checks are `tools/lint.py` (links, front matter, citations, raw-file hashes). The content checks were Claude rereading each page against its sources; no person has read any wiki page yet, and each page says so in its front matter. Many of the sources themselves contain AI-written passages; each source page records what is known about how it was written.
+This repository was set up on 14 November 2026 by Claude, Anthropic's AI model, at Bob's direction. Claude converted the LinkedIn export, copied the other sources in, wrote the schema, the tools and the wiki pages (354 on 16 November 2026) across several sessions, computed the OpenSWMM counts, and found the open questions. The mechanical checks are `tools/lint.py` (links, front matter, citations, raw-file hashes, Relations tables). The content checks were Claude rereading each page against its sources, and Bob reading every page on 11/16/2026; each page's front matter says whether he has read it. Many of the sources themselves were drafted by an AI or contain AI-written passages; each source page records what is known about how it was written, and its `drafted_by:` line names the drafter. Two outside reviews by AI models shaped the tools on 16 November 2026: ChatGPT (OpenAI) suggested the ontology's qualifiers, class checks and `unknown` drafter; Grok (xAI) pointed out the stale counts, the missing license and the review backlog.
 
-No license has been set.
+## License
+
+Tools under the MIT License; the wiki, the ontology and Bob's own writing in `raw/` under CC BY 4.0. Files in `raw/` by others keep their own terms (the U.S. government reports are public domain). Details in [LICENSE](LICENSE).

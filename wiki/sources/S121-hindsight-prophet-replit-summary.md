@@ -7,6 +7,7 @@ author: Robert Dickinson
 published: 2025-11-22
 ingested: 2026-11-15
 tags: [apps, replit, ai, advice]
+drafted_by: Replit Agent (an AI), from the project's source
 reviewed: 11/16/2026
 ---
 **What it is.** A technical summary of Hindsight Prophet, version 1.0.0: an app that answers technical and strategic questions about stormwater models by sending each question to a council of AI personas and returning their analyses, a consensus and a roadmap. It is one of Bob's Replit apps, at `hindsight-prophet-robertdickinson.replit.app`. Raw file: [raw/apps/hindsight-prophet-robertdickinson-v1.0.0.md](../../raw/apps/hindsight-prophet-robertdickinson-v1.0.0.md).

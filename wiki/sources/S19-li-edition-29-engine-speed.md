@@ -7,6 +7,7 @@ author: Robert Dickinson
 published: 2024-04-28
 ingested: 2026-11-14
 tags: [swmm-history, performance, extran]
+drafted_by: Robert Dickinson, from memory and a 2024 run; the summary at the top reads as AI-written
 reviewed: 2026-11-15
 ---
 **What it is.** A newsletter edition that times one test model on a 1987 PC and on a 2024 PC, with notes on punch cards, magnetic tapes and floppy disks. Raw file: [raw/linkedin/2024-04-28-edition-29-from-1988-2024-swmms-incredible-54000-fold-dickinson-9chye.md](../../raw/linkedin/2024-04-28-edition-29-from-1988-2024-swmms-incredible-54000-fold-dickinson-9chye.md).

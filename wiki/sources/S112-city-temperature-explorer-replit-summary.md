@@ -7,6 +7,7 @@ author: Robert Dickinson
 published: 2026-03-16
 ingested: 2026-11-15
 tags: [apps, replit, climate, not-swmm]
+drafted_by: Replit Agent (an AI), from the project's source
 reviewed: 11/16/2026
 ---
 **What it is.** A technical summary of City Temperature Explorer, version 1.0.0: an app that compares monthly city temperatures across decades, an urban place with a rural one, and sample cities against preferred summer and winter ranges. It is not about SWMM. It is one of Bob's Replit apps, at `temp-monitor-1.replit.app`. Raw file: [raw/apps/temp-monitor-1-v1.0.0.md](../../raw/apps/temp-monitor-1-v1.0.0.md).

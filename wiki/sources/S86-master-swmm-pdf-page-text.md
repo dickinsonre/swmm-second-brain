@@ -7,6 +7,7 @@ author: Robert Dickinson
 published: 2026-10-25
 ingested: 2026-11-15
 tags: [apps, literature, citations, swmm-history, swmm4]
+drafted_by: Claude (Anthropic), at Bob's direction
 reviewed: 2026-11-15
 ---
 **What it is.** The text of the Master SWMM PDF app page saved as markdown: its interface labels, then its Doc essay, "Every PDF Carries Its Papers". It is not a technical summary on the app-md form and has no front matter or version. Raw file: [raw/apps/Master SWMM PDF.md](../../raw/apps/Master%20SWMM%20PDF.md). Bob uploaded it on 14 November 2026.

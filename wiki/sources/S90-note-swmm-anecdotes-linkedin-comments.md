@@ -7,6 +7,7 @@ author: Robert Dickinson
 published: 2026-11-15
 ingested: 2026-11-15
 tags: [history, recollections, people, xp-swmm, swmm3]
+drafted_by: the commenters named in it (typed in by Claude from Bob's paste)
 reviewed: 11/16/2026
 ---
 **What it is.** Recollections of SWMM history posted as public comments under one of Bob's LinkedIn posts in November 2026: four comments by Bob, and sentences from seven other people. Raw file: [raw/notes/swmm-anecdotes-linkedin-comments-2026-11.md](../../raw/notes/swmm-anecdotes-linkedin-comments-2026-11.md).

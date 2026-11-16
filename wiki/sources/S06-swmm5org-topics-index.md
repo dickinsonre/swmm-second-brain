@@ -7,6 +7,7 @@ author: Robert Dickinson
 published: 2026-11-01
 ingested: 2026-11-14
 tags: [swmm5org, publishing]
+drafted_by: Claude (Anthropic); Bob chose the topics and layout
 reviewed: 2026-11-15
 ---
 **What it is.** The Topics landing page for swmm5.org, converted from the .docx of 2 November 2026. Raw file: [raw/swmm5org/topics/00-topics.md](../../raw/swmm5org/topics/00-topics.md).

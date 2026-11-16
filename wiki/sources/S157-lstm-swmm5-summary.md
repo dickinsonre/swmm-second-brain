@@ -7,6 +7,7 @@ author: Robert Dickinson
 published: 2026-10-18
 ingested: 2026-11-16
 tags: [apps, swmm5, lstm, modpods, surrogates, calibration, wasm, machine-learning, netlify]
+drafted_by: Claude (Anthropic), from the live page
 reviewed: 11/16/2026
 ---
 **What it is.** A technical summary of the app "LSTM + SWMM5", version 2.0 (18 October 2026), the page served at lstm-swmm5-amin-talei.netlify.app. EPA SWMM 5.2.4 runs in the page as WebAssembly. The app asks two things: can an LSTM read a SWMM model's rainfall and runoff, and can an LSTM calibrate one. Raw file: [raw/apps/swmm5-lstm-calibration-v2.0.md](../../raw/apps/swmm5-lstm-calibration-v2.0.md).

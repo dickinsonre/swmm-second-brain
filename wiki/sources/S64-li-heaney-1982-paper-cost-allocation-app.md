@@ -7,6 +7,7 @@ author: Robert Dickinson
 published: 2026-03-08
 ingested: 2026-11-14
 tags: [apps, cost-allocation, game-theory, people, university-of-florida]
+drafted_by: Robert Dickinson for the recollections; the Shapley and app passages read as AI-drafted
 reviewed: 2026-11-15
 ---
 **What it is.** Bob's article announcing the app made from his 1982 paper with James P. Heaney, written as a tribute after Heaney's death in August 2024. Raw file: [raw/linkedin/2026-03-08-from-1982-water-resources-paper-interactive-app-jim-legacy-dickinson-sv0re.md](../../raw/linkedin/2026-03-08-from-1982-water-resources-paper-interactive-app-jim-legacy-dickinson-sv0re.md).

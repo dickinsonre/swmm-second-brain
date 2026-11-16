@@ -1,11 +1,11 @@
-# Where the statements come from: each source page, who drafted it ("unknown" when its page has no drafted_by line), and whether Bob has reviewed it
+# Where the statements come from: each source page, who drafted it ("unknown" when its page has no drafted_by line), whether an AI drafted it, and whether Bob has reviewed it
 PREFIX sb: <https://github.com/dickinsonre/swmm-second-brain/ontology#>
 PREFIX dcterms: <http://purl.org/dc/terms/>
-SELECT ?source ?author ?drafted_by ?reviewed (COUNT(*) AS ?statements) WHERE {
+SELECT ?source ?author ?drafted_by ?ai_drafted ?reviewed (COUNT(*) AS ?statements) WHERE {
   GRAPH ?g { ?s ?p ?o . FILTER(isIRI(?s)) }
-  ?g dcterms:identifier ?source ; sb:draftedBy ?drafted_by ; sb:reviewed ?reviewed .
+  ?g dcterms:identifier ?source ; sb:draftedBy ?drafted_by ; sb:aiDrafted ?ai_drafted ; sb:reviewed ?reviewed .
   OPTIONAL { ?g dcterms:creator ?a }
   BIND(COALESCE(?a, "unknown") AS ?author)
 }
-GROUP BY ?source ?author ?drafted_by ?reviewed
+GROUP BY ?source ?author ?drafted_by ?ai_drafted ?reviewed
 ORDER BY ?source

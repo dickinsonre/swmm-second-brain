@@ -7,6 +7,7 @@ author: Robert Dickinson
 published: 2026-11-15
 ingested: 2026-11-15
 tags: [apps, replit, swmm5, inp-files, statistics]
+drafted_by: Replit Agent (an AI), from the project's source
 reviewed: 11/16/2026
 ---
 **What it is.** A technical summary of SWMM5 .inp File Interactive Viewer, version 0.1.0: a Streamlit app that takes EPA SWMM5 input text, shows each section as a data grid and gives descriptive statistics and charts of the columns. It is one of Bob's Replit apps, at `swmm5filestats.com`. Raw file: [raw/apps/social-network-analyzer-robertdickinson-v0.1.0.md](../../raw/apps/social-network-analyzer-robertdickinson-v0.1.0.md).

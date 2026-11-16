@@ -7,6 +7,7 @@ author: Robert Dickinson
 published: 2026-11-09
 ingested: 2026-11-14
 tags: [swmm5, translation, verification]
+drafted_by: Claude (Anthropic), in Claude Code, at Bob's direction
 reviewed: 2026-11-15
 ---
 **What it is.** The README of the public repository SWMMBobSWMM6/swmm5-php, as published on 2026-11-09: EPA SWMM 5.2.4 in PHP, "written by a translator that reads EPA's C, and judged against EPA itself". Raw file: [raw/ports/2026-11-09-swmm5-php-README.md](../../raw/ports/2026-11-09-swmm5-php-README.md).

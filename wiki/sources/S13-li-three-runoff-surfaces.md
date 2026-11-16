@@ -7,6 +7,7 @@ author: Robert Dickinson
 published: 2024-02-01
 ingested: 2026-11-14
 tags: [hydrology, swmm5, icm]
+drafted_by: Robert Dickinson, with opening paragraphs that read as AI polish
 reviewed: 2026-11-15
 ---
 **What it is.** A short worked example of how one SWMM5 subcatchment becomes three runoff surfaces in an InfoWorks ICM network. Raw file: [raw/linkedin/2024-02-01-tale-three-runoff-surfaces-swmm5-how-used-infoworks-swmm-dickinson-nuoff.md](../../raw/linkedin/2024-02-01-tale-three-runoff-surfaces-swmm5-how-used-infoworks-swmm-dickinson-nuoff.md). The screenshots are not in the export.

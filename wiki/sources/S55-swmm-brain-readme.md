@@ -7,6 +7,7 @@ author: Robert Dickinson
 published: 2026-08-22
 ingested: 2026-11-14
 tags: [swmm5, infiltration, hydraulics, wasm, career, repositories]
+drafted_by: unknown; reads as AI-drafted with Bob's facts
 reviewed: 2026-11-15
 ---
 **What it is.** The README of `dickinsonre/swmm-brain` at commit 70348bb of 22 August 2026: a description of engine enhancements, apps and scripts, with a career timeline. Raw file: [raw/swmm-brain/README.md](../../raw/swmm-brain/README.md).

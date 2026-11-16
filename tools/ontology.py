@@ -15,7 +15,7 @@ tools/lint.py imports collect() and reports its errors.
 """
 import csv, io, json, os, re, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from common import ROOT, WIKI, front_matter, read, rel, walk
+from common import ROOT, WIKI, front_matter, read, rel, walk, ai_drafted
 
 OUT = os.path.join(ROOT, 'ontology')
 PAGE_BASE = 'https://github.com/dickinsonre/swmm-second-brain/blob/main/'
@@ -330,6 +330,7 @@ def build(statements, vocab, sources_meta):
                 default.append((g, pred, ('lit', str(fm[key]))))
         # always present, so a query never has to guess what a missing line means
         default.append((g, SB + 'draftedBy', ('lit', str(fm.get('drafted_by') or 'unknown'))))
+        default.append((g, SB + 'aiDrafted', ('lit', ai_drafted(fm.get('drafted_by')))))
         default.append((g, SB + 'reviewed', ('lit', str(fm.get('reviewed') or 'unknown'))))
     # named graphs: one per source
     graphs = {}

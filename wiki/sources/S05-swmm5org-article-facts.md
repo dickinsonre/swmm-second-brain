@@ -7,6 +7,7 @@ author: Robert Dickinson
 published: 2026-10-16
 ingested: 2026-11-14
 tags: [apps, measurement, archive]
+drafted_by: Claude (Anthropic), with section 5 copied from Bob's notes
 reviewed: 2026-11-15
 ---
 **What it is.** Counts measured from Bob's Claude chat archive as rebuilt on 14 October 2026, for use in swmm5.org articles. Raw file: [raw/swmm5org/article-facts-2026-10-16.md](../../raw/swmm5org/article-facts-2026-10-16.md).

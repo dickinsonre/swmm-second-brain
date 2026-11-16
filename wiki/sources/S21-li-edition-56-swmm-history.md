@@ -7,6 +7,7 @@ author: Robert Dickinson
 published: 2026-03-02
 ingested: 2026-11-14
 tags: [swmm-history, people]
+drafted_by: Robert Dickinson, with a lot of AI searching and discussion, as the article says
 reviewed: 2026-11-15
 ---
 **What it is.** A history of SWMM from 1969 to 2026, written to introduce Bob's SWMM history app on Replit. Raw file: [raw/linkedin/2026-03-02-edition-56-350000-model-built-billion-dollar-55-years-dickinson-choic.md](../../raw/linkedin/2026-03-02-edition-56-350000-model-built-billion-dollar-55-years-dickinson-choic.md).

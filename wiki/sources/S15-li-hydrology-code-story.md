@@ -7,6 +7,7 @@ author: Robert Dickinson
 published: 2024-02-10
 ingested: 2026-11-14
 tags: [hydrology, swmm5, source-code]
+drafted_by: an AI (not named), storytelling laid over Bob's C source
 reviewed: 2026-11-15
 ---
 **What it is.** Eight narrated sections on SWMM5's hydrology code: runoff, the runoff numerical solution, Curve Number, Horton, Green-Ampt and groundwater. Raw file: [raw/linkedin/2024-02-10-story-c-code-hydrology-swmm5-robert-dickinson-2x0we.md](../../raw/linkedin/2024-02-10-story-c-code-hydrology-swmm5-robert-dickinson-2x0we.md).

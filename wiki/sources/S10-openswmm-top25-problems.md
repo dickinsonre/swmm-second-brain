@@ -7,6 +7,7 @@ author: Robert Dickinson
 published: 2026-11-06
 ingested: 2026-11-14
 tags: [openswmm, forum, measurement]
+drafted_by: Claude (Anthropic), with Bob
 reviewed: 2026-11-15
 ---
 **What it is.** A JSON tally that tags each of the 2,879 thread titles in [S09](S09-openswmm-thread-list.md) with one or more of 25 problems by keyword pattern. Raw file: [raw/openswmm/top25-forum-problems.json](../../raw/openswmm/top25-forum-problems.json).

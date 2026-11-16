@@ -7,6 +7,7 @@ author: Robert Dickinson
 published: 2026-11-16
 ingested: 2026-11-16
 tags: [icm, ai-use, note]
+drafted_by: Robert Dickinson (his words, typed in by Claude)
 reviewed: no
 ---
 **What it is.** Bob's sentence saying where the ICM notes he added on 16 November 2026 come from. Raw file: [raw/notes/icm-notes-from-gpt-plugin-2026-11-16.md](../../raw/notes/icm-notes-from-gpt-plugin-2026-11-16.md).

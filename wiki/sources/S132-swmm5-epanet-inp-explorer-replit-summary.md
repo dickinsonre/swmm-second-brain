@@ -7,6 +7,7 @@ author: Robert Dickinson
 published: 2026-11-15
 ingested: 2026-11-15
 tags: [apps, replit, swmm5, epanet, inp-files, reference]
+drafted_by: Replit Agent (an AI), from the project's source
 reviewed: 11/16/2026
 ---
 **What it is.** A technical summary of SWMM5 & EPANET INP Explorer, version 1.0.0: a reference to the SWMM and EPANET input-file formats: searchable section references with field definitions and examples, guided lessons, sample input files, a section builder and a paste-in parser. It is one of Bob's Replit apps, at `swmm5epanetinpviewer.com`. Raw file: [raw/apps/swmm-inp-viewer--robertdickinson-v1.0.0.md](../../raw/apps/swmm-inp-viewer--robertdickinson-v1.0.0.md).

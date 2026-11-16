@@ -7,6 +7,7 @@ author: Robert Dickinson
 published: 2026-11-15
 ingested: 2026-11-15
 tags: [apps, replit, swmmanywhere, model-generation, wasm]
+drafted_by: Replit Agent (an AI), from the project's source
 reviewed: 11/16/2026
 ---
 **What it is.** A technical summary of SWMManywhere Explorer (swm-explorer), version 1.0.0: an app that explains the SWMManywhere workflow, sends a bounding box to a Python backend that runs SWMManywhere 0.1.17 to generate an urban drainage model, and runs `.inp` files in a SWMM5 engine compiled to WebAssembly in the browser. It is one of Bob's Replit apps, at `swm-explorer.replit.app`. Raw file: [raw/apps/swm-explorer-v1.0.0.md](../../raw/apps/swm-explorer-v1.0.0.md).

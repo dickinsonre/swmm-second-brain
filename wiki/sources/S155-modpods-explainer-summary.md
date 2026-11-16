@@ -7,6 +7,7 @@ author: Robert Dickinson
 published: 2026-08-21
 ingested: 2026-11-16
 tags: [apps, modpods, surrogates, rdii, machine-learning, netlify]
+drafted_by: Claude (Anthropic), from the live page
 reviewed: 11/16/2026
 ---
 **What it is.** A technical summary of the app "modpods, for a SWMM person", the page served at modmods-explained.netlify.app, deployed 21 August 2026. The app explains Dantzer's modpods method to a SWMM modeler as a fitted unit hydrograph, in seven tabs. Raw file: [raw/apps/modmods-explained-v2026-08-21.md](../../raw/apps/modmods-explained-v2026-08-21.md).

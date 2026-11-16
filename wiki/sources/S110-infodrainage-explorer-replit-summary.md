@@ -7,6 +7,7 @@ author: Robert Dickinson
 published: 2026-02-11
 ingested: 2026-11-15
 tags: [apps, replit, infodrainage, autodesk, teaching]
+drafted_by: Replit Agent (an AI), from the project's source
 reviewed: 11/16/2026
 ---
 **What it is.** A technical summary of InfoDrainage Explorer, version 1.0.0: a personal reference and learning tool about Autodesk InfoDrainage: a release timeline, a feature comparison, a quiz, a documentation index and a facts tab. It is one of Bob's Replit apps, at `bob-swmm-info.replit.app`. Raw file: [raw/apps/bob-swmm-info-v1.0.0.md](../../raw/apps/bob-swmm-info-v1.0.0.md).

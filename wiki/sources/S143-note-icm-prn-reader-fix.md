@@ -7,6 +7,7 @@ author: Robert Dickinson
 published: 2026-11-15
 ingested: 2026-11-15
 tags: [apps, replit, icm, results]
+drafted_by: Robert Dickinson (his words, typed in by Claude)
 reviewed: 11/16/2026
 ---
 **What it is.** One sentence from Bob, saying that he fixed "the prn problem" in his Replit app the ICM PRN File Reader. Raw file: [raw/notes/icm-prn-reader-fix-2026-11-15.md](../../raw/notes/icm-prn-reader-fix-2026-11-15.md).

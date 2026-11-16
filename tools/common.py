@@ -73,3 +73,15 @@ def links(text):
     text = re.sub(r'```.*?```', '', text, flags=re.S)
     text = re.sub(r'`[^`\n]*`', '', text)
     return LINK.findall(text)
+
+
+# A source page's `drafted_by:` line begins with an AI's name when an AI drafted the text (CLAUDE.md, page rules)
+AI_NAMES = ('Claude', 'ChatGPT', 'GPT', 'Grok', 'Gemini', 'Copilot', 'Lovable', 'Replit Agent', 'an AI')
+
+
+def ai_drafted(value):
+    """'yes' when the drafted_by line names an AI first, 'unknown' when it is missing or says unknown, else 'no'."""
+    v = (value or '').strip()
+    if not v or v.lower().startswith('unknown'):
+        return 'unknown'
+    return 'yes' if v.startswith(AI_NAMES) else 'no'

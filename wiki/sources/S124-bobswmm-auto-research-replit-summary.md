@@ -7,6 +7,7 @@ author: Robert Dickinson
 published: 2026-03-12
 ingested: 2026-11-15
 tags: [apps, replit, swmm5, ai, calculators]
+drafted_by: Replit Agent (an AI), from the project's source
 reviewed: 11/16/2026
 ---
 **What it is.** A technical summary of bobSWMM Auto Research, version 0.0.0: an app that answers SWMM modeling questions with AI-written reports and chat, and adds browser calculators and inspectors for `.inp` and `.rpt` files. It is one of Bob's Replit apps, at `bob-swmm-auto-research.replit.app`. Raw file: [raw/apps/bob-swmm-auto-research-v0.0.0.md](../../raw/apps/bob-swmm-auto-research-v0.0.0.md).

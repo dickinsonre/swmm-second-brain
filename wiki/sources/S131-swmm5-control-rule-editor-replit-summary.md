@@ -7,6 +7,7 @@ author: Robert Dickinson
 published: 2026-11-15
 ingested: 2026-11-15
 tags: [apps, replit, swmm5, control-rules, inp-files]
+drafted_by: Replit Agent (an AI), from the project's source
 reviewed: 11/16/2026
 ---
 **What it is.** A technical summary of SWMM5 Control Rule Editor, version 0.1.0: a browser editor for SWMM5 control rules that imports JSON, SWMM control text or the `[CONTROLS]` section of an INP file and writes the rules back out as JSON and SWMM5 text. It is one of Bob's Replit apps, at `hydro-control.replit.app`. Raw file: [raw/apps/hydro-control-v0.1.0.md](../../raw/apps/hydro-control-v0.1.0.md).

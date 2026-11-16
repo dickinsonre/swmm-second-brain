@@ -7,6 +7,7 @@ author: Robert Dickinson
 published: 2025-08-29
 ingested: 2026-11-15
 tags: [apps, replit, swmm-history, reference]
+drafted_by: Replit Agent (an AI), from the project's source
 reviewed: 11/16/2026
 ---
 **What it is.** A technical summary of SWMM Ecosystem, version 1.0.0: a reference app on the history of SWMM and the software around it: timelines, contributor profiles with editorial grades, catalogs of commercial and open-source programs, comparisons, a glossary and a chat assistant. It is one of Bob's Replit apps, at `swmm-history-robertdickinson.replit.app`. Raw file: [raw/apps/swmm-history-robertdickinson-v1.0.0.md](../../raw/apps/swmm-history-robertdickinson-v1.0.0.md).

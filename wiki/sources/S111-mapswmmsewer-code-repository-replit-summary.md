@@ -7,6 +7,7 @@ author: Robert Dickinson
 published: 2026-03-09
 ingested: 2026-11-15
 tags: [apps, replit, code-library]
+drafted_by: Replit Agent (an AI), from the project's source
 reviewed: 11/16/2026
 ---
 **What it is.** A technical summary of MapSWMMSewer - Code Repository, version 1.0.0: a private app that stores code files associated with SWMM, sewer analysis and h2oCalc as text, and lets its user search, filter, view, add, edit and delete them. It is one of Bob's Replit apps, at `sewer-code-search.replit.app`. Raw file: [raw/apps/sewer-code-search-v1.0.0.md](../../raw/apps/sewer-code-search-v1.0.0.md).

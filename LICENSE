@@ -1,0 +1,55 @@
+Licenses for dickinsonre/swmm-second-brain
+
+Chosen by Robert Dickinson on 16 November 2026. The repository has two licenses,
+by part, and some files under raw/ that are not his keep their own terms.
+
+1. Code: the MIT License (full text below)
+   tools/
+
+2. Text and data: Creative Commons Attribution 4.0 International (CC BY 4.0)
+   wiki/, index.md, log.md, README.md, CLAUDE.md, ONTOLOGY.md, ontology/,
+   and Robert Dickinson's own writing in raw/: raw/linkedin/, raw/swmm5org/,
+   raw/apps/, raw/notes/ and raw/swmm-brain/.
+   You may copy, adapt and share it for any purpose if you credit
+   "Robert Dickinson, swmm-second-brain, https://github.com/dickinsonre/swmm-second-brain",
+   link to the license and say what you changed.
+   License: https://creativecommons.org/licenses/by/4.0/
+   Legal code: https://creativecommons.org/licenses/by/4.0/legalcode
+
+3. Files that keep their own terms
+   raw/manuals/       Reports of U.S. government agencies (EPA, USGS, FHWA), in the
+                      public domain in the United States. The SWMM 4.4 block
+                      documentation in raw/manuals/swmm44/ keeps the terms of its
+                      2004 CDM/OSU distribution. See raw/manuals/_SOURCE.md.
+   raw/openswmm/      Thread titles and names as openswmm.org shows them. The titles
+                      and the posts behind them belong to their writers; the counts
+                      are CC BY 4.0 as above.
+   raw/ports/         Each README carries the license of its own repository.
+   Quotations of other people's work inside any file remain theirs.
+
+AI use: Claude (Anthropic) wrote the tools and the wiki pages at Robert Dickinson's
+direction; README.md says what it did. AI is not an author of any part.
+
+------------------------------------------------------------------------------
+
+MIT License
+
+Copyright (c) 2026 Robert Dickinson
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.

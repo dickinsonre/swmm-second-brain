@@ -7,6 +7,7 @@ author: Robert Dickinson
 published: 2026-11-13
 ingested: 2026-11-15
 tags: [apps, languages, not-swmm]
+drafted_by: Claude (Anthropic), at Bob's direction
 reviewed: 2026-11-15
 ---
 **What it is.** The technical summary that ships with Speak 100, version 2026.11.13b: an English-to-eight-languages speaking trainer in one HTML file. It has nothing to do with SWMM; it is here because it is one of Bob's apps and ships a summary on the same form. Raw file: [raw/apps/speak-100-chinese.md](../../raw/apps/speak-100-chinese.md).

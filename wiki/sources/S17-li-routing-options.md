@@ -7,6 +7,7 @@ author: Robert Dickinson
 published: 2024-07-28
 ingested: 2026-11-14
 tags: [hydraulics, routing, swmm5, icm, infosewer]
+drafted_by: Robert Dickinson, with generic definitions that read as AI-written
 reviewed: 2026-11-15
 ---
 **What it is.** A comparison of which routing methods five products offer. Raw file: [raw/linkedin/2024-07-28-steady-state-eps-kinematic-dynamic-wave-options-swmm5-dickinson-x3uhe.md](../../raw/linkedin/2024-07-28-steady-state-eps-kinematic-dynamic-wave-options-swmm5-dickinson-x3uhe.md).

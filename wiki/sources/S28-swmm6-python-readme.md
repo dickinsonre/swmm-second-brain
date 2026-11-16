@@ -7,6 +7,7 @@ author: Robert Dickinson
 published: 2026-11-06
 ingested: 2026-11-14
 tags: [swmm6, translation, verification]
+drafted_by: Claude (Anthropic), at Bob's direction
 reviewed: 2026-11-15
 ---
 **What it is.** The README of the public repository SWMMBobSWMM6/swmm6-python, as published on 2026-11-06: a translation of the OpenSWMM 6 1D engine into Python, "held to the same output as the C++ engine". It says of itself: "It is not SWMM6 and not a HydroCouple or EPA release; it is a translation checked against SWMM6." Raw file: [raw/ports/2026-11-06-swmm6-python-README.md](../../raw/ports/2026-11-06-swmm6-python-README.md).

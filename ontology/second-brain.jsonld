@@ -952,7 +952,10 @@
     "linkedin-article"
    ],
    "https://github.com/dickinsonre/swmm-second-brain/ontology#draftedBy": [
-    "unknown"
+    "Robert Dickinson, with generic definitions that read as AI-written"
+   ],
+   "https://github.com/dickinsonre/swmm-second-brain/ontology#aiDrafted": [
+    "no"
    ],
    "https://github.com/dickinsonre/swmm-second-brain/ontology#reviewed": [
     "2026-11-15"
@@ -981,6 +984,9 @@
    "https://github.com/dickinsonre/swmm-second-brain/ontology#draftedBy": [
     "ChatGPT (OpenAI), from Autodesk Help, per S179"
    ],
+   "https://github.com/dickinsonre/swmm-second-brain/ontology#aiDrafted": [
+    "yes"
+   ],
    "https://github.com/dickinsonre/swmm-second-brain/ontology#reviewed": [
     "no"
    ]
@@ -1007,6 +1013,9 @@
    ],
    "https://github.com/dickinsonre/swmm-second-brain/ontology#draftedBy": [
     "ChatGPT (OpenAI), from Autodesk Help, per S179"
+   ],
+   "https://github.com/dickinsonre/swmm-second-brain/ontology#aiDrafted": [
+    "yes"
    ],
    "https://github.com/dickinsonre/swmm-second-brain/ontology#reviewed": [
     "no"
@@ -1035,6 +1044,9 @@
    "https://github.com/dickinsonre/swmm-second-brain/ontology#draftedBy": [
     "ChatGPT (OpenAI), from Autodesk Help, per S179"
    ],
+   "https://github.com/dickinsonre/swmm-second-brain/ontology#aiDrafted": [
+    "yes"
+   ],
    "https://github.com/dickinsonre/swmm-second-brain/ontology#reviewed": [
     "no"
    ]
@@ -1061,6 +1073,9 @@
    ],
    "https://github.com/dickinsonre/swmm-second-brain/ontology#draftedBy": [
     "ChatGPT (OpenAI), from Autodesk Help, per S179"
+   ],
+   "https://github.com/dickinsonre/swmm-second-brain/ontology#aiDrafted": [
+    "yes"
    ],
    "https://github.com/dickinsonre/swmm-second-brain/ontology#reviewed": [
     "no"
@@ -1089,6 +1104,9 @@
    "https://github.com/dickinsonre/swmm-second-brain/ontology#draftedBy": [
     "ChatGPT (OpenAI), from Autodesk Help, per S179"
    ],
+   "https://github.com/dickinsonre/swmm-second-brain/ontology#aiDrafted": [
+    "yes"
+   ],
    "https://github.com/dickinsonre/swmm-second-brain/ontology#reviewed": [
     "no"
    ]
@@ -1115,6 +1133,9 @@
    ],
    "https://github.com/dickinsonre/swmm-second-brain/ontology#draftedBy": [
     "GPT plugin for Autodesk (an AI), per S166"
+   ],
+   "https://github.com/dickinsonre/swmm-second-brain/ontology#aiDrafted": [
+    "yes"
    ],
    "https://github.com/dickinsonre/swmm-second-brain/ontology#reviewed": [
     "no"
@@ -1143,6 +1164,9 @@
    "https://github.com/dickinsonre/swmm-second-brain/ontology#draftedBy": [
     "unknown"
    ],
+   "https://github.com/dickinsonre/swmm-second-brain/ontology#aiDrafted": [
+    "unknown"
+   ],
    "https://github.com/dickinsonre/swmm-second-brain/ontology#reviewed": [
     "no"
    ]
@@ -1168,6 +1192,9 @@
     "linkedin-article"
    ],
    "https://github.com/dickinsonre/swmm-second-brain/ontology#draftedBy": [
+    "unknown"
+   ],
+   "https://github.com/dickinsonre/swmm-second-brain/ontology#aiDrafted": [
     "unknown"
    ],
    "https://github.com/dickinsonre/swmm-second-brain/ontology#reviewed": [

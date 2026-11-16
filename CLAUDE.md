@@ -52,7 +52,7 @@ reviewed: no             # no until Bob has read the page; then the date he read
 ---
 ```
 
-A source page has `raw:` (the path of its raw file), `ingested:` (date), `kind:`, `published:` and `author:` in place of `updated:` and `sources:`.
+A source page has `raw:` (the path of its raw file), `ingested:` (date), `kind:`, `published:` and `author:` in place of `updated:` and `sources:`. It may have `drafted_by:`, naming who drafted the raw file's text when its "How it was written" says so: an AI by name first (`Claude (Anthropic), ...`, `ChatGPT (OpenAI), ...`, `Replit Agent (an AI), ...`, `an AI (not named), ...`), `Robert Dickinson (his words, typed in by Claude)`, or `unknown; ...` when the page can only say what the text reads like. The line restates the page's own text, so adding or correcting it is not a change after review (Bob, 16 November 2026). The tools count a source as AI-drafted when the line begins with an AI's name.
 
 When the agent changes a page that Bob has already reviewed, it keeps his `reviewed:` date, adds the new text in a paragraph headed "Added <date>", and adds a front matter line `changed_after_review: "<date>: <what changed>"`. `tools/lint.py` lists such pages. When Bob has read the addition he deletes that line and, if he likes, moves the `reviewed:` date forward.
 

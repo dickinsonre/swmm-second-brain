@@ -7,6 +7,7 @@ author: Robert Dickinson
 published: 2026-02-23
 ingested: 2026-11-14
 tags: [hydraulics, swmm5, icm, comparison]
+drafted_by: unknown; the voice points to AI drafting, and the article has no AI-use note
 reviewed: 2026-11-15
 ---
 **What it is.** An essay on how SWMM 5 and InfoWorks ICM each solve the St. Venant equations, written around Bob's Replit comparison app. Raw file: [raw/linkedin/2026-02-23-edition-54-two-solvers-one-equation-argument-has-lasted-dickinson-3dbte.md](../../raw/linkedin/2026-02-23-edition-54-two-solvers-one-equation-argument-has-lasted-dickinson-3dbte.md).
