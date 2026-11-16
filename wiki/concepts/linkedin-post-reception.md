@@ -4,7 +4,7 @@ type: concept
 updated: 2026-11-15
 sources: [S90, S94, S134, S135]
 tags: [linkedin, publishing, reception]
-reviewed: no
+reviewed: 11/16/2026
 ---
 Bob asked on 15 November 2026 that this wiki keep track of his better received LinkedIn posts [S134](../sources/S134-note-linkedin-two-well-received-posts.md). Two sources hold counts: a screenshot of two posts [S134](../sources/S134-note-linkedin-two-well-received-posts.md), and a list of 50 of his posts that he pasted the same afternoon [S135](../sources/S135-li-fifty-posts-with-counts.md). The list is in descending order of impressions and no post in it is older than "1yr". The paste does not say which page it came from or what period it covers (Q81).
 
