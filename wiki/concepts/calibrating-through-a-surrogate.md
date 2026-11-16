@@ -4,7 +4,7 @@ type: concept
 updated: 2026-11-16
 sources: [S157]
 tags: [calibration, surrogates, lstm, swmm5]
-reviewed: no
+reviewed: 11/16/2026
 ---
 Search the parameters through a fast learned model, then confirm the answer in SWMM. The [LSTM + SWMM5 (app)](../entities/lstm-swmm5-app.md) tried it on a small demo and recorded what went wrong. Its source is a summary Claude wrote from the page, not yet read by Bob (Q84).
 
