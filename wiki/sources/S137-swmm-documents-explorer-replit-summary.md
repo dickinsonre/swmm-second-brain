@@ -7,7 +7,7 @@ author: Robert Dickinson
 published: 2026-02-11
 ingested: 2026-11-15
 tags: [apps, replit, documentation, swmm-history]
-reviewed: no
+reviewed: 11/16/2026
 ---
 **What it is.** A technical summary of SWMM Documents Explorer, version 1.0.0: a guide to the SWMM documentation archive, with eras, a timeline, explanatory pages on SWMM processes and a filtered list of files; it runs no simulation. It is one of Bob's Replit apps, at `swmm-documents-explorer.replit.app`. Raw file: [raw/apps/swmm-documents-explorer-v1.0.0.md](../../raw/apps/swmm-documents-explorer-v1.0.0.md).
 

@@ -7,7 +7,7 @@ author: Robert Dickinson
 published: 2025-08-28
 ingested: 2026-11-15
 tags: [apps, replit, swmm5, education, quiz]
-reviewed: no
+reviewed: 11/16/2026
 ---
 **What it is.** A technical summary of SWMM5Wiki, version 1.0.0: an educational guide to SWMM (hydrology, hydraulics, history, the conceptual model and LID controls) with a glossary and a separate game page of modeling challenges; it does not run a simulation. It is one of Bob's Replit apps, at `gatorbeaverswmm.com`. Raw file: [raw/apps/gator-swmm-robertdickinson-v1.0.0.md](../../raw/apps/gator-swmm-robertdickinson-v1.0.0.md).
 

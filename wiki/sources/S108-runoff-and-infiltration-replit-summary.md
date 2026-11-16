@@ -7,7 +7,7 @@ author: Robert Dickinson
 published: 2026-11-15
 ingested: 2026-11-15
 tags: [apps, replit, hydrology, infiltration, horton, green-ampt, curve-number, lid]
-reviewed: no
+reviewed: 11/16/2026
 ---
 **What it is.** A technical summary of SWMM5 Runoff and Infiltration App, version 1.0.0: an interactive app for exploring infiltration and surface runoff of a storm with five infiltration models, soil and LID settings, and rainfall fetched from a weather service. It is one of Bob's Replit apps, at `horton-model--robertdickinson.replit.app`. Raw file: [raw/apps/horton-model--robertdickinson-v1.0.0.md](../../raw/apps/horton-model--robertdickinson-v1.0.0.md).
 

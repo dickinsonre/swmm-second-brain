@@ -7,7 +7,7 @@ author: Robert Dickinson
 published: 2025-11-19
 ingested: 2026-11-15
 tags: [apps, replit, icm, ruby, ai-agents]
-reviewed: no
+reviewed: 11/16/2026
 ---
 **What it is.** A technical summary of ICM Ruby to Nano Banana Prompt, version 1.0.0: an app that reads ICM Ruby scripts and SWMM5 input files, draws a workflow from the Ruby methods, counts sections and code patterns, and asks Gemini to explain the code; it runs no engine and does not execute Ruby. It is one of Bob's Replit apps, at `swmm5toicmswmmworkflow.com`. Raw file: [raw/apps/icm-flow-visualizer-robertdickinson-v1.0.0.md](../../raw/apps/icm-flow-visualizer-robertdickinson-v1.0.0.md).
 

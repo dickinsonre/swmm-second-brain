@@ -7,7 +7,7 @@ author: Robert Dickinson
 published: 2026-11-15
 ingested: 2026-11-15
 tags: [linkedin, publishing, reception]
-reviewed: no
+reviewed: 11/16/2026
 ---
 **What it is.** A table of 50 of Bob's LinkedIn posts with the reactions, comments and impressions LinkedIn showed for each on 15 November 2026. Raw file: [raw/linkedin/2026-11-15-fifty-posts-with-counts.md](../../raw/linkedin/2026-11-15-fifty-posts-with-counts.md).
 

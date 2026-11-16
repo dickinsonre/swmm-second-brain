@@ -7,7 +7,7 @@ author: Robert Dickinson
 published: 2026-07-20
 ingested: 2026-11-15
 tags: [apps, replit, swmm5, manuals, search, ai-agents]
-reviewed: no
+reviewed: 11/16/2026
 ---
 **What it is.** A technical summary of SWMM5 Manual Search, version 5.2: an app that searches the SWMM manual, shows matching sections, diagrams and calculators, checks and runs `.inp` files, and answers questions with an AI assistant. It is one of Bob's Replit apps, at `swmm-manual-search-robertdickinson.replit.app`. Raw file: [raw/apps/swmm-manual-search-robertdickinson-v5.2.md](../../raw/apps/swmm-manual-search-robertdickinson-v5.2.md).
 

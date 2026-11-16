@@ -7,7 +7,7 @@ author: Robert Dickinson
 published: 2026-02-11
 ingested: 2026-11-15
 tags: [apps, replit, pyswmm, reference]
-reviewed: no
+reviewed: 11/16/2026
 ---
 **What it is.** A technical summary of PySWMM Explorer, version 1.0.0: a reference and learning app for PySWMM: API module notes, a phrasebook, cookbook examples, ecosystem references and a repository outline. It is one of Bob's Replit apps, at `pyswmm-explorer.replit.app`. Raw file: [raw/apps/pyswmm-explorer-v1.0.0.md](../../raw/apps/pyswmm-explorer-v1.0.0.md).
 

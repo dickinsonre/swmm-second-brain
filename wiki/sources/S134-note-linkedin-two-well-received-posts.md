@@ -7,7 +7,7 @@ author: Robert Dickinson
 published: 2026-11-15
 ingested: 2026-11-15
 tags: [linkedin, publishing, reception, swmm6]
-reviewed: no
+reviewed: 11/16/2026
 ---
 **What it is.** One sentence from Bob and the counts under two of his LinkedIn posts, as he saw them on 15 November 2026. Raw file: [raw/notes/linkedin-two-well-received-posts-2026-11.md](../../raw/notes/linkedin-two-well-received-posts-2026-11.md).
 

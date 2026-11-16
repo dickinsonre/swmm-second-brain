@@ -7,7 +7,7 @@ author: Robert Dickinson
 published: 2026-07-20
 ingested: 2026-11-15
 tags: [apps, replit, epanet, swmm5, model-generation, wasm]
-reviewed: no
+reviewed: 11/16/2026
 ---
 **What it is.** A technical summary of EPANET 2.3 Generator, version 4.6: an app that builds synthetic pressurized-water and stormwater networks from settings and a seed, runs them in EPANET and SWMM in the browser, and exports the model files. It is one of Bob's Replit apps, at `epanet-swmm-5-generate.replit.app`. Raw file: [raw/apps/epanet-swmm-5-generate-v4.6.md](../../raw/apps/epanet-swmm-5-generate-v4.6.md).
 

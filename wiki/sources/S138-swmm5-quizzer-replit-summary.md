@@ -7,7 +7,7 @@ author: Robert Dickinson
 published: 2026-11-15
 ingested: 2026-11-15
 tags: [apps, replit, swmm5, education, quiz]
-reviewed: no
+reviewed: 11/16/2026
 ---
 **What it is.** A technical summary of SWMM5 Quizzer, version 1.0.0: a quiz app of multiple-choice questions about EPA SWMM, with practice and timed modes, explanations, topic diagrams and a Simulation Quiz on stored network scenarios; it does not run the EPA SWMM engine. It is one of Bob's Replit apps, at `swmm5quiz.com` and `quiz-master-robertdickinson.replit.app`. Raw file: [raw/apps/quiz-master-robertdickinson-v1.0.0.md](../../raw/apps/quiz-master-robertdickinson-v1.0.0.md).
 

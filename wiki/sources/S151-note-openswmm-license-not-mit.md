@@ -7,7 +7,7 @@ author: Robert Dickinson
 published: 2026-11-15
 ingested: 2026-11-15
 tags: [openswmm, swmm6, licensing]
-reviewed: no
+reviewed: 11/16/2026
 ---
 **What it is.** One sentence from Bob on the license of OpenSWMM. Raw file: [raw/notes/openswmm-license-not-mit-2026-11-15.md](../../raw/notes/openswmm-license-not-mit-2026-11-15.md).
 

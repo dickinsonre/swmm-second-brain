@@ -7,7 +7,7 @@ author: Robert Dickinson
 published: 2026-02-12
 ingested: 2026-11-15
 tags: [apps, replit, infosewer, icm, migration]
-reviewed: no
+reviewed: 11/16/2026
 ---
 **What it is.** A technical summary of InfoSewer to InfoWorks ICM, version 1.0.0: a guide to moving InfoSewer model data into InfoWorks ICM, pointing to a Ruby import tool as the preferred route and a manual ODIC workflow as the alternative, with browser tools to check IDs and CSV headers and to compose SQL; it converts nothing itself. It is one of Bob's Replit apps, at `infosewericminfoworksimport.com`. Raw file: [raw/apps/data-sewer-robertdickinson-v1.0.0.md](../../raw/apps/data-sewer-robertdickinson-v1.0.0.md).
 

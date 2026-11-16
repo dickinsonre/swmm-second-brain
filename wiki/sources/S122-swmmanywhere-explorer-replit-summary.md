@@ -7,7 +7,7 @@ author: Robert Dickinson
 published: 2026-05-13
 ingested: 2026-11-15
 tags: [apps, replit, swmm5, model-generation]
-reviewed: no
+reviewed: 11/16/2026
 ---
 **What it is.** A technical summary of SWMManywhere Explorer, version 1.0.0: a browser guide to the separate SWMManywhere Python project, which generates urban drainage network models from a geographic area and global datasets. It is one of Bob's Replit apps, at `swmmanywhere-explorer.replit.app`. Raw file: [raw/apps/swmmanywhere-explorer-v1.0.0.md](../../raw/apps/swmmanywhere-explorer-v1.0.0.md).
 

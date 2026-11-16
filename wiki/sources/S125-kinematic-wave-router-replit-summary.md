@@ -7,7 +7,7 @@ author: Robert Dickinson
 published: 2026-11-15
 ingested: 2026-11-15
 tags: [apps, replit, swmm5, ruby, routing, kinematic-wave]
-reviewed: no
+reviewed: 11/16/2026
 ---
 **What it is.** A technical summary of Kinematic Wave Router, version 2026.11.15: a Ruby (Sinatra) web app that reads a SWMM5 INP network and routes a constant inflow from a chosen inlet by kinematic wave, with dendritic routing or an iterative loop solver. It is one of Bob's Replit apps, at `ruby-swmm-router.replit.app`. Raw file: [raw/apps/ruby-swmm-router-v2026.11.15.md](../../raw/apps/ruby-swmm-router-v2026.11.15.md).
 

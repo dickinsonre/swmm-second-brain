@@ -7,7 +7,7 @@ author: Robert Dickinson
 published: 2026-11-15
 ingested: 2026-11-15
 tags: [apps, replit, icm, ruby, security]
-reviewed: no
+reviewed: 11/16/2026
 ---
 **What it is.** Bob's sentence saying that he deleted his Replit app the InfoWorks ICM Ruby Script Runner and that ICM Exchange is the better way. Raw file: [raw/notes/ruby-script-runner-deleted-2026-11-15.md](../../raw/notes/ruby-script-runner-deleted-2026-11-15.md).
 

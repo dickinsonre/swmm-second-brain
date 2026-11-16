@@ -7,7 +7,7 @@ author: Robert Dickinson
 published: 2026-11-15
 ingested: 2026-11-15
 tags: [apps, replit, swmm5, wasm, engines, model-generation]
-reviewed: no
+reviewed: 11/16/2026
 ---
 **What it is.** A technical summary of SWMM5 Modeler, version 0.0.0: an app that generates, scales up or imports a drainage network, runs it in EPA SWMM5 compiled to WebAssembly, and reports results, errors, proposed fixes and a model grade, with six rule-based "agents" commenting on it. It is one of Bob's Replit apps, at `mirofish-swmm.replit.app`. Raw file: [raw/apps/mirofish-swmm-v0.0.0.md](../../raw/apps/mirofish-swmm-v0.0.0.md).
 

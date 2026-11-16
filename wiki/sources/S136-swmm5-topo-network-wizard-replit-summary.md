@@ -7,7 +7,7 @@ author: Robert Dickinson
 published: 2026-11-15
 ingested: 2026-11-15
 tags: [apps, replit, swmm5, model-generation, topology]
-reviewed: no
+reviewed: 11/16/2026
 ---
 **What it is.** A technical summary of SWMM5 Topo Network Wizard, version 1.0.0: an app that generates stormwater network layouts from topology methods and a particle simulation, assigns elevations and catchments, estimates flows, and exports SWMM5 input files. It is one of Bob's Replit apps, at `topo-network-wizard.replit.app`. Raw file: [raw/apps/topo-network-wizard-v1.0.0.md](../../raw/apps/topo-network-wizard-v1.0.0.md).
 

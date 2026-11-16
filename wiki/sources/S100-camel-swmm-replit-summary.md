@@ -7,7 +7,7 @@ author: Robert Dickinson
 published: 2025-08-18
 ingested: 2026-11-15
 tags: [apps, replit, swmm5, pyswmm, ai-agents]
-reviewed: no
+reviewed: 11/16/2026
 ---
 **What it is.** A technical summary of Camel_SWMM, version 1.0.0: a Flask web app, with a Tkinter desktop path, for managing SWMM input files, validating them, running EPA SWMM and inspecting the results. It is one of Bob's Replit apps, at `swmm-pilot-robertdickinson.replit.app`. Raw file: [raw/apps/swmm-pilot-robertdickinson-v1.0.0.md](../../raw/apps/swmm-pilot-robertdickinson-v1.0.0.md).
 

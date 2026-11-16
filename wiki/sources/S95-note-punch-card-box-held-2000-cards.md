@@ -7,7 +7,7 @@ author: Robert Dickinson
 published: 2026-11-15
 ingested: 2026-11-15
 tags: [history, recollections, punch-cards]
-reviewed: no
+reviewed: 11/16/2026
 ---
 **What it is.** Bob's one-line answer to Q66: how many cards a box held. Raw file: [raw/notes/punch-card-box-held-2000-cards.md](../../raw/notes/punch-card-box-held-2000-cards.md).
 

@@ -7,7 +7,7 @@ author: Robert Dickinson
 published: 2026-11-15
 ingested: 2026-11-15
 tags: [apps, replit, swmm5, swmm6, translation, engines, verification]
-reviewed: no
+reviewed: 11/16/2026
 ---
 **What it is.** A technical summary of SWMM5 Rosetta Stone, version 1.0.0: an app that shows SWMM and EPANET algorithm examples side by side in many programming languages and runs uploaded SWMM models through labelled numerical engines. It is one of Bob's Replit apps, at `code-rosetta-stone.replit.app`. Raw file: [raw/apps/code-rosetta-stone-v1.0.0.md](../../raw/apps/code-rosetta-stone-v1.0.0.md).
 

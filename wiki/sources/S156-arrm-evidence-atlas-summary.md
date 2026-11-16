@@ -7,7 +7,7 @@ author: Robert Dickinson
 published: 2026-08-21
 ingested: 2026-11-16
 tags: [apps, modpods, surrogates, machine-learning, benchmarks, netlify]
-reviewed: no
+reviewed: 11/16/2026
 ---
 **What it is.** A technical summary of the app "Automatic Rainfall-Runoff Models: Evidence Atlas", the page served at automatic-rainfall-runoff-models.netlify.app, deployed 21 August 2026. The app re-aggregates every fit in `dantzert/automatic-rainfall-runoff-models`, the replication package of the modpods paper, in eight tabs. Raw file: [raw/apps/automatic-rainfall-runoff-models-v2026-08-21.md](../../raw/apps/automatic-rainfall-runoff-models-v2026-08-21.md).
 

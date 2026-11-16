@@ -7,7 +7,7 @@ author: Robert Dickinson
 published: 2026-11-15
 ingested: 2026-11-15
 tags: [apps, replit, manuals, search]
-reviewed: no
+reviewed: 11/16/2026
 ---
 **What it is.** A technical summary of SWMM Manual Search, version 1.0.0: a promotional landing page for a separate manual-search site; it does no searching itself. It is one of Bob's Replit apps, at `video-search.replit.app`. Raw file: [raw/apps/video-search-v1.0.0.md](../../raw/apps/video-search-v1.0.0.md).
 

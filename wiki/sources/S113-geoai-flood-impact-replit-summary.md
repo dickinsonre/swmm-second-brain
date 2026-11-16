@@ -7,7 +7,7 @@ author: Robert Dickinson
 published: 2026-11-15
 ingested: 2026-11-15
 tags: [apps, replit, flood-exposure, not-swmm]
-reviewed: no
+reviewed: 11/16/2026
 ---
 **What it is.** A technical summary of GeoAI Flood Impact, version 2.4.1_b: a decision-support app that presents stored flood-exposure information for communities and infrastructure. It runs no flood model and is not about SWMM. It is one of Bob's Replit apps, at `spatial-impact-insight.replit.app`. Raw file: [raw/apps/spatial-impact-insight-v2.4.1_b.md](../../raw/apps/spatial-impact-insight-v2.4.1_b.md).
 

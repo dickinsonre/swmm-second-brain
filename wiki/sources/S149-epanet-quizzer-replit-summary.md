@@ -7,7 +7,7 @@ author: Robert Dickinson
 published: 2026-11-15
 ingested: 2026-11-15
 tags: [apps, replit, epanet, education, quiz]
-reviewed: no
+reviewed: 11/16/2026
 ---
 **What it is.** A technical summary of EPANET Quizzer, version 1.0.0: a quiz app of multiple-choice questions on hydraulic modeling and water distribution in four categories, with timed and practice modes, worked explanations and a topic breakdown; it does not run EPANET. It is one of Bob's Replit apps, at `epanetquizzer.com`. Raw file: [raw/apps/epanet-quizzer-robertdickinson-v1.0.0.md](../../raw/apps/epanet-quizzer-robertdickinson-v1.0.0.md).
 

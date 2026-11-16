@@ -7,7 +7,7 @@ author: Robert Dickinson
 published: 2026-11-15
 ingested: 2026-11-15
 tags: [apps, replit, water-history, reference]
-reviewed: no
+reviewed: 11/16/2026
 ---
 **What it is.** A technical summary of Historical Water Inventions, version 1.0.0: an educational app on the history of water engineering: maps and timelines by civilization and site, invention pages, quizzes, calculators and a chatbot. It is one of Bob's Replit apps, at `historical-mystery-robertdickinson.replit.app`. Raw file: [raw/apps/historical-mystery-robertdickinson-v1.0.0.md](../../raw/apps/historical-mystery-robertdickinson-v1.0.0.md).
 

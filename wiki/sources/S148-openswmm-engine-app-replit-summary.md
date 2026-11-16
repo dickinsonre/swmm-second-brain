@@ -7,7 +7,7 @@ author: Robert Dickinson
 published: 2026-11-15
 ingested: 2026-11-15
 tags: [apps, replit, openswmm, swmm6, wasm]
-reviewed: no
+reviewed: 11/16/2026
 superseded_by: S153
 ---
 **What it is.** A technical summary of OpenSWMM Engine, version 6.0.0-alpha.1: a browser app that introduces the OpenSWMM project, documents it and runs `.inp` models in the legacy SWMM engine of HydroCouple/OpenSWMMCore compiled to WebAssembly. It is one of Bob's Replit apps, at `open-swmm-core.replit.app`. Raw file: [raw/apps/open-swmm-core-v6.0.0-alpha.1.md](../../raw/apps/open-swmm-core-v6.0.0-alpha.1.md).

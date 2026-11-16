@@ -7,7 +7,7 @@ author: Robert Dickinson
 published: 2026-11-14
 ingested: 2026-11-15
 tags: [history, recollections, punch-cards, swmm2]
-reviewed: no
+reviewed: 11/16/2026
 ---
 **What it is.** A short LinkedIn post by Bob on how he came to SWMM, at https://lnkd.in/p/e8TVNFQZ. It is the post whose comments are in [S90](S90-note-swmm-anecdotes-linkedin-comments.md). Raw file: [raw/linkedin/2026-11-14-post-my-earlier-history-with-swmm-corrected.md](../../raw/linkedin/2026-11-14-post-my-earlier-history-with-swmm-corrected.md).
 

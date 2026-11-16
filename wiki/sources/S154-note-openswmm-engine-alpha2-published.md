@@ -7,7 +7,7 @@ author: Robert Dickinson
 published: 2026-11-15
 ingested: 2026-11-15
 tags: [apps, replit, openswmm, licensing]
-reviewed: no
+reviewed: 11/16/2026
 ---
 **What it is.** Bob's sentence that his OpenSWMM Engine app is published after the license fix, with what the live page showed. Raw file: [raw/notes/openswmm-engine-alpha2-published-2026-11-15.md](../../raw/notes/openswmm-engine-alpha2-published-2026-11-15.md).
 

@@ -7,7 +7,7 @@ author: Robert Dickinson
 published: 2026-11-15
 ingested: 2026-11-15
 tags: [apps, replit, swmm5, epanet, force-mains, pumps]
-reviewed: no
+reviewed: 11/16/2026
 ---
 **What it is.** A technical summary of ForceMain SWMM5 EPANET Comparison, version 1.0: a Streamlit app for designing and checking force mains: friction-loss calculators, a network analyzer, writers of SWMM5 and EPANET input files, and runs of both engines on paired generated models. It is one of Bob's Replit apps, at `forcemainswmm5epanetcomparison.com`. Raw file: [raw/apps/force-main-robertdickinson-v1.0.md](../../raw/apps/force-main-robertdickinson-v1.0.md).
 
