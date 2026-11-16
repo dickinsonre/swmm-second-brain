@@ -4,7 +4,7 @@ type: entity
 updated: 2026-11-16
 sources: [S155, S156, S157]
 tags: [modpods, surrogates, machine-learning, rdii]
-reviewed: no
+reviewed: 11/16/2026
 ---
 A method for discovering rainfall-runoff models from rainfall and runoff alone, by Dantzer et al., "Generating interpretable rainfall-runoff models automatically from data", Advances in Water Resources, doi:10.1016/j.advwatres.2024.104796 [S156](../sources/S156-arrm-evidence-atlas-summary.md). The code is `github.com/dantzert/modpods`; the paper's results are in a separate replication package, `dantzert/automatic-rainfall-runoff-models` [S155](../sources/S155-modpods-explainer-summary.md). Bob's three apps on it are [modpods, for a SWMM person](modpods-explainer-app.md), the [Evidence Atlas](arrm-evidence-atlas.md) and [LSTM + SWMM5](lstm-swmm5-app.md).
 
