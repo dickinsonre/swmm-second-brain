@@ -17,7 +17,7 @@ reviewed: no
 - Bob says the notes are from the GPT plugin for Autodesk, which he uses a lot.
 - He does not name the plugin further or say which model it runs, and says nothing about whether any procedure in the notes has been run.
 
-**What is the note's reading and not Bob's words.** That his "they" covers both sets, the seven ICM notes ([S159](S159-note-icm-ruby-ui-vs-exchange.md) to [S165](S165-note-epa-swmm-ruby-icm-benchmark.md)) and the ten ICM 2D notes ([S167](S167-note-icm-2d-terrain-and-mesh.md) to [S176](S176-note-icm-2d-benchmark-cases.md)). They share one template, one date and one style.
+**What is the note's reading and not Bob's words.** That his "they" covers both sets, the seven ICM notes ([S159](S159-note-icm-ruby-ui-vs-exchange.md) to [S165](S165-note-epa-swmm-ruby-icm-benchmark.md)) and the ten ICM 2D notes ([S167](S167-note-icm-2d-terrain-and-mesh.md) to [S176](S176-note-icm-2d-benchmark-cases.md)). They share one template, one date and one style. For the seven, [S179](S179-note-icm-notes-drafted-by-chatgpt.md) since confirms it: ChatGPT drafted them from Autodesk Help.
 
 **What follows for the wiki.** All seventeen are AI-written text. A claim that rests only on one of them is flagged on the pages as AI-written, not checked against ICM (page rule 4).
 

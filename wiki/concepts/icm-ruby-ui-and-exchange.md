@@ -2,11 +2,11 @@
 title: "ICM Ruby: UI scripts and Exchange scripts"
 type: concept
 updated: 2026-11-16
-sources: [S159, S160, S161, S152, S166]
+sources: [S159, S160, S161, S152, S166, S179]
 tags: [icm, ruby, exchange]
 reviewed: no
 ---
-InfoWorks ICM runs Ruby in two places: inside the desktop interface, against the network open in GeoPlan, and in ICM Exchange, the command-line runner. Three notes Bob supplied on 16 November 2026 set out how a script differs between them and how to test one. Bob says they come from the GPT plugin for Autodesk [S166](../sources/S166-note-icm-notes-from-gpt-plugin.md), so they are AI-written; their Autodesk facts are reported from Autodesk's help and not checked here, and nothing in them has been run (Q90).
+InfoWorks ICM runs Ruby in two places: inside the desktop interface, against the network open in GeoPlan, and in ICM Exchange, the command-line runner. Three notes Bob supplied on 16 November 2026 set out how a script differs between them and how to test one. ChatGPT drafted them from Autodesk Help [S179](../sources/S179-note-icm-notes-drafted-by-chatgpt.md), so they are AI-written; their Autodesk facts are reported from Autodesk's help and not checked here, and nothing in them has been run (Q90).
 
 **Two ways in** [S159](../sources/S159-note-icm-ruby-ui-vs-exchange.md)
 

@@ -339,6 +339,7 @@ Notes and data
 - [S174](wiki/sources/S174-note-icm-2d-volume-balance.md) (2026-11-16): note (AI-written), volume balance for the 2D mesh and the combined model.
 - [S175](wiki/sources/S175-note-icm-2d-results-and-hazard.md) (2026-11-16): note (AI-written), 2D results and hazard tied to their time basis.
 - [S176](wiki/sources/S176-note-icm-2d-benchmark-cases.md) (2026-11-16): note (AI-written), three ICM 2D benchmark cases.
+- [S179](wiki/sources/S179-note-icm-notes-drafted-by-chatgpt.md) (2026-11-16): note, ChatGPT drafted the seven ICM notes S159 to S165 from Autodesk Help; runtime tests stay pending.
 
 The old swmm-brain repository
 - [S55](wiki/sources/S55-swmm-brain-readme.md) (2026-08-22): README: enhancements, apps, scripts, timeline.

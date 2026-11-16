@@ -7,11 +7,12 @@ author: Robert Dickinson
 published: 2026-11-16
 ingested: 2026-11-16
 tags: [icm, ruby, data-model, note]
+drafted_by: ChatGPT (OpenAI), from Autodesk Help, per S179
 reviewed: no
 ---
 **What it is.** A note on finding the right table and field names for an ICM Ruby script, written for a Smart Table Exporter (the note's name for the script). Raw file: [raw/notes/icm-network-tables-and-fields.md](../../raw/notes/icm-network-tables-and-fields.md).
 
-**How it was written.** One of seven notes Bob supplied on 16 November 2026 in `ICM-Ruby-SWMM-Markdown.zip`, copied into `raw/notes/` unchanged. It is on the note template, dated 2026-11-16, status seed. The note does not name its author; Bob says the ICM notes come from the GPT plugin for Autodesk [S166](S166-note-icm-notes-from-gpt-plugin.md), so it is AI-written text (that his statement covers this set of seven is Claude's reading, Q89). Its facts about ICM come from Autodesk's online help, linked in the note, and were not checked here against ICM or the help pages. Its procedure says it awaits a run in ICM: nothing in it has been run.
+**How it was written.** One of seven notes Bob supplied on 16 November 2026 in `ICM-Ruby-SWMM-Markdown.zip`, copied into `raw/notes/` unchanged (byte for byte, checked against the ZIP [S179](S179-note-icm-notes-drafted-by-chatgpt.md)). It is on the note template, dated 2026-11-16, status seed. The note does not name its author. It was drafted by ChatGPT from Autodesk Help [S179](S179-note-icm-notes-drafted-by-chatgpt.md), so it is AI-written text; Bob adds them from the GPT plugin for Autodesk he uses [S166](S166-note-icm-notes-from-gpt-plugin.md). Its facts about ICM come from Autodesk's online help, linked in the note, and were not checked here against ICM or the help pages. Its procedure says it awaits a run in ICM: nothing in it has been run.
 
 **Claims worth keeping** (as the note states them; AI-written, not checked against ICM)
 - InfoWorks and SWMM networks use different model data tables. Node: `hw_node` and `sw_node`. Conduit: `hw_conduit` and `sw_conduit`. Subcatchment: `hw_subcatchment` and `sw_subcatchment`.

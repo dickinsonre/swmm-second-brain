@@ -2,11 +2,11 @@
 title: ICM network tables and result fields
 type: concept
 updated: 2026-11-16
-sources: [S162, S163, S17, S166, S178]
+sources: [S162, S163, S17, S166, S178, S179]
 tags: [icm, ruby, data-model, results, comparison]
 reviewed: no
 ---
-InfoWorks ICM keeps its two network types in different tables and reports their results under different names. Two notes Bob supplied on 16 November 2026 map the first few. Bob says they come from the GPT plugin for Autodesk [S166](../sources/S166-note-icm-notes-from-gpt-plugin.md), so they are AI-written; their Autodesk facts are reported from Autodesk's help and not checked here, and nothing in them has been run (Q90).
+InfoWorks ICM keeps its two network types in different tables and reports their results under different names. Two notes Bob supplied on 16 November 2026 map the first few. ChatGPT drafted them from Autodesk Help [S179](../sources/S179-note-icm-notes-drafted-by-chatgpt.md), so they are AI-written; their Autodesk facts are reported from Autodesk's help and not checked here, and nothing in them has been run (Q90).
 
 **Two network types.** An InfoWorks network, solved by ICM's own St. Venant scheme, and an ICM SWMM network, which runs the SWMM5 dynamic wave [S17](../sources/S17-li-routing-options.md). See [InfoWorks ICM](../entities/infoworks-icm.md).
 
