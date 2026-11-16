@@ -4,7 +4,7 @@ type: concept
 updated: 2026-11-16
 sources: [S60, S157]
 tags: [swmm5, architecture, output, units, primary-document]
-reviewed: no
+reviewed: 11/16/2026
 ---
 Sections 1.2 to 1.5 of the EPA hydraulics manual, a primary document, in digest [S60](../sources/S60-epa-swmm5-reference-manual-vol2-hydraulics.md). Its figures are not in `raw/` and its two equations did not survive the conversion, so both are described in words.
 
