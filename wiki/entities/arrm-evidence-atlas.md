@@ -4,7 +4,7 @@ type: entity
 updated: 2026-11-16
 sources: [S156]
 tags: [apps, modpods, surrogates, machine-learning, benchmarks, netlify]
-reviewed: no
+reviewed: 11/16/2026
 ---
 Bob's app that puts every fit in the [modpods](modpods.md) replication package, `dantzert/automatic-rainfall-runoff-models`, on one page: 2,476 fitted models across 415 sites. It is on Netlify at automatic-rainfall-runoff-models.netlify.app, deployed 21 August 2026, with no version number on the page. "Nothing is quoted from the paper text" [S156](../sources/S156-arrm-evidence-atlas-summary.md).
 

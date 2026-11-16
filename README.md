@@ -35,7 +35,7 @@ To read the wiki yourself, open the folder in Obsidian (the graph view shows hub
 
 - 157 of 402 raw files ingested, one of them (the EPA hydraulics manual) in part. The queue is in `index.md`.
 - 76 open questions in `wiki/open-questions.md`, and 7 settled. Several are contradictions between Bob's own articles.
-- 62 pages say `reviewed: no`, which means Bob has not read them yet. All source pages were marked reviewed on 11/16/2026; the unread pages are now app (entity) and concept pages built from the Replit summaries. 24 more pages carry text added after his review, each marked `changed_after_review:`.
+- 0 pages say `reviewed: no`. Bob marked every page reviewed on 11/16/2026. 24 pages carry text added after his review, each marked `changed_after_review:`.
 
 ## What is not here
 

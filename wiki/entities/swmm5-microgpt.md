@@ -4,7 +4,7 @@ type: entity
 updated: 2026-11-15
 sources: [S114]
 tags: [apps, replit, swmm5, ai, inp-files]
-reviewed: no
+reviewed: 11/16/2026
 ---
 Bob's Replit app SWMM5 MicroGPT v2: an app that parses SWMM5 `.INP` text, trains a small character-level GPT on it in the browser and generates SWMM-like names. Version 2, at `micro-gpt-swmm.replit.app` [S114](../sources/S114-swmm5-microgpt-replit-summary.md).
 

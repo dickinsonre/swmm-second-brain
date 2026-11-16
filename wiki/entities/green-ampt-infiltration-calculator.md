@@ -4,7 +4,7 @@ type: entity
 updated: 2026-11-15
 sources: [S107, S139]
 tags: [apps, replit, hydrology, infiltration, green-ampt, horton, curve-number]
-reviewed: no
+reviewed: 11/16/2026
 ---
 Bob's Replit app Green-Ampt Infiltration Calculator: a browser calculator that estimates infiltration and runoff from soil, rainfall and storm-duration inputs by four methods. Version 1.0.0, at `green-infiltration--robertdickinson.replit.app` [S107](../sources/S107-green-ampt-calculator-replit-summary.md).
 

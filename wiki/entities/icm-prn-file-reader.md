@@ -4,7 +4,7 @@ type: entity
 updated: 2026-11-15
 sources: [S142, S143, S144]
 tags: [apps, replit, icm, results]
-reviewed: no
+reviewed: 11/16/2026
 ---
 Bob's Replit app ICM PRN File Reader: an app that reads InfoWorks ICM PRN output, extracts node, link and mass-balance data, flags flooding, surcharge and capacity, converts units and exports CSV, Excel or PDF; it runs no simulation. Version 1.0.0, at `icm-reader-robertdickinson.replit.app` [S142](../sources/S142-icm-prn-file-reader-replit-summary.md).
 

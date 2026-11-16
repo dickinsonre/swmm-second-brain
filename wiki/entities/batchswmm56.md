@@ -4,7 +4,7 @@ type: entity
 updated: 2026-11-15
 sources: [S23, S117, S119]
 tags: [apps, replit, swmm5, swmm6, engines, wasm, comparison]
-reviewed: no
+reviewed: 11/16/2026
 ---
 Bob's Replit app BatchSWMM56: an app that runs SWMM input models singly or in batches through several engines and compares status, continuity, flooding, flows, timing and time series. Version 1.1.0, at `batch-swmm-runner-robertdickinson.replit.app` [S117](../sources/S117-batchswmm56-replit-summary.md).
 

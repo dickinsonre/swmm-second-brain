@@ -4,7 +4,7 @@ type: entity
 updated: 2026-11-15
 sources: [S121]
 tags: [apps, replit, ai, advice]
-reviewed: no
+reviewed: 11/16/2026
 ---
 Bob's Replit app Hindsight Prophet: an app that answers technical and strategic questions about stormwater models by sending each question to a council of AI personas and returning their analyses, a consensus and a roadmap. Version 1.0.0, at `hindsight-prophet-robertdickinson.replit.app` [S121](../sources/S121-hindsight-prophet-replit-summary.md).
 

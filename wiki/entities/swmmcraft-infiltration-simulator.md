@@ -4,7 +4,7 @@ type: entity
 updated: 2026-11-15
 sources: [S107, S108, S139]
 tags: [apps, replit, infiltration, hydrology]
-reviewed: no
+reviewed: 11/16/2026
 ---
 Bob's Replit app SWMMCRAFT: a calculator of infiltration and runoff for one storm by the Horton, Green-Ampt or Curve Number method, in its own server code; it calls no SWMM engine. Version 1.0.0, at `swmm-infiltration--robertdickinson.replit.app` [S139](../sources/S139-swmmcraft-infiltration-replit-summary.md).
 

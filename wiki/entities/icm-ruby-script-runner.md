@@ -4,7 +4,7 @@ type: entity
 updated: 2026-11-15
 sources: [S145, S150, S152]
 tags: [apps, replit, icm, ruby, ai-agents, security]
-reviewed: no
+reviewed: 11/16/2026
 ---
 Bob's Replit app InfoWorks ICM Ruby Script Runner: an app with a web editor that ran Ruby scripts for InfoWorks ICM on the server and returned their output, with AI explanations through gpt-5, templates, an API reference page and GitHub browsing. Version 0.1.0, at `ruby-script-ai.replit.app` [S150](../sources/S150-icm-ruby-script-runner-replit-summary.md).
 

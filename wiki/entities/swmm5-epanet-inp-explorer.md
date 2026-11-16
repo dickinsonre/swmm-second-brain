@@ -4,7 +4,7 @@ type: entity
 updated: 2026-11-15
 sources: [S105, S126, S132, S133]
 tags: [apps, replit, swmm5, epanet, inp-files, reference]
-reviewed: no
+reviewed: 11/16/2026
 ---
 Bob's Replit app SWMM5 & EPANET INP Explorer: a reference to the SWMM and EPANET input-file formats: searchable section references with field definitions and examples, guided lessons, sample input files, a section builder and a paste-in parser. Version 1.0.0, at `swmm5epanetinpviewer.com` [S132](../sources/S132-swmm5-epanet-inp-explorer-replit-summary.md).
 

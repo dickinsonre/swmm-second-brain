@@ -4,7 +4,7 @@ type: entity
 updated: 2026-11-15
 sources: [S112]
 tags: [apps, replit, climate, not-swmm]
-reviewed: no
+reviewed: 11/16/2026
 ---
 Bob's Replit app City Temperature Explorer: an app that compares monthly city temperatures across decades, an urban place with a rural one, and sample cities against preferred summer and winter ranges. It is not about SWMM. Version 1.0.0, at `temp-monitor-1.replit.app` [S112](../sources/S112-city-temperature-explorer-replit-summary.md).
 

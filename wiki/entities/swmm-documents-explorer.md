@@ -4,7 +4,7 @@ type: entity
 updated: 2026-11-15
 sources: [S60, S137]
 tags: [apps, replit, documentation, swmm-history]
-reviewed: no
+reviewed: 11/16/2026
 ---
 Bob's Replit app SWMM Documents Explorer: a guide to the SWMM documentation archive, with eras, a timeline, explanatory pages on SWMM processes and a filtered list of files; it runs no simulation. Version 1.0.0, at `swmm-documents-explorer.replit.app` [S137](../sources/S137-swmm-documents-explorer-replit-summary.md).
 

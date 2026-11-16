@@ -4,7 +4,7 @@ type: entity
 updated: 2026-11-15
 sources: [S101, S102]
 tags: [apps, replit, swmm5, manuals, search, ai-agents]
-reviewed: no
+reviewed: 11/16/2026
 ---
 Bob's Replit app SWMM5 Manual Search: an app that searches the SWMM manual, shows matching sections, diagrams and calculators, checks and runs `.inp` files, and answers questions with an AI assistant. Version 5.2, at `swmm-manual-search-robertdickinson.replit.app` [S101](../sources/S101-swmm5-manual-search-replit-summary.md).
 

@@ -4,7 +4,7 @@ type: entity
 updated: 2026-11-15
 sources: [S107, S127]
 tags: [apps, replit, icm, release-history, ai]
-reviewed: no
+reviewed: 11/16/2026
 ---
 Bob's Replit app ICM InfoWorks: an app for browsing the release history of Autodesk InfoWorks ICM: a timeline, search, filters, version comparison, learning paths, diagrams and AI answers that cite features. Version 1.0.0, at `icm-new-view-robertdickinson.replit.app` [S127](../sources/S127-icm-infoworks-release-history-replit-summary.md).
 

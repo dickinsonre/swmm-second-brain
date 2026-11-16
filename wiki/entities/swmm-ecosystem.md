@@ -4,7 +4,7 @@ type: entity
 updated: 2026-11-15
 sources: [S126, S132]
 tags: [apps, replit, swmm-history, reference]
-reviewed: no
+reviewed: 11/16/2026
 ---
 Bob's Replit app SWMM Ecosystem: a reference app on the history of SWMM and the software around it: timelines, contributor profiles with editorial grades, catalogs of commercial and open-source programs, comparisons, a glossary and a chat assistant. Version 1.0.0, at `swmm-history-robertdickinson.replit.app` [S126](../sources/S126-swmm-ecosystem-replit-summary.md).
 

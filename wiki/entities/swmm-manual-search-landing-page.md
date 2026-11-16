@@ -4,7 +4,7 @@ type: entity
 updated: 2026-11-15
 sources: [S101, S102]
 tags: [apps, replit, manuals, search]
-reviewed: no
+reviewed: 11/16/2026
 ---
 Bob's Replit app SWMM Manual Search: a promotional landing page for a separate manual-search site; it does no searching itself. Version 1.0.0, at `video-search.replit.app` [S102](../sources/S102-swmm-manual-search-landing-page-replit-summary.md).
 

@@ -4,7 +4,7 @@ type: entity
 updated: 2026-11-15
 sources: [S145, S150]
 tags: [apps, replit, icm, ruby, ai-agents]
-reviewed: no
+reviewed: 11/16/2026
 ---
 Bob's Replit app ICM Ruby to Nano Banana Prompt: an app that reads ICM Ruby scripts and SWMM5 input files, draws a workflow from the Ruby methods, counts sections and code patterns, and asks Gemini to explain the code; it runs no engine and does not execute Ruby. Version 1.0.0, at `swmm5toicmswmmworkflow.com` [S145](../sources/S145-icm-ruby-nano-banana-prompt-replit-summary.md).
 

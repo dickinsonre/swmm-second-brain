@@ -4,7 +4,7 @@ type: entity
 updated: 2026-11-15
 sources: [S99]
 tags: [apps, replit, swmm5, wasm, teaching]
-reviewed: no
+reviewed: 11/16/2026
 ---
 Bob's Replit app SWMM5 Lego Model: an app in which the user paints surfaces, nodes and links on a grid, picks a storm, and runs the layout either in a simplified JavaScript simulation or in EPA SWMM5 compiled to WebAssembly. Version 0.0.0, at `swmm-lego-model.replit.app` [S99](../sources/S99-swmm5-lego-model-replit-summary.md).
 

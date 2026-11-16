@@ -4,7 +4,7 @@ type: entity
 updated: 2026-11-15
 sources: [S103, S146]
 tags: [apps, replit, infosewer, infoswmm, legacy, icm, migration]
-reviewed: no
+reviewed: 11/16/2026
 ---
 Bob's Replit app InfoSewer and InfoSWMM Legacy Model Reader: an app that reads InfoSWMM `.ISDB` and InfoSewer `.IEDB` model files, turns their DBF tables into a network model, and prepares SWMM5 and ICM exports. Version 1.0.0, at `data-importer-robertdickinson.replit.app` [S103](../sources/S103-legacy-model-reader-replit-summary.md).
 

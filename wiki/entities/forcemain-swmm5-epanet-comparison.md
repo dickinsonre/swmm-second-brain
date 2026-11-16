@@ -4,7 +4,7 @@ type: entity
 updated: 2026-11-15
 sources: [S115, S120]
 tags: [apps, replit, swmm5, epanet, force-mains, pumps]
-reviewed: no
+reviewed: 11/16/2026
 ---
 Bob's Replit app ForceMain SWMM5 EPANET Comparison: a Streamlit app for designing and checking force mains: friction-loss calculators, a network analyzer, writers of SWMM5 and EPANET input files, and runs of both engines on paired generated models. Version 1.0, at `forcemainswmm5epanetcomparison.com` [S120](../sources/S120-forcemain-swmm5-epanet-comparison-replit-summary.md).
 

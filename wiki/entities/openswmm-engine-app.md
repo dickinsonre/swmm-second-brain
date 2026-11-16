@@ -4,7 +4,7 @@ type: entity
 updated: 2026-11-15
 sources: [S59, S148, S151, S153, S154]
 tags: [apps, replit, openswmm, swmm6, wasm, licensing]
-reviewed: no
+reviewed: 11/16/2026
 ---
 Bob's Replit app OpenSWMM Engine: a browser app that introduces the OpenSWMM project, documents it and runs `.inp` models in the legacy SWMM engine of HydroCouple/OpenSWMMCore compiled to WebAssembly. Version 6.0.0-alpha.2, at `open-swmm-core.replit.app` [S153](../sources/S153-openswmm-engine-app-alpha2-replit-summary.md). It replaced version 6.0.0-alpha.1 [S148](../sources/S148-openswmm-engine-app-replit-summary.md) on 15 November 2026.
 

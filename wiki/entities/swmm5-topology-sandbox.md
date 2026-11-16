@@ -4,7 +4,7 @@ type: entity
 updated: 2026-11-15
 sources: [S78, S106, S136]
 tags: [apps, replit, swmm5, generators, teaching]
-reviewed: no
+reviewed: 11/16/2026
 ---
 Bob's Replit app SWMM5 Topology Sandbox: an educational app that generates a drainage network from a chosen pattern, draws it, shows estimated hydrographs and exports a SWMM5-format INP file. Version 1.0.0, at `fractal-swmm-gen--robertdickinson.replit.app` [S106](../sources/S106-swmm5-topology-sandbox-replit-summary.md).
 

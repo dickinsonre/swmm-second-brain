@@ -4,7 +4,7 @@ type: entity
 updated: 2026-11-16
 sources: [S157]
 tags: [apps, swmm5, lstm, modpods, surrogates, calibration, wasm, netlify]
-reviewed: no
+reviewed: 11/16/2026
 ---
 Bob's app that runs EPA SWMM 5.2.4 in the page as WebAssembly and asks two questions: can an LSTM read the rainfall and runoff of a SWMM model, and can it then calibrate one. Version 2.0, 18 October 2026, on Netlify at lstm-swmm5-amin-talei.netlify.app; the page saves itself as `swmm5-lstm-calibration.html` [S157](../sources/S157-lstm-swmm5-summary.md).
 

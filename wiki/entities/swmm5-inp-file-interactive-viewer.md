@@ -4,7 +4,7 @@ type: entity
 updated: 2026-11-15
 sources: [S105, S132, S133]
 tags: [apps, replit, swmm5, inp-files, statistics]
-reviewed: no
+reviewed: 11/16/2026
 ---
 Bob's Replit app SWMM5 .inp File Interactive Viewer: a Streamlit app that takes EPA SWMM5 input text, shows each section as a data grid and gives descriptive statistics and charts of the columns. Version 0.1.0, at `swmm5filestats.com` [S133](../sources/S133-swmm5-inp-file-interactive-viewer-replit-summary.md).
 

@@ -4,7 +4,7 @@ type: entity
 updated: 2026-11-15
 sources: [S113]
 tags: [apps, replit, flood-exposure, not-swmm]
-reviewed: no
+reviewed: 11/16/2026
 ---
 Bob's Replit app GeoAI Flood Impact: a decision-support app that presents stored flood-exposure information for communities and infrastructure. It runs no flood model and is not about SWMM. Version 2.4.1_b, at `spatial-impact-insight.replit.app` [S113](../sources/S113-geoai-flood-impact-replit-summary.md).
 

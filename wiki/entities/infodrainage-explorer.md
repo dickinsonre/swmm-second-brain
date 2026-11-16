@@ -4,7 +4,7 @@ type: entity
 updated: 2026-11-15
 sources: [S110]
 tags: [apps, replit, infodrainage, autodesk, teaching]
-reviewed: no
+reviewed: 11/16/2026
 ---
 Bob's Replit app InfoDrainage Explorer: a personal reference and learning tool about Autodesk InfoDrainage: a release timeline, a feature comparison, a quiz, a documentation index and a facts tab. Version 1.0.0, at `bob-swmm-info.replit.app` [S110](../sources/S110-infodrainage-explorer-replit-summary.md).
 

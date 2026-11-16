@@ -4,7 +4,7 @@ type: entity
 updated: 2026-11-15
 sources: [S97]
 tags: [apps, replit, swmm5, model-library, pyswmm]
-reviewed: no
+reviewed: 11/16/2026
 ---
 Bob's Replit app SWMM5 Network Miner: an app for organizing, searching, inspecting, comparing and running a library of SWMM model files. Version 1.0.0, at `swmm-filebase--robertdickinson.replit.app` [S97](../sources/S97-swmm5-network-miner-replit-summary.md).
 

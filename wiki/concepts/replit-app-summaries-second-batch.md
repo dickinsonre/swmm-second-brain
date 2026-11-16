@@ -4,7 +4,7 @@ type: concept
 updated: 2026-11-15
 sources: [S114, S115, S116, S117, S118, S119, S120, S121, S122, S123, S124, S125, S126, S127, S128, S129, S130, S131, S132, S133, S136]
 tags: [apps, replit, verification, ai-agents]
-reviewed: no
+reviewed: 11/16/2026
 ---
 Seventeen more of Bob's Replit apps got a technical summary from Replit Agent on 15 November 2026, after the eighteen on [Replit apps and the summaries Replit Agent wrote](replit-app-summaries.md). They were ingested the same day as [S114](../sources/S114-swmm5-microgpt-replit-summary.md) to [S130](../sources/S130-pyswmm-explorer-replit-summary.md). Every one ends by saying that Replit Agent wrote it and that Bob has not yet reviewed it (Q74).
 

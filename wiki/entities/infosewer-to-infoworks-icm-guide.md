@@ -4,7 +4,7 @@ type: entity
 updated: 2026-11-15
 sources: [S103, S146]
 tags: [apps, replit, infosewer, icm, migration]
-reviewed: no
+reviewed: 11/16/2026
 ---
 Bob's Replit app InfoSewer to InfoWorks ICM: a guide to moving InfoSewer model data into InfoWorks ICM, pointing to a Ruby import tool as the preferred route and a manual ODIC workflow as the alternative, with browser tools to check IDs and CSV headers and to compose SQL; it converts nothing itself. Version 1.0.0, at `infosewericminfoworksimport.com` [S146](../sources/S146-infosewer-to-infoworks-icm-replit-summary.md).
 

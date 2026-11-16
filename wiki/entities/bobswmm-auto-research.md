@@ -4,7 +4,7 @@ type: entity
 updated: 2026-11-15
 sources: [S124]
 tags: [apps, replit, swmm5, ai, calculators]
-reviewed: no
+reviewed: 11/16/2026
 ---
 Bob's Replit app bobSWMM Auto Research: an app that answers SWMM modeling questions with AI-written reports and chat, and adds browser calculators and inspectors for `.inp` and `.rpt` files. Version 0.0.0, at `bob-swmm-auto-research.replit.app` [S124](../sources/S124-bobswmm-auto-research-replit-summary.md).
 

@@ -4,7 +4,7 @@ type: entity
 updated: 2026-11-15
 sources: [S104]
 tags: [apps, replit, xpswmm, gis, migration]
-reviewed: no
+reviewed: 11/16/2026
 ---
 Bob's Replit app XPX to Shapefile Converter: a Flask app that reads an XPSWMM XPX file and writes its nodes, links and polygons as ESRI Shapefiles in a ZIP. Version 0.1.0, at `xps-to-shape--robertdickinson.replit.app` [S104](../sources/S104-xpx-to-shapefile-replit-summary.md).
 

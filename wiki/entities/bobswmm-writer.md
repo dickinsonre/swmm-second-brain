@@ -4,7 +4,7 @@ type: entity
 updated: 2026-11-15
 sources: [S135, S141]
 tags: [apps, replit, writing, ai-agents]
-reviewed: no
+reviewed: 11/16/2026
 ---
 Bob's Replit app BobSWMM Writer: an app that turns technical notes, transcripts and recordings into posts and articles by calling Anthropic Claude, with audio transcribed by Google Gemini; it runs no water-management simulation. Version 2.1.0, at `snagit-video-article--robertdickinson.replit.app` [S141](../sources/S141-bobswmm-writer-replit-summary.md).
 

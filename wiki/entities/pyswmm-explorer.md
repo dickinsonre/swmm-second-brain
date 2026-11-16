@@ -4,7 +4,7 @@ type: entity
 updated: 2026-11-15
 sources: [S130]
 tags: [apps, replit, pyswmm, reference]
-reviewed: no
+reviewed: 11/16/2026
 ---
 Bob's Replit app PySWMM Explorer: a reference and learning app for PySWMM: API module notes, a phrasebook, cookbook examples, ecosystem references and a repository outline. Version 1.0.0, at `pyswmm-explorer.replit.app` [S130](../sources/S130-pyswmm-explorer-replit-summary.md).
 

@@ -4,7 +4,7 @@ type: entity
 updated: 2026-11-15
 sources: [S105, S132, S133]
 tags: [apps, replit, swmm5, inp-format]
-reviewed: no
+reviewed: 11/16/2026
 ---
 Bob's Replit app SWMM5 .inp File Viewer (ala InfoSWMM): a Streamlit app that reads a SWMM5 `.inp` or `.txt` file and shows each section as a table, with row counts and column statistics, without running a simulation. Version 0.1.0, at `swmm-5-inp-reader-robertdickinson.replit.app` [S105](../sources/S105-swmm5-inp-file-viewer-replit-summary.md).
 

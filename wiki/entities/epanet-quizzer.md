@@ -4,7 +4,7 @@ type: entity
 updated: 2026-11-15
 sources: [S138, S149]
 tags: [apps, replit, epanet, education, quiz]
-reviewed: no
+reviewed: 11/16/2026
 ---
 Bob's Replit app EPANET Quizzer: a quiz app of multiple-choice questions on hydraulic modeling and water distribution in four categories, with timed and practice modes, worked explanations and a topic breakdown; it does not run EPANET. Version 1.0.0, at `epanetquizzer.com` [S149](../sources/S149-epanet-quizzer-replit-summary.md).
 

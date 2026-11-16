@@ -4,7 +4,7 @@ type: entity
 updated: 2026-11-15
 sources: [S138, S140]
 tags: [apps, replit, swmm5, education, quiz]
-reviewed: no
+reviewed: 11/16/2026
 ---
 Bob's Replit app SWMM5Wiki: an educational guide to SWMM (hydrology, hydraulics, history, the conceptual model and LID controls) with a glossary and a separate game page of modeling challenges; it does not run a simulation. Version 1.0.0, at `gatorbeaverswmm.com` [S140](../sources/S140-swmm5wiki-replit-summary.md).
 

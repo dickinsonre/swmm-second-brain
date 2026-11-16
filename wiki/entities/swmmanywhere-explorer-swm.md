@@ -4,7 +4,7 @@ type: entity
 updated: 2026-11-15
 sources: [S122, S147]
 tags: [apps, replit, swmmanywhere, model-generation, wasm]
-reviewed: no
+reviewed: 11/16/2026
 ---
 Bob's Replit app SWMManywhere Explorer (swm-explorer): an app that explains the SWMManywhere workflow, sends a bounding box to a Python backend that runs SWMManywhere 0.1.17 to generate an urban drainage model, and runs `.inp` files in a SWMM5 engine compiled to WebAssembly in the browser. Version 1.0.0, at `swm-explorer.replit.app` [S147](../sources/S147-swmmanywhere-explorer-swm-replit-summary.md).
 

@@ -4,7 +4,7 @@ type: entity
 updated: 2026-11-15
 sources: [S116]
 tags: [apps, replit, swmm5, source-code, ai]
-reviewed: no
+reviewed: 11/16/2026
 ---
 Bob's Replit app SWMM5 Explorer: an app for studying the SWMM source code: a code browser, preset Sankey diagrams of module relationships, an input-file form, an engine page and AI explanations of selected source text. Version 1.0.0, at `swmm-explorer--robertdickinson.replit.app` [S116](../sources/S116-swmm5-explorer-replit-summary.md).
 

@@ -4,7 +4,7 @@ type: entity
 updated: 2026-11-15
 sources: [S138, S140, S149]
 tags: [apps, replit, swmm5, education, quiz]
-reviewed: no
+reviewed: 11/16/2026
 ---
 Bob's Replit app SWMM5 Quizzer: a quiz app of multiple-choice questions about EPA SWMM, with practice and timed modes, explanations, topic diagrams and a Simulation Quiz on stored network scenarios; it does not run the EPA SWMM engine. Version 1.0.0, at `swmm5quiz.com` and `quiz-master-robertdickinson.replit.app` [S138](../sources/S138-swmm5-quizzer-replit-summary.md).
 

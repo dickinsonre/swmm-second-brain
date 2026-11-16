@@ -4,7 +4,7 @@ type: entity
 updated: 2026-11-15
 sources: [S118, S129]
 tags: [apps, replit, water-history, reference]
-reviewed: no
+reviewed: 11/16/2026
 ---
 Bob's Replit app Historical Water Inventions: an educational app on the history of water engineering: maps and timelines by civilization and site, invention pages, quizzes, calculators and a chatbot. Version 1.0.0, at `historical-mystery-robertdickinson.replit.app` [S129](../sources/S129-historical-water-inventions-replit-summary.md).
 

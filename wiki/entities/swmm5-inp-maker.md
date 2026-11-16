@@ -4,7 +4,7 @@ type: entity
 updated: 2026-11-15
 sources: [S97, S98]
 tags: [apps, replit, swmm5, generators, test-models]
-reviewed: no
+reviewed: 11/16/2026
 ---
 Bob's Replit app SWMM5 INP MAKER: an app that generates SWMM5 `.inp` model files from network, terrain, hydrology and unit settings, and can validate, transform, discretize and run them. Version 1.0.0, at `swmm-inp-maker.replit.app` [S98](../sources/S98-swmm5-inp-maker-replit-summary.md).
 

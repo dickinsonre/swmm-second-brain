@@ -4,7 +4,7 @@ type: entity
 updated: 2026-11-15
 sources: [S47, S54, S119]
 tags: [apps, replit, swmm5, swmm6, translation, engines, verification]
-reviewed: no
+reviewed: 11/16/2026
 ---
 Bob's Replit app SWMM5 Rosetta Stone: an app that shows SWMM and EPANET algorithm examples side by side in many programming languages and runs uploaded SWMM models through labelled numerical engines. Version 1.0.0, at `code-rosetta-stone.replit.app` [S119](../sources/S119-code-rosetta-stone-replit-summary.md).
 

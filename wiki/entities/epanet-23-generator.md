@@ -4,7 +4,7 @@ type: entity
 updated: 2026-11-15
 sources: [S128]
 tags: [apps, replit, epanet, swmm5, model-generation, wasm]
-reviewed: no
+reviewed: 11/16/2026
 ---
 Bob's Replit app EPANET 2.3 Generator: an app that builds synthetic pressurized-water and stormwater networks from settings and a seed, runs them in EPANET and SWMM in the browser, and exports the model files. Version 4.6, at `epanet-swmm-5-generate.replit.app` [S128](../sources/S128-epanet-23-generator-replit-summary.md).
 

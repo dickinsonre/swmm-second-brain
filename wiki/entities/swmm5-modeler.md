@@ -4,7 +4,7 @@ type: entity
 updated: 2026-11-15
 sources: [S123]
 tags: [apps, replit, swmm5, wasm, engines, model-generation]
-reviewed: no
+reviewed: 11/16/2026
 ---
 Bob's Replit app SWMM5 Modeler: an app that generates, scales up or imports a drainage network, runs it in EPA SWMM5 compiled to WebAssembly, and reports results, errors, proposed fixes and a model grade, with six rule-based "agents" commenting on it. Version 0.0.0, at `mirofish-swmm.replit.app` [S123](../sources/S123-swmm5-modeler-replit-summary.md).
 
