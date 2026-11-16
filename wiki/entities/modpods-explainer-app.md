@@ -4,7 +4,7 @@ type: entity
 updated: 2026-11-16
 sources: [S155]
 tags: [apps, modpods, surrogates, rdii, netlify]
-reviewed: no
+reviewed: 11/16/2026
 ---
 Bob's app that explains [modpods (Dantzer's method)](modpods.md) to a SWMM modeler as "RTK with the triangle replaced by a fitted gamma". It is on Netlify at modmods-explained.netlify.app (the site name spells it "modmods"), deployed 21 August 2026, with no version number on the page [S155](../sources/S155-modpods-explainer-summary.md).
 
