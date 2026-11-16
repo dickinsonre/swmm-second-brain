@@ -31,11 +31,11 @@ To add an idea of your own, copy `raw/notes/_TEMPLATE.md` to a new file in `raw/
 
 To read the wiki yourself, open the folder in Obsidian (the graph view shows hubs and orphans) or browse it on GitHub; every link is a plain relative link and works in both.
 
-## State on 15 November 2026
+## State on 16 November 2026
 
 - 165 of 410 raw files ingested, one of them (the EPA hydraulics manual) in part. The queue is in `index.md`.
-- 76 open questions in `wiki/open-questions.md`, and 7 settled. Several are contradictions between Bob's own articles.
-- 0 pages say `reviewed: no` and 0 pages carry `changed_after_review:`. Bob reviewed every page on 11/16/2026.
+- 82 open questions in `wiki/open-questions.md`, and 7 settled. Several are contradictions between Bob's own articles.
+- Bob reviewed every page on 11/16/2026. Since then, 18 new pages say `reviewed: no` (the graph theory pages and the seven ICM notes and their pages) and 4 carry `changed_after_review:` (InfoWorks ICM, SWMM 5 versus ICM InfoWorks, the open questions and the overview).
 
 ## What is not here
 
