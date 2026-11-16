@@ -337,3 +337,8 @@ Counts: 152 of 396 raw files ingested, 240 queued; 305 wiki pages; 76 open quest
 ## [2026-11-15] setup | Main fast-forwarded to S152
 
 Main now holds S145 to S152. `replit-summaries-7` is merged and can go.
+
+## [2026-11-15] raw | OpenSWMM Engine summary, version 6.0.0-alpha.2
+
+Bob sent a link for open-swmm-core-v6.0.0-alpha.2.md in the Replit project Open-SWMM-Core, written after he had the app's license statement fixed. Read out of the Replit editor and checked against a SHA-256 computed there; it matches. The alpha.1 file (S148) is unchanged beside it. The new file pins the engine to HydroCouple/OpenSWMMCore commit 87664bf518104e618f0537340b9500a1fdfe797c, gives the engine license as Apache-2.0 for OpenSWMM contributions with the USEPA portions public domain, and says the app has not yet been republished. Queued, not ingested, on the branch `replit-summaries-8`; lint warns that a newer summary is waiting, as expected until it is ingested.
+Counts: 152 of 397 raw files ingested, 241 queued.
