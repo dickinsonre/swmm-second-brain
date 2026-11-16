@@ -1,10 +1,11 @@
 ---
 title: InfoWorks ICM
 type: entity
-updated: 2026-11-15
-sources: [S03, S13, S14, S17, S20, S65, S125, S127]
+updated: 2026-11-16
+sources: [S03, S13, S14, S17, S20, S65, S125, S127, S159, S160, S162, S163, S164]
 tags: [icm, engine, comparison]
 reviewed: 11/16/2026
+changed_after_review: "2026-11-16 (S159 to S165 ingest): one paragraph added at the end, headed Added 16 November 2026, on scripting, tables, result fields and conversion (S159, S160, S162, S163, S164)"
 ---
 The commercial integrated catchment model developed by Wallingford Software in England and now maintained by Autodesk [S20](../sources/S20-li-edition-54-two-solvers.md).
 
@@ -22,3 +23,5 @@ Full comparison: [SWMM 5 versus ICM InfoWorks](../concepts/swmm5-versus-icm-info
 **Not in the sources yet.** Ruby and SQL scripting, the results file, RDII and ground infiltration, sediment, the 12 runoff surfaces. Of the 213 queued LinkedIn articles, 139 name ICM or InfoWorks in the title and 70 name Ruby.
 
 **Added 15 November 2026: two apps.** [ICM InfoWorks release history (app)](icm-release-history-app.md) holds 50 ICM release records and 822 feature records, from release 1.5 to 2027.2, in a file inside the project and not a live feed; none of it was checked against Autodesk's own sources [S127](../sources/S127-icm-infoworks-release-history-replit-summary.md). [Kinematic Wave Router (app)](kinematic-wave-router.md) has a module that imports from and exports to ICM through its Ruby API, which was not run [S125](../sources/S125-kinematic-wave-router-replit-summary.md). Replit Agent wrote both summaries and Bob has read neither (Q74).
+
+**Added 16 November 2026: scripting and data.** Seven notes Bob supplied, author not stated and nothing in them run (Q89), give the scripting side. Autodesk documents Ruby 3.4.6 for UI and Exchange scripting from ICM 2027.0, replacing Ruby 2.4.0 [S160](../sources/S160-note-icm-ruby-version-compatibility.md), and ICM Exchange for Ultimate licenses [S159](../sources/S159-note-icm-ruby-ui-vs-exchange.md). The two network types keep their objects in different tables, `hw_node` and `sw_node` for nodes [S162](../sources/S162-note-icm-network-tables-and-fields.md), and report node level as `DEPNOD` (InfoWorks) and `HEAD` (ICM SWMM) [S163](../sources/S163-note-icm-results-field-crosswalk.md). Autodesk's 2027 conversion pages list `.inp` import support through EPA SWMM 5.1.015 [S164](../sources/S164-note-swmm-inp-conversion-qa.md). See [ICM Ruby: UI scripts and Exchange scripts](../concepts/icm-ruby-ui-and-exchange.md), [ICM network tables and result fields](../concepts/icm-tables-and-result-fields.md) and [Checking a SWMM5 model's conversion into ICM](../concepts/swmm5-to-icm-conversion-checks.md).

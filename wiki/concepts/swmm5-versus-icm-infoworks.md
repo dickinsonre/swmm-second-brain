@@ -1,10 +1,11 @@
 ---
 title: SWMM 5 versus ICM InfoWorks
 type: concept
-updated: 2026-11-15
-sources: [S13, S14, S17, S20, S80]
+updated: 2026-11-16
+sources: [S13, S14, S17, S20, S80, S165]
 tags: [comparison, swmm5, icm]
 reviewed: 2026-11-15
+changed_after_review: "2026-11-16 (S159 to S165 ingest): one paragraph added at the end, headed Added 16 November 2026, on the two-pipe benchmark design (S165)"
 ---
 Where the two engines differ, from the four comparison sources ingested so far. ICM also contains a SWMM network type ("ICM SWMM") that runs the SWMM5 dynamic wave [S17](../sources/S17-li-routing-options.md); this page compares SWMM 5 with the InfoWorks engine.
 
@@ -33,3 +34,5 @@ Where the two engines differ, from the four comparison sources ingested so far. 
 **Added 15 November 2026.** One app draws an "ICM rule" line beside SWMM 5 without running ICM: the steady profile that ICM's documented settings imply (a free outfall at the lesser of normal and critical depth, inertia phased out between a Lower Froude number of 0.8 and an Upper of 1.0, one water level per node). Its essay calls the line "a prediction waiting for a test in ICM", and no person has compared it with an ICM run [S80](../sources/S80-control-section-lab-summary.md). See [Control Section Lab (app)](../entities/control-section-lab.md). Like the comparison numbers questioned in Q16, it is not a run of ICM.
 
 See [InfoWorks ICM](../entities/infoworks-icm.md), [EPA SWMM 5](../entities/swmm-5.md), [Dynamic wave routing](dynamic-wave-routing.md), [Preissmann slot and surcharge](preissmann-slot-and-surcharge.md).
+
+**Added 16 November 2026.** A test design to separate engine differences from conversion differences: one two-pipe model run first in EPA SWMM 5.2.4 and the Ruby translation, then in ICM SWMM, then in ICM InfoWorks, with the acceptable differences agreed before running [S165](../sources/S165-note-epa-swmm-ruby-icm-benchmark.md). It has not been run (Q16, Q89). See [Checking a SWMM5 model's conversion into ICM](swmm5-to-icm-conversion-checks.md).

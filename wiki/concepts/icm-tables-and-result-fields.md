@@ -1,0 +1,36 @@
+---
+title: ICM network tables and result fields
+type: concept
+updated: 2026-11-16
+sources: [S162, S163, S17]
+tags: [icm, ruby, data-model, results, comparison]
+reviewed: no
+---
+InfoWorks ICM keeps its two network types in different tables and reports their results under different names. Two notes Bob supplied on 16 November 2026 map the first few. Their author is not stated, their Autodesk facts are reported from Autodesk's help and not checked here, and nothing in them has been run (Q89).
+
+**Two network types.** An InfoWorks network, solved by ICM's own St. Venant scheme, and an ICM SWMM network, which runs the SWMM5 dynamic wave [S17](../sources/S17-li-routing-options.md). See [InfoWorks ICM](../entities/infoworks-icm.md).
+
+**Model data tables** [S162](../sources/S162-note-icm-network-tables-and-fields.md)
+
+| Object | InfoWorks network | ICM SWMM network |
+|---|---|---|
+| Node | `hw_node` | `sw_node` |
+| Conduit | `hw_conduit` | `sw_conduit` |
+| Subcatchment | `hw_subcatchment` | `sw_subcatchment` |
+
+The note's rule for a Ruby exporter: find the network type first, then the exact database field in that table, from Autodesk's Network Data Fields index. Keep the interface label beside the database field so an exported column can be traced to GeoPlan. For each exported value keep the network type, table, object ID, database field and unit, and record a field missing from one network type as unavailable [S162](../sources/S162-note-icm-network-tables-and-fields.md).
+
+**Node results** [S163](../sources/S163-note-icm-results-field-crosswalk.md)
+
+| Quantity | InfoWorks result | ICM SWMM result | How to compare |
+|---|---|---|---|
+| Water level | `DEPNOD`, level at the current timestep | `HEAD`, hydraulic head elevation | on a common vertical datum |
+| Depth above the inlet | computed from level and the inlet elevation | `DEPTH` | check both use the same inlet elevation |
+
+Worked example from the note: an inlet at 106.00 ft and a level of 109.25 ft give a depth of 3.25 ft [S163](../sources/S163-note-icm-results-field-crosswalk.md).
+
+**Before comparing hydrographs** [S163](../sources/S163-note-icm-results-field-crosswalk.md): log network type, scenario, simulation ID, object ID, result attribute, timestamp and units; confirm the field exists in the loaded simulation; align the series by time; and record the flow sign convention before going on to link flows or runoff.
+
+**Related.** [ICM Ruby: UI scripts and Exchange scripts](icm-ruby-ui-and-exchange.md); [SWMM 5 versus ICM InfoWorks](swmm5-versus-icm-infoworks.md); [Checking a SWMM5 model's conversion into ICM](swmm5-to-icm-conversion-checks.md).
+
+**Not in the sources yet.** Link and subcatchment result fields, and the rest of the tables. The note points to Bob's queued article on the IWR results file as the next source [S163](../sources/S163-note-icm-results-field-crosswalk.md).

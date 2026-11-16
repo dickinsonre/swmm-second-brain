@@ -2,12 +2,12 @@
 title: Overview: what this wiki holds so far
 type: synthesis
 updated: 2026-11-16
-sources: [S01, S04, S05, S06, S10, S19, S20, S22, S23, S24, S29, S35, S41, S43, S54, S55, S56, S57, S58, S59, S60, S61, S62, S63, S64, S65, S66, S67, S68, S69, S70, S71, S72, S74, S75, S76, S79, S80, S81, S82, S84, S85, S86, S90, S91, S94, S96, S101, S103, S117, S118, S119, S139, S142, S148, S150, S152, S155, S156, S157, S158]
+sources: [S01, S04, S05, S06, S10, S19, S20, S22, S23, S24, S29, S35, S41, S43, S54, S55, S56, S57, S58, S59, S60, S61, S62, S63, S64, S65, S66, S67, S68, S69, S70, S71, S72, S74, S75, S76, S79, S80, S81, S82, S84, S85, S86, S90, S91, S94, S96, S101, S103, S117, S118, S119, S139, S142, S148, S150, S152, S155, S156, S157, S158, S164, S165]
 tags: [overview]
 reviewed: 11/16/2026
-changed_after_review: "2026-11-16 (S158 ingest): one bullet added under Inside SWMM 5 for the graph theory pages; the counts changed to 158 of 410 raw files and eighty-one open items"
+changed_after_review: "2026-11-16 (S158 ingest): one bullet added under Inside SWMM 5 for the graph theory pages; the counts changed to 158 of 410 raw files and eighty-one open items; 2026-11-16 (S159 to S165 ingest): one bullet added under SWMM 5 and ICM InfoWorks; the counts changed to 165 of 410 raw files and eighty-two open items"
 ---
-The state of the wiki after seventeen more Replit app summaries were ingested on 15 November 2026, arranged by the six topics of [swmm5.org](entities/swmm5-org.md) [S06](sources/S06-swmm5org-topics-index.md). One hundred fifty-eight of 410 raw files are ingested, one of them (the EPA hydraulics manual) in part. The wiki is deepest on SWMM's history, the insides of SWMM 5 and the translations of SWMM 5 and SWMM6; thin on ICM; and on SWMM6 it now holds measurements of the two solvers as well as the translations, though not their derivation.
+The state of the wiki after seventeen more Replit app summaries were ingested on 15 November 2026, arranged by the six topics of [swmm5.org](entities/swmm5-org.md) [S06](sources/S06-swmm5org-topics-index.md). One hundred sixty-five of 410 raw files are ingested, one of them (the EPA hydraulics manual) in part. The wiki is deepest on SWMM's history, the insides of SWMM 5 and the translations of SWMM 5 and SWMM6; thin on ICM; and on SWMM6 it now holds measurements of the two solvers as well as the translations, though not their derivation.
 
 ## 1. SWMM history
 - The timeline from 1969 to 2026 is on [SWMM version history, 1969 to 2026](concepts/swmm-version-history.md), with four places where Bob's own articles disagree with each other or with primary documents.
@@ -39,6 +39,7 @@ The state of the wiki after seventeen more Replit app summaries were ingested on
 - Entities: [InfoWorks ICM](entities/infoworks-icm.md), [InfoSWMM and InfoSewer](entities/infoswmm-and-infosewer.md), [SWMM and ICM St. Venant comparison (app)](entities/swmm-icm-st-venant-app.md).
 - One more comparison that runs no ICM: the "ICM rule" line of the [Control Section Lab (app)](entities/control-section-lab.md), which its own essay calls a prediction waiting for a test [S80](sources/S80-control-section-lab-summary.md).
 - This is where the queue is longest: 139 queued LinkedIn articles name ICM or InfoWorks in the title.
+- Added 16 November 2026, from seven ICM notes Bob supplied (author not stated, nothing run; Q89): [ICM Ruby: UI scripts and Exchange scripts](concepts/icm-ruby-ui-and-exchange.md), [ICM network tables and result fields](concepts/icm-tables-and-result-fields.md) and [Checking a SWMM5 model's conversion into ICM](concepts/swmm5-to-icm-conversion-checks.md). The last carries a two-pipe benchmark design that would separate engine differences from conversion differences, the question Q16 asks of this wiki's comparison numbers [S164](sources/S164-note-swmm-inp-conversion-qa.md) [S165](sources/S165-note-epa-swmm-ruby-icm-benchmark.md).
 
 ## 4 and 5. ICM and SWMM6; inside SWMM6
 - [OpenSWMM 6 and HydroCouple](entities/openswmm-6-and-hydrocouple.md) now names the commit every translation starts from (88329d6 on `swmm6_rel`, 6.0.0-alpha.4), the licence and the modules, from the translation READMEs [S29](sources/S29-swmm6-rust-readme.md).
@@ -68,7 +69,7 @@ The state of the wiki after seventeen more Replit app summaries were ingested on
 - Three apps on surrogates of SWMM, ingested 16 November 2026 from summaries Claude wrote from the live Netlify pages (Q84): [modpods, for a SWMM person](entities/modpods-explainer-app.md) and the [Evidence Atlas](entities/arrm-evidence-atlas.md) on [modpods (Dantzer's method)](entities/modpods.md), and [LSTM + SWMM5](entities/lstm-swmm5-app.md). Their shared finding is on [Where a surrogate of SWMM breaks](concepts/surrogates-hidden-state-missing-forcing.md): a model driven by rain alone fails where SWMM carries a hidden state or a forcing the rain does not contain, and fitted to SWMM's own output the method reaches a median NSE of 0.7406 against 0.1358 on real catchments [S155](sources/S155-modpods-explainer-summary.md) [S156](sources/S156-arrm-evidence-atlas-summary.md) [S157](sources/S157-lstm-swmm5-summary.md). Calibrating through an LSTM found a good fit with the wrong parameters: [Calibrating SWMM through a surrogate](concepts/calibrating-through-a-surrogate.md) [S157](sources/S157-lstm-swmm5-summary.md).
 
 ## Three things the first ingest showed
-1. **Bob's published articles contradict each other on dates and credits.** Eighty-one items are open in [Open questions](open-questions.md); three were settled on 14 November by the EPA hydraulics manual, the first primary document ingested. The primary documents (the 1971 listing, EPA's update notes) settle some; others need Bob.
+1. **Bob's published articles contradict each other on dates and credits.** Eighty-two items are open in [Open questions](open-questions.md); three were settled on 14 November by the EPA hydraulics manual, the first primary document ingested. The primary documents (the 1971 listing, EPA's update notes) settle some; others need Bob.
 2. **Much of the article text is AI-written, and the newest articles say so while the older ones do not.** Each source page records how it was written. Claims that rest only on an AI-written passage are flagged.
 3. **The strongest pages rest on the app .md files and the register, not on the articles.** Those sources carry procedures and numbers. The pattern argues for ingesting every app's .md before the remaining articles.
 

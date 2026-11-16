@@ -44,6 +44,9 @@ Reading and trusting results
 - [Verification against printed runs](wiki/concepts/verification-against-printed-runs.md): how the rebuilt 1971 and 1981 engines are scored against old printouts.
 - [The missing specification](wiki/concepts/the-missing-specification.md): four of the ten problems are one: no written, testable statement of what the engine does.
 - [SWMM 5 versus ICM InfoWorks](wiki/concepts/swmm5-versus-icm-infoworks.md): thirteen differences in one table.
+- [ICM Ruby: UI scripts and Exchange scripts](wiki/concepts/icm-ruby-ui-and-exchange.md): the two ways ICM runs Ruby, Ruby 3.4.6 from ICM 2027.0, and an Exchange run from launch to opened results.
+- [ICM network tables and result fields](wiki/concepts/icm-tables-and-result-fields.md): `hw_` and `sw_` tables; `DEPNOD` is level, ICM SWMM has `HEAD` and `DEPTH`.
+- [Checking a SWMM5 model's conversion into ICM](wiki/concepts/swmm5-to-icm-conversion-checks.md): three conversion routes, what to check on each, and a two-pipe benchmark design (not run).
 - [WebAssembly builds against native builds](wiki/concepts/wasm-against-native-builds.md): 59 of 449 models differ in the browser, all traced to the C math library; and ten builds of one engine.
 
 History
@@ -311,6 +314,13 @@ Notes and data
 - [S93](wiki/sources/S93-note-xp-swmm-renamed-xpswmm-1993.md) (2026-11-15): note, XP-SWMM was the original name, changed to XPSWMM in 1993.
 - [S95](wiki/sources/S95-note-punch-card-box-held-2000-cards.md) (2026-11-15): note, a box of punch cards held 2,000 cards.
 - [S158](wiki/sources/S158-danka-graph-theory-for-visual-learners.md) (2026-11-11): reading note, Tivadar Danka, Graph Theory For Visual Learners, The Palindrome; a third-party article digested by Claude.
+- [S159](wiki/sources/S159-note-icm-ruby-ui-vs-exchange.md) (2026-11-16): note, one ICM Ruby query in GeoPlan and in Exchange.
+- [S160](wiki/sources/S160-note-icm-ruby-version-compatibility.md) (2026-11-16): note, ICM 2027.0 moved embedded Ruby from 2.4.0 to 3.4.6; test scripts in the runtime they use.
+- [S161](wiki/sources/S161-note-icm-exchange-run-lifecycle.md) (2026-11-16): note, an Exchange run from launch, job ID and status to opened results.
+- [S162](wiki/sources/S162-note-icm-network-tables-and-fields.md) (2026-11-16): note, `hw_` and `sw_` tables and how to find a field.
+- [S163](wiki/sources/S163-note-icm-results-field-crosswalk.md) (2026-11-16): note, InfoWorks `DEPNOD` against ICM SWMM `HEAD` and `DEPTH`.
+- [S164](wiki/sources/S164-note-swmm-inp-conversion-qa.md) (2026-11-16): note, checks for each route from a SWMM5 `.inp` into ICM.
+- [S165](wiki/sources/S165-note-epa-swmm-ruby-icm-benchmark.md) (2026-11-16): note, a two-pipe benchmark design for EPA SWMM 5.2.4, swmm5-ruby, ICM SWMM and ICM InfoWorks.
 
 The old swmm-brain repository
 - [S55](wiki/sources/S55-swmm-brain-readme.md) (2026-08-22): README: enhancements, apps, scripts, timeline.
@@ -380,7 +390,7 @@ Repository READMEs (SWMM5 translations)
 
 ## Queue
 
-248 raw files are queued: 212 LinkedIn articles and the as-pasted copy of the post of 14 November 2026 (kept because raw files are never deleted; its corrected copy is S94, so it is not to be ingested), 19 manual files in `raw/manuals/` (8 EPA, USGS and FHWA documents not yet started, and 11 SWMM 4.4 documentation files), 4 swmm5.org topic pages, 2 SWMM 1 build notes, 7 ICM notes of Bob's in `raw/notes/` (added 16 November 2026: ICM Ruby in the UI and in Exchange, Ruby version compatibility, network tables and fields, a results field crosswalk, the Exchange run lifecycle, SWMM .inp conversion checks, and a two-pipe EPA, Ruby and ICM benchmark design) and 3 files in `raw/apps/`. One, `swmm-second-brain-v0.1.0.md`, is the summary of the reader app for this wiki, written by Claude when the app was built on 15 November 2026. One, `PyBME-issue-drafts.md`, is not an app summary and was left queued on purpose (Q56). The last, `st-venant-solver-rosetta-stone-v2.6.2.md`, is the newer version of an app already ingested at version 2.4.0 (S75); it was added on 15 November 2026 and bears on Q62. Three more LinkedIn files are byte-identical copies of others and are marked `duplicate`. `raw/MANIFEST.csv` lists them all. Suggested next batches, in order:
+241 raw files are queued: 212 LinkedIn articles and the as-pasted copy of the post of 14 November 2026 (kept because raw files are never deleted; its corrected copy is S94, so it is not to be ingested), 19 manual files in `raw/manuals/` (8 EPA, USGS and FHWA documents not yet started, and 11 SWMM 4.4 documentation files), 4 swmm5.org topic pages, 2 SWMM 1 build notes and 3 files in `raw/apps/`. One, `swmm-second-brain-v0.1.0.md`, is the summary of the reader app for this wiki, written by Claude when the app was built on 15 November 2026. One, `PyBME-issue-drafts.md`, is not an app summary and was left queued on purpose (Q56). The last, `st-venant-solver-rosetta-stone-v2.6.2.md`, is the newer version of an app already ingested at version 2.4.0 (S75); it was added on 15 November 2026 and bears on Q62. Three more LinkedIn files are byte-identical copies of others and are marked `duplicate`. `raw/MANIFEST.csv` lists them all. Suggested next batches, in order:
 
 0. The rest of the EPA hydraulics manual, a chapter at a time (S60: Chapter 5, Chapter 7 and the appendices remain), then the 2006 quality assurance report and the SWMM 5.1 User's Manual. With them, the Rosetta Stone summary at version 2.6.2, which tests the pump rule of Q62. These are the primary documents; ingesting them first lets later articles be checked against them.
 1. The four remaining swmm5.org topic pages and the SWMM 1 build notes (small, and they complete themes 3 to 6).
