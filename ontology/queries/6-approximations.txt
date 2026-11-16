@@ -1,0 +1,5 @@
+# Which methods stand in for which, under what conditions, tested on what, and what backs it?
+method	stands_in_for	condition	tested_on	as_of	verification	source	author	drafted_by	reviewed
+ConstInf2D	SubcatchmentCN	a constant loss rate set by SQL from the CN peak infiltration rate, with simple hyetographs	23 subcatchments whose IDs equal their CN; storms of 0.065, 0.65 and 6.5 in	2023, before CNSWMM on the mesh	run	S177	Robert Dickinson	unknown	no
+GreenAmpt2D	SubcatchmentCN	a constant loss rate set by SQL from the CN peak infiltration rate, with simple hyetographs	23 subcatchments whose IDs equal their CN; storms of 0.065, 0.65 and 6.5 in	2023, before CNSWMM on the mesh	run	S177	Robert Dickinson	unknown	no
+Horton2D	SubcatchmentCN	a constant loss rate set by SQL from the CN peak infiltration rate, with simple hyetographs	23 subcatchments whose IDs equal their CN; storms of 0.065, 0.65 and 6.5 in	2023, before CNSWMM on the mesh	run	S177	Robert Dickinson	unknown	no

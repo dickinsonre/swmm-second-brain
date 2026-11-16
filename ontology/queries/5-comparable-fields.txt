@@ -1,0 +1,8 @@
+# Which fields can I compare across the InfoWorks and ICM SWMM network types, under what conditions, and what evidence supports the comparison?
+# A pair is comparable when a page states a close_match or same_as between them, or when one reports a quantity derived from the quantity the other reports.
+kind	infoworks	icm_swmm	how	condition	verification	source	drafted_by	reviewed
+Data table	hw_conduit	sw_conduit	close match	the fields differ by network type; find each in Autodesk's Network Data Fields index	documented	S162	ChatGPT (OpenAI), from Autodesk Help, per S179	no
+Data table	hw_node	sw_node	close match	the fields differ by network type; find each in Autodesk's Network Data Fields index	documented	S162	ChatGPT (OpenAI), from Autodesk Help, per S179	no
+Data table	hw_subcatchment	sw_subcatchment	close match	the fields differ by network type; find each in Autodesk's Network Data Fields index	documented	S162	ChatGPT (OpenAI), from Autodesk Help, per S179	no
+Result field	DEPNOD	HEAD	close match	on a common vertical datum	pending	S163	ChatGPT (OpenAI), from Autodesk Help, per S179	no
+Result field	DEPNOD	DEPTH	derive depth above inlet from water level	both sides use the same inlet elevation	not stated	S163	ChatGPT (OpenAI), from Autodesk Help, per S179	no

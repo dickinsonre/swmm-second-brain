@@ -66,7 +66,7 @@ When the agent changes a page that Bob has already reviewed, it keeps his `revie
 8. **House style.** Facts in short sentences. No em dashes. No adjectives doing the work of numbers. US customary units. Credit people and projects by name. AI is never an author: source pages name the human author, and `reviewed:` says whether Bob has read the wiki page.
 9. **People.** Entity pages for people hold what the person has published or done in public, professionally. Nothing about health, family, money or private life goes into the wiki, even when a raw source mentions it. Two rulings from Bob (15 November 2026): his age may be given where it is the point of the sentence; the names of his family members never appear, in `wiki/` or in anything the agent adds to `raw/`.
 10. **Length.** A concept or entity page fits on one or two screens. When a page passes about 600 words, split it.
-11. **Relations (draft, optional).** A page may end with a `**Relations**` table that states, as typed relations between term IDs, what the page already says with citations. The vocabulary and the rules are in `ONTOLOGY.md`. Every row cites a source, like any claim. `tools/lint.py` checks the tables.
+11. **Relations (draft, optional).** A page may end with a `**Relations**` table that states, as typed relations between term IDs, what the page already says with citations. The vocabulary and the rules are in `ONTOLOGY.md`. Every row cites a source, like any claim. Conditions, test cases and what backs a claim (`verification: run`, `pending` or `documented`) go on the row as qualifiers, so a query can read them. `tools/lint.py` checks the tables, including what each relation may connect.
 
 ## App summaries and versions (`raw/apps/`)
 

@@ -40,7 +40,7 @@
     "same as"
    ],
    "http://www.w3.org/2000/01/rdf-schema#comment": [
-    "the same thing under another name"
+    "the same thing under another name, with no caveat"
    ],
    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
     {
@@ -57,7 +57,7 @@
     "close match"
    ],
    "http://www.w3.org/2000/01/rdf-schema#comment": [
-    "nearly the same; the note says how they differ"
+    "nearly the same; the condition or note says how they differ"
    ],
    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
     {
@@ -74,7 +74,7 @@
     "approximates"
    ],
    "http://www.w3.org/2000/01/rdf-schema#comment": [
-    "stands in for the object, under the conditions in the note"
+    "stands in for the object, under the conditions given"
    ],
    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
     {
@@ -212,6 +212,74 @@
    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
     {
      "@id": "http://purl.org/dc/terms/subject"
+    }
+   ]
+  },
+  {
+   "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology#condition",
+   "@type": [
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+   ],
+   "http://www.w3.org/2000/01/rdf-schema#label": [
+    "condition"
+   ],
+   "http://www.w3.org/2000/01/rdf-schema#comment": [
+    "the condition under which the statement holds (how a rate was set, a common datum)"
+   ],
+   "http://www.w3.org/2000/01/rdf-schema#domain": [
+    {
+     "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"
+    }
+   ]
+  },
+  {
+   "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology#testedOn",
+   "@type": [
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+   ],
+   "http://www.w3.org/2000/01/rdf-schema#label": [
+    "tested on"
+   ],
+   "http://www.w3.org/2000/01/rdf-schema#comment": [
+    "the models, storms or data it was tested on"
+   ],
+   "http://www.w3.org/2000/01/rdf-schema#domain": [
+    {
+     "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"
+    }
+   ]
+  },
+  {
+   "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology#asOf",
+   "@type": [
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+   ],
+   "http://www.w3.org/2000/01/rdf-schema#label": [
+    "as of"
+   ],
+   "http://www.w3.org/2000/01/rdf-schema#comment": [
+    "the date or release the statement describes"
+   ],
+   "http://www.w3.org/2000/01/rdf-schema#domain": [
+    {
+     "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"
+    }
+   ]
+  },
+  {
+   "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology#verification",
+   "@type": [
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+   ],
+   "http://www.w3.org/2000/01/rdf-schema#label": [
+    "verification"
+   ],
+   "http://www.w3.org/2000/01/rdf-schema#comment": [
+    "what backs it: one of the three values below; one of: run (a source reports a run of the program that shows it), pending (it depends on a run of the program that has not been made), documented (a source reports the program's documentation saying so; not checked against the program)"
+   ],
+   "http://www.w3.org/2000/01/rdf-schema#domain": [
+    {
+     "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"
     }
    ]
   },
@@ -883,6 +951,9 @@
    "https://github.com/dickinsonre/swmm-second-brain/ontology#sourceKind": [
     "linkedin-article"
    ],
+   "https://github.com/dickinsonre/swmm-second-brain/ontology#draftedBy": [
+    "unknown"
+   ],
    "https://github.com/dickinsonre/swmm-second-brain/ontology#reviewed": [
     "2026-11-15"
    ]
@@ -1069,6 +1140,9 @@
    "https://github.com/dickinsonre/swmm-second-brain/ontology#sourceKind": [
     "linkedin-article"
    ],
+   "https://github.com/dickinsonre/swmm-second-brain/ontology#draftedBy": [
+    "unknown"
+   ],
    "https://github.com/dickinsonre/swmm-second-brain/ontology#reviewed": [
     "no"
    ]
@@ -1092,6 +1166,9 @@
    ],
    "https://github.com/dickinsonre/swmm-second-brain/ontology#sourceKind": [
     "linkedin-article"
+   ],
+   "https://github.com/dickinsonre/swmm-second-brain/ontology#draftedBy": [
+    "unknown"
    ],
    "https://github.com/dickinsonre/swmm-second-brain/ontology#reviewed": [
     "no"
@@ -1168,7 +1245,7 @@
      "http://www.w3.org/1999/02/22-rdf-syntax-ns#object": {
       "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/icm/UltimateLicense"
      },
-     "http://www.w3.org/2000/01/rdf-schema#comment": "as Autodesk documents it"
+     "https://github.com/dickinsonre/swmm-second-brain/ontology#verification": "documented"
     },
     {
      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement",
@@ -1245,6 +1322,7 @@
      "http://www.w3.org/1999/02/22-rdf-syntax-ns#object": {
       "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/icm/2027.0"
      },
+     "https://github.com/dickinsonre/swmm-second-brain/ontology#verification": "documented",
      "http://www.w3.org/2000/01/rdf-schema#comment": "for UI and Exchange scripting"
     },
     {
@@ -1258,6 +1336,8 @@
      "http://www.w3.org/1999/02/22-rdf-syntax-ns#object": {
       "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/ruby/2.4.0"
      },
+     "https://github.com/dickinsonre/swmm-second-brain/ontology#asOf": "ICM 2027.0",
+     "https://github.com/dickinsonre/swmm-second-brain/ontology#verification": "documented",
      "http://www.w3.org/2000/01/rdf-schema#comment": "a script that requires a library that changed or is gone fails with LoadError"
     }
    ]
@@ -1304,6 +1384,12 @@
      ]
     },
     {
+     "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/icm/JobTimeout",
+     "@type": [
+      "https://github.com/dickinsonre/swmm-second-brain/ontology#Parameter"
+     ]
+    },
+    {
      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement",
      "http://www.w3.org/1999/02/22-rdf-syntax-ns#subject": {
       "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/icm/WSApplication.wait_for_jobs"
@@ -1314,6 +1400,7 @@
      "http://www.w3.org/1999/02/22-rdf-syntax-ns#object": {
       "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/icm/JobTimeout"
      },
+     "https://github.com/dickinsonre/swmm-second-brain/ontology#verification": "documented",
      "http://www.w3.org/2000/01/rdf-schema#comment": "in milliseconds"
     }
    ]
@@ -1413,7 +1500,9 @@
      "http://www.w3.org/1999/02/22-rdf-syntax-ns#object": {
       "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/icm-swmm/sw_node"
      },
-     "http://www.w3.org/2000/01/rdf-schema#comment": "both hold nodes; the fields differ by network type"
+     "https://github.com/dickinsonre/swmm-second-brain/ontology#condition": "the fields differ by network type; find each in Autodesk's Network Data Fields index",
+     "https://github.com/dickinsonre/swmm-second-brain/ontology#verification": "documented",
+     "http://www.w3.org/2000/01/rdf-schema#comment": "both hold nodes"
     },
     {
      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement",
@@ -1426,7 +1515,9 @@
      "http://www.w3.org/1999/02/22-rdf-syntax-ns#object": {
       "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/icm-swmm/sw_conduit"
      },
-     "http://www.w3.org/2000/01/rdf-schema#comment": "both hold conduits; the fields differ by network type"
+     "https://github.com/dickinsonre/swmm-second-brain/ontology#condition": "the fields differ by network type; find each in Autodesk's Network Data Fields index",
+     "https://github.com/dickinsonre/swmm-second-brain/ontology#verification": "documented",
+     "http://www.w3.org/2000/01/rdf-schema#comment": "both hold conduits"
     },
     {
      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement",
@@ -1439,7 +1530,9 @@
      "http://www.w3.org/1999/02/22-rdf-syntax-ns#object": {
       "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/icm-swmm/sw_subcatchment"
      },
-     "http://www.w3.org/2000/01/rdf-schema#comment": "both hold subcatchments; the fields differ by network type"
+     "https://github.com/dickinsonre/swmm-second-brain/ontology#condition": "the fields differ by network type; find each in Autodesk's Network Data Fields index",
+     "https://github.com/dickinsonre/swmm-second-brain/ontology#verification": "documented",
+     "http://www.w3.org/2000/01/rdf-schema#comment": "both hold subcatchments"
     }
    ]
   },
@@ -1536,6 +1629,7 @@
      "http://www.w3.org/1999/02/22-rdf-syntax-ns#object": {
       "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/qty/WaterLevel"
      },
+     "https://github.com/dickinsonre/swmm-second-brain/ontology#verification": "documented",
      "http://www.w3.org/2000/01/rdf-schema#comment": "level at the current timestep"
     },
     {
@@ -1549,6 +1643,7 @@
      "http://www.w3.org/1999/02/22-rdf-syntax-ns#object": {
       "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/qty/WaterLevel"
      },
+     "https://github.com/dickinsonre/swmm-second-brain/ontology#verification": "documented",
      "http://www.w3.org/2000/01/rdf-schema#comment": "hydraulic head elevation"
     },
     {
@@ -1562,6 +1657,7 @@
      "http://www.w3.org/1999/02/22-rdf-syntax-ns#object": {
       "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/qty/DepthAboveInlet"
      },
+     "https://github.com/dickinsonre/swmm-second-brain/ontology#verification": "documented",
      "http://www.w3.org/2000/01/rdf-schema#comment": "water depth above the node inlet elevation"
     },
     {
@@ -1575,7 +1671,9 @@
      "http://www.w3.org/1999/02/22-rdf-syntax-ns#object": {
       "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/icm-swmm/HEAD"
      },
-     "http://www.w3.org/2000/01/rdf-schema#comment": "compare on a common vertical datum"
+     "https://github.com/dickinsonre/swmm-second-brain/ontology#condition": "on a common vertical datum",
+     "https://github.com/dickinsonre/swmm-second-brain/ontology#verification": "pending",
+     "http://www.w3.org/2000/01/rdf-schema#comment": "no run has compared them (Q90)"
     },
     {
      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement",
@@ -1588,6 +1686,7 @@
      "http://www.w3.org/1999/02/22-rdf-syntax-ns#object": {
       "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/qty/WaterLevel"
      },
+     "https://github.com/dickinsonre/swmm-second-brain/ontology#condition": "both sides use the same inlet elevation",
      "http://www.w3.org/2000/01/rdf-schema#comment": "depth = level - inlet elevation; 109.25 ft - 106.00 ft = 3.25 ft"
     },
     {
@@ -1601,6 +1700,7 @@
      "http://www.w3.org/1999/02/22-rdf-syntax-ns#object": {
       "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/qty/InletElevation"
      },
+     "https://github.com/dickinsonre/swmm-second-brain/ontology#condition": "both sides use the same inlet elevation",
      "http://www.w3.org/2000/01/rdf-schema#comment": "depth = level - inlet elevation; 109.25 ft - 106.00 ft = 3.25 ft"
     }
    ]
@@ -1737,7 +1837,11 @@
      "http://www.w3.org/1999/02/22-rdf-syntax-ns#object": {
       "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/icm-iw/SubcatchmentCN"
      },
-     "http://www.w3.org/2000/01/rdf-schema#comment": "2023, before CNSWMM on the mesh: with a constant loss rate set by SQL from the CN peak infiltration rate, peak and volume came close, almost the same for small storms"
+     "https://github.com/dickinsonre/swmm-second-brain/ontology#condition": "a constant loss rate set by SQL from the CN peak infiltration rate, with simple hyetographs",
+     "https://github.com/dickinsonre/swmm-second-brain/ontology#testedOn": "23 subcatchments whose IDs equal their CN; storms of 0.065, 0.65 and 6.5 in",
+     "https://github.com/dickinsonre/swmm-second-brain/ontology#asOf": "2023, before CNSWMM on the mesh",
+     "https://github.com/dickinsonre/swmm-second-brain/ontology#verification": "run",
+     "http://www.w3.org/2000/01/rdf-schema#comment": "peak and volume came close, almost the same for small storms; on the 2D mesh, for the smaller storm, the three gave the same effective rate"
     },
     {
      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement",
@@ -1750,7 +1854,11 @@
      "http://www.w3.org/1999/02/22-rdf-syntax-ns#object": {
       "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/icm-iw/SubcatchmentCN"
      },
-     "http://www.w3.org/2000/01/rdf-schema#comment": "2023, before CNSWMM on the mesh: with a constant loss rate set by SQL from the CN peak infiltration rate, peak and volume came close, almost the same for small storms"
+     "https://github.com/dickinsonre/swmm-second-brain/ontology#condition": "a constant loss rate set by SQL from the CN peak infiltration rate, with simple hyetographs",
+     "https://github.com/dickinsonre/swmm-second-brain/ontology#testedOn": "23 subcatchments whose IDs equal their CN; storms of 0.065, 0.65 and 6.5 in",
+     "https://github.com/dickinsonre/swmm-second-brain/ontology#asOf": "2023, before CNSWMM on the mesh",
+     "https://github.com/dickinsonre/swmm-second-brain/ontology#verification": "run",
+     "http://www.w3.org/2000/01/rdf-schema#comment": "peak and volume came close, almost the same for small storms; on the 2D mesh, for the smaller storm, the three gave the same effective rate"
     },
     {
      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement",
@@ -1763,7 +1871,11 @@
      "http://www.w3.org/1999/02/22-rdf-syntax-ns#object": {
       "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/icm-iw/SubcatchmentCN"
      },
-     "http://www.w3.org/2000/01/rdf-schema#comment": "2023, before CNSWMM on the mesh: with a constant loss rate set by SQL from the CN peak infiltration rate, peak and volume came close, almost the same for small storms"
+     "https://github.com/dickinsonre/swmm-second-brain/ontology#condition": "a constant loss rate set by SQL from the CN peak infiltration rate, with simple hyetographs",
+     "https://github.com/dickinsonre/swmm-second-brain/ontology#testedOn": "23 subcatchments whose IDs equal their CN; storms of 0.065, 0.65 and 6.5 in",
+     "https://github.com/dickinsonre/swmm-second-brain/ontology#asOf": "2023, before CNSWMM on the mesh",
+     "https://github.com/dickinsonre/swmm-second-brain/ontology#verification": "run",
+     "http://www.w3.org/2000/01/rdf-schema#comment": "peak and volume came close, almost the same for small storms; on the 2D mesh, for the smaller storm, the three gave the same effective rate"
     }
    ]
   },
@@ -1922,7 +2034,8 @@
      "http://www.w3.org/1999/02/22-rdf-syntax-ns#object": {
       "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology#InfiltrationMethod"
      },
-     "http://www.w3.org/2000/01/rdf-schema#comment": "infiltration types of an Infiltration Surface (2D) in ICM 2025.1"
+     "https://github.com/dickinsonre/swmm-second-brain/ontology#asOf": "ICM 2025.1",
+     "http://www.w3.org/2000/01/rdf-schema#comment": "infiltration types of an Infiltration Surface (2D)"
     },
     {
      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement",
@@ -1935,7 +2048,8 @@
      "http://www.w3.org/1999/02/22-rdf-syntax-ns#object": {
       "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology#InfiltrationMethod"
      },
-     "http://www.w3.org/2000/01/rdf-schema#comment": "infiltration types of an Infiltration Surface (2D) in ICM 2025.1"
+     "https://github.com/dickinsonre/swmm-second-brain/ontology#asOf": "ICM 2025.1",
+     "http://www.w3.org/2000/01/rdf-schema#comment": "infiltration types of an Infiltration Surface (2D)"
     },
     {
      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement",
@@ -1948,7 +2062,8 @@
      "http://www.w3.org/1999/02/22-rdf-syntax-ns#object": {
       "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology#InfiltrationMethod"
      },
-     "http://www.w3.org/2000/01/rdf-schema#comment": "infiltration types of an Infiltration Surface (2D) in ICM 2025.1"
+     "https://github.com/dickinsonre/swmm-second-brain/ontology#asOf": "ICM 2025.1",
+     "http://www.w3.org/2000/01/rdf-schema#comment": "infiltration types of an Infiltration Surface (2D)"
     },
     {
      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement",
@@ -1961,7 +2076,8 @@
      "http://www.w3.org/1999/02/22-rdf-syntax-ns#object": {
       "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology#InfiltrationMethod"
      },
-     "http://www.w3.org/2000/01/rdf-schema#comment": "infiltration types of an Infiltration Surface (2D) in ICM 2025.1"
+     "https://github.com/dickinsonre/swmm-second-brain/ontology#asOf": "ICM 2025.1",
+     "http://www.w3.org/2000/01/rdf-schema#comment": "infiltration types of an Infiltration Surface (2D)"
     },
     {
      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement",
@@ -1974,7 +2090,8 @@
      "http://www.w3.org/1999/02/22-rdf-syntax-ns#object": {
       "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology#InfiltrationMethod"
      },
-     "http://www.w3.org/2000/01/rdf-schema#comment": "infiltration types of an Infiltration Surface (2D) in ICM 2025.1"
+     "https://github.com/dickinsonre/swmm-second-brain/ontology#asOf": "ICM 2025.1",
+     "http://www.w3.org/2000/01/rdf-schema#comment": "infiltration types of an Infiltration Surface (2D)"
     },
     {
      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement",
@@ -1987,7 +2104,8 @@
      "http://www.w3.org/1999/02/22-rdf-syntax-ns#object": {
       "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology#InfiltrationMethod"
      },
-     "http://www.w3.org/2000/01/rdf-schema#comment": "infiltration types of an Infiltration Surface (2D) in ICM 2025.1"
+     "https://github.com/dickinsonre/swmm-second-brain/ontology#asOf": "ICM 2025.1",
+     "http://www.w3.org/2000/01/rdf-schema#comment": "infiltration types of an Infiltration Surface (2D)"
     },
     {
      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement",
@@ -2078,7 +2196,47 @@
      "http://www.w3.org/1999/02/22-rdf-syntax-ns#object": {
       "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/icm/2025.1"
      },
-     "http://www.w3.org/2000/01/rdf-schema#comment": "on the 2D mesh"
+     "https://github.com/dickinsonre/swmm-second-brain/ontology#verification": "documented",
+     "http://www.w3.org/2000/01/rdf-schema#comment": "on the 2D mesh, from Autodesk's online help as the article quotes it"
+    },
+    {
+     "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement",
+     "http://www.w3.org/1999/02/22-rdf-syntax-ns#subject": {
+      "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/icm-iw/CNSWMM2D"
+     },
+     "http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate": {
+      "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology#has_parameter"
+     },
+     "http://www.w3.org/1999/02/22-rdf-syntax-ns#object": {
+      "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/icm-iw/InitialAbstractionFactor"
+     },
+     "https://github.com/dickinsonre/swmm-second-brain/ontology#verification": "documented"
+    },
+    {
+     "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement",
+     "http://www.w3.org/1999/02/22-rdf-syntax-ns#subject": {
+      "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/icm-iw/CNSWMM2D"
+     },
+     "http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate": {
+      "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology#has_parameter"
+     },
+     "http://www.w3.org/1999/02/22-rdf-syntax-ns#object": {
+      "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/icm-iw/CurveNumber"
+     },
+     "https://github.com/dickinsonre/swmm-second-brain/ontology#verification": "documented"
+    },
+    {
+     "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement",
+     "http://www.w3.org/1999/02/22-rdf-syntax-ns#subject": {
+      "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/icm-iw/CNSWMM2D"
+     },
+     "http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate": {
+      "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology#has_parameter"
+     },
+     "http://www.w3.org/1999/02/22-rdf-syntax-ns#object": {
+      "@id": "https://github.com/dickinsonre/swmm-second-brain/ontology/icm-iw/DryingTime"
+     },
+     "https://github.com/dickinsonre/swmm-second-brain/ontology#verification": "documented"
     },
     {
      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement",

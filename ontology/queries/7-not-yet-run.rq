@@ -1,0 +1,14 @@
+# Which statements does no run of the program back yet, and what backs them instead?
+PREFIX sb: <https://github.com/dickinsonre/swmm-second-brain/ontology#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+SELECT ?verification ?subject ?relation ?object ?condition ?source ?drafted_by WHERE {
+  GRAPH ?g { ?st rdf:subject ?s ; rdf:predicate ?p ; rdf:object ?o ; sb:verification ?verification .
+             OPTIONAL { ?st sb:condition ?c } }
+  FILTER(?verification != "run")
+  ?s rdfs:label ?subject . ?p rdfs:label ?relation . ?o rdfs:label ?object .
+  ?g dcterms:identifier ?source ; sb:draftedBy ?drafted_by .
+  BIND(COALESCE(?c, "") AS ?condition)
+}
+ORDER BY DESC(?verification) ?source ?subject ?object

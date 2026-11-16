@@ -1,0 +1,20 @@
+# Which methods stand in for which, under what conditions, tested on what, and what backs it?
+PREFIX sb: <https://github.com/dickinsonre/swmm-second-brain/ontology#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+SELECT ?method ?stands_in_for ?condition ?tested_on ?as_of ?verification ?source ?author ?drafted_by ?reviewed WHERE {
+  GRAPH ?g { ?a sb:approximates ?b }
+  ?a rdfs:label ?method . ?b rdfs:label ?stands_in_for .
+  OPTIONAL { GRAPH ?g { ?st rdf:subject ?a ; rdf:predicate sb:approximates ; rdf:object ?b .
+             OPTIONAL { ?st sb:condition ?c } OPTIONAL { ?st sb:testedOn ?t }
+             OPTIONAL { ?st sb:asOf ?d } OPTIONAL { ?st sb:verification ?v } } }
+  ?g dcterms:identifier ?source ; sb:draftedBy ?drafted_by ; sb:reviewed ?reviewed .
+  OPTIONAL { ?g dcterms:creator ?au }
+  BIND(COALESCE(?c, "none stated") AS ?condition)
+  BIND(COALESCE(?t, "not stated") AS ?tested_on)
+  BIND(COALESCE(?d, "") AS ?as_of)
+  BIND(COALESCE(?v, "not stated") AS ?verification)
+  BIND(COALESCE(?au, "unknown") AS ?author)
+}
+ORDER BY ?method

@@ -40,17 +40,18 @@ The note's point: a run is finished when the intended results open, not when the
 | Subject | Relation | Object | Note | Source |
 |---|---|---|---|---|
 | `ruby:3.4.6`, `ruby:2.4.0` | `is_a` | `sb:RubyRuntime` |  | [S160](../sources/S160-note-icm-ruby-version-compatibility.md) |
-| `ruby:3.4.6` | `available_in` | `icm:2027.0` | for UI and Exchange scripting | [S160](../sources/S160-note-icm-ruby-version-compatibility.md) |
-| `ruby:3.4.6` | `replaces` | `ruby:2.4.0` | a script that requires a library that changed or is gone fails with LoadError | [S160](../sources/S160-note-icm-ruby-version-compatibility.md) |
+| `ruby:3.4.6` | `available_in` | `icm:2027.0` | `verification: documented` for UI and Exchange scripting | [S160](../sources/S160-note-icm-ruby-version-compatibility.md) |
+| `ruby:3.4.6` | `replaces` | `ruby:2.4.0` | `as_of: ICM 2027.0` `verification: documented` a script that requires a library that changed or is gone fails with LoadError | [S160](../sources/S160-note-icm-ruby-version-compatibility.md) |
 | `icm:2027.0` | `is_a` | `sb:Release` |  | [S160](../sources/S160-note-icm-ruby-version-compatibility.md) |
 | `icm:2027.0` | `part_of` | `icm:ICM` |  | [S160](../sources/S160-note-icm-ruby-version-compatibility.md) |
 | `icm:ICMExchange` | `is_a` | `sb:Program` | the command-line runner | [S159](../sources/S159-note-icm-ruby-ui-vs-exchange.md) |
 | `icm:ICMExchange` | `part_of` | `icm:ICM` |  | [S159](../sources/S159-note-icm-ruby-ui-vs-exchange.md) |
-| `icm:ICMExchange` | `requires` | `icm:UltimateLicense` | as Autodesk documents it | [S159](../sources/S159-note-icm-ruby-ui-vs-exchange.md) |
+| `icm:ICMExchange` | `requires` | `icm:UltimateLicense` | `verification: documented` | [S159](../sources/S159-note-icm-ruby-ui-vs-exchange.md) |
 | `icm:UltimateLicense` | `is_a` | `sb:License` |  | [S159](../sources/S159-note-icm-ruby-ui-vs-exchange.md) |
 | `icm:WSApplication.current_network`, `icm:WSApplication.open` | `is_a` | `sb:ApiMethod` |  | [S159](../sources/S159-note-icm-ruby-ui-vs-exchange.md) |
 | `icm:WSApplication.current_network` | `part_of` | `icm:UIScripting` | returns the network open in the focused GeoPlan | [S159](../sources/S159-note-icm-ruby-ui-vs-exchange.md) |
 | `icm:WSApplication.open` | `part_of` | `icm:ICMExchange` | a second argument of false skips the database upgrade | [S159](../sources/S159-note-icm-ruby-ui-vs-exchange.md) |
 | `icm:WSApplication.connect_local_agent`, `icm:WSApplication.launch_sims`, `icm:WSApplication.wait_for_jobs` | `is_a` | `sb:ApiMethod` |  | [S161](../sources/S161-note-icm-exchange-run-lifecycle.md) |
 | `icm:WSApplication.connect_local_agent`, `icm:WSApplication.launch_sims`, `icm:WSApplication.wait_for_jobs` | `part_of` | `icm:ICMExchange` |  | [S161](../sources/S161-note-icm-exchange-run-lifecycle.md) |
-| `icm:WSApplication.wait_for_jobs` | `has_parameter` | `icm:JobTimeout` | in milliseconds | [S161](../sources/S161-note-icm-exchange-run-lifecycle.md) |
+| `icm:WSApplication.wait_for_jobs` | `has_parameter` | `icm:JobTimeout` | `verification: documented` in milliseconds | [S161](../sources/S161-note-icm-exchange-run-lifecycle.md) |
+| `icm:JobTimeout` | `is_a` | `sb:Parameter` |  | [S161](../sources/S161-note-icm-exchange-run-lifecycle.md) |

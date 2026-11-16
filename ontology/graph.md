@@ -1,6 +1,6 @@
 # Ontology graph (built)
 
-Built by `tools/ontology.py` from the Relations tables; do not edit by hand. Classes from `is_a` are shown in italics inside each box. See [ONTOLOGY.md](../ONTOLOGY.md).
+Built by `tools/ontology.py` from the Relations tables; do not edit by hand. Classes from `is_a` are shown in italics inside each box; a relation with a `verification` qualifier shows it in parentheses (run, pending or documented). See [ONTOLOGY.md](../ONTOLOGY.md).
 
 ## wiki/concepts/icm-2d-rainfall-and-infiltration.md
 
@@ -23,22 +23,22 @@ flowchart LR
   n14["icm-iw:SubcatchmentCN<br/><i>Infiltration method</i>"]
   n15["icm-iw:OutsideSubcatchments<br/><i>Setting</i>"]
   n16["icm-iw:Zone2D"]
-  n0 -- part of --> n1
-  n2 -- part of --> n1
-  n3 -- part of --> n1
-  n4 -- part of --> n1
-  n5 -- part of --> n1
-  n6 -- part of --> n1
-  n6 -- available in --> n7
-  n7 -- part of --> n8
-  n6 -- has parameter --> n9
-  n6 -- has parameter --> n10
-  n6 -- has parameter --> n11
-  n12 -- part of --> n13
-  n2 -- approximates --> n14
-  n4 -- approximates --> n14
-  n3 -- approximates --> n14
-  n15 -- part of --> n16
+  n0 -->|"part of"| n1
+  n2 -->|"part of"| n1
+  n3 -->|"part of"| n1
+  n4 -->|"part of"| n1
+  n5 -->|"part of"| n1
+  n6 -->|"part of"| n1
+  n6 -->|"available in (documented)"| n7
+  n7 -->|"part of"| n8
+  n6 -->|"has parameter (documented)"| n9
+  n6 -->|"has parameter (documented)"| n10
+  n6 -->|"has parameter (documented)"| n11
+  n12 -->|"part of"| n13
+  n2 -->|"approximates (run)"| n14
+  n4 -->|"approximates (run)"| n14
+  n3 -->|"approximates (run)"| n14
+  n15 -->|"part of"| n16
 ```
 
 ## wiki/concepts/icm-ruby-ui-and-exchange.md
@@ -57,18 +57,18 @@ flowchart LR
   n9["icm:WSApplication.connect_local_agent<br/><i>Api method</i>"]
   n10["icm:WSApplication.launch_sims<br/><i>Api method</i>"]
   n11["icm:WSApplication.wait_for_jobs<br/><i>Api method</i>"]
-  n12["icm:JobTimeout"]
-  n0 -- available in --> n1
-  n0 -- replaces --> n2
-  n1 -- part of --> n3
-  n4 -- part of --> n3
-  n4 -- requires --> n5
-  n6 -- part of --> n7
-  n8 -- part of --> n4
-  n9 -- part of --> n4
-  n10 -- part of --> n4
-  n11 -- part of --> n4
-  n11 -- has parameter --> n12
+  n12["icm:JobTimeout<br/><i>Parameter</i>"]
+  n0 -->|"available in (documented)"| n1
+  n0 -->|"replaces (documented)"| n2
+  n1 -->|"part of"| n3
+  n4 -->|"part of"| n3
+  n4 -->|"requires (documented)"| n5
+  n6 -->|"part of"| n7
+  n8 -->|"part of"| n4
+  n9 -->|"part of"| n4
+  n10 -->|"part of"| n4
+  n11 -->|"part of"| n4
+  n11 -->|"has parameter (documented)"| n12
 ```
 
 ## wiki/concepts/icm-tables-and-result-fields.md
@@ -92,26 +92,26 @@ flowchart LR
   n14["qty:WaterLevel<br/><i>Quantity</i>"]
   n15["qty:DepthAboveInlet<br/><i>Quantity</i>"]
   n16["qty:InletElevation<br/><i>Quantity</i>"]
-  n0 -- part of --> n1
-  n2 -- part of --> n1
-  n3 -- part of --> n0
-  n4 -- part of --> n0
-  n5 -- part of --> n0
-  n6 -- part of --> n2
-  n7 -- part of --> n2
-  n8 -- part of --> n2
-  n3 -- close match --> n6
-  n4 -- close match --> n7
-  n5 -- close match --> n8
-  n9 -- part of --> n0
-  n10 -- stored in --> n9
-  n11 -- part of --> n0
-  n12 -- part of --> n2
-  n13 -- part of --> n2
-  n11 -- reports --> n14
-  n12 -- reports --> n14
-  n13 -- reports --> n15
-  n11 -- close match --> n12
-  n15 -- derived from --> n14
-  n15 -- derived from --> n16
+  n0 -->|"part of"| n1
+  n2 -->|"part of"| n1
+  n3 -->|"part of"| n0
+  n4 -->|"part of"| n0
+  n5 -->|"part of"| n0
+  n6 -->|"part of"| n2
+  n7 -->|"part of"| n2
+  n8 -->|"part of"| n2
+  n3 -->|"close match (documented)"| n6
+  n4 -->|"close match (documented)"| n7
+  n5 -->|"close match (documented)"| n8
+  n9 -->|"part of"| n0
+  n10 -->|"stored in"| n9
+  n11 -->|"part of"| n0
+  n12 -->|"part of"| n2
+  n13 -->|"part of"| n2
+  n11 -->|"reports (documented)"| n14
+  n12 -->|"reports (documented)"| n14
+  n13 -->|"reports (documented)"| n15
+  n11 -->|"close match (pending)"| n12
+  n15 -->|"derived from"| n14
+  n15 -->|"derived from"| n16
 ```

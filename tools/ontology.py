@@ -1,11 +1,11 @@
 """Build the wiki's typed relations into RDF.
 
-Reads the vocabulary (prefixes, relations, classes) from ONTOLOGY.md and the **Relations**
-table of every wiki page, checks them, and writes into ontology/:
+Reads the vocabulary (prefixes, relations with what they may connect, classes, qualifiers)
+from ONTOLOGY.md and the **Relations** table of every wiki page, checks them, and writes into ontology/:
   second-brain.trig    RDF in TriG: vocabulary and labels in the default graph,
                        one named graph per source page holding the statements that cite it
   second-brain.jsonld  the same as JSON-LD
-  relations.csv        one row per statement
+  relations.csv        one row per statement, with its qualifiers (condition, tested_on, as_of, verification)
   graph.md             the statements as a Mermaid diagram (GitHub draws it)
 
   python3 tools/ontology.py           # build (standard library only)
@@ -30,6 +30,7 @@ STD = {
 }
 ID = re.compile(r'^([a-z][a-z0-9-]*):([A-Za-z0-9_.\-]+)$')
 CODE = re.compile(r'`([^`]+)`')
+QUAL = re.compile(r'`([a-z_]+): ([^`]*)`')   # a qualifier: a space after the colon tells it from a term ID
 MDLINK = re.compile(r'\[([^\]]*)\]\(([^)\s]+)\)')
 
 
@@ -57,23 +58,47 @@ def table_rows(text, after):
 
 
 def vocabulary():
+    """Prefixes, relations, classes, qualifiers and verification values, from ONTOLOGY.md."""
     text = read(os.path.join(ROOT, 'ONTOLOGY.md'))
-    sections, cur = {}, None
+    sections, cur, fence = {}, None, False
     for l in text.split('\n'):
+        if l.startswith('```'):
+            fence = not fence
+            continue
+        if fence:
+            continue
         if l.startswith('## '):
             cur = l[3:].strip()
             sections[cur] = []
         elif cur:
             sections[cur].append(l)
 
-    def rows(name):
-        body = '\n'.join(sections.get(name, []))
-        out = []
-        for l in body.split('\n'):
-            s = l.strip()
-            if s.startswith('|') and not re.fullmatch(r'\|[\s|:-]+\|', s):
-                out.append([c.strip() for c in s.strip('|').split('|')])
-        return out[1:]  # drop the header row
+    def tables(start):
+        """Every table in the first section whose title starts with `start`, header rows dropped."""
+        name = next((k for k in sections if k.startswith(start)), None)
+        out, t = [], None
+        for l in sections.get(name, []):
+            st = l.strip()
+            if st.startswith('|'):
+                if t is None:
+                    t = []
+                    out.append(t)
+                if not re.fullmatch(r'\|[\s|:-]+\|', st):
+                    t.append([c.strip() for c in st.strip('|').split('|')])
+            else:
+                t = None
+        return [x[1:] for x in out]
+
+    def rows(start, k=0):
+        t = tables(start)
+        return t[k] if len(t) > k else []
+
+    def must(cell):
+        """A class the term must be declared, 'same', or None for anything."""
+        c = CODE.findall(cell)
+        if c:
+            return c[0]
+        return 'same' if cell.strip().lower() == 'same' else None
 
     prefixes = {}
     for r in rows('Prefixes'):
@@ -85,13 +110,25 @@ def vocabulary():
         name = CODE.findall(r[0])
         std = CODE.findall(r[2]) if len(r) > 2 else []
         if name:
-            relations[name[0]] = {'means': r[1], 'std': std[0] if std else None}
+            relations[name[0]] = {'means': r[1], 'std': std[0] if std else None,
+                                  'domain': must(r[3]) if len(r) > 3 else None,
+                                  'range': must(r[4]) if len(r) > 4 else None}
     classes = {}
     for r in rows('Classes'):
         c = CODE.findall(r[0])
         if c:
             classes[c[0]] = r[1]
-    return prefixes, relations, classes
+    qualifiers = {}
+    for r in rows('Qualifiers'):
+        k, prop = CODE.findall(r[0]), CODE.findall(r[1])
+        if k and prop:
+            qualifiers[k[0]] = {'prop': prop[0], 'holds': r[2]}
+    verification = {}
+    for r in rows('Qualifiers', 1):
+        v = CODE.findall(r[0])
+        if v:
+            verification[v[0]] = r[1]
+    return prefixes, relations, classes, qualifiers, verification
 
 
 def page_id(path):
@@ -99,8 +136,9 @@ def page_id(path):
 
 
 def collect():
-    """Return (statements, pages_meta, sources_meta, errors)."""
-    prefixes, relations, classes = vocabulary()
+    """Return (statements, vocabulary, sources_meta, errors)."""
+    vocab = vocabulary()
+    prefixes, relations, classes, qualifiers, verification = vocab
     statements, errors, sources_meta = [], [], {}
     pages = walk(WIKI, ('.md',))
     by_id = {page_id(p): p for p in pages}
@@ -150,6 +188,21 @@ def collect():
                 return out
 
             ss, oo = terms(subj, 'subject'), terms(obj, 'object')
+            quals = {}
+            for k, v in QUAL.findall(note):
+                if k not in qualifiers:
+                    errors.append('%s: unknown qualifier %r (see ONTOLOGY.md, Qualifiers)' % (where, k))
+                elif k in quals:
+                    errors.append('%s: qualifier %r given twice' % (where, k))
+                else:
+                    quals[k] = v.strip()
+            for code in CODE.findall(note):
+                m = ID.match(code)
+                if m and m.group(1) in qualifiers:
+                    errors.append('%s: write the qualifier as `%s: %s`, with a space after the colon' % (where, m.group(1), m.group(2)))
+            if 'verification' in quals and quals['verification'] not in verification:
+                errors.append('%s: verification %r is not one of %s' % (where, quals['verification'], ', '.join(verification)))
+            comment = re.sub(r'\s+', ' ', QUAL.sub('', note)).strip()
             cites = sorted({os.path.basename(t).split('-')[0] for _, t in MDLINK.findall(src) if re.match(r'S\d+', os.path.basename(t))})
             cites = [c for c in cites if c in sources_meta]
             if not cites:
@@ -161,8 +214,36 @@ def collect():
                         errors.append('%s: is_a object %r is not a class in ONTOLOGY.md' % (where, o))
             for s in ss:
                 for o in oo:
-                    statements.append({'s': s, 'p': rname, 'o': o, 'note': note, 'sources': cites, 'page': r})
-    return statements, (prefixes, relations, classes), sources_meta, errors
+                    statements.append({'s': s, 'p': rname, 'o': o, 'note': note, 'comment': comment,
+                                       'quals': quals, 'sources': cites, 'page': r, 'where': where})
+    errors.extend(check_classes(statements, relations))
+    return statements, vocab, sources_meta, errors
+
+
+def check_classes(statements, relations):
+    """What each relation can connect: the Subject must be / Object must be columns of ONTOLOGY.md."""
+    cls, errors = {}, []
+    for st in statements:
+        if st['p'] == 'is_a' and st['o'][0] == 'term':
+            cls.setdefault(st['s'][1], set()).add(st['o'][1])
+    have = lambda n: cls.get(n[1], set()) if n[0] == 'term' else set()
+    said = lambda h: 'is ' + ', '.join('`%s`' % c for c in sorted(h)) if h else 'has no is_a row'
+    for st in statements:
+        d = relations[st['p']]
+        rel_ = '`%s`' % st['p']
+        for side, role, need in (('s', 'a subject', d['domain']), ('o', 'an object', d['range'])):
+            if need and need != 'same' and need not in have(st[side]):
+                errors.append('%s: %s needs %s of class `%s`; `%s` %s' % (
+                    st['where'], rel_, role, need, st[side][1], said(have(st[side]))))
+        if 'same' in (d['domain'], d['range']):
+            hs, ho = have(st['s']), have(st['o'])
+            if not hs or not ho:
+                errors.append('%s: %s connects terms of the same class, and `%s` needs an is_a row' % (
+                    st['where'], rel_, (st['s'] if not hs else st['o'])[1]))
+            elif not hs & ho:
+                errors.append('%s: %s connects terms of the same class; `%s` is %s and `%s` is %s' % (
+                    st['where'], rel_, st['s'][1], ', '.join('`%s`' % c for c in sorted(hs)), st['o'][1], ', '.join('`%s`' % c for c in sorted(ho))))
+    return errors
 
 
 def iri(node, prefixes):
@@ -194,7 +275,7 @@ def esc(s):
 
 
 def build(statements, vocab, sources_meta):
-    prefixes, relations, classes = vocab
+    prefixes, relations, classes, qualifiers, verification = vocab
     SB = prefixes['sb']
     P = lambda name: STD['rdf'] + 'type' if name == 'is_a' else SB + name
     terms = {}
@@ -217,6 +298,13 @@ def build(statements, vocab, sources_meta):
         if d['std']:
             pre, local = d['std'].split(':', 1)
             default.append((SB + name, STD['rdfs'] + 'subPropertyOf', ('iri', STD[pre] + local)))
+    for k, q in qualifiers.items():
+        qi = iri(('term', q['prop']), prefixes)
+        default.append((qi, STD['rdf'] + 'type', ('iri', STD['rdf'] + 'Property')))
+        default.append((qi, STD['rdfs'] + 'label', ('lit', k.replace('_', ' '))))
+        holds = q['holds'] + ('; one of: ' + ', '.join('%s (%s)' % kv for kv in verification.items()) if k == 'verification' else '')
+        default.append((qi, STD['rdfs'] + 'comment', ('lit', holds)))
+        default.append((qi, STD['rdfs'] + 'domain', ('iri', STD['rdf'] + 'Statement')))
     for c, means in classes.items():
         ci = iri(('term', c), prefixes)
         default.append((ci, STD['rdf'] + 'type', ('iri', STD['rdfs'] + 'Class')))
@@ -237,10 +325,12 @@ def build(statements, vocab, sources_meta):
         default.append((g, STD['rdf'] + 'type', ('iri', STD['prov'] + 'Entity')))
         default.append((g, STD['dcterms'] + 'identifier', ('lit', sid)))
         for key, pred in (('title', STD['dcterms'] + 'title'), ('published', STD['dcterms'] + 'date'),
-                          ('author', STD['dcterms'] + 'creator'), ('kind', SB + 'sourceKind'),
-                          ('drafted_by', SB + 'draftedBy'), ('reviewed', SB + 'reviewed')):
+                          ('author', STD['dcterms'] + 'creator'), ('kind', SB + 'sourceKind')):
             if fm.get(key):
                 default.append((g, pred, ('lit', str(fm[key]))))
+        # always present, so a query never has to guess what a missing line means
+        default.append((g, SB + 'draftedBy', ('lit', str(fm.get('drafted_by') or 'unknown'))))
+        default.append((g, SB + 'reviewed', ('lit', str(fm.get('reviewed') or 'unknown'))))
     # named graphs: one per source
     graphs = {}
     for st in statements:
@@ -251,8 +341,10 @@ def build(statements, vocab, sources_meta):
             trip = (s_iri, P(st['p']), ('iri', o_iri))
             if trip not in graphs[g]:
                 graphs[g].append(trip)
-            if st['note']:
-                bnode = ('note', s_iri, P(st['p']), o_iri, st['note'])
+            if st['comment'] or st['quals']:
+                quals = tuple((iri(('term', qualifiers[k]['prop']), prefixes), st['quals'][k])
+                              for k in qualifiers if k in st['quals'])
+                bnode = ('note', s_iri, P(st['p']), o_iri, st['comment'], quals)
                 if bnode not in graphs[g]:
                     graphs[g].append(bnode)
     return default, graphs
@@ -277,9 +369,13 @@ def write_trig(default, graphs):
         out.write('\n%s {\n' % term_ttl(g))
         for item in graphs[g]:
             if item[0] == 'note':
-                _, s, p, o, note = item
-                out.write('  [] <%stype> <%sStatement> ; <%ssubject> <%s> ; <%spredicate> <%s> ; <%sobject> <%s> ; <%scomment> "%s" .\n' % (
-                    STD['rdf'], STD['rdf'], STD['rdf'], s, STD['rdf'], p, STD['rdf'], o, STD['rdfs'], esc(note)))
+                _, s, p, o, note, quals = item
+                parts = ['<%stype> <%sStatement>' % (STD['rdf'], STD['rdf']), '<%ssubject> <%s>' % (STD['rdf'], s),
+                         '<%spredicate> <%s>' % (STD['rdf'], p), '<%sobject> <%s>' % (STD['rdf'], o)]
+                parts += ['<%s> "%s"' % (qp, esc(qv)) for qp, qv in quals]
+                if note:
+                    parts.append('<%scomment> "%s"' % (STD['rdfs'], esc(note)))
+                out.write('  [] ' + ' ;\n     '.join(parts) + ' .\n')
             else:
                 s, p, o = item
                 out.write('  %s %s %s .\n' % (term_ttl(s), term_ttl(p), obj_ttl(o)))
@@ -292,10 +388,14 @@ def write_jsonld(default, graphs):
         nodes, notes = {}, []
         for item in triples:
             if item[0] == 'note':
-                _, s, p, o, note = item
-                notes.append({'@type': STD['rdf'] + 'Statement', STD['rdf'] + 'subject': {'@id': s},
-                              STD['rdf'] + 'predicate': {'@id': p}, STD['rdf'] + 'object': {'@id': o},
-                              STD['rdfs'] + 'comment': note})
+                _, s, p, o, note, quals = item
+                n = {'@type': STD['rdf'] + 'Statement', STD['rdf'] + 'subject': {'@id': s},
+                     STD['rdf'] + 'predicate': {'@id': p}, STD['rdf'] + 'object': {'@id': o}}
+                for qp, qv in quals:
+                    n[qp] = qv
+                if note:
+                    n[STD['rdfs'] + 'comment'] = note
+                notes.append(n)
                 continue
             s, p, o = item
             n = nodes.setdefault(s, {'@id': s})
@@ -309,12 +409,13 @@ def write_jsonld(default, graphs):
     return json.dumps(doc, indent=1, ensure_ascii=False) + '\n'
 
 
-def write_csv(statements):
+def write_csv(statements, qualifiers):
     out = io.StringIO()
     w = csv.writer(out, lineterminator='\n')
-    w.writerow(['subject', 'relation', 'object', 'note', 'sources', 'page'])
+    w.writerow(['subject', 'relation', 'object'] + list(qualifiers) + ['note', 'sources', 'page'])
     for st in statements:
-        w.writerow([st['s'][1], st['p'], st['o'][1], st['note'], ' '.join(st['sources']), st['page']])
+        w.writerow([st['s'][1], st['p'], st['o'][1]] + [st['quals'].get(k, '') for k in qualifiers]
+                   + [st['comment'], ' '.join(st['sources']), st['page']])
     return out.getvalue()
 
 
@@ -339,14 +440,17 @@ def write_mermaid(statements, classes):
         if st['p'] != 'is_a':
             by_page.setdefault(st['page'], []).append(st)
     out = ['# Ontology graph (built)', '',
-           'Built by `tools/ontology.py` from the Relations tables; do not edit by hand. Classes from `is_a` are shown in italics inside each box. See [ONTOLOGY.md](../ONTOLOGY.md).', '']
+           'Built by `tools/ontology.py` from the Relations tables; do not edit by hand. Classes from `is_a` are shown in italics inside each box; a relation with a `verification` qualifier shows it in parentheses (run, pending or documented). See [ONTOLOGY.md](../ONTOLOGY.md).', '']
     for page, sts in sorted(by_page.items()):
         ids.clear()
         lines.clear()
         edges = []
         for st in sts:
             a, b = nid(st['s']), nid(st['o'])
-            e = '  %s -- %s --> %s' % (a, st['p'].replace('_', ' '), b)
+            text = st['p'].replace('_', ' ')
+            if st['quals'].get('verification'):
+                text += ' (%s)' % st['quals']['verification']
+            e = '  %s -->|"%s"| %s' % (a, text, b)
             if e not in edges:
                 edges.append(e)
         out += ['## ' + page, '', '```mermaid', 'flowchart LR'] + lines + edges + ['```', '']
@@ -388,7 +492,7 @@ def main():
     default, graphs = build(statements, vocab, sources_meta)
     os.makedirs(OUT, exist_ok=True)
     files = {'second-brain.trig': write_trig(default, graphs), 'second-brain.jsonld': write_jsonld(default, graphs),
-             'relations.csv': write_csv(statements), 'graph.md': write_mermaid(statements, vocab[2])}
+             'relations.csv': write_csv(statements, vocab[3]), 'graph.md': write_mermaid(statements, vocab[2])}
     for fn, text in files.items():
         with open(os.path.join(OUT, fn), 'w', encoding='utf-8') as f:
             f.write(text)

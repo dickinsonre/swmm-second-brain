@@ -2,7 +2,7 @@
 
 A wiki link says "see also". A relation says how two things are related: `icm-iw:DEPNOD` *reports* water level, `ruby:3.4.6` *replaces* `ruby:2.4.0`. This file defines the small vocabulary the wiki uses for that, and how a page writes it down. `tools/ontology.py` reads every page's Relations table and writes the result as RDF into `ontology/`, where any RDF tool can query it.
 
-Status: a draft, started 16 November 2026 after Caleb Buahin asked whether the wiki could have a formal ontology. Tried first on the ICM and Curve Number pages. Bob and the agent change this file together, like `CLAUDE.md`; every change gets a line in `log.md`.
+Status: a draft, started 16 November 2026 after Caleb Buahin asked whether the wiki could have a formal ontology. Tried first on the ICM and Curve Number pages. The same day it was tightened in three ways that ChatGPT suggested when Bob showed it the draft: conditions a query can read, a check of what each relation can connect, and `unknown` where a source names no drafter, with a `verification` status for claims that depend on a run. Bob and the agent change this file together, like `CLAUDE.md`; every change gets a line in `log.md`.
 
 ## What a relation is, and is not
 
@@ -22,10 +22,11 @@ At the end of a page, a paragraph that is just `**Relations**`, then a table:
 
 - **Subject, Object:** one or more term IDs in backticks, separated by commas, or a link to a wiki page. A row with two subjects and three objects states six relations.
 - **Relation:** one name from the table below, in backticks.
-- **Note:** optional. The condition, rule or caution that goes with the statement; it travels with it into the RDF.
+- **Note:** optional. The condition, rule or caution that goes with the statement; it travels with it into the RDF. Conditions and evidence that a query should read go in as qualifiers (below).
 - **Source:** one or more source page links. Required.
 - **Term IDs** are `prefix:Name`. Keep the program's own spelling (`icm-iw:hw_node`, `icm-iw:DEPNOD`); otherwise use CamelCase (`qty:WaterLevel`). Letters, digits and `_ . -` only. A term needs no separate declaration: its label is its name, with CamelCase split into words.
 - A class named as the object of `is_a` must be in the Classes table below.
+- A term used by a relation whose subject or object must be of a class (see Relations) needs an `is_a` row somewhere in the wiki.
 
 ## Prefixes
 
@@ -43,24 +44,28 @@ Wiki pages are not written with a prefix; they are links, and become `https://gi
 
 ## Relations
 
-| Relation | Means | Standard property |
-|---|---|---|
-| `is_a` | the subject is an instance of the class named by the object | `rdf:type` |
-| `part_of` | the subject belongs to the object | `dcterms:isPartOf` |
-| `same_as` | the same thing under another name | `skos:exactMatch` |
-| `close_match` | nearly the same; the note says how they differ | `skos:closeMatch` |
-| `approximates` | stands in for the object, under the conditions in the note | `skos:relatedMatch` |
-| `reports` | a result field reports this quantity | |
-| `derived_from` | computed from the object; the note gives the rule | `prov:wasDerivedFrom` |
-| `has_parameter` | the method or object takes this input | |
-| `stored_in` | its data are kept in this table | |
-| `available_in` | available from this release on | |
-| `replaces` | takes the place of the object | `dcterms:replaces` |
-| `requires` | needs the object to run or to apply | `dcterms:requires` |
-| `translation_of` | a translation of the object into another programming language | `prov:wasDerivedFrom` |
-| `finding_about` | a finding whose subject is the object | `dcterms:subject` |
+| Relation | Means | Standard property | Subject must be | Object must be |
+|---|---|---|---|---|
+| `is_a` | the subject is an instance of the class named by the object | `rdf:type` | | a class below |
+| `part_of` | the subject belongs to the object | `dcterms:isPartOf` | | |
+| `same_as` | the same thing under another name, with no caveat | `skos:exactMatch` | same | same |
+| `close_match` | nearly the same; the condition or note says how they differ | `skos:closeMatch` | same | same |
+| `approximates` | stands in for the object, under the conditions given | `skos:relatedMatch` | same | same |
+| `reports` | a result field reports this quantity | | `sb:ResultField` | `sb:Quantity` |
+| `derived_from` | computed from the object; the note gives the rule | `prov:wasDerivedFrom` | | |
+| `has_parameter` | the method or object takes this input | | | `sb:Parameter` |
+| `stored_in` | its data are kept in this table | | | `sb:DataTable` |
+| `available_in` | available from this release on | | | `sb:Release` |
+| `replaces` | takes the place of the object | `dcterms:replaces` | same | same |
+| `requires` | needs the object to run or to apply | `dcterms:requires` | | |
+| `translation_of` | a translation of the object into another programming language | `prov:wasDerivedFrom` | `sb:Program` | `sb:Program` |
+| `finding_about` | a finding whose subject is the object | `dcterms:subject` | | |
 
 `is_a` is written out as `rdf:type` itself. Every other relation becomes `sb:<name>`, declared a sub-property of the standard property where the table names one, so a tool that knows SKOS, PROV or Dublin Core but not this file still understands most of it.
+
+**What each relation can connect.** The last two columns are checked by `tools/lint.py`. A class there means the term must be declared that class by an `is_a` row somewhere in the wiki; "same" means the subject and the object must share a class; empty means anything. A term that a checked relation uses must therefore have an `is_a` row. So `icm-iw:DEPNOD` `reports` `icm:2027.0` is an error: `icm:2027.0` is a Release, not a Quantity.
+
+**`same_as` or `close_match`.** `same_as` maps to SKOS `exactMatch`, which is transitive: if A matches B and B matches C, a reasoner concludes A matches C. Use it only when the two are interchangeable with no caveat. A field mapping that needs a condition (a common datum, a unit change, a sign convention) is a `close_match`, and the condition goes on the row.
 
 ## Classes
 
@@ -79,6 +84,37 @@ Wiki pages are not written with a prefix; they are links, and become `https://gi
 | `sb:RubyRuntime` | a Ruby interpreter version |
 | `sb:License` | a license level of a program |
 
+## Qualifiers: conditions and evidence on a statement
+
+A row's Note may carry qualifiers, each written in backticks as `` `key: value` ``, with a space after the colon (which tells a qualifier from a term ID). They become properties of the statement itself, so a query can read them; the rest of the Note is kept as a comment. A qualifier states what the row's source says; like the rest of the row, it adds no fact.
+
+| Key | Property | Holds |
+|---|---|---|
+| `condition` | `sb:condition` | the condition under which the statement holds (how a rate was set, a common datum) |
+| `tested_on` | `sb:testedOn` | the models, storms or data it was tested on |
+| `as_of` | `sb:asOf` | the date or release the statement describes |
+| `verification` | `sb:verification` | what backs it: one of the three values below |
+
+| `verification` | Means |
+|---|---|
+| `run` | a source reports a run of the program that shows it |
+| `pending` | it depends on a run of the program that has not been made |
+| `documented` | a source reports the program's documentation saying so; not checked against the program |
+
+Example, from the 2023 Curve Number tests:
+
+```
+| `icm-iw:Horton2D` | `approximates` | `icm-iw:SubcatchmentCN` | `condition: a constant loss rate set by SQL from the CN peak infiltration rate, with simple hyetographs` `tested_on: 23 subcatchments whose IDs equal their CN; storms of 0.065, 0.65 and 6.5 in` `as_of: 2023, before CNSWMM on the mesh` `verification: run` peak and volume came close | [S177](...) |
+```
+
+A statement with a note or qualifiers is also written as an `rdf:Statement` that names its subject, relation and object and carries the qualifiers and comment.
+
+**Who drafted a source, and whether Bob has read it.** Each source page's graph carries `sb:draftedBy` from its `drafted_by:` line, or `unknown` when the page has none, and `sb:reviewed` from its `reviewed:` line. So every statement can be traced to its source, to who or what drafted that source, to whether Bob has read it, and, through `verification`, to whether a run backs it.
+
+## The test question
+
+Every addition to this vocabulary should help answer: **which fields can I compare across InfoWorks and ICM SWMM networks, under what conditions, and what evidence supports the comparison?** `ontology/queries/5-comparable-fields.rq` asks it.
+
 ## What `tools/ontology.py` writes
 
 | File | Holds |
@@ -89,17 +125,18 @@ Wiki pages are not written with a prefix; they are links, and become `https://gi
 | `ontology/graph.md` | the statements as a Mermaid diagram, which GitHub draws |
 | `ontology/queries/*.rq`, `*.txt` | sample SPARQL queries and their results, written by `--check` |
 
-Each source page's graph carries its title, date, kind, author, `drafted_by:` and `reviewed:` from its front matter, so provenance can be queried.
+Each source page's graph carries its title, date, kind, author, `drafted_by:` (or `unknown`) and `reviewed:` from its front matter, so provenance can be queried.
 
 ```sh
 python3 tools/ontology.py           # build ontology/ (standard library only)
 python3 tools/ontology.py --check   # also parse the output and run the sample queries (needs rdflib)
 ```
 
-`tools/lint.py` runs the same parser and reports an unknown relation, an unknown prefix or class, or a row with no source, as an error.
+`tools/lint.py` runs the same parser and reports as an error: an unknown relation, prefix, class or qualifier; a `verification` value not in the list; a relation connecting terms of the wrong class; a term a checked relation uses that has no `is_a`; or a row with no source.
 
 ## Not done yet
 
 - Most pages have no Relations table; the first are `icm-tables-and-result-fields`, `icm-2d-rainfall-and-infiltration` and `icm-ruby-ui-and-exchange`.
 - No link yet to outside vocabularies (units, hydrologic features). A later `close_match` to an outside IRI would do it.
 - No `contradicts` relation yet for the open questions.
+- `verification` is on the rows where a page says what backs the claim; a row without it says nothing either way, and queries show it as `not stated`. A `documented` or `pending` row becomes `run` only when a run is made and filed as a source (Q90).

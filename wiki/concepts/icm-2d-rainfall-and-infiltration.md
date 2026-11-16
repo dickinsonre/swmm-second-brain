@@ -25,15 +25,15 @@ Rain on an InfoWorks ICM 2D mesh, where it overlaps subcatchments, and the infil
 
 | Subject | Relation | Object | Note | Source |
 |---|---|---|---|---|
-| `icm-iw:Fixed2D`, `icm-iw:Horton2D`, `icm-iw:ConstInf2D`, `icm-iw:GreenAmpt2D`, `icm-iw:DefConLoss2D`, `icm-iw:CNSWMM2D` | `is_a` | `sb:InfiltrationMethod` | infiltration types of an Infiltration Surface (2D) in ICM 2025.1 | [S178](../sources/S178-li-cnswmm-on-the-icm-2d-mesh.md) |
+| `icm-iw:Fixed2D`, `icm-iw:Horton2D`, `icm-iw:ConstInf2D`, `icm-iw:GreenAmpt2D`, `icm-iw:DefConLoss2D`, `icm-iw:CNSWMM2D` | `is_a` | `sb:InfiltrationMethod` | `as_of: ICM 2025.1` infiltration types of an Infiltration Surface (2D) | [S178](../sources/S178-li-cnswmm-on-the-icm-2d-mesh.md) |
 | `icm-iw:Fixed2D`, `icm-iw:Horton2D`, `icm-iw:ConstInf2D`, `icm-iw:GreenAmpt2D`, `icm-iw:DefConLoss2D`, `icm-iw:CNSWMM2D` | `part_of` | `icm-iw:InfiltrationSurface2D` | values of its Infiltration type property | [S178](../sources/S178-li-cnswmm-on-the-icm-2d-mesh.md) |
-| `icm-iw:CNSWMM2D` | `available_in` | `icm:2025.1` | on the 2D mesh | [S178](../sources/S178-li-cnswmm-on-the-icm-2d-mesh.md) |
+| `icm-iw:CNSWMM2D` | `available_in` | `icm:2025.1` | `verification: documented` on the 2D mesh, from Autodesk's online help as the article quotes it | [S178](../sources/S178-li-cnswmm-on-the-icm-2d-mesh.md) |
 | `icm:2025.1` | `is_a` | `sb:Release` |  | [S178](../sources/S178-li-cnswmm-on-the-icm-2d-mesh.md) |
 | `icm:2025.1` | `part_of` | `icm:ICM` |  | [S178](../sources/S178-li-cnswmm-on-the-icm-2d-mesh.md) |
-| `icm-iw:CNSWMM2D` | `has_parameter` | `icm-iw:InitialAbstractionFactor`, `icm-iw:CurveNumber`, `icm-iw:DryingTime` |  | [S178](../sources/S178-li-cnswmm-on-the-icm-2d-mesh.md) |
+| `icm-iw:CNSWMM2D` | `has_parameter` | `icm-iw:InitialAbstractionFactor`, `icm-iw:CurveNumber`, `icm-iw:DryingTime` | `verification: documented` | [S178](../sources/S178-li-cnswmm-on-the-icm-2d-mesh.md) |
 | `icm-iw:InitialAbstractionFactor`, `icm-iw:CurveNumber`, `icm-iw:DryingTime`, `icm-iw:CNSWMMAntecedentMoistureCondition` | `is_a` | `sb:Parameter` |  | [S178](../sources/S178-li-cnswmm-on-the-icm-2d-mesh.md) |
 | `icm-iw:CNSWMMAntecedentMoistureCondition` | `part_of` | `icm-iw:InitialConditions2D` | the soil moisture before a rainfall event | [S178](../sources/S178-li-cnswmm-on-the-icm-2d-mesh.md) |
 | `icm-iw:SubcatchmentCN`, `icm-iw:SubcatchmentCNSWMM` | `is_a` | `sb:InfiltrationMethod` | on a pervious runoff surface of a subcatchment | [S177](../sources/S177-li-curve-number-approximations-icm-2d.md) |
-| `icm-iw:Horton2D`, `icm-iw:GreenAmpt2D`, `icm-iw:ConstInf2D` | `approximates` | `icm-iw:SubcatchmentCN` | 2023, before CNSWMM on the mesh: with a constant loss rate set by SQL from the CN peak infiltration rate, peak and volume came close, almost the same for small storms | [S177](../sources/S177-li-curve-number-approximations-icm-2d.md) |
+| `icm-iw:Horton2D`, `icm-iw:GreenAmpt2D`, `icm-iw:ConstInf2D` | `approximates` | `icm-iw:SubcatchmentCN` | `condition: a constant loss rate set by SQL from the CN peak infiltration rate, with simple hyetographs` `tested_on: 23 subcatchments whose IDs equal their CN; storms of 0.065, 0.65 and 6.5 in` `as_of: 2023, before CNSWMM on the mesh` `verification: run` peak and volume came close, almost the same for small storms; on the 2D mesh, for the smaller storm, the three gave the same effective rate | [S177](../sources/S177-li-curve-number-approximations-icm-2d.md) |
 | `icm-iw:OutsideSubcatchments` | `is_a` | `sb:Setting` |  | [S169](../sources/S169-note-icm-2d-rainfall-and-infiltration.md) |
 | `icm-iw:OutsideSubcatchments` | `part_of` | `icm-iw:Zone2D` | keeps direct mesh rain off the area inside subcatchments | [S169](../sources/S169-note-icm-2d-rainfall-and-infiltration.md) |

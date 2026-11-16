@@ -1,10 +1,14 @@
-# Every close match between the two ICM network types, with the caution that goes with it
+# Every close match between the two ICM network types, with its condition and what backs it
 PREFIX sb: <https://github.com/dickinsonre/swmm-second-brain/ontology#>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-SELECT ?a ?b ?caution WHERE {
+SELECT ?a ?b ?condition ?verification ?note WHERE {
   ?x sb:close_match ?y .
   ?x rdfs:label ?a . ?y rdfs:label ?b .
-  OPTIONAL { ?st rdf:subject ?x ; rdf:predicate sb:close_match ; rdf:object ?y ; rdfs:comment ?caution }
+  OPTIONAL { ?st rdf:subject ?x ; rdf:predicate sb:close_match ; rdf:object ?y .
+             OPTIONAL { ?st sb:condition ?c } OPTIONAL { ?st sb:verification ?v } OPTIONAL { ?st rdfs:comment ?n } }
+  BIND(COALESCE(?c, "none stated") AS ?condition)
+  BIND(COALESCE(?v, "not stated") AS ?verification)
+  BIND(COALESCE(?n, "") AS ?note)
 }
 ORDER BY ?a

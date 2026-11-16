@@ -1,0 +1,34 @@
+# Which fields can I compare across the InfoWorks and ICM SWMM network types, under what conditions, and what evidence supports the comparison?
+# A pair is comparable when a page states a close_match or same_as between them, or when one reports a quantity derived from the quantity the other reports.
+PREFIX sb: <https://github.com/dickinsonre/swmm-second-brain/ontology#>
+PREFIX icm: <https://github.com/dickinsonre/swmm-second-brain/ontology/icm/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+SELECT ?kind ?infoworks ?icm_swmm ?how ?condition ?verification ?source ?drafted_by ?reviewed WHERE {
+  {
+    VALUES ?rel { sb:close_match sb:same_as }
+    { GRAPH ?g { ?a ?rel ?b } BIND(?a AS ?s0) BIND(?b AS ?o0) }
+    UNION
+    { GRAPH ?g { ?b ?rel ?a } BIND(?b AS ?s0) BIND(?a AS ?o0) }
+    ?rel rdfs:label ?how .
+  }
+  UNION
+  {
+    GRAPH ?g { ?q2 sb:derived_from ?q }
+    { ?a sb:reports ?q . ?b sb:reports ?q2 } UNION { ?a sb:reports ?q2 . ?b sb:reports ?q }
+    ?q2 rdfs:label ?l2 . ?q rdfs:label ?l1 .
+    BIND(sb:derived_from AS ?rel) BIND(?q2 AS ?s0) BIND(?q AS ?o0)
+    BIND(CONCAT("derive ", LCASE(?l2), " from ", LCASE(?l1)) AS ?how)
+  }
+  ?a sb:part_of icm:InfoWorksNetwork .
+  ?b sb:part_of icm:SWMMNetwork .
+  ?a a ?k . FILTER(?k IN (sb:ResultField, sb:DataTable)) ?k rdfs:label ?kind .
+  ?a rdfs:label ?infoworks . ?b rdfs:label ?icm_swmm .
+  OPTIONAL { GRAPH ?g { ?st rdf:subject ?s0 ; rdf:predicate ?rel ; rdf:object ?o0 .
+             OPTIONAL { ?st sb:condition ?c } OPTIONAL { ?st sb:verification ?v } } }
+  ?g dcterms:identifier ?source ; sb:draftedBy ?drafted_by ; sb:reviewed ?reviewed .
+  BIND(COALESCE(?c, "none stated") AS ?condition)
+  BIND(COALESCE(?v, "not stated") AS ?verification)
+}
+ORDER BY ?kind ?infoworks

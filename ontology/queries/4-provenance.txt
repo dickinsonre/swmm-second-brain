@@ -1,11 +1,11 @@
-# Where the statements come from: each source page, who drafted it, and whether Bob has reviewed it
-source	drafted_by	reviewed	statements
-S159	ChatGPT (OpenAI), from Autodesk Help, per S179	no	8
-S160	ChatGPT (OpenAI), from Autodesk Help, per S179	no	6
-S161	ChatGPT (OpenAI), from Autodesk Help, per S179	no	7
-S162	ChatGPT (OpenAI), from Autodesk Help, per S179	no	15
-S163	ChatGPT (OpenAI), from Autodesk Help, per S179	no	15
-S169	GPT plugin for Autodesk (an AI), per S166	no	2
-S17	a person (no drafted_by line)	2026-11-15	4
-S177	a person (no drafted_by line)	no	5
-S178	a person (no drafted_by line)	no	26
+# Where the statements come from: each source page, who drafted it ("unknown" when its page has no drafted_by line), and whether Bob has reviewed it
+source	author	drafted_by	reviewed	statements
+S159	Robert Dickinson	ChatGPT (OpenAI), from Autodesk Help, per S179	no	8
+S160	Robert Dickinson	ChatGPT (OpenAI), from Autodesk Help, per S179	no	6
+S161	Robert Dickinson	ChatGPT (OpenAI), from Autodesk Help, per S179	no	8
+S162	Robert Dickinson	ChatGPT (OpenAI), from Autodesk Help, per S179	no	15
+S163	Robert Dickinson	ChatGPT (OpenAI), from Autodesk Help, per S179	no	15
+S169	Robert Dickinson	GPT plugin for Autodesk (an AI), per S166	no	2
+S17	Robert Dickinson	unknown	2026-11-15	4
+S177	Robert Dickinson	unknown	no	5
+S178	Robert Dickinson	unknown	no	26

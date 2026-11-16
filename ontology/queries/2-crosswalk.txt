@@ -1,6 +1,6 @@
-# Every close match between the two ICM network types, with the caution that goes with it
-a	b	caution
-DEPNOD	HEAD	compare on a common vertical datum
-hw_conduit	sw_conduit	both hold conduits; the fields differ by network type
-hw_node	sw_node	both hold nodes; the fields differ by network type
-hw_subcatchment	sw_subcatchment	both hold subcatchments; the fields differ by network type
+# Every close match between the two ICM network types, with its condition and what backs it
+a	b	condition	verification	note
+DEPNOD	HEAD	on a common vertical datum	pending	no run has compared them (Q90)
+hw_conduit	sw_conduit	the fields differ by network type; find each in Autodesk's Network Data Fields index	documented	both hold conduits
+hw_node	sw_node	the fields differ by network type; find each in Autodesk's Network Data Fields index	documented	both hold nodes
+hw_subcatchment	sw_subcatchment	the fields differ by network type; find each in Autodesk's Network Data Fields index	documented	both hold subcatchments

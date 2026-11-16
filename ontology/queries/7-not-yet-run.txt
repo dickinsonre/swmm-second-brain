@@ -1,0 +1,17 @@
+# Which statements does no run of the program back yet, and what backs them instead?
+verification	subject	relation	object	condition	source	drafted_by
+pending	DEPNOD	close match	HEAD	on a common vertical datum	S163	ChatGPT (OpenAI), from Autodesk Help, per S179
+documented	ICMExchange	requires	UltimateLicense		S159	ChatGPT (OpenAI), from Autodesk Help, per S179
+documented	Ruby 3.4.6	available in	ICM 2027.0		S160	ChatGPT (OpenAI), from Autodesk Help, per S179
+documented	Ruby 3.4.6	replaces	Ruby 2.4.0		S160	ChatGPT (OpenAI), from Autodesk Help, per S179
+documented	WSApplication.wait_for_jobs	has parameter	JobTimeout		S161	ChatGPT (OpenAI), from Autodesk Help, per S179
+documented	hw_conduit	close match	sw_conduit	the fields differ by network type; find each in Autodesk's Network Data Fields index	S162	ChatGPT (OpenAI), from Autodesk Help, per S179
+documented	hw_node	close match	sw_node	the fields differ by network type; find each in Autodesk's Network Data Fields index	S162	ChatGPT (OpenAI), from Autodesk Help, per S179
+documented	hw_subcatchment	close match	sw_subcatchment	the fields differ by network type; find each in Autodesk's Network Data Fields index	S162	ChatGPT (OpenAI), from Autodesk Help, per S179
+documented	DEPNOD	reports	Water level		S163	ChatGPT (OpenAI), from Autodesk Help, per S179
+documented	DEPTH	reports	Depth above inlet		S163	ChatGPT (OpenAI), from Autodesk Help, per S179
+documented	HEAD	reports	Water level		S163	ChatGPT (OpenAI), from Autodesk Help, per S179
+documented	CNSWMM2D	has parameter	CurveNumber		S178	unknown
+documented	CNSWMM2D	has parameter	DryingTime		S178	unknown
+documented	CNSWMM2D	available in	ICM 2025.1		S178	unknown
+documented	CNSWMM2D	has parameter	InitialAbstractionFactor		S178	unknown

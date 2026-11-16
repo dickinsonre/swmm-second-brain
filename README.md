@@ -37,6 +37,7 @@ To read the wiki yourself, open the folder in Obsidian (the graph view shows hub
 - 179 of 422 raw files ingested, one of them (the EPA hydraulics manual) in part. The queue is in `index.md`.
 - 82 open questions in `wiki/open-questions.md`, and 8 settled. Several are contradictions between Bob's own articles.
 - Bob reviewed every page on 11/16/2026. Since then, 36 new pages say `reviewed: no` (graph theory, the seventeen AI-written ICM notes and their pages, and two Curve Number articles) and 5 carry `changed_after_review:` (Infiltration methods, InfoWorks ICM, SWMM 5 versus ICM InfoWorks, the open questions and the overview).
+- The ontology draft has Relations tables on 3 pages: 89 statements, each filed under the source it cites, with conditions and a `verification` status on the rows that need them. `ontology/queries/5-comparable-fields.txt` answers "which fields can I compare across InfoWorks and ICM SWMM networks, under what conditions, and on what evidence?" for the fields the wiki has so far.
 
 ## What is not here
 
