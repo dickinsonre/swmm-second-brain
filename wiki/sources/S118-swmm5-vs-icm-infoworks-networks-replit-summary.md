@@ -7,7 +7,7 @@ author: Robert Dickinson
 published: 2026-07-22
 ingested: 2026-11-15
 tags: [apps, replit, swmm5, icm, comparison, hydraulics]
-reviewed: no
+reviewed: 11/16/2026
 ---
 **What it is.** A technical summary of SWMM5 vs ICM InfoWorks Networks, version 1.0.0: a reference app that sets EPA SWMM 5 beside InfoWorks ICM for unsteady flow: a comparison summary, topic pages, tables, source snippets, diagrams and calculators. It is one of Bob's Replit apps, at `swmm-icm-st-venant--robertdickinson.replit.app`. Raw file: [raw/apps/swmm-icm-st-venant--robertdickinson-v1.0.0.md](../../raw/apps/swmm-icm-st-venant--robertdickinson-v1.0.0.md).
 
