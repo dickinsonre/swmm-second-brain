@@ -1,10 +1,11 @@
 ---
 title: SWMM 5 network objects, boundary and initial conditions
 type: concept
-updated: 2026-11-15
+updated: 2026-11-16
 sources: [S60]
 tags: [hydraulics, swmm5, primary-document]
 reviewed: 2026-11-15
+changed_after_review: "2026-11-16 (S60 Chapter 5 ingest): one paragraph added at the end, headed Added 16 November 2026, later, on storage curves and conduit shapes (S60)"
 ---
 SWMM 5 models the conveyance system as links joined at nodes. External flows enter at nodes, travel along links, fill and empty storage nodes, and leave at terminal nodes [S60](../sources/S60-epa-swmm5-reference-manual-vol2-hydraulics.md). This page is Chapter 2 of the EPA hydraulics manual, a primary document, in digest [S60](../sources/S60-epa-swmm5-reference-manual-vol2-hydraulics.md).
 
@@ -32,3 +33,5 @@ SWMM 5 models the conveyance system as links joined at nodes. External flows ent
 **Initial conditions.** By default every node head and link flow starts at 0, and the user may set initial heads at chosen nodes and initial flows in chosen conduits [S60](../sources/S60-epa-swmm5-reference-manual-vol2-hydraulics.md). An initial flow is taken as uniform steady flow, so the conduit starts at normal depth [S60](../sources/S60-epa-swmm5-reference-manual-vol2-hydraulics.md). Under dynamic wave, a node that is neither storage nor outfall and has no initial head starts at the average elevation of the initial flow depths in the conduits that deliver flow into it [S60](../sources/S60-epa-swmm5-reference-manual-vol2-hydraulics.md).
 
 **Not in the sources yet.** Sections 1.2 to 1.5 of the same manual (the object model, Table 1-2, interpolation and units) are not yet read.
+
+**Added 16 November 2026, later.** Chapter 5 of the manual says how a storage unit's geometry is given: a Storage Curve of surface area against depth, either a function with three constants or a table of depth and area pairs. SWMM needs only area and volume against depth, not the unit's shape [S60](../sources/S60-epa-swmm5-reference-manual-vol2-hydraulics.md). The details are on [Shape curves, transects and storage curves](shape-curves-transects-storage-curves.md); the conduit shapes are on [Conduit cross-sections: the built-in shapes](conduit-cross-sections.md).

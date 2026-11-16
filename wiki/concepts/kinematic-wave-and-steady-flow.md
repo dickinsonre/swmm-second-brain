@@ -1,10 +1,11 @@
 ---
 title: Kinematic wave and steady flow routing
 type: concept
-updated: 2026-11-15
+updated: 2026-11-16
 sources: [S01, S08, S10, S17, S60, S117, S125]
 tags: [hydraulics, swmm5, routing]
 reviewed: 11/16/2026
+changed_after_review: "2026-11-16 (S60 Chapter 5 ingest): one paragraph added at the end, headed Added 16 November 2026, later, on the area at maximum flow (S60)"
 ---
 SWMM5 has two routing methods simpler than [dynamic wave](dynamic-wave-routing.md) [S17](../sources/S17-li-routing-options.md).
 
@@ -32,3 +33,5 @@ SWMM5 has two routing methods simpler than [dynamic wave](dynamic-wave-routing.m
 - The network objects themselves are on [SWMM 5 network objects, boundary and initial conditions](swmm5-network-objects.md).
 
 **Added 15 November 2026: two apps past the dendritic limit.** [Kinematic Wave Router (app)](../entities/kinematic-wave-router.md), Bob's Ruby kinematic wave, divides flow equally at a split and iterates on loops; its loop fixture did not fully converge after 20 iterations [S125](../sources/S125-kinematic-wave-router-replit-summary.md). [BatchSWMM56 (app)](../entities/batchswmm56.md) carries the 5.2.4 KW/SF extension as its "SWMM5 Extended" engine [S117](../sources/S117-batchswmm56-replit-summary.md). Replit Agent wrote both summaries; Bob has read neither (Q74).
+
+**Added 16 November 2026, later.** The kinematic wave solution for a closed conduit needs the area at which the section factor, and so the Manning flow, is greatest. Chapter 5 of the manual tabulates it as a fraction of the full area for every closed shape, from 0.92 for the arch to 0.9756 for the circle [S60](../sources/S60-epa-swmm5-reference-manual-vol2-hydraulics.md); the table is on [Conduit cross-sections: the built-in shapes](conduit-cross-sections.md).
