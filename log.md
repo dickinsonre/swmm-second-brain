@@ -347,3 +347,13 @@ Counts: 152 of 397 raw files ingested, 241 queued.
 
 Bob wrote at 19:16: "it is published". Claude loaded https://open-swmm-core.replit.app at about 19:17 and found alpha.2, the pinned commit 87664bf, the Apache-2.0 statement for OpenSWMM with the USEPA public-domain line, the NOTICE text, and MIT stated for the app's own code only. Filed as raw/notes/openswmm-engine-alpha2-published-2026-11-15.md and queued with the alpha.2 summary. Bob also said he is done with Replit for now. On the branch `replit-summaries-8`.
 Counts: 152 of 398 raw files ingested, 242 queued.
+
+## [2026-11-15] ingest | S153 and S154: OpenSWMM Engine alpha.2
+
+Ingested S153, the summary Replit Agent wrote of OpenSWMM Engine 6.0.0-alpha.2 after the license fix, and S154, Bob's note that it is published with a check of the live page. S148 (alpha.1) gets `superseded_by: S153` and is otherwise unchanged. Rewritten: the OpenSWMM Engine app page, for the current version, with a paragraph on what changed from alpha.1. Changed: the fourth-batch concept page (one sentence), OpenSWMM 6 and HydroCouple (reviewed page, one sentence added to its Added paragraph, marked changed_after_review), open questions (sentences added to Q74, Q75, Q79 and Q83), overview and README counts, index.
+Noted: the engine version label moved from Legacy SWMM 5.x with a 5.2.4 baseline (S148) to Legacy SWMM 5.3.0 (S153); S59 names an OpenSWMM legacy 5.3.0-beta.3 at another commit; not said whether they are the same engine (Q79).
+Counts: 154 of 398 raw files ingested, 240 queued; 307 wiki pages; 76 open questions and 7 settled.
+
+## [2026-11-15] setup | Main fast-forwarded to S154
+
+Main now holds S153 and S154. `replit-summaries-8` is merged and can go.

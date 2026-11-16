@@ -2,7 +2,7 @@
 title: "Replit apps: a fourth set of six summaries"
 type: concept
 updated: 2026-11-15
-sources: [S122, S145, S146, S147, S148, S149, S150, S151, S152]
+sources: [S122, S145, S146, S147, S148, S149, S150, S151, S152, S153, S154]
 tags: [apps, replit, verification, ai-agents]
 reviewed: no
 ---
@@ -29,7 +29,7 @@ Site names are `.replit.app` names except the three given in full.
 - Two call AI models when they run: Gemini [S145](../sources/S145-icm-ruby-nano-banana-prompt-replit-summary.md) and gpt-5 [S150](../sources/S150-icm-ruby-script-runner-replit-summary.md).
 - Subjects: ICM Ruby scripts [S145](../sources/S145-icm-ruby-nano-banana-prompt-replit-summary.md) [S150](../sources/S150-icm-ruby-script-runner-replit-summary.md), InfoSewer to ICM [S146](../sources/S146-infosewer-to-infoworks-icm-replit-summary.md), SWMManywhere [S147](../sources/S147-swmmanywhere-explorer-swm-replit-summary.md), OpenSWMM [S148](../sources/S148-openswmm-engine-app-replit-summary.md) and an EPANET quiz [S149](../sources/S149-epanet-quizzer-replit-summary.md).
 
-**What changed after the summaries.** Bob deleted the Ruby Script Runner, which ran visitors' Ruby on the server with no sandbox [S150](../sources/S150-icm-ruby-script-runner-replit-summary.md) [S152](../sources/S152-note-ruby-script-runner-deleted.md). He says the OpenSWMM license is no longer MIT, which the OpenSWMM Engine app still states [S148](../sources/S148-openswmm-engine-app-replit-summary.md) [S151](../sources/S151-note-openswmm-license-not-mit.md) (Q83).
+**What changed after the summaries.** Bob deleted the Ruby Script Runner, which ran visitors' Ruby on the server with no sandbox [S150](../sources/S150-icm-ruby-script-runner-replit-summary.md) [S152](../sources/S152-note-ruby-script-runner-deleted.md). He says the OpenSWMM license is no longer MIT, which the OpenSWMM Engine app then stated [S148](../sources/S148-openswmm-engine-app-replit-summary.md) [S151](../sources/S151-note-openswmm-license-not-mit.md) (Q83). Bob then had that app fixed: its alpha.2 summary states Apache-2.0 and pins the engine commit [S153](../sources/S153-openswmm-engine-app-alpha2-replit-summary.md), and the live page showed it [S154](../sources/S154-note-openswmm-engine-alpha2-published.md).
 
 **Names.** Two apps are named SWMManywhere Explorer [S122](../sources/S122-swmmanywhere-explorer-replit-summary.md) [S147](../sources/S147-swmmanywhere-explorer-swm-replit-summary.md). The addresses or file names of three of the six do not say what the app is (Q77).
 

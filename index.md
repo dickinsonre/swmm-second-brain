@@ -164,7 +164,7 @@ Apps
 - [ICM Ruby to Nano Banana Prompt (app)](wiki/entities/icm-ruby-nano-banana-prompt.md): Replit app, v1.0.0; draws a workflow from ICM Ruby scripts and counts SWMM5 sections; Gemini explains the code; runs no engine.
 - [InfoSewer to InfoWorks ICM (app)](wiki/entities/infosewer-to-infoworks-icm-guide.md): Replit app, v1.0.0; guide to moving InfoSewer models into ICM, with ID, CSV and SQL checkers; converts nothing itself.
 - [SWMManywhere Explorer at swm-explorer (app)](wiki/entities/swmmanywhere-explorer-swm.md): Replit app, v1.0.0; generates drainage models with SWMManywhere 0.1.17 and runs them in a SWMM5 WebAssembly engine; same app name as S122.
-- [OpenSWMM Engine (app)](wiki/entities/openswmm-engine-app.md): Replit app, v6.0.0-alpha.1; runs the legacy SWMM engine of HydroCouple/OpenSWMMCore in WebAssembly; says MIT, which Bob says is no longer the license.
+- [OpenSWMM Engine (app)](wiki/entities/openswmm-engine-app.md): Replit app, v6.0.0-alpha.2; runs the legacy SWMM engine (5.3.0) of HydroCouple/OpenSWMMCore at a pinned commit in WebAssembly; Apache-2.0 for the engine, MIT for the app.
 - [EPANET Quizzer (app)](wiki/entities/epanet-quizzer.md): Replit app, v1.0.0; 250 EPANET and water-distribution questions in four categories; runs no engine.
 - [InfoWorks ICM Ruby Script Runner (app)](wiki/entities/icm-ruby-script-runner.md): Replit app, v0.1.0, deleted by Bob on 15 November 2026; ran visitors' Ruby on the server with no sandbox; gpt-5 explanations.
 
@@ -266,11 +266,13 @@ App summaries
 - [S145](wiki/sources/S145-icm-ruby-nano-banana-prompt-replit-summary.md) (2025-11-19): ICM Ruby to Nano Banana Prompt, summary written by Replit Agent, v1.0.0.
 - [S146](wiki/sources/S146-infosewer-to-infoworks-icm-replit-summary.md) (2026-02-12): InfoSewer to InfoWorks ICM, summary written by Replit Agent, v1.0.0.
 - [S147](wiki/sources/S147-swmmanywhere-explorer-swm-replit-summary.md) (2026-11-15): SWMManywhere Explorer (swm-explorer), summary written by Replit Agent, v1.0.0.
-- [S148](wiki/sources/S148-openswmm-engine-app-replit-summary.md) (2026-11-15): OpenSWMM Engine, summary written by Replit Agent, v6.0.0-alpha.1.
+- [S148](wiki/sources/S148-openswmm-engine-app-replit-summary.md) (2026-11-15): OpenSWMM Engine, summary written by Replit Agent, v6.0.0-alpha.1. Superseded by S153.
 - [S149](wiki/sources/S149-epanet-quizzer-replit-summary.md) (2026-11-15): EPANET Quizzer, summary written by Replit Agent, v1.0.0.
 - [S150](wiki/sources/S150-icm-ruby-script-runner-replit-summary.md) (2025-11-07): InfoWorks ICM Ruby Script Runner, summary written by Replit Agent, v0.1.0.
 - [S151](wiki/sources/S151-note-openswmm-license-not-mit.md) (2026-11-15): note, Bob says the OpenSWMM license has moved away from MIT.
 - [S152](wiki/sources/S152-note-ruby-script-runner-deleted.md) (2026-11-15): note, Bob deleted the InfoWorks ICM Ruby Script Runner; ICM Exchange is the better way.
+- [S153](wiki/sources/S153-openswmm-engine-app-alpha2-replit-summary.md) (2026-11-15): OpenSWMM Engine, summary written by Replit Agent, v6.0.0-alpha.2.
+- [S154](wiki/sources/S154-note-openswmm-engine-alpha2-published.md) (2026-11-15): note, OpenSWMM Engine alpha.2 is published, with a check of the live page.
 
 Manuals and reports (primary documents)
 - [S60](wiki/sources/S60-epa-swmm5-reference-manual-vol2-hydraulics.md) (2017-05): EPA SWMM Reference Manual, Volume II, Hydraulics, by L. A. Rossman. Read in part: section 1.1 and Chapters 2, 3, 4 and 6 (the raw file lacks pages 64 to 66 and 122).
@@ -358,7 +360,7 @@ Repository READMEs (SWMM5 translations)
 
 ## Queue
 
-242 raw files are queued: 212 LinkedIn articles and the as-pasted copy of the post of 14 November 2026 (kept because raw files are never deleted; its corrected copy is S94, so it is not to be ingested), 19 manual files in `raw/manuals/` (8 EPA, USGS and FHWA documents not yet started, and 11 SWMM 4.4 documentation files), 4 swmm5.org topic pages, 2 SWMM 1 build notes and 3 files in `raw/apps/`. One, `open-swmm-core-v6.0.0-alpha.2.md`, is the newer version of the OpenSWMM Engine summary ingested as S148 (6.0.0-alpha.1); it was brought over on 15 November 2026 after Bob fixed the app's license statement. A note of Bob's that alpha.2 is published, with a check of the live page, waits to be ingested with it. One, `PyBME-issue-drafts.md`, is not an app summary and was left queued on purpose (Q56). The last, `st-venant-solver-rosetta-stone-v2.6.2.md`, is the newer version of an app already ingested at version 2.4.0 (S75); it was added on 15 November 2026 and bears on Q62. Three more LinkedIn files are byte-identical copies of others and are marked `duplicate`. `raw/MANIFEST.csv` lists them all. Suggested next batches, in order:
+240 raw files are queued: 212 LinkedIn articles and the as-pasted copy of the post of 14 November 2026 (kept because raw files are never deleted; its corrected copy is S94, so it is not to be ingested), 19 manual files in `raw/manuals/` (8 EPA, USGS and FHWA documents not yet started, and 11 SWMM 4.4 documentation files), 4 swmm5.org topic pages, 2 SWMM 1 build notes and 2 files in `raw/apps/`. One, `PyBME-issue-drafts.md`, is not an app summary and was left queued on purpose (Q56). The other, `st-venant-solver-rosetta-stone-v2.6.2.md`, is the newer version of an app already ingested at version 2.4.0 (S75); it was added on 15 November 2026 and bears on Q62. Three more LinkedIn files are byte-identical copies of others and are marked `duplicate`. `raw/MANIFEST.csv` lists them all. Suggested next batches, in order:
 
 0. The rest of the EPA hydraulics manual, a chapter at a time (S60: sections 1.2 to 1.5, Chapter 5, Chapter 7 and the appendices remain), then the 2006 quality assurance report and the SWMM 5.1 User's Manual. With them, the Rosetta Stone summary at version 2.6.2, which tests the pump rule of Q62. These are the primary documents; ingesting them first lets later articles be checked against them.
 1. The four remaining swmm5.org topic pages and the SWMM 1 build notes (small, and they complete themes 3 to 6).
