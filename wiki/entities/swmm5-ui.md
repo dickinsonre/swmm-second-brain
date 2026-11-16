@@ -4,7 +4,7 @@ type: entity
 updated: 2026-11-15
 sources: [S80, S96]
 tags: [apps, replit, swmm5, swmm6, engines, wasm, lid]
-reviewed: no
+reviewed: 11/16/2026
 ---
 Bob's Replit app SWMM5-UI: an app that opens and edits SWMM model files, runs them in browser, server or remote engines, and shows maps, time series, tables, reports and comparisons between runs. Version 1.0.0, at `swmm-ui-engine.replit.app` [S96](../sources/S96-swmm5-ui-replit-summary.md).
 
