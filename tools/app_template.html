@@ -1,0 +1,433 @@
+<title>SWMM Second Brain</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=JetBrains+Mono:wght@400;600&display=swap">
+<style>
+/* Layout: sticky header with tabs; a two-column reader (index rail + page) on wide screens, one column with an Index drawer on phones.
+   Dark on first paint (bare :root), light only when chosen. Token names follow Bob's theme kit. */
+:root{
+  color-scheme: dark;
+  --bg:#0b1220; --card:#131c2e; --field:#1a2438; --line:#2a3752; --line-soft:#212c42;
+  --ink:#e2e8f0; --ink-strong:#f8fafc; --ink-dim:#94a3b8; --ink-faint:#7c8aa3; --head:#dbe7f7;
+  --row-hover:#1a2438; --shadow:rgba(0,0,0,.45);
+  --headerbg:#0d1830; --onheader:#eaf2ff; --headersub:#93a8c8; --btn-dark:#2f4f7a;
+  --accent:#60a5fa; --accent-ink:#0b1220; --link:#8cc2ff;
+  --panel:#152238; --panel-line:#2b3d5c; --panel-ink:#c3d7f3;
+  --hi-bg:#2a1c0f; --hi-line:#7c4a1d; --hi-ink:#fdba74;
+  --warn-bg:#2a1416; --warn-line:#7f2b32; --warn-ink:#fca5a5;
+  --ok-bg:#0f2318; --ok-line:#245c39; --ok-ink:#86efac;
+  --pill-rate-bg:#16283f; --pill-rate-ink:#93c5fd;
+  --code-bg:#070d18; --code-ink:#dbe4f0; --mark:#3b2f0b; --mark-ink:#fde68a;
+  --font-ui:"Inter",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  --font-read:"Source Serif 4",Georgia,"Times New Roman",serif;
+  --font-mono:"JetBrains Mono",ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+}
+:root[data-theme="light"]{
+  color-scheme: light;
+  --bg:#f9fafb; --card:#ffffff; --field:#ffffff; --line:#e5e7eb; --line-soft:#f1f3f5;
+  --ink:#1f2937; --ink-strong:#111827; --ink-dim:#4b5563; --ink-faint:#6b7280; --head:#1e3a5f;
+  --row-hover:#f3f6fa; --shadow:rgba(0,0,0,.06);
+  --headerbg:#1e3a5f; --onheader:#ffffff; --headersub:#c7d7ea; --btn-dark:#2b5580;
+  --accent:#2563eb; --accent-ink:#ffffff; --link:#1d4ed8;
+  --panel:#eff6ff; --panel-line:#dbeafe; --panel-ink:#1e3a5f;
+  --hi-bg:#fff7ed; --hi-line:#fed7aa; --hi-ink:#c2410c;
+  --warn-bg:#fef2f2; --warn-line:#fecaca; --warn-ink:#991b1b;
+  --ok-bg:#f0fdf4; --ok-line:#bbf7d0; --ok-ink:#166534;
+  --pill-rate-bg:#dbeafe; --pill-rate-ink:#1e40af;
+  --code-bg:#0f172a; --code-ink:#e2e8f0; --mark:#fef08a; --mark-ink:#422006;
+}
+*{box-sizing:border-box}
+html,body{background:var(--bg)}
+body{color:var(--ink);font:15px/1.5 var(--font-ui);margin:0}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:30;background:var(--headerbg)}
+a{color:var(--link)}
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.wrap{max-width:1320px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+header.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--headerbg);color:var(--onheader);box-shadow:0 1px 0 var(--line)}
+.top .row1{display:flex;align-items:center;gap:12px 20px;flex-wrap:wrap;padding-block:10px 6px}
+.brand{display:flex;flex-direction:column;min-width:0}
+.brand b{font:700 18px/1.2 var(--font-ui);letter-spacing:.01em}
+.brand span{font-size:12.5px;color:var(--headersub)}
+.counts{display:flex;gap:6px;flex-wrap:wrap;font:500 12px/1 var(--font-mono);color:var(--headersub)}
+.counts span{border:1px solid var(--btn-dark);border-radius:999px;padding:4px 8px;white-space:nowrap}
+.spacer{flex:1}
+.seg{display:inline-flex;border:1px solid var(--btn-dark);border-radius:8px;overflow:hidden}
+.seg button{background:transparent;color:var(--headersub);border:0;padding:5px 10px;font:500 12.5px var(--font-ui);cursor:pointer}
+.seg button.on{background:var(--btn-dark);color:var(--onheader)}
+.row2{display:flex;align-items:center;gap:12px}
+nav.tabs{display:flex;gap:2px;overflow-x:auto;flex:1;min-width:0;scrollbar-width:none}
+nav.tabs a{color:var(--headersub);text-decoration:none;padding:8px 12px 9px;font:600 13.5px var(--font-ui);border-bottom:2px solid transparent;white-space:nowrap}
+nav.tabs a.on{color:var(--onheader);border-bottom-color:var(--accent)}
+nav.tabs a:hover{color:var(--onheader)}
+.layout{display:grid;grid-template-columns:300px minmax(0,1fr);gap:28px;padding-block:20px 60px}
+.layout.single{grid-template-columns:minmax(0,1fr)}
+aside.rail{position:sticky;top:calc(env(safe-area-inset-top,0px) + 96px);align-self:start;max-height:calc(100vh - 116px);overflow:auto;padding-right:4px}
+.rail input{width:100%;background:var(--field);color:var(--ink);border:1px solid var(--line);border-radius:8px;padding:8px 10px;font:14px var(--font-ui)}
+.rail details{margin-top:10px}
+.rail summary{cursor:pointer;font:600 12px/1.3 var(--font-ui);letter-spacing:.06em;text-transform:uppercase;color:var(--ink-dim);padding:4px 0}
+.rail summary small{font:500 11px var(--font-mono);letter-spacing:0;color:var(--ink-faint);margin-left:4px}
+.rail ul{list-style:none;margin:4px 0 0;padding:0}
+.rail li a{display:block;padding:4px 8px;border-radius:6px;color:var(--ink);text-decoration:none;font-size:13.5px;line-height:1.35}
+.rail li a:hover{background:var(--row-hover)}
+.rail li a.on{background:var(--panel);color:var(--panel-ink);box-shadow:inset 2px 0 0 var(--accent)}
+.rail .sid{font:600 11.5px var(--font-mono);color:var(--ink-faint);margin-right:4px}
+.btn.railtoggle{display:none}
+main{min-width:0}
+article.page{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:28px clamp(18px,4vw,44px) 36px;box-shadow:0 1px 2px var(--shadow)}
+.crumb{font:500 12.5px var(--font-ui);color:var(--ink-faint);letter-spacing:.02em}
+h1.ptitle{font:700 clamp(22px,2.6vw,30px)/1.2 var(--font-ui);color:var(--head);margin:6px 0 10px;text-wrap:balance}
+.meta{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin-bottom:14px}
+.pill{display:inline-flex;align-items:center;gap:4px;border-radius:999px;padding:3px 9px;font:600 11.5px/1.3 var(--font-ui);border:1px solid var(--line);color:var(--ink-dim);background:var(--field)}
+.pill.type{background:var(--pill-rate-bg);color:var(--pill-rate-ink);border-color:transparent;text-transform:uppercase;letter-spacing:.05em}
+.pill.unread{background:var(--hi-bg);color:var(--hi-ink);border-color:var(--hi-line)}
+.pill.readok{background:var(--ok-bg);color:var(--ok-ink);border-color:var(--ok-line)}
+.pill.changed{background:var(--warn-bg);color:var(--warn-ink);border-color:var(--warn-line)}
+.apps{display:flex;flex-wrap:wrap;gap:8px;margin:4px 0 16px}
+.btn{display:inline-flex;align-items:center;gap:6px;border:1px solid var(--line);background:var(--field);color:var(--ink);border-radius:8px;padding:6px 12px;font:600 13px var(--font-ui);text-decoration:none;cursor:pointer}
+.btn.primary{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+.btn small{font:500 11.5px var(--font-mono);opacity:.85}
+.note{border:1px solid var(--warn-line);background:var(--warn-bg);color:var(--warn-ink);border-radius:8px;padding:8px 12px;margin:0 0 14px;font-size:13.5px}
+.note.info{border-color:var(--panel-line);background:var(--panel);color:var(--panel-ink)}
+.note a{color:inherit}
+.prose{font:17px/1.62 var(--font-read);color:var(--ink);max-width:72ch}
+.prose h1{display:none}
+.prose h2{font:700 19px/1.3 var(--font-ui);color:var(--head);margin:28px 0 8px}
+.prose h3{font:700 16px/1.3 var(--font-ui);color:var(--head);margin:22px 0 6px}
+.prose p{margin:0 0 12px}
+.prose ul,.prose ol{margin:0 0 14px;padding-left:22px}
+.prose li{margin:3px 0}
+.prose strong{color:var(--ink-strong)}
+.prose code{font:13.5px var(--font-mono);background:var(--field);border:1px solid var(--line-soft);border-radius:4px;padding:0 4px;word-break:break-word}
+.prose pre{background:var(--code-bg);color:var(--code-ink);border-radius:8px;padding:12px 14px;overflow-x:auto}
+.prose pre code{background:none;border:0;padding:0;color:inherit}
+.prose a[data-page^="S"]{font:600 13px var(--font-mono);text-decoration:none;background:var(--pill-rate-bg);color:var(--pill-rate-ink);border-radius:4px;padding:0 4px}
+.prose blockquote{margin:0 0 12px;border-left:3px solid var(--line);padding-left:12px;color:var(--ink-dim)}
+.tablewrap{overflow-x:auto;margin:0 0 14px;border:1px solid var(--line);border-radius:8px}
+.prose table{border-collapse:collapse;font:13.5px/1.4 var(--font-ui);width:100%}
+.prose th,.prose td{border-bottom:1px solid var(--line-soft);padding:6px 10px;text-align:left;vertical-align:top}
+.prose th{background:var(--field);color:var(--ink-dim);font-weight:600}
+.prose td{font-variant-numeric:tabular-nums}
+.foot{margin-top:28px;padding-top:16px;border-top:1px solid var(--line);display:grid;gap:14px}
+.foot h4{margin:0 0 6px;font:600 12px var(--font-ui);letter-spacing:.06em;text-transform:uppercase;color:var(--ink-dim)}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chips a{font:500 12.5px var(--font-ui);text-decoration:none;border:1px solid var(--line);border-radius:6px;padding:3px 8px;color:var(--ink);background:var(--field)}
+.chips a:hover{border-color:var(--accent)}
+.panel{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:20px clamp(16px,3vw,28px);margin-bottom:18px}
+.panel h2{font:700 20px/1.25 var(--font-ui);color:var(--head);margin:0 0 6px}
+.panel p.lead{color:var(--ink-dim);margin:0 0 14px;max-width:70ch}
+.stats{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:10px;margin:8px 0 4px}
+.stat{border:1px solid var(--line);border-radius:10px;padding:10px 12px;background:var(--field)}
+.stat b{display:block;font:700 22px/1.1 var(--font-ui);color:var(--ink-strong);font-variant-numeric:tabular-nums}
+.stat span{font-size:12.5px;color:var(--ink-dim)}
+.stat a{color:inherit;text-decoration:none}
+.searchbox{display:flex;gap:8px;flex-wrap:wrap}
+.searchbox input,.qtools input,.qtools select{flex:1;min-width:0;background:var(--field);color:var(--ink);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font:15px var(--font-ui)}
+.results{list-style:none;padding:0;margin:14px 0 0;display:grid;gap:10px}
+.results li{border:1px solid var(--line);border-radius:10px;padding:10px 14px;background:var(--card)}
+.results a.t{font:600 15px var(--font-ui);text-decoration:none;color:var(--head)}
+.results .snip{font:14px/1.5 var(--font-read);color:var(--ink-dim);margin-top:4px}
+mark{background:var(--mark);color:var(--mark-ink);border-radius:2px;padding:0 1px}
+.qtools{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:12px}
+.qtools select{flex:0 1 260px}
+.filter{display:inline-flex;gap:4px;flex-wrap:wrap}
+.filter button{border:1px solid var(--line);background:var(--field);color:var(--ink-dim);border-radius:999px;padding:5px 12px;font:600 12.5px var(--font-ui);cursor:pointer}
+.filter button.on{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+.qlist{display:grid;gap:10px}
+.q{border:1px solid var(--line);border-left:4px solid var(--hi-line);border-radius:10px;background:var(--card);padding:12px 16px}
+.q.done{border-left-color:var(--ok-line)}
+.q .qh{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-bottom:6px;font-size:12.5px;color:var(--ink-faint)}
+.q .qid{font:700 13px var(--font-mono);color:var(--ink-strong)}
+.q .prose{font-size:15.5px;max-width:none}
+.q .prose p:last-child{margin-bottom:0}
+.rv{list-style:none;padding:0;margin:0;display:grid;gap:4px}
+.rv li{display:flex;flex-wrap:wrap;gap:2px 10px;align-items:baseline;padding:5px 8px;border-radius:6px}
+.rv li:hover{background:var(--row-hover)}
+.rv input{accent-color:var(--accent);transform:translateY(1px)}
+.rv a{color:var(--ink);text-decoration:none;flex:1;min-width:0}
+.rv .why{flex-basis:100%;padding-left:24px;font-size:12.5px;color:var(--ink-faint)}
+.rv li.marked a{color:var(--ink-faint);text-decoration:line-through}
+.cols2{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:18px}
+.loglist{list-style:none;padding:0;margin:0;display:grid;gap:6px;font-size:14px}
+.loglist b{font:600 12.5px var(--font-mono);color:var(--ink-faint);margin-right:6px}
+.muted{color:var(--ink-dim)}
+.fig{margin:20px 0 24px;padding:0}
+.fig svg{display:block;width:100%;height:auto;max-width:760px}
+.fig figcaption{font:13.5px/1.45 var(--font-ui);color:var(--ink-dim);margin-top:8px;max-width:72ch}
+.doc .prose{max-width:76ch}
+.doc .prose h2{font-size:21px;margin-top:34px}
+.doc .prose h3{font-size:17px}
+.mdbox{white-space:pre-wrap;background:var(--code-bg);color:var(--code-ink);border-radius:8px;padding:14px;font:12.5px/1.5 var(--font-mono);max-height:520px;overflow:auto}
+@media (max-width:860px){
+  .layout{grid-template-columns:minmax(0,1fr);gap:14px}
+  aside.rail{position:static;max-height:none;display:none;border:1px solid var(--line);border-radius:10px;padding:12px;background:var(--card)}
+  aside.rail.open{display:block}
+  .btn.railtoggle{display:inline-flex}
+  .btn.railtoggle[hidden]{display:none}
+  .counts{display:none}
+  .prose{font-size:16.5px}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+<script>
+(function(){var pref=null;try{pref=localStorage.getItem('swmm_second_brain_theme')}catch(e){}
+var host=document.documentElement.getAttribute('data-theme');
+var t=(pref==='light'||pref==='dark')?pref:(pref==='auto'?((window.matchMedia&&matchMedia('(prefers-color-scheme: light)').matches)?'light':'dark'):(host==='light'?'light':'dark'));
+document.documentElement.setAttribute('data-theme',t);})();
+</script>
+
+<header class="top">
+  <div class="wrap">
+    <div class="row1">
+      <div class="brand"><b>SWMM Second Brain</b><span>Bob Dickinson's wiki of SWMM, ICM and his apps, kept by an AI from his sources</span></div>
+      <div class="counts" id="counts"></div>
+    </div>
+    <div class="row2">
+    <nav class="tabs" id="tabs" aria-label="Views">
+      <a href="#home" data-v="read">Read</a>
+      <a href="#search" data-v="search">Search</a>
+      <a href="#questions" data-v="questions">Open questions</a>
+      <a href="#review" data-v="review">To review</a>
+      <a href="#about" data-v="about">About</a>
+      <a href="#doc" data-v="doc">Doc</a>
+    </nav>
+    <div class="seg" id="theme-toggle" role="group" aria-label="Colour theme">
+      <button data-t="dark" class="on">Dark</button><button data-t="light">Light</button><button data-t="auto">Auto</button>
+    </div>
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+  <div class="layout" id="layout">
+    <aside class="rail" id="rail" aria-label="Index of pages">
+      <input id="railfilter" type="search" placeholder="Filter the index" aria-label="Filter the index">
+      <div id="railgroups"></div>
+    </aside>
+    <main id="main"></main>
+  </div>
+</div>
+
+<script type="application/json" id="data">/*__DATA__*/</script>
+<script type="text/markdown" id="app-md">/*__APPMD__*/</script>
+<script>
+(function(){
+'use strict';
+const D=JSON.parse(document.getElementById('data').textContent);
+const P=D.pages, C=D.counts;
+const $=s=>document.querySelector(s);
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const store={get(k,d){try{const v=localStorage.getItem(k);return v===null?d:JSON.parse(v)}catch(e){return d}},set(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}}};
+
+/* theme */
+let PREF=store.get('swmm_second_brain_theme_pref','dark');
+function applyTheme(pref){
+  PREF=(pref==='light'||pref==='auto')?pref:'dark';
+  let t=PREF;
+  if(PREF==='auto'){try{t=matchMedia('(prefers-color-scheme: light)').matches?'light':'dark'}catch(e){t='dark'}}
+  document.documentElement.setAttribute('data-theme',t);
+  document.querySelectorAll('#theme-toggle button').forEach(b=>b.classList.toggle('on',b.dataset.t===PREF));
+  try{localStorage.setItem('swmm_second_brain_theme',PREF)}catch(e){}
+  store.set('swmm_second_brain_theme_pref',PREF);
+}
+document.querySelectorAll('#theme-toggle button').forEach(b=>b.addEventListener('click',()=>applyTheme(b.dataset.t)));
+try{const mq=matchMedia('(prefers-color-scheme: light)');const on=()=>{if(PREF==='auto')applyTheme('auto')};mq.addEventListener?mq.addEventListener('change',on):mq.addListener(on)}catch(e){}
+(function(){let p=null;try{p=localStorage.getItem('swmm_second_brain_theme')}catch(e){}
+  if(p==='light'||p==='dark'||p==='auto')applyTheme(p);
+  else{PREF='dark';document.querySelectorAll('#theme-toggle button').forEach(b=>b.classList.toggle('on',b.dataset.t==='dark'));}})();
+
+/* header counts */
+$('#counts').innerHTML=[
+  [C.ingested+' of '+C.raw+' sources ingested'],[C.pages+' pages'],[C.open+' open questions'],[C.unreviewed+' not yet read by Bob']
+].map(x=>'<span>'+esc(x[0])+'</span>').join('');
+
+/* index rail */
+function typeLabel(p){return p.type==='synthesis'?'Synthesis':p.type==='source'?'Source':p.type==='concept'?'Concept':p.type==='entity'?'Entity':p.type==='index'?'Index':p.type==='log'?'Log':p.type}
+function shortTitle(id,t){const m=id.match(/^(S\d+)-/);if(m){return '<span class="sid">'+m[1]+'</span>'+esc(t.replace(/^S\d+:\s*/,''))}return esc(t)}
+const open=store.get('swmm_second_brain_open',{});
+function buildRail(filter){
+  const f=(filter||'').trim().toLowerCase();
+  const out=[];
+  D.groups.forEach(([name,items])=>{
+    const hits=items.filter(([id,t,s])=>!f||(t+' '+s+' '+id).toLowerCase().includes(f));
+    if(!hits.length)return;
+    const isOpen=f?true:(open[name]!==undefined?open[name]:!/^Sources/.test(name));
+    out.push('<details data-g="'+esc(name)+'"'+(isOpen?' open':'')+'><summary>'+esc(name.replace(/^Entities \/ |^Concepts \/ |^Sources \/ /,''))+' <small>'+hits.length+'</small></summary><ul>'+
+      hits.map(([id,t])=>'<li><a href="#'+esc(id)+'" data-id="'+esc(id)+'">'+shortTitle(id,t)+'</a></li>').join('')+'</ul></details>');
+  });
+  $('#railgroups').innerHTML=out.join('')||'<p class="muted">No page matches.</p>';
+  document.querySelectorAll('#railgroups details').forEach(d=>d.addEventListener('toggle',()=>{if(!f){open[d.dataset.g]=d.open;store.set('swmm_second_brain_open',open)}}));
+  markRail();
+}
+function markRail(){const id=current.page;document.querySelectorAll('#railgroups a').forEach(a=>a.classList.toggle('on',a.dataset.id===id))}
+$('#railfilter').addEventListener('input',e=>buildRail(e.target.value));
+
+/* review marks (per viewer) */
+let marks=store.get('swmm_second_brain_read',{});
+function saveMarks(){store.set('swmm_second_brain_read',marks)}
+
+/* page view */
+function wrapTables(el){el.querySelectorAll('table').forEach(t=>{if(!t.parentElement.classList.contains('tablewrap')){const w=document.createElement('div');w.className='tablewrap';t.replaceWith(w);w.appendChild(t)}})}
+function groupOf(id){for(const [name,items] of D.groups){if(items.some(x=>x[0]===id))return name}return ''}
+function pageView(id){
+  const p=P[id];
+  if(!p){$('#main').innerHTML='<div class="panel"><h2>No page called '+esc(id)+'</h2><p class="lead">It may have been renamed. Try the <a href="#search">search</a> or the index.</p></div>';return}
+  const meta=[];
+  meta.push('<span class="pill type">'+esc(typeLabel(p))+'</span>');
+  if(p.published)meta.push('<span class="pill">published '+esc(p.published)+'</span>');
+  if(p.updated)meta.push('<span class="pill">updated '+esc(p.updated)+'</span>');
+  if(p.ingested)meta.push('<span class="pill">ingested '+esc(p.ingested)+'</span>');
+  if(p.kind)meta.push('<span class="pill">'+esc(p.kind)+'</span>');
+  if(p.coverage)meta.push('<span class="pill">coverage: '+esc(p.coverage)+'</span>');
+  if(p.reviewed==='no')meta.push('<span class="pill unread" title="Bob has not read this page yet">not yet read by Bob</span>');
+  else if(p.reviewed)meta.push('<span class="pill readok">read by Bob '+esc(p.reviewed)+'</span>');
+  if(p.changed_after_review)meta.push('<span class="pill changed">changed after Bob read it</span>');
+  let notes='';
+  if(p.superseded_by){const sp=Object.keys(P).find(k=>k.startsWith(p.superseded_by+'-'));notes+='<div class="note">A newer version of this source exists: '+(sp?'<a href="#'+esc(sp)+'">'+esc(P[sp].title)+'</a>':esc(p.superseded_by))+'.</div>'}
+  if(p.changed_after_review)notes+='<div class="note">Changed after Bob read it: '+esc(p.changed_after_review)+'</div>';
+  let apps='';
+  if(p.apps&&p.apps.length){apps='<div class="apps">'+p.apps.map(([l,u],i)=>'<a class="btn'+(i===0?' primary':'')+'" href="'+esc(u)+'" target="_blank" rel="noopener">Open on '+esc(l)+' <small>'+esc(u.replace(/^https?:\/\//,''))+'</small></a>').join('')+'</div>'}
+  const src=(p.sources||[]).map(s=>{const k=Object.keys(P).find(x=>x.startsWith(s+'-'));return k?'<a href="#'+esc(k)+'" title="'+esc(P[k].title)+'">'+esc(s)+'</a>':''}).join('');
+  const back=(p.back||[]).filter(b=>b!=='home'&&b!=='log').map(b=>'<a href="#'+esc(b)+'">'+shortTitle(b,P[b].title)+'</a>').join('');
+  const raw=p.raw?'<a class="btn" href="'+esc(D.repo+'/blob/main/'+p.raw)+'" target="_blank" rel="noopener">Raw file on GitHub</a>':'';
+  const gh='<a class="btn" href="'+esc(D.repo+'/blob/main/'+p.path)+'" target="_blank" rel="noopener">This page on GitHub</a>';
+  const read=(p.reviewed==='no'||p.changed_after_review)?'<label class="btn"><input type="checkbox" id="markread" '+(marks[id]?'checked':'')+'> I have read this</label>':'';
+  $('#main').innerHTML='<article class="page"><div class="crumb">'+esc(groupOf(id)||typeLabel(p))+'</div><h1 class="ptitle">'+esc(p.title)+'</h1><div class="meta">'+meta.join('')+'</div>'+notes+apps+
+    '<div class="prose" id="prose">'+p.html+'</div><div class="foot">'+
+    (src?'<div><h4>Sources this page draws on</h4><div class="chips">'+src+'</div></div>':'')+
+    (back?'<div><h4>Pages that link here ('+p.back.filter(b=>b!=='home'&&b!=='log').length+')</h4><div class="chips">'+back+'</div></div>':'')+
+    '<div class="chips">'+raw+gh+read+'</div></div></article>';
+  wrapTables($('#prose'));
+  const mr=$('#markread');if(mr)mr.addEventListener('change',()=>{if(mr.checked)marks[id]=new Date().toISOString().slice(0,10);else delete marks[id];saveMarks()});
+}
+function homeView(){
+  const h=P.home;
+  const lastLog=D.lastLog.map(([d,k,t])=>'<li><b>'+esc(d)+' '+esc(k)+'</b>'+esc(t)+'</li>').join('');
+  $('#main').innerHTML='<div class="panel"><h2>What is in the wiki</h2><p class="lead">Sources go in once and are compiled into linked pages; every claim cites its source page. Pages marked "not yet read by Bob" are the AI\'s reading of the sources until Bob has read them.</p>'+
+    '<div class="stats">'+
+    '<div class="stat"><a href="#overview"><b>'+C.ingested+'</b><span>of '+C.raw+' raw sources ingested</span></a></div>'+
+    '<div class="stat"><b>'+C.concepts+'</b><span>concept pages</span></div>'+
+    '<div class="stat"><b>'+C.entities+'</b><span>entity pages (programs, apps, people)</span></div>'+
+    '<div class="stat"><b>'+C.sources+'</b><span>source pages</span></div>'+
+    '<div class="stat"><a href="#questions"><b>'+C.open+'</b><span>open questions, '+C.settled+' settled</span></a></div>'+
+    '<div class="stat"><a href="#review"><b>'+C.unreviewed+'</b><span>pages not yet read by Bob</span></a></div>'+
+    '</div></div><div class="cols2"><div class="panel"><h2>Start here</h2><div class="chips"><a href="#overview">Overview</a><a href="#open-questions">Open questions page</a><a href="#log">Log</a><a href="#search">Search</a></div><p class="lead" style="margin-top:12px">Built '+esc(D.built)+' from <a href="'+esc(D.repo)+'" target="_blank" rel="noopener">dickinsonre/swmm-second-brain</a>.</p></div>'+
+    '<div class="panel"><h2>Latest in the log</h2><ul class="loglist">'+lastLog+'</ul></div></div>'+
+    '<article class="page"><div class="crumb">Index</div><h1 class="ptitle">Every page, one line each</h1><div class="prose" id="prose" style="max-width:none">'+h.html+'</div></article>';
+  wrapTables($('#prose'));
+}
+
+/* search */
+let IDX=null;
+function buildIdx(){IDX=Object.values(P).filter(p=>p.id!=='home').map(p=>{const d=document.createElement('div');d.innerHTML=p.html;const text=d.textContent.replace(/\s+/g,' ');return {id:p.id,title:p.title,type:p.type,text,lt:text.toLowerCase(),ltitle:p.title.toLowerCase()}})}
+function searchView(q){
+  $('#main').innerHTML='<div class="panel"><h2>Search the wiki</h2><p class="lead">Every word must appear. Titles count most.</p><form class="searchbox" id="sform"><input id="sq" type="search" placeholder="e.g. Preissmann slot, RTK, InfoSewer" value="'+esc(q||'')+'" aria-label="Search words"><button class="btn primary" type="submit">Search</button></form><ul class="results" id="sres"></ul></div>';
+  const run=()=>{
+    const v=$('#sq').value.trim();store.set('swmm_second_brain_q',v);
+    const terms=v.toLowerCase().split(/\s+/).filter(Boolean);
+    if(!terms.length){$('#sres').innerHTML='';return}
+    if(!IDX)buildIdx();
+    const hits=[];
+    for(const r of IDX){let score=0,ok=true;for(const t of terms){const n=r.lt.split(t).length-1;const tn=r.ltitle.includes(t)?1:0;if(!n&&!tn){ok=false;break}score+=n+tn*20}if(ok)hits.push([score,r])}
+    hits.sort((a,b)=>b[0]-a[0]);
+    const re=new RegExp('('+terms.map(t=>t.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')).join('|')+')','gi');
+    $('#sres').innerHTML=hits.length?('<li class="muted" style="border:0;padding:0;background:none">'+hits.length+' page'+(hits.length>1?'s':'')+'</li>'+hits.slice(0,80).map(([s,r])=>{const i=Math.max(0,r.lt.indexOf(terms[0])-90);const snip=(i>0?'… ':'')+r.text.slice(i,i+260)+' …';
+      return '<li><a class="t" href="#'+esc(r.id)+'">'+shortTitle(r.id,r.title)+'</a> <span class="pill type">'+esc(typeLabel(r))+'</span><div class="snip">'+esc(snip).replace(re,'<mark>$1</mark>')+'</div></li>'}).join('')):'<li class="muted">No page has all of those words.</li>';
+  };
+  $('#sform').addEventListener('submit',e=>{e.preventDefault();run()});
+  $('#sq').addEventListener('input',()=>{clearTimeout(window.__st);window.__st=setTimeout(run,180)});
+  if(q)run();$('#sq').focus();
+}
+
+/* open questions */
+let qstate=store.get('swmm_second_brain_qstate',{show:'open',sec:'',q:''});
+function questionsView(){
+  const secs=[...new Set(D.questions.map(q=>q.section))];
+  $('#main').innerHTML='<div class="panel"><h2>Open questions</h2><p class="lead">Contradictions, doubtful numbers and gaps. An item is ticked only when a source or Bob settles it, and the page says which.</p>'+
+    '<div class="qtools"><div class="filter" id="qshow"><button data-s="open">Open '+C.open+'</button><button data-s="done">Settled '+C.settled+'</button><button data-s="all">All '+D.questions.length+'</button></div>'+
+    '<select id="qsec" aria-label="Section"><option value="">All sections</option>'+secs.map(s=>'<option>'+esc(s)+'</option>').join('')+'</select><input id="qq" type="search" placeholder="Filter by word" aria-label="Filter questions" value="'+esc(qstate.q)+'"></div><div class="qlist" id="qlist"></div></div>';
+  const draw=()=>{
+    document.querySelectorAll('#qshow button').forEach(b=>b.classList.toggle('on',b.dataset.s===qstate.show));
+    $('#qsec').value=qstate.sec;
+    const w=qstate.q.toLowerCase();
+    const list=D.questions.filter(q=>(qstate.show==='all'||(qstate.show==='done')===q.done)&&(!qstate.sec||q.section===qstate.sec)&&(!w||(q.id+' '+q.html).toLowerCase().includes(w)));
+    $('#qlist').innerHTML=list.length?list.map(q=>'<div class="q'+(q.done?' done':'')+'"><div class="qh"><span class="qid">'+esc(q.id)+'</span><span class="pill '+(q.done?'readok':'unread')+'">'+(q.done?'settled':'open')+'</span><span>'+esc(q.date)+'</span><span>'+esc(q.section)+'</span></div><div class="prose">'+q.html+'</div></div>').join(''):'<p class="muted">Nothing matches.</p>';
+    store.set('swmm_second_brain_qstate',qstate);
+  };
+  document.querySelectorAll('#qshow button').forEach(b=>b.addEventListener('click',()=>{qstate.show=b.dataset.s;draw()}));
+  $('#qsec').addEventListener('change',e=>{qstate.sec=e.target.value;draw()});
+  $('#qq').addEventListener('input',e=>{qstate.q=e.target.value;draw()});
+  draw();
+}
+
+/* to review */
+function reviewView(){
+  const changed=Object.values(P).filter(p=>p.changed_after_review);
+  const unread=Object.values(P).filter(p=>p.reviewed==='no');
+  const order={synthesis:0,concept:1,entity:2,source:3};
+  unread.sort((a,b)=>(order[a.type]-order[b.type])||a.title.localeCompare(b.title,undefined,{numeric:true}));
+  const row=(p,why)=>'<li class="'+(marks[p.id]?'marked':'')+'"><input type="checkbox" data-id="'+esc(p.id)+'" '+(marks[p.id]?'checked':'')+' aria-label="Mark '+esc(p.title)+' as read"><a href="#'+esc(p.id)+'">'+shortTitle(p.id,p.title)+'</a><span class="why">'+esc(why)+'</span></li>';
+  const groups={};unread.forEach(p=>{(groups[p.type]=groups[p.type]||[]).push(p)});
+  const n=Object.keys(marks).length;
+  $('#main').innerHTML='<div class="panel"><h2>To review</h2><p class="lead">Pages Bob has not read yet, and pages changed after he read them. Tick a page when you have read it; the ticks stay in this browser only. When you are done, copy the list and paste it to Claude, and the pages get their <code>reviewed:</code> date in the repo.</p>'+
+    '<div class="chips" style="align-items:center"><button class="btn primary" id="copyread">Copy the '+n+' page'+(n===1?'':'s')+' I have ticked</button><button class="btn" id="clearread">Clear my ticks</button><span class="muted" id="copymsg"></span></div><textarea id="copybox" hidden readonly style="width:100%;margin-top:10px;min-height:90px;background:var(--field);color:var(--ink);border:1px solid var(--line);border-radius:8px;padding:8px;font:13px var(--font-mono)"></textarea></div>'+
+    '<div class="panel"><h2>Changed after Bob read them <span class="muted" style="font-size:15px">'+changed.length+'</span></h2><ul class="rv">'+changed.map(p=>row(p,p.changed_after_review.slice(0,140)+(p.changed_after_review.length>140?' …':''))).join('')+'</ul></div>'+
+    Object.keys(groups).sort((a,b)=>order[a]-order[b]).map(t=>'<div class="panel"><h2>Not yet read: '+esc(typeLabel({type:t}).toLowerCase())+' pages <span class="muted" style="font-size:15px">'+groups[t].length+'</span></h2><ul class="rv">'+groups[t].map(p=>row(p,p.updated||p.ingested||'')).join('')+'</ul></div>').join('');
+  document.querySelectorAll('.rv input').forEach(cb=>cb.addEventListener('change',()=>{const id=cb.dataset.id;if(cb.checked)marks[id]=new Date().toISOString().slice(0,10);else delete marks[id];saveMarks();cb.closest('li').classList.toggle('marked',cb.checked);const k=Object.keys(marks).length;$('#copyread').textContent='Copy the '+k+' page'+(k===1?'':'s')+' I have ticked'}));
+  $('#copyread').addEventListener('click',()=>{
+    const ids=Object.keys(marks).sort();
+    const txt='Pages I have read in the SWMM second brain ('+ids.length+'), with the day I ticked each:\n'+ids.map(i=>'- '+i+' ('+marks[i]+')').join('\n');
+    const box=$('#copybox');box.hidden=false;box.value=txt;
+    const done=()=>{$('#copymsg').textContent='Copied. Paste it to Claude.'};
+    try{navigator.clipboard.writeText(txt).then(done,()=>{box.select();$('#copymsg').textContent='Select all in the box and copy.'})}catch(e){box.select();$('#copymsg').textContent='Select all in the box and copy.'}
+  });
+  $('#clearread').addEventListener('click',()=>{marks={};saveMarks();reviewView()});
+}
+
+/* about */
+function aboutView(){
+  $('#main').innerHTML='<div class="panel"><h2>About this app</h2><p class="lead">A reader for Bob Dickinson\'s second brain: the LLM wiki in <a href="'+esc(D.repo)+'" target="_blank" rel="noopener">dickinsonre/swmm-second-brain</a>, after the pattern Andrej Karpathy described. Raw sources go into <code>raw/</code> and are never edited; an AI agent compiles them into the pages here and keeps them current; every claim cites a source page.</p>'+
+    '<div class="prose" style="max-width:72ch"><p>This page is built from the repository by <code>tools/build_app.py</code>, run after every ingest. It holds '+C.pages+' wiki pages, the index and the log. Links between pages work inside the app. Links to raw files open on GitHub. Pages about an app carry buttons to the app itself, Netlify first where the app has a Netlify address.</p>'+
+    '<p>Built '+esc(D.built)+'. Raw sources: '+C.raw+', of which '+C.ingested+' are ingested and '+C.queued+' queued. Open questions: '+C.open+', settled: '+C.settled+'. Pages not yet read by Bob: '+C.unreviewed+'; pages changed after he read them: '+C.changed+'.</p>'+
+    '<h2>AI use</h2><p>Built with Claude, Anthropic\'s AI model, in Claude sessions in November 2026, at Robert Dickinson\'s direction; he chose what goes into the wiki and decides what is settled, and responsibility is his. Claude wrote this app and its build script, and wrote or updated every wiki page from the raw sources. Many of the app summaries in <code>raw/apps/</code> were written by Replit Agent inside each Replit project and say so. The checks are mechanical: <code>tools/lint.py</code> checks links, front matter, citations and raw-file hashes, and each ingest searches the numbers on new pages in their raw files. No person has read most of the pages yet; the To review tab lists them.</p>'+
+    '<h2>Technical summary</h2><p>The app ships with a markdown summary written for AI readers and engineers: what it computes, its inputs, checks, limits and credits. It is the file <code>swmm-second-brain.md</code> next to the page, and it is also inside this page.</p><p><button class="btn" id="showmd">Show the technical summary (.md)</button></p><pre class="mdbox" id="mdbox" hidden></pre>'+
+    '<h2>Credits</h2><p>Sources by Robert Dickinson unless a source page names another author. The wiki pattern is Andrej Karpathy\'s. Fonts: Inter, Source Serif 4 and JetBrains Mono from Google Fonts. Page text rendered with Python-Markdown at build time.</p></div></div>';
+  const mdt=document.getElementById('app-md').textContent.trim();
+  $('#showmd').addEventListener('click',()=>{const b=$('#mdbox');b.hidden=!b.hidden;b.textContent=mdt||'The summary is not in this build.'});
+}
+function docView(){
+  $('#main').innerHTML='<article class="page doc"><div class="crumb">Doc</div><h1 class="ptitle">How the SWMM Second Brain works</h1><div class="meta"><span class="pill">built '+esc(D.built)+'</span><span class="pill">written with Claude; see AI use</span></div><div class="prose" id="prose">'+D.doc+'</div></article>';
+  wrapTables($('#prose'));
+}
+
+/* router */
+const current={view:'read',page:'home'};
+function route(){
+  let h=decodeURIComponent((location.hash||'').slice(1))||'home';
+  const views={search:'search',questions:'questions',review:'review',about:'about',doc:'doc'};
+  current.view=views[h]||'read';
+  current.page=current.view==='read'?h:'';
+  document.querySelectorAll('#tabs a').forEach(a=>a.classList.toggle('on',a.dataset.v===current.view));
+  $('#layout').classList.toggle('single',current.view!=='read');
+  $('#rail').hidden=current.view!=='read';
+  if(current.view==='search')searchView(store.get('swmm_second_brain_q',''));
+  else if(current.view==='questions')questionsView();
+  else if(current.view==='review')reviewView();
+  else if(current.view==='about')aboutView();
+  else if(current.view==='doc')docView();
+  else if(h==='home')homeView();
+  else pageView(h);
+  markRail();
+  $('#rail').classList.remove('open');
+  rt.hidden=current.view!=='read';
+  window.scrollTo(0,0);
+  document.title=(current.view==='read'&&P[h]&&h!=='home'?P[h].title.replace(/^S\d+:\s*/,'')+' · ':'')+'SWMM Second Brain';
+}
+/* phone: a button to open the index */
+const rt=document.createElement('button');rt.className='btn railtoggle';rt.textContent='Index of pages';rt.addEventListener('click',()=>$('#rail').classList.toggle('open'));
+$('#layout').insertAdjacentElement('beforebegin',rt);rt.style.marginTop='12px';
+window.addEventListener('hashchange',route);
+buildRail('');
+route();
+})();
+</script>
