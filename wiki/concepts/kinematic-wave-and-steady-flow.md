@@ -4,8 +4,7 @@ type: concept
 updated: 2026-11-15
 sources: [S01, S08, S10, S17, S60, S117, S125]
 tags: [hydraulics, swmm5, routing]
-reviewed: 2026-11-15
-changed_after_review: "2026-11-15 (second Replit ingest): one paragraph added at the end, headed Added 15 November 2026, on the Kinematic Wave Router and the Extended engine of BatchSWMM56 (S117, S125)"
+reviewed: 11/16/2026
 ---
 SWMM5 has two routing methods simpler than [dynamic wave](dynamic-wave-routing.md) [S17](../sources/S17-li-routing-options.md).
 

@@ -4,8 +4,7 @@ type: concept
 updated: 2026-11-16
 sources: [S62, S63, S157]
 tags: [calibration, uncertainty, method, verification]
-reviewed: 2026-11-15
-changed_after_review: "2026-11-16 (modpods ingest): one paragraph added at the end, headed Added 16 November 2026, pointing to Calibrating SWMM through a surrogate (S157)"
+reviewed: 11/16/2026
 ---
 What it takes to trust a model's number, as [William (Bill) James](../entities/william-james.md) set it out in Rules for Responsible Modeling (2005) and as Bob's [Rules for Responsible Modeling (app)](../entities/rules-for-responsible-modeling-app.md) puts it into practice [S63](../sources/S63-li-edition-53-measure-of-honest-numbers.md).
 

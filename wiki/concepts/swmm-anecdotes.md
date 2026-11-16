@@ -4,8 +4,7 @@ type: concept
 updated: 2026-11-15
 sources: [S19, S90, S91, S92, S93, S94, S95]
 tags: [history, recollections, people]
-reviewed: 2026-11-15
-changed_after_review: "2026-11-15, after Bob's review that morning, changed in place and not in a separate Added paragraph: new first anecdote, Twenty thousand punch cards (S94, S95, S19); the post's date and link in the opening paragraph; the Canberra dates and the name XP-SWMM in the XP-EXTRAN anecdote (S91, S93); Bob's answers on barrels in the double-pipes anecdote (S91, S92); six sentences cut to stay near 600 words; the closing Not in the sources paragraph shortened"
+reviewed: 11/16/2026
 ---
 Short recollections of SWMM's history by people who were there, kept in their own words. They are memories, not documents: where one meets a manual, a listing or a dated release note, the document outranks it. Each is cited to the note it came from, and the note names who said it and where [S90](../sources/S90-note-swmm-anecdotes-linkedin-comments.md). The first seven come from a LinkedIn post of Bob's dated 14 November 2026 [S94](../sources/S94-li-post-my-earlier-history-with-swmm.md) and the comments under it.
 

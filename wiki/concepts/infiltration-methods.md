@@ -4,8 +4,7 @@ type: concept
 updated: 2026-11-15
 sources: [S01, S03, S08, S10, S15, S55, S59, S67, S107, S108]
 tags: [hydrology, swmm5, infiltration]
-reviewed: 2026-11-15
-changed_after_review: "2026-11-15 (Replit ingest): one paragraph added near the end, headed Added 15 November 2026, on two Replit infiltration calculators (S107, S108)"
+reviewed: 11/16/2026
 ---
 SWMM5's infiltration methods, as named in its code [S15](../sources/S15-li-hydrology-code-story.md):
 

@@ -4,8 +4,7 @@ type: concept
 updated: 2026-11-15
 sources: [S60, S83, S131]
 tags: [hydraulics, swmm5, pumps, primary-document]
-reviewed: 2026-11-15
-changed_after_review: "2026-11-15 (S131 ingest): one paragraph added at the end, headed Added 15 November 2026, on the SWMM5 Control Rule Editor app (S131)"
+reviewed: 11/16/2026
 ---
 SWMM 5 treats a pump as a link whose flow comes from a user-supplied pump curve [S60](../sources/S60-epa-swmm5-reference-manual-vol2-hydraulics.md). Everything on this page is from sections 2.1.6 and 6.1 of the EPA hydraulics manual unless another source is cited.
 

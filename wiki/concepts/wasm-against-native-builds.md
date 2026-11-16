@@ -4,8 +4,7 @@ type: concept
 updated: 2026-11-16
 sources: [S68, S73, S74, S76, S77, S78, S79, S80, S81, S82, S83, S157]
 tags: [wasm, verification, swmm5, math-library, apps]
-reviewed: 2026-11-15
-changed_after_review: "2026-11-16 (modpods ingest): one paragraph added at the end, headed Added 16 November 2026, on the LSTM + SWMM5 app's WebAssembly against native results (S157)"
+reviewed: 11/16/2026
 ---
 Most of Bob's engine apps run EPA SWMM 5.2.4 compiled to WebAssembly inside the page. Does that build give the same answers as a native build of the same C? Several apps tested it, and they do not all report the same thing. One of them found the cause [S82](../sources/S82-mirab-test-bench-summary.md).
 

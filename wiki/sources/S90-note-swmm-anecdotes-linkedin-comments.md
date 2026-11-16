@@ -7,8 +7,7 @@ author: Robert Dickinson
 published: 2026-11-15
 ingested: 2026-11-15
 tags: [history, recollections, people, xp-swmm, swmm3]
-reviewed: 2026-11-15
-changed_after_review: "2026-11-15, after Bob's review that morning: one sentence added under Checked at ingest, pointing to his answers in S91"
+reviewed: 11/16/2026
 ---
 **What it is.** Recollections of SWMM history posted as public comments under one of Bob's LinkedIn posts in November 2026: four comments by Bob, and sentences from seven other people. Raw file: [raw/notes/swmm-anecdotes-linkedin-comments-2026-11.md](../../raw/notes/swmm-anecdotes-linkedin-comments-2026-11.md).
 

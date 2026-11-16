@@ -4,8 +4,7 @@ type: entity
 updated: 2026-11-15
 sources: [S07, S09, S11, S12, S18, S19, S21, S22, S23, S29, S41, S45, S55, S61, S63, S64, S84, S85, S90, S91, S93, S94, S134]
 tags: [people]
-reviewed: 2026-11-15
-changed_after_review: "2026-11-15, after Bob's re-review that morning: the paragraph headed Added 15 November 2026 extended with the Canberra dates (S91), the 1993 name change (S93) and two sentences from his post (S94); its wording on SWMM 3 corrected, with a pointer to Q65; 2026-11-15 (S134 ingest): one paragraph added, headed Added 15 November 2026, pointing to the page on his better received LinkedIn posts (S134)"
+reviewed: 11/16/2026
 ---
 Author of every source in this wiki. Professional record only, as he has published it.
 

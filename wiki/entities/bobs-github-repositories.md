@@ -4,8 +4,7 @@ type: entity
 updated: 2026-11-15
 sources: [S07, S08, S55, S57, S96, S97, S101, S103, S115, S119, S124, S126, S128, S129, S130, S137]
 tags: [repositories]
-reviewed: 2026-11-15
-changed_after_review: "2026-11-15 (Replit ingest): one paragraph added at the end, headed Added 15 November 2026, listing four repositories named by Replit apps (S96, S97, S101, S103); 2026-11-15 (second Replit ingest): a second paragraph added at the end, headed Added 15 November 2026, listing seven repositories named by Replit apps (S115, S119, S124, S126, S128, S129, S130); 2026-11-15 (S137 to S142 ingest): a paragraph added at the end, headed Added 15 November 2026, naming SWMMEnablement/SWMM_MD_Documents (S137, S60)"
+reviewed: 11/16/2026
 ---
 Every repository named in an ingested source, with the description the source gives. None of their contents is in `raw/` yet. This page is the map for future ingests.
 

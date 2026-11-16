@@ -4,8 +4,7 @@ type: concept
 updated: 2026-11-15
 sources: [S10, S20, S115, S120]
 tags: [hydraulics, swmm5, icm, force-mains]
-reviewed: 2026-11-15
-changed_after_review: "2026-11-15 (second Replit ingest): one paragraph added at the end, headed Added 15 November 2026, on two Replit force main calculators (S115, S120)"
+reviewed: 11/16/2026
 ---
 SWMM 5 offers three friction equations for a pipe under pressure, and the choice can move the answer by a factor of two [S20](../sources/S20-li-edition-54-two-solvers.md).
 

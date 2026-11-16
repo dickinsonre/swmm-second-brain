@@ -4,8 +4,7 @@ type: entity
 updated: 2026-11-15
 sources: [S23, S24, S25, S26, S27, S28, S29, S30, S31, S32, S33, S34, S35, S70, S71, S119]
 tags: [swmm6, translation, verification]
-reviewed: 2026-11-15
-changed_after_review: "2026-11-15 (second Replit ingest): one paragraph added near the end, headed Added 15 November 2026, on the SWMM6 translations inside the Code Rosetta Stone app (S119)"
+reviewed: 11/16/2026
 ---
 Thirteen public repositories under SWMMBobSWMM6, each a translation of the OpenSWMM 6 1D engine (HydroCouple/openswmm.engine, branch `swmm6_rel`, commit 88329d6) into one language, held to the same `.out` and `.rpt` as the C++ engine [S23](../sources/S23-swmm6-csharp-readme.md). Each README says it is "not SWMM6 and not a HydroCouple or EPA release; it is a translation checked against SWMM6" [S23](../sources/S23-swmm6-csharp-readme.md). How a model passes is on [Byte-for-byte gate](../concepts/byte-for-byte-gate.md).
 

@@ -4,8 +4,7 @@ type: concept
 updated: 2026-11-16
 sources: [S16, S55, S155, S157]
 tags: [hydrology, rdii, swmm5]
-reviewed: 2026-11-15
-changed_after_review: "2026-11-16 (modpods ingest): one paragraph added at the end, headed Added 16 November 2026, on modpods' gamma kernels as fitted unit hydrographs (S155, S157)"
+reviewed: 11/16/2026
 ---
 SWMM5 computes rainfall-dependent inflow and infiltration (RDII) from triangular unit hydrographs [S16](../sources/S16-li-rdii-in-swmm5.md).
 

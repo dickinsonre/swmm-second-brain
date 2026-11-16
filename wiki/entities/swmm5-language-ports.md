@@ -4,8 +4,7 @@ type: entity
 updated: 2026-11-15
 sources: [S36, S37, S38, S39, S40, S41, S42, S43, S44, S45, S46, S47, S48, S49, S50, S51, S52, S53, S54, S70, S71, S119]
 tags: [swmm5, translation, verification]
-reviewed: 2026-11-15
-changed_after_review: "2026-11-15 (second Replit ingest): one paragraph added near the end, headed Added 15 November 2026, on the SWMM5 translations inside the Code Rosetta Stone app (S119)"
+reviewed: 11/16/2026
 ---
 Nineteen public repositories under SWMMBobSWMM6, each EPA SWMM 5.2.4 "written by a translator that reads EPA's C, and judged against EPA itself" on 480 models [S41](../sources/S41-swmm5-go-readme.md). They are the languages of Bob's Code Rosetta Stone app [S47](../sources/S47-swmm5-php-readme.md). How a model passes is on [Byte-for-byte gate](../concepts/byte-for-byte-gate.md).
 
