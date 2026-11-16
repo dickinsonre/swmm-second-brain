@@ -2,11 +2,11 @@
 title: ICM network tables and result fields
 type: concept
 updated: 2026-11-16
-sources: [S162, S163, S17]
+sources: [S162, S163, S17, S166, S178]
 tags: [icm, ruby, data-model, results, comparison]
 reviewed: no
 ---
-InfoWorks ICM keeps its two network types in different tables and reports their results under different names. Two notes Bob supplied on 16 November 2026 map the first few. Their author is not stated, their Autodesk facts are reported from Autodesk's help and not checked here, and nothing in them has been run (Q89).
+InfoWorks ICM keeps its two network types in different tables and reports their results under different names. Two notes Bob supplied on 16 November 2026 map the first few. Bob says they come from the GPT plugin for Autodesk [S166](../sources/S166-note-icm-notes-from-gpt-plugin.md), so they are AI-written; their Autodesk facts are reported from Autodesk's help and not checked here, and nothing in them has been run (Q90).
 
 **Two network types.** An InfoWorks network, solved by ICM's own St. Venant scheme, and an ICM SWMM network, which runs the SWMM5 dynamic wave [S17](../sources/S17-li-routing-options.md). See [InfoWorks ICM](../entities/infoworks-icm.md).
 
@@ -17,6 +17,8 @@ InfoWorks ICM keeps its two network types in different tables and reports their 
 | Node | `hw_node` | `sw_node` |
 | Conduit | `hw_conduit` | `sw_conduit` |
 | Subcatchment | `hw_subcatchment` | `sw_subcatchment` |
+
+Infiltration Surface (2D) objects, in an InfoWorks network, are stored in `hw_2d_infil_surface` [S178](../sources/S178-li-cnswmm-on-the-icm-2d-mesh.md).
 
 The note's rule for a Ruby exporter: find the network type first, then the exact database field in that table, from Autodesk's Network Data Fields index. Keep the interface label beside the database field so an exported column can be traced to GeoPlan. For each exported value keep the network type, table, object ID, database field and unit, and record a field missing from one network type as unavailable [S162](../sources/S162-note-icm-network-tables-and-fields.md).
 

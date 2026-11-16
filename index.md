@@ -90,6 +90,13 @@ Graph theory
 - [Graph coloring and Ramsey numbers](wiki/concepts/graph-coloring-and-ramsey.md): chromatic number and index, the four-color and Vizing theorems, R(3) = 6, R(4) = 18 and the bounds beyond.
 - [Random walks and centrality](wiki/concepts/graph-random-walks-and-centrality.md): Markov chains, the equilibrium distribution behind PageRank, betweenness centrality as a bottleneck finder.
 
+ICM 2D
+- [ICM 2D: terrain, mesh and subgrid sampling](wiki/concepts/icm-2d-mesh-and-subgrid.md): mesh inputs and what to check on each; subgrid volume-level tables and face sampling (a Tech Preview in 2027).
+- [ICM 2D: boundaries and 1D-2D exchange](wiki/concepts/icm-2d-boundaries-and-exchange.md): six edge boundary types, manhole flood types, bank spill as a segmented weir; warning 1053 and error E10553.
+- [ICM 2D: rainfall and infiltration on the mesh](wiki/concepts/icm-2d-rainfall-and-infiltration.md): rain where subcatchments overlap the mesh; Curve Number approximated in 2023, CNSWMM on the mesh from 2025.1.
+- [ICM 2D: timestep, volume balance and results](wiki/concepts/icm-2d-runs-and-checks.md): CFL stability control, the two control volumes, and results tied to their time basis.
+- [ICM 2D: three benchmark cases](wiki/concepts/icm-2d-benchmark-cases.md): a closed rainfall box (833.33 cu ft), a reversing manhole and an embankment gap; designs, not run.
+
 ## Entities
 
 Engines and programs
@@ -321,6 +328,17 @@ Notes and data
 - [S163](wiki/sources/S163-note-icm-results-field-crosswalk.md) (2026-11-16): note, InfoWorks `DEPNOD` against ICM SWMM `HEAD` and `DEPTH`.
 - [S164](wiki/sources/S164-note-swmm-inp-conversion-qa.md) (2026-11-16): note, checks for each route from a SWMM5 `.inp` into ICM.
 - [S165](wiki/sources/S165-note-epa-swmm-ruby-icm-benchmark.md) (2026-11-16): note, a two-pipe benchmark design for EPA SWMM 5.2.4, swmm5-ruby, ICM SWMM and ICM InfoWorks.
+- [S166](wiki/sources/S166-note-icm-notes-from-gpt-plugin.md) (2026-11-16): note, Bob says the ICM notes come from the GPT plugin for Autodesk.
+- [S167](wiki/sources/S167-note-icm-2d-terrain-and-mesh.md) (2026-11-16): note (AI-written), building an ICM 2D mesh around the flow paths.
+- [S168](wiki/sources/S168-note-icm-2d-boundary-conditions.md) (2026-11-16): note (AI-written), the six ICM 2D boundary types.
+- [S169](wiki/sources/S169-note-icm-2d-rainfall-and-infiltration.md) (2026-11-16): note (AI-written), rainfall and infiltration where subcatchments overlap the mesh.
+- [S170](wiki/sources/S170-note-icm-1d-2d-node-exchange.md) (2026-11-16): note (AI-written), manhole flood types and 1D-2D exchange.
+- [S171](wiki/sources/S171-note-icm-2d-river-bank-exchange.md) (2026-11-16): note (AI-written), river bank spill to the 2D zone.
+- [S172](wiki/sources/S172-note-icm-2d-subgrid-sampling.md) (2026-11-16): note (AI-written), subgrid sampling and a four-run comparison.
+- [S173](wiki/sources/S173-note-icm-2d-timestep-and-stability.md) (2026-11-16): note (AI-written), 2D time stepping and stability control.
+- [S174](wiki/sources/S174-note-icm-2d-volume-balance.md) (2026-11-16): note (AI-written), volume balance for the 2D mesh and the combined model.
+- [S175](wiki/sources/S175-note-icm-2d-results-and-hazard.md) (2026-11-16): note (AI-written), 2D results and hazard tied to their time basis.
+- [S176](wiki/sources/S176-note-icm-2d-benchmark-cases.md) (2026-11-16): note (AI-written), three ICM 2D benchmark cases.
 
 The old swmm-brain repository
 - [S55](wiki/sources/S55-swmm-brain-readme.md) (2026-08-22): README: enhancements, apps, scripts, timeline.
@@ -351,6 +369,8 @@ LinkedIn articles
 - [S66](wiki/sources/S66-li-design-storm-app-66-patterns.md) (2026-02-25): Design Storm App for 6 Continents and 66 Patterns: the rainfall app as announced.
 - [S72](wiki/sources/S72-li-swmm6-code-house-article.md) (2026-11-04): SWMM6 Code House, Every Line of OpenSWMM 6 on a Wall: both houses, and 20 reading notes.
 - [S94](wiki/sources/S94-li-post-my-earlier-history-with-swmm.md) (2026-11-14): LinkedIn post, my earlier history with SWMM: SWMM at 17, at work on it at 22, SWMM 2.5 as 20,000 punch cards.
+- [S177](wiki/sources/S177-li-curve-number-approximations-icm-2d.md) (2023-09-22): Investigating Curve Number Approximations on an ICM InfoWorks 2D Infiltration Surface.
+- [S178](wiki/sources/S178-li-cnswmm-on-the-icm-2d-mesh.md) (2024-05-28): Curve Number or CNSWMM infiltration model for 2D simulations is now in ICM 2025.1.
 
 Repository READMEs (SWMM6 translations)
 - [S23](wiki/sources/S23-swmm6-csharp-readme.md) (2026-11-04): swmm6-csharp, the OpenSWMM 6 engine in C#; 480 of 480, 452 of 452.
@@ -390,7 +410,7 @@ Repository READMEs (SWMM5 translations)
 
 ## Queue
 
-241 raw files are queued: 212 LinkedIn articles and the as-pasted copy of the post of 14 November 2026 (kept because raw files are never deleted; its corrected copy is S94, so it is not to be ingested), 19 manual files in `raw/manuals/` (8 EPA, USGS and FHWA documents not yet started, and 11 SWMM 4.4 documentation files), 4 swmm5.org topic pages, 2 SWMM 1 build notes and 3 files in `raw/apps/`. One, `swmm-second-brain-v0.1.0.md`, is the summary of the reader app for this wiki, written by Claude when the app was built on 15 November 2026. One, `PyBME-issue-drafts.md`, is not an app summary and was left queued on purpose (Q56). The last, `st-venant-solver-rosetta-stone-v2.6.2.md`, is the newer version of an app already ingested at version 2.4.0 (S75); it was added on 15 November 2026 and bears on Q62. Three more LinkedIn files are byte-identical copies of others and are marked `duplicate`. `raw/MANIFEST.csv` lists them all. Suggested next batches, in order:
+239 raw files are queued: 210 LinkedIn articles and the as-pasted copy of the post of 14 November 2026 (kept because raw files are never deleted; its corrected copy is S94, so it is not to be ingested), 19 manual files in `raw/manuals/` (8 EPA, USGS and FHWA documents not yet started, and 11 SWMM 4.4 documentation files), 4 swmm5.org topic pages, 2 SWMM 1 build notes and 3 files in `raw/apps/`. One, `swmm-second-brain-v0.1.0.md`, is the summary of the reader app for this wiki, written by Claude when the app was built on 15 November 2026. One, `PyBME-issue-drafts.md`, is not an app summary and was left queued on purpose (Q56). The last, `st-venant-solver-rosetta-stone-v2.6.2.md`, is the newer version of an app already ingested at version 2.4.0 (S75); it was added on 15 November 2026 and bears on Q62. Three more LinkedIn files are byte-identical copies of others and are marked `duplicate`. `raw/MANIFEST.csv` lists them all. Suggested next batches, in order:
 
 0. The rest of the EPA hydraulics manual, a chapter at a time (S60: Chapter 5, Chapter 7 and the appendices remain), then the 2006 quality assurance report and the SWMM 5.1 User's Manual. With them, the Rosetta Stone summary at version 2.6.2, which tests the pump rule of Q62. These are the primary documents; ingesting them first lets later articles be checked against them.
 1. The four remaining swmm5.org topic pages and the SWMM 1 build notes (small, and they complete themes 3 to 6).

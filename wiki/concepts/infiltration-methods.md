@@ -1,10 +1,11 @@
 ---
 title: Infiltration methods
 type: concept
-updated: 2026-11-15
-sources: [S01, S03, S08, S10, S15, S55, S59, S67, S107, S108]
+updated: 2026-11-16
+sources: [S01, S03, S08, S10, S15, S55, S59, S67, S107, S108, S177, S178]
 tags: [hydrology, swmm5, infiltration]
 reviewed: 11/16/2026
+changed_after_review: "2026-11-16 (S166 to S178 ingest): one paragraph added at the end, headed Added 16 November 2026, on the Curve Number on the ICM 2D mesh (S177, S178)"
 ---
 SWMM5's infiltration methods, as named in its code [S15](../sources/S15-li-hydrology-code-story.md):
 
@@ -33,3 +34,5 @@ The table is from [S15](../sources/S15-li-hydrology-code-story.md), an AI-writte
 **How often it is asked.** "Infiltration methods" tags 146 of Bob's 2,879 OpenSWMM thread titles [S10](../sources/S10-openswmm-top25-problems.md).
 
 **Added 15 November 2026: two calculators outside the engine.** Two of Bob's Replit apps compute these methods in their own TypeScript and call no SWMM engine: [Green-Ampt Infiltration Calculator (app)](../entities/green-ampt-infiltration-calculator.md) [S107](../sources/S107-green-ampt-calculator-replit-summary.md) and [SWMM5 Runoff and Infiltration (app)](../entities/swmm5-runoff-and-infiltration.md) [S108](../sources/S108-runoff-and-infiltration-replit-summary.md). Both use `S = 1000 / CN - 10` for the Curve Number storage. Replit Agent, reading the first app's code, reported that its unit selector does not convert the Green-Ampt and Horton inputs and that its Curve Number branch does not accumulate rainfall; neither was tested (Q69).
+
+**Added 16 November 2026: Curve Number on the ICM 2D mesh.** In 2023 an ICM 2D infiltration surface offered only Horton, Green-Ampt, Constant and Fixed, so Bob approximated the Curve Number with them: with a constant loss rate set from the CN peak, Horton, Green-Ampt and ConstInf came close to CN in peak and volume [S177](../sources/S177-li-curve-number-approximations-icm-2d.md). ICM 2025.1 added CNSWMM to the 2D mesh, with an initial abstraction factor, curve number and drying time [S178](../sources/S178-li-cnswmm-on-the-icm-2d-mesh.md). See [ICM 2D: rainfall and infiltration on the mesh](icm-2d-rainfall-and-infiltration.md).

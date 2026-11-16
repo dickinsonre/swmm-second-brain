@@ -2,7 +2,7 @@
 title: SWMM 5 versus ICM InfoWorks
 type: concept
 updated: 2026-11-16
-sources: [S13, S14, S17, S20, S80, S165]
+sources: [S13, S14, S17, S20, S80, S165, S166]
 tags: [comparison, swmm5, icm]
 reviewed: 2026-11-15
 changed_after_review: "2026-11-16 (S159 to S165 ingest): one paragraph added at the end, headed Added 16 November 2026, on the two-pipe benchmark design (S165)"
@@ -35,4 +35,4 @@ Where the two engines differ, from the four comparison sources ingested so far. 
 
 See [InfoWorks ICM](../entities/infoworks-icm.md), [EPA SWMM 5](../entities/swmm-5.md), [Dynamic wave routing](dynamic-wave-routing.md), [Preissmann slot and surcharge](preissmann-slot-and-surcharge.md).
 
-**Added 16 November 2026.** A test design to separate engine differences from conversion differences: one two-pipe model run first in EPA SWMM 5.2.4 and the Ruby translation, then in ICM SWMM, then in ICM InfoWorks, with the acceptable differences agreed before running [S165](../sources/S165-note-epa-swmm-ruby-icm-benchmark.md). It has not been run (Q16, Q89). See [Checking a SWMM5 model's conversion into ICM](swmm5-to-icm-conversion-checks.md).
+**Added 16 November 2026.** A test design to separate engine differences from conversion differences: one two-pipe model run first in EPA SWMM 5.2.4 and the Ruby translation, then in ICM SWMM, then in ICM InfoWorks, with the acceptable differences agreed before running [S165](../sources/S165-note-epa-swmm-ruby-icm-benchmark.md). It has not been run, and the note is AI-written (Q16, Q90). See [Checking a SWMM5 model's conversion into ICM](swmm5-to-icm-conversion-checks.md).

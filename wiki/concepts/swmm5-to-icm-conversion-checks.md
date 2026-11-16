@@ -2,11 +2,11 @@
 title: Checking a SWMM5 model's conversion into ICM
 type: concept
 updated: 2026-11-16
-sources: [S164, S165, S45]
+sources: [S164, S165, S45, S166]
 tags: [icm, swmm5, conversion, verification, benchmark]
 reviewed: no
 ---
-When a SWMM5 model and its ICM copy disagree, the difference may come from the engines or from the conversion. Two notes Bob supplied on 16 November 2026 set out how to tell which. Their author is not stated, their Autodesk facts are reported from Autodesk's help and not checked here, and nothing in them has been run (Q89).
+When a SWMM5 model and its ICM copy disagree, the difference may come from the engines or from the conversion. Two notes Bob supplied on 16 November 2026 set out how to tell which. Bob says they come from the GPT plugin for Autodesk [S166](../sources/S166-note-icm-notes-from-gpt-plugin.md), so they are AI-written; their Autodesk facts are reported from Autodesk's help and not checked here, and nothing in them has been run (Q90).
 
 **Three routes, tracked apart** [S164](../sources/S164-note-swmm-inp-conversion-qa.md)
 1. An EPA SWMM `.inp` into an ICM SWMM network.
