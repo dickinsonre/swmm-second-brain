@@ -1,10 +1,11 @@
 ---
 title: Calibration, validation and uncertainty
 type: concept
-updated: 2026-11-14
-sources: [S62, S63]
+updated: 2026-11-16
+sources: [S62, S63, S157]
 tags: [calibration, uncertainty, method, verification]
 reviewed: 2026-11-15
+changed_after_review: "2026-11-16 (modpods ingest): one paragraph added at the end, headed Added 16 November 2026, pointing to Calibrating SWMM through a surrogate (S157)"
 ---
 What it takes to trust a model's number, as [William (Bill) James](../entities/william-james.md) set it out in Rules for Responsible Modeling (2005) and as Bob's [Rules for Responsible Modeling (app)](../entities/rules-for-responsible-modeling-app.md) puts it into practice [S63](../sources/S63-li-edition-53-measure-of-honest-numbers.md).
 
@@ -45,3 +46,5 @@ The summary calls these "illustrative rules, not independently sourced standards
 **Where this meets the rest of the wiki.** [Continuity is not validation](continuity-is-not-validation.md) is the same point for mass balance. [Subcatchment width](subcatchment-width.md) is a fitting knob Bob objects to. Bob's statement that "the model is never the problem" [S63](../sources/S63-li-edition-53-measure-of-honest-numbers.md) sits beside engine defects recorded in [The SWMM findings register](findings-register.md) (Q40 in [Open questions](../open-questions.md)).
 
 **Not in the sources yet.** The book's own rules and wording, and any calibration of a real catchment.
+
+**Added 16 November 2026.** A calibration through a learned surrogate, confirmed in SWMM at every step, is on [Calibrating SWMM through a surrogate](calibrating-through-a-surrogate.md). Its first finding: a fit of NSE 0.996 with a conduit roughness multiplier of 0.70 where the truth was 1.10 [S157](../sources/S157-lstm-swmm5-summary.md). The source is a summary Claude wrote from the app page (Q84).

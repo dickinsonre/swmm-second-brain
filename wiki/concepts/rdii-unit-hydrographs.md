@@ -1,10 +1,11 @@
 ---
 title: RDII unit hydrographs (RTK)
 type: concept
-updated: 2026-11-14
-sources: [S16, S55]
+updated: 2026-11-16
+sources: [S16, S55, S155, S157]
 tags: [hydrology, rdii, swmm5]
 reviewed: 2026-11-15
+changed_after_review: "2026-11-16 (modpods ingest): one paragraph added at the end, headed Added 16 November 2026, on modpods' gamma kernels as fitted unit hydrographs (S155, S157)"
 ---
 SWMM5 computes rainfall-dependent inflow and infiltration (RDII) from triangular unit hydrographs [S16](../sources/S16-li-rdii-in-swmm5.md).
 
@@ -33,3 +34,5 @@ A blank parameter is taken as 0 [S16](../sources/S16-li-rdii-in-swmm5.md).
 **Who wrote it.** Bob coded the RTK/RDII implementation for SWMM 5 during the CRADA project with EPA [S55](../sources/S55-swmm-brain-readme.md). His later tools on it: an RTK Hydrograph Generator app, the RDII Analyst at Innovyze, and Ruby scripts for RTK parameter fitting in ICM [S55](../sources/S55-swmm-brain-readme.md).
 
 **Not in the sources yet.** How InfoSWMM and ICM treat RDII (the article's title promises it, but those parts were images), and a description of the method from the code. Queued: "InfoSWMM, InfoSWMM SA RDII Analyst 3.0 with EPA SSOAP Tools" (2017, 4,019 words).
+
+**Added 16 November 2026.** A fitted alternative to the triangle. [modpods (Dantzer's method)](../entities/modpods.md) convolves rainfall with gamma-PDF kernels whose shape, scale and delay it fits. Read by moment match, a kernel gives an RTK triangle with T = (α - 1)θ + d and K = 3·mean/T - 2. The sampled kernel does not sum to 1, so an RTK R has to be read from the fitted coefficient times the kernel's sum [S155](../sources/S155-modpods-explainer-summary.md). On a small SWMM5 model built from RTK unit hydrographs with IA = 0, modpods predicted held-out storms better than an LSTM: NSE 0.989 against 0.963 with every third storm held out, and 0.952 against 0.731 with the largest storm held out [S157](../sources/S157-lstm-swmm5-summary.md). Both sources are summaries Claude wrote from the app pages (Q84).

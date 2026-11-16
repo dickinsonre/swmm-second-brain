@@ -1,10 +1,11 @@
 ---
 title: WebAssembly builds against native builds
 type: concept
-updated: 2026-11-15
-sources: [S68, S73, S74, S76, S77, S78, S79, S80, S81, S82, S83]
+updated: 2026-11-16
+sources: [S68, S73, S74, S76, S77, S78, S79, S80, S81, S82, S83, S157]
 tags: [wasm, verification, swmm5, math-library, apps]
 reviewed: 2026-11-15
+changed_after_review: "2026-11-16 (modpods ingest): one paragraph added at the end, headed Added 16 November 2026, on the LSTM + SWMM5 app's WebAssembly against native results (S157)"
 ---
 Most of Bob's engine apps run EPA SWMM 5.2.4 compiled to WebAssembly inside the page. Does that build give the same answers as a native build of the same C? Several apps tested it, and they do not all report the same thing. One of them found the cause [S82](../sources/S82-mirab-test-bench-summary.md).
 
@@ -46,3 +47,5 @@ The Code House and Bellinge builds name the same compiler and carry different ha
 **What follows for a claim of "engine-verified".** A result from a browser build of 5.2.4 is a result from that build's compiler and math library. For most models the difference from a glibc build is in the eighth digit; for a minority it is not small [S82](../sources/S82-mirab-test-bench-summary.md).
 
 See [Matching glibc math in a translation](glibc-math-in-translation.md), where the translations of the engine meet the same problem from the other side, and [Byte-for-byte gate](byte-for-byte-gate.md).
+
+**Added 16 November 2026.** Another app, [LSTM + SWMM5](../entities/lstm-swmm5-app.md), built its engine with clang 18 for wasm32-wasi (`-O2`, `-ffp-contract=off`, wasi-libc). Its six probe models gave byte-identical .out files in the browser and natively. Its calibration demo did not: 56 of 4,032 periods differ, at most 0.102 cfs (0.41 % of peak), NSE 0.999996 between the two. The native build disagrees with itself on 4 periods (at most 0.047 cfs) when glibc's FMA code paths are switched off [S157](../sources/S157-lstm-swmm5-summary.md). The source is a summary Claude wrote from the page (Q84). It bears on Q55.

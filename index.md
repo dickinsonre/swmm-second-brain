@@ -60,6 +60,8 @@ Measurement and method
 - [Six quality markers for app-building work](wiki/concepts/app-quality-markers.md): six markers of checking in Bob's app-building conversations, by quarter.
 - [App build contract (four working principles)](wiki/concepts/app-build-contract.md): four working principles and the floor every app ships with.
 - [A surrogate distilled from SWMM](wiki/concepts/surrogate-distilled-from-swmm.md): an idea at seed stage: train the emulator on SWMM's own storms.
+- [Where a surrogate of SWMM breaks: hidden state and missing forcing](wiki/concepts/surrogates-hidden-state-missing-forcing.md): an LSTM and modpods on six SWMM5 models; pumps and tides defeat a rain-driven model, thresholds do not.
+- [Calibrating SWMM through a surrogate](wiki/concepts/calibrating-through-a-surrogate.md): an LSTM-guided calibration confirmed in SWMM: NSE 0.996 with conduit n × 0.70 against a true × 1.10.
 - [Byte-for-byte gate](wiki/concepts/byte-for-byte-gate.md): how a translation is held to its original: identical `.out`, `.rpt` but three clock lines, same exit code, on 480 + 452 decks.
 - [Matching glibc math in a translation](wiki/concepts/glibc-math-in-translation.md): 19 math functions, two routes (translate glibc's code, or call the system glibc), and how each is tested.
 - [What the gate cannot see](wiki/concepts/gate-blind-spots.md): controls, checked builds, runtime replays, untested paths, and models stopped at the limit.
@@ -89,6 +91,7 @@ Engines and programs
 - [SWMM5 language translations (swmm5-*)](wiki/entities/swmm5-language-ports.md): EPA SWMM 5.2.4 in 19 languages, results and speeds as published, how the back ends descend from each other.
 - [swmm6-rust](wiki/entities/swmm6-rust.md): OpenSWMM 6 in safe Rust, 1D on 932 decks and 2D on 1,315 of 1,415, with state-level gates.
 - [swmm524-perched](wiki/entities/swmm524-perched.md): EPA 5.2.4 plus SOIL2, van Genuchten and STRUCT lines; byte-identical to 5.2.4 without them.
+- [modpods (Dantzer's method)](wiki/entities/modpods.md): gamma-kernel convolution plus a fitted polynomial ODE; median NSE 0.7406 on SWMM junctions, 0.1358 on 365 real catchments.
 
 Apps
 - [SWMM 1 Engine (app)](wiki/entities/swmm-1-engine-app.md): three engines in one page, version 3.13.
@@ -167,6 +170,9 @@ Apps
 - [OpenSWMM Engine (app)](wiki/entities/openswmm-engine-app.md): Replit app, v6.0.0-alpha.2; runs the legacy SWMM engine (5.3.0) of HydroCouple/OpenSWMMCore at a pinned commit in WebAssembly; Apache-2.0 for the engine, MIT for the app.
 - [EPANET Quizzer (app)](wiki/entities/epanet-quizzer.md): Replit app, v1.0.0; 250 EPANET and water-distribution questions in four categories; runs no engine.
 - [InfoWorks ICM Ruby Script Runner (app)](wiki/entities/icm-ruby-script-runner.md): Replit app, v0.1.0, deleted by Bob on 15 November 2026; ran visitors' Ruby on the server with no sandbox; gpt-5 explanations.
+- [modpods, for a SWMM person (app)](wiki/entities/modpods-explainer-app.md): Netlify app, deploy of 2026-08-21; modpods read as RTK with a fitted gamma kernel; seven tabs.
+- [Automatic Rainfall-Runoff Models: Evidence Atlas (app)](wiki/entities/arrm-evidence-atlas.md): Netlify app, deploy of 2026-08-21; every fit in the modpods replication package, 2,476 models.
+- [LSTM + SWMM5 (app)](wiki/entities/lstm-swmm5-app.md): Netlify app, v2.0; EPA SWMM 5.2.4 in WebAssembly, an LSTM against modpods, and calibration through the LSTM.
 
 Data
 - [1729-SWMM5-Models-2030 (the corpus)](wiki/entities/corpus-1729.md): Bob's public model repository; 480 of its models are the translations' gate set.
@@ -273,6 +279,9 @@ App summaries
 - [S152](wiki/sources/S152-note-ruby-script-runner-deleted.md) (2026-11-15): note, Bob deleted the InfoWorks ICM Ruby Script Runner; ICM Exchange is the better way.
 - [S153](wiki/sources/S153-openswmm-engine-app-alpha2-replit-summary.md) (2026-11-15): OpenSWMM Engine, summary written by Replit Agent, v6.0.0-alpha.2.
 - [S154](wiki/sources/S154-note-openswmm-engine-alpha2-published.md) (2026-11-15): note, OpenSWMM Engine alpha.2 is published, with a check of the live page.
+- [S155](wiki/sources/S155-modpods-explainer-summary.md) (2026-08-21): modpods, for a SWMM person, summary written from the page by Claude.
+- [S156](wiki/sources/S156-arrm-evidence-atlas-summary.md) (2026-08-21): Automatic Rainfall-Runoff Models: Evidence Atlas, summary written from the page by Claude.
+- [S157](wiki/sources/S157-lstm-swmm5-summary.md) (2026-10-18): LSTM + SWMM5 v2.0, summary written from the page by Claude.
 
 Manuals and reports (primary documents)
 - [S60](wiki/sources/S60-epa-swmm5-reference-manual-vol2-hydraulics.md) (2017-05): EPA SWMM Reference Manual, Volume II, Hydraulics, by L. A. Rossman. Read in part: section 1.1 and Chapters 2, 3, 4 and 6 (the raw file lacks pages 64 to 66 and 122).
