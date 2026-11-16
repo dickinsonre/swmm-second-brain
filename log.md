@@ -642,3 +642,8 @@ Main now holds S153 and S154. `replit-summaries-8` is merged and can go.
 ## [2026-11-15] setup | Log restored: 31 entries lost on 15 November put back
 
 While building the reader app, the agent found that the commit for the S90 ingest (4448db4, 15 November 2026, 07:55 Eastern) had replaced `log.md` instead of appending to it, so the 31 entries before S90, from the setup on 14 November to the merge of `ingest-hydraulics-ch2-4-6`, were gone from the file. They were taken unchanged from the version before that commit (5b20417) and put back at the top; every later entry is untouched. Nothing else changed.
+
+## [2026-11-15] setup | The reader app: tools/build_app.py
+
+Bob asked for a Claude HTML app for the second brain. `tools/build_app.py` (with `app_template.html`, `app_doc.py` and `app_doc.md`) builds one HTML page of the whole wiki into `build/`, which git ignores: a full document for Netlify and a body-only copy for the Claude artifact. Views: Read, Search, Open questions, To review, About, Doc. `tools/build_app_docx.js` makes the Doc essay as a .docx from the same source. CLAUDE.md now names the two tools and adds the rebuild to step 8 of an ingest. The app's own summary is `raw/apps/swmm-second-brain-v0.1.0.md`, queued, as Bob's rule for app summaries asks. Complexity measured with Bob's SWMM App Complexity Meter: index 38.1 on the four code files (`tools/app_complexity.json`).
+Counts: 154 of 399 raw files ingested, 241 queued.

@@ -1,0 +1,8 @@
+{
+  "measured": "2026-11-15",
+  "meter": "SWMM App Complexity Meter, swmm-app-complexity-vs-hydrocouple.netlify.app, baseline HC-2026-11-01-e",
+  "files": ["tools/build_app.py", "tools/app_doc.py", "tools/app_template.html", "tools/common.py"],
+  "commit": "37c380d",
+  "index": 38.1,
+  "text": "Measured on 15 November 2026 with Bob's SWMM App Complexity Meter (baseline HC-2026-11-01-e), on the four code files of commit 37c380d: `tools/build_app.py`, `tools/app_doc.py`, `tools/app_template.html` and `tools/common.py`. **Complexity index 38.1**, where HydroCouple is 100; on the same meter EPA SWMM 5.2.4 measures 69.2. Size 35.2, structure 57.9, test evidence 3.4, SWMM vocabulary 0.0. The code is 13,346 tokens on 730 code-bearing lines, 1/495 of HydroCouple's bulk, with 270 decision points in 127 callable units. The routine hardest to change is `main` in `build_app.py`, with 63 decisions. The index measures the code only, not the 2.1 MB of wiki text the build packs in, and it finds no SWMM terms because the app reads a wiki rather than models. Test evidence is low because the checks are a linter and screenshots, not a test suite."
+}

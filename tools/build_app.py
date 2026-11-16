@@ -212,9 +212,12 @@ def main():
     built = datetime.datetime.now(datetime.timezone.utc).strftime('%Y-%m-%d %H:%M UTC')
     here = os.path.dirname(os.path.abspath(__file__))
     tpl = read(os.path.join(here, 'app_template.html'))
-    appmd_path = os.path.join(OUT, 'swmm-second-brain.md')
-    appmd = read(appmd_path) if os.path.exists(appmd_path) else ''
     os.makedirs(OUT, exist_ok=True)
+    mds = sorted(walk(os.path.join(RAW, 'apps'), ('.md',)), key=lambda p: [int(x) for x in re.findall(r'\d+', os.path.basename(p))])
+    mds = [p for p in mds if os.path.basename(p).startswith('swmm-second-brain-v')]
+    appmd = read(mds[-1]) if mds else ''
+    with open(os.path.join(OUT, 'swmm-second-brain.md'), 'w', encoding='utf-8') as f:
+        f.write(appmd)
     counts['mb'] = '2.0'
     for _ in range(2):  # the second pass puts the real file size into the essay
         doc_html, _md = app_doc.build_doc(render, counts, pages, built, OUT)

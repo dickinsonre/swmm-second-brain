@@ -66,6 +66,7 @@ raw/apps/swmm-inp-viewer--robertdickinson-v1.0.0.md,apps,2026-11-15,SWMM5 & EPAN
 raw/apps/swmm-lego-model-v0.0.0.md,apps,2026-11-15,SWMM5 Lego Model,1463,8398b49b45f7a51ffb6a73e75a5f0d1490c6f83acbea92f232cd3ac233f971dd,ingested,wiki/sources/S99-swmm5-lego-model-replit-summary.md,swmm-lego-model,0.0.0
 raw/apps/swmm-manual-search-robertdickinson-v5.2.md,apps,2026-07-20,SWMM5 Manual Search,1457,0dd32fa27eb55a8d11b21c50cf15269aad3aa08e4989d899cb78e74b31cf4807,ingested,wiki/sources/S101-swmm5-manual-search-replit-summary.md,swmm-manual-search-robertdickinson,5.2
 raw/apps/swmm-pilot-robertdickinson-v1.0.0.md,apps,2025-08-18,Camel_SWMM,1173,d8912a8bc1d6ab5845e9e4493e67567f715539cefe188bb4bc78d3e6f248de29,ingested,wiki/sources/S100-camel-swmm-replit-summary.md,swmm-pilot-robertdickinson,1.0.0
+raw/apps/swmm-second-brain-v0.1.0.md,apps,2026-11-15,SWMM Second Brain,979,9035e531b209dbf5e1985f82ad812491023cfa4c9df63cf2799eed072a75a0b5,queued,,swmm-second-brain,0.1.0
 raw/apps/swmm-ui-engine-v1.0.0.md,apps,2026-11-15,SWMM5-UI,2037,b98f433cbf414bcb2ae434ebf6727e52bb8ec92a84d07db6718f669d92d3896d,ingested,wiki/sources/S96-swmm5-ui-replit-summary.md,swmm-ui-engine,1.0.0
 raw/apps/swmm1-runoff-engine (7).md,apps,2026-11-13,SWMM 1 Engine,12689,a0c62ad17e9d7dc2006181e97814a187d9a806719e657b10f970917e3be43ebc,superseded,,swmm1-runoff-engine,3.12
 raw/apps/swmm1-runoff-engine-v3.13.md,apps,2026-11-13,SWMM 1 Engine,13377,a4c006b97d0e3038fa5d11a2c7d04b65ecb57a1e4c2cedb09093fabe63c1c433,ingested,wiki/sources/S73-swmm1-engine-app-md-v3-13.md,swmm1-runoff-engine,3.13

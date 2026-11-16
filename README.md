@@ -13,7 +13,7 @@ It is not a search index. Each source is read once and compiled into pages; a qu
 | `index.md` | Catalog of every page. Start here |
 | `log.md` | What was done and when |
 | `CLAUDE.md` | The schema: page rules and the three operations |
-| `tools/` | `manifest.py`, `lint.py`, `search.py`, `li2md.py` |
+| `tools/` | `manifest.py`, `lint.py`, `search.py`, `li2md.py`; `build_app.py` and `build_app_docx.js`, which build the reader app (one HTML page of the whole wiki) into `build/` |
 
 ## How to use it
 
@@ -33,7 +33,7 @@ To read the wiki yourself, open the folder in Obsidian (the graph view shows hub
 
 ## State on 15 November 2026
 
-- 154 of 398 raw files ingested, one of them (the EPA hydraulics manual) in part. The queue is in `index.md`.
+- 154 of 399 raw files ingested, one of them (the EPA hydraulics manual) in part. The queue is in `index.md`.
 - 76 open questions in `wiki/open-questions.md`, and 7 settled. Several are contradictions between Bob's own articles.
 - 119 pages say `reviewed: no`, which means Bob has not read them yet. Most are the 52 summaries Replit Agent wrote of his Replit apps and the app pages built on them. 18 more pages carry text added after his review, each marked `changed_after_review:`.
 
