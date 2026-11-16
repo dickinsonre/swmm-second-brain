@@ -4,7 +4,7 @@ type: concept
 updated: 2026-11-16
 sources: [S155, S156, S157]
 tags: [surrogates, machine-learning, modpods, lstm, dynamic-wave]
-reviewed: no
+reviewed: 11/16/2026
 ---
 A surrogate learns SWMM's response from rain to flow or depth and then runs without SWMM. Bob's three apps on [modpods](../entities/modpods.md) and on LSTMs agree on where that works and where it stops. All three sources are summaries Claude wrote from the app pages, not yet read by Bob (Q84).
 
