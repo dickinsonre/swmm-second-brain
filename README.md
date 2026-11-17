@@ -35,7 +35,7 @@ To read the wiki yourself, open the folder in Obsidian (the graph view shows hub
 
 ## State on 16 November 2026
 
-- 187 of 423 raw files ingested, three of them in part (the EPA hydraulics manual, the 2006 quality assurance report, the Rosetta Stone summary at 2.6.2). The queue is in `index.md`.
+- 191 of 427 raw files ingested, three of them in part (the EPA hydraulics manual, the 2006 quality assurance report, the Rosetta Stone summary at 2.6.2). The queue is in `index.md`.
 - 87 open questions in `wiki/open-questions.md`, and 8 settled. Several are contradictions between Bob's own articles.
 - Bob reviewed every page on 11/16/2026. Since then, 49 new pages say `reviewed: no` and 18 carry `changed_after_review:`; `python3 tools/lint.py --review` lists them in reading order.
 - The ontology draft has Relations tables on 3 pages: 89 statements, each filed under the source it cites, with conditions and a `verification` status on the rows that need them. `ontology/queries/5-comparable-fields.txt` answers "which fields can I compare across InfoWorks and ICM SWMM networks, under what conditions, and on what evidence?" for the fields the wiki has so far.

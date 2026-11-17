@@ -102,6 +102,9 @@ ICM 2D
 - [ICM 2D: timestep, volume balance and results](wiki/concepts/icm-2d-runs-and-checks.md): CFL stability control, the two control volumes, and results tied to their time basis.
 - [ICM 2D: three benchmark cases](wiki/concepts/icm-2d-benchmark-cases.md): a closed rainfall box (833.33 cu ft), a reversing manhole and an embankment gap; designs, not run.
 
+Vocabulary
+- [Flow Systems Ontology (FSO)](wiki/concepts/flow-systems-ontology.md): a published vocabulary for flow-system topology, from building HVAC; a proposed alignment of SWMM 5 objects waits in ONTOLOGY.md (Q98).
+
 ## Entities
 
 Engines and programs
@@ -364,6 +367,9 @@ swmm5.org pages
 Talks and press releases
 - [S188](wiki/sources/S188-talk-water-talks-icm-sim-vs-icm-swmm-2021.md) (2021-04-27, inferred): Water Talks webinar, the ICM SIM engine and the ICM SWMM engine; Bob with Nathan of Innovyze; caption transcript.
 - [S190](wiki/sources/S190-press-mwh-soft-dickinson-joins-2008.md) (2008-01-18): press release, Robert Dickinson joins MWH Soft as Urban Drainage Technology Leader.
+
+Papers by others
+- [S191](wiki/sources/S191-paper-kukkonen-2022-flow-systems-ontology.md) (2021-12-09): Kukkonen and others, the Flow Systems Ontology (Automation in Construction 134, 104067), open access, CC BY 4.0.
 
 LinkedIn articles
 - [S11](wiki/sources/S11-li-my-history-with-swmm.md) (2016-11-18): My History with Various Versions of SWMM.

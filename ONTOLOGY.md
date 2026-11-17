@@ -39,6 +39,7 @@ At the end of a page, a paragraph that is just `**Relations**`, then a table:
 | `icm-swmm` | https://github.com/dickinsonre/swmm-second-brain/ontology/icm-swmm/ | things of an ICM SWMM network |
 | `qty` | https://github.com/dickinsonre/swmm-second-brain/ontology/qty/ | physical quantities, independent of any program |
 | `ruby` | https://github.com/dickinsonre/swmm-second-brain/ontology/ruby/ | Ruby runtimes |
+| `fso` | https://w3id.org/fso# | the Flow Systems Ontology, an outside vocabulary for flow systems ([S191](wiki/sources/S191-paper-kukkonen-2022-flow-systems-ontology.md)); no row uses it yet |
 
 Wiki pages are not written with a prefix; they are links, and become `https://github.com/dickinsonre/swmm-second-brain/blob/main/wiki/<path>`, which opens the page on GitHub.
 
@@ -113,6 +114,24 @@ A statement with a note or qualifiers is also written as an `rdf:Statement` that
 
 **Who drafted a source, and whether Bob has read it.** Each source page's graph carries `sb:draftedBy` from its `drafted_by:` line, or `unknown` when the page has none; `sb:aiDrafted`, `yes` when that line begins with an AI's name, `no` when it names a person first, `unknown` otherwise; and `sb:reviewed` from its `reviewed:` line. So every statement can be traced to its source, to who or what drafted that source, to whether Bob has read it, and, through `verification`, to whether a run backs it.
 
+## Outside vocabulary: the Flow Systems Ontology (proposed, not in use)
+
+The Flow Systems Ontology (FSO) is a published vocabulary for the topology of flow systems: systems, components in eight classes, and directed flow relations such as `fso:feedsFluidTo` ([S191](wiki/sources/S191-paper-kukkonen-2022-flow-systems-ontology.md); page: [Flow Systems Ontology](wiki/concepts/flow-systems-ontology.md)). It was written for building HVAC and says nothing about drainage. Tying this wiki's network objects to its classes would let a query compare objects of SWMM 5, SWMM 6 and ICM by kind, for example every flow controller in a model and what each became in another program.
+
+The table below is the wiki's proposal, written by Claude on 16 November 2026. Neither source states it: the left column quotes the EPA manual ([S60](wiki/sources/S60-epa-swmm5-reference-manual-vol2-hydraulics.md)), the middle column FSO ([S191](wiki/sources/S191-paper-kukkonen-2022-flow-systems-ontology.md)). No Relations table uses it until Bob accepts it (Q98). When he does, it needs a way to say "is a kind of", which the relation list above does not have yet (`rdfs:subClassOf` would be the standard property).
+
+| SWMM 5 object, as S60 describes it | Proposed FSO class, as S191 defines it | Doubt |
+|---|---|---|
+| Conduit | `fso:Segment`, "a component used to enable the passage of mass or energy" | none seen |
+| Junction, "a manhole, a fitting, a confluence" | `fso:Fitting`, used "to connect segments to other segments, or to other components" | a junction can hold ponded water when it floods (S60), so it is more than a connector |
+| Storage unit, "the only node with storage volume and surface area" | `fso:StorageDevice` | none seen |
+| Outfall, the terminal node that sets the downstream boundary | `fso:Terminal`, "a device through which a system interacts with the environment" | none seen |
+| Flow divider | `fso:Fitting` or `fso:FlowController` | it splits flow by a rule, so it is neither a plain fitting nor an adjustable controller |
+| Pump | `fso:FlowMovingDevice` | none seen |
+| Orifice, weir, outlet (flow regulators with a setting) | `fso:FlowController` | none seen |
+
+Direction: a link's defined direction runs from its inlet node to its outlet node, and flow can run against it. A row `swmm5:C1 fso:feedsFluidTo swmm5:J2` would have to say which it means.
+
 ## The test question
 
 Every addition to this vocabulary should help answer: **which fields can I compare across InfoWorks and ICM SWMM networks, under what conditions, and what evidence supports the comparison?** `ontology/queries/5-comparable-fields.rq` asks it.
@@ -139,6 +158,6 @@ python3 tools/ontology.py --check   # also parse the output and run the sample q
 ## Not done yet
 
 - Most pages have no Relations table; the first are `icm-tables-and-result-fields`, `icm-2d-rainfall-and-infiltration` and `icm-ruby-ui-and-exchange`.
-- No link yet to outside vocabularies (units, hydrologic features). A later `close_match` to an outside IRI would do it.
+- No link yet to outside vocabularies for units or hydrologic features. For network objects, an alignment to the Flow Systems Ontology is proposed above and waits for Bob (Q98).
 - No `contradicts` relation yet for the open questions.
 - `verification` is on the rows where a page says what backs the claim; a row without it says nothing either way, and queries show it as `not stated`. A `documented` or `pending` row becomes `run` only when a run is made and filed as a source (Q90).

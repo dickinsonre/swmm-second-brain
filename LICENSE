@@ -25,6 +25,10 @@ by part, and some files under raw/ that are not his keep their own terms.
                       and the posts behind them belong to their writers; the counts
                       are CC BY 4.0 as above.
    raw/ports/         Each README carries the license of its own repository.
+   raw/papers/        Journal papers by other authors, each under its own license.
+                      Kukkonen et al. (2022), Automation in Construction 134,
+                      104067, is open access under CC BY 4.0, (c) 2021 The
+                      Authors. See raw/papers/_SOURCE.md.
    Quotations of other people's work inside any file remain theirs.
 
 AI use: Claude (Anthropic) wrote the tools and the wiki pages at Robert Dickinson's

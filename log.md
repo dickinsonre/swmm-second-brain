@@ -748,3 +748,11 @@ Bob, 19:32 to 19:45 Eastern, in a Claude session other than the one that ingeste
 - Open questions: Q96 and Q97 added; a sentence added to Q01 (a third, spoken date for the slot), Q05 (the release says "A principal developer"), Q13 (Bob says ICM holds SWMM 5 water quality and LIDs) and Q29 (start settled: agreed at the end of 2007, started January 2008; S55's 2005 and the end year remain).
 - Three pages are past 600 words and due a split at the next lint: SWMM 5 versus ICM InfoWorks, Checking a SWMM5 model's conversion into ICM, and Robert (Bob) Dickinson.
 - Every number on the new pages was checked against the transcript and the release.
+
+## [2026-11-16] ingest | S191: Kukkonen and others (2022), the Flow Systems Ontology
+
+Bob supplied the paper (Automation in Construction 134, 104067; open access, CC BY 4.0) and said "add it". It is the first journal paper by other authors in `raw/`, so a new folder `raw/papers/` holds it with `raw/papers/_SOURCE.md` giving its provenance and license; `CLAUDE.md` lists the folder and `LICENSE` names its terms. The PDF is copied byte for byte (SHA-256 6e8d322b...).
+
+Ingested as S191. New page: [Flow Systems Ontology (FSO)](wiki/concepts/flow-systems-ontology.md). `ONTOLOGY.md` gains the `fso` prefix and a section proposing an alignment of seven SWMM 5 objects (as S60 describes them) to FSO's component classes; neither source states the alignment, no Relations table uses it, and Q98 asks Bob to accept or change it. The paper is about building HVAC and never mentions drainage; its authors say use outside HVAC was not investigated and that FSO describes topology only.
+
+Counts: 191 of 427 raw files ingested, 232 queued. Lint: 0 errors.
