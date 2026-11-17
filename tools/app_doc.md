@@ -1,5 +1,9 @@
 # How the SWMM Second Brain works
 
+## What is unique about this app
+
+As software, not much. It is one HTML file that shows markdown pages with an index, links and a search box, as many wiki readers do. What sets it apart is what it holds: Bob's SWMM and ICM sources compiled into pages where every fact cites a source page, disagreements between sources kept as numbered open questions, and typed relations (`ONTOLOGY.md`) that let a query ask which result fields can be compared across ICM's two network types, under what conditions and on what evidence. The model comparisons and the runs behind them are the point; this page is the way to read them.
+
 ## In one sentence
 
 The SWMM Second Brain is one web page that holds every page of Bob Dickinson's wiki, rebuilt from the repository after each ingest, so you can read, search and check the wiki without opening GitHub.
