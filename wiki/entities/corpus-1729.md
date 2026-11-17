@@ -1,10 +1,11 @@
 ---
 title: 1729-SWMM5-Models-2030 (the corpus)
 type: entity
-updated: 2026-11-15
-sources: [S23, S29, S30, S35, S41, S42, S43, S45, S52, S54, S74, S87, S89, S75, S79]
+updated: 2026-11-17
+sources: [S23, S29, S30, S35, S41, S42, S43, S45, S52, S54, S74, S87, S89, S75, S79, S193, S195, S196, S197]
 tags: [corpus, verification, swmm5, swmm6]
 reviewed: 2026-11-15
+changed_after_review: "2026-11-17 (S192 to S202 ingest): one paragraph added at the end on four more uses (S193, S195 to S197)"
 ---
 Bob's public repository of SWMM5 models, https://github.com/SWMMBobSWMM6/1729-SWMM5-Models-2030 [S23](../sources/S23-swmm6-csharp-readme.md).
 
@@ -31,3 +32,9 @@ Bob's public repository of SWMM5 models, https://github.com/SWMMBobSWMM6/1729-SW
 **Other users of it.** The [EXTRAN III Workbench (app)](extran-iii-workbench.md) ran 257 models of a corpus it names SWMMEnablement/1729-SWMM5-Models [S74](../sources/S74-extran3-workbench-app-md.md); whether that repository and this one hold the same files is Q51. The Workbench's 164 SWMM 4 decks and the [St. Venant Solver Rosetta Stone (app)](st-venant-solver-rosetta-stone.md)'s Example 1 deck come from this repository's `january5_2003_examples` folder [S74](../sources/S74-extran3-workbench-app-md.md), [S75](../sources/S75-st-venant-rosetta-stone-app-md.md); [Teacher-Forced SWMM (app)](teacher-forced-swmm.md) takes its sample models from it [S79](../sources/S79-teacher-forced-swmm-summary.md).
 
 See [Byte-for-byte gate](../concepts/byte-for-byte-gate.md), [SWMM6 language translations](swmm6-language-ports.md).
+
+**Added 17 November 2026: four more uses.**
+- [swmm5-kw](swmm5-kw.md)'s gate ran 3,759 models at commit 9ee63bd [S195](../sources/S195-swmm5-kw-summary.md).
+- [SWMM5 Engine Race](swmm5-engine-race.md) swept 1,156 distinct .inp files from 23 folders [S197](../sources/S197-swmm5-engine-race-app-md.md).
+- [SWMM5 RASPIPE](swmm5-raspipe.md) drew 1,600 models at random, stratified by file size [S196](../sources/S196-swmm5-raspipe-summary.md).
+- [SWMM 3 Runoff & Transport](swmm3-runoff-transport-app.md) runs the January 5, 2003 set of SWMM 4 example decks kept in the corpus [S193](../sources/S193-swmm3-runoff-transport-summary.md).

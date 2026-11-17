@@ -119,6 +119,11 @@ Engines and programs
 - [swmm6-rust](wiki/entities/swmm6-rust.md): OpenSWMM 6 in safe Rust, 1D on 932 decks and 2D on 1,315 of 1,415, with state-level gates.
 - [swmm524-perched](wiki/entities/swmm524-perched.md): EPA 5.2.4 plus SOIL2, van Genuchten and STRUCT lines; byte-identical to 5.2.4 without them.
 - [modpods (Dantzer's method)](wiki/entities/modpods.md): gamma-kernel convolution plus a fitted polynomial ODE; median NSE 0.7406 on SWMM junctions, 0.1358 on 365 real catchments.
+- [swmm5-kw](wiki/entities/swmm5-kw.md): EPA 5.2.4 whose kinematic wave and steady flow split junctions and run loops; byte-identical to stock with the options off.
+- [SWMM5 RASPIPE](wiki/entities/swmm5-raspipe.md): EPA 5.2.4 with a semi-implicit pipe solver written from HEC's manuals; not run against HEC-RAS.
+- [swmm5-infosewer](wiki/entities/swmm5-infosewer.md): EPA 5.2.4 with InfoSewer's routing rules; bit-identical to InfoSewer's engine on a 2009 network.
+- [SWMM Results Kit](wiki/entities/swmm-results-kit.md): the one .rpt and .out reader of Bob's engine apps, checked on 11,738,268 values.
+- [EPANET](wiki/entities/epanet.md): EPA's water distribution program; versions Bob's apps run, PDA, and six routes that agree.
 
 Apps
 - [SWMM 1 Engine (app)](wiki/entities/swmm-1-engine-app.md): three engines in one page, version 3.13.
@@ -200,6 +205,15 @@ Apps
 - [modpods, for a SWMM person (app)](wiki/entities/modpods-explainer-app.md): Netlify app, deploy of 2026-08-21; modpods read as RTK with a fitted gamma kernel; seven tabs.
 - [Automatic Rainfall-Runoff Models: Evidence Atlas (app)](wiki/entities/arrm-evidence-atlas.md): Netlify app, deploy of 2026-08-21; every fit in the modpods replication package, 2,476 models.
 - [LSTM + SWMM5 (app)](wiki/entities/lstm-swmm5-app.md): Netlify app, v2.0; EPA SWMM 5.2.4 in WebAssembly, an LSTM against modpods, and calibration through the LSTM.
+- [SWMM QA Report Bench (app)](wiki/entities/swmm-qa-report-bench.md): v2.0.0; EPA's 2006 SWMM 4 against SWMM 5 report as data, with 5.2.4 run beside it; 100 of 111 peaks within 5 %.
+- [SWMM 3 Runoff & Transport (app)](wiki/entities/swmm3-runoff-transport-app.md): the 1981 Runoff and Transport blocks rebuilt by subtraction from SWMM 4.4.
+- [SWMM 4 Twin Engines (app)](wiki/entities/swmm4-twin-engines.md): SWMM 4.4 Runoff and Transport, as shipped and with a Transport fix.
+- [SWMM5 Engine Race (app)](wiki/entities/swmm5-engine-race.md): v1.0.0; stock against fast WebAssembly builds of 5.2.4, same bytes, 1.19x to 2.24x.
+- [Two Engines, One Town (app)](wiki/entities/two-engines-one-town.md): SWMM 5.2.4 and EPANET 2.3 driven from code, and coupled one way under Net1.
+- [Seven SWMM Engines (app)](wiki/entities/seven-swmm-engines.md): v1.2; one file through EPA 5.2.4, four OpenSWMM 6 alphas, SWMM 4.4H and EXTRAN III.
+- [One SWMM (app)](wiki/entities/one-swmm.md): v0.2.0; Bob's SWMM5, SWMM6 and ICM tools behind four doors and an expert view.
+- [InfoSewer_2009 (app)](wiki/entities/infosewer-2009.md): v1.2.0; a 2009 InfoSewer network in 3D with swmm5-infosewer results.
+- [One Model, Three Engines (app)](wiki/entities/one-model-three-engines.md): v1.1; moving the InfoSewer training model into ICM; matching flow is not enough.
 
 Data
 - [1729-SWMM5-Models-2030 (the corpus)](wiki/entities/corpus-1729.md): Bob's public model repository; 480 of its models are the translations' gate set.
@@ -311,6 +325,17 @@ App summaries
 - [S155](wiki/sources/S155-modpods-explainer-summary.md) (2026-08-21): modpods, for a SWMM person, summary written from the page by Claude.
 - [S156](wiki/sources/S156-arrm-evidence-atlas-summary.md) (2026-08-21): Automatic Rainfall-Runoff Models: Evidence Atlas, summary written from the page by Claude.
 - [S157](wiki/sources/S157-lstm-swmm5-summary.md) (2026-10-18): LSTM + SWMM5 v2.0, summary written from the page by Claude.
+- [S192](wiki/sources/S192-swmm-qa-report-bench-app-md.md) (2026-11-12): SWMM QA Report Bench, technical summary, v2.0.0; 46 runs of 5.2.4 against the 2006 report's figures.
+- [S193](wiki/sources/S193-swmm3-runoff-transport-summary.md) (2026-10-23): SWMM 3 Runoff & Transport, summary written from the page by Claude.
+- [S194](wiki/sources/S194-swmm4-twin-engines-summary.md) (2026-10-22): SWMM 4 Twin Engines, summary written from the page by Claude.
+- [S195](wiki/sources/S195-swmm5-kw-summary.md) (2026-11-10): swmm5-kw v1.1, summary written from the page by Claude.
+- [S196](wiki/sources/S196-swmm5-raspipe-summary.md) (2026-11-05): SWMM5 RASPIPE v1.3, summary written from the page by Claude.
+- [S197](wiki/sources/S197-swmm5-engine-race-app-md.md) (2026-11-11): SWMM5 Engine Race, technical summary, v1.0.0.
+- [S198](wiki/sources/S198-two-engines-one-town-summary.md) (2026-11-02): Two Engines, One Town, summary written from the page by Claude.
+- [S199](wiki/sources/S199-seven-swmm-engines-summary.md) (2026-10-28): Seven SWMM Engines v1.2, summary written from the page by Claude.
+- [S200](wiki/sources/S200-one-swmm-summary.md) (2026-11-09): One SWMM v0.2.0, summary written from the page by Claude.
+- [S201](wiki/sources/S201-infosewer-2009-app-md.md) (2026-11-12): InfoSewer_2009, technical summary, v1.2.0; swmm5-infosewer results in 3D.
+- [S202](wiki/sources/S202-one-model-three-engines-summary.md) (2026-11-02): One Model, Three Engines v1.1, summary written from the page by Claude.
 
 Manuals and reports (primary documents)
 - [S185](wiki/sources/S185-epa-swmm5-qa-report-dynamic-wave-2006.md) (2006-09): SWMM Quality Assurance Report, Dynamic Wave Flow Routing, by L. A. Rossman: SWMM 4.4h against SWMM 5.0.006 on twenty examples. Read in part: Chapters 1 to 4 and 7.

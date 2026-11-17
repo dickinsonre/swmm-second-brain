@@ -1,8 +1,8 @@
 ---
 title: Cycles and trees
 type: concept
-updated: 2026-11-16
-sources: [S158, S60, S08]
+updated: 2026-11-17
+sources: [S158, S60, S08, S195]
 tags: [graph-theory, mathematics, kinematic-wave, swmm5]
 reviewed: no
 ---
@@ -33,3 +33,5 @@ Cycles make a graph resilient and its paths ambiguous; trees have none. From [Ti
 More on [Kinematic wave and steady flow routing](kinematic-wave-and-steady-flow.md).
 
 **Not in the sources.** Kahn's algorithm itself (repeatedly take a node with no unprocessed incoming edges) is general knowledge, not described in either source.
+
+**Added 17 November 2026.** How [swmm5-kw](../entities/swmm5-kw.md) handles a cycle: it iterates the loop within each routing step until the flow coming back around settles. Where a pipe in the loop would run backwards, the page says the answer is wrong in direction, because kinematic wave has no reverse flow [S195](../sources/S195-swmm5-kw-summary.md).

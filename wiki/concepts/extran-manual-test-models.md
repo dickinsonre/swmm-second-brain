@@ -1,8 +1,8 @@
 ---
 title: The EXTRAN manual test models
 type: concept
-updated: 2026-11-16
-sources: [S75, S180, S181, S182, S183, S185, S186]
+updated: 2026-11-17
+sources: [S75, S180, S181, S182, S183, S185, S186, S192]
 tags: [extran, test-models, verification, swmm4, swmm5, swmm6, icm]
 reviewed: no
 ---
@@ -39,3 +39,9 @@ Examples 3 and 4 are described from the Rosetta Stone's conversion, because thei
 **The AI summaries in the 2025 articles.** Each article carries a summary of the .inp "created with AI Help". Where checked, the storage and orifice of Example 5 agree with the QA report and the Rosetta Stone; the Example 6 summary calls the pump curve's volumes "ft head" [S181](../sources/S181-li-extran5-storage-side-orifice.md), [S182](../sources/S182-li-extran-example-6-type-1-pump.md).
 
 **Related.** [EXTRAN](../entities/extran.md); [Pumps and pump curves](pumps-and-pump-curves.md); [Orifices](orifices.md).
+
+**Added 17 November 2026: the ten examples on SWMM 5.2.4.** The [SWMM QA Report Bench (app)](../entities/swmm-qa-report-bench.md) ran EXTRAN1 to EXTRAN10, as the 2006 report set them up, on EPA SWMM 5.2.4 [S192](../sources/S192-swmm-qa-report-bench-app-md.md).
+- EXTRAN10, five pumps lifting water up a hill [S185](../sources/S185-epa-swmm5-qa-report-dynamic-wave-2006.md): link 90002 peaks at 56.69 cfs against the 2006 SWMM 5 figure of 40.26 (+40.8 %), the largest difference of the 111 locations; link 90004 at 22.66 against 25.64 cfs (-11.6 %) [S192](../sources/S192-swmm-qa-report-bench-app-md.md).
+- EXTRAN4: node 82309 peaks at 12.03 ft with the weir's surcharge flag YES, the default, and 20.28 ft with NO; the 2006 figure shows 14.21 ft [S192](../sources/S192-swmm-qa-report-bench-app-md.md). See [Weirs and outlets](../concepts/weirs-and-outlets.md).
+- EXTRAN2's routing continuity error is -4.085 % with the report's options; every other example is within 0.72 % [S192](../sources/S192-swmm-qa-report-bench-app-md.md).
+- EXTRAN1: link 1602 peaks at 71.991 cfs read from the .out and 71.99 in the report file; node 82309's maximum depth 21.834 against 21.83 ft [S192](../sources/S192-swmm-qa-report-bench-app-md.md).

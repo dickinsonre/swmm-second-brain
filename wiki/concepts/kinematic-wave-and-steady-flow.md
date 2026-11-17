@@ -1,11 +1,11 @@
 ---
 title: Kinematic wave and steady flow routing
 type: concept
-updated: 2026-11-16
-sources: [S01, S08, S10, S17, S60, S117, S125]
+updated: 2026-11-17
+sources: [S01, S08, S10, S17, S60, S117, S125, S195]
 tags: [hydraulics, swmm5, routing]
 reviewed: 11/16/2026
-changed_after_review: "2026-11-16 (S60 Chapter 5 ingest): one paragraph added at the end, headed Added 16 November 2026, later, on the area at maximum flow (S60)"
+changed_after_review: "2026-11-16 (S60 Chapter 5 ingest): one paragraph added at the end, headed Added 16 November 2026, later, on the area at maximum flow (S60); 2026-11-17 (S192 to S202 ingest): one paragraph added at the end on swmm5-kw (S195)"
 ---
 SWMM5 has two routing methods simpler than [dynamic wave](dynamic-wave-routing.md) [S17](../sources/S17-li-routing-options.md).
 
@@ -35,3 +35,9 @@ SWMM5 has two routing methods simpler than [dynamic wave](dynamic-wave-routing.m
 **Added 15 November 2026: two apps past the dendritic limit.** [Kinematic Wave Router (app)](../entities/kinematic-wave-router.md), Bob's Ruby kinematic wave, divides flow equally at a split and iterates on loops; its loop fixture did not fully converge after 20 iterations [S125](../sources/S125-kinematic-wave-router-replit-summary.md). [BatchSWMM56 (app)](../entities/batchswmm56.md) carries the 5.2.4 KW/SF extension as its "SWMM5 Extended" engine [S117](../sources/S117-batchswmm56-replit-summary.md). Replit Agent wrote both summaries; Bob has read neither (Q74).
 
 **Added 16 November 2026, later.** The kinematic wave solution for a closed conduit needs the area at which the section factor, and so the Manning flow, is greatest. Chapter 5 of the manual tabulates it as a fraction of the full area for every closed shape, from 0.92 for the arch to 0.9756 for the circle [S60](../sources/S60-epa-swmm5-reference-manual-vol2-hydraulics.md); the table is on [Conduit cross-sections: the built-in shapes](conduit-cross-sections.md).
+
+**Added 17 November 2026: swmm5-kw, measured.** The page for [swmm5-kw](../entities/swmm5-kw.md) 1.1 says how it lifts the dendritic limit [S195](../sources/S195-swmm5-kw-summary.md).
+- A junction with several outlets shares its outflow by one of three rules. HEAD, the default, finds the one water level at which the outlets, each at Manning normal depth and capped at full flow, carry exactly the inflow; CAPACITY shares by full-flow capacity; AREA is the third. A loop is iterated within each routing step until the returning flow settles.
+- On one split of 20 cfs into a 3.0 ft and a 1.5 ft outlet, HEAD sends 73.8 % down the big pipe, dynamic wave 71.3 % and CAPACITY 86.4 %. On two other small networks every peak is within 1.8 % of dynamic wave.
+- Switched to KINWAVE, 925 of 3,218 dynamic-wave corpus models stop stock 5.2.4 at ERROR 133 or 131; swmm5-kw ran 234 of them to the end, with a median continuity error of 0.17 % and 60 past 1 %.
+- It still cannot represent backwater, surcharge or reverse flow, and a loop pipe that would run backwards is wrong in direction [S195](../sources/S195-swmm5-kw-summary.md).

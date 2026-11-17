@@ -1,10 +1,11 @@
 ---
 title: Reading SWMM output
 type: concept
-updated: 2026-11-16
-sources: [S03, S10, S22, S60, S69, S72, S76, S77, S78, S157]
+updated: 2026-11-17
+sources: [S03, S10, S22, S60, S69, S72, S76, S77, S78, S157, S199, S200, S81]
 tags: [swmm5, output, reporting]
 reviewed: 11/16/2026
+changed_after_review: "2026-11-17 (S192 to S202 ingest): one paragraph added at the end on the SWMM Results Kit (S199, S200)"
 ---
 A large share of "SWMM is wrong" questions come from comparing two honest numbers that measure different things [S22](../sources/S22-li-ten-problems.md).
 
@@ -36,3 +37,5 @@ Bob's comment: he and others have explained for over 25 years why the graphs and
 See also [The missing specification](the-missing-specification.md) and [Continuity is not validation](continuity-is-not-validation.md).
 
 **Added 16 November 2026.** Two findings from [LSTM + SWMM5](../entities/lstm-swmm5-app.md) [S157](../sources/S157-lstm-swmm5-summary.md). (1) Rainfall in a SWMM5 .out leads by one report period: at each report time the file holds the gage intensity of the interval that starts there. On one model the .out rainfall at period p equals the input for the next interval at 11,520 of 11,520 periods. (2) An .out holds only reported objects: with no SUBCATCHMENTS, NODES or LINKS lines in [REPORT] it carries the 15 system series and nothing else. The source is a summary Claude wrote from the page (Q84). The EPA hydraulics manual, section 1.5, describes the rainfall timing as the design: rainfall and infiltration rates are not interpolated, and a reported intensity is the value at the start of the runoff step [S60](../sources/S60-epa-swmm5-reference-manual-vol2-hydraulics.md). See [How SWMM 5 is organized](swmm5-objects-state-time-loop.md).
+
+**Added 17 November 2026: one reader for every app.** Bob's engine apps now read .rpt and .out files through one library, the [SWMM Results Kit](../entities/swmm-results-kit.md). Its .out reader matched EPA's swmm-output library on 96 corpus runs, 11,738,268 values with 0 wrong [S199](../sources/S199-seven-swmm-engines-summary.md). The reader it replaced in [Seven SWMM Engines](../entities/seven-swmm-engines.md) dropped the 7 DUMMY rows of Bellinge's 1,044 links and lost fields on weir, pump and orifice rows [S199](../sources/S199-seven-swmm-engines-summary.md). That app gives EPA 5.2.4's Example 1 outfall peak as 73.9 cfs [S199](../sources/S199-seven-swmm-engines-summary.md), the same number as conduit C11's Link Flow Summary peak above, while the Bellinge app gives 71.18 cfs, the .out figure [S81](../sources/S81-bellinge-summary.md). Which measure each engine's figure is, the two summaries do not say (Q100).

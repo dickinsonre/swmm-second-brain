@@ -1,10 +1,11 @@
 ---
 title: Bellinge (app)
 type: entity
-updated: 2026-11-15
-sources: [S74, S81]
+updated: 2026-11-17
+sources: [S74, S81, S197, S199]
 tags: [apps, bellinge, swmm5, swmm6, swmm4, extran, engine-comparison]
 reviewed: 2026-11-15
+changed_after_review: "2026-11-17 (S192 to S202 ingest): one paragraph added at the end on two more apps (S197, S199)"
 ---
 Bob's app that runs one open Danish sewer model, with its rain record and a set of scenarios, through seven SWMM engines in the browser. Version 2.0, 18 October 2026 [S81](../sources/S81-bellinge-summary.md).
 
@@ -43,3 +44,5 @@ The branch is used because EXTRAN III refuses the whole model: its 1981 limit is
 **What it does not show.** "Agreement between engines is not correctness." Thirteen level meters and a flow meter recorded Bellinge from 2010 to 2020; they are in the dataset and not in the page. The two Fortran engines run converted decks; see [Converting SWMM 5 models for older engines](../concepts/converting-swmm5-models-for-older-engines.md). No person has compared the runs with a desktop SWMM run node by node [S81](../sources/S81-bellinge-summary.md).
 
 **Open.** Three small faults in the page's own text, among them an essay byline that reads "Robert Dickinson, with Claude" (Q53). See [Open questions](../open-questions.md).
+
+**Added 17 November 2026.** Two more apps use the Bellinge model. [Seven SWMM Engines](seven-swmm-engines.md) carries it as a sample with its two rain files inlined for 29 and 30 June 2012; its old report reader read 1,037 of the 1,044 links [S199](../sources/S199-seven-swmm-engines-summary.md). [SWMM5 Engine Race](swmm5-engine-race.md) times it: 1.57x faster on 5 hours with the fast build, and 1.29x on the full 2 days [S197](../sources/S197-swmm5-engine-race-app-md.md).

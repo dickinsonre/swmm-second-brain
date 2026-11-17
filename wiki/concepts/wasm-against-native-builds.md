@@ -1,10 +1,11 @@
 ---
 title: WebAssembly builds against native builds
 type: concept
-updated: 2026-11-16
-sources: [S68, S73, S74, S76, S77, S78, S79, S80, S81, S82, S83, S157]
+updated: 2026-11-17
+sources: [S68, S73, S74, S76, S77, S78, S79, S80, S81, S82, S83, S157, S193, S194, S195, S196, S197, S199]
 tags: [wasm, verification, swmm5, math-library, apps]
 reviewed: 11/16/2026
+changed_after_review: "2026-11-17 (S192 to S202 ingest): one paragraph and a table added at the end on five more apps (S193 to S199)"
 ---
 Most of Bob's engine apps run EPA SWMM 5.2.4 compiled to WebAssembly inside the page. Does that build give the same answers as a native build of the same C? Several apps tested it, and they do not all report the same thing. One of them found the cause [S82](../sources/S82-mirab-test-bench-summary.md).
 
@@ -48,3 +49,15 @@ The Code House and Bellinge builds name the same compiler and carry different ha
 See [Matching glibc math in a translation](glibc-math-in-translation.md), where the translations of the engine meet the same problem from the other side, and [Byte-for-byte gate](byte-for-byte-gate.md).
 
 **Added 16 November 2026.** Another app, [LSTM + SWMM5](../entities/lstm-swmm5-app.md), built its engine with clang 18 for wasm32-wasi (`-O2`, `-ffp-contract=off`, wasi-libc). Its six probe models gave byte-identical .out files in the browser and natively. Its calibration demo did not: 56 of 4,032 periods differ, at most 0.102 cfs (0.41 % of peak), NSE 0.999996 between the two. The native build disagrees with itself on 4 periods (at most 0.047 cfs) when glibc's FMA code paths are switched off [S157](../sources/S157-lstm-swmm5-summary.md). The source is a summary Claude wrote from the page (Q84). It bears on Q55.
+
+**Added 17 November 2026: five more apps, and the math library named twice more.**
+
+| App | Compared | Result |
+|---|---|---|
+| [SWMM5 Engine Race](../entities/swmm5-engine-race.md) | stock wasm against a native gcc build of 5.2.4 | Not byte-identical, because of a different libm `pow`; on Greenville 4.3 % of conduits differ by more than 1 % of their own peak at the worst instant, peaks unchanged [S197](../sources/S197-swmm5-engine-race-app-md.md) |
+| [SWMM 3 Runoff & Transport](../entities/swmm3-runoff-transport-app.md) | the same C, wasm32 and gcc | Byte-identical on eleven cases, but only after both builds compiled the same musl 1.2.6 routines; the host libraries differed at the last bit of sinf, cosf, tanf, asinf, acosf, atanf, log10f, exp and pow [S193](../sources/S193-swmm3-runoff-transport-summary.md) |
+| [SWMM 4 Twin Engines](../entities/swmm4-twin-engines.md) | gfortran, f2c + gcc, f2c + wasm | The same printed continuity error on five decks; the Runoff interface file byte-identical [S194](../sources/S194-swmm4-twin-engines-summary.md) |
+| [SWMM5 RASPIPE](../entities/swmm5-raspipe.md) | 16 test decks | 15 byte-identical; the other off by at most 0.01 cfs on an 8 cfs link [S196](../sources/S196-swmm5-raspipe-summary.md) |
+| [swmm5-kw](../entities/swmm5-kw.md) | its wasm engines against native builds (GCC 13 with musl 1.2.4) | "checked"; no count given [S195](../sources/S195-swmm5-kw-summary.md) |
+
+Two more builds: Engine Race's stock and fast builds, Emscripten 3.1.51, wasm SHA-256 `fbbfb0a2` and `35767fbb` [S197](../sources/S197-swmm5-engine-race-app-md.md); [Seven SWMM Engines](../entities/seven-swmm-engines.md), Emscripten 3.1.51, 0.65 MB [S199](../sources/S199-seven-swmm-engines-summary.md). The Engine Race and SWMM 3 results point at the math library, as the Mirab bench did; they bear on Q55.

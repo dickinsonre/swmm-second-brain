@@ -1,10 +1,11 @@
 ---
 title: Converting SWMM 5 models for older engines
 type: concept
-updated: 2026-11-15
-sources: [S73, S74, S81]
+updated: 2026-11-17
+sources: [S73, S74, S81, S193, S194, S199]
 tags: [swmm-history, conversion, swmm1, swmm4, extran, swmm5]
 reviewed: 2026-11-15
+changed_after_review: "2026-11-17 (S192 to S202 ingest): one paragraph added at the end on three more converters (S193, S194, S199)"
 ---
 Three of Bob's apps take a modern SWMM 5 `.inp` and run it on an engine from 1971, 1981 or 2004. Each needs a converter, and each converter loses something. This page collects what the converters do and what they report as lost.
 
@@ -43,3 +44,8 @@ Inputs SWMM 1 cannot carry are "reported, not emulated": the Horton infiltration
 **The standing caution.** "SWMM 5 is a different program, not the truth. A difference is not always a mistake" [S74](../sources/S74-extran3-workbench-app-md.md).
 
 See [Verification against printed runs](verification-against-printed-runs.md), [SWMM version history, 1969 to 2026](swmm-version-history.md), [Block architecture and interface files](block-architecture.md).
+
+**Added 17 November 2026: three more converters.**
+- [SWMM 4 Twin Engines](../entities/swmm4-twin-engines.md): a SWMM 5 subcatchment becomes one H1 line, Horton decay changes from per hour to per second, and rain gages become E3 hyetographs on the finest gage interval. Flow only: no quality, groundwater, LID, snow, controls, patterns or RDII [S194](../sources/S194-swmm4-twin-engines-summary.md).
+- [SWMM 3 Runoff & Transport](../entities/swmm3-runoff-transport-app.md): punches a SWMM 5 .inp or a SWMM 4 deck as 1981 cards and lists every change [S193](../sources/S193-swmm3-runoff-transport-summary.md).
+- [Seven SWMM Engines](../entities/seven-swmm-engines.md) uses the Workbench's converter, S5to4: rain files moved to [TIMESERIES], rating-curve outlets fitted as capped conduits, weirs or orifices, control rules reduced to pump start and stop depths. EXTRAN III is fed the runoff SWMM 4.4H computed, and a run longer than its 99,999 steps is cut to the span around the largest runoff peak [S199](../sources/S199-seven-swmm-engines-summary.md).

@@ -1,10 +1,11 @@
 ---
 title: Weirs and outlets
 type: concept
-updated: 2026-11-15
-sources: [S60]
+updated: 2026-11-17
+sources: [S60, S192]
 tags: [hydraulics, swmm5, regulators, primary-document]
 reviewed: 2026-11-15
+changed_after_review: "2026-11-17 (S192 to S202 ingest): one paragraph added at the end on the weir surcharge flag (S192)"
 ---
 Weirs and outlets are, with [orifices](orifices.md), SWMM 5's flow regulator links [S60](../sources/S60-epa-swmm5-reference-manual-vol2-hydraulics.md). This page is sections 6.3 and 6.4 of the EPA hydraulics manual, a primary document, in digest. The equations did not survive the conversion of the raw file, so they are given in words [S60](../sources/S60-epa-swmm5-reference-manual-vol2-hydraulics.md).
 
@@ -36,3 +37,5 @@ A broad crest acts as sharp-crested, 3.32, once the head is more than about twic
 **Outlets.** A generic regulator for cases the orifice and weir formulas do not fit: the user gives a rating curve of flow against head, as a power function or a table [S60](../sources/S60-epa-swmm5-reference-manual-vol2-hydraulics.md). Head is either the depth at the upstream node or the difference across the link [S60](../sources/S60-epa-swmm5-reference-manual-vol2-hydraulics.md). Below the first table entry the first flow is used, and above the last entry the last flow [S60](../sources/S60-epa-swmm5-reference-manual-vol2-hydraulics.md). A setting between 0 and 1 multiplies the flow [S60](../sources/S60-epa-swmm5-reference-manual-vol2-hydraulics.md). The manual's examples are a side orifice by the Smith and Coleman equation, a perforated riser with a grate, and a vortex regulator [S60](../sources/S60-epa-swmm5-reference-manual-vol2-hydraulics.md).
 
 **Not in the sources yet.** Section 6.3.6 and steps 3 to 6 of the weir summary are missing from the raw file (Q60 in [Open questions](../open-questions.md)).
+
+**Added 17 November 2026: the weir's surcharge flag on EXTRAN4.** In EPA SWMM 5.2.4 a weir's canSurcharge defaults to 1 (`link.c:2046`). On EXTRAN4, node 82309 peaks at 12.03 ft with the flag YES and 20.28 ft with NO, and the weir's peak flow is 28.11 against 12.47 cfs; EPA's 2006 figure shows 14.21 ft [S192](../sources/S192-swmm-qa-report-bench-app-md.md). The app that measured it files this as an observation, O1, not a defect.

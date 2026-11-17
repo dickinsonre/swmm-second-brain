@@ -1,11 +1,11 @@
 ---
 title: Dynamic wave routing
 type: concept
-updated: 2026-11-16
-sources: [S08, S10, S17, S18, S20, S22, S55, S60, S62, S75, S77, S79, S80, S185, S186]
+updated: 2026-11-17
+sources: [S08, S10, S17, S18, S20, S22, S55, S60, S62, S75, S77, S79, S80, S185, S186, S192, S196]
 tags: [hydraulics, swmm5, routing]
 reviewed: 2026-11-15
-changed_after_review: "2026-11-16 (S180 to S187 ingest): one paragraph added at the end on four trials in 5.0.006, the 50 ft/s cap and free-fall depth (S185, S186)"
+changed_after_review: "2026-11-16 (S180 to S187 ingest): one paragraph added at the end on four trials in 5.0.006, the 50 ft/s cap and free-fall depth (S185, S186); 2026-11-17 (S192 to S202 ingest): one paragraph added at the end on the 2006 option set and RASPIPE (S192, S196)"
 ---
 Dynamic wave routing solves the full one-dimensional St. Venant equations: continuity and momentum in the conduits and a volume balance at the nodes [S17](../sources/S17-li-routing-options.md). It is the only SWMM5 routing method that handles backwater, entrance and exit losses, flow reversal, pressurized flow, loops and multiple downstream diversions [S17](../sources/S17-li-routing-options.md).
 
@@ -57,3 +57,7 @@ The method is implicit in time (backward Euler, solved by Picard iteration); ear
 **Added 15 November 2026, second ingest of the day.** What pumps, orifices and weirs contribute to a node under dynamic wave (surface area, flow derivative, relaxation) is on [Pumps and pump curves](pumps-and-pump-curves.md), [Orifices](orifices.md) and [Weirs and outlets](weirs-and-outlets.md), and the initial and boundary conditions are on [SWMM 5 network objects, boundary and initial conditions](swmm5-network-objects.md), all from Chapters 2 and 6 of the EPA manual [S60](../sources/S60-epa-swmm5-reference-manual-vol2-hydraulics.md).
 
 **Added 16 November 2026, from the EXTRAN and QA ingest.** In SWMM 5.0.006 the iteration stopped after four trials [S185](../sources/S185-epa-swmm5-qa-report-dynamic-wave-2006.md); SWMM 5.2.4 allows eight [S186](../sources/S186-st-venant-rosetta-stone-app-md-v2-6-2.md). SWMM 4 and SWMM 5 both cap the mean conduit velocity at 50 ft/s and give a free-fall end the smaller of the critical and normal depths [S185](../sources/S185-epa-swmm5-qa-report-dynamic-wave-2006.md). The 2006 comparison of the two programs is on [SWMM 4 against SWMM 5: the 2006 quality assurance tests](swmm4-versus-swmm5-qa-2006.md).
+
+**Added 17 November 2026.** Two more sources on the solver.
+- The 2006 report's option set, as the [SWMM QA Report Bench](../entities/swmm-qa-report-bench.md) writes it into 5.2.4: `INERTIAL_DAMPING NONE`, `NORMAL_FLOW_LIMITED SLOPE`, `LENGTHENING_STEP 0`, `MIN_SURFAREA 0` (engine default 12.566 ft2, `dynwave.c:62`), `MAX_TRIALS 4`, `VARIABLE_STEP 0.00`, `THREADS 1`, head tolerance left at 0.005 ft (`dynwave.c:63`). Options as distributed move no conduit peak by more than 3.12 % [S192](../sources/S192-swmm-qa-report-bench-app-md.md).
+- A replacement for the explicit update: [SWMM5 RASPIPE](../entities/swmm5-raspipe.md) solves the pipes semi-implicitly over a mesh of cells, from HEC's public manuals, behind `FLOW_ROUTING RASPIPE` [S196](../sources/S196-swmm5-raspipe-summary.md).

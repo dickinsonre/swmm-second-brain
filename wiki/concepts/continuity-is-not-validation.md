@@ -1,10 +1,11 @@
 ---
 title: Continuity is not validation
 type: concept
-updated: 2026-11-15
-sources: [S01, S04, S05, S20, S59, S60, S62, S65, S67, S75, S81]
+updated: 2026-11-17
+sources: [S01, S04, S05, S20, S59, S60, S62, S65, S67, S75, S81, S194, S196, S199, S201]
 tags: [verification, method]
 reviewed: 2026-11-15
+changed_after_review: "2026-11-17 (S192 to S202 ingest): one paragraph added at the end on four more cases (S194, S196, S199, S201)"
 ---
 A closed mass balance shows that water was not lost. It does not show that the answer is right. Five cases from the sources:
 
@@ -31,3 +32,9 @@ A closed mass balance shows that water was not lost. It does not show that the a
 **Added 15 November 2026.** Three more cases from the app summaries. (1) On EXTRAN Example 1 the OpenSWMM 6 finite-volume solver at its default mesh prints a continuity error of 0.000 % and reports no flooding at all, while at 25 ft cells it prints the same 0.000 % and loses 80,673 ft³; six other solutions lose 78,582 to 114,824 ft³, and ZROUTE as distributed, which has a fault of its own, also reports none [S75](../sources/S75-st-venant-rosetta-stone-app-md.md). A closed balance did not make the default-mesh answer agree with anything. (2) In the same study an independent mass balance, worked from each engine's printed hydrograph, agreed with the engine's own continuity figure within 0.03 point in 55 of 59 runs; the four that did not were ZROUTE runs at long time steps [S75](../sources/S75-st-venant-rosetta-stone-app-md.md). (3) On the Bellinge model, EPA SWMM 5.2.4 and OpenSWMM 6 both close routing continuity within 0.35 % on the 48-hour run and report 466 and 61 flooding nodes [S81](../sources/S81-bellinge-summary.md). The Bellinge essay's line: "Agreement between engines is not correctness." See [OpenSWMM 6 solvers, measured](openswmm6-solvers-measured.md).
 
 See also [Verification against printed runs](verification-against-printed-runs.md) and [The SWMM findings register](findings-register.md).
+
+**Added 17 November 2026: four more cases.**
+- [SWMM5 RASPIPE](../entities/swmm5-raspipe.md) takes the median routing continuity error of 1,163 corpus models from 0.795 % to 0.005 %. Its page says agreement with Manning, a pump curve and another solver "shows the arithmetic, not whether a model predicts a real sewer", and that nobody has sorted out which engine is right where they disagree [S196](../sources/S196-swmm5-raspipe-summary.md).
+- [Seven SWMM Engines](../entities/seven-swmm-engines.md): on Example 1 every engine closes flow continuity within 0.03 percent, while TSS continuity runs from -1.65 % to -85.40 % [S199](../sources/S199-seven-swmm-engines-summary.md).
+- [SWMM 4 Twin Engines](../entities/swmm4-twin-engines.md): a printed continuity error of 56.180 % exposed a real Transport defect, and the page adds that "a small continuity error is not a correct answer" [S194](../sources/S194-swmm4-twin-engines-summary.md).
+- [swmm5-infosewer](../entities/swmm5-infosewer.md) matches the InfoSewer engine bit for bit, and InfoSewer's own mass balance on the same 2009 network leaves 339,295 ft3 unaccounted, printed as 14.6 percent (Q101). The page says the engine copies InfoSewer's rules, "oddities included" [S201](../sources/S201-infosewer-2009-app-md.md).

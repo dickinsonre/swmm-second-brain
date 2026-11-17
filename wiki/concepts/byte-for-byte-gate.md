@@ -1,10 +1,11 @@
 ---
 title: Byte-for-byte gate
 type: concept
-updated: 2026-11-14
-sources: [S23, S28, S29, S30, S34, S35, S41, S70, S71]
+updated: 2026-11-17
+sources: [S23, S28, S29, S30, S34, S35, S41, S70, S71, S195, S196, S197]
 tags: [verification, method, translation]
 reviewed: 2026-11-15
+changed_after_review: "2026-11-17 (S192 to S202 ingest): one paragraph added at the end on three more gates (S195 to S197)"
 ---
 The test every SWMM5 and SWMM6 translation is held to: run the translation and the original engine on the same decks and compare the files they write, byte for byte [S23](../sources/S23-swmm6-csharp-readme.md) [S41](../sources/S41-swmm5-go-readme.md).
 
@@ -32,3 +33,9 @@ The test every SWMM5 and SWMM6 translation is held to: run the translation and t
 **Not in the sources.** That either engine is right: the gate compares the translation with the original, not with measurements or theory. And how this compares with the number-by-number scoring on [Verification against printed runs](verification-against-printed-runs.md), which allows a few digits of difference because the old machines rounded differently [S01](../sources/S01-swmm1-engine-app-md.md). A byte-for-byte gate is only possible when both engines run on the same arithmetic.
 
 See [SWMM6 language translations](../entities/swmm6-language-ports.md), [Matching glibc math in a translation](glibc-math-in-translation.md), [Continuity is not validation](continuity-is-not-validation.md).
+
+**Added 17 November 2026: three more gates, on engines that extend EPA's C.**
+- [swmm5-kw](../entities/swmm5-kw.md): 3,759 corpus models through stock 5.2.4 and the extension. 3,737 identical, as [S70](../sources/S70-swmm-engine-what-if-app-md.md) also counts. Of the other 22, 10 crash both engines at the same point, 11 never finish in stock, and 1 is the model the extension exists for, which stock refuses [S195](../sources/S195-swmm5-kw-summary.md).
+- [SWMM5 Engine Race](../entities/swmm5-engine-race.md): 1,156 corpus models through the stock and fast builds. 728 identical, 352 stop at the same error with the same report, 76 skipped as too slow, 0 different. The summary itself says the 352 exercise parsing, not routing: 187 stop at ERROR 205 and 28 at ERROR 317 [S197](../sources/S197-swmm5-engine-race-app-md.md).
+- [SWMM5 RASPIPE](../entities/swmm5-raspipe.md): with the option off, identical on 23 of 23 test decks and 60 of 60 corpus models, with 16 more skipped for time or error [S196](../sources/S196-swmm5-raspipe-summary.md).
+All three count a run that stops at a time limit as not compared, which is the rule above.

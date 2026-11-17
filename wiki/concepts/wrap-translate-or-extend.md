@@ -1,10 +1,11 @@
 ---
 title: Wrap, translate or extend
 type: concept
-updated: 2026-11-14
-sources: [S70, S72]
+updated: 2026-11-17
+sources: [S70, S72, S195, S196, S201]
 tags: [swmm5, swmm6, translation, method]
 reviewed: 2026-11-15
+changed_after_review: "2026-11-17 (S192 to S202 ingest): one paragraph added at the end linking three engine pages (S195, S196, S201)"
 ---
 Three roads for getting SWMM into another language or making it compute something new, as Bob's [SWMM Engine What If (app)](../entities/swmm-engine-what-if.md) sets them out [S70](../sources/S70-swmm-engine-what-if-app-md.md).
 
@@ -42,3 +43,5 @@ The app has 294 such cells plus 7 for the extend road. They are "editorial judgm
 **Its weak point.** "The extended engines' new paths are judged by weaker tests than a byte gate; three have no reference engine" [S70](../sources/S70-swmm-engine-what-if-app-md.md). A lower continuity error is not proof the new solver is right; see [Continuity is not validation](continuity-is-not-validation.md).
 
 **Not in the sources yet.** The repositories of swmm5-kw, swmm5-raspipe and swmm5-infosewer, and any use of a wrapper in practice.
+
+**Added 17 November 2026.** Three of the four extending engines now have pages: [swmm5-kw](../entities/swmm5-kw.md), [SWMM5 RASPIPE](../entities/swmm5-raspipe.md) and [swmm5-infosewer](../entities/swmm5-infosewer.md). The swmm5-kw repository is SWMMBobSWMM6/swmm5-kw [S195](../sources/S195-swmm5-kw-summary.md); the swmm5-infosewer repository, SWMMBobSWMM6/swmm5-infosewer, is private [S201](../sources/S201-infosewer-2009-app-md.md). RASPIPE's medians of 0.005 % and 0.795 % are over the 1,163 of its 1,600 sampled models that finished in both engines [S196](../sources/S196-swmm5-raspipe-summary.md).

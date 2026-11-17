@@ -1,11 +1,11 @@
 ---
 title: SWMM version history, 1969 to 2026
 type: concept
-updated: 2026-11-16
-sources: [S01, S07, S11, S12, S19, S20, S21, S22, S55, S60, S63, S86, S126, S185]
+updated: 2026-11-17
+sources: [S01, S07, S11, S12, S19, S20, S21, S22, S55, S60, S63, S86, S126, S185, S193, S194, S199]
 tags: [swmm-history, timeline]
 reviewed: 11/16/2026
-changed_after_review: "2026-11-16 (S180 to S187 ingest): one paragraph added at the end on the 2006 QA report's dates (S185)"
+changed_after_review: "2026-11-16 (S180 to S187 ingest): one paragraph added at the end on the 2006 QA report's dates (S185); 2026-11-17 (S192 to S202 ingest): one paragraph added at the end on Version III and the SWMM 4.4 sources (S193, S194, S199)"
 ---
 The timeline as the ingested sources give it. Where two sources differ, both are shown.
 
@@ -69,3 +69,7 @@ Pages for the versions: [SWMM 1 (1971)](../entities/swmm-1.md), [EXTRAN](../enti
 **Added 15 November 2026: an app on this subject.** [SWMM Ecosystem (app)](../entities/swmm-ecosystem.md) catalogs 51 programs. Its summary says its historical claims were not checked against outside sources, and nothing from it is used above [S126](../sources/S126-swmm-ecosystem-replit-summary.md).
 
 **Added 16 November 2026, from the EXTRAN and QA ingest.** EPA's 2006 quality assurance report: in 2002 EPA partnered with CDM to rewrite SWMM, with a C engine and a Delphi interface, and "the new SWMM 5 software was released to the public in October of 2004" [S185](../sources/S185-epa-swmm5-qa-report-dynamic-wave-2006.md). This bears on Q32. The report compared SWMM 4.4h of July 4, 2005 with SWMM 5.0.006 of September 2005; see [SWMM 4 against SWMM 5: the 2006 quality assurance tests](swmm4-versus-swmm5-qa-2006.md).
+
+**Added 17 November 2026: Version III and the SWMM 4.4 sources the apps use.**
+- SWMM Version III: the November 1981 release, documented in the User's Manual Version III by Huber, Heaney, Nix, Dickinson and Polmann (EPA-600/2-84-109a). The page that rebuilds it says it was distributed on magnetic tape, about 25,000 Fortran statements, and that no listing is known to survive [S193](../sources/S193-swmm3-runoff-transport-summary.md).
+- The SWMM 4.4 Fortran in Bob's apps comes from three releases: swmm44gu, CDM and Oregon State, 20 February 2001 [S194](../sources/S194-swmm4-twin-engines-summary.md); the Oregon State and CDM source of July 2003 / 2004 [S193](../sources/S193-swmm3-runoff-transport-summary.md); and SWMM 4.4H, the 2004 CDM/OSU release [S199](../sources/S199-seven-swmm-engines-summary.md). EPA's 2006 report compared version 4.4h of July 4, 2005 [S185](../sources/S185-epa-swmm5-qa-report-dynamic-wave-2006.md). The sources do not say how the four differ.

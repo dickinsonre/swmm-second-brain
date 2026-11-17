@@ -1,10 +1,11 @@
 ---
 title: The SWMM findings register
 type: concept
-updated: 2026-11-15
-sources: [S03, S04, S05, S59, S67, S71, S72, S74, S75, S79, S80, S82, S83]
+updated: 2026-11-17
+sources: [S03, S04, S05, S59, S67, S71, S72, S74, S75, S79, S80, S82, S83, S192, S193, S194, S195, S196, S197]
 tags: [findings, verification, method]
 reviewed: 2026-11-15
+changed_after_review: "2026-11-17 (S192 to S202 ingest): one paragraph added at the end listing more app-local findings (S192 to S197)"
 ---
 A numbered, dated record of what was checked and what came back, proposed in October 2026 because Bob's apps are safe on Netlify and GitHub while the findings exist only inside chat transcripts [S03](../sources/S03-findings-register-format.md).
 
@@ -41,3 +42,11 @@ A numbered, dated record of what was checked and what came back, proposed in Oct
 - Q08. F-0008 counts 12 defects in hydra; [S05](../sources/S05-swmm5org-article-facts.md) counts 23 deviations. One review or two?
 
 **Added 15 November 2026.** The app summaries ingested today add more unregistered findings, each under its app's own IDs: thirty register items on the SWMM 4.4H, SWMM 5.2.4 and OpenSWMM 6 solvers, marked measured or read [S75](../sources/S75-st-venant-rosetta-stone-app-md.md); five pieces of hot start state, R-1 to R-5, and a run-duration defect, D-1 [S79](../sources/S79-teacher-forced-swmm-summary.md); nine channel findings, F1 to F9 [S80](../sources/S80-control-section-lab-summary.md); ten findings on SWMM5+, Mirab and EPA 5.2.4, S-1 to P-2 [S82](../sources/S82-mirab-test-bench-summary.md); two SWMM defaults and a file-system fault, D-1 to D-3 [S83](../sources/S83-people-as-pollutants-summary.md); and ten faults fixed in the 1981 EXTRAN listing [S74](../sources/S74-extran3-workbench-app-md.md). The labels collide: D-1 means three different things in three apps, and F1 to F9 look like this register's F-0001 series. None has a register ID (Q47). Pages that carry them: [The crown cap at mid-pipe](crown-cap-at-mid-pipe.md), [Hot start: what a restart loses](hot-start-restart-state.md), [Run duration floored to whole seconds](run-duration-floor.md), [WebAssembly builds against native builds](wasm-against-native-builds.md).
+
+**Added 17 November 2026: more findings under the apps' own labels.** None of these has a register ID (Q47).
+- [SWMM QA Report Bench](../entities/swmm-qa-report-bench.md): E1, EPA's 2006 report prints Figures 4.18 and 4.19 under each other's captions; B1, `swmm5.c:1593` passes a 260-byte buffer to `realpath`, and fortified glibc builds abort (no effect on results); O1, an observation on the weir surcharge flag; A1, the app's own first version drew synthetic curves [S192](../sources/S192-swmm-qa-report-bench-app-md.md).
+- [SWMM5 Engine Race](../entities/swmm5-engine-race.md): F-1, `gage.c` casts a huge initial `dxMin` to int for a one-point time series, undefined in C [S197](../sources/S197-swmm5-engine-race-app-md.md). The label has the form of this register's F-0001 series.
+- [SWMM 3 Runoff & Transport](../entities/swmm3-runoff-transport-app.md): SNOW-1, TRANS-1 and TRANS-2, three defects in the Version III code kept as shipped; TRANS-2 drops flow sent to an element that does not exist, -92 % on example TRANS23 [S193](../sources/S193-swmm3-runoff-transport-summary.md).
+- [SWMM 4 Twin Engines](../entities/swmm4-twin-engines.md): the SWMM 4.4 Transport cap reads a storage unit's capacity from QO1 instead of QO2; on one deck the printed continuity error goes from 56.180 % to 0.003 % with the fix [S194](../sources/S194-swmm4-twin-engines-summary.md).
+- [swmm5-kw](../entities/swmm5-kw.md) 1.1 fixed two defects of its own, a 64-outlet flag array and a HEAD rule that could hand out 1.5e-6 cfs more than arrived [S195](../sources/S195-swmm5-kw-summary.md).
+- [SWMM5 RASPIPE](../entities/swmm5-raspipe.md) calls one stock behavior a bookkeeping gap: a fixed outfall that feeds the network is never booked as inflow [S196](../sources/S196-swmm5-raspipe-summary.md).

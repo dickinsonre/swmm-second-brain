@@ -1,8 +1,8 @@
 ---
 title: Checking a SWMM5 model's conversion into ICM
 type: concept
-updated: 2026-11-16
-sources: [S164, S165, S45, S166, S179, S184, S188]
+updated: 2026-11-17
+sources: [S164, S165, S45, S166, S179, S184, S188, S202]
 tags: [icm, swmm5, conversion, verification, benchmark]
 reviewed: no
 ---
@@ -45,3 +45,5 @@ The order matters. First EPA SWMM 5.2.4 against `swmm5-ruby` on the same `.inp`,
 - The conversion renames the links, so a graph of one link in both networks finds nothing to match. His fix: reset the link names with a SQL `SET` and keep the original names in a user text field.
 - Importing a SWMM 5 file brings its rainfall, inflows and patterns in as ICM events, usable by both network types, and a run can be exported back to SWMM 5 with its time series.
 When graphing the two, remember that ICM shows a link's ends and SWMM 5 its midpoint flow [S188](../sources/S188-talk-water-talks-icm-sim-vs-icm-swmm-2021.md).
+
+**Added 17 November 2026: why matching flow is not enough.** [One Model, Three Engines (app)](../entities/one-model-three-engines.md) shows it on a teaching pipe: 15 in, 1.2 cfs, 1.00 ft of water at the outlet. At normal depth the pipe runs 0.56 ft deep at 2.25 ft/s; the backwater profile puts 0.76 ft at mid-length at 1.54 ft/s. Both carry exactly 1.2 cfs. On twelve such pipes the flows match while depth misses by up to 0.47 ft and velocity by up to 1.22 ft/s [S202](../sources/S202-one-model-three-engines-summary.md). Its advice after a conversion is to compare depth and velocity as well as flow. These numbers come from the app's teaching solvers; no ICM engine ran [S202](../sources/S202-one-model-three-engines-summary.md).

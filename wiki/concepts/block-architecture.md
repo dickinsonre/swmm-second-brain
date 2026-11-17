@@ -1,10 +1,11 @@
 ---
 title: Block architecture and interface files
 type: concept
-updated: 2026-11-14
-sources: [S01, S09, S21, S22]
+updated: 2026-11-17
+sources: [S01, S09, S21, S22, S193, S194, S199]
 tags: [swmm-history, architecture]
 reviewed: 2026-11-15
+changed_after_review: "2026-11-17 (S192 to S202 ingest): one paragraph added at the end on interface files in three apps (S193, S194, S199)"
 ---
 SWMM 1 to 4 ran as separate blocks joined by interface files. SWMM 5 is one engine reading one input file [S22](../sources/S22-li-ten-problems.md).
 
@@ -29,3 +30,8 @@ The Executive Block reads block names from cards (`WATERSHED`, `TRANSPORT`, `STO
 **A small confirmation.** The oldest thread in Bob's OpenSWMM list, 15 February 1995, started by [William (Bill) James](../entities/william-james.md), is titled "Interface files" [S09](../sources/S09-openswmm-thread-list.md).
 
 See [SWMM 1 (1971)](../entities/swmm-1.md), [SWMM version history, 1969 to 2026](swmm-version-history.md).
+
+**Added 17 November 2026: the interface files, run again.**
+- [SWMM 3 Runoff & Transport](../entities/swmm3-runoff-transport-app.md) passes the 1981 interface file from Runoff to Transport. It reads back with the record lengths the 1981 manual's Figure 2-3 implies, and a Transport file read by a second Transport run routes on [S193](../sources/S193-swmm3-runoff-transport-summary.md).
+- [SWMM 4 Twin Engines](../entities/swmm4-twin-engines.md): the Runoff interface file from the WebAssembly engine is byte-identical to the native build's [S194](../sources/S194-swmm4-twin-engines-summary.md).
+- [Seven SWMM Engines](../entities/seven-swmm-engines.md) runs SWMM 4.4H as Runoff feeding Extran through an interface file, and feeds EXTRAN III the 4.4H Runoff file as a SWMM III tape [S199](../sources/S199-seven-swmm-engines-summary.md).

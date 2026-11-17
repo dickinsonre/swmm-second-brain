@@ -1,10 +1,11 @@
 ---
 title: "Hot start: what a restart loses"
 type: concept
-updated: 2026-11-15
-sources: [S79]
+updated: 2026-11-17
+sources: [S79, S196, S202]
 tags: [swmm5, hot-start, dynamic-wave, findings, verification]
 reviewed: 2026-11-15
+changed_after_review: "2026-11-17 (S192 to S202 ingest): one paragraph added at the end on saved states in two apps (S196, S202)"
 ---
 A SWMM hot start file saves the state of a run so that a later run can begin from it. In EPA SWMM 5.2.4 a run restarted from its own hot start file does not reproduce the run that wrote it [S79](../sources/S79-teacher-forced-swmm-summary.md). The [Teacher-Forced SWMM (app)](../entities/teacher-forced-swmm.md) measured this while trying to use the hot start as a tool, and had to repair it first.
 
@@ -42,3 +43,7 @@ The essay says none of the five is a bug in ordinary use [S79](../sources/S79-te
 **Status.** These are the page's findings, under its own IDs R-1 to R-5, read and measured by Claude in one session on 25 October 2026. No person has reviewed them, and the summary they are cited from was written from the page, not from a rerun (Q52). They have no IDs in [The SWMM findings register](findings-register.md) (Q47).
 
 See [Dynamic wave routing](dynamic-wave-routing.md), [Byte-for-byte gate](byte-for-byte-gate.md).
+
+**Added 17 November 2026.** Two more apps touch saved states.
+- [One Model, Three Engines](../entities/one-model-three-engines.md): from a state saved at full load, a one-minute run changes no pipe's flow by more than 5.3e-7 cfs; from a state saved at 80 percent, the outlet still reports 1.62 of 2.0 cfs after a minute. The numbers are from the app's lumped teaching model [S202](../sources/S202-one-model-three-engines-summary.md).
+- [SWMM5 RASPIPE](../entities/swmm5-raspipe.md): its hot-start files carry node and link states, not the states of its pipe cells [S196](../sources/S196-swmm5-raspipe-summary.md).
