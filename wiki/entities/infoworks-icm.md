@@ -2,10 +2,10 @@
 title: InfoWorks ICM
 type: entity
 updated: 2026-11-16
-sources: [S03, S13, S14, S17, S20, S65, S125, S127, S159, S160, S162, S163, S164, S166, S170, S172, S178, S179, S184]
+sources: [S03, S13, S14, S17, S20, S65, S125, S127, S159, S160, S162, S163, S164, S166, S170, S172, S178, S179, S184, S188]
 tags: [icm, engine, comparison]
 reviewed: 11/16/2026
-changed_after_review: "2026-11-16 (S159 to S165 ingest): one paragraph added at the end, headed Added 16 November 2026, on scripting, tables, result fields and conversion (S159, S160, S162, S163, S164); 2026-11-16 (S166 to S178 ingest): a second paragraph added at the end, headed Added 16 November 2026, later, on ICM 2D (S166, S170, S172, S178); 2026-11-16 (S179 ingest): the drafter of the seven ICM notes named as ChatGPT (S179); 2026-11-16 (S180 to S187 ingest): one paragraph added at the end on the shared 2D engine (S184)"
+changed_after_review: "2026-11-16 (S159 to S165 ingest): one paragraph added at the end, headed Added 16 November 2026, on scripting, tables, result fields and conversion (S159, S160, S162, S163, S164); 2026-11-16 (S166 to S178 ingest): a second paragraph added at the end, headed Added 16 November 2026, later, on ICM 2D (S166, S170, S172, S178); 2026-11-16 (S179 ingest): the drafter of the seven ICM notes named as ChatGPT (S179); 2026-11-16 (S180 to S187 ingest): one paragraph added at the end on the shared 2D engine (S184); 2026-11-16 (S188 to S190 ingest): one paragraph added at the end on the 2021 Water Talks webinar (S188)"
 ---
 The commercial integrated catchment model developed by Wallingford Software in England and now maintained by Autodesk [S20](../sources/S20-li-edition-54-two-solvers.md).
 
@@ -29,3 +29,9 @@ Full comparison: [SWMM 5 versus ICM InfoWorks](../concepts/swmm5-versus-icm-info
 **Added 16 November 2026, later: 2D.** Ten more notes from the GPT plugin for Autodesk [S166](../sources/S166-note-icm-notes-from-gpt-plugin.md), AI-written and not run (Q90), cover ICM's 2D side: a manhole's flood type sets its exchange with the mesh (a weir on ground level and shaft circumference for flood type 2D) [S170](../sources/S170-note-icm-1d-2d-node-exchange.md), and subgrid sampling, a Tech Preview in the 2027 help, builds volume-level tables inside elements [S172](../sources/S172-note-icm-2d-subgrid-sampling.md). From Bob's own articles: CNSWMM infiltration came to the 2D mesh in ICM 2025.1 [S178](../sources/S178-li-cnswmm-on-the-icm-2d-mesh.md). See the five ICM 2D pages, starting at [ICM 2D: terrain, mesh and subgrid sampling](../concepts/icm-2d-mesh-and-subgrid.md).
 
 **Added 16 November 2026, from the EXTRAN and QA ingest.** ICM InfoWorks and ICM SWMM networks share one 2D engine, based on the Mulet and Alcrudo unstructured flood solver (MULFLOOD), but not a 1D engine: in 2023 ICM SWMM ran the SWMM 5.2.3 engine and InfoWorks a proprietary one [S184](../sources/S184-li-unified-2d-engine-icm.md).
+
+**Added 16 November 2026, from Bob's 2021 webinar** [S188](../sources/S188-talk-water-talks-icm-sim-vs-icm-swmm-2021.md). As he gave it then:
+- Lineage "going back at least to the late '70s": WALLRUS, SPIDA, HydroWorks CS, "a few RS versions", then ICM "I guess since 2009".
+- ICM networks hold SWMM parts: SWMM 5 water quality, SWMM 5 LIDs (called SUDS), SWMM 5 and SWMM 4 RDII, SWMM hydrology, and Green-Ampt and modified Horton infiltration from SWMM (Q13).
+- ICM SWMM networks run the One SWMM engine, Innovyze's build of SWMM 5, which InfoSWMM and InfoDrainage share; it was tested every night on at least 500 files against EPA SWMM 5.1.015. ICM 2021.3 had 2D in ICM SWMM networks.
+- Three 1D solutions (conduit, pressure, force main), at least five computational points per link, six node head-loss types, a slot set by celerity ratio, time-step halving, and an initialization to steady state before every run. See [SWMM 5 versus ICM InfoWorks](../concepts/swmm5-versus-icm-infoworks.md) and [Time stepping in ICM and SWMM 5](../concepts/time-stepping-icm-and-swmm5.md).

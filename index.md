@@ -1,10 +1,10 @@
 # Index
 
-Every page in the wiki, one line each. An agent reads this first. Updated on every ingest. Last update: 2026-11-14 (72 sources, 38 concepts, 32 entities).
+Every page in the wiki, one line each. An agent reads this first. Updated on every ingest. Last update: 2026-11-16 (190 sources, 77 concepts, 101 entities).
 
 ## Start here
 - [Overview: what this wiki holds so far](wiki/overview.md): what the wiki holds so far, by Bob's six themes, and what is missing.
-- [Open questions](wiki/open-questions.md): 56 contradictions, doubtful numbers and gaps waiting for a source or for Bob, and 3 settled by a primary document.
+- [Open questions](wiki/open-questions.md): 89 contradictions, doubtful numbers and gaps waiting for a source or for Bob, and 8 settled (counted 16 November 2026).
 - [Schema](CLAUDE.md): how the wiki is kept. [Log](log.md): what was done and when.
 
 ## Concepts
@@ -46,6 +46,7 @@ Reading and trusting results
 - [Verification against printed runs](wiki/concepts/verification-against-printed-runs.md): how the rebuilt 1971 and 1981 engines are scored against old printouts.
 - [The missing specification](wiki/concepts/the-missing-specification.md): four of the ten problems are one: no written, testable statement of what the engine does.
 - [SWMM 5 versus ICM InfoWorks](wiki/concepts/swmm5-versus-icm-infoworks.md): thirteen differences in one table.
+- [Time stepping in ICM and SWMM 5](wiki/concepts/time-stepping-icm-and-swmm5.md): ICM halves a failing step and climbs back, SWMM 5 holds its CFL step; a siphon at 7.5 s against 1 s, from a 2021 webinar.
 - [ICM Ruby: UI scripts and Exchange scripts](wiki/concepts/icm-ruby-ui-and-exchange.md): the two ways ICM runs Ruby, Ruby 3.4.6 from ICM 2027.0, and an Exchange run from launch to opened results.
 - [ICM network tables and result fields](wiki/concepts/icm-tables-and-result-fields.md): `hw_` and `sw_` tables; `DEPNOD` is level, ICM SWMM has `HEAD` and `DEPTH`.
 - [Checking a SWMM5 model's conversion into ICM](wiki/concepts/swmm5-to-icm-conversion-checks.md): three conversion routes, what to check on each, and a two-pipe benchmark design (not run).
@@ -347,6 +348,7 @@ Notes and data
 - [S176](wiki/sources/S176-note-icm-2d-benchmark-cases.md) (2026-11-16): note (AI-written), three ICM 2D benchmark cases.
 - [S179](wiki/sources/S179-note-icm-notes-drafted-by-chatgpt.md) (2026-11-16): note, ChatGPT drafted the seven ICM notes S159 to S165 from Autodesk Help; runtime tests stay pending.
 - [S187](wiki/sources/S187-note-model-comparison-purpose-and-dogfooding.md) (2026-11-16): note, Bob: the wiki is for model comparison, the AI-drafted summaries are by design, and he dogfoods and tests his apps.
+- [S189](wiki/sources/S189-note-innovyze-start-christmas-2007.md) (2026-11-16): note, Bob agreed to join Innovyze the week of Christmas and went to Los Angeles after January 2.
 
 The old swmm-brain repository
 - [S55](wiki/sources/S55-swmm-brain-readme.md) (2026-08-22): README: enhancements, apps, scripts, timeline.
@@ -358,6 +360,10 @@ swmm5.org pages
 - [S06](wiki/sources/S06-swmm5org-topics-index.md) (2026-11-01): Topics landing page.
 - [S07](wiki/sources/S07-swmm5org-topic-swmm-history.md) (2026-11-01): topic page, SWMM History.
 - [S08](wiki/sources/S08-swmm5org-topic-inside-swmm5.md) (2026-11-01): topic page, Inside SWMM5.
+
+Talks and press releases
+- [S188](wiki/sources/S188-talk-water-talks-icm-sim-vs-icm-swmm-2021.md) (2021-04-27, inferred): Water Talks webinar, the ICM SIM engine and the ICM SWMM engine; Bob with Nathan of Innovyze; caption transcript.
+- [S190](wiki/sources/S190-press-mwh-soft-dickinson-joins-2008.md) (2008-01-18): press release, Robert Dickinson joins MWH Soft as Urban Drainage Technology Leader.
 
 LinkedIn articles
 - [S11](wiki/sources/S11-li-my-history-with-swmm.md) (2016-11-18): My History with Various Versions of SWMM.

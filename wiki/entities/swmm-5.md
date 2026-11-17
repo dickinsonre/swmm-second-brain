@@ -1,10 +1,11 @@
 ---
 title: EPA SWMM 5
 type: entity
-updated: 2026-11-15
-sources: [S02, S04, S08, S11, S15, S17, S19, S20, S21, S22, S41, S55, S59, S62, S67, S68, S70, S71, S72, S75, S76, S79, S80, S82, S83]
+updated: 2026-11-16
+sources: [S02, S04, S08, S11, S15, S17, S19, S20, S21, S22, S41, S55, S59, S62, S67, S68, S70, S71, S72, S75, S76, S79, S80, S82, S83, S188]
 tags: [swmm5, engine]
 reviewed: 2026-11-15
+changed_after_review: "2026-11-16 (S188 to S190 ingest): one paragraph added at the end on the One SWMM engine (S188)"
 ---
 The C rewrite of SWMM, first released as 5.0 build 001 on 29 October 2004 [S22](../sources/S22-li-ten-problems.md). Written and carried for about twenty years by Lewis A. Rossman of EPA [S22](../sources/S22-li-ten-problems.md), [S21](../sources/S21-li-edition-56-swmm-history.md). See [Lewis A. (Lew) Rossman](lew-rossman.md).
 
@@ -41,3 +42,5 @@ The C rewrite of SWMM, first released as 5.0 build 001 on 29 October 2004 [S22](
 **Complexity index.** 69.2 with HydroCouple = 100 [S02](../sources/S02-complexity-meter-app-md.md).
 
 **Measured by the apps, October and November 2026.** Six pages hold what Bob's apps found by running or reading 5.2.4: [Hot start: what a restart loses](../concepts/hot-start-restart-state.md) [S79](../sources/S79-teacher-forced-swmm-summary.md); [Run duration floored to whole seconds](../concepts/run-duration-floor.md) [S76](../sources/S76-inside-the-network-cfd-app-md.md); [The crown cap at mid-pipe](../concepts/crown-cap-at-mid-pipe.md) [S75](../sources/S75-st-venant-rosetta-stone-app-md.md); [WebAssembly builds against native builds](../concepts/wasm-against-native-builds.md) [S82](../sources/S82-mirab-test-bench-summary.md); the control-section findings of the [Control Section Lab (app)](control-section-lab.md) [S80](../sources/S80-control-section-lab-summary.md); and two defaults, a 1 mm zero-depth test in quality routing and the minimum surface area, on [People as Pollutants (app)](people-as-pollutants.md) [S83](../sources/S83-people-as-pollutants-summary.md). None has been reviewed by a person or given a register ID.
+
+**Added 16 November 2026: One SWMM.** In 2021 Innovyze's build of SWMM 5, the One SWMM engine, ran ICM SWMM networks, InfoSWMM and InfoDrainage, and was tested every night on at least 500 files against EPA SWMM 5.1.015 with statistical comparisons of every node and link [S188](../sources/S188-talk-water-talks-icm-sim-vs-icm-swmm-2021.md). Autodesk SSA runs "a modified SWMM 5 engine" [S188](../sources/S188-talk-water-talks-icm-sim-vs-icm-swmm-2021.md). Spoken claims from a webinar.

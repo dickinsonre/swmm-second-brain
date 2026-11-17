@@ -734,3 +734,17 @@ Bob said "ingest and then merge" at 19:18 Eastern; simulation sources first, as 
 
 ## [2026-11-16] merge | grok-review into main
 Bob said "ingest and then merge". Branch grok-review (Grok's first review, the license, drafted_by on the source pages, Chapter 5 of the EPA hydraulics manual, the simulation-first purpose, the Doc tab's "What is unique" section, and this batch) fast-forwarded into main.
+
+## [2026-11-16] setup | Two raw folders: talks/ and press/
+Bob supplied a webinar transcript and a press release and said "add it now". Neither fits an existing folder, so `raw/talks/` (transcripts of talks and webinars Bob gave, as supplied, with a short header) and `raw/press/` (press releases and announcements about his work, as supplied) were added, and CLAUDE.md's layout lists them.
+
+## [2026-11-16] ingest | S188 to S190: the 2021 Water Talks webinar, Bob's note on joining Innovyze, the 2008 press release
+Bob, 19:32 to 19:45 Eastern, in a Claude session other than the one that ingested S180 to S187: the time-stamped transcript of the Water Talks webinar he gave with Nathan of Innovyze on the ICM SIM and ICM SWMM engines, its link (https://lnkd.in/p/gX8v9RQB, which the agent's workspace could not open), his account of when he joined Innovyze, and the press release of 18 January 2008. "add it now".
+- S188: the webinar, about 62 minutes, read in full. An automatic caption transcript: Claude's readings of garbled terms (Preissmann, EXTRAN, halving, Sjöberg, WALLRUS, One SWMM) are listed on the source page. Undated; 27 April 2021 is our inference (Q96). Only the page's "Read More" and "Show less" lines were removed from the raw file, as its header says.
+- S189: Bob's words, "I agreed to go work at Innovyze the week of christmas, took off a few weeks went to Los Angeles after the 2nd of Janualy". The years are Claude's reading.
+- S190: MWH Soft's press release. It is the primary document for the announcement that S11 prints, and differs from S11's version in five places (Q97): MWH Soft, not "Innovyze"; Urban Drainage Technology Leader, not Product Sector Leader; over thirty years, not 35; "A principal developer", not "the principal developer"; two products, not four.
+- New page: [Time stepping in ICM and SWMM 5](wiki/concepts/time-stepping-icm-and-swmm5.md).
+- Added paragraphs, each flagged changed_after_review where Bob had reviewed the page: SWMM 5 versus ICM InfoWorks, Preissmann slot and surcharge, InfoWorks ICM, EPA SWMM 5, Robert (Bob) Dickinson, InfoSWMM and InfoSewer, the overview, the open questions; and Checking a SWMM5 model's conversion into ICM (not reviewed).
+- Open questions: Q96 and Q97 added; a sentence added to Q01 (a third, spoken date for the slot), Q05 (the release says "A principal developer"), Q13 (Bob says ICM holds SWMM 5 water quality and LIDs) and Q29 (start settled: agreed at the end of 2007, started January 2008; S55's 2005 and the end year remain).
+- Three pages are past 600 words and due a split at the next lint: SWMM 5 versus ICM InfoWorks, Checking a SWMM5 model's conversion into ICM, and Robert (Bob) Dickinson.
+- Every number on the new pages was checked against the transcript and the release.

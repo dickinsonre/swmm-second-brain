@@ -2,7 +2,7 @@
 title: Checking a SWMM5 model's conversion into ICM
 type: concept
 updated: 2026-11-16
-sources: [S164, S165, S45, S166, S179, S184]
+sources: [S164, S165, S45, S166, S179, S184, S188]
 tags: [icm, swmm5, conversion, verification, benchmark]
 reviewed: no
 ---
@@ -40,3 +40,8 @@ The order matters. First EPA SWMM 5.2.4 against `swmm5-ruby` on the same `.inp`,
 **Related.** [SWMM 5 versus ICM InfoWorks](swmm5-versus-icm-infoworks.md), [ICM network tables and result fields](icm-tables-and-result-fields.md), [Byte-for-byte gate](byte-for-byte-gate.md).
 
 **The other direction: InfoWorks to ICM SWMM.** Bob's 2023 article lists two validation errors after converting an InfoWorks network to ICM SWMM: SWMM needs a rain gage to hold the rainfall, and it does not let a subcatchment and a node share an ID. The fix for the second is an SQL statement, `SET subcatchment_id = 'S_' + subcatchment_id;`. Features InfoWorks has and SWMM lacks are dropped [S184](../sources/S184-li-unified-2d-engine-icm.md).
+
+**From Bob's 2021 webinar** [S188](../sources/S188-talk-water-talks-icm-sim-vs-icm-swmm-2021.md). The route he used for about 100 models: import a SWMM 5, InfoSWMM or XP SWMM file into an ICM SWMM network, run it, then convert that network to an ICM network and run again. Two practical points he gives:
+- The conversion renames the links, so a graph of one link in both networks finds nothing to match. His fix: reset the link names with a SQL `SET` and keep the original names in a user text field.
+- Importing a SWMM 5 file brings its rainfall, inflows and patterns in as ICM events, usable by both network types, and a run can be exported back to SWMM 5 with its time series.
+When graphing the two, remember that ICM shows a link's ends and SWMM 5 its midpoint flow [S188](../sources/S188-talk-water-talks-icm-sim-vs-icm-swmm-2021.md).

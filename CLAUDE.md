@@ -24,6 +24,8 @@ raw/
   swmm-brain/  the six files of the earlier dickinsonre/swmm-brain repository, as of its last commit
   ports/       READMEs of the SWMM5 and SWMM6 language-translation repositories, named by last-commit date
   manuals/     EPA, USGS and FHWA reports and the SWMM 4.4 block documentation (see manuals/_SOURCE.md)
+  talks/       transcripts of talks and webinars Bob gave, as supplied, with a short header
+  press/       press releases and announcements about Bob's work, as supplied
   MANIFEST.csv one row per raw file: hash, status (ingested or queued), source page
 wiki/
   sources/     one page per ingested raw file, named S<nn>-<slug>.md
