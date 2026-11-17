@@ -2,10 +2,10 @@
 title: EPA SWMM 5
 type: entity
 updated: 2026-11-17
-sources: [S02, S04, S08, S11, S15, S17, S19, S20, S21, S22, S41, S55, S59, S62, S67, S68, S70, S71, S72, S75, S76, S79, S80, S82, S83, S188, S195, S196, S201]
+sources: [S02, S04, S08, S11, S15, S17, S19, S20, S21, S22, S41, S55, S59, S62, S67, S68, S70, S71, S72, S75, S76, S79, S80, S82, S83, S188, S195, S196, S201, S203]
 tags: [swmm5, engine]
 reviewed: 2026-11-15
-changed_after_review: "2026-11-16 (S188 to S190 ingest): one paragraph added at the end on the One SWMM engine (S188); 2026-11-17 (S192 to S202 ingest): one paragraph added at the end linking three variants (S195, S196, S201)"
+changed_after_review: "2026-11-16 (S188 to S190 ingest): one paragraph added at the end on the One SWMM engine (S188); 2026-11-17 (S192 to S202 ingest): one paragraph added at the end linking three variants (S195, S196, S201); 2026-11-17 (S203 ingest): one paragraph added at the end on the SOIL2 misread"
 ---
 The C rewrite of SWMM, first released as 5.0 build 001 on 29 October 2004 [S22](../sources/S22-li-ten-problems.md). Written and carried for about twenty years by Lewis A. Rossman of EPA [S22](../sources/S22-li-ten-problems.md), [S21](../sources/S21-li-edition-56-swmm-history.md). See [Lewis A. (Lew) Rossman](lew-rossman.md).
 
@@ -46,3 +46,5 @@ The C rewrite of SWMM, first released as 5.0 build 001 on 29 October 2004 [S22](
 **Added 16 November 2026: One SWMM.** In 2021 Innovyze's build of SWMM 5, the One SWMM engine, ran ICM SWMM networks, InfoSWMM and InfoDrainage, and was tested every night on at least 500 files against EPA SWMM 5.1.015 with statistical comparisons of every node and link [S188](../sources/S188-talk-water-talks-icm-sim-vs-icm-swmm-2021.md). Autodesk SSA runs "a modified SWMM 5 engine" [S188](../sources/S188-talk-water-talks-icm-sim-vs-icm-swmm-2021.md). Spoken claims from a webinar.
 
 **Added 17 November 2026.** Three of Bob's variants now have pages: [swmm5-kw](swmm5-kw.md) [S195](../sources/S195-swmm5-kw-summary.md), [SWMM5 RASPIPE](swmm5-raspipe.md) [S196](../sources/S196-swmm5-raspipe-summary.md) and [swmm5-infosewer](swmm5-infosewer.md) [S201](../sources/S201-infosewer-2009-app-md.md).
+
+**Added 2026-11-17 (S203).** A third 5.2.4 behavior from the Topsoil Recovery Check: a SOIL2 line in `[LID_CONTROLS]` is read as a second SOIL line, with no error or warning, because the keyword match accepts any word that starts with a keyword (`lid.c` line 397, `match()` in `input.c`) [S203](../sources/S203-topsoil-recovery-check-v2026-11-17.md). See [LID bio-retention layers](../concepts/lid-bioretention-layers.md).

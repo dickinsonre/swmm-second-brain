@@ -1,10 +1,11 @@
 ---
 title: Topsoil Recovery Check (app)
 type: entity
-updated: 2026-11-14
-sources: [S08, S59]
+updated: 2026-11-17
+sources: [S08, S59, S203]
 tags: [apps, lid, infiltration, swmm5, swmm6, verification]
 reviewed: 2026-11-15
+changed_after_review: "2026-11-17 (S203 ingest): one paragraph added at the end on version 2026-11-17"
 ---
 Bob's page on how SWMM credits decompacted topsoil over compacted clay, deployed as `index.html` in a Netlify folder `topsoil-recovery-site/`. Version 2026-11-12 [S59](../sources/S59-topsoil-recovery-check-app-md.md). swmm5.org lists it as comparing Horton with the LID two-layer soil in EPA SWMM 5.2.4 [S08](../sources/S08-swmm5org-topic-inside-swmm5.md). The subject is on [Topsoil over compacted clay](../concepts/topsoil-over-compacted-clay.md).
 
@@ -39,3 +40,5 @@ Bob's page on how SWMM credits decompacted topsoil over compacted clay, deployed
 | 2026-11-12 | Experiment H (ideas from the SWMM-USERS list), defect D2, Doc tab summaries and questions, the .md |
 
 **Who did what.** Claude (Anthropic) did most of the work at Bob's request; Bob set the question and reviews the conclusions. The people who raised the question are not named in the source [S59](../sources/S59-topsoil-recovery-check-app-md.md).
+
+**Added 2026-11-17.** Version 2026-11-17 of the summary is [S203](../sources/S203-topsoil-recovery-check-v2026-11-17.md); S59 above is the 2026-11-12 version. It adds Windows x64 builds of EPA 5.2.4 and swmm524-perched with a compare script, links to the engine repository and to Bob's GitHub accounts (https://github.com/dickinsonre, https://github.com/SWMMBobSWMM6), and two corrections: EPA 5.2.4 reads a SOIL2 line as a second SOIL line, and the perched engine ignores DRAIN lines only when the model has a SOIL2 line [S203](../sources/S203-topsoil-recovery-check-v2026-11-17.md).

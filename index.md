@@ -336,6 +336,7 @@ App summaries
 - [S200](wiki/sources/S200-one-swmm-summary.md) (2026-11-09): One SWMM v0.2.0, summary written from the page by Claude.
 - [S201](wiki/sources/S201-infosewer-2009-app-md.md) (2026-11-12): InfoSewer_2009, technical summary, v1.2.0; swmm5-infosewer results in 3D.
 - [S202](wiki/sources/S202-one-model-three-engines-summary.md) (2026-11-02): One Model, Three Engines v1.1, summary written from the page by Claude.
+- [S203](wiki/sources/S203-topsoil-recovery-check-v2026-11-17.md) (2026-11-17): Topsoil Recovery Check, technical summary, version 2026-11-17; Windows builds, SOIL2 misread in 5.2.4, perched-drain correction.
 
 Manuals and reports (primary documents)
 - [S185](wiki/sources/S185-epa-swmm5-qa-report-dynamic-wave-2006.md) (2006-09): SWMM Quality Assurance Report, Dynamic Wave Flow Routing, by L. A. Rossman: SWMM 4.4h against SWMM 5.0.006 on twenty examples. Read in part: Chapters 1 to 4 and 7.

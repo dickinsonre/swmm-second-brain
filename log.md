@@ -770,3 +770,12 @@ Bob uploaded eleven app summaries to `raw/apps/` on 17 November 2026 and said "i
 - The InfoSewer_2009 summary calls its model a real utility's network and asks that the app stay private unless the utility agrees. The wiki names neither the utility nor its location.
 
 Counts: 202 of 438 raw files ingested, 232 queued. Lint: 0 errors, 0 warnings. Reader app rebuilt and republished.
+
+## [2026-11-17] ingest | S203: Topsoil Recovery Check summary, version 2026-11-17
+
+Bob said yes to correcting the app's .md and the wiki pages after two findings on 17 November 2026: the perched engine ignores DRAIN lines only when a model has a SOIL2 line, and EPA 5.2.4 reads a SOIL2 line as a second SOIL line with no error. The corrected summary is a new raw file, `raw/apps/topsoil-recovery-check-v2026-11-17.md`; the 2026-11-12 file stays as it is. Ingested as S203; S59 gets `superseded_by: S203` and is otherwise unchanged.
+
+- Changed, each with an "Added 2026-11-17" paragraph and a changed_after_review line (all reviewed 2026-11-15 or later): LID bio-retention layers, Two-layer soil infiltration (SOIL2), the findings register, EPA SWMM 5, swmm524-perched, Topsoil Recovery Check (app). No new pages.
+- Contradiction: S59 against S203 on the perched engine and DRAIN lines, Q103, ticked as settled by the run S203 reports, not by Bob. One sentence added to Q33: the SOIL2 misread has no register ID either.
+- S203 also records Windows x64 builds of EPA 5.2.4 and swmm524-perched (byte-identical to Linux builds under Wine on 8 runs; not yet run on Windows) and links to the engine repository and Bob's two GitHub accounts.
+- The overview did not move.

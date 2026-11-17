@@ -2,10 +2,10 @@
 title: The SWMM findings register
 type: concept
 updated: 2026-11-17
-sources: [S03, S04, S05, S59, S67, S71, S72, S74, S75, S79, S80, S82, S83, S192, S193, S194, S195, S196, S197]
+sources: [S03, S04, S05, S59, S67, S71, S72, S74, S75, S79, S80, S82, S83, S192, S193, S194, S195, S196, S197, S203]
 tags: [findings, verification, method]
 reviewed: 2026-11-15
-changed_after_review: "2026-11-17 (S192 to S202 ingest): one paragraph added at the end listing more app-local findings (S192 to S197)"
+changed_after_review: "2026-11-17 (S192 to S202 ingest): one paragraph added at the end listing more app-local findings (S192 to S197); 2026-11-17 (S203 ingest): one paragraph added at the end on the SOIL2 misread"
 ---
 A numbered, dated record of what was checked and what came back, proposed in October 2026 because Bob's apps are safe on Netlify and GitHub while the findings exist only inside chat transcripts [S03](../sources/S03-findings-register-format.md).
 
@@ -50,3 +50,5 @@ A numbered, dated record of what was checked and what came back, proposed in Oct
 - [SWMM 4 Twin Engines](../entities/swmm4-twin-engines.md): the SWMM 4.4 Transport cap reads a storage unit's capacity from QO1 instead of QO2; on one deck the printed continuity error goes from 56.180 % to 0.003 % with the fix [S194](../sources/S194-swmm4-twin-engines-summary.md).
 - [swmm5-kw](../entities/swmm5-kw.md) 1.1 fixed two defects of its own, a 64-outlet flag array and a HEAD rule that could hand out 1.5e-6 cfs more than arrived [S195](../sources/S195-swmm5-kw-summary.md).
 - [SWMM5 RASPIPE](../entities/swmm5-raspipe.md) calls one stock behavior a bookkeeping gap: a fixed outfall that feeds the network is never booked as inflow [S196](../sources/S196-swmm5-raspipe-summary.md).
+
+**Added 2026-11-17 (S203).** The Topsoil Recovery Check summary adds a third app-local finding beside D1 and D2: EPA 5.2.4 reads a SOIL2 line as a second SOIL line, with no error or warning [S203](../sources/S203-topsoil-recovery-check-v2026-11-17.md). It has no register ID (Q33 in [Open questions](../open-questions.md)).

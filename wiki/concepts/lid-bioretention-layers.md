@@ -1,10 +1,11 @@
 ---
 title: LID bio-retention layers
 type: concept
-updated: 2026-11-14
-sources: [S10, S20, S21, S59]
+updated: 2026-11-17
+sources: [S10, S20, S21, S59, S203]
 tags: [hydrology, lid, swmm5, swmm6]
 reviewed: 2026-11-15
+changed_after_review: "2026-11-17 (S203 ingest): one paragraph added at the end correcting the perched-drain paragraph and adding 5.2.4's SOIL2 misread"
 ---
 SWMM 5 added LID controls in 5.0.019 (2010) [S21](../sources/S21-li-edition-56-swmm-history.md). "LID" is the fourth most common subject in Bob's forum thread titles, 216 threads [S10](../sources/S10-openswmm-top25-problems.md). The source that calls SWMM 5 "the only platform with built in LID and water quality modeling" is [S20](../sources/S20-li-edition-54-two-solvers.md) (see Q13 in [Open questions](../open-questions.md)).
 
@@ -23,3 +24,5 @@ What follows is what one study learned about the bio-retention cell when its lay
 **An unknown layer keyword.** OpenSWMM 6.0.0-alpha.4 ignores an unknown LID layer keyword (SOIL2) instead of reporting it; an issue was drafted with a tested patch [S59](../sources/S59-topsoil-recovery-check-app-md.md).
 
 See also [Continuity is not validation](continuity-is-not-validation.md), [Infiltration methods](infiltration-methods.md).
+
+**Added 2026-11-17.** The paragraph "The perched engine ignores drains" holds only for a model with a SOIL2 line. Without one, [swmm524-perched](../entities/swmm524-perched.md) runs 5.2.4's bio-retention routine and shares defect D2: 232.848 in of drain flow from 20.550 in of rain, the same as 5.2.4 [S203](../sources/S203-topsoil-recovery-check-v2026-11-17.md). And EPA 5.2.4 does not reject a SOIL2 line: `findmatch(toks[1], LidLayerWords)` (`lid.c` line 397) uses `match()` (`input.c`), which accepts any word that starts with a keyword, so the SOIL2 line replaces the SOIL layer with no error or warning. Winter season surface runoff becomes 13.521 in, against 3.400 in with the SOIL2 line removed; a VG line is ERROR 205 [S203](../sources/S203-topsoil-recovery-check-v2026-11-17.md).

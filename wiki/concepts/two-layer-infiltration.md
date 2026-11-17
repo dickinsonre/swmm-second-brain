@@ -1,10 +1,11 @@
 ---
 title: Two-layer soil infiltration (SOIL2)
 type: concept
-updated: 2026-11-14
-sources: [S08, S55, S59]
+updated: 2026-11-17
+sources: [S08, S55, S59, S203]
 tags: [hydrology, infiltration, swmm5, enhancement]
 reviewed: 2026-11-15
+changed_after_review: "2026-11-17 (S203 ingest): one paragraph added at the end on 5.2.4 misreading SOIL2"
 ---
 Bob's proposed enhancement to SWMM 5: let an ordinary subcatchment infiltrate through two soil layers by reusing the LID control's soil layer [S55](../sources/S55-swmm-brain-readme.md).
 
@@ -42,3 +43,5 @@ The example is copied from [S55](../sources/S55-swmm-brain-readme.md), which doe
 - Q30, partly answered. A SOIL2 engine exists as swmm524-perched [S59](../sources/S59-topsoil-recovery-check-app-md.md), with a different flow rule from the one in the README [S55](../sources/S55-swmm-brain-readme.md). Still open: where the README's `lid_twolayer.h` and `lid_twolayer.c` are, and whether the `UseAsInfil` design was ever built. See [Open questions](../open-questions.md).
 
 See [Infiltration methods](infiltration-methods.md).
+
+**Added 2026-11-17.** Stock EPA 5.2.4 does not reject a SOIL2 line in `[LID_CONTROLS]`: its keyword match accepts any word that starts with a known keyword (`lid.c` line 397, `match()` in `input.c`), so SOIL2 is read as a second SOIL line and replaces the topsoil, with no error or warning. On the Topsoil Recovery Check winter example, surface runoff is 13.521 in that way, against 3.400 in with the SOIL2 line removed [S203](../sources/S203-topsoil-recovery-check-v2026-11-17.md).
