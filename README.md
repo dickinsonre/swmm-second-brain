@@ -51,7 +51,7 @@ Public at https://github.com/dickinsonre/swmm-second-brain since 14 November 202
 Treat it as a working notebook, not a reference:
 
 - Bob read every wiki page on 11/16/2026. A page added since says `reviewed: no`; a page changed since carries `changed_after_review:`. `python3 tools/lint.py --review` lists both, in the order to read them.
-- Many sources were drafted by an AI (ChatGPT, Claude, the GPT plugin for Autodesk) and say so under "How it was written". A claim resting on one is no stronger than that draft until a run or Bob checks it.
+- The point is comparing models (SWMM5, SWMM6, ICM and the engines and apps around them); the simulations are what matter. Most sources are technical summaries drafted by an AI on purpose, one per app or run, and `drafted_by:` says which, for disclosure. What gives a claim weight is the run behind it.
 - Findings marked `unconfirmed` have not been rerun. They are notes, including the ones about other people's code.
 - `wiki/open-questions.md` lists where the sources contradict each other. Until an item is ticked, neither side is settled.
 - The OpenSWMM thread list names the people who started or joined each public forum thread, as openswmm.org shows them.

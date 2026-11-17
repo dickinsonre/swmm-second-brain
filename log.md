@@ -713,3 +713,10 @@ Bob chose "Next EPA manual chapter" (primary documents first, after Grok's point
 - Changed after review, each with an Added paragraph and a `changed_after_review:` line: S60 (read list, claims, feeds), [SWMM 5 network objects](wiki/concepts/swmm5-network-objects.md), [Kinematic wave and steady flow](wiki/concepts/kinematic-wave-and-steady-flow.md), the overview and the open questions.
 - New open questions: Q91 (six section cross-references off by one level, Equations 5-14 and 5-15 numbered twice, conductance called "section factor times roughness") and Q92 (missing pages). No contradiction with an existing page: no page covered cross-section geometry before.
 - Every number on the new pages was matched to the chapter's raw text by script; three Table 5-5 coefficients are split by superscript markup in the raw file and are flagged as such.
+
+## [2026-11-16] setup | Purpose: model comparison; AI-drafted summaries are by design
+Bob, 19:14 Eastern: "i am not worried about the ai generaged md files, that is the whole purpose of them - anyway, i am doing this to make model comparisons and not be a writer - the simulatons are the whole point". So:
+- CLAUDE.md gained a Purpose paragraph (the simulations are the point; AI-drafted summaries are expected; what matters is whether a run backs a claim), and the order of ingest now puts sources that report simulation runs and comparisons first within a theme.
+- `tools/lint.py` reports `drafted_by:` as a plain provenance count; the "pages resting only on AI-drafted sources" count and list are gone, and the review queue is ordered by links, not by drafter.
+- README: the AI-drafting line now says the same.
+`drafted_by:` and `sb:aiDrafted` stay, for AI-use disclosure.

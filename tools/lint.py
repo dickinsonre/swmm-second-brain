@@ -8,7 +8,7 @@ Warnings: orphan pages, em dashes, an app whose newest summary is not the
 one ingested. Also reports pages not yet reviewed and open questions.
 
   python3 tools/lint.py            # checks and counts
-  python3 tools/lint.py --review   # also prints the review queue, in the order Bob should read it
+  python3 tools/lint.py --review   # also prints the review queue: additions first, then the most linked pages
 
 This finds structural faults only. Contradictions between sources, stale
 claims and missing concept pages need a reader: see "Lint" in CLAUDE.md.
@@ -122,20 +122,11 @@ except Exception as e:  # a broken ONTOLOGY.md must not hide the other checks
 oq = os.path.join(WIKI, 'open-questions.md')
 open_q = len(re.findall(r'^- \[ \]', read(oq), re.M)) if os.path.exists(oq) else 0
 
-# AI dependence: a source page whose `drafted_by:` line begins with an AI's name was drafted by an AI;
-# a page whose sources are all such pages rests only on AI-drafted text (page rule 4, ONTOLOGY.md)
+# Provenance, for AI-use disclosure: who drafted each source (CLAUDE.md, page rules). AI-drafted
+# summaries are expected here, one per app or run; this is a count, not a fault.
 fms = {p: front_matter(t)[0] for p, t in texts.items()}
 src_fm = {os.path.basename(p).split('-')[0]: f for p, f in fms.items() if f.get('type') == 'source'}
 ai_src = {k for k, f in src_fm.items() if ai_drafted(f.get('drafted_by')) == 'yes'}
-
-
-def ai_share(f):
-    srcs = [x for x in (f.get('sources') or []) if isinstance(f.get('sources'), list)]
-    return sum(x in ai_src for x in srcs), len(srcs)
-
-
-ai_only = sorted(rel(p) for p, f in fms.items() if f.get('type') in ('concept', 'entity', 'synthesis')
-                 and ai_share(f)[1] and ai_share(f)[0] == ai_share(f)[1])
 
 types = {}
 for p, t in texts.items():
@@ -145,8 +136,8 @@ print('pages:', ', '.join('%s %d' % kv for kv in sorted(types.items())))
 print('raw files: %d ingested, %d queued' % (ingested, queued) + ''.join(', %d %s' % (v, k) for k, v in sorted(other.items()) if k not in ('ingested', 'queued')))
 print('open questions: %d   pages not yet reviewed by Bob: %d' % (open_q, unreviewed))
 print('relations: %d statements on %d pages (see ONTOLOGY.md)' % (len(_st), _rel_pages))
-print('source pages drafted by an AI: %d of %d (%d say unknown)   wiki pages resting only on them: %d (listed by --review)' % (
-    len(ai_src), len(src_fm), sum(ai_drafted(f.get('drafted_by')) == 'unknown' for f in src_fm.values()), len(ai_only)))
+print('drafted_by: %d of %d source pages drafted by an AI, %d unknown' % (
+    len(ai_src), len(src_fm), sum(ai_drafted(f.get('drafted_by')) == 'unknown' for f in src_fm.values())))
 if rereview:
     print('pages changed after Bob reviewed them: %d (%s)' % (len(rereview), ', '.join(os.path.basename(x)[:-3] for x in sorted(rereview))))
 if partial:
@@ -163,23 +154,19 @@ if '--review' in sys.argv:
                 changed.append((r, f['changed_after_review']))
             continue
         if f.get('type') == 'source':
-            sources_q.append((0 if ai_drafted(f.get('drafted_by')) == 'yes' else 1, -links_in(p), r, f.get('drafted_by') or ''))
+            sources_q.append((-links_in(p), r))
         else:
-            a, n = ai_share(f)
-            pages_q.append((0 if n and a == n else 1, -links_in(p), r, a, n))
+            pages_q.append((-links_in(p), r))
     print()
     print('REVIEW QUEUE, in the order to read it')
     print('1. Additions to pages you have already read (read only the "Added" paragraph, then delete the changed_after_review line): %d' % len(changed))
     for r, what in sorted(changed):
         print('   %s  %s' % (r, what))
-    print('2. Wiki pages not yet read, those resting only on AI-drafted sources first, then the most linked: %d' % len(pages_q))
-    for flag, nl, r, a, n in sorted(pages_q):
-        print('   %s  links in %d, AI-drafted sources %d of %d%s' % (r, -nl, a, n, '  ONLY AI' if flag == 0 else ''))
-    print('3. Source pages not yet read, AI-drafted first: %d' % len(sources_q))
-    for flag, nl, r, d in sorted(sources_q):
-        print('   %s%s' % (r, '  drafted by ' + d if d else ''))
-    print('4. Wiki pages, read or not, whose sources were all drafted by an AI (some of those sources report runs; none has been rerun by a person): %d' % len(ai_only))
-    for r in ai_only:
+    print('2. Wiki pages not yet read, the most linked first: %d' % len(pages_q))
+    for nl, r in sorted(pages_q):
+        print('   %s  links in %d' % (r, -nl))
+    print('3. Source pages not yet read, the most linked first: %d' % len(sources_q))
+    for nl, r in sorted(sources_q):
         print('   %s' % r)
     print()
 for w in warns:

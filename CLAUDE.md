@@ -4,6 +4,8 @@ This file tells an AI agent (Claude Code, a Claude chat with the repo attached, 
 
 The pattern is Andrej Karpathy's LLM wiki (https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f): sources are compiled once into linked pages and kept current, so a question is answered from the pages and not from a fresh search of the sources.
 
+**Purpose (Bob, 16 November 2026).** The wiki is for comparing models, not for writing: the simulations are the point. Most raw files are technical summaries drafted by an AI on purpose, one per app or run. `drafted_by:` records that for disclosure; it is not a fault to fix. What matters about a claim is whether a run backs it.
+
 ## The three layers
 
 | Layer | Where | Who writes it | Rule |
@@ -149,4 +151,4 @@ followed by a few lines. `grep "^## \[" log.md | tail -5` lists the last five.
 
 ## Order of ingest
 
-Bob's six publishing themes set the order: history of SWMM; the insides of SWMM5; SWMM5 compared with ICM InfoWorks (Ruby and apps); ICM compared with SWMM6; the insides of SWMM6; using AI to compare models. Within a theme, take sources with numbers and procedures before sources that tell a story.
+Bob's six publishing themes set the order: history of SWMM; the insides of SWMM5; SWMM5 compared with ICM InfoWorks (Ruby and apps); ICM compared with SWMM6; the insides of SWMM6; using AI to compare models. Within a theme, take sources that report simulation runs and comparisons first, then sources with other numbers and procedures, then sources that tell a story.
