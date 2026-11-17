@@ -57,6 +57,8 @@ History
 - [Engine speed, 1988 to 2024](wiki/concepts/engine-speed-1988-2024.md): the 54,060-fold claim and a check of its arithmetic.
 - [Anecdotes of SWMM](wiki/concepts/swmm-anecdotes.md): recollections in people's own words: SWMM 2.5 as 20,000 punch cards, Canberra in 1991 and 1992 for XP-EXTRAN, double pipes (barrels) for a phosphate plant, reel tapes and card decks.
 - [Converting SWMM 5 models for older engines](wiki/concepts/converting-swmm5-models-for-older-engines.md): what three converters to 1971, 1981 and 2004 engines carry, approximate and drop.
+- [The EXTRAN manual test models](wiki/concepts/extran-manual-test-models.md): the ten examples, what each adds to Example 1, where they still run, and what they showed in 2006 and 2026
+- [SWMM 4 against SWMM 5: the 2006 quality assurance tests](wiki/concepts/swmm4-versus-swmm5-qa-2006.md): EPA's twenty-example comparison of SWMM 4.4h and 5.0.006, the differences found, and the -6.87 percent seen again in 2026
 
 Measurement and method
 - [The top 25 problems in 31 years of forum threads](wiki/concepts/forum-problems-top-25.md): what 2,879 forum threads were about, ranked.
@@ -229,7 +231,8 @@ App summaries
 - [S71](wiki/sources/S71-swmm-engines-byte-for-byte-summary.md) (2026-11-14): SWMM Engines, Byte for Byte, summary written from the page by Claude.
 - [S73](wiki/sources/S73-swmm1-engine-app-md-v3-13.md) (2026-11-13): SWMM 1 Engine, technical summary, v3.13; replaces S01 as the current one.
 - [S74](wiki/sources/S74-extran3-workbench-app-md.md) (2026-11-11): EXTRAN III Workbench, technical summary, v1.6.0.
-- [S75](wiki/sources/S75-st-venant-rosetta-stone-app-md.md) (2026-11-13): St. Venant Solver Rosetta Stone, technical summary, v2.4.0.
+- [S75](wiki/sources/S75-st-venant-rosetta-stone-app-md.md) (2026-11-13): St. Venant Solver Rosetta Stone, technical summary, v2.4.0; superseded by S186.
+- [S186](wiki/sources/S186-st-venant-rosetta-stone-app-md-v2-6-2.md) (2026-11-14): St. Venant Solver Rosetta Stone, technical summary, v2.6.2; 1,342 runs, Examples 2 to 7, Registers 31 to 33. Read in part.
 - [S76](wiki/sources/S76-inside-the-network-cfd-app-md.md) (2026-11-12): Inside the Network, technical summary, v1.1.0.
 - [S77](wiki/sources/S77-under-load-app-md.md) (2026-11-11): Under Load, technical summary, v1.4.0.
 - [S78](wiki/sources/S78-fractal-swmm-generator-app-md.md) (2026-11-12): Fractal SWMM5/SWMM6 Network Generator, technical summary, v2.3.
@@ -306,6 +309,7 @@ App summaries
 - [S157](wiki/sources/S157-lstm-swmm5-summary.md) (2026-10-18): LSTM + SWMM5 v2.0, summary written from the page by Claude.
 
 Manuals and reports (primary documents)
+- [S185](wiki/sources/S185-epa-swmm5-qa-report-dynamic-wave-2006.md) (2006-09): SWMM Quality Assurance Report, Dynamic Wave Flow Routing, by L. A. Rossman: SWMM 4.4h against SWMM 5.0.006 on twenty examples. Read in part: Chapters 1 to 4 and 7.
 - [S60](wiki/sources/S60-epa-swmm5-reference-manual-vol2-hydraulics.md) (2017-05): EPA SWMM Reference Manual, Volume II, Hydraulics, by L. A. Rossman. Read in part: sections 1.1 to 1.5 and Chapters 2 to 6 (the raw file lacks pages 64 to 66, 80, 102 and 122).
 
 Notes and data
@@ -342,6 +346,7 @@ Notes and data
 - [S175](wiki/sources/S175-note-icm-2d-results-and-hazard.md) (2026-11-16): note (AI-written), 2D results and hazard tied to their time basis.
 - [S176](wiki/sources/S176-note-icm-2d-benchmark-cases.md) (2026-11-16): note (AI-written), three ICM 2D benchmark cases.
 - [S179](wiki/sources/S179-note-icm-notes-drafted-by-chatgpt.md) (2026-11-16): note, ChatGPT drafted the seven ICM notes S159 to S165 from Autodesk Help; runtime tests stay pending.
+- [S187](wiki/sources/S187-note-model-comparison-purpose-and-dogfooding.md) (2026-11-16): note, Bob: the wiki is for model comparison, the AI-drafted summaries are by design, and he dogfoods and tests his apps.
 
 The old swmm-brain repository
 - [S55](wiki/sources/S55-swmm-brain-readme.md) (2026-08-22): README: enhancements, apps, scripts, timeline.
@@ -374,6 +379,11 @@ LinkedIn articles
 - [S94](wiki/sources/S94-li-post-my-earlier-history-with-swmm.md) (2026-11-14): LinkedIn post, my earlier history with SWMM: SWMM at 17, at work on it at 22, SWMM 2.5 as 20,000 punch cards.
 - [S177](wiki/sources/S177-li-curve-number-approximations-icm-2d.md) (2023-09-22): Investigating Curve Number Approximations on an ICM InfoWorks 2D Infiltration Surface.
 - [S178](wiki/sources/S178-li-cnswmm-on-the-icm-2d-mesh.md) (2024-05-28): Curve Number or CNSWMM infiltration model for 2D simulations is now in ICM 2025.1.
+- [S184](wiki/sources/S184-li-unified-2d-engine-icm.md) (2023-05-26): Utilizing a Unified 2D Engine in both ICM InfoWorks and ICM SWMM Networks.
+- [S181](wiki/sources/S181-li-extran5-storage-side-orifice.md) (2025-04-06): Extran 5, Storage Facility with Side Outlet Orifice.
+- [S182](wiki/sources/S182-li-extran-example-6-type-1-pump.md) (2025-04-07): Example 6 of the Extran Manual, Type 1 Pump.
+- [S183](wiki/sources/S183-li-extran-example-7-type-2-pump.md) (2025-04-07): Example 7 of the Extran Manual, Type 2 Pump.
+- [S180](wiki/sources/S180-li-extran1-extran2-test-files.md) (2025-04-07): Extran1 and Extran2 from the Extran Manual.
 
 Repository READMEs (SWMM6 translations)
 - [S23](wiki/sources/S23-swmm6-csharp-readme.md) (2026-11-04): swmm6-csharp, the OpenSWMM 6 engine in C#; 480 of 480, 452 of 452.
@@ -413,9 +423,9 @@ Repository READMEs (SWMM5 translations)
 
 ## Queue
 
-239 raw files are queued: 210 LinkedIn articles and the as-pasted copy of the post of 14 November 2026 (kept because raw files are never deleted; its corrected copy is S94, so it is not to be ingested), 19 manual files in `raw/manuals/` (8 EPA, USGS and FHWA documents not yet started, and 11 SWMM 4.4 documentation files), 4 swmm5.org topic pages, 2 SWMM 1 build notes and 3 files in `raw/apps/`. One, `swmm-second-brain-v0.1.0.md`, is the summary of the reader app for this wiki, written by Claude when the app was built on 15 November 2026. One, `PyBME-issue-drafts.md`, is not an app summary and was left queued on purpose (Q56). The last, `st-venant-solver-rosetta-stone-v2.6.2.md`, is the newer version of an app already ingested at version 2.4.0 (S75); it was added on 15 November 2026 and bears on Q62. Three more LinkedIn files are byte-identical copies of others and are marked `duplicate`. `raw/MANIFEST.csv` lists them all. Suggested next batches, in order:
+232 raw files are queued: 205 LinkedIn articles and the as-pasted copy of the post of 14 November 2026 (kept because raw files are never deleted; its corrected copy is S94, so it is not to be ingested), 18 manual files in `raw/manuals/` (7 EPA, USGS and FHWA documents not yet started, and 11 SWMM 4.4 documentation files), 4 swmm5.org topic pages, 2 SWMM 1 build notes and 2 files in `raw/apps/`. One, `swmm-second-brain-v0.1.0.md`, is the summary of the reader app for this wiki, written by Claude when the app was built on 15 November 2026. The other, `PyBME-issue-drafts.md`, is not an app summary and was left queued on purpose (Q56). Three documents are read in part: S60, S185 and S186. Three more LinkedIn files are byte-identical copies of others and are marked `duplicate`. `raw/MANIFEST.csv` lists them all. Suggested next batches, in order:
 
-0. The rest of the EPA hydraulics manual, a chapter at a time (S60: Chapter 7 and the appendices remain), then the 2006 quality assurance report and the SWMM 5.1 User's Manual. With them, the Rosetta Stone summary at version 2.6.2, which tests the pump rule of Q62. These are the primary documents; ingesting them first lets later articles be checked against them.
+0. The rest of the primary documents, simulations first: the 2006 quality assurance report's Challenge and user cases (S185: Chapters 5 and 6), Chapter 7 and the appendices of the EPA hydraulics manual (S60), the rest of the Rosetta Stone summary (S186), then the SWMM 5.1 User's Manual. Ingesting them first lets later articles be checked against them.
 1. The four remaining swmm5.org topic pages and the SWMM 1 build notes (small, and they complete themes 3 to 6).
 2. EXTRAN: the six test-file articles and Edition 38. Settles Q14.
 3. SWMM history: Edition 40, "SWMM1 to SWMM5 Documentation Archive", "Reviving 1988 SWMM4 Models with AI", "SWMM 44H Fortran Code".

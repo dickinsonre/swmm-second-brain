@@ -1,10 +1,11 @@
 ---
 title: Pumps and pump curves
 type: concept
-updated: 2026-11-15
-sources: [S60, S83, S131]
+updated: 2026-11-16
+sources: [S60, S83, S131, S182, S183, S185, S186]
 tags: [hydraulics, swmm5, pumps, primary-document]
 reviewed: 11/16/2026
+changed_after_review: "2026-11-16 (S180 to S187 ingest): one paragraph added at the end on the EXTRAN pump examples, the 2006 report and Registers 31 and 33 (S182, S183, S185, S186)"
 ---
 SWMM 5 treats a pump as a link whose flow comes from a user-supplied pump curve [S60](../sources/S60-epa-swmm5-reference-manual-vol2-hydraulics.md). Everything on this page is from sections 2.1.6 and 6.1 of the EPA hydraulics manual unless another source is cited.
 
@@ -41,3 +42,5 @@ The manual does not say which rule holds when that inflow is larger than the hig
 **Not in the sources yet.** The pump code itself (`link.c`, `dynwave.c`), and any run that tests the dry-node rule. The other structures are on [Orifices](orifices.md) and [Weirs and outlets](weirs-and-outlets.md).
 
 **Added 15 November 2026: an editor for control rules.** [SWMM5 Control Rule Editor (app)](../entities/swmm5-control-rule-editor.md) reads and writes the `[CONTROLS]` section and checks rules for repeated priorities and missing conditions or actions, without running an engine [S131](../sources/S131-swmm5-control-rule-editor-replit-summary.md). Replit Agent wrote that summary; Bob has not read it (Q74).
+
+**Added 16 November 2026, from the EXTRAN and QA ingest.** Bob's words for the two pumps of the EXTRAN test models: a Type 1 is "an off-line pump with a wet well where flow increases incrementally with available wet well volume" [S182](../sources/S182-li-extran-example-6-type-1-pump.md); a Type 2 is "an in-line pump where flow increases incrementally with inlet node depth" [S183](../sources/S183-li-extran-example-7-type-2-pump.md). EPA's 2006 report says SWMM 4 and SWMM 5 both limit a pump to its inlet's inflow when the curve flow would drain the node in a step, and that the two differ on Type 1 wet wells: SWMM 4 holds back the inflow so the well never floods, SWMM 5 lets it flood [S185](../sources/S185-epa-swmm5-qa-report-dynamic-wave-2006.md). Twenty years later the Rosetta Stone measures XROUTE, SWMM 4.4H's solver, pumping 5 cfs from a dry junction on Example 7 (Register 31, Q95), and OpenSWMM 6 pumping above the top of its curve (Register 33). It quotes SWMM 5.2.4's dry-node rule as `if ( y <= 0.0 ) return Node[j].inflow;` in dynwave.c, which returns the inflow without the curve's limits; on its two decks 5.2.4 pumped at the curve [S186](../sources/S186-st-venant-rosetta-stone-app-md-v2-6-2.md). This bears on Q62. Test models: [The EXTRAN manual test models](extran-manual-test-models.md).

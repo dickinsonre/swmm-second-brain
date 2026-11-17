@@ -1,10 +1,11 @@
 ---
 title: "EXTRAN's three solvers: XROUTE, YROUTE, ZROUTE"
 type: concept
-updated: 2026-11-15
-sources: [S60, S74, S75]
+updated: 2026-11-16
+sources: [S60, S74, S75, S185, S186]
 tags: [hydraulics, extran, swmm4, swmm5, swmm6, dynamic-wave]
 reviewed: 2026-11-15
+changed_after_review: "2026-11-16 (S180 to S187 ingest): one paragraph added at the end on Examples 2 to 7 (S185, S186)"
 ---
 SWMM 4.4H's Extran block carries three solvers for the St. Venant equations, chosen by the input value ISOL: XROUTE (ISOL 0), YROUTE (ISOL 1) and ZROUTE (ISOL 2). SWMM 5.2.4 has one dynamic-wave solver and OpenSWMM 6 has two [S75](../sources/S75-st-venant-rosetta-stone-app-md.md). The [St. Venant Solver Rosetta Stone (app)](../entities/st-venant-solver-rosetta-stone.md) reads all six side by side and runs them. This page is the Fortran half; the SWMM6 half is on [OpenSWMM 6 solvers, measured](openswmm6-solvers-measured.md).
 
@@ -48,3 +49,5 @@ Thirty items in all, each marked measured or read. The file says they are "the A
 **Limits.** No measured flood volume says which solver is right. The lineage "is inferred from code and comments", not documented. SWMM 5.2.4 and SWMM6 were run on Example 1 and a single pipe only [S75](../sources/S75-st-venant-rosetta-stone-app-md.md).
 
 See [EXTRAN](../entities/extran.md), [Dynamic wave routing](dynamic-wave-routing.md), [Preissmann slot and surcharge](preissmann-slot-and-surcharge.md).
+
+**Added 16 November 2026, from the EXTRAN and QA ingest.** On the EXTRAN manual's Examples 2 to 7 [S186](../sources/S186-st-venant-rosetta-stone-app-md-v2-6-2.md): on Example 6 ZROUTE pumps 66.2 cfs through a station whose largest rate is 20 cfs (Register 23); on Example 7 XROUTE and YROUTE pump from a dry junction, printing continuity errors of -6.87 and -5.28 percent that fall to 0.10 and 0.13 with the first pump rate set to zero (Register 31); on Example 2 a fixed outfall stage is booked as stored water at the end of the run and not at the start (Register 32). SWMM 4's -6.87 percent on Example 7 is also in EPA's 2006 report [S185](../sources/S185-epa-swmm5-qa-report-dynamic-wave-2006.md). See [The EXTRAN manual test models](extran-manual-test-models.md).

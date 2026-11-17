@@ -1,10 +1,11 @@
 ---
 title: SWMM version history, 1969 to 2026
 type: concept
-updated: 2026-11-15
-sources: [S01, S07, S11, S12, S19, S20, S21, S22, S55, S60, S63, S86, S126]
+updated: 2026-11-16
+sources: [S01, S07, S11, S12, S19, S20, S21, S22, S55, S60, S63, S86, S126, S185]
 tags: [swmm-history, timeline]
 reviewed: 11/16/2026
+changed_after_review: "2026-11-16 (S180 to S187 ingest): one paragraph added at the end on the 2006 QA report's dates (S185)"
 ---
 The timeline as the ingested sources give it. Where two sources differ, both are shown.
 
@@ -66,3 +67,5 @@ Pages for the versions: [SWMM 1 (1971)](../entities/swmm-1.md), [EXTRAN](../enti
 **Added 15 November 2026.** On the manuals themselves, from the [Master SWMM PDF (app)](../entities/master-swmm-pdf.md) essay [S86](../sources/S86-master-swmm-pdf-page-text.md): SWMM's EPA user's manuals are dated 1971, 1975, 1981 and 1988, each an edited descendant of the one before. The 1988 manual was printed twice; the October 1992 second printing changed the title page, the disclaimer, the preface and pages 23, 28 to 32, 124, 220 to 221 and 375 to 377a, and its new preface sends readers to `.DOC` files on the distribution disks for options the book never described. This is the first source here with something dated 1992, which bears on Q17. The essay is AI-written and its citations have not been checked by a person. On SWMM 4.4H's three hydraulic solvers see [EXTRAN's three solvers: XROUTE, YROUTE, ZROUTE](extran-solvers-xroute-yroute-zroute.md).
 
 **Added 15 November 2026: an app on this subject.** [SWMM Ecosystem (app)](../entities/swmm-ecosystem.md) catalogs 51 programs. Its summary says its historical claims were not checked against outside sources, and nothing from it is used above [S126](../sources/S126-swmm-ecosystem-replit-summary.md).
+
+**Added 16 November 2026, from the EXTRAN and QA ingest.** EPA's 2006 quality assurance report: in 2002 EPA partnered with CDM to rewrite SWMM, with a C engine and a Delphi interface, and "the new SWMM 5 software was released to the public in October of 2004" [S185](../sources/S185-epa-swmm5-qa-report-dynamic-wave-2006.md). This bears on Q32. The report compared SWMM 4.4h of July 4, 2005 with SWMM 5.0.006 of September 2005; see [SWMM 4 against SWMM 5: the 2006 quality assurance tests](swmm4-versus-swmm5-qa-2006.md).

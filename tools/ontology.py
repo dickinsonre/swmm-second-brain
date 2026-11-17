@@ -31,6 +31,7 @@ STD = {
 ID = re.compile(r'^([a-z][a-z0-9-]*):([A-Za-z0-9_.\-]+)$')
 CODE = re.compile(r'`([^`]+)`')
 QUAL = re.compile(r'`([a-z_]+): ([^`]*)`')   # a qualifier: a space after the colon tells it from a term ID
+COMPARE = ('same_as', 'close_match', 'approximates')   # comparisons: verification required (ONTOLOGY.md)
 MDLINK = re.compile(r'\[([^\]]*)\]\(([^)\s]+)\)')
 
 
@@ -202,6 +203,11 @@ def collect():
                     errors.append('%s: write the qualifier as `%s: %s`, with a space after the colon' % (where, m.group(1), m.group(2)))
             if 'verification' in quals and quals['verification'] not in verification:
                 errors.append('%s: verification %r is not one of %s' % (where, quals['verification'], ', '.join(verification)))
+            if rname in COMPARE:
+                if 'verification' not in quals:
+                    errors.append('%s: `%s` is a comparison and needs a `verification` qualifier (ONTOLOGY.md, Qualifiers)' % (where, rname))
+                elif quals['verification'] == 'run' and 'tested_on' not in quals:
+                    errors.append('%s: `%s` with `verification: run` needs a `tested_on` qualifier' % (where, rname))
             comment = re.sub(r'\s+', ' ', QUAL.sub('', note)).strip()
             cites = sorted({os.path.basename(t).split('-')[0] for _, t in MDLINK.findall(src) if re.match(r'S\d+', os.path.basename(t))})
             cites = [c for c in cites if c in sources_meta]

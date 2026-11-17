@@ -1,10 +1,11 @@
 ---
 title: Orifices
 type: concept
-updated: 2026-11-15
-sources: [S60]
+updated: 2026-11-16
+sources: [S60, S181, S185]
 tags: [hydraulics, swmm5, regulators, primary-document]
 reviewed: 2026-11-15
+changed_after_review: "2026-11-16 (S180 to S187 ingest): one paragraph added at the end on SWMM 4 against SWMM 5 orifices (S181, S185)"
 ---
 An orifice is one of SWMM 5's three flow regulator links, with [weirs and outlets](weirs-and-outlets.md) [S60](../sources/S60-epa-swmm5-reference-manual-vol2-hydraulics.md). This page is sections 2.1.7 and 6.2 of the EPA hydraulics manual, a primary document, in digest. The equations did not survive the conversion of the raw file, so they are given in words [S60](../sources/S60-epa-swmm5-reference-manual-vol2-hydraulics.md).
 
@@ -28,3 +29,5 @@ An orifice is one of SWMM 5's three flow regulator links, with [weirs and outlet
 **A surface area for a link with no length.** Under dynamic wave, a node's head is updated from the surface area of the links attached to it. An orifice has no length, so it should add none. But "in older versions of SWMM an orifice was represented as an equivalent pipe that contributed surface area to its end nodes", and "to maintain compatibility with previous versions" SWMM 5 still computes one [S60](../sources/S60-epa-swmm5-reference-manual-vol2-hydraulics.md). Half goes to each end node that is not a storage unit and whose head is not below the opening [S60](../sources/S60-epa-swmm5-reference-manual-vol2-hydraulics.md). The equivalent length in the converted equation is at least 200 ft; check the PDF before quoting it [S60](../sources/S60-epa-swmm5-reference-manual-vol2-hydraulics.md).
 
 **Not in the sources yet.** The orifice code (`link.c`), and which older versions used the equivalent pipe. The SWMM 3 manual and the 2006 quality assurance report, both queued in `raw/manuals/`, use the phrase.
+
+**Added 16 November 2026, from the EXTRAN and QA ingest.** EPA's 2006 report says SWMM 4 represented an orifice as an equivalent pipe, with a length set by the time step and the opening height, and SWMM 5 uses the orifice equation, or a modified weir equation when the orifice is partly submerged; both give the orifice a surface area at its end nodes from the equivalent pipe length [S185](../sources/S185-epa-swmm5-qa-report-dynamic-wave-2006.md). On EXTRAN Example 5, a storage unit drained by a side orifice, the two programs' orifice flows agree "with the exception of a few points in time"; bottom orifices were one of two places where the programs' assumptions differ [S185](../sources/S185-epa-swmm5-qa-report-dynamic-wave-2006.md). Bob's definition of a side outlet orifice: "a link using an orifice equation for a circular or rectangular shape with an offset from the bottom of the sewer or storm link" [S181](../sources/S181-li-extran5-storage-side-orifice.md). See [The EXTRAN manual test models](extran-manual-test-models.md).

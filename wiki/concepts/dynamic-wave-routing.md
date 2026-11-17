@@ -1,10 +1,11 @@
 ---
 title: Dynamic wave routing
 type: concept
-updated: 2026-11-15
-sources: [S08, S10, S17, S18, S20, S22, S55, S60, S62, S75, S77, S79, S80]
+updated: 2026-11-16
+sources: [S08, S10, S17, S18, S20, S22, S55, S60, S62, S75, S77, S79, S80, S185, S186]
 tags: [hydraulics, swmm5, routing]
 reviewed: 2026-11-15
+changed_after_review: "2026-11-16 (S180 to S187 ingest): one paragraph added at the end on four trials in 5.0.006, the 50 ft/s cap and free-fall depth (S185, S186)"
 ---
 Dynamic wave routing solves the full one-dimensional St. Venant equations: continuity and momentum in the conduits and a volume balance at the nodes [S17](../sources/S17-li-routing-options.md). It is the only SWMM5 routing method that handles backwater, entrance and exit losses, flow reversal, pressurized flow, loops and multiple downstream diversions [S17](../sources/S17-li-routing-options.md).
 
@@ -54,3 +55,5 @@ The method is implicit in time (backward Euler, solved by Picard iteration); ear
 **Added 15 November 2026.** Four app summaries now measure parts of this page. (1) Lineage: SWMM 5.2.4's inertial terms `dq3` and `dq4` at `dwflow.c:213-240` are XROUTE's, from SWMM 4.4H [S75](../sources/S75-st-venant-rosetta-stone-app-md.md); see [EXTRAN's three solvers: XROUTE, YROUTE, ZROUTE](extran-solvers-xroute-yroute-zroute.md) and [The crown cap at mid-pipe](crown-cap-at-mid-pipe.md). (2) The under-relaxation factor: `dynwave.c` fixes it at 0.5; with it made settable, one test network gives 0 ft³ of flooding at 0.5, 87 ft³ at 0.1 and 40,424 ft³ at 1.5, and results agree from 0.3 to 0.9 [S77](../sources/S77-under-load-app-md.md). (3) Control sections: on a steady channel SWMM 5 carries normal depth, 1.6232 ft, at a slope break where a reference profile has critical depth, 2.3160 ft, and misses a choke at a contraction by up to 1.8964 ft [S80](../sources/S80-control-section-lab-summary.md); see [Control Section Lab (app)](../entities/control-section-lab.md). (4) Restarts: a run restarted from its own hot start does not reproduce itself [S79](../sources/S79-teacher-forced-swmm-summary.md); see [Hot start: what a restart loses](hot-start-restart-state.md). None of the four has been reviewed by a person, and (3) and (4) rest on summaries written from the app pages (Q52).
 
 **Added 15 November 2026, second ingest of the day.** What pumps, orifices and weirs contribute to a node under dynamic wave (surface area, flow derivative, relaxation) is on [Pumps and pump curves](pumps-and-pump-curves.md), [Orifices](orifices.md) and [Weirs and outlets](weirs-and-outlets.md), and the initial and boundary conditions are on [SWMM 5 network objects, boundary and initial conditions](swmm5-network-objects.md), all from Chapters 2 and 6 of the EPA manual [S60](../sources/S60-epa-swmm5-reference-manual-vol2-hydraulics.md).
+
+**Added 16 November 2026, from the EXTRAN and QA ingest.** In SWMM 5.0.006 the iteration stopped after four trials [S185](../sources/S185-epa-swmm5-qa-report-dynamic-wave-2006.md); SWMM 5.2.4 allows eight [S186](../sources/S186-st-venant-rosetta-stone-app-md-v2-6-2.md). SWMM 4 and SWMM 5 both cap the mean conduit velocity at 50 ft/s and give a free-fall end the smaller of the critical and normal depths [S185](../sources/S185-epa-swmm5-qa-report-dynamic-wave-2006.md). The 2006 comparison of the two programs is on [SWMM 4 against SWMM 5: the 2006 quality assurance tests](swmm4-versus-swmm5-qa-2006.md).

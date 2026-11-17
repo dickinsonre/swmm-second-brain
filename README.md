@@ -8,8 +8,8 @@ It is not a search index. Each source is read once and compiled into pages; a qu
 
 | Path | What |
 |---|---|
-| `raw/` | Sources. 422 files, about 1,330,000 words. Never edited. `raw/MANIFEST.csv` has a hash, a word count and a status for each |
-| `wiki/` | 354 pages, about 176,000 words: 179 sources, 72 concepts, 101 entities, an overview and an open-questions list |
+| `raw/` | Sources. 423 files, about 1,330,000 words. Never edited. `raw/MANIFEST.csv` has a hash, a word count and a status for each |
+| `wiki/` | 366 pages, about 189,000 words: 187 sources, 76 concepts, 101 entities, an overview and an open-questions list |
 | `index.md` | Catalog of every page. Start here |
 | `log.md` | What was done and when |
 | `LICENSE` | MIT for `tools/`, CC BY 4.0 for the text, and the files in `raw/` that keep their own terms |
@@ -35,9 +35,9 @@ To read the wiki yourself, open the folder in Obsidian (the graph view shows hub
 
 ## State on 16 November 2026
 
-- 179 of 422 raw files ingested, one of them (the EPA hydraulics manual) in part. The queue is in `index.md`.
-- 82 open questions in `wiki/open-questions.md`, and 8 settled. Several are contradictions between Bob's own articles.
-- Bob reviewed every page on 11/16/2026. Since then, 37 new pages say `reviewed: no` (graph theory, the seventeen AI-written ICM notes and their pages, and two Curve Number articles) and 5 carry `changed_after_review:` (Infiltration methods, InfoWorks ICM, SWMM 5 versus ICM InfoWorks, the open questions and the overview).
+- 187 of 423 raw files ingested, three of them in part (the EPA hydraulics manual, the 2006 quality assurance report, the Rosetta Stone summary at 2.6.2). The queue is in `index.md`.
+- 87 open questions in `wiki/open-questions.md`, and 8 settled. Several are contradictions between Bob's own articles.
+- Bob reviewed every page on 11/16/2026. Since then, 49 new pages say `reviewed: no` and 18 carry `changed_after_review:`; `python3 tools/lint.py --review` lists them in reading order.
 - The ontology draft has Relations tables on 3 pages: 89 statements, each filed under the source it cites, with conditions and a `verification` status on the rows that need them. `ontology/queries/5-comparable-fields.txt` answers "which fields can I compare across InfoWorks and ICM SWMM networks, under what conditions, and on what evidence?" for the fields the wiki has so far.
 
 ## What is not here
@@ -51,7 +51,7 @@ Public at https://github.com/dickinsonre/swmm-second-brain since 14 November 202
 Treat it as a working notebook, not a reference:
 
 - Bob read every wiki page on 11/16/2026. A page added since says `reviewed: no`; a page changed since carries `changed_after_review:`. `python3 tools/lint.py --review` lists both, in the order to read them.
-- The point is comparing models (SWMM5, SWMM6, ICM and the engines and apps around them); the simulations are what matter. Most sources are technical summaries drafted by an AI on purpose, one per app or run, and `drafted_by:` says which, for disclosure. What gives a claim weight is the run behind it.
+- The point is comparing models (SWMM5, SWMM6, ICM and the engines and apps around them); the simulations are what matter. Most sources are technical summaries drafted by an AI on purpose, one per app or run, and `drafted_by:` says which, for disclosure. What gives a claim weight is the run behind it, and Bob dogfoods and tests his apps himself.
 - Findings marked `unconfirmed` have not been rerun. They are notes, including the ones about other people's code.
 - `wiki/open-questions.md` lists where the sources contradict each other. Until an item is ticked, neither side is settled.
 - The OpenSWMM thread list names the people who started or joined each public forum thread, as openswmm.org shows them.

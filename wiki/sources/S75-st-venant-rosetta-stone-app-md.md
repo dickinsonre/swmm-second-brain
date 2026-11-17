@@ -8,6 +8,7 @@ published: 2026-11-13
 ingested: 2026-11-15
 tags: [hydraulics, extran, swmm4, swmm5, swmm6, dynamic-wave, findings, verification, apps]
 drafted_by: Claude (Anthropic), at Bob's direction
+superseded_by: S186
 reviewed: 2026-11-15
 ---
 **What it is.** The technical summary that ships with the St. Venant Solver Rosetta Stone, version 2.4.0: six dynamic-wave solvers from SWMM 4.4H, EPA SWMM 5.2.4 and OpenSWMM 6, set side by side by source line and by 1,157 engine runs. Raw file: [raw/apps/st-venant-solver-rosetta-stone (1).md](../../raw/apps/st-venant-solver-rosetta-stone%20%281%29.md). Bob uploaded it on 14 November 2026.

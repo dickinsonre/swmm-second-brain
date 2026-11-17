@@ -107,6 +107,8 @@ Example, from the 2023 Curve Number tests:
 | `icm-iw:Horton2D` | `approximates` | `icm-iw:SubcatchmentCN` | `condition: a constant loss rate set by SQL from the CN peak infiltration rate, with simple hyetographs` `tested_on: 23 subcatchments whose IDs equal their CN; storms of 0.065, 0.65 and 6.5 in` `as_of: 2023, before CNSWMM on the mesh` `verification: run` peak and volume came close | [S177](...) |
 ```
 
+**Comparisons must say what backs them.** A row with `same_as`, `close_match` or `approximates` needs a `verification` qualifier, and when it is `run`, a `tested_on` qualifier as well, so a query can keep run-backed comparisons apart from documented or pending ones. `tools/lint.py` reports a row without them as an error. Added 16 November 2026, after Grok's second review: "Keeping the `verification` and `tested_on` qualifiers mandatory on any comparison claim will stop the wiki from accumulating unverified statements that look like results."
+
 A statement with a note or qualifiers is also written as an `rdf:Statement` that names its subject, relation and object and carries the qualifiers and comment.
 
 **Who drafted a source, and whether Bob has read it.** Each source page's graph carries `sb:draftedBy` from its `drafted_by:` line, or `unknown` when the page has none; `sb:aiDrafted`, `yes` when that line begins with an AI's name, `no` when it names a person first, `unknown` otherwise; and `sb:reviewed` from its `reviewed:` line. So every statement can be traced to its source, to who or what drafted that source, to whether Bob has read it, and, through `verification`, to whether a run backs it.

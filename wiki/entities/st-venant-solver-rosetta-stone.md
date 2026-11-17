@@ -1,10 +1,11 @@
 ---
 title: St. Venant Solver Rosetta Stone (app)
 type: entity
-updated: 2026-11-15
-sources: [S20, S75]
+updated: 2026-11-16
+sources: [S20, S75, S186]
 tags: [apps, hydraulics, extran, swmm4, swmm5, swmm6, dynamic-wave, findings]
 reviewed: 2026-11-15
+changed_after_review: "2026-11-16 (S180 to S187 ingest): one paragraph added at the end on version 2.6.2 (S186)"
 ---
 Bob's app that sets six dynamic-wave solvers side by side, by source line and by engine run: XROUTE, YROUTE and ZROUTE from SWMM 4.4H, the one solver of EPA SWMM 5.2.4, and the dynamic wave and finite volume solvers of OpenSWMM 6. Version 2.4.0, 13 November 2026 [S75](../sources/S75-st-venant-rosetta-stone-app-md.md). It is not the [SWMM and ICM St. Venant comparison (app)](swmm-icm-st-venant-app.md) of [S20](../sources/S20-li-edition-54-two-solvers.md), which compares SWMM 5 with ICM and runs no engine.
 
@@ -50,3 +51,5 @@ Version 2.0 withdrew two claims of version 1: that ZROUTE has no surcharge treat
 **Complexity index.** 51.5 on the [App complexity index (HydroCouple = 100)](../concepts/app-complexity-index.md) [S75](../sources/S75-st-venant-rosetta-stone-app-md.md).
 
 **Open.** Its thirty register items have no IDs in [The SWMM findings register](../concepts/findings-register.md) (Q47). Its "EPA SWMM 5.2.4" is commit 07c371f, which is the head of the USEPA repository's develop branch and not the v5.2.4 tag (Q50). See [Open questions](../open-questions.md).
+
+**Added 16 November 2026, from the EXTRAN and QA ingest.** Version 2.6.2 (14 November 2026) supersedes 2.4.0, which the tables above describe. It holds 1,342 engine runs, a register of thirty-three findings (28 measured, 5 read) and 50 changed build copies, and adds the EXTRAN manual's Examples 2 to 7 on all six solvers. Its complexity index is 53.6 [S186](../sources/S186-st-venant-rosetta-stone-app-md-v2-6-2.md). Three of its new findings are about pumps and tailwater: see [The EXTRAN manual test models](../concepts/extran-manual-test-models.md) and [Pumps and pump curves](../concepts/pumps-and-pump-curves.md).

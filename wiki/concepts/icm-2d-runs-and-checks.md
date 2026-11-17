@@ -2,7 +2,7 @@
 title: "ICM 2D: timestep, volume balance and results"
 type: concept
 updated: 2026-11-16
-sources: [S166, S173, S174, S175]
+sources: [S166, S173, S174, S175, S184]
 tags: [icm, 2d, timestep, continuity, results, hazard]
 reviewed: no
 ---
@@ -20,3 +20,5 @@ Use the PRN volume summary with local checks near the important exchanges; if re
 **Results** [S175](../sources/S175-note-icm-2d-results-and-hazard.md). Depth, level, speed, time to first inundation and hazard answer different questions, so record the quantity and its time basis with every export: units and datum, timestep or maximum, the wet/dry threshold, the first-inundation depth threshold, and for a transect its line and sign. InfoWorks reports `Depth at first max hazard` and `Speed at first max hazard`, a matched pair that explains a hazard map at a point. Network Results objects at fixed points and a transect, kept through a remesh, let map and hydrograph be checked together.
 
 **Related.** [ICM 2D: three benchmark cases](icm-2d-benchmark-cases.md), [ICM 2D: boundaries and 1D-2D exchange](icm-2d-boundaries-and-exchange.md), [ICM network tables and result fields](icm-tables-and-result-fields.md).
+
+**Where the 2D results are written.** For an InfoWorks network the 2D results are in the log file; for an ICM SWMM network, in the report file, in the same format. A node with a 1D-2D connection gets the flood type 2D in both [S184](../sources/S184-li-unified-2d-engine-icm.md).

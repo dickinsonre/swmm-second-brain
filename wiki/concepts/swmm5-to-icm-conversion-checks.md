@@ -2,7 +2,7 @@
 title: Checking a SWMM5 model's conversion into ICM
 type: concept
 updated: 2026-11-16
-sources: [S164, S165, S45, S166, S179]
+sources: [S164, S165, S45, S166, S179, S184]
 tags: [icm, swmm5, conversion, verification, benchmark]
 reviewed: no
 ---
@@ -38,3 +38,5 @@ The order matters. First EPA SWMM 5.2.4 against `swmm5-ruby` on the same `.inp`,
 **Why it matters here.** The note links Q16, which asks whether this wiki's published SWMM and ICM comparison numbers rest on runs of both engines. The benchmark is a design that has not been run [S165](../sources/S165-note-epa-swmm-ruby-icm-benchmark.md).
 
 **Related.** [SWMM 5 versus ICM InfoWorks](swmm5-versus-icm-infoworks.md), [ICM network tables and result fields](icm-tables-and-result-fields.md), [Byte-for-byte gate](byte-for-byte-gate.md).
+
+**The other direction: InfoWorks to ICM SWMM.** Bob's 2023 article lists two validation errors after converting an InfoWorks network to ICM SWMM: SWMM needs a rain gage to hold the rainfall, and it does not let a subcatchment and a node share an ID. The fix for the second is an SQL statement, `SET subcatchment_id = 'S_' + subcatchment_id;`. Features InfoWorks has and SWMM lacks are dropped [S184](../sources/S184-li-unified-2d-engine-icm.md).

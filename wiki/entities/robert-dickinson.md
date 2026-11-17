@@ -1,10 +1,11 @@
 ---
 title: Robert (Bob) Dickinson
 type: entity
-updated: 2026-11-15
-sources: [S07, S09, S11, S12, S18, S19, S21, S22, S23, S29, S41, S45, S55, S61, S63, S64, S84, S85, S90, S91, S93, S94, S134]
+updated: 2026-11-16
+sources: [S07, S09, S11, S12, S18, S19, S21, S22, S23, S29, S41, S45, S55, S61, S63, S64, S84, S85, S90, S91, S93, S94, S134, S185, S187]
 tags: [people]
 reviewed: 11/16/2026
+changed_after_review: "2026-11-16 (S180 to S187 ingest): one paragraph added at the end on the Challenge Test Cases and his statement on testing (S185, S187)"
 ---
 Author of every source in this wiki. Professional record only, as he has published it.
 
@@ -55,3 +56,5 @@ Author of every source in this wiki. Professional record only, as he has publish
 **Added 15 November 2026: in his words and others'.** In comments on a LinkedIn post Bob credits John Haestad with a year in Australia to work on the XP-EXTRAN update, and says his career would have been very different without it; Hubert Jenny recalls meeting him in Canberra in the early 1990s [S90](../sources/S90-note-swmm-anecdotes-linkedin-comments.md). Bob dates that stay: Canberra, November 1991 to December 1992 [S91](../sources/S91-note-q64-answers-canberra-barrels-post-link.md), the first years this page has for the row "Between SWMM 4 and CDM" in the table above. Of the program's name he says "xp-swmm was the original and we changed it to xpswmm in 1993" [S93](../sources/S93-note-xp-swmm-renamed-xpswmm-1993.md). E. R. R. Weaver, who says he helped with SWMM 3 revisions while Bob was a graduate student, credits him with adding "double pipes" for a phosphate plant [S90](../sources/S90-note-swmm-anecdotes-linkedin-comments.md). Bob says double pipes are what SWMM 5 calls barrels, and guesses he added them to SWMM 4 [S91](../sources/S91-note-q64-answers-canberra-barrels-post-link.md); which version it was is Q65. His LinkedIn headline that day began "SWMM since the 1977" [S90](../sources/S90-note-swmm-anecdotes-linkedin-comments.md), one more start date for Q06. The post itself says he learned about SWMM at 17 and started working on it at 22, and that "SWMM 2.5 was 20,000 punch cards" [S94](../sources/S94-li-post-my-earlier-history-with-swmm.md). These are recollections; they are collected on [Anecdotes of SWMM](../concepts/swmm-anecdotes.md).
 
 **Added 15 November 2026: how his posts are received.** Bob asked that the wiki keep track of his better received LinkedIn posts; the first two are on [LinkedIn posts that were well received](../concepts/linkedin-post-reception.md) [S134](../sources/S134-note-linkedin-two-well-received-posts.md).
+
+**Added 16 November 2026, from the EXTRAN and QA ingest.** Two professional facts from this batch. He compiled the five Challenge Test Cases of EPA's 2006 SWMM 5 quality assurance report while at CDM: circular conduits in series with flat slopes, pipe constrictions, steep drops, adverse slopes and inlet offsets [S185](../sources/S185-epa-swmm5-qa-report-dynamic-wave-2006.md). And in his words, he keeps this wiki "to make model comparisons and not be a writer", and he dogfoods his apps: "i do not just make a n app there is a lot of testing", with "50 years of past testing" behind it [S187](../sources/S187-note-model-comparison-purpose-and-dogfooding.md).

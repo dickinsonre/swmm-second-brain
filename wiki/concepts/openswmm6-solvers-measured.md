@@ -1,10 +1,11 @@
 ---
 title: OpenSWMM 6 solvers, measured
 type: concept
-updated: 2026-11-15
-sources: [S75, S80, S81]
+updated: 2026-11-16
+sources: [S75, S80, S81, S186]
 tags: [swmm6, hydraulics, dynamic-wave, finite-volume, engine-comparison]
 reviewed: 2026-11-15
+changed_after_review: "2026-11-16 (S180 to S187 ingest): one paragraph added at the end on Register 33 (S186)"
 ---
 OpenSWMM 6 has two hydraulic solvers: a dynamic wave solver that extends SWMM 5's, and an explicit finite-volume solver (FV) [S75](../sources/S75-st-venant-rosetta-stone-app-md.md). Three of Bob's apps have run them beside EPA SWMM 5.2.4. This page collects what they measured. Every run is on an alpha build, and none is compared with a measurement. For the program see [OpenSWMM 6 and HydroCouple](../entities/openswmm-6-and-hydrocouple.md).
 
@@ -59,3 +60,5 @@ Flooding was still rising at 25 ft. Its continuity error prints 0.000 % at every
 **Not run anywhere here.** Virtual junctions, unsteady friction, FV_ORDER 2, and the implicit pressurized option [S75](../sources/S75-st-venant-rosetta-stone-app-md.md).
 
 See [EXTRAN's three solvers: XROUTE, YROUTE, ZROUTE](extran-solvers-xroute-yroute-zroute.md), [Preissmann slot and surcharge](preissmann-slot-and-surcharge.md), [Continuity is not validation](continuity-is-not-validation.md).
+
+**Added 16 November 2026, from the EXTRAN and QA ingest.** Register 33 [S186](../sources/S186-st-venant-rosetta-stone-app-md-v2-6-2.md): the finite volume solver pumps 39.00 cfs on Example 7 through a pump curve that ends at 20 cfs, and 28.87 cfs on a one-junction test deck where the curve gives 5.00. The dynamic wave solver with DYNAMIC_SLOT alone pumps 30.00 cfs on the same deck, with 11.84 percent continuity error. The cause is the dry-node limiter at HydStructures.cpp:539, `q = std::max(nodes.inflow[un1], 0.0);`, which can raise the curve flow; a build copy with `q = std::min(q, std::max(nodes.inflow[un1], 0.0));` pumps 5.00 on the test deck and 10.00 on Example 7. Not reported to the OpenSWMM authors.

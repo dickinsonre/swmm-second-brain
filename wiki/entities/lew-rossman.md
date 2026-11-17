@@ -1,10 +1,11 @@
 ---
 title: Lewis A. (Lew) Rossman
 type: entity
-updated: 2026-11-14
-sources: [S09, S11, S19, S21, S22, S41, S60, S68]
+updated: 2026-11-16
+sources: [S09, S11, S19, S21, S22, S41, S60, S68, S185]
 tags: [people, swmm5, epa]
 reviewed: 2026-11-15
+changed_after_review: "2026-11-16 (S180 to S187 ingest): one paragraph added at the end on the 2006 QA report (S185)"
 ---
 Of EPA's Office of Research and Development. Author of EPANET, and architect and author of the SWMM 5 engine [S21](../sources/S21-li-edition-56-swmm-history.md).
 
@@ -23,3 +24,5 @@ Of EPA's Office of Research and Development. Author of EPANET, and architect and
 **In the translations.** Every SWMM5 translation README says: "its engine is Lewis Rossman's design, and this port keeps every algorithm as he wrote it" [S41](../sources/S41-swmm5-go-readme.md). See [SWMM5 language translations](swmm5-language-ports.md).
 
 See [EPA SWMM 5](swmm-5.md), [The missing specification](../concepts/the-missing-specification.md).
+
+**Added 16 November 2026, from the EXTRAN and QA ingest.** Author of EPA's 2006 quality assurance report on dynamic wave routing, which compared SWMM 4.4h with SWMM 5.0.006 on twenty examples [S185](../sources/S185-epa-swmm5-qa-report-dynamic-wave-2006.md); see [SWMM 4 against SWMM 5: the 2006 quality assurance tests](../concepts/swmm4-versus-swmm5-qa-2006.md).
