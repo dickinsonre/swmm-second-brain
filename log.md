@@ -779,3 +779,12 @@ Bob said yes to correcting the app's .md and the wiki pages after two findings o
 - Contradiction: S59 against S203 on the perched engine and DRAIN lines, Q103, ticked as settled by the run S203 reports, not by Bob. One sentence added to Q33: the SOIL2 misread has no register ID either.
 - S203 also records Windows x64 builds of EPA 5.2.4 and swmm524-perched (byte-identical to Linux builds under Wine on 8 runs; not yet run on Windows) and links to the engine repository and Bob's two GitHub accounts.
 - The overview did not move.
+
+## [2026-11-17] lint | ChatGPT's review: can someone else use and continue it?
+
+Bob passed on a review of commit 2b9ebac by ChatGPT (OpenAI). Its verdict: an experienced SWMM or ICM modeler can already understand and reuse much of the collection; what is missing is a first task for a newcomer, a few complete reference cases, a dependable link from each page to the working materials, Bob's own explanations of his decisions, and a way for someone else to maintain and review it. Its counts matched the files (397 wiki pages, 202 of 438 raw files ingested, 94 open questions, 80 pages unreviewed, 37 changed after review). It was right that the counts in README.md and index.md were stale (the README still said 423 raw files and 366 pages) and that `gallery/README.md` links three files that are not in the repository.
+- `wiki/start-here.md`, a synthesis page: how to read a claim; four first tasks that each end in something done (modeler: EXTRAN4 and the weir's surcharge flag, from S192; developer: swmm5-ruby against EPA 5.2.4, from S45; ICM user: the two-pipe benchmark, from S165, not yet run; maintainer: one page and the checker); where the working materials are. Linked first from the README and from index.md.
+- `tools/state.py` writes the counts into README.md and index.md between `<!-- state:KEY -->` markers; `tools/lint.py` warns when one is stale; ingest step 8 in CLAUDE.md now runs it. That is a schema change: merging this branch accepts it.
+- Counted from the `links:` lines of the 94 ingested app summaries: 29 name a GitHub repository or a live Netlify address, 16 only a Claude artifact, 49 neither.
+- Q104 to Q107 for Bob: keeping the assets available, review by someone other than Bob, the explanations only he can give, a rehearsal with a colleague. Not done here: the reference cases themselves, which need runs, and the gallery files, which Bob holds.
+- This branch, gpt-review-2026-11-17, starts from fix-topsoil-drain-soil2 (S203), so merging it merges that too.

@@ -5,7 +5,7 @@ Errors (exit 1): broken links, missing front matter, a wiki page that cites
 no source page, a source page whose raw file is missing, a raw file whose
 hash changed, a page missing from index.md.
 Warnings: orphan pages, em dashes, an app whose newest summary is not the
-one ingested. Also reports pages not yet reviewed and open questions.
+one ingested, a count in README.md or index.md that tools/state.py would change. Also reports pages not yet reviewed and open questions.
 
   python3 tools/lint.py            # checks and counts
   python3 tools/lint.py --review   # also prints the review queue: additions first, then the most linked pages
@@ -169,6 +169,10 @@ if '--review' in sys.argv:
     for nl, r in sorted(sources_q):
         print('   %s' % r)
     print()
+import subprocess   # counts in README.md and index.md (tools/state.py)
+_st_check = subprocess.run([sys.executable, os.path.join(ROOT, 'tools', 'state.py'), '--check'], capture_output=True, text=True)
+for line in _st_check.stdout.splitlines():
+    warns.append('stale count, run python3 tools/state.py: ' + line)
 for w in warns:
     print('WARN ', w)
 for e in errors:

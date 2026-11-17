@@ -4,7 +4,8 @@ Every page in the wiki, one line each. An agent reads this first. Updated on eve
 
 ## Start here
 - [Overview: what this wiki holds so far](wiki/overview.md): what the wiki holds so far, by Bob's six themes, and what is missing.
-- [Open questions](wiki/open-questions.md): 89 contradictions, doubtful numbers and gaps waiting for a source or for Bob, and 8 settled (counted 16 November 2026).
+- [Start here](wiki/start-here.md): for a new reader; how to read a claim, and four first tasks (modeler, developer, ICM user, maintainer) that each end in something done.
+- [Open questions](wiki/open-questions.md): <!-- state:oq -->98 open and 9 settled<!-- /state:oq -->: contradictions, doubtful numbers and gaps waiting for a source or for Bob.
 - [Schema](CLAUDE.md): how the wiki is kept. [Log](log.md): what was done and when.
 
 ## Concepts

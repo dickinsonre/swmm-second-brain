@@ -8,16 +8,19 @@ It is not a search index. Each source is read once and compiled into pages; a qu
 
 | Path | What |
 |---|---|
-| `raw/` | Sources. 423 files, about 1,330,000 words. Never edited. `raw/MANIFEST.csv` has a hash, a word count and a status for each |
-| `wiki/` | 366 pages, about 189,000 words: 187 sources, 76 concepts, 101 entities, an overview and an open-questions list |
-| `index.md` | Catalog of every page. Start here |
+| `raw/` | Sources. <!-- state:raw_files -->439 files, about 1,364,000 words<!-- /state:raw_files -->. Never edited. `raw/MANIFEST.csv` has a hash, a word count and a status for each |
+| `wiki/` | <!-- state:wiki_pages -->399 pages, about 199,000 words: 203 sources, 78 concepts, 115 entities and 3 synthesis pages (the overview, the open-questions list and the start-here guide)<!-- /state:wiki_pages --> |
+| `wiki/start-here.md` | For a new reader: how to read a claim, and four first tasks that end in something done |
+| `index.md` | Catalog of every page |
 | `log.md` | What was done and when |
 | `LICENSE` | MIT for `tools/`, CC BY 4.0 for the text, and the files in `raw/` that keep their own terms |
 | `CLAUDE.md` | The schema: page rules and the three operations |
-| `tools/` | `manifest.py`, `lint.py`, `search.py`, `li2md.py`; `build_app.py` and `build_app_docx.js`, which build the reader app (one HTML page of the whole wiki) into `build/`; `ontology.py`, which builds the typed relations into RDF |
+| `tools/` | `manifest.py`, `lint.py`, `search.py`, `li2md.py`; `state.py`, which keeps the counts in this README and in `index.md` current; `build_app.py` and `build_app_docx.js`, which build the reader app (one HTML page of the whole wiki) into `build/`; `ontology.py`, which builds the typed relations into RDF |
 | `ONTOLOGY.md`, `ontology/` | the draft vocabulary of typed relations, and what `tools/ontology.py` builds from the pages' Relations tables: TriG, JSON-LD, a CSV, a Mermaid graph and sample SPARQL queries |
 
 ## How to use it
+
+New here? Read [wiki/start-here.md](wiki/start-here.md) first.
 
 Attach the repository to a Claude session (or open it in Claude Code) and say one of three things.
 
@@ -33,11 +36,13 @@ To add an idea of your own, copy `raw/notes/_TEMPLATE.md` to a new file in `raw/
 
 To read the wiki yourself, open the folder in Obsidian (the graph view shows hubs and orphans) or browse it on GitHub; every link is a plain relative link and works in both.
 
-## State on 16 November 2026
+## State
 
-- 191 of 427 raw files ingested, three of them in part (the EPA hydraulics manual, the 2006 quality assurance report, the Rosetta Stone summary at 2.6.2). The queue is in `index.md`.
-- 87 open questions in `wiki/open-questions.md`, and 8 settled. Several are contradictions between Bob's own articles.
-- Bob reviewed every page on 11/16/2026. Since then, 49 new pages say `reviewed: no` and 18 carry `changed_after_review:`; `python3 tools/lint.py --review` lists them in reading order.
+Counted by `tools/state.py` on <!-- state:date -->2026-11-17<!-- /state:date -->.
+
+- <!-- state:ingested -->203 of 439 raw files ingested, 3 of them in part; 232 queued; 4 superseded or duplicate<!-- /state:ingested -->. The queue is in `index.md`.
+- <!-- state:oq -->98 open and 9 settled<!-- /state:oq --> open questions in `wiki/open-questions.md`. Several are contradictions between Bob's own articles.
+- Bob reviewed every page on 11/16/2026. Since then, <!-- state:review -->82 pages say `reviewed: no` and 41 carry `changed_after_review:`<!-- /state:review -->; `python3 tools/lint.py --review` lists them in reading order.
 - The ontology draft has Relations tables on 3 pages: 89 statements, each filed under the source it cites, with conditions and a `verification` status on the rows that need them. `ontology/queries/5-comparable-fields.txt` answers "which fields can I compare across InfoWorks and ICM SWMM networks, under what conditions, and on what evidence?" for the fields the wiki has so far.
 
 ## What is not here
@@ -64,7 +69,7 @@ Treat it as a working notebook, not a reference:
 
 ## AI use
 
-This repository was set up on 14 November 2026 by Claude, Anthropic's AI model, at Bob's direction. Claude converted the LinkedIn export, copied the other sources in, wrote the schema, the tools and the wiki pages (354 on 16 November 2026) across several sessions, computed the OpenSWMM counts, and found the open questions. The mechanical checks are `tools/lint.py` (links, front matter, citations, raw-file hashes, Relations tables). The content checks were Claude rereading each page against its sources, and Bob reading every page on 11/16/2026; each page's front matter says whether he has read it. Many of the sources themselves were drafted by an AI or contain AI-written passages; each source page records what is known about how it was written, and its `drafted_by:` line names the drafter. Two outside reviews by AI models shaped the tools on 16 November 2026: ChatGPT (OpenAI) suggested the ontology's qualifiers, class checks and `unknown` drafter; Grok (xAI) pointed out the stale counts, the missing license and the review backlog.
+This repository was set up on 14 November 2026 by Claude, Anthropic's AI model, at Bob's direction. Claude converted the LinkedIn export, copied the other sources in, wrote the schema, the tools and the wiki pages (354 on 16 November 2026) across several sessions, computed the OpenSWMM counts, and found the open questions. The mechanical checks are `tools/lint.py` (links, front matter, citations, raw-file hashes, Relations tables). The content checks were Claude rereading each page against its sources, and Bob reading every page on 11/16/2026; each page's front matter says whether he has read it. Many of the sources themselves were drafted by an AI or contain AI-written passages; each source page records what is known about how it was written, and its `drafted_by:` line names the drafter. Two outside reviews by AI models shaped the tools on 16 November 2026: ChatGPT (OpenAI) suggested the ontology's qualifiers, class checks and `unknown` drafter; Grok (xAI) pointed out the stale counts, the missing license and the review backlog. On 17 November 2026 ChatGPT (OpenAI) asked whether someone else could use and continue the collection; that review led to `wiki/start-here.md`, the generated counts and four open questions for Bob (Q104 to Q107).
 
 ## License
 

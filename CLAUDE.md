@@ -32,11 +32,12 @@ wiki/
   sources/     one page per ingested raw file, named S<nn>-<slug>.md
   concepts/    one page per idea, method, question or recurring problem
   entities/    one page per program, engine, app, site, organization or person
+  start-here.md     for a new reader: how to read a claim, four first tasks, where the working materials are
   overview.md       the current synthesis, by Bob's six publishing themes
   open-questions.md contradictions, doubtful numbers and gaps, as a checklist
 index.md       catalog of every wiki page, one line each. Read this first.
 log.md         append-only record of every ingest, query and lint
-tools/         manifest.py, lint.py, search.py, li2md.py (standard library, bs4 and pandoc for li2md);
+tools/         manifest.py, lint.py, search.py, state.py, li2md.py (standard library, bs4 and pandoc for li2md);
                build_app.py and build_app_docx.js build the reader app into build/ (markdown package; docx and rsvg-convert)
                ontology.py builds the Relations tables into ontology/ (standard library; --check needs rdflib)
 ONTOLOGY.md    the vocabulary of typed relations (draft); ontology/ holds what ontology.py builds
@@ -107,7 +108,7 @@ Bob says "ingest" with a file, a folder, or "the next batch".
 5. Where the new source contradicts a page, apply page rule 3.
 6. Update `wiki/overview.md` if the synthesis moved.
 7. Update `index.md`. Append to `log.md`.
-8. Run `python3 tools/manifest.py` and `python3 tools/lint.py`. Fix every error before stopping. Then run `python3 tools/ontology.py`, then `python3 tools/build_app.py` (and `node tools/build_app_docx.js`) and republish the reader app.
+8. Run `python3 tools/manifest.py`, `python3 tools/state.py` (it rewrites the counts in `README.md` and `index.md`) and `python3 tools/lint.py`. Fix every error before stopping. Then run `python3 tools/ontology.py`, then `python3 tools/build_app.py` (and `node tools/build_app_docx.js`) and republish the reader app.
 9. Tell Bob in a few lines: what was ingested, pages created and changed, and any contradiction found.
 
 ### Query
