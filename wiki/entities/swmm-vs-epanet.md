@@ -8,7 +8,7 @@ reviewed: no
 ---
 Bob's app SWMM vs EPANET: one pressurized network, two engines, one browser tab. Version 1.0, 2026-10 [S317](../sources/S317-swmm-vs-epanet-summary.md). Its `links:` line names no live Netlify address [S317](../sources/S317-swmm-vs-epanet-summary.md).
 
-**A caution about its source.** The page ships no technical summary. [S317](../sources/S317-swmm-vs-epanet-summary.md) was written by Claude on 18 November 2026 from the page, with nothing rerun, and Bob has not yet read it (Q116).
+**A caution about its source.** The page ships no technical summary. [S317](../sources/S317-swmm-vs-epanet-summary.md) was written by Claude on 18 November 2026 from the page, with nothing rerun, and Bob marked it reviewed on 18 November 2026 (Q116, settled).
 
 **What the summary says** [S317](../sources/S317-swmm-vs-epanet-summary.md)
 - Builds one pressurized pipe network, writes it as an EPA SWMM 5.2 input and an EPANET 2.3 input, runs both real engines in the browser (compiled to WebAssembly, in a Web Worker), and compares heads, pressures and flows. A single-file edition of Bob's Lovable app, rebuilt in US customary units.

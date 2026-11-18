@@ -8,7 +8,7 @@ reviewed: no
 ---
 Bob's app Lever Espresso Machine: how a spring-lever espresso machine makes coffee, step by step. Version and date 2026-10-20 [S372](../sources/S372-lever-espresso-machine-summary.md). Its `links:` line names no live Netlify address [S372](../sources/S372-lever-espresso-machine-summary.md).
 
-**A caution about its source.** The page ships no technical summary. [S372](../sources/S372-lever-espresso-machine-summary.md) was written by Claude on 18 November 2026 from the page, with nothing rerun, and Bob has not yet read it (Q116).
+**A caution about its source.** The page ships no technical summary. [S372](../sources/S372-lever-espresso-machine-summary.md) was written by Claude on 18 November 2026 from the page, with nothing rerun, and Bob marked it reviewed on 18 November 2026 (Q116, settled).
 
 **What the summary says** [S372](../sources/S372-lever-espresso-machine-summary.md)
 - An animated cutaway of a one-group spring-lever espresso machine, answering "How does an espresso machine make coffee?" in eight steps: grind 18 g, tamp, lock in, pull the lever, let go, steam the milk, pour, new cup, in real time or three times faster. Gauges show boiler and brew pressure, spring force, puck height, flow, shot time and ratio. Not a water-modeling app.

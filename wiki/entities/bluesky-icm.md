@@ -8,7 +8,7 @@ reviewed: no
 ---
 Bob's app BlueSky-ICM: five blue-sky tools for SWMM5 and ICM on EPA SWMM 5.2.4 in the browser. Version 1.0.0, 2026-10-21 [S328](../sources/S328-bluesky-icm-summary.md). Its `links:` line names no live Netlify address [S328](../sources/S328-bluesky-icm-summary.md).
 
-**A caution about its source.** The page ships no technical summary. [S328](../sources/S328-bluesky-icm-summary.md) was written by Claude on 18 November 2026 from the page, with nothing rerun, and Bob has not yet read it (Q116).
+**A caution about its source.** The page ships no technical summary. [S328](../sources/S328-bluesky-icm-summary.md) was written by Claude on 18 November 2026 from the page, with nothing rerun, and Bob marked it reviewed on 18 November 2026 (Q116, settled).
 
 **What the summary says** [S328](../sources/S328-bluesky-icm-summary.md)
 - One HTML file holding the five tools of Bob's Lovable bluesky-scaffolder (ModelDiff, RainLab, CalibrationCopilot, FloodLens, ScenarioStudio) with EPA SWMM 5.2.4 compiled to WebAssembly underneath all five. The scaffolder's Lite engine stays beside the real one as a foil, with its units corrected.

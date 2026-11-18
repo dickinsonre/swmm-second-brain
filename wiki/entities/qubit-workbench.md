@@ -8,7 +8,7 @@ reviewed: no
 ---
 Bob's app Qubit Workbench: exact quantum arithmetic on 1 to 12 qubits in the browser. Version 1.0, 2026-10-09 [S373](../sources/S373-qubit-workbench-summary.md). Its `links:` line names no live Netlify address [S373](../sources/S373-qubit-workbench-summary.md).
 
-**A caution about its source.** The page ships no technical summary. [S373](../sources/S373-qubit-workbench-summary.md) was written by Claude on 18 November 2026 from the page, with nothing rerun, and Bob has not yet read it (Q116).
+**A caution about its source.** The page ships no technical summary. [S373](../sources/S373-qubit-workbench-summary.md) was written by Claude on 18 November 2026 from the page, with nothing rerun, and Bob marked it reviewed on 18 November 2026 (Q116, settled).
 
 **What the summary says** [S373](../sources/S373-qubit-workbench-summary.md)
 - A small quantum simulator in five tabs: one qubit on the Bloch sphere (drag θ and φ or press a gate, then measure along Z, X or Y), a circuit builder, Grover's search (step it and watch the answer rise, peak and fade), Shor's period finding (factor a small number), and Scale (what doubles, what halves and what collapses). Not a water-modeling app.

@@ -8,7 +8,7 @@ reviewed: no
 ---
 Bob's app OpenSWMM MCP Repo Viewer: HydroCouple's MCP server for OpenSWMM 6, with the engine, GUI and gymnasium. Version 1.1, 2026-10-25 [S305](../sources/S305-openswmm-mcp-repo-viewer-summary.md). Its `links:` line names no live Netlify address [S305](../sources/S305-openswmm-mcp-repo-viewer-summary.md).
 
-**A caution about its source.** The page ships no technical summary. [S305](../sources/S305-openswmm-mcp-repo-viewer-summary.md) was written by Claude on 18 November 2026 from the page, with nothing rerun, and Bob has not yet read it (Q116).
+**A caution about its source.** The page ships no technical summary. [S305](../sources/S305-openswmm-mcp-repo-viewer-summary.md) was written by Claude on 18 November 2026 from the page, with nothing rerun, and Bob marked it reviewed on 18 November 2026 (Q116, settled).
 
 **What the summary says** [S305](../sources/S305-openswmm-mcp-repo-viewer-summary.md)
 - A single-file browser for HydroCouple/openswmm.mcp, the Model Context Protocol server for the OpenSWMM 6 engine: its README, every file on both branches, the MCP tools the server registers, its commits, its three open pull requests, and an Ask panel that can read all of it. Version 1.1 adds source packs of the three SWMM6 repositories the server sits on (openswmm.engine swmm6_rel, openswmm.gui swmm6_gui, openswmm.gymnasium dev). A rebuild of Bob's Lovable app.

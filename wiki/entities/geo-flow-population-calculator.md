@@ -8,7 +8,7 @@ reviewed: no
 ---
 Bob's app Geo Flow Population Calculator: households to subcatchments to dry weather flow in SWMM5. Version 2, 2026-10-25 [S338](../sources/S338-geo-flow-population-calculator-summary.md). Its `links:` line names no live Netlify address [S338](../sources/S338-geo-flow-population-calculator-summary.md).
 
-**A caution about its source.** The page ships no technical summary. [S338](../sources/S338-geo-flow-population-calculator-summary.md) was written by Claude on 18 November 2026 from the page, with nothing rerun, and Bob has not yet read it (Q116).
+**A caution about its source.** The page ships no technical summary. [S338](../sources/S338-geo-flow-population-calculator-summary.md) was written by Claude on 18 November 2026 from the page, with nothing rerun, and Bob marked it reviewed on 18 November 2026 (Q116, settled).
 
 **What the summary says** [S338](../sources/S338-geo-flow-population-calculator-summary.md)
 - A single-file rebuild of Bob's geo-flow-ruby project: it assigns household points to SWMM5 subcatchments with a point-in-polygon ray cast (PNPOLY), totals persons per subcatchment, and writes that population into the model as dry weather flow at each subcatchment's outlet node, then runs the export in EPA SWMM 5.2.4 inside the page.

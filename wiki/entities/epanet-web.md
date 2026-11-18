@@ -8,7 +8,7 @@ reviewed: no
 ---
 Bob's app EPANET Web: a browser workspace for EPANET models on OWA EPANET 2.3.5. Version 1.0, 2026-10-25 [S316](../sources/S316-epanet-web-summary.md). Its `links:` line names no live Netlify address [S316](../sources/S316-epanet-web-summary.md).
 
-**A caution about its source.** The page ships no technical summary. [S316](../sources/S316-epanet-web-summary.md) was written by Claude on 18 November 2026 from the page, with nothing rerun, and Bob has not yet read it (Q116).
+**A caution about its source.** The page ships no technical summary. [S316](../sources/S316-epanet-web-summary.md) was written by Claude on 18 November 2026 from the page, with nothing rerun, and Bob marked it reviewed on 18 November 2026 (Q116, settled).
 
 **What the summary says** [S316](../sources/S316-epanet-web-summary.md)
 - A browser workspace for EPANET water distribution models, from Bob's Lovable port of the Open Water Analytics EPANET-UI desktop program. The Lovable release was its Phase 1 (workspace shell, .inp parser and writer, project tree, inspector, outline sketch); this edition adds a canvas map, property editors, the OWA EPANET 2.3.5 engine in a Web Worker, and Results, Tables, Report and Verify tabs.

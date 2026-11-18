@@ -8,7 +8,7 @@ reviewed: no
 ---
 Bob's app HydroCouple Study Guide: the guide, checked against the headers it describes. Version 1.0, 2026-10-25 [S304](../sources/S304-hydrocouple-study-guide-summary.md). Its `links:` line names no live Netlify address [S304](../sources/S304-hydrocouple-study-guide-summary.md).
 
-**A caution about its source.** The page ships no technical summary. [S304](../sources/S304-hydrocouple-study-guide-summary.md) was written by Claude on 18 November 2026 from the page, with nothing rerun, and Bob has not yet read it (Q116).
+**A caution about its source.** The page ships no technical summary. [S304](../sources/S304-hydrocouple-study-guide-summary.md) was written by Claude on 18 November 2026 from the page, with nothing rerun, and Bob marked it reviewed on 18 November 2026 (Q116, settled).
 
 **What the summary says** [S304](../sources/S304-hydrocouple-study-guide-summary.md)
 - A study guide to HydroCouple, Caleb Buahin's C++ interface standard for coupling environmental models, arrived as a zip (five chapters, two C++ files, one Graphviz drawing) whose README asks the reader to check the real headers. This app does, claim by claim, against the 2017 v1.0.0 release and the 2026 2.0 code, and runs the guide's own coupling example in a JavaScript simulator so the pull can be watched.

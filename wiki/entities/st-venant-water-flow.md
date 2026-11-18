@@ -8,7 +8,7 @@ reviewed: no
 ---
 Bob's app St. Venant Water Flow for Grandkids: how water moves, for children under ten, with a grown-up mode. Version 2.1, 2026-10-22 [S362](../sources/S362-st-venant-water-flow-summary.md). Its `links:` line names no live Netlify address [S362](../sources/S362-st-venant-water-flow-summary.md).
 
-**A caution about its source.** The page ships no technical summary. [S362](../sources/S362-st-venant-water-flow-summary.md) was written by Claude on 18 November 2026 from the page, with nothing rerun, and Bob has not yet read it (Q116).
+**A caution about its source.** The page ships no technical summary. [S362](../sources/S362-st-venant-water-flow-summary.md) was written by Claude on 18 November 2026 from the page, with nothing rerun, and Bob marked it reviewed on 18 November 2026 (Q116, settled).
 
 **What the summary says** [S362](../sources/S362-st-venant-water-flow-summary.md)
 - A teaching app that explains how water moves (the Saint-Venant equations, Manning's roughness, the water cycle, SWMM5, and how Singapore and Dubai keep their streets dry) to children under ten, with a grown-up mode that shows the real equations. Simulators, a water race, a gallery of real channels, a question-answering "Dr. St. Venant", an 18-question quiz and a glossary. Built by Bob in Lovable, here as one HTML file.

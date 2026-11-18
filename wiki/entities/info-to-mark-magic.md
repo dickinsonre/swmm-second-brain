@@ -8,7 +8,7 @@ reviewed: no
 ---
 Bob's app Info to Mark Magic: web pages and HTML into clean Markdown for the BobSWMM library. Version 2.0, 2026-10 [S352](../sources/S352-info-to-mark-magic-summary.md). Its `links:` line names no live Netlify address [S352](../sources/S352-info-to-mark-magic-summary.md).
 
-**A caution about its source.** The page ships no technical summary. [S352](../sources/S352-info-to-mark-magic-summary.md) was written by Claude on 18 November 2026 from the page, with nothing rerun, and Bob has not yet read it (Q116).
+**A caution about its source.** The page ships no technical summary. [S352](../sources/S352-info-to-mark-magic-summary.md) was written by Claude on 18 November 2026 from the page, with nothing rerun, and Bob marked it reviewed on 18 November 2026 (Q116, settled).
 
 **What the summary says** [S352](../sources/S352-info-to-mark-magic-summary.md)
 - Turns web pages and HTML into clean Markdown for a documentation library (option tables, code samples, numbered procedures): paste copied content, drop saved pages, or fetch an address; read, edit and compare the result; keep it as Markdown, plain text, a web page, a PDF, or a library exported together. A single-file port of Bob's Lovable project.

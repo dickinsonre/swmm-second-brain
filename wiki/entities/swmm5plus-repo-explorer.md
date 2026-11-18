@@ -8,7 +8,7 @@ reviewed: no
 ---
 Bob's app SWMM5+ Repo Explorer: the SWMM5+ source at afd44de, with its links to EPA SWMM 5.1.13 checked. Version 1.0.0, 2026-10-25 [S310](../sources/S310-swmm5plus-repo-explorer-summary.md). Its `links:` line names no live Netlify address [S310](../sources/S310-swmm5plus-repo-explorer-summary.md).
 
-**A caution about its source.** The page ships no technical summary. [S310](../sources/S310-swmm5plus-repo-explorer-summary.md) was written by Claude on 18 November 2026 from the page, with nothing rerun, and Bob has not yet read it (Q116).
+**A caution about its source.** The page ships no technical summary. [S310](../sources/S310-swmm5plus-repo-explorer-summary.md) was written by Claude on 18 November 2026 from the page, with nothing rerun, and Bob marked it reviewed on 18 November 2026 (Q116, settled).
 
 **What the summary says** [S310](../sources/S310-swmm5plus-repo-explorer-summary.md)
 - The explorer from Bob's Lovable project swmm-insight-lab, rebuilt as one HTML file that runs offline, with every count re-extracted from the SWMM5+ source at commit afd44de. It adds the main program as a source unit, use, intrinsic statements, the Fortran source itself (all 85 files in the eight source folders, embedded and searchable), procedure counts, links pinned to a commit, corrected C paths and function names, a checked paper list and a findings register. (SWMM Insight Lab is a second single-file edition of the same Lovable project.)

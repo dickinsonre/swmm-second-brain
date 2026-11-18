@@ -8,7 +8,7 @@ reviewed: no
 ---
 Bob's design sketch SWMM Front Door: one page that asks what you want to do with a SWMM model. Version 0.1, 2026-11-09 [S307](../sources/S307-swmm-front-door-summary.md). Its `links:` line names no live Netlify address [S307](../sources/S307-swmm-front-door-summary.md).
 
-**A caution about its source.** The page ships no technical summary. [S307](../sources/S307-swmm-front-door-summary.md) was written by Claude on 18 November 2026 from the page, with nothing rerun, and Bob has not yet read it (Q116).
+**A caution about its source.** The page ships no technical summary. [S307](../sources/S307-swmm-front-door-summary.md) was written by Claude on 18 November 2026 from the page, with nothing rerun, and Bob marked it reviewed on 18 November 2026 (Q116, settled).
 
 **What the summary says** [S307](../sources/S307-swmm-front-door-summary.md)
 - A clickable sketch, labelled "v0.1 sketch", of a front door for One SWMM: "Run, compare, check and explain SWMM5, SWMM6 and ICM results in one place." It asks "What do you want to do?" and offers four doors (Run my model, Compare engines, Is it stable?, Explain this number), each answered for EPA's Example1.inp, with a Simple or Expert switch that opens drawers naming the tool call behind each answer.

@@ -8,7 +8,7 @@ reviewed: no
 ---
 Bob's app Aquanuity Theory: a reader's edition of the numerics behind AquaTwin Sewer 2D, with a solver bench. Version 1.0, 2026-10-24 [S312](../sources/S312-aquanuity-theory-summary.md). Its `links:` line names no live Netlify address [S312](../sources/S312-aquanuity-theory-summary.md).
 
-**A caution about its source.** The page ships no technical summary. [S312](../sources/S312-aquanuity-theory-summary.md) was written by Claude on 18 November 2026 from the page, with nothing rerun, and Bob has not yet read it (Q116).
+**A caution about its source.** The page ships no technical summary. [S312](../sources/S312-aquanuity-theory-summary.md) was written by Claude on 18 November 2026 from the page, with nothing rerun, and Bob marked it reviewed on 18 November 2026 (Q116, settled).
 
 **What the summary says** [S312](../sources/S312-aquanuity-theory-summary.md)
 - An independent single-file edition of Bob's Lovable site about the numerical scheme behind Aquanuity's AquaTwin Sewer 2D (explicit shallow water or implicit diffusion wave on the surface, FSGI or SWMM5 dynamic wave in the pipes). It keeps the original guide and glossary, corrects them against sources (18 entries in the Audit tab) and adds a Solver Lab, a time-step calculator, a 1D-2D exchange calculator and a Doc essay.

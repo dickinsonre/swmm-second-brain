@@ -8,7 +8,7 @@ reviewed: no
 ---
 Bob's film HydroCouple SWMM6 Mograph: five wonders of the hydrocouple.org home page in sixty seconds. Version 1.1, 2026-11-10 [S303](../sources/S303-hydrocouple-swmm6-mograph-summary.md). Its `links:` line names no live Netlify address [S303](../sources/S303-hydrocouple-swmm6-mograph-summary.md).
 
-**A caution about its source.** The page ships no technical summary. [S303](../sources/S303-hydrocouple-swmm6-mograph-summary.md) was written by Claude on 18 November 2026 from the page, with nothing rerun, and Bob has not yet read it (Q116).
+**A caution about its source.** The page ships no technical summary. [S303](../sources/S303-hydrocouple-swmm6-mograph-summary.md) was written by Claude on 18 November 2026 from the page, with nothing rerun, and Bob marked it reviewed on 18 November 2026 (Q116, settled).
 
 **What the summary says** [S303](../sources/S303-hydrocouple-swmm6-mograph-summary.md)
 - A sixty-second motion graphic of the hydrocouple.org home page as it read on 10 November 2026, a tour by an outside reader in seven scenes: open, models that compose, six interfaces, SWMM 6.0, three repositories, the numbers, close. The page, the SWMM 6.0 engine and the standards it describes are the work of Caleb Buahin and the HydroCouple project.

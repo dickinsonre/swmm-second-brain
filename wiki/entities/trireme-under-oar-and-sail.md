@@ -8,7 +8,7 @@ reviewed: no
 ---
 Bob's app Trireme Under Oar and Sail: how 170 rowers drove a 120-foot Athenian warship. Version 1.2, 2026-10-22 [S371](../sources/S371-trireme-under-oar-and-sail-summary.md). Its `links:` line names no live Netlify address [S371](../sources/S371-trireme-under-oar-and-sail-summary.md).
 
-**A caution about its source.** The page ships no technical summary. [S371](../sources/S371-trireme-under-oar-and-sail-summary.md) was written by Claude on 18 November 2026 from the page, with nothing rerun, and Bob has not yet read it (Q116).
+**A caution about its source.** The page ships no technical summary. [S371](../sources/S371-trireme-under-oar-and-sail-summary.md) was written by Claude on 18 November 2026 from the page, with nothing rerun, and Bob marked it reviewed on 18 November 2026 (Q116, settled).
 
 **What the summary says** [S371](../sources/S371-trireme-under-oar-and-sail-summary.md)
 - An interactive explainer of how a classical Greek trireme was rowed and sailed: 170 rowers in three tiers on a 120-ft hull, and what its two square sails could and could not do. Click the parts, move the sliders, call the stroke. The ship follows the Olympias reconstruction of 1987, the only full-size trireme built and rowed in modern times. Not a water-modeling app.

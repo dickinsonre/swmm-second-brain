@@ -8,7 +8,7 @@ reviewed: no
 ---
 Bob's app SWMM5+ Explorer: the Fortran source, the Lovable sketch, and a proposed C port, checked against upstream. Version 1.0.1, 2026-10-24 [S309](../sources/S309-swmm5plus-explorer-summary.md). Its `links:` line names no live Netlify address [S309](../sources/S309-swmm5plus-explorer-summary.md).
 
-**A caution about its source.** The page ships no technical summary. [S309](../sources/S309-swmm5plus-explorer-summary.md) was written by Claude on 18 November 2026 from the page, with nothing rerun, and Bob has not yet read it (Q116).
+**A caution about its source.** The page ships no technical summary. [S309](../sources/S309-swmm5plus-explorer-summary.md) was written by Claude on 18 November 2026 from the page, with nothing rerun, and Bob marked it reviewed on 18 November 2026 (Q116, settled).
 
 **What the summary says** [S309](../sources/S309-swmm5plus-explorer-summary.md)
 - A single-file rebuild of a Lovable microsite about SWMM5+, the parallel Fortran hydraulics engine from the University of Texas at Austin published through CIMM.org: home, architecture, an engine tour, a hydraulics primer and a chat (HydroBot), with verbatim excerpts cut from the upstream source at commit afd44de. What the rebuild adds is verification: every claim the Lovable copy made is checked against the code.

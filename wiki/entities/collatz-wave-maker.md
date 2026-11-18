@@ -8,7 +8,7 @@ reviewed: no
 ---
 Bob's app Collatz Wave Maker: the Collatz tree as a branching sewer, run in EPA SWMM 5.2.4. Version 2.0, 2026-10-25 [S327](../sources/S327-collatz-wave-maker-summary.md). Its `links:` line names no live Netlify address [S327](../sources/S327-collatz-wave-maker-summary.md).
 
-**A caution about its source.** The page ships no technical summary. [S327](../sources/S327-collatz-wave-maker-summary.md) was written by Claude on 18 November 2026 from the page, with nothing rerun, and Bob has not yet read it (Q116).
+**A caution about its source.** The page ships no technical summary. [S327](../sources/S327-collatz-wave-maker-summary.md) was written by Claude on 18 November 2026 from the page, with nothing rerun, and Bob marked it reviewed on 18 November 2026 (Q116, settled).
 
 **What the summary says** [S327](../sources/S327-collatz-wave-maker-summary.md)
 - Every whole number from 2 to N, halved when even and tripled plus one when odd, drains to 1, so the numbers form a tree with one outlet per node, like a branching sewer. The page turns that tree into an EPA SWMM5 input file, runs it in EPA SWMM 5.2.4 compiled to WebAssembly, and plays the flood wave back over the tree in eleven layouts.

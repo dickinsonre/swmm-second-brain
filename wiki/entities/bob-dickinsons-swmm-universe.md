@@ -8,7 +8,7 @@ reviewed: no
 ---
 Bob's app Bob Dickinson's SWMM Universe: a hub page for Robert Dickinson's apps, repositories and writing. Version and date 2026-08-31 [S358](../sources/S358-bob-dickinsons-swmm-universe-summary.md). Its `links:` line names no live Netlify address [S358](../sources/S358-bob-dickinsons-swmm-universe-summary.md).
 
-**A caution about its source.** The page ships no technical summary. [S358](../sources/S358-bob-dickinsons-swmm-universe-summary.md) was written by Claude on 18 November 2026 from the page, with nothing rerun, and Bob has not yet read it (Q116).
+**A caution about its source.** The page ships no technical summary. [S358](../sources/S358-bob-dickinsons-swmm-universe-summary.md) was written by Claude on 18 November 2026 from the page, with nothing rerun, and Bob marked it reviewed on 18 November 2026 (Q116, settled).
 
 **What the summary says** [S358](../sources/S358-bob-dickinsons-swmm-universe-summary.md)
 - A one-page hub headed apps.swmm5.org: "Fifty-plus years inside the Storm Water Management Model, punch cards in 1974, WebAssembly in 2026." Eight start-here doors into browser apps, five GitHub properties with their jobs, six 2026 projects, and his writing (swmm5.org, The Dickinson Canon newsletter, swmmfive.com, a LinkedIn SWMM6 group).

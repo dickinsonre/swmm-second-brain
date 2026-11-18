@@ -8,7 +8,7 @@ reviewed: no
 ---
 Bob's app SWMM Guide Buddy: a companion to the EPA SWMM Applications Manual, with checked calculators. Version 1.0, 2026-10-24 [S351](../sources/S351-swmm-guide-buddy-summary.md). Its `links:` line names no live Netlify address [S351](../sources/S351-swmm-guide-buddy-summary.md).
 
-**A caution about its source.** The page ships no technical summary. [S351](../sources/S351-swmm-guide-buddy-summary.md) was written by Claude on 18 November 2026 from the page, with nothing rerun, and Bob has not yet read it (Q116).
+**A caution about its source.** The page ships no technical summary. [S351](../sources/S351-swmm-guide-buddy-summary.md) was written by Claude on 18 November 2026 from the page, with nothing rerun, and Bob marked it reviewed on 18 November 2026 (Q116, settled).
 
 **What the summary says** [S351](../sources/S351-swmm-guide-buddy-summary.md)
 - A companion to the EPA Storm Water Management Model Applications Manual (EPA/600/R-09/000, 2009) as adapted for InfoSWMM: nine worked-example pages and a bench of hydraulic calculators (normal and critical depth, pipe capacity, culverts by FHWA HDS-5, a 3D profile viewer, a routing advisor). A single-file edition of Bob's Lovable project.

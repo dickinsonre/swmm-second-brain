@@ -8,7 +8,7 @@ reviewed: no
 ---
 Bob's app Network Mentor AI: an onboarding studio for drainage modeling software. Version 1.0.0, 2026-10-25 [S349](../sources/S349-network-mentor-ai-summary.md). Its `links:` line names no live Netlify address [S349](../sources/S349-network-mentor-ai-summary.md).
 
-**A caution about its source.** The page ships no technical summary. [S349](../sources/S349-network-mentor-ai-summary.md) was written by Claude on 18 November 2026 from the page, with nothing rerun, and Bob has not yet read it (Q116).
+**A caution about its source.** The page ships no technical summary. [S349](../sources/S349-network-mentor-ai-summary.md) was written by Claude on 18 November 2026 from the page, with nothing rerun, and Bob marked it reviewed on 18 November 2026 (Q116, settled).
 
 **What the summary says** [S349](../sources/S349-network-mentor-ai-summary.md)
 - An onboarding studio for drainage and hydraulic modeling software: guided tours and templates that walk a new user through replicas of SWMM 5, InfoWorks ICM, InfoDrainage and Civil 3D workspaces, all showing the same demo network. Rebuilt as one HTML file from Bob's Lovable project.

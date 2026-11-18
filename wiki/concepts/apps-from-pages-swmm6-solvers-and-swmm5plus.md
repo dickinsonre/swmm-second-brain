@@ -6,7 +6,7 @@ sources: [S300, S301, S302, S303, S304, S305, S306, S307, S308, S309, S310, S311
 tags: [apps, swmm6, openswmm, swmm5plus, numerics]
 reviewed: no
 ---
-Fifteen summaries that Bob uploaded on 18 November 2026 on OpenSWMM 6 and HydroCouple, SWMM5+ and the numerics of routing. All fifteen were written by Claude from the published pages with nothing rerun (Q116). [S307](../sources/S307-swmm-front-door-summary.md) describes a design sketch and [S308](../sources/S308-thaw-on-the-thoth-summary.md) a Claude Docs story; [S302](../sources/S302-swmm5-swmm6-mograph-summary.md) and [S303](../sources/S303-hydrocouple-swmm6-mograph-summary.md) are films.
+Fifteen summaries that Bob uploaded on 18 November 2026 on OpenSWMM 6 and HydroCouple, SWMM5+ and the numerics of routing. All fifteen were written by Claude from the published pages with nothing rerun; Bob marked all of them reviewed on 18 November 2026 (Q116, settled). [S307](../sources/S307-swmm-front-door-summary.md) describes a design sketch and [S308](../sources/S308-thaw-on-the-thoth-summary.md) a Claude Docs story; [S302](../sources/S302-swmm5-swmm6-mograph-summary.md) and [S303](../sources/S303-hydrocouple-swmm6-mograph-summary.md) are films.
 
 | App | Version | Date | Source |
 |---|---|---|---|

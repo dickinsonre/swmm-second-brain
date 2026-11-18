@@ -8,7 +8,7 @@ reviewed: no
 ---
 Bob's app SWMM6 2D Flood Lab: an unofficial browser port of the OpenSWMM 6.0.0-alpha.4 local-inertial surface solver. Version 0.2.0, 2026-10-10 [S300](../sources/S300-swmm6-2d-flood-lab-summary.md). Its `links:` line names no live Netlify address [S300](../sources/S300-swmm6-2d-flood-lab-summary.md).
 
-**A caution about its source.** The page ships no technical summary. [S300](../sources/S300-swmm6-2d-flood-lab-summary.md) was written by Claude on 18 November 2026 from the page, with nothing rerun, and Bob has not yet read it (Q116).
+**A caution about its source.** The page ships no technical summary. [S300](../sources/S300-swmm6-2d-flood-lab-summary.md) was written by Claude on 18 November 2026 from the page, with nothing rerun, and Bob marked it reviewed on 18 November 2026 (Q116, settled).
 
 **What the summary says** [S300](../sources/S300-swmm6-2d-flood-lab-summary.md)
 - A 2D flood model that runs in your browser, on the GPU (float32, WebGPU) or the CPU (float64), using a translation of Caleb Buahin's explicit local-inertial marcher from the OpenSWMM Engine. Six scenes: three surveyed terrains (Merewether NSW, Alexandria VA, Autzen Stadium flats in Eugene OR), three synthetic ones, or your own DEM.

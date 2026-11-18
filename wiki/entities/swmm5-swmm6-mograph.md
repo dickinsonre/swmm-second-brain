@@ -8,7 +8,7 @@ reviewed: no
 ---
 Bob's film SWMM5 / SWMM6 Mograph: one storm, start to finish, in 60 seconds, on real engine output. Version 3.1, 2026-11-09 [S302](../sources/S302-swmm5-swmm6-mograph-summary.md). Its `links:` line names no live Netlify address [S302](../sources/S302-swmm5-swmm6-mograph-summary.md).
 
-**A caution about its source.** The page ships no technical summary. [S302](../sources/S302-swmm5-swmm6-mograph-summary.md) was written by Claude on 18 November 2026 from the page, with nothing rerun, and Bob has not yet read it (Q116).
+**A caution about its source.** The page ships no technical summary. [S302](../sources/S302-swmm5-swmm6-mograph-summary.md) was written by Claude on 18 November 2026 from the page, with nothing rerun, and Bob marked it reviewed on 18 November 2026 (Q116, settled).
 
 **What the summary says** [S302](../sources/S302-swmm5-swmm6-mograph-summary.md)
 - A 60-second motion graphic that follows one storm through the engine you pick, from the hyetograph through rain, runoff, routing and outfall to the continuity ledger. It runs on real output: EPA SWMM 5.2.4 and OpenSWMM 6 (dynamic wave and finite volume, through the swmm6-go translation) both run inside the page, so every bar, water level and curve is a number an engine wrote, and changing the model in the Model tab changes the film.

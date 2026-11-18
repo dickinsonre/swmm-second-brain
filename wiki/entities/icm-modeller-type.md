@@ -8,7 +8,7 @@ reviewed: no
 ---
 Bob's app ICM Modeller Type: the InfoWorks ICM modeller quiz, with its scoring engine opened up. Version 1.1.0, 2026-10 [S341](../sources/S341-icm-modeller-type-summary.md). Its `links:` line names no live Netlify address [S341](../sources/S341-icm-modeller-type-summary.md).
 
-**A caution about its source.** The page ships no technical summary. [S341](../sources/S341-icm-modeller-type-summary.md) was written by Claude on 18 November 2026 from the page, with nothing rerun, and Bob has not yet read it (Q116).
+**A caution about its source.** The page ships no technical summary. [S341](../sources/S341-icm-modeller-type-summary.md) was written by Claude on 18 November 2026 from the page, with nothing rerun, and Bob marked it reviewed on 18 November 2026 (Q116, settled).
 
 **What the summary says** [S341](../sources/S341-icm-modeller-type-summary.md)
 - A single-file port of Bob's ICM Modeller Type Quiz, a personality quiz for InfoWorks ICM modellers first built on Lovable. Questions, types, scenarios, tips and learning paths were extracted mechanically from the TypeScript source, the scoring functions copied line for line, and an Engine tab added with exact odds, a Monte Carlo check and a defect register.

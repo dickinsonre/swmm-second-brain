@@ -8,7 +8,7 @@ reviewed: no
 ---
 Bob's app Ruby Glory Map: a map of the InfoSWMM multi-scenario importer for InfoWorks ICM. Version 1.0, 2026-10-25 [S334](../sources/S334-ruby-glory-map-summary.md). Its `links:` line names no live Netlify address [S334](../sources/S334-ruby-glory-map-summary.md).
 
-**A caution about its source.** The page ships no technical summary. [S334](../sources/S334-ruby-glory-map-summary.md) was written by Claude on 18 November 2026 from the page, with nothing rerun, and Bob has not yet read it (Q116).
+**A caution about its source.** The page ships no technical summary. [S334](../sources/S334-ruby-glory-map-summary.md) was written by Claude on 18 November 2026 from the page, with nothing rerun, and Bob marked it reviewed on 18 November 2026 (Q116, settled).
 
 **What the summary says** [S334](../sources/S334-ruby-glory-map-summary.md)
 - A map of the two Ruby scripts in SWMMBobSWMM6/Hackathon_KM, the InfoSWMM multi-scenario importer for InfoWorks ICM (an upstream copy is in Innovyze/Open-Source-Support): where every line sits, what the scripts hand each other, which ICM API they lean on, and 21 findings with the code they point at. Bob's Lovable project of this name never built anything, because its fetch of the repository got a 404 every time.

@@ -8,7 +8,7 @@ reviewed: no
 ---
 Bob's app HydroNeural: a SWMM5 surrogate console, with its mock data and its literature review audited. Version 1.0, 2026-10-22 [S348](../sources/S348-hydroneural-summary.md). Its `links:` line names no live Netlify address [S348](../sources/S348-hydroneural-summary.md).
 
-**A caution about its source.** The page ships no technical summary. [S348](../sources/S348-hydroneural-summary.md) was written by Claude on 18 November 2026 from the page, with nothing rerun, and Bob has not yet read it (Q116).
+**A caution about its source.** The page ships no technical summary. [S348](../sources/S348-hydroneural-summary.md) was written by Claude on 18 November 2026 from the page, with nothing rerun, and Bob marked it reviewed on 18 November 2026 (Q116, settled).
 
 **What the summary says** [S348](../sources/S348-hydroneural-summary.md)
 - A single-file edition of HydroNeural, a Lovable-built console for a machine-learning surrogate of EPA SWMM5. It carries the original's forecast dashboard and literature review, adds an Anatomy of the source and an Audit of what the code computes, and explains it in a Doc tab. The header says it plainly: all numbers are seeded mock.

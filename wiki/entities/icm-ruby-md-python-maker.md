@@ -8,7 +8,7 @@ reviewed: no
 ---
 Bob's app ICM Ruby MD Python Maker: write up an InfoWorks ICM Ruby script, move it to Python, draft its tests. Version 2.0, 2026-10-24 [S333](../sources/S333-icm-ruby-md-python-maker-summary.md). Its `links:` line names no live Netlify address [S333](../sources/S333-icm-ruby-md-python-maker-summary.md).
 
-**A caution about its source.** The page ships no technical summary. [S333](../sources/S333-icm-ruby-md-python-maker-summary.md) was written by Claude on 18 November 2026 from the page, with nothing rerun, and Bob has not yet read it (Q116).
+**A caution about its source.** The page ships no technical summary. [S333](../sources/S333-icm-ruby-md-python-maker-summary.md) was written by Claude on 18 November 2026 from the page, with nothing rerun, and Bob marked it reviewed on 18 November 2026 (Q116, settled).
 
 **What the summary says** [S333](../sources/S333-icm-ruby-md-python-maker-summary.md)
 - A single-file edition of Bob's Lovable app that summarizes a code file as Markdown, converts Ruby to Python, and drafts unit tests, with rebuilt engines, an ICM Script Card for InfoWorks ICM, InfoAsset Manager and WS Pro Ruby scripts, a batch mode and a Checks tab. The Lovable engines stay available unchanged behind an As shipped switch.

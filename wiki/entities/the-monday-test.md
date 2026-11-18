@@ -8,7 +8,7 @@ reviewed: no
 ---
 Bob's app The Monday Test: nine experiences for SWMM5, ICM and SWMM6 modelers. Version 1.1, 2026-10-20 [S356](../sources/S356-the-monday-test-summary.md). Its `links:` line names no live Netlify address [S356](../sources/S356-the-monday-test-summary.md).
 
-**A caution about its source.** The page ships no technical summary. [S356](../sources/S356-the-monday-test-summary.md) was written by Claude on 18 November 2026 from the page, with nothing rerun, and Bob has not yet read it (Q116).
+**A caution about its source.** The page ships no technical summary. [S356](../sources/S356-the-monday-test-summary.md) was written by Claude on 18 November 2026 from the page, with nothing rerun, and Bob marked it reviewed on 18 November 2026 (Q116, settled).
 
 **What the summary says** [S356](../sources/S356-the-monday-test-summary.md)
 - Nine short "journeys" for SWMM5, InfoWorks ICM and SWMM6 modelers, each built on a finding from Bob's own measured work and walked through Jeff Bullas's six-stage Transformation Economy arc (surprise, understand, choose, act, reflect, transform), ending in a Monday card: what you will do differently on Monday. Examples: "The sealed lawn" (MaxInfil = 0.5 in or 50 in, the lawn seals either way); "Two missing lines" (same .inp, two builds, 64.31 cfs and 24.69 cfs); "Exit code zero" (the run failed and the process says it did not); "HYDGRAD, not gradient" (ICM field names are case-sensitive).

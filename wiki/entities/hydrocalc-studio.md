@@ -8,7 +8,7 @@ reviewed: no
 ---
 Bob's app HydroCalc Studio: eight open-channel and routing calculators, each showing its equation. Version 1.0, 2026-10-24 [S360](../sources/S360-hydrocalc-studio-summary.md). Its `links:` line names no live Netlify address [S360](../sources/S360-hydrocalc-studio-summary.md).
 
-**A caution about its source.** The page ships no technical summary. [S360](../sources/S360-hydrocalc-studio-summary.md) was written by Claude on 18 November 2026 from the page, with nothing rerun, and Bob has not yet read it (Q116).
+**A caution about its source.** The page ships no technical summary. [S360](../sources/S360-hydrocalc-studio-summary.md) was written by Claude on 18 November 2026 from the page, with nothing rerun, and Bob marked it reviewed on 18 November 2026 (Q116, settled).
 
 **What the summary says** [S360](../sources/S360-hydrocalc-studio-summary.md)
 - Eight calculators in one file: Manning's equation, a compound channel by the divided channel method, gradually varied flow profiles, rating curves, a single Muskingum step, full hydrograph routing, a sensitivity study and a side-by-side channel comparison. Every result shows the equation it came from with your numbers in it.

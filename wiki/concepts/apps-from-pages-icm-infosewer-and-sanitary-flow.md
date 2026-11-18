@@ -6,7 +6,7 @@ sources: [S331, S332, S333, S334, S335, S336, S337, S338, S339, S340, S341, S342
 tags: [apps, icm, infosewer, ruby, sanitary-flow]
 reviewed: no
 ---
-Twelve summaries that Bob uploaded on 18 November 2026 on InfoWorks ICM beside SWMM5, Ruby for ICM, InfoSewer and sanitary flows. One ships with its app ([S331](../sources/S331-icm-river-reach-modeler-app-md.md)); eleven were written by Claude from the published pages with nothing rerun (Q116).
+Twelve summaries that Bob uploaded on 18 November 2026 on InfoWorks ICM beside SWMM5, Ruby for ICM, InfoSewer and sanitary flows. One ships with its app ([S331](../sources/S331-icm-river-reach-modeler-app-md.md)); eleven were written by Claude from the published pages with nothing rerun; Bob marked all of them reviewed on 18 November 2026 (Q116, settled).
 
 | App | Version | Date | Source |
 |---|---|---|---|

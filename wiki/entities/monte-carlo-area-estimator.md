@@ -8,7 +8,7 @@ reviewed: no
 ---
 Bob's app Monte Carlo Area Estimator: throw random points at a box to measure a shape. Version 1.0.0, 2026-10-24 [S367](../sources/S367-monte-carlo-area-estimator-summary.md). Its `links:` line names no live Netlify address [S367](../sources/S367-monte-carlo-area-estimator-summary.md).
 
-**A caution about its source.** The page ships no technical summary. [S367](../sources/S367-monte-carlo-area-estimator-summary.md) was written by Claude on 18 November 2026 from the page, with nothing rerun, and Bob has not yet read it (Q116).
+**A caution about its source.** The page ships no technical summary. [S367](../sources/S367-monte-carlo-area-estimator-summary.md) was written by Claude on 18 November 2026 from the page, with nothing rerun, and Bob marked it reviewed on 18 November 2026 (Q116, settled).
 
 **What the summary says** [S367](../sources/S367-monte-carlo-area-estimator-summary.md)
 - A single-file rebuild of Bob's Lovable app on Monte Carlo area estimation: eight preset shapes, freehand drawing with symmetry, photo tracing, four animation modes, bulk throws, a heatmap, saved comparisons, and Buffon's needle. The fraction of random points that land inside a shape measures its area, with seeded, repeatable throws and Wilson 95% intervals.

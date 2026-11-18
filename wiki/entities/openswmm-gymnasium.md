@@ -8,7 +8,7 @@ reviewed: no
 ---
 Bob's app OpenSWMM Gymnasium: a reinforcement-learning framework for the SWMM engine, explained and run. Version 1.0, 2026-10-25 [S306](../sources/S306-openswmm-gymnasium-summary.md). Its `links:` line names no live Netlify address [S306](../sources/S306-openswmm-gymnasium-summary.md).
 
-**A caution about its source.** The page ships no technical summary. [S306](../sources/S306-openswmm-gymnasium-summary.md) was written by Claude on 18 November 2026 from the page, with nothing rerun, and Bob has not yet read it (Q116).
+**A caution about its source.** The page ships no technical summary. [S306](../sources/S306-openswmm-gymnasium-summary.md) was written by Claude on 18 November 2026 from the page, with nothing rerun, and Bob marked it reviewed on 18 November 2026 (Q116, settled).
 
 **What the summary says** [S306](../sources/S306-openswmm-gymnasium-summary.md)
 - An explainer of HydroCouple's openswmm.gymnasium, a reinforcement-learning framework for the SWMM engine: how the loop, spaces and rewards work, what the package really ships, and its b01 TwinTank benchmark run on EPA SWMM 5.2.4 compiled to WebAssembly in the page. A single-file edition of Bob's Lovable app, which added a real learner (the cross-entropy method) on its pond model.

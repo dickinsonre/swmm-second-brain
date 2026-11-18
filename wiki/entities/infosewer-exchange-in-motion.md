@@ -8,7 +8,7 @@ reviewed: no
 ---
 Bob's film InfoSewer Exchange in Motion: the 0060 InfoSewer to ICM importer under ICM Exchange, played in eight scenes. Version 1.0, 2026-11-10 [S335](../sources/S335-infosewer-exchange-in-motion-summary.md). Its `links:` line names no live Netlify address [S335](../sources/S335-infosewer-exchange-in-motion-summary.md).
 
-**A caution about its source.** The page ships no technical summary. [S335](../sources/S335-infosewer-exchange-in-motion-summary.md) was written by Claude on 18 November 2026 from the page, with nothing rerun, and Bob has not yet read it (Q116).
+**A caution about its source.** The page ships no technical summary. [S335](../sources/S335-infosewer-exchange-in-motion-summary.md) was written by Claude on 18 November 2026 from the page, with nothing rerun, and Bob marked it reviewed on 18 November 2026 (Q116, settled).
 
 **What the summary says** [S335](../sources/S335-infosewer-exchange-in-motion-summary.md)
 - README_Exchange.md in a form you can watch. The README explains how five files let Autodesk's 0060 InfoSewer to InfoWorks ICM toolkit run under ICM Exchange from a command line with no dialogs; the Play tab acts that out in eight scenes and 63 steps (files dropped into the toolkit folder, three swaps for the network, configuration and scenarios, and confirmations, one model through the pipeline, a folder of models unattended, the one call to confirm on your ICM version, and what the engine does not carry). The README tab holds the complete original text.

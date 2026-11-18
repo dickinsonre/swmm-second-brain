@@ -8,7 +8,7 @@ reviewed: no
 ---
 Bob's app Legacy SWMM Converter: SWMM4 card decks to SWMM5, with both engines in the page. Version 1.0.0, 2026-10 [S322](../sources/S322-legacy-swmm-converter-summary.md). Its `links:` line names no live Netlify address [S322](../sources/S322-legacy-swmm-converter-summary.md).
 
-**A caution about its source.** The page ships no technical summary. [S322](../sources/S322-legacy-swmm-converter-summary.md) was written by Claude on 18 November 2026 from the page, with nothing rerun, and Bob has not yet read it (Q116).
+**A caution about its source.** The page ships no technical summary. [S322](../sources/S322-legacy-swmm-converter-summary.md) was written by Claude on 18 November 2026 from the page, with nothing rerun, and Bob marked it reviewed on 18 November 2026 (Q116, settled).
 
 **What the summary says** [S322](../sources/S322-legacy-swmm-converter-summary.md)
 - A single-file rebuild of Bob's Lovable app Legacy SWMM AI, which converted SWMM4 .DAT decks to SWMM5 .INP files by sending them to Google Gemini. A language model's conversion changes from run to run, so this edition converts deterministically (swmm4to5.js, from the EXTRAN, RUNOFF, TRANSPORT and STRT card layouts), keeps a ledger of every value as DIRECT, ESTIMATED or ASSUMED, and runs the original deck in SWMM 4.4H and the conversion in EPA SWMM 5.2.4 side by side.

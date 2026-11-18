@@ -41,7 +41,7 @@ To read the wiki yourself, open the folder in Obsidian (the graph view shows hub
 Counted by `tools/state.py` on <!-- state:date -->2026-11-18<!-- /state:date -->.
 
 - <!-- state:ingested -->376 of 612 raw files ingested, 3 of them in part; 232 queued; 4 superseded or duplicate<!-- /state:ingested -->. The queue is in `index.md`.
-- <!-- state:oq -->110 open and 10 settled<!-- /state:oq --> open questions in `wiki/open-questions.md`. Several are contradictions between Bob's own articles.
+- <!-- state:oq -->109 open and 11 settled<!-- /state:oq --> open questions in `wiki/open-questions.md`. Several are contradictions between Bob's own articles.
 - Bob reviewed every page on 11/16/2026. Since then, <!-- state:review -->366 pages say `reviewed: no` and 63 carry `changed_after_review:`<!-- /state:review -->; `python3 tools/lint.py --review` lists them in reading order.
 - The ontology draft has Relations tables on 3 pages: 89 statements, each filed under the source it cites, with conditions and a `verification` status on the rows that need them. `ontology/queries/5-comparable-fields.txt` answers "which fields can I compare across InfoWorks and ICM SWMM networks, under what conditions, and on what evidence?" for the fields the wiki has so far.
 

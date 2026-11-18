@@ -8,7 +8,7 @@ reviewed: no
 ---
 Bob's app Sisu Fire Control Drill: the computer scene from Heinlein's Citizen of the Galaxy, rebuilt as a game. Version 1.0, 2026-11 [S370](../sources/S370-sisu-fire-control-drill-summary.md). Its `links:` line names no live Netlify address [S370](../sources/S370-sisu-fire-control-drill-summary.md).
 
-**A caution about its source.** The page ships no technical summary. [S370](../sources/S370-sisu-fire-control-drill-summary.md) was written by Claude on 18 November 2026 from the page, with nothing rerun, and Bob has not yet read it (Q116).
+**A caution about its source.** The page ships no technical summary. [S370](../sources/S370-sisu-fire-control-drill-summary.md) was written by Claude on 18 November 2026 from the page, with nothing rerun, and Bob marked it reviewed on 18 November 2026 (Q116, settled).
 
 **What the summary says** [S370](../sources/S370-sisu-fire-control-drill-summary.md)
 - A drill built around one scene in Robert A. Heinlein's Citizen of the Galaxy (1957): the boy Thorby at the fire-control computer of the Free Trader Sisu. A raider closes in straight legs; you guess his next leg, the computer solves the intercept, and you have two missiles to stop him before his beam is in range. Not a water-modeling app.

@@ -8,7 +8,7 @@ reviewed: no
 ---
 Bob's app Sewer Science: vacuum against gravity sewers, and how to represent a vacuum system in InfoWorks ICM. Version 1.0, 2026-10-22 [S339](../sources/S339-sewer-science-summary.md). Its `links:` line names no live Netlify address [S339](../sources/S339-sewer-science-summary.md).
 
-**A caution about its source.** The page ships no technical summary. [S339](../sources/S339-sewer-science-summary.md) was written by Claude on 18 November 2026 from the page, with nothing rerun, and Bob has not yet read it (Q116).
+**A caution about its source.** The page ships no technical summary. [S339](../sources/S339-sewer-science-summary.md) was written by Claude on 18 November 2026 from the page, with nothing rerun, and Bob marked it reviewed on 18 November 2026 (Q116, settled).
 
 **What the summary says** [S339](../sources/S339-sewer-science-summary.md)
 - Compares vacuum and gravity sewer collection and shows how to represent a vacuum system in InfoWorks ICM, a solver built for gravity flow, through an orifice analog and real-time control logic. A single-file port of Bob's Lovable monograph, with US units, a partial-flow depth solution for the gravity pipe, a head budget for the vacuum main, and checks against published US design rules.

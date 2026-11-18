@@ -8,7 +8,7 @@ reviewed: no
 ---
 Bob's app Flow Factor Wizard: peakable sanitary flow for InfoWorks ICM, computed the InfoSewer way. Version 1.0, 2026-10-21 [S336](../sources/S336-flow-factor-wizard-summary.md). Its `links:` line names no live Netlify address [S336](../sources/S336-flow-factor-wizard-summary.md).
 
-**A caution about its source.** The page ships no technical summary. [S336](../sources/S336-flow-factor-wizard-summary.md) was written by Claude on 18 November 2026 from the page, with nothing rerun, and Bob has not yet read it (Q116).
+**A caution about its source.** The page ships no technical summary. [S336](../sources/S336-flow-factor-wizard-summary.md) was written by Claude on 18 November 2026 from the page, with nothing rerun, and Bob marked it reviewed on 18 November 2026 (Q116, settled).
 
 **What the summary says** [S336](../sources/S336-flow-factor-wizard-summary.md)
 - Computes peakable (design) sanitary flow from population, Q = EFF x population x average flow per person, with EFF from a peaking formula (Harmon, Babbitt, custom) capped at a cutoff, and generates an InfoWorks ICM Ruby script (v2.1) that does the same for every conduit after adding up the population upstream of each one. The idea comes from InfoSewer, whose steady-state run peaks loads before routing them.

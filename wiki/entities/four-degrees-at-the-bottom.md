@@ -8,7 +8,7 @@ reviewed: no
 ---
 Bob's app Four Degrees at the Bottom: a lake run a year at a time, with water's two oddities switched off. Version and date 2026-09-30 [S374](../sources/S374-four-degrees-at-the-bottom-summary.md). Its `links:` line names no live Netlify address [S374](../sources/S374-four-degrees-at-the-bottom-summary.md).
 
-**A caution about its source.** The page ships no technical summary. [S374](../sources/S374-four-degrees-at-the-bottom-summary.md) was written by Claude on 18 November 2026 from the page, with nothing rerun, and Bob has not yet read it (Q116).
+**A caution about its source.** The page ships no technical summary. [S374](../sources/S374-four-degrees-at-the-bottom-summary.md) was written by Claude on 18 November 2026 from the page, with nothing rerun, and Bob marked it reviewed on 18 November 2026 (Q116, settled).
 
 **What the summary says** [S374](../sources/S374-four-degrees-at-the-bottom-summary.md)
 - A 66-ft (20 m, ft ours) lake run a year at a time from the surface heat budget down, with two switches that turn off the two oddities of water: that it is densest at 3.98 °C (39.2 °F, ours), and that its ice floats. You watch temperature by depth and day, ice thickness, and the dates the lake mixes. A "free-time piece about water". Not a water-modeling app in Bob's SWMM sense.

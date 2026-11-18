@@ -6,7 +6,7 @@ sources: [S360, S361, S362, S363, S364, S365, S366, S367, S368, S369, S370, S371
 tags: [apps, calculators, teaching, not-water]
 reviewed: no
 ---
-Sixteen summaries that Bob uploaded on 18 November 2026: hydraulics calculators and teaching toys rebuilt from Lovable originals, and eight apps that are not about water modeling. One ships with its app ([S369](../sources/S369-riverworld-3d-app-md.md)); fifteen were written by Claude from the published pages with nothing rerun (Q116).
+Sixteen summaries that Bob uploaded on 18 November 2026: hydraulics calculators and teaching toys rebuilt from Lovable originals, and eight apps that are not about water modeling. One ships with its app ([S369](../sources/S369-riverworld-3d-app-md.md)); fifteen were written by Claude from the published pages with nothing rerun; Bob marked all of them reviewed on 18 November 2026 (Q116, settled).
 
 | App | Version | Date | Source |
 |---|---|---|---|

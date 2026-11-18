@@ -8,7 +8,7 @@ reviewed: no
 ---
 Bob's app JWMM Finder: all 750 papers of the Journal of Water Management Modeling, searchable in the browser. Version 1.0.0, 2026-11-06 [S343](../sources/S343-jwmm-finder-summary.md). Its `links:` line names no live Netlify address [S343](../sources/S343-jwmm-finder-summary.md).
 
-**A caution about its source.** The page ships no technical summary. [S343](../sources/S343-jwmm-finder-summary.md) was written by Claude on 18 November 2026 from the page, with nothing rerun, and Bob has not yet read it (Q116).
+**A caution about its source.** The page ships no technical summary. [S343](../sources/S343-jwmm-finder-summary.md) was written by Claude on 18 November 2026 from the page, with nothing rerun, and Bob marked it reviewed on 18 November 2026 (Q116, settled).
 
 **What the summary says** [S343](../sources/S343-jwmm-finder-summary.md)
 - One HTML file that holds structured summaries of all 750 papers listed by the Journal of Water Management Modeling (JWMM), 1993 to November 2026, with a search engine, filters that count before you click, charts of the whole collection, a starred list and exports (CSV, BibTeX, citations). Each summary has the objective, study area, methods, findings, limitations, engineering implications, models and topics.

@@ -8,7 +8,7 @@ reviewed: no
 ---
 Bob's app Ommatidia Flyover: a compound-eye organism that flies over a SWMM model to where flow is peaking. Version 1.4.1, 2026-11 [S359](../sources/S359-ommatidia-flyover-summary.md). Its `links:` line names no live Netlify address [S359](../sources/S359-ommatidia-flyover-summary.md).
 
-**A caution about its source.** The page ships no technical summary. [S359](../sources/S359-ommatidia-flyover-summary.md) was written by Claude on 18 November 2026 from the page, with nothing rerun, and Bob has not yet read it (Q116).
+**A caution about its source.** The page ships no technical summary. [S359](../sources/S359-ommatidia-flyover-summary.md) was written by Claude on 18 November 2026 from the page, with nothing rerun, and Bob marked it reviewed on 18 November 2026 (Q116, settled).
 
 **What the summary says** [S359](../sources/S359-ommatidia-flyover-summary.md)
 - A compound-eye creature that flies over a SWMM model and goes where flow is peaking. The map outside its lenses is the model; the picture inside each lens is the run: bright dots for a parcel running off, dashes for moving water, line width for the share of a pipe filled, white dashes for a full pipe, orange for a flooding node, and two numbers in feet (the nearest node's invert over the nearest pipe's length). It works as a page and as one file to add to other apps.

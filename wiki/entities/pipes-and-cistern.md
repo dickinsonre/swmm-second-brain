@@ -8,7 +8,7 @@ reviewed: no
 ---
 Bob's app Pipes & Cistern: the exam rate problems, and what a real tank with a hole does instead. Version 1.0, 2026-10-25 [S365](../sources/S365-pipes-and-cistern-summary.md). Its `links:` line names no live Netlify address [S365](../sources/S365-pipes-and-cistern-summary.md).
 
-**A caution about its source.** The page ships no technical summary. [S365](../sources/S365-pipes-and-cistern-summary.md) was written by Claude on 18 November 2026 from the page, with nothing rerun, and Bob has not yet read it (Q116).
+**A caution about its source.** The page ships no technical summary. [S365](../sources/S365-pipes-and-cistern-summary.md) was written by Claude on 18 November 2026 from the page, with nothing rerun, and Bob marked it reviewed on 18 November 2026 (Q116, settled).
 
 **What the summary says** [S365](../sources/S365-pipes-and-cistern-summary.md)
 - Practice problems, live calculators and the formula sheet for the two classic rate problems, Time & Work and Pipes & Cistern, plus a Real Tank tab that shows what a straight-walled tank with a hole in the floor actually does, with an exact Torricelli solution and a SWMM5 model to export.

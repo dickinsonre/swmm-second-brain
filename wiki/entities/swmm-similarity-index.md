@@ -8,7 +8,7 @@ reviewed: no
 ---
 Bob's app SWMM Similarity Index: Bill James scoring for SWMM5, EPANET and ICM models. Version 1.0, 2026-10 [S342](../sources/S342-swmm-similarity-index-summary.md). Its `links:` line names no live Netlify address [S342](../sources/S342-swmm-similarity-index-summary.md).
 
-**A caution about its source.** The page ships no technical summary. [S342](../sources/S342-swmm-similarity-index-summary.md) was written by Claude on 18 November 2026 from the page, with nothing rerun, and Bob has not yet read it (Q116).
+**A caution about its source.** The page ships no technical summary. [S342](../sources/S342-swmm-similarity-index-summary.md) was written by Claude on 18 November 2026 from the page, with nothing rerun, and Bob marked it reviewed on 18 November 2026 (Q116, settled).
 
 **What the summary says** [S342](../sources/S342-swmm-similarity-index-summary.md)
 - Scores how alike two hydraulic models are on a 0 to 1,000 scale, after Bill James's similarity scores for baseball players: start at 1,000 and subtract for each difference in junctions, outfalls, conduits and results. A single-file edition of Bob's Lovable project, with Compare, Outputs, Batch, Methodology and Verify tabs; 19 defects fixed, so scores differ from the Lovable app on some pairs.

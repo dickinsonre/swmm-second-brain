@@ -8,7 +8,7 @@ reviewed: no
 ---
 Bob's dashboard Convex Solids Scorecard: what the Convex Solids Physics build measures about itself. Version and date 2026-10-09 [S368](../sources/S368-convex-solids-scorecard-summary.md). Its `links:` line names no live Netlify address [S368](../sources/S368-convex-solids-scorecard-summary.md).
 
-**A caution about its source.** The page ships no technical summary. [S368](../sources/S368-convex-solids-scorecard-summary.md) was written by Claude on 18 November 2026 from the page, with nothing rerun, and Bob has not yet read it (Q116).
+**A caution about its source.** The page ships no technical summary. [S368](../sources/S368-convex-solids-scorecard-summary.md) was written by Claude on 18 November 2026 from the page, with nothing rerun, and Bob marked it reviewed on 18 November 2026 (Q116, settled).
 
 **What the summary says** [S368](../sources/S368-convex-solids-scorecard-summary.md)
 - A one-page dashboard about Convex Solids Physics v4.60, a 3D physics app of every convex polyhedron with regular faces. Every figure was read out of the running app, not written down beside it: 104 engine controls (91 pass, 13 reproduced limitations, 0 fail), a catalogue of 239 solids, the file's own size and surface, frame rates, the demo film and 13 defects closed in the session. Not a water-modeling app.

@@ -8,7 +8,7 @@ reviewed: no
 ---
 Bob's app The Rational Limit: Q = CiA as the steady state a shallow-water simulation settles to. Version 1.0, 2026-10-12 [S329](../sources/S329-the-rational-limit-summary.md). Its `links:` line names no live Netlify address [S329](../sources/S329-the-rational-limit-summary.md).
 
-**A caution about its source.** The page ships no technical summary. [S329](../sources/S329-the-rational-limit-summary.md) was written by Claude on 18 November 2026 from the page, with nothing rerun, and Bob has not yet read it (Q116).
+**A caution about its source.** The page ships no technical summary. [S329](../sources/S329-the-rational-limit-summary.md) was written by Claude on 18 November 2026 from the page, with nothing rerun, and Bob marked it reviewed on 18 November 2026 (Q116, settled).
 
 **What the summary says** [S329](../sources/S329-the-rational-limit-summary.md)
 - A worked proof of Bob's claim (October 2026) that the rational method is "a limiting case, not a competitor": hold steady rain on a plane for at least the time of concentration and every model, from the full shallow-water equations to SWMM's nonlinear reservoir, ends on Q = (i - f)A = CiA. Continuity alone gives the answer; momentum only decides how long the plane takes to get there.

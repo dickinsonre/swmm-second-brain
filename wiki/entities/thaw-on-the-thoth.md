@@ -8,7 +8,7 @@ reviewed: no
 ---
 Bob's document Thaw on the Thoth: a story of two boys, one Martian canal and the spring thaw of 2097. Version and date 2026-10-21 [S308](../sources/S308-thaw-on-the-thoth-summary.md). Its `links:` line names no live Netlify address [S308](../sources/S308-thaw-on-the-thoth-summary.md).
 
-**A caution about its source.** The page ships no technical summary. [S308](../sources/S308-thaw-on-the-thoth-summary.md) was written by Claude on 18 November 2026 from the page, with nothing rerun, and Bob has not yet read it (Q116).
+**A caution about its source.** The page ships no technical summary. [S308](../sources/S308-thaw-on-the-thoth-summary.md) was written by Claude on 18 November 2026 from the page, with nothing rerun, and Bob marked it reviewed on 18 November 2026 (Q116, settled).
 
 **What the summary says** [S308](../sources/S308-thaw-on-the-thoth-summary.md)
 - A short story in seven chapters and an afterword, in the spirit of Robert A. Heinlein's Red Planet (1949). Two boys at a Mars colony check the Canal Company's SWMM forecast for a thaw on an invented canal, the Thoth, and find that gravity hides in Manning's n and the weir coefficient. The people, the colony and the night of the thaw are invented. The canal model, the two engines and every number on every chart come from runs of EPA SWMM 5.2.4 and swmm524-fvlink rebuilt with Mars gravity, and the afterword sorts one from the other.

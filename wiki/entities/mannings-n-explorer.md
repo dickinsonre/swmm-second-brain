@@ -8,7 +8,7 @@ reviewed: no
 ---
 Bob's app Manning's n Explorer: how Manning's n travels between solvers. Version 3.1, 2026-10-24 [S320](../sources/S320-mannings-n-explorer-summary.md). Its `links:` line names no live Netlify address [S320](../sources/S320-mannings-n-explorer-summary.md).
 
-**A caution about its source.** The page ships no technical summary. [S320](../sources/S320-mannings-n-explorer-summary.md) was written by Claude on 18 November 2026 from the page, with nothing rerun, and Bob has not yet read it (Q116).
+**A caution about its source.** The page ships no technical summary. [S320](../sources/S320-mannings-n-explorer-summary.md) was written by Claude on 18 November 2026 from the page, with nothing rerun, and Bob marked it reviewed on 18 November 2026 (Q116, settled).
 
 **What the summary says** [S320](../sources/S320-mannings-n-explorer-summary.md)
 - A workbench for one idea: a calibrated Manning's n is the number that made one program, grid and time step reproduce one set of high-water marks, so copying it into another solver can count some losses twice. It lines up thirty solvers by what they resolve (turbulence, sub-grid topography, numerical diffusion), gives a starting-point estimate for transferring n without calibration data, routes a flood wave, and walks through calibration. Single-file edition of Bob's Lovable app.

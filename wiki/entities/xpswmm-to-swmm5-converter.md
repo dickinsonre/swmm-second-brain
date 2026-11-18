@@ -8,7 +8,7 @@ reviewed: no
 ---
 Bob's app XPSWMM to SWMM5 Converter: reads XPSWMM .xp cards and writes an EPA SWMM 5.2 .inp, in the browser. Version 1.0.0, 2026-10-25 [S321](../sources/S321-xpswmm-to-swmm5-converter-summary.md). Its `links:` line names no live Netlify address [S321](../sources/S321-xpswmm-to-swmm5-converter-summary.md).
 
-**A caution about its source.** The page ships no technical summary. [S321](../sources/S321-xpswmm-to-swmm5-converter-summary.md) was written by Claude on 18 November 2026 from the page, with nothing rerun, and Bob has not yet read it (Q116).
+**A caution about its source.** The page ships no technical summary. [S321](../sources/S321-xpswmm-to-swmm5-converter-summary.md) was written by Claude on 18 November 2026 from the page, with nothing rerun, and Bob marked it reviewed on 18 November 2026 (Q116, settled).
 
 **What the summary says** [S321](../sources/S321-xpswmm-to-swmm5-converter-summary.md)
 - A single-file edition of the Lovable project xpswmm-swmm5-converter (live as xp-to-swmm-bridge.lovable.app). It reads XPSWMM .xp card files and writes EPA SWMM 5.2 .inp files, on four pages: Convert, Card Reader, Batch and Make .xp. Parsing happens on your machine; only Batch from GitHub asks GitHub's public API for a folder listing.

@@ -8,7 +8,7 @@ reviewed: no
 ---
 Bob's app Hydro City Craft: OpenStreetMap streets and water built in Minecraft blocks. Version 1.1, 2026-10-26 [S363](../sources/S363-hydro-city-craft-summary.md). Its `links:` line names no live Netlify address [S363](../sources/S363-hydro-city-craft-summary.md).
 
-**A caution about its source.** The page ships no technical summary. [S363](../sources/S363-hydro-city-craft-summary.md) was written by Claude on 18 November 2026 from the page, with nothing rerun, and Bob has not yet read it (Q116).
+**A caution about its source.** The page ships no technical summary. [S363](../sources/S363-hydro-city-craft-summary.md) was written by Claude on 18 November 2026 from the page, with nothing rerun, and Bob marked it reviewed on 18 November 2026 (Q116, settled).
 
 **What the summary says** [S363](../sources/S363-hydro-city-craft-summary.md)
 - Turns a box of the real world from OpenStreetMap into a Minecraft world: buildings extruded from their footprints, streets painted by class, rivers, canals and lakes filled in. View it in 3D, click a building to see where its height came from, raise the water, and take it into the game as a WorldEdit schematic (Sponge Schematic version 2, Java Edition 1.20.4) or a ready-to-install data pack.

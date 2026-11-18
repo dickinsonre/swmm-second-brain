@@ -8,7 +8,7 @@ reviewed: no
 ---
 Bob's app Bernoulli Flow in a Pipe: two gauges, one pipe, three friction laws, checked against EPANET 2.2 and SWMM 5.2.4. Version 2.2, 2026-11-03 [S319](../sources/S319-bernoulli-flow-in-a-pipe-summary.md). Its `links:` line names no live Netlify address [S319](../sources/S319-bernoulli-flow-in-a-pipe-summary.md).
 
-**A caution about its source.** The page ships no technical summary. [S319](../sources/S319-bernoulli-flow-in-a-pipe-summary.md) was written by Claude on 18 November 2026 from the page, with nothing rerun, and Bob has not yet read it (Q116).
+**A caution about its source.** The page ships no technical summary. [S319](../sources/S319-bernoulli-flow-in-a-pipe-summary.md) was written by Claude on 18 November 2026 from the page, with nothing rerun, and Bob marked it reviewed on 18 November 2026 (Q116, settled).
 
 **What the summary says** [S319](../sources/S319-bernoulli-flow-in-a-pipe-summary.md)
 - A one-pipe lab: given the pressure at both ends, how much flows? It solves Bernoulli's energy balance with Darcy-Weisbach (Colebrook or Swamee-Jain), Hazen-Williams or Manning, shows velocity, flow, Reynolds number and an energy ledger that must close, and writes the same pipe as SWMM 5 and EPANET .inp files.

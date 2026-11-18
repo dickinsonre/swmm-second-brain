@@ -8,7 +8,7 @@ reviewed: no
 ---
 Bob's app Goyen Thesis Explorer: a reader and evidence bench for Allan Goyen's 2000 thesis on urban rainfall-runoff. Version 2.1.0, 2026-10-22 [S344](../sources/S344-goyen-thesis-explorer-summary.md). Its `links:` line names no live Netlify address [S344](../sources/S344-goyen-thesis-explorer-summary.md).
 
-**A caution about its source.** The page ships no technical summary. [S344](../sources/S344-goyen-thesis-explorer-summary.md) was written by Claude on 18 November 2026 from the page, with nothing rerun, and Bob has not yet read it (Q116).
+**A caution about its source.** The page ships no technical summary. [S344](../sources/S344-goyen-thesis-explorer-summary.md) was written by Claude on 18 November 2026 from the page, with nothing rerun, and Bob marked it reviewed on 18 November 2026 (Q116, settled).
 
 **What the summary says** [S344](../sources/S344-goyen-thesis-explorer-summary.md)
 - A reader and evidence bench for one document, Allan Goyen's PhD thesis Spatial and Temporal Effects on Urban Rainfall/Runoff Modelling (University of Technology, Sydney, April 2000), on the Giralang catchment and process-tree modelling. It rebuilds the chapters, page numbers and figure and table lists from a 22,703-line Markdown file, charts 14 datasets lifted from its tables, draws the network, and exports SWMM5 .inp files of it.

@@ -8,7 +8,7 @@ reviewed: no
 ---
 Bob's app WNTR Toolkit: resilience ensembles for EPANET networks, from real WNTR runs on Net3. Version 1.0.0, 2026-10-25 [S318](../sources/S318-wntr-toolkit-summary.md). Its `links:` line names no live Netlify address [S318](../sources/S318-wntr-toolkit-summary.md).
 
-**A caution about its source.** The page ships no technical summary. [S318](../sources/S318-wntr-toolkit-summary.md) was written by Claude on 18 November 2026 from the page, with nothing rerun, and Bob has not yet read it (Q116).
+**A caution about its source.** The page ships no technical summary. [S318](../sources/S318-wntr-toolkit-summary.md) was written by Claude on 18 November 2026 from the page, with nothing rerun, and Bob marked it reviewed on 18 November 2026 (Q116, settled).
 
 **What the summary says** [S318](../sources/S318-wntr-toolkit-summary.md)
 - A single-file rebuild of Bob's Lovable WNTR Toolkit. The landing page is kept and corrected; the Explorer, which drew synthetic curves on an invented "Net3-like" network, now shows WNTR 1.5.0 results for the real Net3 model (92 junctions, 117 pipes, 2 pumps, 3 tanks, 2 reservoirs), with criticality, ensemble and timing studies and a fixed toolkit (runner, notebook and guide) to run on your own model.

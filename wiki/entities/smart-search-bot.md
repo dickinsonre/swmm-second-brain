@@ -8,7 +8,7 @@ reviewed: no
 ---
 Bob's app Smart Search Bot: answer a SWMM5 question, then check every sentence. Version 1.0, 2026-10-25 [S350](../sources/S350-smart-search-bot-summary.md). Its `links:` line names no live Netlify address [S350](../sources/S350-smart-search-bot-summary.md).
 
-**A caution about its source.** The page ships no technical summary. [S350](../sources/S350-smart-search-bot-summary.md) was written by Claude on 18 November 2026 from the page, with nothing rerun, and Bob has not yet read it (Q116).
+**A caution about its source.** The page ships no technical summary. [S350](../sources/S350-smart-search-bot-summary.md) was written by Claude on 18 November 2026 from the page, with nothing rerun, and Bob marked it reviewed on 18 November 2026 (Q116, settled).
 
 **What the summary says** [S350](../sources/S350-smart-search-bot-summary.md)
 - A one-file rebuild of Bob's Lovable app BobSWMM Auto-Research. It answers a SWMM5 question in four stages (plan, retrieve, synthesize, validate) and marks every sentence of the result by what backs it. Its library is 1,621 passages cut from the EPA SWMM 5.2.4 engine source (at tag v5.2.4, 7952ca8) and PySWMM (commit 97cb36f), each keeping its file and lines.

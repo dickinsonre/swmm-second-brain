@@ -8,7 +8,7 @@ reviewed: no
 ---
 Bob's app LEGO Water Flow Lab: will a molecule built from LEGO parts go down a pipe?. Version 1.0, 2026-10 [S364](../sources/S364-lego-water-flow-lab-summary.md). Its `links:` line names no live Netlify address [S364](../sources/S364-lego-water-flow-lab-summary.md).
 
-**A caution about its source.** The page ships no technical summary. [S364](../sources/S364-lego-water-flow-lab-summary.md) was written by Claude on 18 November 2026 from the page, with nothing rerun, and Bob has not yet read it (Q116).
+**A caution about its source.** The page ships no technical summary. [S364](../sources/S364-lego-water-flow-lab-summary.md) was written by Claude on 18 November 2026 from the page, with nothing rerun, and Bob marked it reviewed on 18 November 2026 (Q116, settled).
 
 **What the summary says** [S364](../sources/S364-lego-water-flow-lab-summary.md)
 - A playful lab that asks whether a molecule built from LEGO parts fits down a household pipe, with a Pipe Fit Tester, a Flow Simulator with Auto-Test, sound and reassembly, a parts list, an assembly guide and a specs table. A single-file edition of Bob's Lovable project; it adds an Engineer's switch with real pipe tables (Schedule 40 steel, copper Type L, PEX SDR 9) and three fit rules, and an Audit tab.

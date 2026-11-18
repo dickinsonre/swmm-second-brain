@@ -6,7 +6,7 @@ sources: [S315, S316, S317, S318, S319, S320, S321, S322, S323, S324, S325, S326
 tags: [apps, epanet, swmm5, conversion, verification]
 reviewed: no
 ---
-Sixteen summaries that Bob uploaded on 18 November 2026 on EPANET and pressure pipes, converters between SWMM generations, and tools that read what SWMM writes. Three ship with their apps ([S315](../sources/S315-epanet-for-swmm5-experts-app-md.md), [S323](../sources/S323-extran3-mograph-app-md.md), [S324](../sources/S324-swmm1-engine-mograph-app-md.md)); thirteen were written by Claude from the published pages with nothing rerun (Q116).
+Sixteen summaries that Bob uploaded on 18 November 2026 on EPANET and pressure pipes, converters between SWMM generations, and tools that read what SWMM writes. Three ship with their apps ([S315](../sources/S315-epanet-for-swmm5-experts-app-md.md), [S323](../sources/S323-extran3-mograph-app-md.md), [S324](../sources/S324-swmm1-engine-mograph-app-md.md)); thirteen were written by Claude from the published pages with nothing rerun; Bob marked all of them reviewed on 18 November 2026 (Q116, settled).
 
 | App | Version | Date | Source |
 |---|---|---|---|

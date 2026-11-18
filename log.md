@@ -861,3 +861,7 @@ Bob answered Q117 in a Claude session: "call thr, boyjh = EPANET for SWMM5 Exper
 ## [2026-11-18] lint | New check: GitHub links that name a branch instead of a commit
 
 At Bob's request, `tools/lint.py` now warns when a wiki page links a GitHub file or folder by branch (`/blob/main/`, `/tree/van-genuchten/`, `raw.githubusercontent.com/.../master/`) instead of by commit. A commit id or a version tag (v5.2.4) passes; links to a whole repository, `log.md` and `raw/` are not checked. First run: 0 errors, 2 warnings, both the `van-genuchten` branch of swmm524-perched, on the swmm524-perched entity page and on S203, as the raw file gives it. The 45 links to `main` in `raw/` stay as their sources wrote them.
+
+## [2026-11-18] lint | Q116 settled by Bob's review
+
+Bob marked all 68 summaries of Q116 `reviewed: 2026-11-18` (commit 9c6b794) and agreed to close the question. Q116 ticked. The 67 entity pages whose caution said "Bob has not yet read it (Q116)" now say he marked it reviewed on 18 November 2026; the five concept pages of the S300 to S375 ingest say the same. The source pages keep their "How it was written" text, which describes the summaries as written; their `reviewed:` lines give the current state.

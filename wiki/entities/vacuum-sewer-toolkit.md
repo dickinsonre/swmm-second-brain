@@ -8,7 +8,7 @@ reviewed: no
 ---
 Bob's app Vacuum Sewer Toolkit: EPA 1991 vacuum sewer design and InfoWorks ICM Ruby, corrected. Version 1.0, 2026-10-25 [S340](../sources/S340-vacuum-sewer-toolkit-summary.md). Its `links:` line names no live Netlify address [S340](../sources/S340-vacuum-sewer-toolkit-summary.md).
 
-**A caution about its source.** The page ships no technical summary. [S340](../sources/S340-vacuum-sewer-toolkit-summary.md) was written by Claude on 18 November 2026 from the page, with nothing rerun, and Bob has not yet read it (Q116).
+**A caution about its source.** The page ships no technical summary. [S340](../sources/S340-vacuum-sewer-toolkit-summary.md) was written by Claude on 18 November 2026 from the page, with nothing rerun, and Bob marked it reviewed on 18 November 2026 (Q116, settled).
 
 **What the summary says** [S340](../sources/S340-vacuum-sewer-toolkit-summary.md)
 - A single-file rebuild of Bob's Lovable app vcruby (126 files, 27 feature screens, 19,586 lines of TypeScript and 508 of Ruby by its own count): vacuum sewer design after the EPA 1991 manual and published state criteria, calculators, diagrams, components, comparisons with gravity, costs, and InfoWorks ICM Ruby scripts. The three ICM scripts are replaced by four corrected ones.

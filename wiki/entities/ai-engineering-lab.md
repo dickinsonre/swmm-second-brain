@@ -8,7 +8,7 @@ reviewed: no
 ---
 Bob's app AI Engineering Lab: twenty modules built from scratch, every one answering SWMM questions. Version 1.0.0, 2026-10-19 [S347](../sources/S347-ai-engineering-lab-summary.md). Its `links:` line names no live Netlify address [S347](../sources/S347-ai-engineering-lab-summary.md).
 
-**A caution about its source.** The page ships no technical summary. [S347](../sources/S347-ai-engineering-lab-summary.md) was written by Claude on 18 November 2026 from the page, with nothing rerun, and Bob has not yet read it (Q116).
+**A caution about its source.** The page ships no technical summary. [S347](../sources/S347-ai-engineering-lab-summary.md) was written by Claude on 18 November 2026 from the page, with nothing rerun, and Bob marked it reviewed on 18 November 2026 (Q116, settled).
 
 **What the summary says** [S347](../sources/S347-ai-engineering-lab-summary.md)
 - A twenty-item AI engineering learning path, from gradients and tokenizers to agents, security and deployment, done inside one web page with nothing borrowed. Every model is written in plain JavaScript and trained or computed in your browser, and every module works on SWMM: the text it reads is SWMM manual text, the questions are SWMM questions, and the arithmetic is Manning's equation and the rational method in feet, acres and cfs.

@@ -8,7 +8,7 @@ reviewed: no
 ---
 Bob's app ITM_SWMM Repository Map: a map of the fork that fits the Illinois Transient Model into the EPA SWMM 5 GUI. Version 1.0, 2026-10 [S314](../sources/S314-itm-swmm-repository-map-summary.md). Its `links:` line names no live Netlify address [S314](../sources/S314-itm-swmm-repository-map-summary.md).
 
-**A caution about its source.** The page ships no technical summary. [S314](../sources/S314-itm-swmm-repository-map-summary.md) was written by Claude on 18 November 2026 from the page, with nothing rerun, and Bob has not yet read it (Q116).
+**A caution about its source.** The page ships no technical summary. [S314](../sources/S314-itm-swmm-repository-map-summary.md) was written by Claude on 18 November 2026 from the page, with nothing rerun, and Bob marked it reviewed on 18 November 2026 (Q116, settled).
 
 **What the summary says** [S314](../sources/S314-itm-swmm-repository-map-summary.md)
 - A single-file rebuild of Bob's Lovable repository viewer, aimed at one repository: SWMMBobSWMM6/ITM_SWMM, a fork of Arturo S. Leon's ITM_SWMM, which fits the Illinois Transient Model (a finite-volume code for pipes that go from dry to full to pressurized in seconds) into the EPA SWMM 5 Delphi GUI as an optional routing engine. The page carries the repository inside itself (257 files) so it works in the Claude viewer, where the GitHub API cannot be reached.

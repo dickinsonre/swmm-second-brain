@@ -8,7 +8,7 @@ reviewed: no
 ---
 Bob's app NA Rain Grid: NOAA Atlas 14 rainfall frequency into IDF curves, design storms and SWMM 5 input. Version 2.0.0, 2026-10-25 [S330](../sources/S330-na-rain-grid-summary.md). Its `links:` line names no live Netlify address [S330](../sources/S330-na-rain-grid-summary.md).
 
-**A caution about its source.** The page ships no technical summary. [S330](../sources/S330-na-rain-grid-summary.md) was written by Claude on 18 November 2026 from the page, with nothing rerun, and Bob has not yet read it (Q116).
+**A caution about its source.** The page ships no technical summary. [S330](../sources/S330-na-rain-grid-summary.md) was written by Claude on 18 November 2026 from the page, with nothing rerun, and Bob marked it reviewed on 18 November 2026 (Q116, settled).
 
 **What the summary says** [S330](../sources/S330-na-rain-grid-summary.md)
 - Turns NOAA Atlas 14 precipitation-frequency estimates into what a stormwater modeler needs: IDF curves, design storms (NRCS Types I, IA, II, III, alternating block, Huff and others) and SWMM 5 input. One HTML file with no server or keys, rebuilt from Bob's Lovable app so that every rainfall number on screen comes from a 598-station Atlas 14 snapshot.

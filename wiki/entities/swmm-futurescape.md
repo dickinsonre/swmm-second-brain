@@ -8,7 +8,7 @@ reviewed: no
 ---
 Bob's app SWMM Futurescape: a design-fiction archive of EPA SWMM in 2030, with every claim labelled. Version 2.0, 2026-10-25 [S357](../sources/S357-swmm-futurescape-summary.md). Its `links:` line names no live Netlify address [S357](../sources/S357-swmm-futurescape-summary.md).
 
-**A caution about its source.** The page ships no technical summary. [S357](../sources/S357-swmm-futurescape-summary.md) was written by Claude on 18 November 2026 from the page, with nothing rerun, and Bob has not yet read it (Q116).
+**A caution about its source.** The page ships no technical summary. [S357](../sources/S357-swmm-futurescape-summary.md) was written by Claude on 18 November 2026 from the page, with nothing rerun, and Bob marked it reviewed on 18 November 2026 (Q116, settled).
 
 **What the summary says** [S357](../sources/S357-swmm-futurescape-summary.md)
 - A design-fiction archive: the 2024 encyclopedia page on EPA SWMM, four imagined 2030 versions of it (AI-native, climate-resilient, digital twin, open science), and the counter-scenarios they leave out. Every claim carries a label saying whether you can check it today. A single-file rebuild of Bob's Lovable project; the scenario text was written 23 July 2026, which stays the factual cutoff for scenarios A to D.

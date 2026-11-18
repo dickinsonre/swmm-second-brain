@@ -8,7 +8,7 @@ reviewed: no
 ---
 Bob's app SWMM5 Interactive Report Viewer: the .rpt, .inp and .out of an EPA SWMM 5 run, read and checked. Version 2.1, 2026-10-31 [S325](../sources/S325-swmm5-interactive-report-viewer-summary.md). Its `links:` line names no live Netlify address [S325](../sources/S325-swmm5-interactive-report-viewer-summary.md).
 
-**A caution about its source.** The page ships no technical summary. [S325](../sources/S325-swmm5-interactive-report-viewer-summary.md) was written by Claude on 18 November 2026 from the page, with nothing rerun, and Bob has not yet read it (Q116).
+**A caution about its source.** The page ships no technical summary. [S325](../sources/S325-swmm5-interactive-report-viewer-summary.md) was written by Claude on 18 November 2026 from the page, with nothing rerun, and Bob marked it reviewed on 18 November 2026 (Q116, settled).
 
 **What the summary says** [S325](../sources/S325-swmm5-interactive-report-viewer-summary.md)
 - Reads the three files an EPA SWMM 5 run leaves behind: the text report (.rpt, required), the input file (.inp, which adds the map, rim elevations, pipe offsets and pollutant names) and the binary output (.out, which adds time series and a timed map). Interactive grids, joined sections, graphs, a profile and a map.

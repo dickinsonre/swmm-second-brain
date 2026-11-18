@@ -8,7 +8,7 @@ reviewed: no
 ---
 Bob's app St. Venant Term Budget: does friction dominate? Per-link momentum terms, read from a SWMM .out file. Version 1.0, 2026-10-05 [S301](../sources/S301-st-venant-term-budget-summary.md). Its `links:` line names no live Netlify address [S301](../sources/S301-st-venant-term-budget-summary.md).
 
-**A caution about its source.** The page ships no technical summary. [S301](../sources/S301-st-venant-term-budget-summary.md) was written by Claude on 18 November 2026 from the page, with nothing rerun, and Bob has not yet read it (Q116).
+**A caution about its source.** The page ships no technical summary. [S301](../sources/S301-st-venant-term-budget-summary.md) was written by Claude on 18 November 2026 from the page, with nothing rerun, and Bob marked it reviewed on 18 November 2026 (Q116, settled).
 
 **What the summary says** [S301](../sources/S301-st-venant-term-budget-summary.md)
 - Load a SWMM model set (.inp, .out, .rpt) and the app splits each conduit's momentum equation into bed slope, pressure gradient, friction, the two inertia terms and local losses, each as a slope in ft/ft, rebuilt from what the .out file saved. It rolls them up into a Friction Dominance Index: the share of conveyed volume that moved with friction matching bed slope. A second run can be loaded to see where two engines or two option sets differ.

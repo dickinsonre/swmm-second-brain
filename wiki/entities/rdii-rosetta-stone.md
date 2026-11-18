@@ -8,7 +8,7 @@ reviewed: no
 ---
 Bob's app RDII Rosetta Stone: InfoSWMM RDII mapped to EPA SWMM5 and InfoWorks ICM, with live RTK math. Version 1.0, 2026-10-21 [S332](../sources/S332-rdii-rosetta-stone-summary.md). Its `links:` line names no live Netlify address [S332](../sources/S332-rdii-rosetta-stone-summary.md).
 
-**A caution about its source.** The page ships no technical summary. [S332](../sources/S332-rdii-rosetta-stone-summary.md) was written by Claude on 18 November 2026 from the page, with nothing rerun, and Bob has not yet read it (Q116).
+**A caution about its source.** The page ships no technical summary. [S332](../sources/S332-rdii-rosetta-stone-summary.md) was written by Claude on 18 November 2026 from the page, with nothing rerun, and Bob marked it reviewed on 18 November 2026 (Q116, settled).
 
 **What the summary says** [S332](../sources/S332-rdii-rosetta-stone-summary.md)
 - For InfoSWMM users moving RDII to EPA SWMM5 or InfoWorks ICM: every concept, field name and workflow mapped across the three, with live RTK unit-hydrograph math, a storm-response view in cfs, a runnable SWMM5 .inp export, CSV exports and a Verify tab. A single-file rebuild of Bob's Lovable project; RTK in SWMM5's rdii.c was coded by Bob during the EPA SWMM5 CRADA.

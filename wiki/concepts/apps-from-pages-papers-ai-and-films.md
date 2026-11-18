@@ -6,7 +6,7 @@ sources: [S343, S344, S345, S346, S347, S348, S349, S350, S351, S352, S353, S354
 tags: [apps, papers, ai, films]
 reviewed: no
 ---
-Seventeen summaries that Bob uploaded on 18 November 2026 on the modeling literature, AI tools that check their own answers, and films and pages about Bob's work. Three ship with their apps ([S346](../sources/S346-catching-huber-app-md.md), [S354](../sources/S354-online-library-mograph-app-md.md), [S355](../sources/S355-swmm-second-brain-mograph-app-md.md)); fourteen were written by Claude from the published pages with nothing rerun (Q116).
+Seventeen summaries that Bob uploaded on 18 November 2026 on the modeling literature, AI tools that check their own answers, and films and pages about Bob's work. Three ship with their apps ([S346](../sources/S346-catching-huber-app-md.md), [S354](../sources/S354-online-library-mograph-app-md.md), [S355](../sources/S355-swmm-second-brain-mograph-app-md.md)); fourteen were written by Claude from the published pages with nothing rerun; Bob marked all of them reviewed on 18 November 2026 (Q116, settled).
 
 | App | Version | Date | Source |
 |---|---|---|---|

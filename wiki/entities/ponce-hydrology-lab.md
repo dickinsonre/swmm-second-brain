@@ -8,7 +8,7 @@ reviewed: no
 ---
 Bob's app Ponce Hydrology Lab: thirty-six hydrology and hydraulics modules after Victor Miguel Ponce's web library. Version 1.2, 2026-10-22 [S361](../sources/S361-ponce-hydrology-lab-summary.md). Its `links:` line names no live Netlify address [S361](../sources/S361-ponce-hydrology-lab-summary.md).
 
-**A caution about its source.** The page ships no technical summary. [S361](../sources/S361-ponce-hydrology-lab-summary.md) was written by Claude on 18 November 2026 from the page, with nothing rerun, and Bob has not yet read it (Q116).
+**A caution about its source.** The page ships no technical summary. [S361](../sources/S361-ponce-hydrology-lab-summary.md) was written by Claude on 18 November 2026 from the page, with nothing rerun, and Bob marked it reviewed on 18 November 2026 (Q116, settled).
 
 **What the summary says** [S361](../sources/S361-ponce-hydrology-lab-summary.md)
 - Thirty-six hands-on hydrology and hydraulics modules in one file, built on the web hydrology library of Prof. Victor Miguel Ponce at San Diego State University: move a slider and the equation, the numbers and the chart answer at once. An independent adaptation, from Bob's Lovable project aquifer-quest-zone, and a teaching instrument, not a design code.

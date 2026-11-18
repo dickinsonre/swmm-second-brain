@@ -8,7 +8,7 @@ reviewed: no
 ---
 Bob's app ICWMM Insights: Robert Dickinson's ICWMM papers and the Bill James similarity score. Version 1.0, 2026-10-24 [S345](../sources/S345-icwmm-insights-summary.md). Its `links:` line names no live Netlify address [S345](../sources/S345-icwmm-insights-summary.md).
 
-**A caution about its source.** The page ships no technical summary. [S345](../sources/S345-icwmm-insights-summary.md) was written by Claude on 18 November 2026 from the page, with nothing rerun, and Bob has not yet read it (Q116).
+**A caution about its source.** The page ships no technical summary. [S345](../sources/S345-icwmm-insights-summary.md) was written by Claude on 18 November 2026 from the page, with nothing rerun, and Bob marked it reviewed on 18 November 2026 (Q116, settled).
 
 **What the summary says** [S345](../sources/S345-icwmm-insights-summary.md)
 - A small site about Bob's papers at the International Conference on Water Management Modeling, built around an idea from baseball: score two model runs by starting at 1,000 and subtracting for every difference. It has a calculator for that score, Bill James's baseball original for comparison, a quiz, sample charts and an archive of his ICWMM and journal papers.

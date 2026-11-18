@@ -8,7 +8,7 @@ reviewed: no
 ---
 Bob's app Inventing Memory: a Hopfield forgetting machine that remembers SWMM5 cross-section shapes. Version 1.0, 2026-10-25 [S366](../sources/S366-inventing-memory-summary.md). Its `links:` line names no live Netlify address [S366](../sources/S366-inventing-memory-summary.md).
 
-**A caution about its source.** The page ships no technical summary. [S366](../sources/S366-inventing-memory-summary.md) was written by Claude on 18 November 2026 from the page, with nothing rerun, and Bob has not yet read it (Q116).
+**A caution about its source.** The page ships no technical summary. [S366](../sources/S366-inventing-memory-summary.md) was written by Claude on 18 November 2026 from the page, with nothing rerun, and Bob marked it reviewed on 18 November 2026 (Q116, settled).
 
 **What the summary says** [S366](../sources/S366-inventing-memory-summary.md)
 - A single-file edition of Bob's Lovable experiment: a Hopfield network on 144 cells taught 14 glyphs of SWMM5 cross-section shapes, made to forget (every weight shrinks and picks up noise each tick), kicked with damaged glyphs, and judged on whether it recalls a taught shape or invents a new one. A second page explores the properties of all 19 shapes against EPA SWMM 5.2.4 reference curves ported from xsect.c.

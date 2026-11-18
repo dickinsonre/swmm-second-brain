@@ -8,7 +8,7 @@ reviewed: no
 ---
 Bob's app Geo Flow Ruby: household points to subcatchment population to SWMM dry-weather flow. Version and date 2026-10-21 [S337](../sources/S337-geo-flow-ruby-summary.md). Its `links:` line names no live Netlify address [S337](../sources/S337-geo-flow-ruby-summary.md).
 
-**A caution about its source.** The page ships no technical summary. [S337](../sources/S337-geo-flow-ruby-summary.md) was written by Claude on 18 November 2026 from the page, with nothing rerun, and Bob has not yet read it (Q116).
+**A caution about its source.** The page ships no technical summary. [S337](../sources/S337-geo-flow-ruby-summary.md) was written by Claude on 18 November 2026 from the page, with nothing rerun, and Bob marked it reviewed on 18 November 2026 (Q116, settled).
 
 **What the summary says** [S337](../sources/S337-geo-flow-ruby-summary.md)
 - An earlier single-file rebuild of SWMMEnablement/geo-flow-ruby (see also Geo Flow Population Calculator, a later and larger rebuild of the same project). It assigns household points to SWMM subcatchments with the ray-crossing test, sums persons, routes them to the node each subcatchment drains to, and writes dry-weather FLOW baselines into [DWF]. Files never leave the page.

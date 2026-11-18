@@ -8,7 +8,7 @@ reviewed: no
 ---
 Bob's app Topology Surface Explorer: surfaces built by gluing the edges of a polygon. Version and date 2026-10-28 [S375](../sources/S375-topology-surface-explorer-summary.md). Its `links:` line names no live Netlify address [S375](../sources/S375-topology-surface-explorer-summary.md).
 
-**A caution about its source.** The page ships no technical summary. [S375](../sources/S375-topology-surface-explorer-summary.md) was written by Claude on 18 November 2026 from the page, with nothing rerun, and Bob has not yet read it (Q116).
+**A caution about its source.** The page ships no technical summary. [S375](../sources/S375-topology-surface-explorer-summary.md) was written by Claude on 18 November 2026 from the page, with nothing rerun, and Bob marked it reviewed on 18 November 2026 (Q116, settled).
 
 **What the summary says** [S375](../sources/S375-topology-surface-explorer-summary.md)
 - An interactive explorer for surfaces built by gluing the edges of a polygon. Type a gluing word such as aba'b' and the app names the surface, computes its Euler characteristic, orientability and boundary count, reduces the word to normal form step by step, and shows the surface as a polygon, a 3D model, a hyperbolic tiling, a walk and a kart race. Not a water-modeling app.
