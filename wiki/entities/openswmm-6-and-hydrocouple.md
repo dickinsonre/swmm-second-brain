@@ -2,10 +2,10 @@
 title: OpenSWMM 6 and HydroCouple
 type: entity
 updated: 2026-11-17
-sources: [S02, S03, S04, S05, S21, S22, S23, S29, S59, S69, S72, S75, S80, S81, S87, S134, S135, S148, S151, S153, S154, S199]
+sources: [S02, S03, S04, S05, S21, S22, S23, S29, S59, S69, S72, S75, S80, S81, S87, S134, S135, S148, S151, S153, S154, S199, S224, S234, S232]
 tags: [swmm6, engine, hydrocouple]
 reviewed: 11/16/2026
-changed_after_review: "2026-11-17 (S192 to S202 ingest): one paragraph added at the end on the alpha tags (S199)"
+changed_after_review: "2026-11-17 (S192 to S202 ingest): one paragraph added at the end on the alpha tags (S199); 2026-11-17 (S224 to S242 ingest): a paragraph added near the end, headed Added 17 November 2026 (S224, S234, S232)"
 ---
 OpenSWMM 6 is the SWMM line developed at HydroCouple [S22](../sources/S22-li-ten-problems.md). Caleb Buahin is the lead developer of the HydroCouple platform [S21](../sources/S21-li-edition-56-swmm-history.md).
 
@@ -44,3 +44,5 @@ OpenSWMM 6 is the SWMM line developed at HydroCouple [S22](../sources/S22-li-ten
 **Added 15 November 2026: a browser app, and the license.** Bob's [OpenSWMM Engine (app)](openswmm-engine-app.md) runs the legacy SWMM engine of HydroCouple/OpenSWMMCore, branch `swmm6_rel`, in the browser, and calls the project MIT [S148](../sources/S148-openswmm-engine-app-replit-summary.md). Bob says the OpenSWMM license has moved away from MIT [S151](../sources/S151-note-openswmm-license-not-mit.md) (Q83). Later that evening the app's version 6.0.0-alpha.2 states Apache-2.0 for the engine and pins commit 87664bf of HydroCouple/OpenSWMMCore [S153](../sources/S153-openswmm-engine-app-alpha2-replit-summary.md), and the live page showed it [S154](../sources/S154-note-openswmm-engine-alpha2-published.md).
 
 **Added 17 November 2026: the release tags.** [Seven SWMM Engines](seven-swmm-engines.md) names the commits of four generations: v6.0.0-alpha.1 at 74ef6e27aa (26 May 2026), alpha.2 at 0df29948a4 (7 July), alpha.3 at 86c28a886e (11 August), where the finite-volume router arrives, and swmm6_rel at 3c30f1e6c2 (17 October), which reports 6.0.0-alpha.4 [S199](../sources/S199-seven-swmm-engines-summary.md). The translations above start from 88329d6 on the same branch, which swmm6-rust's README also calls alpha.4.
+
+**Added 17 November 2026, second batch.** Three apps from the second batch: [Conformal SWMM (app)](conformal-swmm.md) runs the legacy engine of the swmm6_rel branch, 5.3.0-beta.3 at commit 283da75e, in the browser [S224](../sources/S224-conformal-swmm-app-md.md); [SWMM Inlet Library (app)](swmm-inlet-library.md) writes [INLET_JUNCTIONS] for OpenSWMM 6.0.0-alpha.4 and compares its inlet capture with 5.2.4 [S234](../sources/S234-swmm-inlet-library-summary.md); [SWMM Rooms (app)](swmm-rooms.md) gives SWMM6 and HydroCouple features rooms of their own [S232](../sources/S232-swmm-rooms-summary.md).

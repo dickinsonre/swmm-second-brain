@@ -2,7 +2,7 @@
 title: Seven SWMM Engines (app)
 type: entity
 updated: 2026-11-17
-sources: [S199, S200, S81, S22]
+sources: [S199, S200, S81, S22, S225, S234, S240]
 tags: [apps, swmm5, swmm6, swmm4, extran, wasm, comparison]
 reviewed: no
 ---
@@ -33,5 +33,7 @@ The 73.9 cfs is also conduit C11's peak in EPA 5.2.4's Link Flow Summary, where 
 **What 1.2 changed.** Every .rpt and .out is now read by the [SWMM Results Kit](swmm-results-kit.md). On Bellinge, the old reader read 1,037 of 1,044 links; the kit reads all 1,044 [S199](../sources/S199-seven-swmm-engines-summary.md).
 
 **What it does not show.** "Agreement between engines is not correctness." No field data, and seven engines that share most of their ancestry can agree while all wrong. The Fortran engines run a converted deck and report from printed tables [S199](../sources/S199-seven-swmm-engines-summary.md).
+
+**Added 17 November 2026, second batch.** Its EPA 5.2.4 WebAssembly build is reused unchanged by three later apps: [Four Ways to K (app)](four-ways-to-k.md) [S225](../sources/S225-four-ways-to-k-summary.md), [SWMM Inlet Library (app)](swmm-inlet-library.md), which also carries its OpenSWMM 6.0.0-alpha.4 build [S234](../sources/S234-swmm-inlet-library-summary.md), and [Non-Prismatic Channel Lab (app)](non-prismatic-channel-lab.md) [S240](../sources/S240-non-prismatic-channel-lab-summary.md).
 
 **Related.** [OpenSWMM 6 solvers, measured](../concepts/openswmm6-solvers-measured.md), [Converting SWMM 5 models for older engines](../concepts/converting-swmm5-models-for-older-engines.md), [EXTRAN III Workbench (app)](extran-iii-workbench.md).

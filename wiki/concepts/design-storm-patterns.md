@@ -1,10 +1,11 @@
 ---
 title: Design storms and temporal patterns
 type: concept
-updated: 2026-11-14
-sources: [S62, S65, S66]
+updated: 2026-11-17
+sources: [S62, S65, S66, S237, S238]
 tags: [rainfall, design-storms, hydrology, method]
 reviewed: 2026-11-15
+changed_after_review: "2026-11-17 (S224 to S242 ingest): a paragraph added near the end, headed Added 17 November 2026 (S237, S238)"
 ---
 A design storm is a total depth and a shape. The shape, a hyetograph, says when in the storm the rain falls hardest, and it is the rainfall input a drainage model needs [S66](../sources/S66-li-design-storm-app-66-patterns.md). Bob's [World Rainfall Pattern Painter (app)](../entities/world-rainfall-pattern-painter.md) generates them [S65](../sources/S65-world-rainfall-pattern-painter-app-md.md).
 
@@ -40,3 +41,5 @@ The summary lists 37 method families in all, each with the file and line where t
 **Climate uplift.** The app multiplies the depth by a factor per scenario, from 1.00 to 1.40, in four sets (Singapore PUB, UK FEH, Australian ARR 2019, Canadian CDA); the factors are "transcribed from the app, not independently checked against the cited guidance" [S65](../sources/S65-world-rainfall-pattern-painter-app-md.md). The [Rules for Responsible Modeling (app)](../entities/rules-for-responsible-modeling-app.md) uses example factors of 1.0, 1.1, 1.2 and 1.3 and calls its own "illustrative, not climate projections" [S62](../sources/S62-rules-for-responsible-modeling-app-md.md). Neither app's factors have been checked against a published table (Q43 in [Open questions](../open-questions.md)).
 
 **Not in the sources yet.** The published tables themselves (TR-55, KOSTRA, FEH, ARR), any comparison of a design storm with a gauged one, and how SWMM 5 and ICM read the exported files.
+
+**Added 17 November 2026, second batch.** Two apps on the rainfall that goes into a model. [Quantile Mapping to SWMM5 / SWMM6 (app)](../entities/quantile-mapping-swmm.md) corrects forecast rain by quantile mapping and notes that SWMM5's only rainfall adjustment is one monthly multiplier [S237](../sources/S237-quantile-mapping-swmm-summary.md). [The Narrow Band (app)](../entities/narrow-band.md) finds that a narrow uncertainty band on a 200-year daily rain need not hold the true value: 28.8 % of records for MEVD against 75.8 % for GEV, on synthetic rain [S238](../sources/S238-narrow-band-app-md.md).

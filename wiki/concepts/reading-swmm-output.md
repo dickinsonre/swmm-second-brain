@@ -2,10 +2,10 @@
 title: Reading SWMM output
 type: concept
 updated: 2026-11-17
-sources: [S03, S10, S22, S60, S69, S72, S76, S77, S78, S157, S199, S200, S81, S215, S216, S211]
+sources: [S03, S10, S22, S60, S69, S72, S76, S77, S78, S157, S199, S200, S81, S215, S216, S211, S231, S228]
 tags: [swmm5, output, reporting]
 reviewed: 11/16/2026
-changed_after_review: "2026-11-17 (S192 to S202 ingest): one paragraph added at the end on the SWMM Results Kit (S199, S200); 2026-11-17 (S205 to S223 ingest): a paragraph added near the end, headed Added 17 November 2026 (S215, S216, S211)"
+changed_after_review: "2026-11-17 (S192 to S202 ingest): one paragraph added at the end on the SWMM Results Kit (S199, S200); 2026-11-17 (S205 to S223 ingest): a paragraph added near the end, headed Added 17 November 2026 (S215, S216, S211); 2026-11-17 (S224 to S242 ingest): a paragraph added near the end, headed Added 17 November 2026 (S231, S228)"
 ---
 A large share of "SWMM is wrong" questions come from comparing two honest numbers that measure different things [S22](../sources/S22-li-ten-problems.md).
 
@@ -41,3 +41,5 @@ See also [The missing specification](the-missing-specification.md) and [Continui
 **Added 17 November 2026: one reader for every app.** Bob's engine apps now read .rpt and .out files through one library, the [SWMM Results Kit](../entities/swmm-results-kit.md). Its .out reader matched EPA's swmm-output library on 96 corpus runs, 11,738,268 values with 0 wrong [S199](../sources/S199-seven-swmm-engines-summary.md). The reader it replaced in [Seven SWMM Engines](../entities/seven-swmm-engines.md) dropped the 7 DUMMY rows of Bellinge's 1,044 links and lost fields on weir, pump and orifice rows [S199](../sources/S199-seven-swmm-engines-summary.md). That app gives EPA 5.2.4's Example 1 outfall peak as 73.9 cfs [S199](../sources/S199-seven-swmm-engines-summary.md), the same number as conduit C11's Link Flow Summary peak above, while the Bellinge app gives 71.18 cfs, the .out figure [S81](../sources/S81-bellinge-summary.md). Which measure each engine's figure is, the two summaries do not say (Q100).
 
 **Added 17 November 2026.** Three apps read the .out and .rpt together. [SWMM Trouble Graph (app)](../entities/swmm-trouble-graph.md) parsed 3,558 corpus pairs and found the median .out peak 0.992 of the .rpt peak, because the .out samples at the report step [S215](../sources/S215-swmm-trouble-graph-summary.md). [SWMM Rhythm Detector (app)](../entities/swmm-rhythm-detector.md) found 89 of 138 corpus runs reporting every 15 minutes or longer, too coarse to see anything faster than half an hour [S216](../sources/S216-swmm-rhythm-detector-summary.md). [SWMM5 Self-Regeneration (app)](../entities/swmm5-self-regeneration.md) rebuilds an .inp from a .out alone [S211](../sources/S211-swmm5-self-regeneration-summary.md).
+
+**Added 17 November 2026, second batch.** Two more examples of the .out peak under the .rpt peak: 26.887 against 26.96 cfs for conduit C6 [S231](../sources/S231-swmmcraft-ultimate-app-md.md), and 219.30 against 219.66 cfs at an outfall [S228](../sources/S228-logic-based-generative-swmm5-summary.md).

@@ -84,6 +84,7 @@ Measurement and method
 - [Replit apps: six more summaries](wiki/concepts/replit-app-summaries-third-batch.md): six more Replit apps brought over on the evening of 15 November 2026: none runs an engine, one has a test suite, four have names that do not say what they are.
 - [Replit apps: a fourth set of six summaries](wiki/concepts/replit-app-summaries-fourth-batch.md): six more Replit apps and two notes of Bob's: two run an engine, none has a test that runs, one was deleted for running visitors' code.
 - [Apps summarized on 17 November 2026: SWMM history and the insides of SWMM5](wiki/concepts/apps-from-pages-history-and-swmm5.md): eighteen apps on SWMM history and SWMM5's insides, summarized by Claude from their pages; nine run 5.2.4 in the browser.
+- [Apps summarized on 17 November 2026: generators, rain and surfaces for SWMM5](wiki/concepts/apps-from-pages-generators-rain-surfaces.md): nineteen apps: generators, rainfall and flow-data methods, inlets and quasi-2D meshes.
 - [LinkedIn posts that were well received](wiki/concepts/linkedin-post-reception.md): which of 50 posts were most seen, most reacted to and most answered on 15 November 2026, and where the two posts Bob named stand.
 
 Economics
@@ -235,6 +236,25 @@ Apps
 - [swmm5-rust in RustGIS (app)](wiki/entities/swmm5-rust-rustgis.md): EPA 5.2.4 in safe Rust as a sandboxed RustGIS plugin; 177 of 177 models byte-identical to EPA's WebAssembly build.
 - [SWMM5+ Bench (app)](wiki/entities/swmm5plus-bench.md): SWMM5+ 1.0.3 against EPA 5.2.4 on 34 recorded models; EXTRAN4 floods 15.0 % in EPA at two nodes SWMM5+ cannot flood.
 - [SWMM5+ Branch Atlas (app)](wiki/entities/swmm5plus-branch-atlas.md): All nine branches of SWMM5+ measured; 8 of 9 build with gfortran and flang; no WebAssembly engine yet.
+- [Conformal SWMM (app)](wiki/entities/conformal-swmm.md): One square grid through five complex functions as SWMM5 models on OpenSWMM legacy 5.3 in the browser; 16 of 16 .out identical to native.
+- [Four Ways to K (app)](wiki/entities/four-ways-to-k.md): Four ways to put a manhole loss into 5.2.4 on one test line; equivalent n charges 1.94 times too much at 2 cfs.
+- [Hedron Walk (app)](wiki/entities/hedron-walk.md): A triangle-tiled ribbon of 1,408 subcatchments generated from a picture and run on 5.2.4; 61 % of the rain runs off.
+- [Kleinian SWMM (app)](wiki/entities/kleinian-swmm.md): A storm sewer grown from a Kleinian group on 5.2.4 with the KW/SF extension; routed peaks about 10 % under the rational method.
+- [Logic-Based Generative SWMM5 (app)](wiki/entities/logic-based-generative-swmm5.md): Pattern, Hybrid and Logic sewer designs checked against fifteen rules and run on 5.2.4; the pattern model broke 22 of 24 pipes.
+- [Rule 110 in SWMM5 (app)](wiki/entities/rule110-swmm5.md): Rule 110 computed with water in stock 5.2.4; 10,700 of 10,700 cells right in native and browser builds.
+- [The Shapes of SWMM5 Networks (app)](wiki/entities/swmm5-network-shapes.md): 1,311 network shapes from the 1729 corpus laid on one outfall; median sinuosity 1.356, checked by a second implementation.
+- [SWMMCRAFT Ultimate (app)](wiki/entities/swmmcraft-ultimate.md): Block-world SWMM 5 editor with 5.2.4 inside; 396 of 396 corpus models round-trip identical, renamed or not.
+- [SWMM Rooms (app)](wiki/entities/swmm-rooms.md): 36 rooms of SWMM5, OpenSWMM 6 and HydroCouple features joined by 56 pipes; a memory palace, nothing runs.
+- [SWMM Hydraulic Library (app)](wiki/entities/swmm-hydraulic-library.md): 70 entries and 119 diagrams on how SWMM5, ICM and SWMM6 solve Saint-Venant; 199 defects fixed by eight audits; no engine.
+- [SWMM Inlet Library (app)](wiki/entities/swmm-inlet-library.md): Street and inlet libraries written for 5.2.4 or SWMM6; its HEC-22 port agrees with both engines to 0.01 point on seven cases.
+- [SWMM PDF Wizard (app)](wiki/entities/swmm-pdf-wizard.md): SWMM5 and SWMM6 model sets to finished PDF reports with pdfcraft in WebAssembly; runs no engine.
+- [Water on the Road (app)](wiki/entities/water-on-the-road.md): A Civil 3D HEC-22 road-drainage workflow rebuilt in the browser; parity with 5.2.4's inlet code on 11 inlets.
+- [Quantile Mapping to SWMM5 / SWMM6 (app)](wiki/entities/quantile-mapping-swmm.md): Quantile-mapping bias correction of forecast rain carried into SWMM as a time series; SWMM5 itself offers only a monthly multiplier.
+- [The Narrow Band (app)](wiki/entities/narrow-band.md): GEV against MEVD on synthetic rain with a known answer; the narrower MEVD band held the truth in 28.8 % of records.
+- [Hard Meters, Soft Models (app)](wiki/entities/hard-meters-soft-models.md): PyBME's network Bayesian Maximum Entropy in the browser: meters as hard data, a model as soft data; 116 parity checks.
+- [Non-Prismatic Channel Lab (app)](wiki/entities/non-prismatic-channel-lab.md): A shaped channel in 5.2.4 against a standard-step solution; prismatic links show 44 % of a constriction's rise, losses bring 92 %.
+- [Quasi-2D Mesh Maker for SWMM5 (app)](wiki/entities/quasi-2d-mesh-maker.md): A PCSWMM-style quasi-2D overland mesh written as a SWMM5 .inp; its half-width links store exactly the cell area.
+- [Walk the Mesh (app)](wiki/entities/walk-the-mesh.md): A surge walk inside a SWMM quasi-2D mesh; the obvious mesh stores twice the water and waves arrive 1.414 times too late.
 
 Data
 - [1729-SWMM5-Models-2030 (the corpus)](wiki/entities/corpus-1729.md): Bob's public model repository; 480 of its models are the translations' gate set.
@@ -376,6 +396,25 @@ App summaries
 - [S221](wiki/sources/S221-swmm5-rust-rustgis-summary.md) (2026-11-01): swmm5-rust in RustGIS v0.1.0, summary written from the page by Claude.
 - [S222](wiki/sources/S222-swmm5plus-bench-summary.md) (2026-10-24): SWMM5+ Bench v1.0, summary written from the page by Claude.
 - [S223](wiki/sources/S223-swmm5plus-branch-atlas-summary.md) (2026-10-26): SWMM5+ Branch Atlas v2026-10-26, summary written from the page by Claude.
+- [S224](wiki/sources/S224-conformal-swmm-app-md.md) (2026-11-14): Conformal SWMM v1.0.0, technical summary.
+- [S225](wiki/sources/S225-four-ways-to-k-summary.md) (2026-10-29): Four Ways to K v1.0, summary written from the page by Claude.
+- [S226](wiki/sources/S226-hedron-walk-summary.md) (2026-10-31): Hedron Walk v1.7.0, summary written from the page by Claude.
+- [S227](wiki/sources/S227-kleinian-swmm-summary.md) (2026-11-03): Kleinian SWMM v1.6.1, summary written from the page by Claude.
+- [S228](wiki/sources/S228-logic-based-generative-swmm5-summary.md) (2026-10-30): Logic-Based Generative SWMM5 v2.0.0, summary written from the page by Claude.
+- [S229](wiki/sources/S229-rule110-swmm5-summary.md) (2026-11-09): Rule 110 in SWMM5 v1.0.0, summary written from the page by Claude.
+- [S230](wiki/sources/S230-swmm5-network-shapes-app-md.md) (2026-11-16): The Shapes of SWMM5 Networks v1.1.0, technical summary.
+- [S231](wiki/sources/S231-swmmcraft-ultimate-app-md.md) (2026-11-14): SWMMCRAFT Ultimate v2.7, technical summary.
+- [S232](wiki/sources/S232-swmm-rooms-summary.md) (2026-10-20): SWMM Rooms v1.4, summary written from the page by Claude.
+- [S233](wiki/sources/S233-swmm-hydraulic-library-summary.md) (2026-10-21): SWMM Hydraulic Library v2.0, summary written from the page by Claude.
+- [S234](wiki/sources/S234-swmm-inlet-library-summary.md) (2026-10-26): SWMM Inlet Library v1.0, summary written from the page by Claude.
+- [S235](wiki/sources/S235-swmm-pdf-wizard-summary.md) (2026-10-19): SWMM PDF Wizard v1.1.0, summary written from the page by Claude.
+- [S236](wiki/sources/S236-water-on-the-road-summary.md) (2026-10-15): Water on the Road v1.1, summary written from the page by Claude.
+- [S237](wiki/sources/S237-quantile-mapping-swmm-summary.md) (2026-10-20): Quantile Mapping to SWMM5 / SWMM6 v1.2, summary written from the page by Claude.
+- [S238](wiki/sources/S238-narrow-band-app-md.md) (2026-11-16): The Narrow Band v1.0.0, technical summary.
+- [S239](wiki/sources/S239-hard-meters-soft-models-summary.md) (2026-10-22): Hard Meters, Soft Models v1.0, summary written from the page by Claude.
+- [S240](wiki/sources/S240-non-prismatic-channel-lab-summary.md) (2026-11-02): Non-Prismatic Channel Lab v1.0, summary written from the page by Claude.
+- [S241](wiki/sources/S241-quasi-2d-mesh-maker-summary.md) (2026-10-04): Quasi-2D Mesh Maker for SWMM5 v1.0, summary written from the page by Claude.
+- [S242](wiki/sources/S242-walk-the-mesh-summary.md) (2026-10-19): Walk the Mesh v1.0, summary written from the page by Claude.
 
 Manuals and reports (primary documents)
 - [S185](wiki/sources/S185-epa-swmm5-qa-report-dynamic-wave-2006.md) (2006-09): SWMM Quality Assurance Report, Dynamic Wave Flow Routing, by L. A. Rossman: SWMM 4.4h against SWMM 5.0.006 on twenty examples. Read in part: Chapters 1 to 4 and 7.

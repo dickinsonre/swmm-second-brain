@@ -2,10 +2,10 @@
 title: WebAssembly builds against native builds
 type: concept
 updated: 2026-11-17
-sources: [S68, S73, S74, S76, S77, S78, S79, S80, S81, S82, S83, S157, S193, S194, S195, S196, S197, S199, S206, S210, S211, S212, S214, S222]
+sources: [S68, S73, S74, S76, S77, S78, S79, S80, S81, S82, S83, S157, S193, S194, S195, S196, S197, S199, S206, S210, S211, S212, S214, S222, S224, S229, S228, S242, S231, S227]
 tags: [wasm, verification, swmm5, math-library, apps]
 reviewed: 11/16/2026
-changed_after_review: "2026-11-17 (S192 to S202 ingest): one paragraph and a table added at the end on five more apps (S193 to S199); 2026-11-17 (S205 to S223 ingest): a paragraph added near the end, headed Added 17 November 2026 (S206, S210, S211, S212, S214, S222)"
+changed_after_review: "2026-11-17 (S192 to S202 ingest): one paragraph and a table added at the end on five more apps (S193 to S199); 2026-11-17 (S205 to S223 ingest): a paragraph added near the end, headed Added 17 November 2026 (S206, S210, S211, S212, S214, S222); 2026-11-17 (S224 to S242 ingest): a paragraph added near the end, headed Added 17 November 2026 (S224, S229, S228, S242, S231, S227)"
 ---
 Most of Bob's engine apps run EPA SWMM 5.2.4 compiled to WebAssembly inside the page. Does that build give the same answers as a native build of the same C? Several apps tested it, and they do not all report the same thing. One of them found the cause [S82](../sources/S82-mirab-test-bench-summary.md).
 
@@ -63,3 +63,5 @@ See [Matching glibc math in a translation](glibc-math-in-translation.md), where 
 Two more builds: Engine Race's stock and fast builds, Emscripten 3.1.51, wasm SHA-256 `fbbfb0a2` and `35767fbb` [S197](../sources/S197-swmm5-engine-race-app-md.md); [Seven SWMM Engines](../entities/seven-swmm-engines.md), Emscripten 3.1.51, 0.65 MB [S199](../sources/S199-seven-swmm-engines-summary.md). The Engine Race and SWMM 3 results point at the math library, as the Mirab bench did; they bear on Q55.
 
 **Added 17 November 2026.** Six more app summaries report a browser build of EPA SWMM 5.2.4 against a native one: 36 of 36 inputs byte-identical [S206](../sources/S206-runoff-block-summary.md); 16 of 16 against a musl build, with a glibc build within 7e-7 ft [S210](../sources/S210-swmm5-implicit-box-bench-summary.md); 46 of 60 corpus models [S211](../sources/S211-swmm5-self-regeneration-summary.md); 89 of 100, where on one of the other 11 a last-bit change moved a pump switch and changed a flow by 100 % of peak [S212](../sources/S212-swmm5-residual-walk-summary.md); 32 of 33 [S222](../sources/S222-swmm5plus-bench-summary.md); one model of 2,661,597 bytes [S214](../sources/S214-lead-pump-pointer-summary.md). All are summaries Claude wrote from the pages (Q108).
+
+**Added 17 November 2026, second batch.** From the second batch: 16 of 16 on the OpenSWMM legacy 5.3 engine [S224](../sources/S224-conformal-swmm-app-md.md); every case of eight automata [S229](../sources/S229-rule110-swmm5-summary.md); three of three default designs, 275,760 bytes each [S228](../sources/S228-logic-based-generative-swmm5-summary.md); fixed-step surges, with the variable-step flood envelope within 0.0007 ft [S242](../sources/S242-walk-the-mesh-summary.md); 13 of 13 [S231](../sources/S231-swmmcraft-ultimate-app-md.md); two of two at p = 5 and 7 [S227](../sources/S227-kleinian-swmm-summary.md).

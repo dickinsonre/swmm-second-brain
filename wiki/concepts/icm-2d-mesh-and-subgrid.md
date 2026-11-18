@@ -1,8 +1,8 @@
 ---
 title: "ICM 2D: terrain, mesh and subgrid sampling"
 type: concept
-updated: 2026-11-16
-sources: [S166, S167, S172]
+updated: 2026-11-17
+sources: [S166, S167, S172, S242, S241]
 tags: [icm, 2d, mesh, terrain, subgrid]
 reviewed: no
 ---
@@ -31,5 +31,7 @@ The note's advice: choose mesh controls by how water will move, and check the me
 - In GeoPlan the subgrid speed theme shows the parent element's speed on wetted subtriangles.
 
 **The proposed comparison** [S172](../sources/S172-note-icm-2d-subgrid-sampling.md): a corridor with an embankment and one gap, run four ways (fine mesh aligned to the crest as reference; coarser mesh; coarser mesh with subgrid; subgrid with edges aligned to the crest), comparing storage, arrival on both sides, flow through the gap and volume over the crest. The note links it to "the SWMM2D work". It is case 3 on [ICM 2D: three benchmark cases](icm-2d-benchmark-cases.md).
+
+**Added 17 November 2026, second batch.** For SWMM5 quasi-2D meshes, two apps find that the obvious mesh stores twice the water a cell holds: waves arrive a factor of 1.414 late, and multiplying n by 0.841 fixes the timing [S242](../sources/S242-walk-the-mesh-summary.md); half-width links hold exactly the cell area [S241](../sources/S241-quasi-2d-mesh-maker-summary.md). Neither was compared with ICM or another 2D solver.
 
 **Related.** [ICM 2D: boundaries and 1D-2D exchange](icm-2d-boundaries-and-exchange.md), [InfoWorks ICM](../entities/infoworks-icm.md).

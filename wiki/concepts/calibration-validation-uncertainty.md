@@ -1,10 +1,11 @@
 ---
 title: Calibration, validation and uncertainty
 type: concept
-updated: 2026-11-16
-sources: [S62, S63, S157]
+updated: 2026-11-17
+sources: [S62, S63, S157, S238, S239]
 tags: [calibration, uncertainty, method, verification]
 reviewed: 11/16/2026
+changed_after_review: "2026-11-17 (S224 to S242 ingest): a paragraph added near the end, headed Added 17 November 2026 (S238, S239)"
 ---
 What it takes to trust a model's number, as [William (Bill) James](../entities/william-james.md) set it out in Rules for Responsible Modeling (2005) and as Bob's [Rules for Responsible Modeling (app)](../entities/rules-for-responsible-modeling-app.md) puts it into practice [S63](../sources/S63-li-edition-53-measure-of-honest-numbers.md).
 
@@ -47,3 +48,5 @@ The summary calls these "illustrative rules, not independently sourced standards
 **Not in the sources yet.** The book's own rules and wording, and any calibration of a real catchment.
 
 **Added 16 November 2026.** A calibration through a learned surrogate, confirmed in SWMM at every step, is on [Calibrating SWMM through a surrogate](calibrating-through-a-surrogate.md). Its first finding: a fit of NSE 0.996 with a conduit roughness multiplier of 0.70 where the truth was 1.10 [S157](../sources/S157-lstm-swmm5-summary.md). The source is a summary Claude wrote from the app page (Q84).
+
+**Added 17 November 2026, second batch.** Two apps measure uncertainty bands against a known truth. [The Narrow Band (app)](../entities/narrow-band.md): a band 2.6 times narrower held the truth less than half as often [S238](../sources/S238-narrow-band-app-md.md). [Hard Meters, Soft Models (app)](../entities/hard-meters-soft-models.md): Bayesian Maximum Entropy blending four meters with a model covered the truth at 99.4 % of unmetered points, and at 61 % when the model was 25 % low but still claimed its usual variance [S239](../sources/S239-hard-meters-soft-models-summary.md). Both are synthetic.

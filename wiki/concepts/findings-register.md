@@ -2,10 +2,10 @@
 title: The SWMM findings register
 type: concept
 updated: 2026-11-17
-sources: [S03, S04, S05, S59, S67, S71, S72, S74, S75, S79, S80, S82, S83, S192, S193, S194, S195, S196, S197, S203, S216, S220, S209, S212]
+sources: [S03, S04, S05, S59, S67, S71, S72, S74, S75, S79, S80, S82, S83, S192, S193, S194, S195, S196, S197, S203, S216, S220, S209, S212, S240, S236, S229, S242]
 tags: [findings, verification, method]
 reviewed: 2026-11-15
-changed_after_review: "2026-11-17 (S192 to S202 ingest): one paragraph added at the end listing more app-local findings (S192 to S197); 2026-11-17 (S203 ingest): one paragraph added at the end on the SOIL2 misread; 2026-11-17 (S205 to S223 ingest): a paragraph added near the end, headed Added 17 November 2026 (S216, S220, S209, S212)"
+changed_after_review: "2026-11-17 (S192 to S202 ingest): one paragraph added at the end listing more app-local findings (S192 to S197); 2026-11-17 (S203 ingest): one paragraph added at the end on the SOIL2 misread; 2026-11-17 (S205 to S223 ingest): a paragraph added near the end, headed Added 17 November 2026 (S216, S220, S209, S212); 2026-11-17 (S224 to S242 ingest): a paragraph added near the end, headed Added 17 November 2026 (S240, S236, S229, S242)"
 ---
 A numbered, dated record of what was checked and what came back, proposed in October 2026 because Bob's apps are safe on Netlify and GitHub while the findings exist only inside chat transcripts [S03](../sources/S03-findings-register-format.md).
 
@@ -54,3 +54,5 @@ A numbered, dated record of what was checked and what came back, proposed in Oct
 **Added 2026-11-17 (S203).** The Topsoil Recovery Check summary adds a third app-local finding beside D1 and D2: EPA 5.2.4 reads a SOIL2 line as a second SOIL line, with no error or warning [S203](../sources/S203-topsoil-recovery-check-v2026-11-17.md). It has no register ID (Q33 in [Open questions](../open-questions.md)).
 
 **Added 17 November 2026.** More findings reported by app pages, not rerun here and not yet checked by a person: EPA's report prints "All links are stable." when the least stable link is the first in the file, report.c line 994 [S216](../sources/S216-swmm-rhythm-detector-summary.md); gage.c:251 converts 8.64 x 10^14 s to a C int, which C leaves undefined, so gcc and Rust write different reports on one-point rain series [S220](../sources/S220-swmm5-rs-side-by-side-summary.md); the stock dynamic slot runs 1.414 fast on an exact pressurised transient [S209](../sources/S209-rigid-column-test-summary.md); a short last link at a free outfall gives -11,199 % continuity with no error [S212](../sources/S212-swmm5-residual-walk-summary.md). The summaries use no status words; read them as unconfirmed.
+
+**Added 17 November 2026, second batch.** From the second batch, again at the pages' word: a tapered channel under NORMAL_FLOW_LIMITED BOTH oscillates between 359.53 and 570.70 cfs, identical on two engine copies [S240](../sources/S240-non-prismatic-channel-lab-summary.md); the HEC-22 spread round trip in inlet.c gives 8.021 ft back from 8 ft, and the Maximum Spread SWMM reports comes from the street transect, not Eq. 4-2 [S236](../sources/S236-water-on-the-road-summary.md); a native Linux build of 5.2.4 aborts with "buffer overflow detected" unless built with -D_FORTIFY_SOURCE=0 [S229](../sources/S229-rule110-swmm5-summary.md) [S236](../sources/S236-water-on-the-road-summary.md); the obvious quasi-2D mesh stores twice the water, so waves arrive 1.414 times late [S242](../sources/S242-walk-the-mesh-summary.md).
