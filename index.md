@@ -5,7 +5,7 @@ Every page in the wiki, one line each. An agent reads this first. Updated on eve
 ## Start here
 - [Overview: what this wiki holds so far](wiki/overview.md): what the wiki holds so far, by Bob's six themes, and what is missing.
 - [Start here](wiki/start-here.md): for a new reader; how to read a claim, and four first tasks (modeler, developer, ICM user, maintainer) that each end in something done.
-- [Open questions](wiki/open-questions.md): <!-- state:oq -->111 open and 9 settled<!-- /state:oq -->: contradictions, doubtful numbers and gaps waiting for a source or for Bob.
+- [Open questions](wiki/open-questions.md): <!-- state:oq -->110 open and 10 settled<!-- /state:oq -->: contradictions, doubtful numbers and gaps waiting for a source or for Bob.
 - [Schema](CLAUDE.md): how the wiki is kept. [Log](log.md): what was done and when.
 
 ## Concepts
@@ -688,6 +688,7 @@ App summaries
 - [S373](wiki/sources/S373-qubit-workbench-summary.md) (2026-10-09): Qubit Workbench v1.0, summary written from the page by Claude.
 - [S374](wiki/sources/S374-four-degrees-at-the-bottom-summary.md) (2026-09-30): Four Degrees at the Bottom v2026-09-30, summary written from the page by Claude.
 - [S375](wiki/sources/S375-topology-surface-explorer-summary.md) (2026-10-28): Topology Surface Explorer v2026-10-28, summary written from the page by Claude.
+- [S376](wiki/sources/S376-note-epanet-for-swmm5-experts-one-app.md) (2026-11-18): note, Bob rules that both EPANET for SWMM5 Experts summaries are one app under that name.
 
 Manuals and reports (primary documents)
 - [S185](wiki/sources/S185-epa-swmm5-qa-report-dynamic-wave-2006.md) (2006-09): SWMM Quality Assurance Report, Dynamic Wave Flow Routing, by L. A. Rossman: SWMM 4.4h against SWMM 5.0.006 on twenty examples. Read in part: Chapters 1 to 4 and 7.

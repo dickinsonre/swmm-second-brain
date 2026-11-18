@@ -41,6 +41,13 @@ def describe(path):
     return kind, date, title, words
 
 
+# file: lines that Bob has ruled are one app (raw files are never edited, so the ruling lives here).
+# Each entry names the note that records the ruling.
+SAME_APP = {
+    'epanet-swmm-experts': 'epanet-for-swmm5-experts',   # raw/notes/epanet-for-swmm5-experts-one-app-2026-11-18.md (S376)
+}
+
+
 def app_key(path):
     """(app, name, version, sort key) for a summary under raw/apps/, from its front matter."""
     fm, _ = front_matter(read(path).lstrip())
@@ -49,9 +56,12 @@ def app_key(path):
     if app in ('', 'index.html', 'index.htm'):       # every Lovable and Replit app is index.html
         app = (fm.get('name') or os.path.basename(path)).strip().lower()
     app = re.sub(r'\.html?$', '', app)
+    app = SAME_APP.get(app, app)
     version = (fm.get('version') or '').split('#')[0].strip().strip('"\'')   # '"0.0.0" # where it came from' is 0.0.0
     nums = tuple(int(x) for x in re.findall(r'\d+', version)[:4])
     name = (fm.get('name') or '').strip().lower()
+    if app in SAME_APP.values():                     # a ruled group keeps one name
+        name = app
     return app, name, version, ((fm.get('date') or '')[:10], nums, rel(path))
 
 
