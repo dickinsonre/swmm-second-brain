@@ -8,8 +8,8 @@ It is not a search index. Each source is read once and compiled into pages; a qu
 
 | Path | What |
 |---|---|
-| `raw/` | Sources. <!-- state:raw_files -->439 files, about 1,364,000 words<!-- /state:raw_files -->. Never edited. `raw/MANIFEST.csv` has a hash, a word count and a status for each |
-| `wiki/` | <!-- state:wiki_pages -->399 pages, about 199,000 words: 203 sources, 78 concepts, 115 entities and 3 synthesis pages (the overview, the open-questions list and the start-here guide)<!-- /state:wiki_pages --> |
+| `raw/` | Sources. <!-- state:raw_files -->440 files, about 1,365,000 words<!-- /state:raw_files -->. Never edited. `raw/MANIFEST.csv` has a hash, a word count and a status for each |
+| `wiki/` | <!-- state:wiki_pages -->400 pages, about 200,000 words: 204 sources, 78 concepts, 115 entities and 3 synthesis pages (the overview, the open-questions list and the start-here guide)<!-- /state:wiki_pages --> |
 | `wiki/start-here.md` | For a new reader: how to read a claim, and four first tasks that end in something done |
 | `index.md` | Catalog of every page |
 | `log.md` | What was done and when |
@@ -40,9 +40,9 @@ To read the wiki yourself, open the folder in Obsidian (the graph view shows hub
 
 Counted by `tools/state.py` on <!-- state:date -->2026-11-17<!-- /state:date -->.
 
-- <!-- state:ingested -->203 of 439 raw files ingested, 3 of them in part; 232 queued; 4 superseded or duplicate<!-- /state:ingested -->. The queue is in `index.md`.
+- <!-- state:ingested -->204 of 440 raw files ingested, 3 of them in part; 232 queued; 4 superseded or duplicate<!-- /state:ingested -->. The queue is in `index.md`.
 - <!-- state:oq -->98 open and 9 settled<!-- /state:oq --> open questions in `wiki/open-questions.md`. Several are contradictions between Bob's own articles.
-- Bob reviewed every page on 11/16/2026. Since then, <!-- state:review -->82 pages say `reviewed: no` and 41 carry `changed_after_review:`<!-- /state:review -->; `python3 tools/lint.py --review` lists them in reading order.
+- Bob reviewed every page on 11/16/2026. Since then, <!-- state:review -->83 pages say `reviewed: no` and 43 carry `changed_after_review:`<!-- /state:review -->; `python3 tools/lint.py --review` lists them in reading order.
 - The ontology draft has Relations tables on 3 pages: 89 statements, each filed under the source it cites, with conditions and a `verification` status on the rows that need them. `ontology/queries/5-comparable-fields.txt` answers "which fields can I compare across InfoWorks and ICM SWMM networks, under what conditions, and on what evidence?" for the fields the wiki has so far.
 
 ## What is not here

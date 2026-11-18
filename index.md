@@ -378,6 +378,7 @@ Notes and data
 - [S176](wiki/sources/S176-note-icm-2d-benchmark-cases.md) (2026-11-16): note (AI-written), three ICM 2D benchmark cases.
 - [S179](wiki/sources/S179-note-icm-notes-drafted-by-chatgpt.md) (2026-11-16): note, ChatGPT drafted the seven ICM notes S159 to S165 from Autodesk Help; runtime tests stay pending.
 - [S187](wiki/sources/S187-note-model-comparison-purpose-and-dogfooding.md) (2026-11-16): note, Bob: the wiki is for model comparison, the AI-drafted summaries are by design, and he dogfoods and tests his apps.
+- [S204](wiki/sources/S204-note-two-pipe-benchmark-step1-run.md) (2026-11-17): note, run record for step 1 of the two-pipe benchmark: EPA SWMM 5.2.4 and swmm5-ruby byte-identical; 59 records.
 - [S189](wiki/sources/S189-note-innovyze-start-christmas-2007.md) (2026-11-16): note, Bob agreed to join Innovyze the week of Christmas and went to Los Angeles after January 2.
 
 The old swmm-brain repository

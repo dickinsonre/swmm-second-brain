@@ -1,10 +1,11 @@
 ---
 title: SWMM5 language translations (swmm5-*)
 type: entity
-updated: 2026-11-15
-sources: [S36, S37, S38, S39, S40, S41, S42, S43, S44, S45, S46, S47, S48, S49, S50, S51, S52, S53, S54, S70, S71, S119]
+updated: 2026-11-17
+sources: [S36, S37, S38, S39, S40, S41, S42, S43, S44, S45, S46, S47, S48, S49, S50, S51, S52, S53, S54, S70, S71, S119, S204]
 tags: [swmm5, translation, verification]
 reviewed: 11/16/2026
+changed_after_review: "2026-11-17 (S204 ingest): one paragraph added at the end on swmm5-ruby and the two-pipe benchmark (S204)"
 ---
 Nineteen public repositories under SWMMBobSWMM6, each EPA SWMM 5.2.4 "written by a translator that reads EPA's C, and judged against EPA itself" on 480 models [S41](../sources/S41-swmm5-go-readme.md). They are the languages of Bob's Code Rosetta Stone app [S47](../sources/S47-swmm5-php-readme.md). How a model passes is on [Byte-for-byte gate](../concepts/byte-for-byte-gate.md).
 
@@ -44,3 +45,5 @@ The speeds were measured three different ways (interleaved CPU benchmarks, the g
 **Added 15 November 2026: the app that runs them.** [SWMM5 Rosetta Stone, also called Code Rosetta Stone (app)](code-rosetta-stone.md) imports 20 SWMM5 translations at exact commits; all 20 matched the pinned EPA 5.2.4 binary-output hash on 3 models, a sampled check beside the 480-model gate above [S119](../sources/S119-code-rosetta-stone-replit-summary.md). Its 20 include C++ and Rust and leave out R (Q48). Replit Agent wrote that summary; Bob has not read it (Q74).
 
 See [What the gate cannot see](../concepts/gate-blind-spots.md), [Where languages part from C](../concepts/where-languages-part-from-c.md), [SWMM6 language translations](swmm6-language-ports.md).
+
+**Added 17 November 2026.** swmm5-ruby passed one more model outside the gate set, the two-pipe benchmark, at a fixed 1 s step and at EPA's default 20 s variable step: `.out` byte-identical and `.rpt` identical apart from the three time lines, under Ruby 3.3.6 at commit 0c97906 [S204](../sources/S204-note-two-pipe-benchmark-step1-run.md).

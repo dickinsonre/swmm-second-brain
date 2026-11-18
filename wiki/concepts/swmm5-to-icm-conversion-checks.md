@@ -2,7 +2,7 @@
 title: Checking a SWMM5 model's conversion into ICM
 type: concept
 updated: 2026-11-17
-sources: [S164, S165, S45, S166, S179, S184, S188, S202]
+sources: [S164, S165, S45, S166, S179, S184, S188, S202, S204]
 tags: [icm, swmm5, conversion, verification, benchmark]
 reviewed: no
 ---
@@ -47,3 +47,5 @@ The order matters. First EPA SWMM 5.2.4 against `swmm5-ruby` on the same `.inp`,
 When graphing the two, remember that ICM shows a link's ends and SWMM 5 its midpoint flow [S188](../sources/S188-talk-water-talks-icm-sim-vs-icm-swmm-2021.md).
 
 **Added 17 November 2026: why matching flow is not enough.** [One Model, Three Engines (app)](../entities/one-model-three-engines.md) shows it on a teaching pipe: 15 in, 1.2 cfs, 1.00 ft of water at the outlet. At normal depth the pipe runs 0.56 ft deep at 2.25 ft/s; the backwater profile puts 0.76 ft at mid-length at 1.54 ft/s. Both carry exactly 1.2 cfs. On twelve such pipes the flows match while depth misses by up to 0.47 ft and velocity by up to 1.22 ft/s [S202](../sources/S202-one-model-three-engines-summary.md). Its advice after a conversion is to compare depth and velocity as well as flow. These numbers come from the app's teaching solvers; no ICM engine ran [S202](../sources/S202-one-model-three-engines-summary.md).
+
+**Added 17 November 2026: step 1 of the benchmark is run.** EPA SWMM 5.2.4 and swmm5-ruby ran the two-pipe model with dynamic wave at a fixed 1 s step and wrote byte-identical `.out` files. The outfall peaks at 0.9665 cfs at minute 21 on the 1-minute grid and J1 at 0.4356 ft at minute 20; continuity error 0.000 %. At EPA's default 20 s variable step the peaks move to 0.9691 cfs and 0.4324 ft [S204](../sources/S204-note-two-pipe-benchmark-step1-run.md). The run record lists every minute, so it is the reference for steps 2 and 3. Those need ICM, and nobody has run them.

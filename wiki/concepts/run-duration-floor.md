@@ -1,10 +1,11 @@
 ---
 title: Run duration floored to whole seconds
 type: concept
-updated: 2026-11-15
-sources: [S76, S79]
+updated: 2026-11-17
+sources: [S76, S79, S204]
 tags: [swmm5, findings, time, verification]
 reviewed: 2026-11-15
+changed_after_review: "2026-11-17 (S204 ingest): one paragraph added at the end on a third sighting, the two-pipe benchmark (S204)"
 ---
 EPA SWMM 5.2.4 computes the length of a run by flooring a floating-point product to whole seconds. For some start dates and end times the product falls just under a whole number, and the run comes out one second short. Two of Bob's apps met this independently, eighteen days apart [S79](../sources/S79-teacher-forced-swmm-summary.md), [S76](../sources/S76-inside-the-network-cfd-app-md.md).
 
@@ -30,3 +31,5 @@ A fourth file in the second case ends at 06:00, which is exact in binary, and is
 **Status.** Called "a genuine defect, though a small one" by the first app's essay [S79](../sources/S79-teacher-forced-swmm-summary.md). Read and measured by Claude in both apps; no person has reviewed either. The line number comes from one source only. It has no ID in [The SWMM findings register](findings-register.md) (Q47), and the label D-1 is also used for unrelated findings in two other apps.
 
 **Not in the sources.** Whether this has been reported to EPA.
+
+**Added 17 November 2026: a third sighting.** Step 1 of the two-pipe benchmark runs one hour from 01/01/2026 00:00. With SWMM's own date routines the product is 3599.9999997904524 s, so the duration is 3599 s and the `.out` holds 59 report records, minutes 1 to 59, with no record at 1:00. swmm5-ruby does the same, byte for byte. Ending the run at 01:01:00 writes 60 records and leaves minutes 1 to 59 unchanged, in both engines [S204](../sources/S204-note-two-pipe-benchmark-step1-run.md). This record also places the line at `project.c` line 165, a second source for the line number. Anyone lining up another engine's 1-minute results against these needs the 59.

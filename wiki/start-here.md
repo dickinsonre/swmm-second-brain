@@ -2,7 +2,7 @@
 title: Start here
 type: synthesis
 updated: 2026-11-17
-sources: [S187, S192, S45, S165, S87, S23]
+sources: [S187, S192, S45, S165, S87, S23, S204]
 tags: [handoff, reading-path, reproduction]
 reviewed: no
 ---
@@ -27,9 +27,10 @@ Done when node 82309 peaks at 12.03 ft with the weir's surcharge flag YES (the d
 Read [Byte-for-byte gate](concepts/byte-for-byte-gate.md) and the README of SWMMBobSWMM6/swmm5-ruby [S45](sources/S45-swmm5-ruby-readme.md). Run one model with `ruby/runswmm model.inp model.rpt model.out` under Ruby 3.3.6 ([raw README](../raw/ports/2026-11-09-swmm5-ruby-README.md)), and the same model in EPA 5.2.4 built from the v5.2.4 tag with gcc 13.3 at `-O2` on x86-64 Linux [S45](sources/S45-swmm5-ruby-readme.md).
 Done when the `.out` files are byte-identical and the `.rpt` files match except the "Analysis begun on", "Analysis ended on" and "Total elapsed time" lines, the pass rule of every port README [S45](sources/S45-swmm5-ruby-readme.md). The models are the gate set of [the corpus](entities/corpus-1729.md) [S23](sources/S23-swmm6-csharp-readme.md).
 
-**3. ICM user: run the two-pipe benchmark.**
+**3. ICM user: run the two-pipe benchmark in ICM.**
 Read [ICM Ruby: UI and Exchange](concepts/icm-ruby-ui-and-exchange.md) and [Checking a SWMM5 model's conversion into ICM](concepts/swmm5-to-icm-conversion-checks.md). The benchmark is one small model: two junctions and a free outfall at inverts of 100, 99 and 98 ft, two 12 in conduits 200 ft long at n 0.013, an inflow at the first junction rising to 1.0 cfs at 20 minutes and back to 0 at 30, one hour, results every minute. Step 1 runs it in EPA 5.2.4 and swmm5-ruby; steps 2 and 3 in ICM SWMM and ICM InfoWorks [S165](sources/S165-note-epa-swmm-ruby-icm-benchmark.md).
-Done when your numbers from all four engines are filed as a note in `raw/notes/`. Nobody has run it yet: the design was drafted by ChatGPT from Autodesk Help and has not been checked against ICM (Q90).
+Step 1 has been run: EPA 5.2.4 and swmm5-ruby wrote byte-identical results, with the outfall peaking at 0.9665 cfs at minute 21 and J1 at 0.4356 ft at minute 20, and the run record lists every minute [S204](sources/S204-note-two-pipe-benchmark-step1-run.md). It holds 59 records, minutes 1 to 59, because EPA's run is one second short ([Run duration floored to whole seconds](concepts/run-duration-floor.md)).
+Done when your ICM SWMM and ICM InfoWorks results for the same model are filed as a note in `raw/notes/`, set beside that table. Nobody has run steps 2 and 3, and the design was drafted by ChatGPT from Autodesk Help, not checked against ICM (Q90).
 
 **4. Maintainer: change one page and pass the checker (not in the sources).**
 `CLAUDE.md` gives the three operations. Add or correct one page from a source, run `python3 tools/lint.py`, and finish at 0 errors. How someone other than Bob records a review is not decided yet (Q105).

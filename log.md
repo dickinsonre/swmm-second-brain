@@ -788,3 +788,11 @@ Bob passed on a review of commit 2b9ebac by ChatGPT (OpenAI). Its verdict: an ex
 - Counted from the `links:` lines of the 94 ingested app summaries: 29 name a GitHub repository or a live Netlify address, 16 only a Claude artifact, 49 neither.
 - Q104 to Q107 for Bob: keeping the assets available, review by someone other than Bob, the explanations only he can give, a rehearsal with a colleague. Not done here: the reference cases themselves, which need runs, and the gallery files, which Bob holds.
 - This branch, gpt-review-2026-11-17, starts from fix-topsoil-drain-soil2 (S203), so merging it merges that too.
+
+## [2026-11-17] ingest | S204: step 1 of the two-pipe benchmark, run
+
+Bob said "go" to the first step of the two-pipe benchmark that ChatGPT designed (S165) and its review of 17 November called one of the highest-value additions. Claude built EPA SWMM 5.2.4 from the v5.2.4 source with swmm5-ruby's reference Makefile (gcc 13.3.0, `-O2`, glibc 2.39, x86-64 with FMA and AVX2: the port's reference platform), cloned swmm5-ruby at 0c97906, wrote the model from S165's description, ran it in both engines and filed the run as `raw/notes/two-pipe-benchmark-step1-run-2026-11-17.md`, then ingested it as S204.
+- Result: `.out` byte-identical and `.rpt` identical apart from the three time lines, at a fixed 1 s step and at EPA's default 20 s variable step. Outfall peak 0.9665 cfs at minute 21, J1 0.4356 ft at minute 20, continuity 0.000 %. The note tabulates all 59 minutes as the reference for the ICM steps.
+- Found: the 1-hour run writes 59 records, because `project.c` line 165 floors 3599.9999997904524 s to 3599. A third sighting for [Run duration floored to whole seconds], and a second source for its line number. Ending at 01:01:00 writes 60 records and leaves minutes 1 to 59 unchanged.
+- Pages changed: run-duration-floor, swmm5-to-icm-conversion-checks, swmm5-language-ports, start-here (task 3), overview (theme 3), open questions (Q16 and Q90 stay open: no ICM run), index.
+- The options S165 leaves open (dynamic wave, the 1 s step, EPA's defaults for the rest, the start date) were Claude's choice and are listed in the note. Steps 2 and 3 need ICM.
