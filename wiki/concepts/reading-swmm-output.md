@@ -1,11 +1,11 @@
 ---
 title: Reading SWMM output
 type: concept
-updated: 2026-11-17
-sources: [S03, S10, S22, S60, S69, S72, S76, S77, S78, S157, S199, S200, S81, S215, S216, S211, S231, S228]
+updated: 2026-11-18
+sources: [S03, S10, S22, S60, S69, S72, S76, S77, S78, S157, S199, S200, S81, S215, S216, S211, S231, S228, S286, S274, S288]
 tags: [swmm5, output, reporting]
 reviewed: 11/16/2026
-changed_after_review: "2026-11-17 (S192 to S202 ingest): one paragraph added at the end on the SWMM Results Kit (S199, S200); 2026-11-17 (S205 to S223 ingest): a paragraph added near the end, headed Added 17 November 2026 (S215, S216, S211); 2026-11-17 (S224 to S242 ingest): a paragraph added near the end, headed Added 17 November 2026 (S231, S228)"
+changed_after_review: "2026-11-17 (S192 to S202 ingest): one paragraph added at the end on the SWMM Results Kit (S199, S200); 2026-11-17 (S205 to S223 ingest): a paragraph added near the end, headed Added 17 November 2026 (S215, S216, S211); 2026-11-17 (S224 to S242 ingest): a paragraph added near the end, headed Added 17 November 2026 (S231, S228); 2026-11-18 (S268 to S299 ingest): a paragraph added near the end, headed Added 18 November 2026 (S286, S274, S288)"
 ---
 A large share of "SWMM is wrong" questions come from comparing two honest numbers that measure different things [S22](../sources/S22-li-ten-problems.md).
 
@@ -43,3 +43,5 @@ See also [The missing specification](the-missing-specification.md) and [Continui
 **Added 17 November 2026.** Three apps read the .out and .rpt together. [SWMM Trouble Graph (app)](../entities/swmm-trouble-graph.md) parsed 3,558 corpus pairs and found the median .out peak 0.992 of the .rpt peak, because the .out samples at the report step [S215](../sources/S215-swmm-trouble-graph-summary.md). [SWMM Rhythm Detector (app)](../entities/swmm-rhythm-detector.md) found 89 of 138 corpus runs reporting every 15 minutes or longer, too coarse to see anything faster than half an hour [S216](../sources/S216-swmm-rhythm-detector-summary.md). [SWMM5 Self-Regeneration (app)](../entities/swmm5-self-regeneration.md) rebuilds an .inp from a .out alone [S211](../sources/S211-swmm5-self-regeneration-summary.md).
 
 **Added 17 November 2026, second batch.** Two more examples of the .out peak under the .rpt peak: 26.887 against 26.96 cfs for conduit C6 [S231](../sources/S231-swmmcraft-ultimate-app-md.md), and 219.30 against 219.66 cfs at an outfall [S228](../sources/S228-logic-based-generative-swmm5-summary.md).
+
+**Added 18 November 2026.** The [Exam-First SWMM Harness (app)](../entities/exam-first-swmm-harness.md) reports the same node-type swap as DR-1, quoting `writeInt4(static_cast<int>(ctx.nodes.type[uj]))` in DefaultOutputPlugin.cpp at swmm6_rel 3c30f1e6 and the internal enum `DIVIDER = 2, STORAGE = 3`, and notes that the engine already has `internal_to_c_node_type()` for the conversion [S286](../sources/S286-exam-first-swmm-harness-summary.md). On sampling: with a 120 s report step and 5 s routing, the .out caught 31% of one link's routing-step peak [S274](../sources/S274-tri-pyramid-summary.md), and ICM SQL aggregates see only the saved timesteps, so MAX misses a peak between saves [S288](../sources/S288-icm-link-results-sql-summary.md).

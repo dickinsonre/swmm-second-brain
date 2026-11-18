@@ -1,11 +1,11 @@
 ---
 title: Continuity is not validation
 type: concept
-updated: 2026-11-17
-sources: [S01, S04, S05, S20, S59, S60, S62, S65, S67, S75, S81, S194, S196, S199, S201]
+updated: 2026-11-18
+sources: [S01, S04, S05, S20, S59, S60, S62, S65, S67, S75, S81, S194, S196, S199, S201, S282, S287, S275, S273, S295]
 tags: [verification, method]
 reviewed: 2026-11-15
-changed_after_review: "2026-11-17 (S192 to S202 ingest): one paragraph added at the end on four more cases (S194, S196, S199, S201)"
+changed_after_review: "2026-11-17 (S192 to S202 ingest): one paragraph added at the end on four more cases (S194, S196, S199, S201); 2026-11-18 (S268 to S299 ingest): a paragraph added near the end, headed Added 18 November 2026 (S282, S287, S275, S273, S295)"
 ---
 A closed mass balance shows that water was not lost. It does not show that the answer is right. Five cases from the sources:
 
@@ -38,3 +38,9 @@ See also [Verification against printed runs](verification-against-printed-runs.m
 - [Seven SWMM Engines](../entities/seven-swmm-engines.md): on Example 1 every engine closes flow continuity within 0.03 percent, while TSS continuity runs from -1.65 % to -85.40 % [S199](../sources/S199-seven-swmm-engines-summary.md).
 - [SWMM 4 Twin Engines](../entities/swmm4-twin-engines.md): a printed continuity error of 56.180 % exposed a real Transport defect, and the page adds that "a small continuity error is not a correct answer" [S194](../sources/S194-swmm4-twin-engines-summary.md).
 - [swmm5-infosewer](../entities/swmm5-infosewer.md) matches the InfoSewer engine bit for bit, and InfoSewer's own mass balance on the same 2009 network leaves 339,295 ft3 unaccounted, printed as 14.6 percent (Q101). The page says the engine copies InfoSewer's rules, "oddities included" [S201](../sources/S201-infosewer-2009-app-md.md).
+
+**Added 18 November 2026.** More cases from app pages:
+- Every dynamic-wave run of a still pool, EPA 5.2.4 included, reads -3.713% routing continuity with every flow zero [S282](../sources/S282-forma-swmm6-summary.md).
+- On a benchmark's hump test, EPA SWMM 5.2.4 at settings near its defaults left 98.6% of steps unconverged with -39% continuity, and the benchmark scored the run anyway [S287](../sources/S287-openhydro-bench-review-summary.md).
+- A city's sanitary sample as published runs at 6.184% routing continuity; two adverse-node repairs bring it to -0.040% [S275](../sources/S275-des-moines-sewer-swmm5-summary.md).
+- Agreement between two engines describes the regime when the physics forces the same answer; the finding is where they part [S273](../sources/S273-agreement-is-the-null-summary.md). A model can close its mass balance and still miss the peak, the timing or the flood extent [S295](../sources/S295-water-modeling-to-3000-summary.md).

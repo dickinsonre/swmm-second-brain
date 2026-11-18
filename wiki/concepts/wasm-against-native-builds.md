@@ -1,11 +1,11 @@
 ---
 title: WebAssembly builds against native builds
 type: concept
-updated: 2026-11-17
-sources: [S68, S73, S74, S76, S77, S78, S79, S80, S81, S82, S83, S157, S193, S194, S195, S196, S197, S199, S206, S210, S211, S212, S214, S222, S224, S229, S228, S242, S231, S227]
+updated: 2026-11-18
+sources: [S68, S73, S74, S76, S77, S78, S79, S80, S81, S82, S83, S157, S193, S194, S195, S196, S197, S199, S206, S210, S211, S212, S214, S222, S224, S229, S228, S242, S231, S227, S270, S274, S275, S283, S291, S285, S271]
 tags: [wasm, verification, swmm5, math-library, apps]
 reviewed: 11/16/2026
-changed_after_review: "2026-11-17 (S192 to S202 ingest): one paragraph and a table added at the end on five more apps (S193 to S199); 2026-11-17 (S205 to S223 ingest): a paragraph added near the end, headed Added 17 November 2026 (S206, S210, S211, S212, S214, S222); 2026-11-17 (S224 to S242 ingest): a paragraph added near the end, headed Added 17 November 2026 (S224, S229, S228, S242, S231, S227)"
+changed_after_review: "2026-11-17 (S192 to S202 ingest): one paragraph and a table added at the end on five more apps (S193 to S199); 2026-11-17 (S205 to S223 ingest): a paragraph added near the end, headed Added 17 November 2026 (S206, S210, S211, S212, S214, S222); 2026-11-17 (S224 to S242 ingest): a paragraph added near the end, headed Added 17 November 2026 (S224, S229, S228, S242, S231, S227); 2026-11-18 (S268 to S299 ingest): a paragraph added near the end, headed Added 18 November 2026 (S270, S274, S275, S283, S291, S285, S271)"
 ---
 Most of Bob's engine apps run EPA SWMM 5.2.4 compiled to WebAssembly inside the page. Does that build give the same answers as a native build of the same C? Several apps tested it, and they do not all report the same thing. One of them found the cause [S82](../sources/S82-mirab-test-bench-summary.md).
 
@@ -65,3 +65,10 @@ Two more builds: Engine Race's stock and fast builds, Emscripten 3.1.51, wasm SH
 **Added 17 November 2026.** Six more app summaries report a browser build of EPA SWMM 5.2.4 against a native one: 36 of 36 inputs byte-identical [S206](../sources/S206-runoff-block-summary.md); 16 of 16 against a musl build, with a glibc build within 7e-7 ft [S210](../sources/S210-swmm5-implicit-box-bench-summary.md); 46 of 60 corpus models [S211](../sources/S211-swmm5-self-regeneration-summary.md); 89 of 100, where on one of the other 11 a last-bit change moved a pump switch and changed a flow by 100 % of peak [S212](../sources/S212-swmm5-residual-walk-summary.md); 32 of 33 [S222](../sources/S222-swmm5plus-bench-summary.md); one model of 2,661,597 bytes [S214](../sources/S214-lead-pump-pointer-summary.md). All are summaries Claude wrote from the pages (Q108).
 
 **Added 17 November 2026, second batch.** From the second batch: 16 of 16 on the OpenSWMM legacy 5.3 engine [S224](../sources/S224-conformal-swmm-app-md.md); every case of eight automata [S229](../sources/S229-rule110-swmm5-summary.md); three of three default designs, 275,760 bytes each [S228](../sources/S228-logic-based-generative-swmm5-summary.md); fixed-step surges, with the variable-step flood envelope within 0.0007 ft [S242](../sources/S242-walk-the-mesh-summary.md); 13 of 13 [S231](../sources/S231-swmmcraft-ultimate-app-md.md); two of two at p = 5 and 7 [S227](../sources/S227-kleinian-swmm-summary.md).
+
+**Added 18 November 2026.** More apps compare a browser build with a native one:
+- A wasm build of EPA 5.2.4, run in Node, changed 1 of 437 corpus runs against a native musl build; its math matched musl bit for bit and differed from glibc on 2.9% of calls [S270](../sources/S270-how-many-languages-swmm5-summary.md).
+- The Tri-Pyramid engine writes a 319,329-byte .out byte-for-byte identical to a native gcc build's [S274](../sources/S274-tri-pyramid-summary.md); Des Moines' sanitary sample gives byte-identical .out files, and its storm sample differs by at most 0.06% of a peak [S275](../sources/S275-des-moines-sewer-swmm5-summary.md).
+- Cymatic Synapse's browser and native 5.2.4 agree byte for byte on six of ten presets and within 0.059 ft on the rest [S283](../sources/S283-cymatic-synapse-generator-summary.md).
+- A prebuilt wasm 5.2.2 matched native 5.2.4 on 17 small models with a largest difference of 0 [S291](../sources/S291-seven-studies-swmm-app-md.md); SWMM6 Shoebox's 16 compared numbers matched exactly between Chromium and Node [S285](../sources/S285-swmm6-shoebox-summary.md).
+- SWMM 4.4H through f2c in the browser against native gfortran: of 1,643 numbers that differ on the Extran example, 1,250 differ in the last digit [S271](../sources/S271-swmm44h-workbench-summary.md).

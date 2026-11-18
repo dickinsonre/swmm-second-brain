@@ -1,8 +1,8 @@
 ---
 title: Start here
 type: synthesis
-updated: 2026-11-17
-sources: [S187, S192, S45, S165, S87, S23, S204, S205]
+updated: 2026-11-18
+sources: [S187, S192, S45, S165, S87, S23, S204, S205, S268]
 tags: [handoff, reading-path, reproduction]
 reviewed: no
 ---
@@ -39,7 +39,7 @@ Done when your ICM SWMM and ICM InfoWorks results for the same model are filed a
 
 This repository holds no `.inp`, `.rpt`, `.out` or `.rb` files. The models live in the public corpus, https://github.com/SWMMBobSWMM6/1729-SWMM5-Models-2030 [S23](sources/S23-swmm6-csharp-readme.md); its README is [S87](sources/S87-corpus-1729-readme.md). The repositories the sources name are mapped on [Bob's GitHub repositories](entities/bobs-github-repositories.md).
 
-The apps were the weak link. On 17 November 2026 Bob deployed 62 apps to Netlify, and their addresses were read from his account and filed as a note [S205](sources/S205-note-netlify-addresses.md). Recounted by Claude after that day's ingest, from the `links:` lines of the 156 ingested summaries in `raw/apps/` and that note: 91 apps can be reached from this repository, the 29 whose summaries name a GitHub repository or a live Netlify address and the 62 in the note. Of the other 65, 18 name only a Claude artifact, which opens for Bob and whoever he shares it with, and 47 name neither. The count made earlier that day put 16 and 49 in those two groups; the recount reads two summaries differently (Q104).
+The apps were the weak link. On 17 November 2026 Bob deployed 62 apps to Netlify, and their addresses were read from his account and filed as a note [S205](sources/S205-note-netlify-addresses.md). Recounted by Claude after that day's ingest, from the `links:` lines of the 156 ingested summaries in `raw/apps/` and that note: 91 apps can be reached from this repository, the 29 whose summaries name a GitHub repository or a live Netlify address and the 62 in the note. Of the other 65, 18 name only a Claude artifact, which opens for Bob and whoever he shares it with, and 47 name neither. The count made earlier that day put 16 and 49 in those two groups; the recount reads two summaries differently (Q104). The ingest of 18 November added 32 summaries and 31 apps (one is a new version of [Inside the Network](entities/inside-the-network-cfd.md)) [S268](sources/S268-inside-the-network-cfd-app-md.md). Twenty-one of them name a live Netlify address, which makes 112 apps reachable from here. Ten name only a Claude artifact, and nine of those say their Netlify site is not yet deployed; that makes 28. The 47 that name neither are unchanged. This count adds the new summaries to the count of 17 November; it is not a fresh read of all 187.
 
 ## What Bob has not written down yet
 

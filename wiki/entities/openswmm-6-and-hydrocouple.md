@@ -1,11 +1,11 @@
 ---
 title: OpenSWMM 6 and HydroCouple
 type: entity
-updated: 2026-11-17
-sources: [S02, S03, S04, S05, S21, S22, S23, S29, S59, S69, S72, S75, S80, S81, S87, S134, S135, S148, S151, S153, S154, S199, S224, S234, S232, S251, S253, S256, S261, S258, S259, S260]
+updated: 2026-11-18
+sources: [S02, S03, S04, S05, S21, S22, S23, S29, S59, S69, S72, S75, S80, S81, S87, S134, S135, S148, S151, S153, S154, S199, S224, S234, S232, S251, S253, S256, S261, S258, S259, S260, S285, S280, S286]
 tags: [swmm6, engine, hydrocouple]
 reviewed: 11/16/2026
-changed_after_review: "2026-11-17 (S192 to S202 ingest): one paragraph added at the end on the alpha tags (S199); 2026-11-17 (S224 to S242 ingest): a paragraph added near the end, headed Added 17 November 2026 (S224, S234, S232); 2026-11-17 (S243 to S255 ingest): a paragraph added near the end, headed Added 17 November 2026 (S251, S253); 2026-11-17 (S256 to S267 ingest): a paragraph added near the end, headed Added 17 November 2026 (S256, S261, S258, S259, S260)"
+changed_after_review: "2026-11-17 (S192 to S202 ingest): one paragraph added at the end on the alpha tags (S199); 2026-11-17 (S224 to S242 ingest): a paragraph added near the end, headed Added 17 November 2026 (S224, S234, S232); 2026-11-17 (S243 to S255 ingest): a paragraph added near the end, headed Added 17 November 2026 (S251, S253); 2026-11-17 (S256 to S267 ingest): a paragraph added near the end, headed Added 17 November 2026 (S256, S261, S258, S259, S260); 2026-11-18 (S268 to S299 ingest): a paragraph added near the end, headed Added 18 November 2026 (S285, S280, S286)"
 ---
 OpenSWMM 6 is the SWMM line developed at HydroCouple [S22](../sources/S22-li-ten-problems.md). Caleb Buahin is the lead developer of the HydroCouple platform [S21](../sources/S21-li-edition-56-swmm-history.md).
 
@@ -50,3 +50,9 @@ OpenSWMM 6 is the SWMM line developed at HydroCouple [S22](../sources/S22-li-ten
 **Added 17 November 2026, third batch.** From the third batch: OpenSWMM 6.0.0-alpha.4 (swmm6_rel, 79bb4e1) compiled 278 of 284 .cpp files, with 1 public writable symbol against 332 in SWMM 5.2.4 and a knot of 31 of 278 files [S251](../sources/S251-understand-anything-swmm-icm-summary.md); a native run of the develop branch at 19a1bc42 compared a rainfall reduction factor with a real pipe [S253](../sources/S253-rain-on-grid-workbench-summary.md).
 
 **Added 17 November 2026, fourth batch.** The OpenSWMM source at swmm6_rel b92a4f1 (11 November 2026) holds 925 hand-written source files and 482,467 lines; SWMMEngine.cpp is the largest at 12,364 lines and the busiest, 222 commits in 90 days [S256](../sources/S256-openswmm-3d-code-model-app-md.md). [SWMM6 Hands-On Watershed (app)](swmm6-hands-on-watershed.md) runs the engine at 137e65e in the browser; that build kept a dry conduit's last evaporation rate, fixed upstream on 12 September 2026 (commit b051d270) [S261](../sources/S261-swmm6-hands-on-watershed-summary.md). Two apps read HydroCouple without running it: [HydroCouple Interactive (app)](hydrocouple-interactive.md) [S258](../sources/S258-hydrocouple-interactive-app-md.md) and [Inside hydrocouple.platform (app)](inside-hydrocouple-platform.md) [S259](../sources/S259-inside-hydrocouple-platform-summary.md); [Sandbox Companion (app)](sandbox-companion.md) ports parts of a flood sandbox built on it [S260](../sources/S260-sandbox-companion-summary.md).
+
+**Added 18 November 2026.** Defects that app pages report in alpha.4, at the pages' word:
+- Green-Ampt: a pre-development peak of 0.99 cfs against EPA 5.2.4's 19.54 cfs on a 4 in storm over loam (ED-1), traced to two lines of source and fixed on swmm6_rel [S285](../sources/S285-swmm6-shoebox-summary.md).
+- The Node Flooding Summary lists both outfalls of a one-site model as flooded while the routing ledger says flooding loss 0.000 (ED-2) [S285](../sources/S285-swmm6-shoebox-summary.md); on a three-pipe model the surcharge tables say no node surcharged where J1 stands 3.36 ft above the crown [S280](../sources/S280-run-swmm6-ten-minutes-summary.md).
+- The .out labels storage nodes as dividers (DR-1) [S286](../sources/S286-exam-first-swmm-harness-summary.md), as [S69](../sources/S69-swmm6-code-house-app-md.md) found in the same output plugin.
+- Build 6.0.0a4.dev1 lacks the quickstart's `get_depth` and `get_flow`, and `openswmm.legacy.engine.run_solver` names its report after the input file [S280](../sources/S280-run-swmm6-ten-minutes-summary.md).

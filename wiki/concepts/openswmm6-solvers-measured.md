@@ -1,11 +1,11 @@
 ---
 title: OpenSWMM 6 solvers, measured
 type: concept
-updated: 2026-11-17
-sources: [S75, S80, S81, S186, S196, S198, S199, S209, S29]
+updated: 2026-11-18
+sources: [S75, S80, S81, S186, S196, S198, S199, S209, S29, S280, S281, S282, S286]
 tags: [swmm6, hydraulics, dynamic-wave, finite-volume, engine-comparison]
 reviewed: 2026-11-15
-changed_after_review: "2026-11-16 (S180 to S187 ingest): one paragraph added at the end on Register 33 (S186); 2026-11-17 (S192 to S202 ingest): one paragraph added at the end on three more apps (S196, S198, S199); 2026-11-17 (S205 to S223 ingest): a paragraph added near the end, headed Added 17 November 2026 (S209, S29)"
+changed_after_review: "2026-11-16 (S180 to S187 ingest): one paragraph added at the end on Register 33 (S186); 2026-11-17 (S192 to S202 ingest): one paragraph added at the end on three more apps (S196, S198, S199); 2026-11-17 (S205 to S223 ingest): a paragraph added near the end, headed Added 17 November 2026 (S209, S29); 2026-11-18 (S268 to S299 ingest): a paragraph added near the end, headed Added 18 November 2026 (S280, S281, S282, S286)"
 ---
 OpenSWMM 6 has two hydraulic solvers: a dynamic wave solver that extends SWMM 5's, and an explicit finite-volume solver (FV) [S75](../sources/S75-st-venant-rosetta-stone-app-md.md). Three of Bob's apps have run them beside EPA SWMM 5.2.4. This page collects what they measured. Every run is on an alpha build, and none is compared with a measurement. For the program see [OpenSWMM 6 and HydroCouple](../entities/openswmm-6-and-hydrocouple.md).
 
@@ -69,3 +69,10 @@ See [EXTRAN's three solvers: XROUTE, YROUTE, ZROUTE](extran-solvers-xroute-yrout
 - [Two Engines, One Town](../entities/two-engines-one-town.md) tried openswmm 6.0.0a3 as a drop-in engine on one model and reports "three SWMM engines produce identical numbers"; none of SWMM6's new features was exercised [S198](../sources/S198-two-engines-one-town-summary.md).
 
 **Added 17 November 2026.** On an exact pressurised transient, the stock dynamic slot runs a factor of the square root of 2 (1.414) fast, and the two virtual-junction runs fail on initial conditions rather than on the slot [S209](../sources/S209-rigid-column-test-summary.md). The summary does not name the engine of the dynamic slot; DYNAMIC_SLOT is an OpenSWMM 6 method [S29](../sources/S29-swmm6-rust-readme.md). One pipe geometry, builds of 30 September 2026; a summary Claude wrote from the page (Q108).
+
+**Added 18 November 2026.** Five more summaries measure OpenSWMM 6 alpha 4.
+- On a three-conduit model with SWMM 5's options it matches EPA 5.2.4 bit for bit in node depths and link flows at all 360 reporting periods, but its surcharge tables say no node surcharged where EPA gives J1 1.08 h; one added line moves the J1 peak: EXTRAN 5.36 ft, SLOT 5.31, DYNAMIC_SLOT 5.40, NODE_CONTINUITY SEMI_IMPLICIT 4.91 [S280](../sources/S280-run-swmm6-ten-minutes-summary.md).
+- On a ponded eight-pipe chain, DYNAMIC_SLOT took steps not converging from 2.99% to 0.00% and continuity from 0.091% to 0.008% but cut the average step from 6.51 s to 1.28 s; SEMI_IMPLICIT made continuity worse on both ponded chains (-0.316% to -2.998% on chain B); Anderson acceleration left 2.51 trials per step unchanged; FV held continuity at 0.000% and ran about 7 times slower, and with ponding reported -158% and -133% [S281](../sources/S281-swmm6-in-diagrams-summary.md).
+- On an unponded four-pipe chain the two engines agree with SWMM 5 options (C1 peak 16.0 cfs in both, continuity -0.092% in both), but on ponded chain A EPA 5.2.4 peaked at 14.45 cfs and SWMM6's SWMM5 path at 11.67 cfs [S281](../sources/S281-swmm6-in-diagrams-summary.md). The page does not say why (Q115).
+- On a still pool, DYNAMIC_SLOT books slot water as storage (+25.5% in one pipe) and FV moves water where none should move (link flows to 74 cfs) [S282](../sources/S282-forma-swmm6-summary.md).
+- FV reported 103.4 ft at a 12.75 ft junction on one generated network of 24, with continuity 0.0% (DR-2, undiagnosed) [S286](../sources/S286-exam-first-swmm-harness-summary.md).

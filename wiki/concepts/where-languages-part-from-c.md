@@ -1,10 +1,11 @@
 ---
 title: Where languages part from C
 type: concept
-updated: 2026-11-14
-sources: [S38, S39, S40, S43, S44, S45, S46, S47, S48, S49, S50, S51, S53, S54, S70]
+updated: 2026-11-18
+sources: [S38, S39, S40, S43, S44, S45, S46, S47, S48, S49, S50, S51, S53, S54, S70, S270]
 tags: [translation, numerics]
 reviewed: 2026-11-15
+changed_after_review: "2026-11-18 (S268 to S299 ingest): a paragraph added near the end, headed Added 18 November 2026 (S270)"
 ---
 The traps the SWMM5 translations met: places where a language computes something other than what EPA's C computes on x86-64. Each README lists its own; these are the ones with numbers or a found case.
 
@@ -42,5 +43,7 @@ On 12 November 2026, 24 of these traps were rerun as probes of a few lines each,
 - C's `calloc` costs nothing until written. R zero-fills up front, and Lua and PHP arrays take 16 bytes an element, so one model's 3.38 GB of RDII history needed special storage [S47](../sources/S47-swmm5-php-readme.md) [S51](../sources/S51-swmm5-lua-readme.md) [S54](../sources/S54-swmm5-r-readme.md).
 - HotSpot never compiles a method over 8,000 bytes; Groovy's pow is 9,161 bytes, and one model ran more than 380 s instead of 32.6 s [S50](../sources/S50-swmm5-groovy-readme.md).
 - F# has no `return`, `break`, `continue` or `goto`; 551 returns became flags [S48](../sources/S48-swmm5-fsharp-readme.md).
+
+**Added 18 November 2026.** The same document measured the formatter as well as the math: C's printf rounds the exact binary value; JavaScript's toFixed rounds exact ties up (812.3125 prints 812.313 against C's 812.312); Java's String.format and Ruby's format round the shortest decimal string (543.4145 prints 543.415 in Java, 543.414 in C); Free Pascal prints 0.00 for -0.001 and stores 2.0/3.0 as a 4-byte single unless built with -CF64. It also found undefined behavior each language resolves its own way: in gage.c line 251 a one-entry time series overflows int, giving -2,147,483,648 in native C, 2,147,483,647 in wasm, Rust and Java, and other values in JavaScript and Python [S270](../sources/S270-how-many-languages-swmm5-summary.md).
 
 See [Matching glibc math in a translation](glibc-math-in-translation.md), [SWMM5 language translations](../entities/swmm5-language-ports.md).

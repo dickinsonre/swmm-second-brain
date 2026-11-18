@@ -1,8 +1,8 @@
 ---
 title: Walks, paths, connectivity and search
 type: concept
-updated: 2026-11-16
-sources: [S158]
+updated: 2026-11-18
+sources: [S158, S298]
 tags: [graph-theory, mathematics, algorithms]
 reviewed: no
 ---
@@ -26,3 +26,5 @@ So for finding a path between two nodes, BFS is usually the better choice [S158]
 **Genome assembly.** In shotgun sequencing, DNA fragments become nodes, and a directed edge runs from one fragment to another when the end of the first overlaps the start of the second. A Hamiltonian path through that graph stitches the fragments into a candidate genome [S158](../sources/S158-danka-graph-theory-for-visual-learners.md). The same overlap graph turns up on [Planar graphs and Euler's formula](planar-graphs.md).
 
 **Shortest paths with weights.** On a weighted graph, shortest paths take the edge weights into account; the article's street graph uses street lengths [S158](../sources/S158-danka-graph-theory-for-visual-learners.md). Counting shortest paths through a node gives [betweenness centrality](graph-random-walks-and-centrality.md).
+
+**Added 18 November 2026.** The [Cube as a Graph (app)](../entities/cube-as-a-graph.md) applies bidirectional breadth-first search to Rubik's cube through Thistlethwaite's four subgroups, where the full graph has 43,252,003,274,489,856,000 vertices; its optimal solver solved 0 of 5 full scrambles in 25 million nodes because its strongest lower bound is 9 against a typical distance near 18 [S298](../sources/S298-cube-as-a-graph-summary.md).

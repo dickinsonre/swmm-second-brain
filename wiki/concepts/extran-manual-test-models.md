@@ -1,8 +1,8 @@
 ---
 title: The EXTRAN manual test models
 type: concept
-updated: 2026-11-17
-sources: [S75, S180, S181, S182, S183, S185, S186, S192]
+updated: 2026-11-18
+sources: [S75, S180, S181, S182, S183, S185, S186, S192, S272, S273]
 tags: [extran, test-models, verification, swmm4, swmm5, swmm6, icm]
 reviewed: no
 ---
@@ -45,3 +45,5 @@ Examples 3 and 4 are described from the Rosetta Stone's conversion, because thei
 - EXTRAN4: node 82309 peaks at 12.03 ft with the weir's surcharge flag YES, the default, and 20.28 ft with NO; the 2006 figure shows 14.21 ft [S192](../sources/S192-swmm-qa-report-bench-app-md.md). See [Weirs and outlets](../concepts/weirs-and-outlets.md).
 - EXTRAN2's routing continuity error is -4.085 % with the report's options; every other example is within 0.72 % [S192](../sources/S192-swmm-qa-report-bench-app-md.md).
 - EXTRAN1: link 1602 peaks at 71.991 cfs read from the .out and 71.99 in the report file; node 82309's maximum depth 21.834 against 21.83 ft [S192](../sources/S192-swmm-qa-report-bench-app-md.md).
+
+**Added 18 November 2026.** Two more apps use the OpenWaterAnalytics copies of the EXTRAN examples. SWMM5 Walks Downhill embeds extran1 to 7, 9 and 10 verbatim from swmm-nrtestsuite commit e609fdbb and fits an inflow factor and a roughness factor on each [S272](../sources/S272-swmm5-walks-downhill-app-md.md). Agreement Is the Null runs examples 1 to 10 without 8b and prices each option difference on example 1 in Manning's n [S273](../sources/S273-agreement-is-the-null-summary.md).

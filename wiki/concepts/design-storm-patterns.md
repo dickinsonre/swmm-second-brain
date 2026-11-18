@@ -1,11 +1,11 @@
 ---
 title: Design storms and temporal patterns
 type: concept
-updated: 2026-11-17
-sources: [S62, S65, S66, S237, S238, S253]
+updated: 2026-11-18
+sources: [S62, S65, S66, S237, S238, S253, S284]
 tags: [rainfall, design-storms, hydrology, method]
 reviewed: 2026-11-15
-changed_after_review: "2026-11-17 (S224 to S242 ingest): a paragraph added near the end, headed Added 17 November 2026 (S237, S238); 2026-11-17 (S243 to S255 ingest): a paragraph added near the end, headed Added 17 November 2026 (S253)"
+changed_after_review: "2026-11-17 (S224 to S242 ingest): a paragraph added near the end, headed Added 17 November 2026 (S237, S238); 2026-11-17 (S243 to S255 ingest): a paragraph added near the end, headed Added 17 November 2026 (S253); 2026-11-18 (S268 to S299 ingest): a paragraph added near the end, headed Added 18 November 2026 (S284)"
 ---
 A design storm is a total depth and a shape. The shape, a hyetograph, says when in the storm the rain falls hardest, and it is the rainfall input a drainage model needs [S66](../sources/S66-li-design-storm-app-66-patterns.md). Bob's [World Rainfall Pattern Painter (app)](../entities/world-rainfall-pattern-painter.md) generates them [S65](../sources/S65-world-rainfall-pattern-painter-app-md.md).
 
@@ -45,3 +45,5 @@ The summary lists 37 method families in all, each with the file and line where t
 **Added 17 November 2026, second batch.** Two apps on the rainfall that goes into a model. [Quantile Mapping to SWMM5 / SWMM6 (app)](../entities/quantile-mapping-swmm.md) corrects forecast rain by quantile mapping and notes that SWMM5's only rainfall adjustment is one monthly multiplier [S237](../sources/S237-quantile-mapping-swmm-summary.md). [The Narrow Band (app)](../entities/narrow-band.md) finds that a narrow uncertainty band on a 200-year daily rain need not hold the true value: 28.8 % of records for MEVD against 75.8 % for GEV, on synthetic rain [S238](../sources/S238-narrow-band-app-md.md).
 
 **Added 17 November 2026, third batch.** From the third batch: turning an NOAA Atlas 14 depth table into a Chicago storm, the discretisation of the UrbanSystemsLab repository does not always conserve the storm total [S253](../sources/S253-rain-on-grid-workbench-summary.md).
+
+**Added 18 November 2026.** Three storms of the same 4.82 in (the Atlas 14 10-year, 24-hour depth at 38.9 N, 77.0 W) give 315.7 cfs (SCS Type II), 296.9 cfs (alternating block) and 47.1 cfs (triangle) at one outfall in the SWMM6 UX Explorer's demo engine, and 373.4, 357.9 and 49.6 cfs in EPA SWMM 5.2.4, with the same runoff volume; the alternating block runs 1.7% high against Atlas 14 at 3 hours [S284](../sources/S284-swmm6-ux-explorer-summary.md).

@@ -5,7 +5,7 @@ Every page in the wiki, one line each. An agent reads this first. Updated on eve
 ## Start here
 - [Overview: what this wiki holds so far](wiki/overview.md): what the wiki holds so far, by Bob's six themes, and what is missing.
 - [Start here](wiki/start-here.md): for a new reader; how to read a claim, and four first tasks (modeler, developer, ICM user, maintainer) that each end in something done.
-- [Open questions](wiki/open-questions.md): <!-- state:oq -->101 open and 9 settled<!-- /state:oq -->: contradictions, doubtful numbers and gaps waiting for a source or for Bob.
+- [Open questions](wiki/open-questions.md): <!-- state:oq -->106 open and 9 settled<!-- /state:oq -->: contradictions, doubtful numbers and gaps waiting for a source or for Bob.
 - [Schema](CLAUDE.md): how the wiki is kept. [Log](log.md): what was done and when.
 
 ## Concepts
@@ -87,6 +87,9 @@ Measurement and method
 - [Apps summarized on 17 November 2026: generators, rain and surfaces for SWMM5](wiki/concepts/apps-from-pages-generators-rain-surfaces.md): nineteen apps: generators, rainfall and flow-data methods, inlets and quasi-2D meshes.
 - [Apps summarized on 17 November 2026: ICM, data and the tools around models](wiki/concepts/apps-from-pages-icm-and-data.md): thirteen apps on ICM and on the data that goes into models; none ran ICM in the page.
 - [Apps summarized on 17 November 2026: SWMM6, HydroCouple and AI](wiki/concepts/apps-from-pages-swmm6-hydrocouple-ai.md): twelve apps on OpenSWMM 6, HydroCouple, the engine source code, and AI beside the engine.
+- [Apps summarized on 17 and 18 November 2026: SWMM5, EPANET and the checks on them](wiki/concepts/apps-from-pages-swmm5-epanet-checks.md): twelve apps on SWMM5, its history, EPANET, and the checks made on engines.
+- [Apps summarized on 17 and 18 November 2026: SWMM6, benchmarks and ICM results](wiki/concepts/apps-from-pages-swmm6-and-benchmarks.md): nine apps on OpenSWMM 6 measured on small cases, the benchmarks around it, and ICM link results.
+- [Apps summarized on 17 and 18 November 2026: AI workflows, tools and puzzles](wiki/concepts/apps-from-pages-tools-and-puzzles.md): eleven apps: AI workflows around SWMM, tools, a climate app, a forecast and four puzzles.
 - [LinkedIn posts that were well received](wiki/concepts/linkedin-post-reception.md): which of 50 posts were most seen, most reacted to and most answered on 15 November 2026, and where the two posts Bob named stand.
 
 Economics
@@ -282,6 +285,37 @@ Apps
 - [Selective Fidelity (app)](wiki/entities/selective-fidelity.md): A 5.2.4 dynamic-wave patch that solves only the conduits a question needs; 4.15 times fewer steps, the target peak unchanged.
 - [Six Tools Workbench (app)](wiki/entities/six-tools-workbench.md): Robert C. Martin's six agent-built code tools at toy size, and four of them rebuilt and run on SWMM5, SWMM6 and ICM Ruby code.
 - [BobSWMM App Catalog (app)](wiki/entities/bobswmm-app-catalog.md): Bob's Lovable app catalog in one file with a health check; 106 records, and simulated usage counts found typed into the code.
+- [Storm Sewer Manhole (app)](wiki/entities/storm-sewer-manhole.md): How a manhole works in eight storm steps: the level is the pipe pressure, and at 2.3 times capacity the cover lifts.
+- [How Many Languages Can the SWMM5 Engine Live In? (document)](wiki/entities/how-many-languages-swmm5.md): Which languages can host a byte-identical port of EPA SWMM 5.2.4: the math library and formatter decide, measured.
+- [SWMM 4.4H Workbench (app)](wiki/entities/swmm44h-workbench.md): SWMM 4.4H Fortran in the browser, as distributed and corrected, with a 300-model SWMM5-to-SWMM4 census.
+- [SWMM5 Walks Downhill (app)](wiki/entities/swmm5-walks-downhill.md): Gradient descent on two SWMM5 knobs with the engine in the loop; extran10 shows a good fit with the wrong knobs.
+- [Agreement Is the Null (app)](wiki/entities/agreement-is-the-null.md): Engine comparison rethought: option differences in one engine priced in Manning's n; no AI-use note on the page.
+- [Tri-Pyramid (app)](wiki/entities/tri-pyramid.md): Nodes and links binned like a population pyramid; the report step caught 31% of one link's peak.
+- [Des Moines Sewer to SWMM5 (app)](wiki/entities/des-moines-sewer-swmm5.md): A city's open sewer GIS to SWMM5; as published the sanitary sample's continuity is 6.184%.
+- [Brick City Water Cycle (app)](wiki/entities/brick-city-water-cycle.md): A town's three water routes on a brick board; the orifice, not the gardens, sets the release.
+- [EPANET Total Head Explorer (app)](wiki/entities/epanet-total-head-explorer.md): A JavaScript port of EPANET 2.2 that matches the compiled engines to 10^-12 ft, used to teach what EPANET calls head.
+- [Chanakya's Counsel for SWMM (app)](wiki/entities/chanakya-counsel.md): One drainage decision walked through the Arthashastra's audit, spies and writ, run in EPA SWMM 5.2.4.
+- [Finite difference vs ML for flood modeling (dashboard)](wiki/entities/finite-difference-vs-ml.md): A Saint-Venant solver against two ML surrogates: 0.007 ft inside the record, 5.90 to 9.75 ft outside it.
+- [Run SWMM6 in Ten Minutes (document)](wiki/entities/run-swmm6-ten-minutes.md): Install OpenSWMM 6 with pip and check it against EPA 5.2.4 in ten minutes; the surcharge tables disagree.
+- [SWMM6 in Diagrams (design)](wiki/entities/swmm6-in-diagrams.md): Ten boards of what OpenSWMM 6 changes; the slot and semi-implicit options trade convergence for continuity.
+- [Forma × SWMM6 (app)](wiki/entities/forma-swmm6.md): Four versions of one SWMM model kept like drawings; the still-pool check found the slot booking water as storage.
+- [Cymatic Synapse Generator (app)](wiki/entities/cymatic-synapse-generator.md): A SWMM5 network generated from a picture; storage hubs cut the outfall peak from 812.1 to 717.1 cfs.
+- [SWMM6 UX Explorer (app)](wiki/entities/swmm6-ux-explorer.md): The SWMMVis alpha.4 workspace in one file; three 4.82 in storms give 315.7, 296.9 and 47.1 cfs.
+- [SWMM6 Shoebox (app)](wiki/entities/swmm6-shoebox.md): A one-site desk solved by OpenSWMM 6 and EPA 5.2.4; Green-Ampt in alpha.4 gave 0.99 against 19.54 cfs.
+- [Exam-First SWMM Harness (app)](wiki/entities/exam-first-swmm-harness.md): Exam first, harness second: held-out 0.496 to 0.807, sealed only 0.637 to 0.715; two OpenSWMM 6 defects.
+- [OpenHydro Bench Review (app)](wiki/entities/openhydro-bench-review.md): A review of a 1D-2D benchmark: the machinery holds, the scoring does not yet; a forged file wins one test.
+- [ICM Link Results SQL (app)](wiki/entities/icm-link-results-sql.md): The link-result fields of ICM SQL and a writer for the aggregate query; no ICM run behind it.
+- [Agent Relay (app)](wiki/entities/agent-relay.md): A seven-box AI digital-delivery workflow run on an invented town with rule-based agents and a person at every gate.
+- [SWMM Evidence Board (app)](wiki/entities/swmm-evidence-board.md): Eight models with planted faults that record which report tiles a modeler opens first.
+- [Seven Studies for SWMM (app)](wiki/entities/seven-studies-swmm.md): Seven habits of thought, one lab each on a four-pipe model; upsizing one pipe cut flooding 2.2 percent.
+- [SWMM Enablement Bookend Recorder (app)](wiki/entities/swmm-bookend-recorder.md): A screen recorder that signs the work with a face only at the bookends.
+- [CADCraft Round-Trip Explorer (app)](wiki/entities/cadcraft-round-trip-explorer.md): What survives a DXF open-and-save in an open-source AutoCAD clone: 99.6%, and tilted entities move.
+- [Pengu Climate Watch (app)](wiki/entities/pengu-climate-watch.md): Antarctic ice treated as a reservoir; 30 port defects fixed, each with the code as it was.
+- [Water Modeling to 3000 (app)](wiki/entities/water-modeling-to-3000.md): Water modeling forecast to 2050 and dreamed to 3000; the continuity check travels the whole way.
+- [Surcell (app)](wiki/entities/surcell.md): Fly inside the 3D boundary of a 4D shape and measure its curvature from inside.
+- [Loopover (app)](wiki/entities/loopover.md): A Loopover puzzle; each drag moves one row or column.
+- [Cube as a Graph (app)](wiki/entities/cube-as-a-graph.md): Rubik's cube solved by walking its Cayley graph through Thistlethwaite's subgroups.
+- [O2 Tesseract (app)](wiki/entities/o2-tesseract.md): The QiYi O2 in four to seventeen dimensions; 192 positions in 4D.
 
 Data
 - [1729-SWMM5-Models-2030 (the corpus)](wiki/entities/corpus-1729.md): Bob's public model repository; 480 of its models are the translations' gate set.
@@ -319,7 +353,7 @@ App summaries
 - [S74](wiki/sources/S74-extran3-workbench-app-md.md) (2026-11-11): EXTRAN III Workbench, technical summary, v1.6.0.
 - [S75](wiki/sources/S75-st-venant-rosetta-stone-app-md.md) (2026-11-13): St. Venant Solver Rosetta Stone, technical summary, v2.4.0; superseded by S186.
 - [S186](wiki/sources/S186-st-venant-rosetta-stone-app-md-v2-6-2.md) (2026-11-14): St. Venant Solver Rosetta Stone, technical summary, v2.6.2; 1,342 runs, Examples 2 to 7, Registers 31 to 33. Read in part.
-- [S76](wiki/sources/S76-inside-the-network-cfd-app-md.md) (2026-11-12): Inside the Network, technical summary, v1.1.0.
+- [S76](wiki/sources/S76-inside-the-network-cfd-app-md.md) (2026-11-12): Inside the Network, technical summary, v1.1.0; superseded by S268.
 - [S77](wiki/sources/S77-under-load-app-md.md) (2026-11-11): Under Load, technical summary, v1.4.0.
 - [S78](wiki/sources/S78-fractal-swmm-generator-app-md.md) (2026-11-12): Fractal SWMM5/SWMM6 Network Generator, technical summary, v2.3.
 - [S79](wiki/sources/S79-teacher-forced-swmm-summary.md) (2026-10-25): Teacher-Forced SWMM v1.0, summary written from the page by Claude.
@@ -467,6 +501,38 @@ App summaries
 - [S265](wiki/sources/S265-selective-fidelity-summary.md) (2026-10-21): Selective Fidelity v1.0, summary written from the page by Claude.
 - [S266](wiki/sources/S266-six-tools-workbench-summary.md) (2026-10-11): Six Tools Workbench v1.1, summary written from the page by Claude.
 - [S267](wiki/sources/S267-bobswmm-app-catalog-summary.md) (2026-10-21): BobSWMM App Catalog v1.0, summary written from the page by Claude.
+- [S268](wiki/sources/S268-inside-the-network-cfd-app-md.md) (2026-11-12): Inside the Network v1.1.1, technical summary.
+- [S269](wiki/sources/S269-storm-sewer-manhole-summary.md) (2026-10-20): Storm Sewer Manhole v2026-10-20, summary written from the page by Claude.
+- [S270](wiki/sources/S270-how-many-languages-swmm5-summary.md) (2026-10-28): How Many Languages Can the SWMM5 Engine Live In? v2026-10-28, summary written from the page by Claude.
+- [S271](wiki/sources/S271-swmm44h-workbench-summary.md) (2026-10-17): SWMM 4.4H Workbench v2026-10-17, summary written from the page by Claude.
+- [S272](wiki/sources/S272-swmm5-walks-downhill-app-md.md) (2026-11-15): SWMM5 Walks Downhill v1.1.0, technical summary.
+- [S273](wiki/sources/S273-agreement-is-the-null-summary.md) (2026-10-04): Agreement Is the Null v1.1.0, summary written from the page by Claude.
+- [S274](wiki/sources/S274-tri-pyramid-summary.md) (2026-10-20): Tri-Pyramid v3.0, summary written from the page by Claude.
+- [S275](wiki/sources/S275-des-moines-sewer-swmm5-summary.md) (2026-10-18): Des Moines Sewer to SWMM5 v1.0, summary written from the page by Claude.
+- [S276](wiki/sources/S276-brick-city-water-cycle-summary.md) (2026-10-24): Brick City Water Cycle v1.0, summary written from the page by Claude.
+- [S277](wiki/sources/S277-epanet-total-head-explorer-summary.md) (2026-11-03): EPANET Total Head Explorer v2026-11-03, summary written from the page by Claude.
+- [S278](wiki/sources/S278-chanakya-counsel-summary.md) (2026-10-20): Chanakya's Counsel for SWMM v1.6.0, summary written from the page by Claude.
+- [S279](wiki/sources/S279-finite-difference-vs-ml-summary.md) (2026-10-09): Finite difference vs ML for flood modeling v2026-10-09, summary written from the page by Claude.
+- [S280](wiki/sources/S280-run-swmm6-ten-minutes-summary.md) (2026-10-05): Run SWMM6 in Ten Minutes v2026-10-05, summary written from the page by Claude.
+- [S281](wiki/sources/S281-swmm6-in-diagrams-summary.md) (2026-11-14): SWMM6 in Diagrams v2026-11-14, summary written from the page by Claude.
+- [S282](wiki/sources/S282-forma-swmm6-summary.md) (2026-11-01): Forma × SWMM6 v1.2, summary written from the page by Claude.
+- [S283](wiki/sources/S283-cymatic-synapse-generator-summary.md) (2026-10-31): Cymatic Synapse Generator v1.15, summary written from the page by Claude.
+- [S284](wiki/sources/S284-swmm6-ux-explorer-summary.md) (2026-11-03): SWMM6 UX Explorer v2026-11-03, summary written from the page by Claude.
+- [S285](wiki/sources/S285-swmm6-shoebox-summary.md) (2026-10-24): SWMM6 Shoebox v1.1, summary written from the page by Claude.
+- [S286](wiki/sources/S286-exam-first-swmm-harness-summary.md) (2026-10-19): Exam-First SWMM Harness v2026-10-19, summary written from the page by Claude.
+- [S287](wiki/sources/S287-openhydro-bench-review-summary.md) (2026-10-18): OpenHydro Bench Review v1.7, summary written from the page by Claude.
+- [S288](wiki/sources/S288-icm-link-results-sql-summary.md) (2026-11-02): ICM Link Results SQL v1.0, summary written from the page by Claude.
+- [S289](wiki/sources/S289-agent-relay-app-md.md) (2026-11-17): Agent Relay v1.0.0, technical summary.
+- [S290](wiki/sources/S290-swmm-evidence-board-app-md.md) (2026-11-17): SWMM Evidence Board v1.0.0, technical summary.
+- [S291](wiki/sources/S291-seven-studies-swmm-app-md.md) (2026-11-17): Seven Studies for SWMM v1.0.0, technical summary.
+- [S292](wiki/sources/S292-swmm-bookend-recorder-summary.md) (2026-10-27): SWMM Enablement Bookend Recorder v1.1.0, summary written from the page by Claude.
+- [S293](wiki/sources/S293-cadcraft-round-trip-explorer-summary.md) (2026-10-19): CADCraft Round-Trip Explorer v1.1, summary written from the page by Claude.
+- [S294](wiki/sources/S294-pengu-climate-watch-summary.md) (2026-10-25): Pengu Climate Watch v1.1, summary written from the page by Claude.
+- [S295](wiki/sources/S295-water-modeling-to-3000-summary.md) (2026-10-14): Water Modeling to 3000 v2.6, summary written from the page by Claude.
+- [S296](wiki/sources/S296-surcell-summary.md) (2026-10-28): Surcell v2026-10-28, summary written from the page by Claude.
+- [S297](wiki/sources/S297-loopover-summary.md) (2026-10-06): Loopover v1.3, summary written from the page by Claude.
+- [S298](wiki/sources/S298-cube-as-a-graph-summary.md) (2026-10-20): Cube as a Graph v1.7, summary written from the page by Claude.
+- [S299](wiki/sources/S299-o2-tesseract-summary.md) (2026-10-20): O2 Tesseract v3.3, summary written from the page by Claude.
 
 Manuals and reports (primary documents)
 - [S185](wiki/sources/S185-epa-swmm5-qa-report-dynamic-wave-2006.md) (2006-09): SWMM Quality Assurance Report, Dynamic Wave Flow Routing, by L. A. Rossman: SWMM 4.4h against SWMM 5.0.006 on twenty examples. Read in part: Chapters 1 to 4 and 7.

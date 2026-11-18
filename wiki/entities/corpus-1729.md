@@ -1,11 +1,11 @@
 ---
 title: 1729-SWMM5-Models-2030 (the corpus)
 type: entity
-updated: 2026-11-17
-sources: [S23, S29, S30, S35, S41, S42, S43, S45, S52, S54, S74, S87, S89, S75, S79, S193, S195, S196, S197, S208, S211, S212, S215, S216, S230, S231, S260]
+updated: 2026-11-18
+sources: [S23, S29, S30, S35, S41, S42, S43, S45, S52, S54, S74, S87, S89, S75, S79, S193, S195, S196, S197, S208, S211, S212, S215, S216, S230, S231, S260, S271, S290, S270, S274]
 tags: [corpus, verification, swmm5, swmm6]
 reviewed: 2026-11-15
-changed_after_review: "2026-11-17 (S192 to S202 ingest): one paragraph added at the end on four more uses (S193, S195 to S197); 2026-11-17 (S205 to S223 ingest): a paragraph added near the end, headed Added 17 November 2026 (S208, S211, S212, S215, S216); 2026-11-17 (S224 to S242 ingest): a paragraph added near the end, headed Added 17 November 2026 (S230, S231); 2026-11-17 (S256 to S267 ingest): a paragraph added near the end, headed Added 17 November 2026 (S260)"
+changed_after_review: "2026-11-17 (S192 to S202 ingest): one paragraph added at the end on four more uses (S193, S195 to S197); 2026-11-17 (S205 to S223 ingest): a paragraph added near the end, headed Added 17 November 2026 (S208, S211, S212, S215, S216); 2026-11-17 (S224 to S242 ingest): a paragraph added near the end, headed Added 17 November 2026 (S230, S231); 2026-11-17 (S256 to S267 ingest): a paragraph added near the end, headed Added 17 November 2026 (S260); 2026-11-18 (S268 to S299 ingest): a paragraph added near the end, headed Added 18 November 2026 (S271, S290, S270, S274)"
 ---
 Bob's public repository of SWMM5 models, https://github.com/SWMMBobSWMM6/1729-SWMM5-Models-2030 [S23](../sources/S23-swmm6-csharp-readme.md).
 
@@ -44,3 +44,5 @@ See [Byte-for-byte gate](../concepts/byte-for-byte-gate.md), [SWMM6 language tra
 **Added 17 November 2026, second batch.** From the second batch: 4,540 .inp files at commit 9ee63bd measured for their shapes, 1,311 unique [S230](../sources/S230-swmm5-network-shapes-app-md.md); 396 of 459 models under 300 KB run as they stand and round-trip identical through a block editor [S231](../sources/S231-swmmcraft-ultimate-app-md.md).
 
 **Added 17 November 2026, fourth batch.** From the fourth batch: the importer of Pablo Martinez's UK Flood Sandbox, run on 4,530 corpus files, would stop 3,451 on US flow units alone [S260](../sources/S260-sandbox-companion-summary.md).
+
+**Added 18 November 2026.** From the 18 November batch: the SWMM 4.4H Workbench translated 300 corpus models to SWMM4 [S271](../sources/S271-swmm44h-workbench-summary.md); the SWMM Evidence Board builds its planted-fault cases from corpus models [S290](../sources/S290-swmm-evidence-board-app-md.md); How Many Languages ran 440 models from six folders [S270](../sources/S270-how-many-languages-swmm5-summary.md). Tri-Pyramid says its parsers have not been run on the 3,813-model corpus the page can reach [S274](../sources/S274-tri-pyramid-summary.md).

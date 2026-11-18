@@ -1,10 +1,11 @@
 ---
 title: Inside the Network (app)
 type: entity
-updated: 2026-11-15
-sources: [S76]
+updated: 2026-11-18
+sources: [S76, S268]
 tags: [apps, cfd, hydraulics, swmm5, extran]
 reviewed: 2026-11-15
+changed_after_review: "2026-11-18 (S268 to S299 ingest): a paragraph added near the end, headed Added 18 November 2026 (S268)"
 ---
 Bob's app that runs two models of one sewer in the browser and shows where they differ: a free-surface CFD solver that moves particles of water through chambers and box conduits, and EPA SWMM 5.2.4. Version 1.1.0, 12 November 2026. "It is a demonstration, not a design tool" [S76](../sources/S76-inside-the-network-cfd-app-md.md).
 
@@ -40,3 +41,5 @@ On the short true-scale section the CFD stands 1.29 ft above SWMM 5 at the first
 **What it does not show.** Eighteen numbered limits, L-1 to L-18. Among them: two dimensions, so circular pipes are boxes; air has no pressure; inflows carry no momentum; chambers are not compressed, so a riser stores far more than a SWMM 5 junction; no measured data anywhere. No person has reviewed the solver code [S76](../sources/S76-inside-the-network-cfd-app-md.md).
 
 **Engine.** EPA SWMM 5.2.4 with Bob's KW/SF patch, extension off; see [WebAssembly builds against native builds](../concepts/wasm-against-native-builds.md).
+
+**Added 18 November 2026.** Version 1.1.1, also of 12 November 2026, changes the documentation only: the Doc tab and the .docx gain one-sentence, one-paragraph and one-page summaries and five questions with their answers. Nothing in the solver, the engine or any number changed [S268](../sources/S268-inside-the-network-cfd-app-md.md). [S268](../sources/S268-inside-the-network-cfd-app-md.md) is now the current summary; [S76](../sources/S76-inside-the-network-cfd-app-md.md) carries `superseded_by: S268`.

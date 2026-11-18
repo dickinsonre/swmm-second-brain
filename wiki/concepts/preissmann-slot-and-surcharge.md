@@ -1,11 +1,11 @@
 ---
 title: Preissmann slot and surcharge
 type: concept
-updated: 2026-11-17
-sources: [S01, S04, S05, S08, S20, S21, S22, S55, S60, S75, S79, S188, S209]
+updated: 2026-11-18
+sources: [S01, S04, S05, S08, S20, S21, S22, S55, S60, S75, S79, S188, S209, S280, S281, S282]
 tags: [hydraulics, swmm5, icm, surcharge]
 reviewed: 2026-11-15
-changed_after_review: "2026-11-16 (S188 to S190 ingest): one paragraph added at the end on the 2021 Water Talks webinar (S188); 2026-11-17 (S205 to S223 ingest): a paragraph added near the end, headed Added 17 November 2026 (S209)"
+changed_after_review: "2026-11-16 (S188 to S190 ingest): one paragraph added at the end on the 2021 Water Talks webinar (S188); 2026-11-17 (S205 to S223 ingest): a paragraph added near the end, headed Added 17 November 2026 (S209); 2026-11-18 (S268 to S299 ingest): a paragraph added near the end, headed Added 18 November 2026 (S280, S281, S282)"
 ---
 When a closed pipe fills, the free-surface equations stop applying. The Preissmann slot keeps them valid by putting a narrow virtual slot above the crown: the water level rises into the slot, and the slot width sets the wave speed. A narrower slot gives a faster wave, closer to real pressurized behavior, and needs a smaller time step [S20](../sources/S20-li-edition-54-two-solvers.md).
 
@@ -39,3 +39,5 @@ When a closed pipe fills, the free-surface equations stop applying. The Preissma
 - He says Lew Rossman added the slot "two years ago". In a talk of 2021 that points to about 2019, a third date beside Q01's 2012 and 2018; EPA's update notes, cited by [S22](../sources/S22-li-ten-problems.md), give 10 May 2018.
 
 **Added 17 November 2026.** [The Rigid Column Test (app)](../entities/rigid-column-test.md) puts a full pipe 3,281 ft (1,000 m) long between fixed heads, which has an exact answer, to 5.2.4 and OpenSWMM 6.0.0-alpha.4. EXTRAN lands on the exact curve within 1 % in both; the 5.2.4 SLOT measured a celerity of 87.6 to 93.5 ft/s (26.7 to 28.5 m/s) against its 91.2 ft/s (27.8 m/s) and carried +3.814 % on the steady velocity; the stock dynamic slot ran a factor of 1.414 fast [S209](../sources/S209-rigid-column-test-summary.md). The conversions are ours. A summary Claude wrote from the page (Q108).
+
+**Added 18 November 2026.** Two app pages measure the slot in OpenSWMM 6 alpha 4. On a three-pipe model SLOT gives 5.31 ft at J1 and DYNAMIC_SLOT 5.40 ft, where EPA 5.2.4's SLOT gives 5.22 ft [S280](../sources/S280-run-swmm6-ten-minutes-summary.md). On a ponded chain the dynamic slot's 82 ft/s pressure wave (DPS_CELERITY 25 m/s) shrank the average step from 6.5 s to 1.3 s [S281](../sources/S281-swmm6-in-diagrams-summary.md), and on a still pool it books slot water as stored volume, +25.5% in one full pipe [S282](../sources/S282-forma-swmm6-summary.md).

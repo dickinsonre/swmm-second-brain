@@ -1,11 +1,11 @@
 ---
 title: The SWMM findings register
 type: concept
-updated: 2026-11-17
-sources: [S03, S04, S05, S59, S67, S71, S72, S74, S75, S79, S80, S82, S83, S192, S193, S194, S195, S196, S197, S203, S216, S220, S209, S212, S240, S236, S229, S242, S255, S261, S262, S259]
+updated: 2026-11-18
+sources: [S03, S04, S05, S59, S67, S71, S72, S74, S75, S79, S80, S82, S83, S192, S193, S194, S195, S196, S197, S203, S216, S220, S209, S212, S240, S236, S229, S242, S255, S261, S262, S259, S285, S286, S282, S271, S287]
 tags: [findings, verification, method]
 reviewed: 2026-11-15
-changed_after_review: "2026-11-17 (S192 to S202 ingest): one paragraph added at the end listing more app-local findings (S192 to S197); 2026-11-17 (S203 ingest): one paragraph added at the end on the SOIL2 misread; 2026-11-17 (S205 to S223 ingest): a paragraph added near the end, headed Added 17 November 2026 (S216, S220, S209, S212); 2026-11-17 (S224 to S242 ingest): a paragraph added near the end, headed Added 17 November 2026 (S240, S236, S229, S242); 2026-11-17 (S243 to S255 ingest): a paragraph added near the end, headed Added 17 November 2026 (S255); 2026-11-17 (S256 to S267 ingest): a paragraph added near the end, headed Added 17 November 2026 (S261, S262, S259)"
+changed_after_review: "2026-11-17 (S192 to S202 ingest): one paragraph added at the end listing more app-local findings (S192 to S197); 2026-11-17 (S203 ingest): one paragraph added at the end on the SOIL2 misread; 2026-11-17 (S205 to S223 ingest): a paragraph added near the end, headed Added 17 November 2026 (S216, S220, S209, S212); 2026-11-17 (S224 to S242 ingest): a paragraph added near the end, headed Added 17 November 2026 (S240, S236, S229, S242); 2026-11-17 (S243 to S255 ingest): a paragraph added near the end, headed Added 17 November 2026 (S255); 2026-11-17 (S256 to S267 ingest): a paragraph added near the end, headed Added 17 November 2026 (S261, S262, S259); 2026-11-18 (S268 to S299 ingest): a paragraph added near the end, headed Added 18 November 2026 (S285, S286, S282, S271, S287)"
 ---
 A numbered, dated record of what was checked and what came back, proposed in October 2026 because Bob's apps are safe on Netlify and GitHub while the findings exist only inside chat transcripts [S03](../sources/S03-findings-register-format.md).
 
@@ -60,3 +60,5 @@ A numbered, dated record of what was checked and what came back, proposed in Oct
 **Added 17 November 2026, third batch.** From the third batch, at the page's word: SWMM 5.2.4's climate.c evening and pre-dawn temperature branches do not meet at midnight [S255](../sources/S255-ifs-analysis-explorer-summary.md).
 
 **Added 17 November 2026, fourth batch.** From the fourth batch: OpenSWMM 6 at 137e65e kept a dry conduit's last evaporation rate, -34,178 % routing continuity on an all-snow storm, fixed upstream on 12 September 2026 (status as the page gives it) [S261](../sources/S261-swmm6-hands-on-watershed-summary.md); the cross-section tables make a Gothic sewer ring in dry weather [S262](../sources/S262-swmm5-swmm6-curve-sections-summary.md); the HydroCouple platform's packaging scanner misses the [LID_USAGE] report file [S259](../sources/S259-inside-hydrocouple-platform-summary.md).
+
+**Added 18 November 2026.** From the 18 November batch, at the pages' word: alpha.4 Green-Ampt (ED-1, fixed upstream) and flooding summary (ED-2) [S285](../sources/S285-swmm6-shoebox-summary.md); storage nodes written as dividers (DR-1) and an FV junction at 103.4 ft (DR-2, undiagnosed) [S286](../sources/S286-exam-first-swmm-harness-summary.md); slot water booked as storage and still-pool continuity in every dynamic-wave run (O1 to O5) [S282](../sources/S282-forma-swmm6-summary.md); a 121-change corrected SWMM 4.4H with 26 faults left alone and listed [S271](../sources/S271-swmm44h-workbench-summary.md); a benchmark scorer that a forged results file beats [S287](../sources/S287-openhydro-bench-review-summary.md).

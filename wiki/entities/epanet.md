@@ -1,8 +1,8 @@
 ---
 title: EPANET
 type: entity
-updated: 2026-11-17
-sources: [S21, S11, S198, S115, S120]
+updated: 2026-11-18
+sources: [S21, S11, S198, S115, S120, S277]
 tags: [epanet, engine, water-distribution]
 reviewed: no
 ---
@@ -18,5 +18,7 @@ EPA's program for pressurized water distribution networks. [Lewis A. (Lew) Rossm
 **Six routes to one answer.** On Net1's 225 hourly pressures, epanet-js, EPyT, WNTR with EPANET 2.2, the runepanet console program and WNTR's own Python solver all agree with owa-epanet to within 9.6e-05 psi [S198](../sources/S198-two-engines-one-town-summary.md).
 
 **Apps here that use or explain it.** [Two Engines, One Town](two-engines-one-town.md), which couples it to SWMM [S198](../sources/S198-two-engines-one-town-summary.md); [ForceMain SWMM5 EPANET Comparison](forcemain-swmm5-epanet-comparison.md) [S120](../sources/S120-forcemain-swmm5-epanet-comparison-replit-summary.md); [EPANET for SWMM5 Experts](epanet-for-swmm5-experts.md), which explains it to SWMM users and runs no engine [S115](../sources/S115-epanet-for-swmm5-experts-replit-summary.md); [EPANET Quizzer](epanet-quizzer.md).
+
+**Added 18 November 2026.** The [EPANET Total Head Explorer (app)](../entities/epanet-total-head-explorer.md) carries a JavaScript port of the EPANET 2.2 hydraulic solver that agrees with compiled EPANET 2.2 and OWA-EPANET 2.3.5 to 4.4 x 10^-12 ft on the manual's tutorial network; its first edition used 2.31 ft per psi where EPANET uses 0.4333 psi per ft and put node 2 at 386.66 psi instead of 387.02 [S277](../sources/S277-epanet-total-head-explorer-summary.md).
 
 **Related.** [Force main friction](../concepts/force-main-friction.md), where SWMM's and EPANET's friction formulas meet.
