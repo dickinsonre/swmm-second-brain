@@ -2,7 +2,7 @@
 title: Start here
 type: synthesis
 updated: 2026-11-17
-sources: [S187, S192, S45, S165, S87, S23, S204]
+sources: [S187, S192, S45, S165, S87, S23, S204, S205]
 tags: [handoff, reading-path, reproduction]
 reviewed: no
 ---
@@ -39,7 +39,7 @@ Done when your ICM SWMM and ICM InfoWorks results for the same model are filed a
 
 This repository holds no `.inp`, `.rpt`, `.out` or `.rb` files. The models live in the public corpus, https://github.com/SWMMBobSWMM6/1729-SWMM5-Models-2030 [S23](sources/S23-swmm6-csharp-readme.md); its README is [S87](sources/S87-corpus-1729-readme.md). The repositories the sources name are mapped on [Bob's GitHub repositories](entities/bobs-github-repositories.md).
 
-The apps are the weak link. Counted by Claude from the `links:` lines of the 94 ingested summaries in `raw/apps/` on 17 November 2026: 29 name a GitHub repository or a live Netlify address; 16 name only a Claude artifact, which opens for Bob and whoever he shares it with; 49 name neither. So from this repository alone a successor can reach 29 of the 94 apps (Q104).
+The apps were the weak link. On 17 November 2026 Bob deployed 62 apps to Netlify, and their addresses were read from his account and filed as a note [S205](sources/S205-note-netlify-addresses.md). Recounted by Claude after that day's ingest, from the `links:` lines of the 156 ingested summaries in `raw/apps/` and that note: 91 apps can be reached from this repository, the 29 whose summaries name a GitHub repository or a live Netlify address and the 62 in the note. Of the other 65, 18 name only a Claude artifact, which opens for Bob and whoever he shares it with, and 47 name neither. The count made earlier that day put 16 and 49 in those two groups; the recount reads two summaries differently (Q104).
 
 ## What Bob has not written down yet
 

@@ -1,8 +1,8 @@
 ---
 title: Time stepping in ICM and SWMM 5
 type: concept
-updated: 2026-11-16
-sources: [S188, S20]
+updated: 2026-11-17
+sources: [S188, S20, S265]
 tags: [time-step, icm, swmm5, stability, comparison]
 reviewed: no
 ---
@@ -26,5 +26,7 @@ SWMM 5 was unstable at the start, with no continuity error, and ran better with 
 **Starting state.** SWMM 5 starts dry unless given a hot start file, which Bob advises for force mains; ICM initializes every run to a steady state, "a super hot start" [S188](../sources/S188-talk-water-talks-icm-sim-vs-icm-swmm-2021.md).
 
 **Status.** These are statements from a webinar, not runs held here [S188](../sources/S188-talk-water-talks-icm-sim-vs-icm-swmm-2021.md).
+
+**Added 17 November 2026, fourth batch.** [Selective Fidelity (app)](../entities/selective-fidelity.md) patches 5.2.4 dynamic wave to solve only the conduits a question depends on: on a 24-conduit demo where one 18 ft conduit set the step in 99.99 % of 12,018 steps, it took 2,894 steps and kept the target node's peak at 1.537 ft [S265](../sources/S265-selective-fidelity-summary.md).
 
 See [SWMM 5 versus ICM InfoWorks](swmm5-versus-icm-infoworks.md), [Dynamic wave routing](dynamic-wave-routing.md), [InfoWorks ICM](../entities/infoworks-icm.md), [EPA SWMM 5](../entities/swmm-5.md).

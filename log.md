@@ -824,3 +824,13 @@ Third batch of the 62. All thirteen are summaries Claude wrote from the publishe
 - Nothing in the seven ICM apps ran inside ICM. ICM 2027 runs Ruby 3.4.6 where earlier releases ran 2.4.0; six of Autodesk's 532 public example scripts fail under 3.4 (S244).
 - Q109 (new): ICM Exchange 2026 counts 335 methods in ruby_icm_help.md, Thirty-One Rubies 336.
 - Checked at ingest: the Exchange reconciliation sums (308 and 335); KCS grades sum to 77; the IFS layout (542,080 x 134 fields x 4 bytes x 23,008 = 6.69 TB); the June code map's 68 % and 16 %. The Meshing Field Guide's 87,012.9 ft2 cannot be rebuilt from the figures in the summary, which leave out the building footprints.
+
+## [2026-11-17] ingest | S256 to S267: 12 apps on SWMM6, HydroCouple and AI; the 62 done
+
+Fourth and last batch of the 62. Ten summaries Claude wrote from the published pages (Q108 now lists all fifty-six); two ship with their apps, the OpenSWMM 3D Code Model and HydroCouple Interactive.
+- New pages: twelve app entities and [Apps summarized on 17 November 2026: SWMM6, HydroCouple and AI](wiki/concepts/apps-from-pages-swmm6-hydrocouple-ai.md).
+- Added paragraphs on nine pages: OpenSWMM 6 and HydroCouple, SWMM version history, cross-sections, the byte-for-byte gate, findings register, time stepping, the distilled surrogate, the SWMM6 Code House, the corpus.
+- Q110 (new): five SWMM5 release dates in the OpenSWMM Code atlas differ from EPA's update history; EPA's is the primary record. Q83 (settled) gets one sentence on the two HydroCouple pages' licence notes.
+- Findings at the pages' word: OpenSWMM 6 at 137e65e kept a dry conduit's last evaporation rate, fixed upstream (S261); the cross-section tables make a Gothic sewer ring in dry weather (S262); the HydroCouple platform's packaging scanner misses an [LID_USAGE] report file (S259).
+- Checked at ingest: the 3D code model's lines sum (64,205 + 366,435 + 51,827 = 482,467); the Hands-On Watershed balance prints 1.379 in where its three terms give 1.378 (rounding); a 1 % slot's celerity, 87.07 ft/s in a 3 ft pipe, scales to 91.0 ft/s in a 3.28 ft pipe against the Rigid Column Test's 91.2.
+- Wrap-up: overview counts now 267 of 503 raw files and 154 app summaries, with one bullet per theme for the 62; Start here recounts the reachable apps at 91 of 156 (29 named in summaries, 62 from the Netlify note); Q104 updated. 232 raw files stay queued, the same 232 as before the upload.

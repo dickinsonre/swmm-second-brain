@@ -1,8 +1,8 @@
 ---
 title: "Conduit cross-sections: the built-in shapes"
 type: concept
-updated: 2026-11-16
-sources: [S60]
+updated: 2026-11-17
+sources: [S60, S262]
 tags: [hydraulics, swmm5, primary-document, geometry]
 reviewed: no
 ---
@@ -45,3 +45,5 @@ For open shapes the area at maximum flow is the full area [S60](../sources/S60-e
 - Normal depth: the section factor from the flow, then the area for that section factor, then the depth for that area [S60](../sources/S60-epa-swmm5-reference-manual-vol2-hydraulics.md).
 
 **Not in the raw file.** Page 80, with the graphs of the circular tables, and page 102, which says when interval enumeration beats Ridder's method and gives the normal-depth equation (Q92).
+
+**Added 17 November 2026, fourth batch.** [SWMM5 · SWMM6 Curve Sections (app)](../entities/swmm5-swmm6-curve-sections.md) replaces the lookup tables with arcs and lines. In a Gothic sewer in dry weather the tables make the last conduit ring between about 0.46 and 0.98 cfs and hand the outfall a peak 29 % bigger than the 0.76 cfs that ever entered; with curves it climbs to 0.760. The Horseshoe's width table describes another outline than its other four, about 12 % apart at y/H = 0.08 [S262](../sources/S262-swmm5-swmm6-curve-sections-summary.md). A summary Claude wrote from the page (Q108).

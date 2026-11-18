@@ -2,10 +2,10 @@
 title: OpenSWMM 6 and HydroCouple
 type: entity
 updated: 2026-11-17
-sources: [S02, S03, S04, S05, S21, S22, S23, S29, S59, S69, S72, S75, S80, S81, S87, S134, S135, S148, S151, S153, S154, S199, S224, S234, S232, S251, S253]
+sources: [S02, S03, S04, S05, S21, S22, S23, S29, S59, S69, S72, S75, S80, S81, S87, S134, S135, S148, S151, S153, S154, S199, S224, S234, S232, S251, S253, S256, S261, S258, S259, S260]
 tags: [swmm6, engine, hydrocouple]
 reviewed: 11/16/2026
-changed_after_review: "2026-11-17 (S192 to S202 ingest): one paragraph added at the end on the alpha tags (S199); 2026-11-17 (S224 to S242 ingest): a paragraph added near the end, headed Added 17 November 2026 (S224, S234, S232); 2026-11-17 (S243 to S255 ingest): a paragraph added near the end, headed Added 17 November 2026 (S251, S253)"
+changed_after_review: "2026-11-17 (S192 to S202 ingest): one paragraph added at the end on the alpha tags (S199); 2026-11-17 (S224 to S242 ingest): a paragraph added near the end, headed Added 17 November 2026 (S224, S234, S232); 2026-11-17 (S243 to S255 ingest): a paragraph added near the end, headed Added 17 November 2026 (S251, S253); 2026-11-17 (S256 to S267 ingest): a paragraph added near the end, headed Added 17 November 2026 (S256, S261, S258, S259, S260)"
 ---
 OpenSWMM 6 is the SWMM line developed at HydroCouple [S22](../sources/S22-li-ten-problems.md). Caleb Buahin is the lead developer of the HydroCouple platform [S21](../sources/S21-li-edition-56-swmm-history.md).
 
@@ -48,3 +48,5 @@ OpenSWMM 6 is the SWMM line developed at HydroCouple [S22](../sources/S22-li-ten
 **Added 17 November 2026, second batch.** Three apps from the second batch: [Conformal SWMM (app)](conformal-swmm.md) runs the legacy engine of the swmm6_rel branch, 5.3.0-beta.3 at commit 283da75e, in the browser [S224](../sources/S224-conformal-swmm-app-md.md); [SWMM Inlet Library (app)](swmm-inlet-library.md) writes [INLET_JUNCTIONS] for OpenSWMM 6.0.0-alpha.4 and compares its inlet capture with 5.2.4 [S234](../sources/S234-swmm-inlet-library-summary.md); [SWMM Rooms (app)](swmm-rooms.md) gives SWMM6 and HydroCouple features rooms of their own [S232](../sources/S232-swmm-rooms-summary.md).
 
 **Added 17 November 2026, third batch.** From the third batch: OpenSWMM 6.0.0-alpha.4 (swmm6_rel, 79bb4e1) compiled 278 of 284 .cpp files, with 1 public writable symbol against 332 in SWMM 5.2.4 and a knot of 31 of 278 files [S251](../sources/S251-understand-anything-swmm-icm-summary.md); a native run of the develop branch at 19a1bc42 compared a rainfall reduction factor with a real pipe [S253](../sources/S253-rain-on-grid-workbench-summary.md).
+
+**Added 17 November 2026, fourth batch.** The OpenSWMM source at swmm6_rel b92a4f1 (11 November 2026) holds 925 hand-written source files and 482,467 lines; SWMMEngine.cpp is the largest at 12,364 lines and the busiest, 222 commits in 90 days [S256](../sources/S256-openswmm-3d-code-model-app-md.md). [SWMM6 Hands-On Watershed (app)](swmm6-hands-on-watershed.md) runs the engine at 137e65e in the browser; that build kept a dry conduit's last evaporation rate, fixed upstream on 12 September 2026 (commit b051d270) [S261](../sources/S261-swmm6-hands-on-watershed-summary.md). Two apps read HydroCouple without running it: [HydroCouple Interactive (app)](hydrocouple-interactive.md) [S258](../sources/S258-hydrocouple-interactive-app-md.md) and [Inside hydrocouple.platform (app)](inside-hydrocouple-platform.md) [S259](../sources/S259-inside-hydrocouple-platform-summary.md); [Sandbox Companion (app)](sandbox-companion.md) ports parts of a flood sandbox built on it [S260](../sources/S260-sandbox-companion-summary.md).

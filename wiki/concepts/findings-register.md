@@ -2,10 +2,10 @@
 title: The SWMM findings register
 type: concept
 updated: 2026-11-17
-sources: [S03, S04, S05, S59, S67, S71, S72, S74, S75, S79, S80, S82, S83, S192, S193, S194, S195, S196, S197, S203, S216, S220, S209, S212, S240, S236, S229, S242, S255]
+sources: [S03, S04, S05, S59, S67, S71, S72, S74, S75, S79, S80, S82, S83, S192, S193, S194, S195, S196, S197, S203, S216, S220, S209, S212, S240, S236, S229, S242, S255, S261, S262, S259]
 tags: [findings, verification, method]
 reviewed: 2026-11-15
-changed_after_review: "2026-11-17 (S192 to S202 ingest): one paragraph added at the end listing more app-local findings (S192 to S197); 2026-11-17 (S203 ingest): one paragraph added at the end on the SOIL2 misread; 2026-11-17 (S205 to S223 ingest): a paragraph added near the end, headed Added 17 November 2026 (S216, S220, S209, S212); 2026-11-17 (S224 to S242 ingest): a paragraph added near the end, headed Added 17 November 2026 (S240, S236, S229, S242); 2026-11-17 (S243 to S255 ingest): a paragraph added near the end, headed Added 17 November 2026 (S255)"
+changed_after_review: "2026-11-17 (S192 to S202 ingest): one paragraph added at the end listing more app-local findings (S192 to S197); 2026-11-17 (S203 ingest): one paragraph added at the end on the SOIL2 misread; 2026-11-17 (S205 to S223 ingest): a paragraph added near the end, headed Added 17 November 2026 (S216, S220, S209, S212); 2026-11-17 (S224 to S242 ingest): a paragraph added near the end, headed Added 17 November 2026 (S240, S236, S229, S242); 2026-11-17 (S243 to S255 ingest): a paragraph added near the end, headed Added 17 November 2026 (S255); 2026-11-17 (S256 to S267 ingest): a paragraph added near the end, headed Added 17 November 2026 (S261, S262, S259)"
 ---
 A numbered, dated record of what was checked and what came back, proposed in October 2026 because Bob's apps are safe on Netlify and GitHub while the findings exist only inside chat transcripts [S03](../sources/S03-findings-register-format.md).
 
@@ -58,3 +58,5 @@ A numbered, dated record of what was checked and what came back, proposed in Oct
 **Added 17 November 2026, second batch.** From the second batch, again at the pages' word: a tapered channel under NORMAL_FLOW_LIMITED BOTH oscillates between 359.53 and 570.70 cfs, identical on two engine copies [S240](../sources/S240-non-prismatic-channel-lab-summary.md); the HEC-22 spread round trip in inlet.c gives 8.021 ft back from 8 ft, and the Maximum Spread SWMM reports comes from the street transect, not Eq. 4-2 [S236](../sources/S236-water-on-the-road-summary.md); a native Linux build of 5.2.4 aborts with "buffer overflow detected" unless built with -D_FORTIFY_SOURCE=0 [S229](../sources/S229-rule110-swmm5-summary.md) [S236](../sources/S236-water-on-the-road-summary.md); the obvious quasi-2D mesh stores twice the water, so waves arrive 1.414 times late [S242](../sources/S242-walk-the-mesh-summary.md).
 
 **Added 17 November 2026, third batch.** From the third batch, at the page's word: SWMM 5.2.4's climate.c evening and pre-dawn temperature branches do not meet at midnight [S255](../sources/S255-ifs-analysis-explorer-summary.md).
+
+**Added 17 November 2026, fourth batch.** From the fourth batch: OpenSWMM 6 at 137e65e kept a dry conduit's last evaporation rate, -34,178 % routing continuity on an all-snow storm, fixed upstream on 12 September 2026 (status as the page gives it) [S261](../sources/S261-swmm6-hands-on-watershed-summary.md); the cross-section tables make a Gothic sewer ring in dry weather [S262](../sources/S262-swmm5-swmm6-curve-sections-summary.md); the HydroCouple platform's packaging scanner misses the [LID_USAGE] report file [S259](../sources/S259-inside-hydrocouple-platform-summary.md).

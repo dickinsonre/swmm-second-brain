@@ -1,10 +1,11 @@
 ---
 title: SWMM6 Code House (app)
 type: entity
-updated: 2026-11-14
-sources: [S69, S72]
+updated: 2026-11-17
+sources: [S69, S72, S256]
 tags: [apps, swmm6, source-code, openswmm, verification]
 reviewed: 2026-11-15
+changed_after_review: "2026-11-17 (S256 to S267 ingest): a paragraph added near the end, headed Added 17 November 2026 (S256)"
 ---
 Bob's walkable 3D map of the OpenSWMM 6 engine source (see [OpenSWMM 6 and HydroCouple](openswmm-6-and-hydrocouple.md)). Version 1.2.1 [S69](../sources/S69-swmm6-code-house-app-md.md). Its sister app is the [SWMM5 Code House (app)](swmm5-code-house.md).
 
@@ -30,3 +31,5 @@ Bob's walkable 3D map of the OpenSWMM 6 engine source (see [OpenSWMM 6 and Hydro
 **Credits.** OpenSWMM Engine, Copyright 2026 HydroCouple Developers, Apache-2.0; lead developer Caleb Buahin; developer and documentation Corinne Wiesner-Friedman. The app reproduces the upstream NOTICE in full [S69](../sources/S69-swmm6-code-house-app-md.md).
 
 **Open.** The public page at swmm6-code-house.netlify.app shows a v1.0.0 badge in its page source (Q45). See [Open questions](../open-questions.md).
+
+**Added 17 November 2026, fourth batch.** [OpenSWMM 3D Code Model (app)](openswmm-3d-code-model.md) draws the OpenSWMM source as a city at b92a4f1: 925 files, 482,467 lines, the legacy SWMM 5 tree 64,205 of them [S256](../sources/S256-openswmm-3d-code-model-app-md.md).

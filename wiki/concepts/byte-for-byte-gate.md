@@ -2,10 +2,10 @@
 title: Byte-for-byte gate
 type: concept
 updated: 2026-11-17
-sources: [S23, S28, S29, S30, S34, S35, S41, S70, S71, S195, S196, S197]
+sources: [S23, S28, S29, S30, S34, S35, S41, S70, S71, S195, S196, S197, S263]
 tags: [verification, method, translation]
 reviewed: 2026-11-15
-changed_after_review: "2026-11-17 (S192 to S202 ingest): one paragraph added at the end on three more gates (S195 to S197)"
+changed_after_review: "2026-11-17 (S192 to S202 ingest): one paragraph added at the end on three more gates (S195 to S197); 2026-11-17 (S256 to S267 ingest): a paragraph added near the end, headed Added 17 November 2026 (S263)"
 ---
 The test every SWMM5 and SWMM6 translation is held to: run the translation and the original engine on the same decks and compare the files they write, byte for byte [S23](../sources/S23-swmm6-csharp-readme.md) [S41](../sources/S41-swmm5-go-readme.md).
 
@@ -39,3 +39,5 @@ See [SWMM6 language translations](../entities/swmm6-language-ports.md), [Matchin
 - [SWMM5 Engine Race](../entities/swmm5-engine-race.md): 1,156 corpus models through the stock and fast builds. 728 identical, 352 stop at the same error with the same report, 76 skipped as too slow, 0 different. The summary itself says the 352 exercise parsing, not routing: 187 stop at ERROR 205 and 28 at ERROR 317 [S197](../sources/S197-swmm5-engine-race-app-md.md).
 - [SWMM5 RASPIPE](../entities/swmm5-raspipe.md): with the option off, identical on 23 of 23 test decks and 60 of 60 corpus models, with 16 more skipped for time or error [S196](../sources/S196-swmm5-raspipe-summary.md).
 All three count a run that stops at a time limit as not compared, which is the rule above.
+
+**Added 17 November 2026, fourth batch.** [SWMM Engine Map (app)](../entities/swmm-engine-map.md) gives the reason for no tolerance: a last-bit difference in dynamic wave can change the iteration count at the next step. It also measures why new engines are wanted: EPA 5.2.4 keeps its state in 415 file- and program-scope variables, and opening a second model over the first returns 0, empties the first report and leaks 361,322 bytes in 134 allocations [S263](../sources/S263-swmm-engine-map-summary.md).

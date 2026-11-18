@@ -2,10 +2,10 @@
 title: 1729-SWMM5-Models-2030 (the corpus)
 type: entity
 updated: 2026-11-17
-sources: [S23, S29, S30, S35, S41, S42, S43, S45, S52, S54, S74, S87, S89, S75, S79, S193, S195, S196, S197, S208, S211, S212, S215, S216, S230, S231]
+sources: [S23, S29, S30, S35, S41, S42, S43, S45, S52, S54, S74, S87, S89, S75, S79, S193, S195, S196, S197, S208, S211, S212, S215, S216, S230, S231, S260]
 tags: [corpus, verification, swmm5, swmm6]
 reviewed: 2026-11-15
-changed_after_review: "2026-11-17 (S192 to S202 ingest): one paragraph added at the end on four more uses (S193, S195 to S197); 2026-11-17 (S205 to S223 ingest): a paragraph added near the end, headed Added 17 November 2026 (S208, S211, S212, S215, S216); 2026-11-17 (S224 to S242 ingest): a paragraph added near the end, headed Added 17 November 2026 (S230, S231)"
+changed_after_review: "2026-11-17 (S192 to S202 ingest): one paragraph added at the end on four more uses (S193, S195 to S197); 2026-11-17 (S205 to S223 ingest): a paragraph added near the end, headed Added 17 November 2026 (S208, S211, S212, S215, S216); 2026-11-17 (S224 to S242 ingest): a paragraph added near the end, headed Added 17 November 2026 (S230, S231); 2026-11-17 (S256 to S267 ingest): a paragraph added near the end, headed Added 17 November 2026 (S260)"
 ---
 Bob's public repository of SWMM5 models, https://github.com/SWMMBobSWMM6/1729-SWMM5-Models-2030 [S23](../sources/S23-swmm6-csharp-readme.md).
 
@@ -42,3 +42,5 @@ See [Byte-for-byte gate](../concepts/byte-for-byte-gate.md), [SWMM6 language tra
 **Added 17 November 2026.** Five more apps were tested on the corpus: canonical export of 160 short models [S208](../sources/S208-swmm-canon-summary.md), a 277-model regeneration sweep [S211](../sources/S211-swmm5-self-regeneration-summary.md), a census of 307 files for short links [S212](../sources/S212-swmm5-residual-walk-summary.md), 3,558 .inp and .rpt pairs read [S215](../sources/S215-swmm-trouble-graph-summary.md) and 138 runs searched for rhythms [S216](../sources/S216-swmm-rhythm-detector-summary.md). All are summaries Claude wrote from the pages (Q108).
 
 **Added 17 November 2026, second batch.** From the second batch: 4,540 .inp files at commit 9ee63bd measured for their shapes, 1,311 unique [S230](../sources/S230-swmm5-network-shapes-app-md.md); 396 of 459 models under 300 KB run as they stand and round-trip identical through a block editor [S231](../sources/S231-swmmcraft-ultimate-app-md.md).
+
+**Added 17 November 2026, fourth batch.** From the fourth batch: the importer of Pablo Martinez's UK Flood Sandbox, run on 4,530 corpus files, would stop 3,451 on US flow units alone [S260](../sources/S260-sandbox-companion-summary.md).

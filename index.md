@@ -5,7 +5,7 @@ Every page in the wiki, one line each. An agent reads this first. Updated on eve
 ## Start here
 - [Overview: what this wiki holds so far](wiki/overview.md): what the wiki holds so far, by Bob's six themes, and what is missing.
 - [Start here](wiki/start-here.md): for a new reader; how to read a claim, and four first tasks (modeler, developer, ICM user, maintainer) that each end in something done.
-- [Open questions](wiki/open-questions.md): <!-- state:oq -->100 open and 9 settled<!-- /state:oq -->: contradictions, doubtful numbers and gaps waiting for a source or for Bob.
+- [Open questions](wiki/open-questions.md): <!-- state:oq -->101 open and 9 settled<!-- /state:oq -->: contradictions, doubtful numbers and gaps waiting for a source or for Bob.
 - [Schema](CLAUDE.md): how the wiki is kept. [Log](log.md): what was done and when.
 
 ## Concepts
@@ -86,6 +86,7 @@ Measurement and method
 - [Apps summarized on 17 November 2026: SWMM history and the insides of SWMM5](wiki/concepts/apps-from-pages-history-and-swmm5.md): eighteen apps on SWMM history and SWMM5's insides, summarized by Claude from their pages; nine run 5.2.4 in the browser.
 - [Apps summarized on 17 November 2026: generators, rain and surfaces for SWMM5](wiki/concepts/apps-from-pages-generators-rain-surfaces.md): nineteen apps: generators, rainfall and flow-data methods, inlets and quasi-2D meshes.
 - [Apps summarized on 17 November 2026: ICM, data and the tools around models](wiki/concepts/apps-from-pages-icm-and-data.md): thirteen apps on ICM and on the data that goes into models; none ran ICM in the page.
+- [Apps summarized on 17 November 2026: SWMM6, HydroCouple and AI](wiki/concepts/apps-from-pages-swmm6-hydrocouple-ai.md): twelve apps on OpenSWMM 6, HydroCouple, the engine source code, and AI beside the engine.
 - [LinkedIn posts that were well received](wiki/concepts/linkedin-post-reception.md): which of 50 posts were most seen, most reacted to and most answered on 15 November 2026, and where the two posts Bob named stand.
 
 Economics
@@ -269,6 +270,18 @@ Apps
 - [Rain-on-Grid Workbench (app)](wiki/entities/rain-on-grid-workbench.md): Seven urban flood-modeling algorithms mapped to SWMM6; a rain reduction factor left a 1.06 ft sag a pipe held to 0.37 ft.
 - [Network Lift (app)](wiki/entities/network-lift.md): A CAD drainage drawing lifted into manholes and pipes, with labels matched and gaps flagged, out to Excel, ICM, SewerGEMS and SWMM5.
 - [IFS Analysis Explorer (app)](wiki/entities/ifs-analysis-explorer.md): ECMWF's 2011 to 2026 analysis on AWS laid out and bridged to a SWMM5 climate file; 6-hourly extremes give 84 % of the PET.
+- [OpenSWMM 3D Code Model (app)](wiki/entities/openswmm-3d-code-model.md): The OpenSWMM engine source as a 3D city of 925 files; 482,467 lines, the legacy SWMM 5 tree 64,205 of them.
+- [OpenSWMM Code (app)](wiki/entities/openswmm-code.md): The engine source of 34 SWMM5 releases, 2004 to 2023, in one page; 1,628 of 1,628 GitHub files match their tags; 11 builds lost.
+- [HydroCouple Interactive (app)](wiki/entities/hydrocouple-interactive.md): The six pages of hydrocouple.org restated with 18 working diagrams; 40 of 40 math checks; unofficial snapshot, no engine.
+- [Inside hydrocouple.platform (app)](wiki/entities/inside-hydrocouple-platform.md): The HydroCouple run platform read from source with ten findings; the packaging scanner misses an [LID_USAGE] report file.
+- [Sandbox Companion (app)](wiki/entities/sandbox-companion.md): Parts of the UK Flood Sandbox (Apache-2.0) ported to the browser; 17 of 17 of its tests pass; it would refuse 3,451 corpus files on US units.
+- [SWMM6 Hands-On Watershed (app)](wiki/entities/swmm6-hands-on-watershed.md): OpenSWMM 6 in the browser with snow, groundwater, hand gestures and an emulator; the water balance closed within 0.049 in on 3,500 runs.
+- [SWMM5 · SWMM6 Curve Sections (app)](wiki/entities/swmm5-swmm6-curve-sections.md): Cross-section tables replaced by arcs and lines in a patched 5.2.4; a Gothic sewer's outfall peak 29 % above its inflow with tables.
+- [SWMM Engine Map (app)](wiki/entities/swmm-engine-map.md): Bob's engine work mapped in hydrocouple.org's style; EPA 5.2.4 holds one model per process across 415 state variables.
+- [Socratic Engine Chat (app)](wiki/entities/socratic-engine-chat.md): A plain-English chat over a small Manning engine that sources every number and changes nothing without a click; no test used the real Claude.
+- [Selective Fidelity (app)](wiki/entities/selective-fidelity.md): A 5.2.4 dynamic-wave patch that solves only the conduits a question needs; 4.15 times fewer steps, the target peak unchanged.
+- [Six Tools Workbench (app)](wiki/entities/six-tools-workbench.md): Robert C. Martin's six agent-built code tools at toy size, and four of them rebuilt and run on SWMM5, SWMM6 and ICM Ruby code.
+- [BobSWMM App Catalog (app)](wiki/entities/bobswmm-app-catalog.md): Bob's Lovable app catalog in one file with a health check; 106 records, and simulated usage counts found typed into the code.
 
 Data
 - [1729-SWMM5-Models-2030 (the corpus)](wiki/entities/corpus-1729.md): Bob's public model repository; 480 of its models are the translations' gate set.
@@ -442,6 +455,18 @@ App summaries
 - [S253](wiki/sources/S253-rain-on-grid-workbench-summary.md) (2026-10-06): Rain-on-Grid Workbench v1.0, summary written from the page by Claude.
 - [S254](wiki/sources/S254-network-lift-summary.md) (2026-10-19): Network Lift v1.2, summary written from the page by Claude.
 - [S255](wiki/sources/S255-ifs-analysis-explorer-summary.md) (2026-10-16): IFS Analysis Explorer v1.0, summary written from the page by Claude.
+- [S256](wiki/sources/S256-openswmm-3d-code-model-app-md.md) (2026-11-11): OpenSWMM 3D Code Model v1.1, technical summary.
+- [S257](wiki/sources/S257-openswmm-code-summary.md) (2026-11-05): OpenSWMM Code v1.0.0, summary written from the page by Claude.
+- [S258](wiki/sources/S258-hydrocouple-interactive-app-md.md) (2026-11-13): HydroCouple Interactive v1.0.0, technical summary.
+- [S259](wiki/sources/S259-inside-hydrocouple-platform-summary.md) (2026-10-24): Inside hydrocouple.platform v1.1, summary written from the page by Claude.
+- [S260](wiki/sources/S260-sandbox-companion-summary.md) (2026-11-08): Sandbox Companion v1.0, summary written from the page by Claude.
+- [S261](wiki/sources/S261-swmm6-hands-on-watershed-summary.md) (2026-11-08): SWMM6 Hands-On Watershed v1.1.0, summary written from the page by Claude.
+- [S262](wiki/sources/S262-swmm5-swmm6-curve-sections-summary.md) (2026-11-02): SWMM5 · SWMM6 Curve Sections v1.0, summary written from the page by Claude.
+- [S263](wiki/sources/S263-swmm-engine-map-summary.md) (2026-10-29): SWMM Engine Map v2026-10-29, summary written from the page by Claude.
+- [S264](wiki/sources/S264-socratic-engine-chat-summary.md) (2026-10-19): Socratic Engine Chat v1.0.0, summary written from the page by Claude.
+- [S265](wiki/sources/S265-selective-fidelity-summary.md) (2026-10-21): Selective Fidelity v1.0, summary written from the page by Claude.
+- [S266](wiki/sources/S266-six-tools-workbench-summary.md) (2026-10-11): Six Tools Workbench v1.1, summary written from the page by Claude.
+- [S267](wiki/sources/S267-bobswmm-app-catalog-summary.md) (2026-10-21): BobSWMM App Catalog v1.0, summary written from the page by Claude.
 
 Manuals and reports (primary documents)
 - [S185](wiki/sources/S185-epa-swmm5-qa-report-dynamic-wave-2006.md) (2006-09): SWMM Quality Assurance Report, Dynamic Wave Flow Routing, by L. A. Rossman: SWMM 4.4h against SWMM 5.0.006 on twenty examples. Read in part: Chapters 1 to 4 and 7.
