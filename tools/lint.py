@@ -5,7 +5,8 @@ Errors (exit 1): broken links, missing front matter, a wiki page that cites
 no source page, a source page whose raw file is missing, a raw file whose
 hash changed, a page missing from index.md.
 Warnings: orphan pages, em dashes, an app whose newest summary is not the
-one ingested, a count in README.md or index.md that tools/state.py would change. Also reports pages not yet reviewed and open questions.
+one ingested, a count in README.md or index.md that tools/state.py would change,
+a GitHub link to a file or folder that names a branch instead of a commit. Also reports pages not yet reviewed and open questions.
 
   python3 tools/lint.py            # checks and counts
   python3 tools/lint.py --review   # also prints the review queue: additions first, then the most linked pages
@@ -169,6 +170,20 @@ if '--review' in sys.argv:
     for nl, r in sorted(sources_q):
         print('   %s' % r)
     print()
+# GitHub links to a file or folder that name a branch. A branch moves, so a claim that rests on a
+# model or a source file should link one commit (github.com/OWNER/REPO/blob/COMMIT/path). A commit
+# id (7 to 40 hex digits) or a version tag (v5.2.4) passes; links to a whole repository are not checked.
+# log.md is a history and raw/ is never edited, so neither is checked.
+GH_REF = re.compile(r'https?://(?:github\.com/[\w.-]+/[\w.-]+/(?:blob|tree|raw)|raw\.githubusercontent\.com/[\w.-]+/[\w.-]+)/([^/\s)\]"\'`<>#?]+)')
+for p, t in sorted(texts.items()):
+    if rel(p) == 'log.md':
+        continue
+    for m in GH_REF.finditer(t):
+        ref = m.group(1).rstrip('.,;:')
+        if re.fullmatch(r'[0-9a-f]{7,40}', ref) or re.fullmatch(r'v?\d+(\.\d+)+[\w.-]*', ref):
+            continue
+        warns.append('%s: GitHub link names the branch `%s`, not a commit: %s' % (rel(p), ref, m.group(0).rstrip('.,;:')))
+
 import subprocess   # counts in README.md and index.md (tools/state.py)
 _st_check = subprocess.run([sys.executable, os.path.join(ROOT, 'tools', 'state.py'), '--check'], capture_output=True, text=True)
 for line in _st_check.stdout.splitlines():

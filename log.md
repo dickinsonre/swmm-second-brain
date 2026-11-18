@@ -857,3 +857,7 @@ Lint pass after the five batches: `tools/lint.py` 0 errors. By reading: two pair
 ## [2026-11-18] ingest | S376: note, Bob rules the two EPANET for SWMM5 Experts summaries are one app
 
 Bob answered Q117 in a Claude session: "call thr, boyjh = EPANET for SWMM5 Experts". Filed in his words as raw/notes/epanet-for-swmm5-experts-one-app-2026-11-18.md (S376), with Claude's reading of the typing marked as such. Q117 ticked as settled by Bob. `tools/manifest.py` now has a SAME_APP table of `file:` lines that Bob has ruled are one app, starting with `epanet-swmm-experts` = `epanet-for-swmm5-experts`, so S115 and S315 count as two versions of one app. The entity page EPANET for SWMM5 Experts and S315 cite the ruling; index updated.
+
+## [2026-11-18] lint | New check: GitHub links that name a branch instead of a commit
+
+At Bob's request, `tools/lint.py` now warns when a wiki page links a GitHub file or folder by branch (`/blob/main/`, `/tree/van-genuchten/`, `raw.githubusercontent.com/.../master/`) instead of by commit. A commit id or a version tag (v5.2.4) passes; links to a whole repository, `log.md` and `raw/` are not checked. First run: 0 errors, 2 warnings, both the `van-genuchten` branch of swmm524-perched, on the swmm524-perched entity page and on S203, as the raw file gives it. The 45 links to `main` in `raw/` stay as their sources wrote them.
