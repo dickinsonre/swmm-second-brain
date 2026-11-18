@@ -8,7 +8,7 @@ published: 2026-11-16
 ingested: 2026-11-18
 tags: [films, knowledge-library, openswmm-forum, mograph]
 drafted_by: Claude (Anthropic), with the app
-reviewed: no
+reviewed: 2026-11-18
 ---
 **What it is.** A technical summary of the film Online Library Mograph, version 1.0: a 60-second film of the wonders of the SWMM & ICM Knowledge Library. Raw file: [raw/apps/online-library-mograph-v1.0.md](../../raw/apps/online-library-mograph-v1.0.md).
 
