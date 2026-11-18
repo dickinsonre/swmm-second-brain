@@ -865,3 +865,7 @@ At Bob's request, `tools/lint.py` now warns when a wiki page links a GitHub file
 ## [2026-11-18] lint | Q116 settled by Bob's review
 
 Bob marked all 68 summaries of Q116 `reviewed: 2026-11-18` (commit 9c6b794) and agreed to close the question. Q116 ticked. The 67 entity pages whose caution said "Bob has not yet read it (Q116)" now say he marked it reviewed on 18 November 2026; the five concept pages of the S300 to S375 ingest say the same. The source pages keep their "How it was written" text, which describes the summaries as written; their `reviewed:` lines give the current state.
+
+## [2026-11-18] lint | Two GitHub branch links pinned to a commit
+
+At Bob's go-ahead, the two links the new branch-link check warned about now name a commit. The head of `van-genuchten` in SWMMBobSWMM6/swmm524-perched on 18 November 2026 was 816f2799 (committed 17 November 2026, 15:34 Eastern, with no later commit), the commit that added the `windows/` folder S203 describes. S203 records the check under "Checked 18 November 2026" and links that commit; the Windows folder link on the swmm524-perched entity page points to it too (`changed_after_review` updated). Lint: 0 errors, 0 warnings.

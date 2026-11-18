@@ -1,11 +1,11 @@
 ---
 title: swmm524-perched
 type: entity
-updated: 2026-11-17
+updated: 2026-11-18
 sources: [S08, S55, S59, S70, S203]
 tags: [swmm5, engine, lid, infiltration]
 reviewed: 2026-11-15
-changed_after_review: "2026-11-17 (S203 ingest): one paragraph added at the end: drain correction, Windows builds, SOIL2 misread"
+changed_after_review: "2026-11-17 (S203 ingest): one paragraph added at the end: drain correction, Windows builds, SOIL2 misread; 2026-11-18: in that paragraph, the Windows folder link pinned from the branch to commit 816f2799"
 ---
 One of Bob's variants of [EPA SWMM 5](swmm-5.md) [S08](../sources/S08-swmm5org-topic-inside-swmm5.md). Repository SWMMBobSWMM6/swmm524-perched, branch van-genuchten, commit 548e5fbf; the source says no license is stated in the repo and that the EPA base is public domain [S59](../sources/S59-topsoil-recovery-check-app-md.md).
 
@@ -30,4 +30,4 @@ One of Bob's variants of [EPA SWMM 5](swmm-5.md) [S08](../sources/S08-swmm5org-t
 - Each layer is one moisture bucket; a wetting front inside the clay is represented only by the Green-Ampt cap. GMAX = 10 is a supplied, fitted value.
 - Its flux routine sets `StorageDrain = 0.0`, so a DRAIN line has no effect (see [LID bio-retention layers](../concepts/lid-bioretention-layers.md)).
 
-**Added 2026-11-17.** The last Limits bullet holds only for a model with a SOIL2 line; without one the engine runs 5.2.4's routine and shares defect D2 (232.848 in of drain flow from 20.550 in of rain) [S203](../sources/S203-topsoil-recovery-check-v2026-11-17.md). Windows x64 builds of this engine and of unchanged EPA 5.2.4, with a compare script, are in the repository's `windows/` folder, https://github.com/SWMMBobSWMM6/swmm524-perched/tree/van-genuchten/windows. Under Wine 9.0 their `.out` files are byte-identical to Linux builds made the same way on 8 example runs; they have not yet been run on a Windows machine [S203](../sources/S203-topsoil-recovery-check-v2026-11-17.md). A SOIL2 input must not go to stock 5.2.4 as written: 5.2.4 reads SOIL2 as a second SOIL line (see [LID bio-retention layers](../concepts/lid-bioretention-layers.md)) [S203](../sources/S203-topsoil-recovery-check-v2026-11-17.md).
+**Added 2026-11-17.** The last Limits bullet holds only for a model with a SOIL2 line; without one the engine runs 5.2.4's routine and shares defect D2 (232.848 in of drain flow from 20.550 in of rain) [S203](../sources/S203-topsoil-recovery-check-v2026-11-17.md). Windows x64 builds of this engine and of unchanged EPA 5.2.4, with a compare script, are in the repository's `windows/` folder, https://github.com/SWMMBobSWMM6/swmm524-perched/tree/816f2799058cf6282bb5f7abca82a516e69206cd/windows (commit 816f2799, the head of the van-genuchten branch on 18 November 2026) [S203](../sources/S203-topsoil-recovery-check-v2026-11-17.md). Under Wine 9.0 their `.out` files are byte-identical to Linux builds made the same way on 8 example runs; they have not yet been run on a Windows machine [S203](../sources/S203-topsoil-recovery-check-v2026-11-17.md). A SOIL2 input must not go to stock 5.2.4 as written: 5.2.4 reads SOIL2 as a second SOIL line (see [LID bio-retention layers](../concepts/lid-bioretention-layers.md)) [S203](../sources/S203-topsoil-recovery-check-v2026-11-17.md).
