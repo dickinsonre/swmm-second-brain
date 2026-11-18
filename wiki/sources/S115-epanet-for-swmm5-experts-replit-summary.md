@@ -9,6 +9,7 @@ ingested: 2026-11-15
 tags: [apps, replit, epanet, swmm5, force-mains, hydraulics]
 drafted_by: Replit Agent (an AI), from the project's source
 reviewed: 11/16/2026
+superseded_by: S315
 ---
 **What it is.** A technical summary of EPANET for SWMM5 Experts - The Rosetta Stone, version 1.0: a one-page reference that explains EPANET to people who know SWMM5, with comparison diagrams and hydraulic calculators run in browser JavaScript. It is one of Bob's Replit apps, at `epanet-swmm-experts.replit.app`. Raw file: [raw/apps/epanet-swmm-experts-v1.0.md](../../raw/apps/epanet-swmm-experts-v1.0.md).
 

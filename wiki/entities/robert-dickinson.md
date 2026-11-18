@@ -1,11 +1,11 @@
 ---
 title: Robert (Bob) Dickinson
 type: entity
-updated: 2026-11-16
-sources: [S07, S09, S11, S12, S18, S19, S21, S22, S23, S29, S41, S45, S55, S61, S63, S64, S84, S85, S90, S91, S93, S94, S134, S185, S187, S188, S189, S190]
+updated: 2026-11-18
+sources: [S07, S09, S11, S12, S18, S19, S21, S22, S23, S29, S41, S45, S55, S61, S63, S64, S84, S85, S90, S91, S93, S94, S134, S185, S187, S188, S189, S190, S346, S343, S358]
 tags: [people]
 reviewed: 11/16/2026
-changed_after_review: "2026-11-16 (S180 to S187 ingest): one paragraph added at the end on the Challenge Test Cases and his statement on testing (S185, S187); 2026-11-16 (S188 to S190 ingest): one paragraph added at the end on joining MWH Soft (S188, S189, S190)"
+changed_after_review: "2026-11-16 (S180 to S187 ingest): one paragraph added at the end on the Challenge Test Cases and his statement on testing (S185, S187); 2026-11-16 (S188 to S190 ingest): one paragraph added at the end on joining MWH Soft (S188, S189, S190); 2026-11-18 (S300 to S375 ingest): a paragraph added near the end, headed Added 18 November 2026 (S346, S343, S358)"
 ---
 Author of every source in this wiki. Professional record only, as he has published it.
 
@@ -60,3 +60,5 @@ Author of every source in this wiki. Professional record only, as he has publish
 **Added 16 November 2026, from the EXTRAN and QA ingest.** Two professional facts from this batch. He compiled the five Challenge Test Cases of EPA's 2006 SWMM 5 quality assurance report while at CDM: circular conduits in series with flat slopes, pipe constrictions, steep drops, adverse slopes and inlet offsets [S185](../sources/S185-epa-swmm5-qa-report-dynamic-wave-2006.md). And in his words, he keeps this wiki "to make model comparisons and not be a writer", and he dogfoods his apps: "i do not just make a n app there is a lot of testing", with "50 years of past testing" behind it [S187](../sources/S187-note-model-comparison-purpose-and-dogfooding.md).
 
 **Added 16 November 2026: joining MWH Soft.** The press release of Friday, January 18, 2008 announces that he joined MWH Soft's Technical Directorate as Urban Drainage Technology Leader, coming from CDM, charged with the SWMM-based line InfoSWMM and H2OMAP SWMM [S190](../sources/S190-press-mwh-soft-dickinson-joins-2008.md). In his words, "I agreed to go work at Innovyze the week of christmas, took off a few weeks went to Los Angeles after the 2nd of Janualy" [S189](../sources/S189-note-innovyze-start-christmas-2007.md); in a 2021 webinar he says "since the end of 2007" [S188](../sources/S188-talk-water-talks-icm-sim-vs-icm-swmm-2021.md). The two fit: he agreed at the end of 2007 and started in January 2008 (the years are our reading of S189). The table row above, "Product Sector Leader" in January 2008, rests on the version of the announcement printed in [S11](../sources/S11-li-my-history-with-swmm.md), which differs from the release in five places (Q97). In the same webinar he gives "SWMM 5 from 2001 to 2006" [S188](../sources/S188-talk-water-talks-icm-sim-vs-icm-swmm-2021.md).
+
+**Added 18 November 2026.** From the 18 November uploads: Catching Huber starts from a Google Scholar profile of 5,683 citations, an h-index of 33 and an i10-index of 76 [S346](../sources/S346-catching-huber-app-md.md); JWMM Finder counts 7 JWMM papers with Robert E. Dickinson in the author list [S343](../sources/S343-jwmm-finder-summary.md); the SWMM Universe hub lists his GitHub organizations, @dickinsonre (54 repositories), @SWMMEnablement (90), @SWMMBobSWMM6 (15), @Robert-Dickinson-NS-Apps (30) and @CIMM-ORG (4) [S358](../sources/S358-bob-dickinsons-swmm-universe-summary.md).

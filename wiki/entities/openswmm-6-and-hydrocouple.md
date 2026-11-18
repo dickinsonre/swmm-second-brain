@@ -2,10 +2,10 @@
 title: OpenSWMM 6 and HydroCouple
 type: entity
 updated: 2026-11-18
-sources: [S02, S03, S04, S05, S21, S22, S23, S29, S59, S69, S72, S75, S80, S81, S87, S134, S135, S148, S151, S153, S154, S199, S224, S234, S232, S251, S253, S256, S261, S258, S259, S260, S285, S280, S286]
+sources: [S02, S03, S04, S05, S21, S22, S23, S29, S59, S69, S72, S75, S80, S81, S87, S134, S135, S148, S151, S153, S154, S199, S224, S234, S232, S251, S253, S256, S261, S258, S259, S260, S285, S280, S286, S300, S306, S305, S304]
 tags: [swmm6, engine, hydrocouple]
 reviewed: 11/16/2026
-changed_after_review: "2026-11-17 (S192 to S202 ingest): one paragraph added at the end on the alpha tags (S199); 2026-11-17 (S224 to S242 ingest): a paragraph added near the end, headed Added 17 November 2026 (S224, S234, S232); 2026-11-17 (S243 to S255 ingest): a paragraph added near the end, headed Added 17 November 2026 (S251, S253); 2026-11-17 (S256 to S267 ingest): a paragraph added near the end, headed Added 17 November 2026 (S256, S261, S258, S259, S260); 2026-11-18 (S268 to S299 ingest): a paragraph added near the end, headed Added 18 November 2026 (S285, S280, S286)"
+changed_after_review: "2026-11-17 (S192 to S202 ingest): one paragraph added at the end on the alpha tags (S199); 2026-11-17 (S224 to S242 ingest): a paragraph added near the end, headed Added 17 November 2026 (S224, S234, S232); 2026-11-17 (S243 to S255 ingest): a paragraph added near the end, headed Added 17 November 2026 (S251, S253); 2026-11-17 (S256 to S267 ingest): a paragraph added near the end, headed Added 17 November 2026 (S256, S261, S258, S259, S260); 2026-11-18 (S268 to S299 ingest): a paragraph added near the end, headed Added 18 November 2026 (S285, S280, S286); 2026-11-18 (S300 to S375 ingest): a paragraph added near the end, headed Added 18 November 2026 (S300, S306, S305, S304)"
 ---
 OpenSWMM 6 is the SWMM line developed at HydroCouple [S22](../sources/S22-li-ten-problems.md). Caleb Buahin is the lead developer of the HydroCouple platform [S21](../sources/S21-li-edition-56-swmm-history.md).
 
@@ -56,3 +56,9 @@ OpenSWMM 6 is the SWMM line developed at HydroCouple [S22](../sources/S22-li-ten
 - The Node Flooding Summary lists both outfalls of a one-site model as flooded while the routing ledger says flooding loss 0.000 (ED-2) [S285](../sources/S285-swmm6-shoebox-summary.md); on a three-pipe model the surcharge tables say no node surcharged where J1 stands 3.36 ft above the crown [S280](../sources/S280-run-swmm6-ten-minutes-summary.md).
 - The .out labels storage nodes as dividers (DR-1) [S286](../sources/S286-exam-first-swmm-harness-summary.md), as [S69](../sources/S69-swmm6-code-house-app-md.md) found in the same output plugin.
 - Build 6.0.0a4.dev1 lacks the quickstart's `get_depth` and `get_flow`, and `openswmm.legacy.engine.run_solver` names its report after the input file [S280](../sources/S280-run-swmm6-ten-minutes-summary.md).
+
+**Added 18 November 2026.** More pages from the 18 November uploads, at the pages' word:
+- The SWMM6 2D Flood Lab ports the alpha.4 local-inertial surface solver and records five engine observations: LTS_TIERS changes how fast a dry-bed front moves (S6-1, open); an inactive cell keeps its last discharge vector (S6-2); rain on a dry mesh never moved on alpha.3 (S6-3, fixed in alpha.4); the shipped 2D example labels an outflow as its upstream inflow (S6-4); and a SPECIFIED_FLOW edge is per metre in every unit system (S6-5) [S300](../sources/S300-swmm6-2d-flood-lab-summary.md).
+- The gymnasium's shipped TwinTank benchmark delivers 0.667 in of rain instead of 4.0, and PyPI holds only a reserved 0.0.0 package [S306](../sources/S306-openswmm-gymnasium-summary.md).
+- The MCP repository snapshot counts a FastMCP server with 20 tools (14 core), 8 prompts, 6 resources, 3 skills and 10 settings; PyPI's openswmm.mcp is 0.0.0 [S305](../sources/S305-openswmm-mcp-repo-viewer-summary.md).
+- A study guide to HydroCouple shows much of the 2017 Qt interface: 19 of its 27 code lines compile against v1.0.0 and 13 against 2.0 [S304](../sources/S304-hydrocouple-study-guide-summary.md).

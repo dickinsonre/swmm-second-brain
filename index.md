@@ -5,7 +5,7 @@ Every page in the wiki, one line each. An agent reads this first. Updated on eve
 ## Start here
 - [Overview: what this wiki holds so far](wiki/overview.md): what the wiki holds so far, by Bob's six themes, and what is missing.
 - [Start here](wiki/start-here.md): for a new reader; how to read a claim, and four first tasks (modeler, developer, ICM user, maintainer) that each end in something done.
-- [Open questions](wiki/open-questions.md): <!-- state:oq -->106 open and 9 settled<!-- /state:oq -->: contradictions, doubtful numbers and gaps waiting for a source or for Bob.
+- [Open questions](wiki/open-questions.md): <!-- state:oq -->111 open and 9 settled<!-- /state:oq -->: contradictions, doubtful numbers and gaps waiting for a source or for Bob.
 - [Schema](CLAUDE.md): how the wiki is kept. [Log](log.md): what was done and when.
 
 ## Concepts
@@ -90,6 +90,11 @@ Measurement and method
 - [Apps summarized on 17 and 18 November 2026: SWMM5, EPANET and the checks on them](wiki/concepts/apps-from-pages-swmm5-epanet-checks.md): twelve apps on SWMM5, its history, EPANET, and the checks made on engines.
 - [Apps summarized on 17 and 18 November 2026: SWMM6, benchmarks and ICM results](wiki/concepts/apps-from-pages-swmm6-and-benchmarks.md): nine apps on OpenSWMM 6 measured on small cases, the benchmarks around it, and ICM link results.
 - [Apps summarized on 17 and 18 November 2026: AI workflows, tools and puzzles](wiki/concepts/apps-from-pages-tools-and-puzzles.md): eleven apps: AI workflows around SWMM, tools, a climate app, a forecast and four puzzles.
+- [Apps summarized on 18 November 2026: SWMM6, SWMM5+ and solvers](wiki/concepts/apps-from-pages-swmm6-solvers-and-swmm5plus.md): fifteen apps: OpenSWMM 6 against its own engine and a surveyed flood, momentum terms, HydroCouple code, SWMM5+ read from its source.
+- [Apps summarized on 18 November 2026: EPANET, converters and SWMM5 tools](wiki/concepts/apps-from-pages-epanet-converters-and-swmm5-tools.md): sixteen apps: EPANET checked against EPANET, converters between SWMM generations, readers of .rpt and .out.
+- [Apps summarized on 18 November 2026: ICM, InfoSewer and sanitary flow](wiki/concepts/apps-from-pages-icm-infosewer-and-sanitary-flow.md): twelve apps: ICM beside SWMM5, Ruby for ICM, InfoSewer, sanitary peaks and vacuum sewers.
+- [Apps summarized on 18 November 2026: papers, AI and films about the work](wiki/concepts/apps-from-pages-papers-ai-and-films.md): seventeen apps: the JWMM and ICWMM literature, AI tools that check themselves, films and a hub page.
+- [Apps summarized on 18 November 2026: calculators, toys and apps that are not about water](wiki/concepts/apps-from-pages-calculators-toys-and-not-water.md): sixteen apps: rebuilt calculators, teaching toys, and eight that are not about water.
 - [LinkedIn posts that were well received](wiki/concepts/linkedin-post-reception.md): which of 50 posts were most seen, most reacted to and most answered on 15 November 2026, and where the two posts Bob named stand.
 
 Economics
@@ -316,6 +321,80 @@ Apps
 - [Loopover (app)](wiki/entities/loopover.md): A Loopover puzzle; each drag moves one row or column.
 - [Cube as a Graph (app)](wiki/entities/cube-as-a-graph.md): Rubik's cube solved by walking its Cayley graph through Thistlethwaite's subgroups.
 - [O2 Tesseract (app)](wiki/entities/o2-tesseract.md): The QiYi O2 in four to seventeen dimensions; 192 positions in 4D.
+- [SWMM6 2D Flood Lab (app)](wiki/entities/swmm6-2d-flood-lab.md): An unofficial browser port of the OpenSWMM 6.0.0-alpha.4 local-inertial surface solver.
+- [St. Venant Term Budget (app)](wiki/entities/st-venant-term-budget.md): Does friction dominate? Per-link momentum terms, read from a SWMM .out file.
+- [SWMM5 / SWMM6 Mograph (film)](wiki/entities/swmm5-swmm6-mograph.md): One storm, start to finish, in 60 seconds, on real engine output.
+- [HydroCouple SWMM6 Mograph (film)](wiki/entities/hydrocouple-swmm6-mograph.md): Five wonders of the hydrocouple.org home page in sixty seconds.
+- [HydroCouple Study Guide (app)](wiki/entities/hydrocouple-study-guide.md): The guide, checked against the headers it describes.
+- [OpenSWMM MCP Repo Viewer (app)](wiki/entities/openswmm-mcp-repo-viewer.md): HydroCouple's MCP server for OpenSWMM 6, with the engine, GUI and gymnasium.
+- [OpenSWMM Gymnasium (app)](wiki/entities/openswmm-gymnasium.md): A reinforcement-learning framework for the SWMM engine, explained and run.
+- [SWMM Front Door (sketch)](wiki/entities/swmm-front-door.md): One page that asks what you want to do with a SWMM model.
+- [Thaw on the Thoth (document)](wiki/entities/thaw-on-the-thoth.md): A story of two boys, one Martian canal and the spring thaw of 2097.
+- [SWMM5+ Explorer (app)](wiki/entities/swmm5plus-explorer.md): The Fortran source, the Lovable sketch, and a proposed C port, checked against upstream.
+- [SWMM5+ Repo Explorer (app)](wiki/entities/swmm5plus-repo-explorer.md): The SWMM5+ source at afd44de, with its links to EPA SWMM 5.1.13 checked.
+- [SWMM Insight Lab (app)](wiki/entities/swmm-insight-lab.md): A map of the SWMM5+ engine and its relation to EPA SWMM 5.1.13.
+- [Aquanuity Theory (app)](wiki/entities/aquanuity-theory.md): A reader's edition of the numerics behind AquaTwin Sewer 2D, with a solver bench.
+- [Flow Solver Forge (app)](wiki/entities/flow-solver-forge.md): Build a 1D Saint-Venant solver from parts and run it beside EPA SWMM 5.2.4.
+- [ITM_SWMM Repository Map (app)](wiki/entities/itm-swmm-repository-map.md): A map of the fork that fits the Illinois Transient Model into the EPA SWMM 5 GUI.
+- [EPANET Web (app)](wiki/entities/epanet-web.md): A browser workspace for EPANET models on OWA EPANET 2.3.5.
+- [SWMM vs EPANET (app)](wiki/entities/swmm-vs-epanet.md): One pressurized network, two engines, one browser tab.
+- [WNTR Toolkit (app)](wiki/entities/wntr-toolkit.md): Resilience ensembles for EPANET networks, from real WNTR runs on Net3.
+- [Bernoulli Flow in a Pipe (app)](wiki/entities/bernoulli-flow-in-a-pipe.md): Two gauges, one pipe, three friction laws, checked against EPANET 2.2 and SWMM 5.2.4.
+- [Manning's n Explorer (app)](wiki/entities/mannings-n-explorer.md): How Manning's n travels between solvers.
+- [XPSWMM to SWMM5 Converter (app)](wiki/entities/xpswmm-to-swmm5-converter.md): Reads XPSWMM .xp cards and writes an EPA SWMM 5.2 .inp, in the browser.
+- [Legacy SWMM Converter (app)](wiki/entities/legacy-swmm-converter.md): SWMM4 card decks to SWMM5, with both engines in the page.
+- [EXTRAN III Mograph (film)](wiki/entities/extran3-mograph.md): A 60-second film of the wonders of the EXTRAN III Workbench.
+- [SWMM 1 Engine Mograph (film)](wiki/entities/swmm1-engine-mograph.md): A 60-second film of the wonders of the SWMM 1 Engine.
+- [SWMM5 Interactive Report Viewer (app)](wiki/entities/swmm5-interactive-report-viewer.md): The .rpt, .inp and .out of an EPA SWMM 5 run, read and checked.
+- [Collatz Wave Maker (app)](wiki/entities/collatz-wave-maker.md): The Collatz tree as a branching sewer, run in EPA SWMM 5.2.4.
+- [BlueSky-ICM (app)](wiki/entities/bluesky-icm.md): Five blue-sky tools for SWMM5 and ICM on EPA SWMM 5.2.4 in the browser.
+- [The Rational Limit (app)](wiki/entities/the-rational-limit.md): Q = CiA as the steady state a shallow-water simulation settles to.
+- [NA Rain Grid (app)](wiki/entities/na-rain-grid.md): NOAA Atlas 14 rainfall frequency into IDF curves, design storms and SWMM 5 input.
+- [ICM River Reach Modeler (app)](wiki/entities/icm-river-reach-modeler.md): Steady 1D river reach hydraulics for SWMM5 and InfoWorks ICM modellers.
+- [RDII Rosetta Stone (app)](wiki/entities/rdii-rosetta-stone.md): InfoSWMM RDII mapped to EPA SWMM5 and InfoWorks ICM, with live RTK math.
+- [ICM Ruby MD Python Maker (app)](wiki/entities/icm-ruby-md-python-maker.md): Write up an InfoWorks ICM Ruby script, move it to Python, draft its tests.
+- [Ruby Glory Map (app)](wiki/entities/ruby-glory-map.md): A map of the InfoSWMM multi-scenario importer for InfoWorks ICM.
+- [InfoSewer Exchange in Motion (film)](wiki/entities/infosewer-exchange-in-motion.md): The 0060 InfoSewer to ICM importer under ICM Exchange, played in eight scenes.
+- [Flow Factor Wizard (app)](wiki/entities/flow-factor-wizard.md): Peakable sanitary flow for InfoWorks ICM, computed the InfoSewer way.
+- [Geo Flow Ruby (app)](wiki/entities/geo-flow-ruby.md): Household points to subcatchment population to SWMM dry-weather flow.
+- [Geo Flow Population Calculator (app)](wiki/entities/geo-flow-population-calculator.md): Households to subcatchments to dry weather flow in SWMM5.
+- [Sewer Science (app)](wiki/entities/sewer-science.md): Vacuum against gravity sewers, and how to represent a vacuum system in InfoWorks ICM.
+- [Vacuum Sewer Toolkit (app)](wiki/entities/vacuum-sewer-toolkit.md): EPA 1991 vacuum sewer design and InfoWorks ICM Ruby, corrected.
+- [ICM Modeller Type (app)](wiki/entities/icm-modeller-type.md): The InfoWorks ICM modeller quiz, with its scoring engine opened up.
+- [SWMM Similarity Index (app)](wiki/entities/swmm-similarity-index.md): Bill James scoring for SWMM5, EPANET and ICM models.
+- [JWMM Finder (app)](wiki/entities/jwmm-finder.md): All 750 papers of the Journal of Water Management Modeling, searchable in the browser.
+- [Goyen Thesis Explorer (app)](wiki/entities/goyen-thesis-explorer.md): A reader and evidence bench for Allan Goyen's 2000 thesis on urban rainfall-runoff.
+- [ICWMM Insights (app)](wiki/entities/icwmm-insights.md): Robert Dickinson's ICWMM papers and the Bill James similarity score.
+- [Catching Huber (app)](wiki/entities/catching-huber.md): A publication ledger and h-index simulator for a SWMM developer.
+- [AI Engineering Lab (app)](wiki/entities/ai-engineering-lab.md): Twenty modules built from scratch, every one answering SWMM questions.
+- [HydroNeural (app)](wiki/entities/hydroneural.md): A SWMM5 surrogate console, with its mock data and its literature review audited.
+- [Network Mentor AI (app)](wiki/entities/network-mentor-ai.md): An onboarding studio for drainage modeling software.
+- [Smart Search Bot (app)](wiki/entities/smart-search-bot.md): Answer a SWMM5 question, then check every sentence.
+- [SWMM Guide Buddy (app)](wiki/entities/swmm-guide-buddy.md): A companion to the EPA SWMM Applications Manual, with checked calculators.
+- [Info to Mark Magic (app)](wiki/entities/info-to-mark-magic.md): Web pages and HTML into clean Markdown for the BobSWMM library.
+- [Repo Sketch Art (app)](wiki/entities/repo-sketch-art.md): Open the box before you port it.
+- [Online Library Mograph (film)](wiki/entities/online-library-mograph.md): A 60-second film of the wonders of the SWMM & ICM Knowledge Library.
+- [SWMM Second Brain Mograph (film)](wiki/entities/swmm-second-brain-mograph.md): A 60-second film of the wonders of the SWMM Second Brain.
+- [The Monday Test (app)](wiki/entities/the-monday-test.md): Nine experiences for SWMM5, ICM and SWMM6 modelers.
+- [SWMM Futurescape (app)](wiki/entities/swmm-futurescape.md): A design-fiction archive of EPA SWMM in 2030, with every claim labelled.
+- [Bob Dickinson's SWMM Universe (app)](wiki/entities/bob-dickinsons-swmm-universe.md): A hub page for Robert Dickinson's apps, repositories and writing.
+- [Ommatidia Flyover (app)](wiki/entities/ommatidia-flyover.md): A compound-eye organism that flies over a SWMM model to where flow is peaking.
+- [HydroCalc Studio (app)](wiki/entities/hydrocalc-studio.md): Eight open-channel and routing calculators, each showing its equation.
+- [Ponce Hydrology Lab (app)](wiki/entities/ponce-hydrology-lab.md): Thirty-six hydrology and hydraulics modules after Victor Miguel Ponce's web library.
+- [St. Venant Water Flow for Grandkids (app)](wiki/entities/st-venant-water-flow.md): How water moves, for children under ten, with a grown-up mode.
+- [Hydro City Craft (app)](wiki/entities/hydro-city-craft.md): OpenStreetMap streets and water built in Minecraft blocks.
+- [LEGO Water Flow Lab (app)](wiki/entities/lego-water-flow-lab.md): Will a molecule built from LEGO parts go down a pipe?.
+- [Pipes & Cistern (app)](wiki/entities/pipes-and-cistern.md): The exam rate problems, and what a real tank with a hole does instead.
+- [Inventing Memory (app)](wiki/entities/inventing-memory.md): A Hopfield forgetting machine that remembers SWMM5 cross-section shapes.
+- [Monte Carlo Area Estimator (app)](wiki/entities/monte-carlo-area-estimator.md): Throw random points at a box to measure a shape.
+- [Convex Solids Scorecard (dashboard)](wiki/entities/convex-solids-scorecard.md): What the Convex Solids Physics build measures about itself.
+- [Riverworld in 3D (app)](wiki/entities/riverworld-3d.md): A 3D model of Philip José Farmer's river planet, with three engineering checks.
+- [Sisu Fire Control Drill (app)](wiki/entities/sisu-fire-control-drill.md): The computer scene from Heinlein's Citizen of the Galaxy, rebuilt as a game.
+- [Trireme Under Oar and Sail (app)](wiki/entities/trireme-under-oar-and-sail.md): How 170 rowers drove a 120-foot Athenian warship.
+- [Lever Espresso Machine (app)](wiki/entities/lever-espresso-machine.md): How a spring-lever espresso machine makes coffee, step by step.
+- [Qubit Workbench (app)](wiki/entities/qubit-workbench.md): Exact quantum arithmetic on 1 to 12 qubits in the browser.
+- [Four Degrees at the Bottom (app)](wiki/entities/four-degrees-at-the-bottom.md): A lake run a year at a time, with water's two oddities switched off.
+- [Topology Surface Explorer (app)](wiki/entities/topology-surface-explorer.md): Surfaces built by gluing the edges of a polygon.
 
 Data
 - [1729-SWMM5-Models-2030 (the corpus)](wiki/entities/corpus-1729.md): Bob's public model repository; 480 of its models are the translations' gate set.
@@ -533,6 +612,82 @@ App summaries
 - [S297](wiki/sources/S297-loopover-summary.md) (2026-10-06): Loopover v1.3, summary written from the page by Claude.
 - [S298](wiki/sources/S298-cube-as-a-graph-summary.md) (2026-10-20): Cube as a Graph v1.7, summary written from the page by Claude.
 - [S299](wiki/sources/S299-o2-tesseract-summary.md) (2026-10-20): O2 Tesseract v3.3, summary written from the page by Claude.
+- [S300](wiki/sources/S300-swmm6-2d-flood-lab-summary.md) (2026-10-10): SWMM6 2D Flood Lab v0.2.0, summary written from the page by Claude.
+- [S301](wiki/sources/S301-st-venant-term-budget-summary.md) (2026-10-05): St. Venant Term Budget v1.0, summary written from the page by Claude.
+- [S302](wiki/sources/S302-swmm5-swmm6-mograph-summary.md) (2026-11-09): SWMM5 / SWMM6 Mograph v3.1, summary written from the page by Claude.
+- [S303](wiki/sources/S303-hydrocouple-swmm6-mograph-summary.md) (2026-11-10): HydroCouple SWMM6 Mograph v1.1, summary written from the page by Claude.
+- [S304](wiki/sources/S304-hydrocouple-study-guide-summary.md) (2026-10-25): HydroCouple Study Guide v1.0, summary written from the page by Claude.
+- [S305](wiki/sources/S305-openswmm-mcp-repo-viewer-summary.md) (2026-10-25): OpenSWMM MCP Repo Viewer v1.1, summary written from the page by Claude.
+- [S306](wiki/sources/S306-openswmm-gymnasium-summary.md) (2026-10-25): OpenSWMM Gymnasium v1.0, summary written from the page by Claude.
+- [S307](wiki/sources/S307-swmm-front-door-summary.md) (2026-11-09): SWMM Front Door v0.1, summary written from the page by Claude.
+- [S308](wiki/sources/S308-thaw-on-the-thoth-summary.md) (2026-10-21): Thaw on the Thoth v2026-10-21, summary written from the page by Claude.
+- [S309](wiki/sources/S309-swmm5plus-explorer-summary.md) (2026-10-24): SWMM5+ Explorer v1.0.1, summary written from the page by Claude.
+- [S310](wiki/sources/S310-swmm5plus-repo-explorer-summary.md) (2026-10-25): SWMM5+ Repo Explorer v1.0.0, summary written from the page by Claude.
+- [S311](wiki/sources/S311-swmm-insight-lab-summary.md) (2026-10-25): SWMM Insight Lab v1.0.0, summary written from the page by Claude.
+- [S312](wiki/sources/S312-aquanuity-theory-summary.md) (2026-10-24): Aquanuity Theory v1.0, summary written from the page by Claude.
+- [S313](wiki/sources/S313-flow-solver-forge-summary.md) (2026-10-25): Flow Solver Forge v1.0, summary written from the page by Claude.
+- [S314](wiki/sources/S314-itm-swmm-repository-map-summary.md) (2026-10): ITM_SWMM Repository Map v1.0, summary written from the page by Claude.
+- [S315](wiki/sources/S315-epanet-for-swmm5-experts-app-md.md) (2026-11-12): EPANET for SWMM5 Experts v2.0.0, app .md.
+- [S316](wiki/sources/S316-epanet-web-summary.md) (2026-10-25): EPANET Web v1.0, summary written from the page by Claude.
+- [S317](wiki/sources/S317-swmm-vs-epanet-summary.md) (2026-10): SWMM vs EPANET v1.0, summary written from the page by Claude.
+- [S318](wiki/sources/S318-wntr-toolkit-summary.md) (2026-10-25): WNTR Toolkit v1.0.0, summary written from the page by Claude.
+- [S319](wiki/sources/S319-bernoulli-flow-in-a-pipe-summary.md) (2026-11-03): Bernoulli Flow in a Pipe v2.2, summary written from the page by Claude.
+- [S320](wiki/sources/S320-mannings-n-explorer-summary.md) (2026-10-24): Manning's n Explorer v3.1, summary written from the page by Claude.
+- [S321](wiki/sources/S321-xpswmm-to-swmm5-converter-summary.md) (2026-10-25): XPSWMM to SWMM5 Converter v1.0.0, summary written from the page by Claude.
+- [S322](wiki/sources/S322-legacy-swmm-converter-summary.md) (2026-10): Legacy SWMM Converter v1.0.0, summary written from the page by Claude.
+- [S323](wiki/sources/S323-extran3-mograph-app-md.md) (2026-11-16): EXTRAN III Mograph v1.0, app .md.
+- [S324](wiki/sources/S324-swmm1-engine-mograph-app-md.md) (2026-11-16): SWMM 1 Engine Mograph v1.0, app .md.
+- [S325](wiki/sources/S325-swmm5-interactive-report-viewer-summary.md) (2026-10-31): SWMM5 Interactive Report Viewer v2.1, summary written from the page by Claude.
+- [S326](wiki/sources/S326-swmm5-network-miner-summary.md) (2026-10): SWMM5 Network Miner v2.0, summary written from the page by Claude.
+- [S327](wiki/sources/S327-collatz-wave-maker-summary.md) (2026-10-25): Collatz Wave Maker v2.0, summary written from the page by Claude.
+- [S328](wiki/sources/S328-bluesky-icm-summary.md) (2026-10-21): BlueSky-ICM v1.0.0, summary written from the page by Claude.
+- [S329](wiki/sources/S329-the-rational-limit-summary.md) (2026-10-12): The Rational Limit v1.0, summary written from the page by Claude.
+- [S330](wiki/sources/S330-na-rain-grid-summary.md) (2026-10-25): NA Rain Grid v2.0.0, summary written from the page by Claude.
+- [S331](wiki/sources/S331-icm-river-reach-modeler-app-md.md) (2026-11-12): ICM River Reach Modeler v1.1.0, app .md.
+- [S332](wiki/sources/S332-rdii-rosetta-stone-summary.md) (2026-10-21): RDII Rosetta Stone v1.0, summary written from the page by Claude.
+- [S333](wiki/sources/S333-icm-ruby-md-python-maker-summary.md) (2026-10-24): ICM Ruby MD Python Maker v2.0, summary written from the page by Claude.
+- [S334](wiki/sources/S334-ruby-glory-map-summary.md) (2026-10-25): Ruby Glory Map v1.0, summary written from the page by Claude.
+- [S335](wiki/sources/S335-infosewer-exchange-in-motion-summary.md) (2026-11-10): InfoSewer Exchange in Motion v1.0, summary written from the page by Claude.
+- [S336](wiki/sources/S336-flow-factor-wizard-summary.md) (2026-10-21): Flow Factor Wizard v1.0, summary written from the page by Claude.
+- [S337](wiki/sources/S337-geo-flow-ruby-summary.md) (2026-10-21): Geo Flow Ruby v2026-10-21, summary written from the page by Claude.
+- [S338](wiki/sources/S338-geo-flow-population-calculator-summary.md) (2026-10-25): Geo Flow Population Calculator v2, summary written from the page by Claude.
+- [S339](wiki/sources/S339-sewer-science-summary.md) (2026-10-22): Sewer Science v1.0, summary written from the page by Claude.
+- [S340](wiki/sources/S340-vacuum-sewer-toolkit-summary.md) (2026-10-25): Vacuum Sewer Toolkit v1.0, summary written from the page by Claude.
+- [S341](wiki/sources/S341-icm-modeller-type-summary.md) (2026-10): ICM Modeller Type v1.1.0, summary written from the page by Claude.
+- [S342](wiki/sources/S342-swmm-similarity-index-summary.md) (2026-10): SWMM Similarity Index v1.0, summary written from the page by Claude.
+- [S343](wiki/sources/S343-jwmm-finder-summary.md) (2026-11-06): JWMM Finder v1.0.0, summary written from the page by Claude.
+- [S344](wiki/sources/S344-goyen-thesis-explorer-summary.md) (2026-10-22): Goyen Thesis Explorer v2.1.0, summary written from the page by Claude.
+- [S345](wiki/sources/S345-icwmm-insights-summary.md) (2026-10-24): ICWMM Insights v1.0, summary written from the page by Claude.
+- [S346](wiki/sources/S346-catching-huber-app-md.md) (2026-11-16): Catching Huber v1.1.0, app .md.
+- [S347](wiki/sources/S347-ai-engineering-lab-summary.md) (2026-10-19): AI Engineering Lab v1.0.0, summary written from the page by Claude.
+- [S348](wiki/sources/S348-hydroneural-summary.md) (2026-10-22): HydroNeural v1.0, summary written from the page by Claude.
+- [S349](wiki/sources/S349-network-mentor-ai-summary.md) (2026-10-25): Network Mentor AI v1.0.0, summary written from the page by Claude.
+- [S350](wiki/sources/S350-smart-search-bot-summary.md) (2026-10-25): Smart Search Bot v1.0, summary written from the page by Claude.
+- [S351](wiki/sources/S351-swmm-guide-buddy-summary.md) (2026-10-24): SWMM Guide Buddy v1.0, summary written from the page by Claude.
+- [S352](wiki/sources/S352-info-to-mark-magic-summary.md) (2026-10): Info to Mark Magic v2.0, summary written from the page by Claude.
+- [S353](wiki/sources/S353-repo-sketch-art-summary.md) (2026-10-31): Repo Sketch Art v1.2.0, summary written from the page by Claude.
+- [S354](wiki/sources/S354-online-library-mograph-app-md.md) (2026-11-16): Online Library Mograph v1.0, app .md.
+- [S355](wiki/sources/S355-swmm-second-brain-mograph-app-md.md) (2026-11-16): SWMM Second Brain Mograph v1.0, app .md.
+- [S356](wiki/sources/S356-the-monday-test-summary.md) (2026-10-20): The Monday Test v1.1, summary written from the page by Claude.
+- [S357](wiki/sources/S357-swmm-futurescape-summary.md) (2026-10-25): SWMM Futurescape v2.0, summary written from the page by Claude.
+- [S358](wiki/sources/S358-bob-dickinsons-swmm-universe-summary.md) (2026-08-31): Bob Dickinson's SWMM Universe v2026-08-31, summary written from the page by Claude.
+- [S359](wiki/sources/S359-ommatidia-flyover-summary.md) (2026-11): Ommatidia Flyover v1.4.1, summary written from the page by Claude.
+- [S360](wiki/sources/S360-hydrocalc-studio-summary.md) (2026-10-24): HydroCalc Studio v1.0, summary written from the page by Claude.
+- [S361](wiki/sources/S361-ponce-hydrology-lab-summary.md) (2026-10-22): Ponce Hydrology Lab v1.2, summary written from the page by Claude.
+- [S362](wiki/sources/S362-st-venant-water-flow-summary.md) (2026-10-22): St. Venant Water Flow for Grandkids v2.1, summary written from the page by Claude.
+- [S363](wiki/sources/S363-hydro-city-craft-summary.md) (2026-10-26): Hydro City Craft v1.1, summary written from the page by Claude.
+- [S364](wiki/sources/S364-lego-water-flow-lab-summary.md) (2026-10): LEGO Water Flow Lab v1.0, summary written from the page by Claude.
+- [S365](wiki/sources/S365-pipes-and-cistern-summary.md) (2026-10-25): Pipes & Cistern v1.0, summary written from the page by Claude.
+- [S366](wiki/sources/S366-inventing-memory-summary.md) (2026-10-25): Inventing Memory v1.0, summary written from the page by Claude.
+- [S367](wiki/sources/S367-monte-carlo-area-estimator-summary.md) (2026-10-24): Monte Carlo Area Estimator v1.0.0, summary written from the page by Claude.
+- [S368](wiki/sources/S368-convex-solids-scorecard-summary.md) (2026-10-09): Convex Solids Scorecard v2026-10-09, summary written from the page by Claude.
+- [S369](wiki/sources/S369-riverworld-3d-app-md.md) (2026-11-17): Riverworld in 3D v1.1.0, app .md.
+- [S370](wiki/sources/S370-sisu-fire-control-drill-summary.md) (2026-11): Sisu Fire Control Drill v1.0, summary written from the page by Claude.
+- [S371](wiki/sources/S371-trireme-under-oar-and-sail-summary.md) (2026-10-22): Trireme Under Oar and Sail v1.2, summary written from the page by Claude.
+- [S372](wiki/sources/S372-lever-espresso-machine-summary.md) (2026-10-20): Lever Espresso Machine v2026-10-20, summary written from the page by Claude.
+- [S373](wiki/sources/S373-qubit-workbench-summary.md) (2026-10-09): Qubit Workbench v1.0, summary written from the page by Claude.
+- [S374](wiki/sources/S374-four-degrees-at-the-bottom-summary.md) (2026-09-30): Four Degrees at the Bottom v2026-09-30, summary written from the page by Claude.
+- [S375](wiki/sources/S375-topology-surface-explorer-summary.md) (2026-10-28): Topology Surface Explorer v2026-10-28, summary written from the page by Claude.
 
 Manuals and reports (primary documents)
 - [S185](wiki/sources/S185-epa-swmm5-qa-report-dynamic-wave-2006.md) (2006-09): SWMM Quality Assurance Report, Dynamic Wave Flow Routing, by L. A. Rossman: SWMM 4.4h against SWMM 5.0.006 on twenty examples. Read in part: Chapters 1 to 4 and 7.

@@ -2,7 +2,7 @@
 title: EPANET
 type: entity
 updated: 2026-11-18
-sources: [S21, S11, S198, S115, S120, S277]
+sources: [S21, S11, S198, S115, S120, S277, S315, S316, S318, S317]
 tags: [epanet, engine, water-distribution]
 reviewed: no
 ---
@@ -20,5 +20,7 @@ EPA's program for pressurized water distribution networks. [Lewis A. (Lew) Rossm
 **Apps here that use or explain it.** [Two Engines, One Town](two-engines-one-town.md), which couples it to SWMM [S198](../sources/S198-two-engines-one-town-summary.md); [ForceMain SWMM5 EPANET Comparison](forcemain-swmm5-epanet-comparison.md) [S120](../sources/S120-forcemain-swmm5-epanet-comparison-replit-summary.md); [EPANET for SWMM5 Experts](epanet-for-swmm5-experts.md), which explains it to SWMM users and runs no engine [S115](../sources/S115-epanet-for-swmm5-experts-replit-summary.md); [EPANET Quizzer](epanet-quizzer.md).
 
 **Added 18 November 2026.** The [EPANET Total Head Explorer (app)](../entities/epanet-total-head-explorer.md) carries a JavaScript port of the EPANET 2.2 hydraulic solver that agrees with compiled EPANET 2.2 and OWA-EPANET 2.3.5 to 4.4 x 10^-12 ft on the manual's tutorial network; its first edition used 2.31 ft per psi where EPANET uses 0.4333 psi per ft and put node 2 at 386.66 psi instead of 387.02 [S277](../sources/S277-epanet-total-head-explorer-summary.md).
+
+**Added 18 November 2026.** From the 18 November uploads: EPANET for SWMM5 Experts 2.0 compares EPANET 2.2 and 2.3.5 with EPA SWMM 5.2.4 on one pipe at six flows; 2.3.5's heads equal 2.2's at 6 of 6, and a 2.3.5 [LEAKAGE] line gives 28.485 gpm against 28.484 gpm from the formula [S315](../sources/S315-epanet-for-swmm5-experts-app-md.md). EPANET Web runs OWA EPANET 2.3.5 in a Web Worker, bit-identical on 2,751 of 2,781 Net1 hydraulic values [S316](../sources/S316-epanet-web-summary.md). WNTR Toolkit traces EPANET 2.2's tank errors on Net3 to a 0.0005-ft dead band in its head comparison, which EPANET 2.3 replaces [S318](../sources/S318-wntr-toolkit-summary.md). SWMM vs EPANET runs one pressurized network in both engines [S317](../sources/S317-swmm-vs-epanet-summary.md).
 
 **Related.** [Force main friction](../concepts/force-main-friction.md), where SWMM's and EPANET's friction formulas meet.

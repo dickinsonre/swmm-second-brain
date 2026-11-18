@@ -1,8 +1,8 @@
 ---
 title: SWMM Results Kit
 type: entity
-updated: 2026-11-17
-sources: [S199, S200, S225, S240]
+updated: 2026-11-18
+sources: [S199, S200, S225, S240, S359]
 tags: [swmm5, swmm6, results-reading, library, verification]
 reviewed: no
 ---
@@ -19,5 +19,7 @@ The shared library that reads every .rpt and .out file in Bob's engine apps into
 - A difference exactly equal to a tolerance now passes; floating-point subtraction had made a 0.01 ft difference fail a 0.01 ft test.
 
 **Added 17 November 2026, second batch.** Two more apps read their results through the Results Kit 1.0.0: [Four Ways to K (app)](four-ways-to-k.md) [S225](../sources/S225-four-ways-to-k-summary.md) and [Non-Prismatic Channel Lab (app)](non-prismatic-channel-lab.md) [S240](../sources/S240-non-prismatic-channel-lab-summary.md).
+
+**Added 18 November 2026.** Ommatidia Flyover's .out reader matched 8,875,800 values across four models, the Bellinge test network included, against the SWMM Results Kit reader with 0 wrong [S359](../sources/S359-ommatidia-flyover-summary.md).
 
 **Related.** [Reading SWMM output](../concepts/reading-swmm-output.md).

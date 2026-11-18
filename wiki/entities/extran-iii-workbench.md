@@ -1,11 +1,11 @@
 ---
 title: EXTRAN III Workbench (app)
 type: entity
-updated: 2026-11-17
-sources: [S05, S74, S81, S199]
+updated: 2026-11-18
+sources: [S05, S74, S81, S199, S323]
 tags: [apps, swmm-history, extran, verification, hydraulics]
 reviewed: 2026-11-15
-changed_after_review: "2026-11-17 (S192 to S202 ingest): one paragraph added at the end on its use in Seven SWMM Engines (S199)"
+changed_after_review: "2026-11-17 (S192 to S202 ingest): one paragraph added at the end on its use in Seven SWMM Engines (S199); 2026-11-18 (S300 to S375 ingest): a paragraph added near the end, headed Added 18 November 2026 (S323)"
 ---
 Bob's browser app that runs EXTRAN III, the 1981 Extended Transport block of SWMM 3, from the FORTRAN listing printed in its user's manual, beside EPA SWMM 5.2.4. Version 1.6.0, 11 November 2026 [S74](../sources/S74-extran3-workbench-app-md.md). The program itself is on [EXTRAN](extran.md).
 
@@ -47,3 +47,5 @@ The HYDRAD 45 fault is the one the [Bellinge (app)](bellinge-app.md) essay blame
 **Open.** [S05](../sources/S05-swmm5org-article-facts.md) says the converter ran on 259 models; [S74](../sources/S74-extran3-workbench-app-md.md) says 257 (Q51). Its summary records no Netlify address and no repository. See [Open questions](../open-questions.md).
 
 **Added 17 November 2026.** Its two builds run again inside [Seven SWMM Engines](seven-swmm-engines.md): as printed, and with the ten 1981 fixes plus three tape-path fixes and one ground cap on free-surface junction heads. On a Bellinge branch the fixed build finishes a 13.8-hour window at a 0.5 s step and the as-printed build diverges [S199](../sources/S199-seven-swmm-engines-summary.md).
+
+**Added 18 November 2026.** A 60-second film of the Workbench, EXTRAN III Mograph, traces every number it shows to its facts file: three repair grades of 1,289, 133 and 3 that add to 1,425, and four corpus counts that add to 257 [S323](../sources/S323-extran3-mograph-app-md.md).

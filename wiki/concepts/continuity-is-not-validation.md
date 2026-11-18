@@ -2,10 +2,10 @@
 title: Continuity is not validation
 type: concept
 updated: 2026-11-18
-sources: [S01, S04, S05, S20, S59, S60, S62, S65, S67, S75, S81, S194, S196, S199, S201, S282, S287, S275, S273, S295]
+sources: [S01, S04, S05, S20, S59, S60, S62, S65, S67, S75, S81, S194, S196, S199, S201, S282, S287, S275, S273, S295, S301, S300, S328, S318]
 tags: [verification, method]
 reviewed: 2026-11-15
-changed_after_review: "2026-11-17 (S192 to S202 ingest): one paragraph added at the end on four more cases (S194, S196, S199, S201); 2026-11-18 (S268 to S299 ingest): a paragraph added near the end, headed Added 18 November 2026 (S282, S287, S275, S273, S295)"
+changed_after_review: "2026-11-17 (S192 to S202 ingest): one paragraph added at the end on four more cases (S194, S196, S199, S201); 2026-11-18 (S268 to S299 ingest): a paragraph added near the end, headed Added 18 November 2026 (S282, S287, S275, S273, S295); 2026-11-18 (S300 to S375 ingest): a paragraph added near the end, headed Added 18 November 2026 (S301, S300, S328, S318)"
 ---
 A closed mass balance shows that water was not lost. It does not show that the answer is right. Five cases from the sources:
 
@@ -44,3 +44,9 @@ See also [Verification against printed runs](verification-against-printed-runs.m
 - On a benchmark's hump test, EPA SWMM 5.2.4 at settings near its defaults left 98.6% of steps unconverged with -39% continuity, and the benchmark scored the run anyway [S287](../sources/S287-openhydro-bench-review-summary.md).
 - A city's sanitary sample as published runs at 6.184% routing continuity; two adverse-node repairs bring it to -0.040% [S275](../sources/S275-des-moines-sewer-swmm5-summary.md).
 - Agreement between two engines describes the regime when the physics forces the same answer; the finding is where they part [S273](../sources/S273-agreement-is-the-null-summary.md). A model can close its mass balance and still miss the peak, the timing or the flood extent [S295](../sources/S295-water-modeling-to-3000-summary.md).
+
+**Added 18 November 2026.** More cases from the 18 November uploads:
+- OpenSWMM 6 alpha.2 reads -29.401% routing continuity on a run whose link flows match EPA 5.2.4 within 0.30% of each peak [S301](../sources/S301-st-venant-term-budget-summary.md).
+- In the 2D Flood Lab the engine's default tier setting brings the flood to one survey point between 400 and 500 s instead of between 200 and 300 s, and every run closes its volume balance, so the continuity line shows none of it [S300](../sources/S300-swmm6-2d-flood-lab-summary.md).
+- A scaffolder's continuity regex captured the dot leaders, so every report read 0.00% [S328](../sources/S328-bluesky-icm-summary.md).
+- In WNTR Toolkit, EPANET 2.2's tanks are off by 119%, 122% and 53% of their working volume while the run completes [S318](../sources/S318-wntr-toolkit-summary.md).

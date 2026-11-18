@@ -1,10 +1,11 @@
 ---
 title: Wayne C. Huber
 type: entity
-updated: 2026-11-15
-sources: [S11, S12, S19, S21, S64, S86]
+updated: 2026-11-18
+sources: [S11, S12, S19, S21, S64, S86, S346]
 tags: [people, swmm-history, university-of-florida]
 reviewed: 2026-11-15
+changed_after_review: "2026-11-18 (S300 to S375 ingest): a paragraph added near the end, headed Added 18 November 2026 (S346)"
 ---
 Of the University of Florida; first author of the SWMM 3 and SWMM 4 user's manuals [S19](../sources/S19-li-edition-29-engine-speed.md).
 
@@ -17,5 +18,7 @@ Of the University of Florida; first author of the SWMM 3 and SWMM 4 user's manua
 - Bob credits him, with Lew Rossman, for the SWMM 5 documentation, Huber for the hydrology [S11](../sources/S11-li-my-history-with-swmm.md).
 
 **Not in the sources yet.** His own account of SWMM 1 and 2. The ICWMM 2020 presentation is embedded in [S19](../sources/S19-li-edition-29-engine-speed.md) as a link only.
+
+**Added 18 November 2026.** Catching Huber grades Bob's record against Huber's: Huber's top-20 list in OpenAlex gives h = 13, equal to OpenAlex's stated 13, and no Google Scholar citations or h-index for Huber were found [S346](../sources/S346-catching-huber-app-md.md).
 
 See [SWMM version history, 1969 to 2026](../concepts/swmm-version-history.md), [Robert (Bob) Dickinson](robert-dickinson.md).

@@ -2,10 +2,10 @@
 title: OpenSWMM 6 solvers, measured
 type: concept
 updated: 2026-11-18
-sources: [S75, S80, S81, S186, S196, S198, S199, S209, S29, S280, S281, S282, S286]
+sources: [S75, S80, S81, S186, S196, S198, S199, S209, S29, S280, S281, S282, S286, S300, S301, S307]
 tags: [swmm6, hydraulics, dynamic-wave, finite-volume, engine-comparison]
 reviewed: 2026-11-15
-changed_after_review: "2026-11-16 (S180 to S187 ingest): one paragraph added at the end on Register 33 (S186); 2026-11-17 (S192 to S202 ingest): one paragraph added at the end on three more apps (S196, S198, S199); 2026-11-17 (S205 to S223 ingest): a paragraph added near the end, headed Added 17 November 2026 (S209, S29); 2026-11-18 (S268 to S299 ingest): a paragraph added near the end, headed Added 18 November 2026 (S280, S281, S282, S286)"
+changed_after_review: "2026-11-16 (S180 to S187 ingest): one paragraph added at the end on Register 33 (S186); 2026-11-17 (S192 to S202 ingest): one paragraph added at the end on three more apps (S196, S198, S199); 2026-11-17 (S205 to S223 ingest): a paragraph added near the end, headed Added 17 November 2026 (S209, S29); 2026-11-18 (S268 to S299 ingest): a paragraph added near the end, headed Added 18 November 2026 (S280, S281, S282, S286); 2026-11-18 (S300 to S375 ingest): a paragraph added near the end, headed Added 18 November 2026 (S300, S301, S307)"
 ---
 OpenSWMM 6 has two hydraulic solvers: a dynamic wave solver that extends SWMM 5's, and an explicit finite-volume solver (FV) [S75](../sources/S75-st-venant-rosetta-stone-app-md.md). Three of Bob's apps have run them beside EPA SWMM 5.2.4. This page collects what they measured. Every run is on an alpha build, and none is compared with a measurement. For the program see [OpenSWMM 6 and HydroCouple](../entities/openswmm-6-and-hydrocouple.md).
 
@@ -76,3 +76,8 @@ See [EXTRAN's three solvers: XROUTE, YROUTE, ZROUTE](extran-solvers-xroute-yrout
 - On an unponded four-pipe chain the two engines agree with SWMM 5 options (C1 peak 16.0 cfs in both, continuity -0.092% in both), but on ponded chain A EPA 5.2.4 peaked at 14.45 cfs and SWMM6's SWMM5 path at 11.67 cfs [S281](../sources/S281-swmm6-in-diagrams-summary.md). The page does not say why (Q115).
 - On a still pool, DYNAMIC_SLOT books slot water as storage (+25.5% in one pipe) and FV moves water where none should move (link flows to 74 cfs) [S282](../sources/S282-forma-swmm6-summary.md).
 - FV reported 103.4 ft at a 12.75 ft junction on one generated network of 24, with continuity 0.0% (DR-2, undiagnosed) [S286](../sources/S286-exam-first-swmm-harness-summary.md).
+
+**Added 18 November 2026.** Three more pages measure OpenSWMM 6:
+- The 2D Flood Lab's double-precision port matches the compiled alpha.4 surface solver to rounding on four cases and on Merewether at 13 ft squares (3.4e-12 ft); with the default LTS_TIERS 4 the Merewether flood reaches point S1 between 400 and 500 s instead of 200 and 300 s and stores 15% more water at 1,000 s, every run closing its volume balance [S300](../sources/S300-swmm6-2d-flood-lab-summary.md).
+- On a 13-conduit demo, OpenSWMM 6 alpha.2 stays within 0.30% of EPA 5.2.4 at every reporting period while its continuity line reads -29.401%, because its report counts almost none of the water already in the system as initial storage [S301](../sources/S301-st-venant-term-budget-summary.md).
+- On EPA Example 1, alpha.4 dynamic wave gives 73.76 cfs in C11 against 73.90, and alpha.4 finite volume puts the deepest water at J1 at 0.24 ft against 0.72 ft [S307](../sources/S307-swmm-front-door-summary.md).

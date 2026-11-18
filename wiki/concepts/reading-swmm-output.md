@@ -2,10 +2,10 @@
 title: Reading SWMM output
 type: concept
 updated: 2026-11-18
-sources: [S03, S10, S22, S60, S69, S72, S76, S77, S78, S157, S199, S200, S81, S215, S216, S211, S231, S228, S286, S274, S288]
+sources: [S03, S10, S22, S60, S69, S72, S76, S77, S78, S157, S199, S200, S81, S215, S216, S211, S231, S228, S286, S274, S288, S325, S342, S328]
 tags: [swmm5, output, reporting]
 reviewed: 11/16/2026
-changed_after_review: "2026-11-17 (S192 to S202 ingest): one paragraph added at the end on the SWMM Results Kit (S199, S200); 2026-11-17 (S205 to S223 ingest): a paragraph added near the end, headed Added 17 November 2026 (S215, S216, S211); 2026-11-17 (S224 to S242 ingest): a paragraph added near the end, headed Added 17 November 2026 (S231, S228); 2026-11-18 (S268 to S299 ingest): a paragraph added near the end, headed Added 18 November 2026 (S286, S274, S288)"
+changed_after_review: "2026-11-17 (S192 to S202 ingest): one paragraph added at the end on the SWMM Results Kit (S199, S200); 2026-11-17 (S205 to S223 ingest): a paragraph added near the end, headed Added 17 November 2026 (S215, S216, S211); 2026-11-17 (S224 to S242 ingest): a paragraph added near the end, headed Added 17 November 2026 (S231, S228); 2026-11-18 (S268 to S299 ingest): a paragraph added near the end, headed Added 18 November 2026 (S286, S274, S288); 2026-11-18 (S300 to S375 ingest): a paragraph added near the end, headed Added 18 November 2026 (S325, S342, S328)"
 ---
 A large share of "SWMM is wrong" questions come from comparing two honest numbers that measure different things [S22](../sources/S22-li-ten-problems.md).
 
@@ -45,3 +45,5 @@ See also [The missing specification](the-missing-specification.md) and [Continui
 **Added 17 November 2026, second batch.** Two more examples of the .out peak under the .rpt peak: 26.887 against 26.96 cfs for conduit C6 [S231](../sources/S231-swmmcraft-ultimate-app-md.md), and 219.30 against 219.66 cfs at an outfall [S228](../sources/S228-logic-based-generative-swmm5-summary.md).
 
 **Added 18 November 2026.** The [Exam-First SWMM Harness (app)](../entities/exam-first-swmm-harness.md) reports the same node-type swap as DR-1, quoting `writeInt4(static_cast<int>(ctx.nodes.type[uj]))` in DefaultOutputPlugin.cpp at swmm6_rel 3c30f1e6 and the internal enum `DIVIDER = 2, STORAGE = 3`, and notes that the engine already has `internal_to_c_node_type()` for the conversion [S286](../sources/S286-exam-first-swmm-harness-summary.md). On sampling: with a 120 s report step and 5 s routing, the .out caught 31% of one link's routing-step peak [S274](../sources/S274-tri-pyramid-summary.md), and ICM SQL aggregates see only the saved timesteps, so MAX misses a peak between saves [S288](../sources/S288-icm-link-results-sql-summary.md).
+
+**Added 18 November 2026.** From the 18 November uploads: the SWMM5 Interactive Report Viewer reads .out values bit-identical to EPA's swmm_output on 54 runs (4,291,001 values) and fixed links coloured by SWMM's capacity variable, which is the control setting for anything but a conduit [S325](../sources/S325-swmm5-interactive-report-viewer-summary.md). A report parser written for an older layout misread EPA SWMM 5.2.4, which prints two more columns, reading a peak of 1.48 where the report says 4.66 cfs [S342](../sources/S342-swmm-similarity-index-summary.md). A continuity regex that captured the dot leaders read every report as 0.00% [S328](../sources/S328-bluesky-icm-summary.md).

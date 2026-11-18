@@ -1,10 +1,11 @@
 ---
 title: SWMM5 Network Miner (app)
 type: entity
-updated: 2026-11-15
-sources: [S97]
+updated: 2026-11-18
+sources: [S97, S326]
 tags: [apps, replit, swmm5, model-library, pyswmm]
 reviewed: 11/16/2026
+changed_after_review: "2026-11-18 (S300 to S375 ingest): a paragraph added near the end, headed Added 18 November 2026 (S326, S97)"
 ---
 Bob's Replit app SWMM5 Network Miner: an app for organizing, searching, inspecting, comparing and running a library of SWMM model files. Version 1.0.0, at `swmm-filebase--robertdickinson.replit.app` [S97](../sources/S97-swmm5-network-miner-replit-summary.md).
 
@@ -24,5 +25,7 @@ Bob's Replit app SWMM5 Network Miner: an app for organizing, searching, inspecti
 **What it does not show.** The production database and the production page were not checked. Running a simulation and uploading an `.xp` file were not tested. A consistent unit conversion for all quantities was not found. [S97](../sources/S97-swmm5-network-miner-replit-summary.md)
 
 **Noted at ingest.** The pages it loaded include one at `/ai-analysis`, and it found no AI call in the app. The display name, the project name and the site name are three different names (Q70).
+
+**Added 18 November 2026.** A single-file edition, version 2.0 [S326](../sources/S326-swmm5-network-miner-summary.md), carries EPA SWMM 5.2.4 in the page. Its audit lists ReSWMM defects R1 to R11 (junction rows, cross-sections, offsets, rims and references written wrongly), now fixed, with unit conversion for SI models and a CFL time-step preview; "AI Analysis" is renamed Health Check because it is a rule list [S326](../sources/S326-swmm5-network-miner-summary.md). The edition is a separate file from the Replit app summarized in [S97](../sources/S97-swmm5-network-miner-replit-summary.md), not a later version of it.
 
 See [Replit apps and the summaries Replit Agent wrote](../concepts/replit-app-summaries.md), [SWMM5 INP MAKER (app)](swmm5-inp-maker.md), [EPA SWMM 5](swmm-5.md).

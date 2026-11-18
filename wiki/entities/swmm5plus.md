@@ -1,8 +1,8 @@
 ---
 title: "SWMM5+ (CIMM finite-volume engine)"
 type: entity
-updated: 2026-11-17
-sources: [S222, S223, S82]
+updated: 2026-11-18
+sources: [S222, S223, S82, S309, S310, S311]
 tags: [swmm5plus, finite-volume, fortran, engines]
 reviewed: no
 ---
@@ -18,5 +18,7 @@ SWMM5+ is a finite-volume dynamic-wave engine written in Fortran 2008 by Ben Hod
 - With a weir's Surcharge flag set to YES both engines use the same equivalent-orifice formula above the crown, and the weir peaks agree within 1.9 %.
 
 **What has not been done.** No branch was compared with an Intel Fortran build; every build ran one image, so the parallel partitioning was never exercised; no WebAssembly engine has been built [S223](../sources/S223-swmm5plus-branch-atlas-summary.md). Neither engine was checked against field data [S222](../sources/S222-swmm5plus-bench-summary.md).
+
+**Added 18 November 2026.** Three app pages read the SWMM5+ source. Upstream has 88,020 lines of Fortran in 72 files; no .f90 file makes an MPI call, since SWMM5+ uses coarrays with 111 sync all [S309](../sources/S309-swmm5plus-explorer-summary.md). SWMM5+ downloads EPA SWMM v5.1.13 (CMakeLists.txt lines 82 to 85), whose engine sits in src/ [S310](../sources/S310-swmm5plus-repo-explorer-summary.md). A module extraction matches 71 of 71 module declarations and 534 of 534 edges, while 27 of the curated dependency edges have no use statement behind them [S311](../sources/S311-swmm-insight-lab-summary.md) [S310](../sources/S310-swmm5plus-repo-explorer-summary.md).
 
 See [SWMM5+ Bench (app)](swmm5plus-bench.md), [SWMM5+ Branch Atlas (app)](swmm5plus-branch-atlas.md), [Mirab Test Bench (app)](mirab-test-bench.md).

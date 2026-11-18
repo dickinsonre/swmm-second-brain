@@ -2,10 +2,10 @@
 title: Converting SWMM 5 models for older engines
 type: concept
 updated: 2026-11-18
-sources: [S73, S74, S81, S193, S194, S199, S271]
+sources: [S73, S74, S81, S193, S194, S199, S271, S322]
 tags: [swmm-history, conversion, swmm1, swmm4, extran, swmm5]
 reviewed: 2026-11-15
-changed_after_review: "2026-11-17 (S192 to S202 ingest): one paragraph added at the end on three more converters (S193, S194, S199); 2026-11-18 (S268 to S299 ingest): a paragraph added near the end, headed Added 18 November 2026 (S271)"
+changed_after_review: "2026-11-17 (S192 to S202 ingest): one paragraph added at the end on three more converters (S193, S194, S199); 2026-11-18 (S268 to S299 ingest): a paragraph added near the end, headed Added 18 November 2026 (S271); 2026-11-18 (S300 to S375 ingest): a paragraph added near the end, headed Added 18 November 2026 (S322)"
 ---
 Three of Bob's apps take a modern SWMM 5 `.inp` and run it on an engine from 1971, 1981 or 2004. Each needs a converter, and each converter loses something. This page collects what the converters do and what they report as lost.
 
@@ -51,3 +51,5 @@ See [Verification against printed runs](verification-against-printed-runs.md), [
 - [Seven SWMM Engines](../entities/seven-swmm-engines.md) uses the Workbench's converter, S5to4: rain files moved to [TIMESERIES], rating-curve outlets fitted as capped conduits, weirs or orifices, control rules reduced to pump start and stop depths. EXTRAN III is fed the runoff SWMM 4.4H computed, and a run longer than its 99,999 steps is cut to the span around the largest runoff peak [S199](../sources/S199-seven-swmm-engines-summary.md).
 
 **Added 18 November 2026.** The [SWMM 4.4H Workbench (app)](../entities/swmm44h-workbench.md) converts SWMM5 files to SWMM 4.4H decks ($RUNOFF and $EXTRAN), keeping hydrology and hydraulics and listing what it drops (quality, LID, RDII, groundwater, snow, control rules, outlets). On 300 corpus models, 252 finished in both generations; of 211 with pipes to compare, the middle model's median difference in conduit peak flow is 8.3%, 114 agree within 10% and 53 differ by more than half. The page says the differences mix the engines with the translation [S271](../sources/S271-swmm44h-workbench-summary.md).
+
+**Added 18 November 2026.** The other direction, SWMM4 card decks to SWMM5: the Legacy SWMM Converter carries both engines in the page; 11 of 12 converted samples run in SWMM 5.2.4 with no error, and on six EXTRAN models the median difference in peak conduit flow against SWMM 4.4H is 0.5% to 4.8% [S322](../sources/S322-legacy-swmm-converter-summary.md).

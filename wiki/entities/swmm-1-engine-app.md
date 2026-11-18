@@ -1,10 +1,11 @@
 ---
 title: SWMM 1 Engine (app)
 type: entity
-updated: 2026-11-15
-sources: [S01, S06, S07, S73]
+updated: 2026-11-18
+sources: [S01, S06, S07, S73, S324]
 tags: [apps, swmm-history, swmm1]
 reviewed: 2026-11-15
+changed_after_review: "2026-11-18 (S300 to S375 ingest): a paragraph added near the end, headed Added 18 November 2026 (S324)"
 ---
 Bob's browser app that runs [SWMM 1 (1971)](swmm-1.md) from its own Fortran. File `swmm1-runoff-engine.html`; the name is kept from version 1.4, when the page ran the Runoff Block only [S73](../sources/S73-swmm1-engine-app-md-v3-13.md). Version 3.13; the summary's front matter is dated 13 November 2026 and its change list dates 3.13 to 14 November [S73](../sources/S73-swmm1-engine-app-md-v3-13.md). The earlier source page, for version 3.6, is [S01](../sources/S01-swmm1-engine-app-md.md).
 
@@ -43,3 +44,5 @@ The change list says "No engine change" for each version from 3.1 to 3.10 [S73](
 **Where it lives.** The swmm5.org topic pages link `swmm1-engine-imports-swmm5.netlify.app` [S06](../sources/S06-swmm5org-topics-index.md), [S07](../sources/S07-swmm5org-topic-swmm-history.md). The app's own summary records `netlify: none` and no public repository [S73](../sources/S73-swmm1-engine-app-md-v3-13.md).
 
 **Stale text elsewhere.** [S07](../sources/S07-swmm5org-topic-swmm-history.md) still describes it as "the 1971 SWMM 1 Runoff engine". Open question Q09 in [Open questions](../open-questions.md).
+
+**Added 18 November 2026.** A 60-second film of the app, SWMM 1 Engine Mograph, holds 43 distinct numbers in 9 settled frames, all in its facts file; its block counts add to the app's 12,200 [S324](../sources/S324-swmm1-engine-mograph-app-md.md).
