@@ -8,7 +8,7 @@ published: 2026-10-21
 ingested: 2026-11-18
 tags: [apps, rdii, rtk, infoswmm, icm, swmm5]
 drafted_by: Claude (Anthropic), from the published page
-reviewed: no
+reviewed: 2026-11-18
 ---
 **What it is.** A technical summary of the app RDII Rosetta Stone, version 1.0: InfoSWMM RDII mapped to EPA SWMM5 and InfoWorks ICM, with live RTK math. Raw file: [raw/apps/rdii-rosetta-stone-v1.0.md](../../raw/apps/rdii-rosetta-stone-v1.0.md).
 

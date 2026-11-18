@@ -8,7 +8,7 @@ published: 2026-09-30
 ingested: 2026-11-18
 tags: [apps, lakes, heat, ice]
 drafted_by: Claude (Anthropic), from the published page
-reviewed: no
+reviewed: 2026-11-18
 ---
 **What it is.** A technical summary of the app Four Degrees at the Bottom, version 2026-09-30: a lake run a year at a time, with water's two oddities switched off. Raw file: [raw/apps/four-degrees-at-the-bottom-v2026-09-30.md](../../raw/apps/four-degrees-at-the-bottom-v2026-09-30.md).
 

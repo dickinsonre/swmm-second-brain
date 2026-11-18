@@ -8,7 +8,7 @@ published: 2026-10-24
 ingested: 2026-11-18
 tags: [apps, mannings-n, solvers, routing, audits]
 drafted_by: Claude (Anthropic), from the published page
-reviewed: no
+reviewed: 2026-11-18
 ---
 **What it is.** A technical summary of the app Manning's n Explorer, version 3.1: how Manning's n travels between solvers. Raw file: [raw/apps/mannings-n-explorer-v3.1.md](../../raw/apps/mannings-n-explorer-v3.1.md).
 

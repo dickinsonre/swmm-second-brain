@@ -8,7 +8,7 @@ published: 2026-10
 ingested: 2026-11-18
 tags: [apps, swmm5, epanet, icm, similarity, rpt]
 drafted_by: Claude (Anthropic), from the published page
-reviewed: no
+reviewed: 2026-11-18
 ---
 **What it is.** A technical summary of the app SWMM Similarity Index, version 1.0: Bill James scoring for SWMM5, EPANET and ICM models. Raw file: [raw/apps/swmm-similarity-index-v1.0.md](../../raw/apps/swmm-similarity-index-v1.0.md).
 

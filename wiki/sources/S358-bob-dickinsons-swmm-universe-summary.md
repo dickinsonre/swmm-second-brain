@@ -8,7 +8,7 @@ published: 2026-08-31
 ingested: 2026-11-18
 tags: [apps, hub, repositories]
 drafted_by: Claude (Anthropic), from the published page
-reviewed: no
+reviewed: 2026-11-18
 ---
 **What it is.** A technical summary of the app Bob Dickinson's SWMM Universe, version 2026-08-31: a hub page for Robert Dickinson's apps, repositories and writing. Raw file: [raw/apps/bob-dickinsons-swmm-universe-v2026-08-31.md](../../raw/apps/bob-dickinsons-swmm-universe-v2026-08-31.md).
 

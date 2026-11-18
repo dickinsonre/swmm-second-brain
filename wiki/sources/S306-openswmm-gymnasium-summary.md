@@ -8,7 +8,7 @@ published: 2026-10-25
 ingested: 2026-11-18
 tags: [apps, swmm6, openswmm, reinforcement-learning, control]
 drafted_by: Claude (Anthropic), from the published page
-reviewed: no
+reviewed: 2026-11-18
 ---
 **What it is.** A technical summary of the app OpenSWMM Gymnasium, version 1.0: a reinforcement-learning framework for the SWMM engine, explained and run. Raw file: [raw/apps/openswmm-gymnasium-v1.0.md](../../raw/apps/openswmm-gymnasium-v1.0.md).
 

@@ -8,7 +8,7 @@ published: 2026-10-25
 ingested: 2026-11-18
 tags: [apps, neural-networks, hopfield, cross-sections]
 drafted_by: Claude (Anthropic), from the published page
-reviewed: no
+reviewed: 2026-11-18
 ---
 **What it is.** A technical summary of the app Inventing Memory, version 1.0: a Hopfield forgetting machine that remembers SWMM5 cross-section shapes. Raw file: [raw/apps/inventing-memory-v1.0.md](../../raw/apps/inventing-memory-v1.0.md).
 

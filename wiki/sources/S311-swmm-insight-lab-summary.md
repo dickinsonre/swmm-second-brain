@@ -8,7 +8,7 @@ published: 2026-10-25
 ingested: 2026-11-18
 tags: [apps, swmm5plus, fortran, dependency-graph, audits]
 drafted_by: Claude (Anthropic), from the published page
-reviewed: no
+reviewed: 2026-11-18
 ---
 **What it is.** A technical summary of the app SWMM Insight Lab, version 1.0.0: a map of the SWMM5+ engine and its relation to EPA SWMM 5.1.13. Raw file: [raw/apps/swmm-insight-lab-v1.0.0.md](../../raw/apps/swmm-insight-lab-v1.0.0.md).
 

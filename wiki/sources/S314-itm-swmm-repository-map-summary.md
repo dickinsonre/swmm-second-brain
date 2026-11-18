@@ -8,7 +8,7 @@ published: 2026-10
 ingested: 2026-11-18
 tags: [apps, swmm5-gui, itm, transients, pascal]
 drafted_by: Claude (Anthropic), from the published page
-reviewed: no
+reviewed: 2026-11-18
 ---
 **What it is.** A technical summary of the app ITM_SWMM Repository Map, version 1.0: a map of the fork that fits the Illinois Transient Model into the EPA SWMM 5 GUI. Raw file: [raw/apps/itm-swmm-repository-map-v1.0.md](../../raw/apps/itm-swmm-repository-map-v1.0.md).
 

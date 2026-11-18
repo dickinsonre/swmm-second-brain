@@ -8,7 +8,7 @@ published: 2026-10-22
 ingested: 2026-11-18
 tags: [apps, history, ships, not-water]
 drafted_by: Claude (Anthropic), from the published page
-reviewed: no
+reviewed: 2026-11-18
 ---
 **What it is.** A technical summary of the app Trireme Under Oar and Sail, version 1.2: how 170 rowers drove a 120-foot Athenian warship. Raw file: [raw/apps/trireme-under-oar-and-sail-v1.2.md](../../raw/apps/trireme-under-oar-and-sail-v1.2.md).
 

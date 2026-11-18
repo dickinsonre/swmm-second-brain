@@ -8,7 +8,7 @@ published: 2026-11
 ingested: 2026-11-18
 tags: [apps, games, fiction, not-water]
 drafted_by: Claude (Anthropic), from the published page
-reviewed: no
+reviewed: 2026-11-18
 ---
 **What it is.** A technical summary of the app Sisu Fire Control Drill, version 1.0: the computer scene from Heinlein's Citizen of the Galaxy, rebuilt as a game. Raw file: [raw/apps/sisu-fire-control-drill-v1.0.md](../../raw/apps/sisu-fire-control-drill-v1.0.md).
 

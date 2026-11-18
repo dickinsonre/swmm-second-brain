@@ -8,7 +8,7 @@ published: 2026-10-25
 ingested: 2026-11-18
 tags: [apps, teaching, tanks, orifices]
 drafted_by: Claude (Anthropic), from the published page
-reviewed: no
+reviewed: 2026-11-18
 ---
 **What it is.** A technical summary of the app Pipes & Cistern, version 1.0: the exam rate problems, and what a real tank with a hole does instead. Raw file: [raw/apps/pipes-and-cistern-v1.0.md](../../raw/apps/pipes-and-cistern-v1.0.md).
 

@@ -8,7 +8,7 @@ published: 2026-10-25
 ingested: 2026-11-18
 tags: [apps, ai, search, swmm5, fact-checking]
 drafted_by: Claude (Anthropic), from the published page
-reviewed: no
+reviewed: 2026-11-18
 ---
 **What it is.** A technical summary of the app Smart Search Bot, version 1.0: answer a SWMM5 question, then check every sentence. Raw file: [raw/apps/smart-search-bot-v1.0.md](../../raw/apps/smart-search-bot-v1.0.md).
 

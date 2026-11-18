@@ -8,7 +8,7 @@ published: 2026-10-20
 ingested: 2026-11-18
 tags: [apps, machines, not-water]
 drafted_by: Claude (Anthropic), from the published page
-reviewed: no
+reviewed: 2026-11-18
 ---
 **What it is.** A technical summary of the app Lever Espresso Machine, version 2026-10-20: how a spring-lever espresso machine makes coffee, step by step. Raw file: [raw/apps/lever-espresso-machine-v2026-10-20.md](../../raw/apps/lever-espresso-machine-v2026-10-20.md).
 

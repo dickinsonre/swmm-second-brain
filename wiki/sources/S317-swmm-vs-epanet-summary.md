@@ -8,7 +8,7 @@ published: 2026-10
 ingested: 2026-11-18
 tags: [apps, swmm5, epanet, pressurized-networks]
 drafted_by: Claude (Anthropic), from the published page
-reviewed: no
+reviewed: 2026-11-18
 ---
 **What it is.** A technical summary of the app SWMM vs EPANET, version 1.0: one pressurized network, two engines, one browser tab. Raw file: [raw/apps/swmm-vs-epanet-v1.0.md](../../raw/apps/swmm-vs-epanet-v1.0.md).
 

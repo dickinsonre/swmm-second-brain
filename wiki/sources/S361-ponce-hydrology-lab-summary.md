@@ -8,7 +8,7 @@ published: 2026-10-22
 ingested: 2026-11-18
 tags: [apps, hydrology, calculators, audits]
 drafted_by: Claude (Anthropic), from the published page
-reviewed: no
+reviewed: 2026-11-18
 ---
 **What it is.** A technical summary of the app Ponce Hydrology Lab, version 1.2: thirty-six hydrology and hydraulics modules after Victor Miguel Ponce's web library. Raw file: [raw/apps/ponce-hydrology-lab-v1.2.md](../../raw/apps/ponce-hydrology-lab-v1.2.md).
 

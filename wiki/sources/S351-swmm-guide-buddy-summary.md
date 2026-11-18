@@ -8,7 +8,7 @@ published: 2026-10-24
 ingested: 2026-11-18
 tags: [apps, swmm5, manuals, calculators]
 drafted_by: Claude (Anthropic), from the published page
-reviewed: no
+reviewed: 2026-11-18
 ---
 **What it is.** A technical summary of the app SWMM Guide Buddy, version 1.0: a companion to the EPA SWMM Applications Manual, with checked calculators. Raw file: [raw/apps/swmm-guide-buddy-v1.0.md](../../raw/apps/swmm-guide-buddy-v1.0.md).
 

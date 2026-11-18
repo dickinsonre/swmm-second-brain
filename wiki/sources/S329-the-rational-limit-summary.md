@@ -8,7 +8,7 @@ published: 2026-10-12
 ingested: 2026-11-18
 tags: [apps, swmm5, rational-method, runoff]
 drafted_by: Claude (Anthropic), from the published page
-reviewed: no
+reviewed: 2026-11-18
 ---
 **What it is.** A technical summary of the app The Rational Limit, version 1.0: Q = CiA as the steady state a shallow-water simulation settles to. Raw file: [raw/apps/the-rational-limit-v1.0.md](../../raw/apps/the-rational-limit-v1.0.md).
 

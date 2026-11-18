@@ -8,7 +8,7 @@ published: 2026-10-25
 ingested: 2026-11-18
 tags: [apps, epanet, wasm, owa, verification]
 drafted_by: Claude (Anthropic), from the published page
-reviewed: no
+reviewed: 2026-11-18
 ---
 **What it is.** A technical summary of the app EPANET Web, version 1.0: a browser workspace for EPANET models on OWA EPANET 2.3.5. Raw file: [raw/apps/epanet-web-v1.0.md](../../raw/apps/epanet-web-v1.0.md).
 

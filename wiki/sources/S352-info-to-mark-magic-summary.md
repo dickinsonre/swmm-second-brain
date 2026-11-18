@@ -8,7 +8,7 @@ published: 2026-10
 ingested: 2026-11-18
 tags: [apps, markdown, conversion, library]
 drafted_by: Claude (Anthropic), from the published page
-reviewed: no
+reviewed: 2026-11-18
 ---
 **What it is.** A technical summary of the app Info to Mark Magic, version 2.0: web pages and HTML into clean Markdown for the BobSWMM library. Raw file: [raw/apps/info-to-mark-magic-v2.0.md](../../raw/apps/info-to-mark-magic-v2.0.md).
 

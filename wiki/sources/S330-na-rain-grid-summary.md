@@ -8,7 +8,7 @@ published: 2026-10-25
 ingested: 2026-11-18
 tags: [apps, rainfall, noaa-atlas-14, design-storms]
 drafted_by: Claude (Anthropic), from the published page
-reviewed: no
+reviewed: 2026-11-18
 ---
 **What it is.** A technical summary of the app NA Rain Grid, version 2.0.0: NOAA Atlas 14 rainfall frequency into IDF curves, design storms and SWMM 5 input. Raw file: [raw/apps/na-rain-grid-v2.0.0.md](../../raw/apps/na-rain-grid-v2.0.0.md).
 

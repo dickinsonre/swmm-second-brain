@@ -8,7 +8,7 @@ published: 2026-10-31
 ingested: 2026-11-18
 tags: [apps, repositories, porting]
 drafted_by: Claude (Anthropic), from the published page
-reviewed: no
+reviewed: 2026-11-18
 ---
 **What it is.** A technical summary of the app Repo Sketch Art, version 1.2.0: open the box before you port it. Raw file: [raw/apps/repo-sketch-art-v1.2.0.md](../../raw/apps/repo-sketch-art-v1.2.0.md).
 

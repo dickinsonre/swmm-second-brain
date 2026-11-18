@@ -8,7 +8,7 @@ published: 2026-11-03
 ingested: 2026-11-18
 tags: [apps, pipes, friction, epanet, swmm5, verification]
 drafted_by: Claude (Anthropic), from the published page
-reviewed: no
+reviewed: 2026-11-18
 ---
 **What it is.** A technical summary of the app Bernoulli Flow in a Pipe, version 2.2: two gauges, one pipe, three friction laws, checked against EPANET 2.2 and SWMM 5.2.4. Raw file: [raw/apps/bernoulli-flow-in-a-pipe-v2.2.md](../../raw/apps/bernoulli-flow-in-a-pipe-v2.2.md).
 

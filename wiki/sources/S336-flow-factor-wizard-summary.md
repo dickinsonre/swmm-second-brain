@@ -8,7 +8,7 @@ published: 2026-10-21
 ingested: 2026-11-18
 tags: [apps, sanitary-flow, peaking, infosewer, icm, ruby]
 drafted_by: Claude (Anthropic), from the published page
-reviewed: no
+reviewed: 2026-11-18
 ---
 **What it is.** A technical summary of the app Flow Factor Wizard, version 1.0: peakable sanitary flow for InfoWorks ICM, computed the InfoSewer way. Raw file: [raw/apps/flow-factor-wizard-v1.0.md](../../raw/apps/flow-factor-wizard-v1.0.md).
 

@@ -8,7 +8,7 @@ published: 2026-10-10
 ingested: 2026-11-18
 tags: [apps, swmm6, openswmm, 2d-surface, verification, webgpu]
 drafted_by: Claude (Anthropic), from the published page
-reviewed: no
+reviewed: 2026-11-18
 ---
 **What it is.** A technical summary of the app SWMM6 2D Flood Lab, version 0.2.0: an unofficial browser port of the OpenSWMM 6.0.0-alpha.4 local-inertial surface solver. Raw file: [raw/apps/swmm6-2d-flood-lab-v0.2.0.md](../../raw/apps/swmm6-2d-flood-lab-v0.2.0.md).
 

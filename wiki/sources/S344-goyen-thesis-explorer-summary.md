@@ -8,7 +8,7 @@ published: 2026-10-22
 ingested: 2026-11-18
 tags: [apps, papers, rainfall-runoff, thesis]
 drafted_by: Claude (Anthropic), from the published page
-reviewed: no
+reviewed: 2026-11-18
 ---
 **What it is.** A technical summary of the app Goyen Thesis Explorer, version 2.1.0: a reader and evidence bench for Allan Goyen's 2000 thesis on urban rainfall-runoff. Raw file: [raw/apps/goyen-thesis-explorer-v2.1.0.md](../../raw/apps/goyen-thesis-explorer-v2.1.0.md).
 

@@ -8,7 +8,7 @@ published: 2026-10-09
 ingested: 2026-11-18
 tags: [dashboards, physics, not-water]
 drafted_by: Claude (Anthropic), from the published page
-reviewed: no
+reviewed: 2026-11-18
 ---
 **What it is.** A technical summary of the dashboard Convex Solids Scorecard, version 2026-10-09: what the Convex Solids Physics build measures about itself. Raw file: [raw/apps/convex-solids-scorecard-v2026-10-09.md](../../raw/apps/convex-solids-scorecard-v2026-10-09.md).
 

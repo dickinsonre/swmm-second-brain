@@ -8,7 +8,7 @@ published: 2026-10-31
 ingested: 2026-11-18
 tags: [apps, swmm5, rpt, out, verification]
 drafted_by: Claude (Anthropic), from the published page
-reviewed: no
+reviewed: 2026-11-18
 ---
 **What it is.** A technical summary of the app SWMM5 Interactive Report Viewer, version 2.1: the .rpt, .inp and .out of an EPA SWMM 5 run, read and checked. Raw file: [raw/apps/swmm5-interactive-report-viewer-v2.1.md](../../raw/apps/swmm5-interactive-report-viewer-v2.1.md).
 

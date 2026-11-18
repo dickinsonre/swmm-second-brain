@@ -8,7 +8,7 @@ published: 2026-10-24
 ingested: 2026-11-18
 tags: [apps, papers, icwmm, similarity]
 drafted_by: Claude (Anthropic), from the published page
-reviewed: no
+reviewed: 2026-11-18
 ---
 **What it is.** A technical summary of the app ICWMM Insights, version 1.0: Robert Dickinson's ICWMM papers and the Bill James similarity score. Raw file: [raw/apps/icwmm-insights-v1.0.md](../../raw/apps/icwmm-insights-v1.0.md).
 

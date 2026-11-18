@@ -8,7 +8,7 @@ published: 2026-10-25
 ingested: 2026-11-18
 tags: [apps, icm, ruby, infoswmm, importer]
 drafted_by: Claude (Anthropic), from the published page
-reviewed: no
+reviewed: 2026-11-18
 ---
 **What it is.** A technical summary of the app Ruby Glory Map, version 1.0: a map of the InfoSWMM multi-scenario importer for InfoWorks ICM. Raw file: [raw/apps/ruby-glory-map-v1.0.md](../../raw/apps/ruby-glory-map-v1.0.md).
 

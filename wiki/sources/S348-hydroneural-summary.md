@@ -8,7 +8,7 @@ published: 2026-10-22
 ingested: 2026-11-18
 tags: [apps, surrogates, machine-learning, literature, audits]
 drafted_by: Claude (Anthropic), from the published page
-reviewed: no
+reviewed: 2026-11-18
 ---
 **What it is.** A technical summary of the app HydroNeural, version 1.0: a SWMM5 surrogate console, with its mock data and its literature review audited. Raw file: [raw/apps/hydroneural-v1.0.md](../../raw/apps/hydroneural-v1.0.md).
 

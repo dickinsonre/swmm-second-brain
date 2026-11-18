@@ -8,7 +8,7 @@ published: 2026-11-06
 ingested: 2026-11-18
 tags: [apps, papers, jwmm, search, calibration]
 drafted_by: Claude (Anthropic), from the published page
-reviewed: no
+reviewed: 2026-11-18
 ---
 **What it is.** A technical summary of the app JWMM Finder, version 1.0.0: all 750 papers of the Journal of Water Management Modeling, searchable in the browser. Raw file: [raw/apps/jwmm-finder-v1.0.0.md](../../raw/apps/jwmm-finder-v1.0.0.md).
 

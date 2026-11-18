@@ -8,7 +8,7 @@ published: 2026-11-10
 ingested: 2026-11-18
 tags: [films, infosewer, icm, exchange, ruby]
 drafted_by: Claude (Anthropic), from the published page
-reviewed: no
+reviewed: 2026-11-18
 ---
 **What it is.** A technical summary of the film InfoSewer Exchange in Motion, version 1.0: the 0060 InfoSewer to ICM importer under ICM Exchange, played in eight scenes. Raw file: [raw/apps/infosewer-exchange-in-motion-v1.0.md](../../raw/apps/infosewer-exchange-in-motion-v1.0.md).
 

@@ -8,7 +8,7 @@ published: 2026-10-24
 ingested: 2026-11-18
 tags: [apps, swmm5plus, fortran, c-port, audits]
 drafted_by: Claude (Anthropic), from the published page
-reviewed: no
+reviewed: 2026-11-18
 ---
 **What it is.** A technical summary of the app SWMM5+ Explorer, version 1.0.1: the Fortran source, the Lovable sketch, and a proposed C port, checked against upstream. Raw file: [raw/apps/swmm5plus-explorer-v1.0.1.md](../../raw/apps/swmm5plus-explorer-v1.0.1.md).
 

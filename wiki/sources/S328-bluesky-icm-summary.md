@@ -8,7 +8,7 @@ published: 2026-10-21
 ingested: 2026-11-18
 tags: [apps, swmm5, wasm, report-parsing, flooding]
 drafted_by: Claude (Anthropic), from the published page
-reviewed: no
+reviewed: 2026-11-18
 ---
 **What it is.** A technical summary of the app BlueSky-ICM, version 1.0.0: five blue-sky tools for SWMM5 and ICM on EPA SWMM 5.2.4 in the browser. Raw file: [raw/apps/bluesky-icm-v1.0.0.md](../../raw/apps/bluesky-icm-v1.0.0.md).
 

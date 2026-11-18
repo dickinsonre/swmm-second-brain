@@ -8,7 +8,7 @@ published: 2026-10
 ingested: 2026-11-18
 tags: [apps, swmm4, swmm5, conversion, history]
 drafted_by: Claude (Anthropic), from the published page
-reviewed: no
+reviewed: 2026-11-18
 ---
 **What it is.** A technical summary of the app Legacy SWMM Converter, version 1.0.0: SWMM4 card decks to SWMM5, with both engines in the page. Raw file: [raw/apps/legacy-swmm-converter-v1.0.0.md](../../raw/apps/legacy-swmm-converter-v1.0.0.md).
 

@@ -8,7 +8,7 @@ published: 2026-10-25
 ingested: 2026-11-18
 tags: [apps, xpswmm, conversion, swmm5, datum]
 drafted_by: Claude (Anthropic), from the published page
-reviewed: no
+reviewed: 2026-11-18
 ---
 **What it is.** A technical summary of the app XPSWMM to SWMM5 Converter, version 1.0.0: reads XPSWMM .xp cards and writes an EPA SWMM 5.2 .inp, in the browser. Raw file: [raw/apps/xpswmm-to-swmm5-converter-v1.0.0.md](../../raw/apps/xpswmm-to-swmm5-converter-v1.0.0.md).
 

@@ -8,7 +8,7 @@ published: 2026-10-25
 ingested: 2026-11-18
 tags: [apps, design-fiction, swmm-2030]
 drafted_by: Claude (Anthropic), from the published page
-reviewed: no
+reviewed: 2026-11-18
 ---
 **What it is.** A technical summary of the app SWMM Futurescape, version 2.0: a design-fiction archive of EPA SWMM in 2030, with every claim labelled. Raw file: [raw/apps/swmm-futurescape-v2.0.md](../../raw/apps/swmm-futurescape-v2.0.md).
 

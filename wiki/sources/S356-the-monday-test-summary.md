@@ -8,7 +8,7 @@ published: 2026-10-20
 ingested: 2026-11-18
 tags: [apps, teaching, swmm5, icm, swmm6, evidence]
 drafted_by: Claude (Anthropic), from the published page
-reviewed: no
+reviewed: 2026-11-18
 ---
 **What it is.** A technical summary of the app The Monday Test, version 1.1: nine experiences for SWMM5, ICM and SWMM6 modelers. Raw file: [raw/apps/the-monday-test-v1.1.md](../../raw/apps/the-monday-test-v1.1.md).
 

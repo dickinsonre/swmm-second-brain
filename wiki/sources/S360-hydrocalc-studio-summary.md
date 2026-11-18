@@ -8,7 +8,7 @@ published: 2026-10-24
 ingested: 2026-11-18
 tags: [apps, open-channel, calculators, gradually-varied-flow]
 drafted_by: Claude (Anthropic), from the published page
-reviewed: no
+reviewed: 2026-11-18
 ---
 **What it is.** A technical summary of the app HydroCalc Studio, version 1.0: eight open-channel and routing calculators, each showing its equation. Raw file: [raw/apps/hydrocalc-studio-v1.0.md](../../raw/apps/hydrocalc-studio-v1.0.md).
 

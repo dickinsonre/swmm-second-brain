@@ -8,7 +8,7 @@ published: 2026-11-09
 ingested: 2026-11-18
 tags: [designs, swmm5, swmm6, icm, one-swmm]
 drafted_by: Claude (Anthropic), from the published page
-reviewed: no
+reviewed: 2026-11-18
 ---
 **What it is.** A technical summary of the design sketch SWMM Front Door, version 0.1: one page that asks what you want to do with a SWMM model. Raw file: [raw/apps/swmm-front-door-v0.1.md](../../raw/apps/swmm-front-door-v0.1.md).
 

@@ -8,7 +8,7 @@ published: 2026-10-24
 ingested: 2026-11-18
 tags: [apps, mathematics, monte-carlo]
 drafted_by: Claude (Anthropic), from the published page
-reviewed: no
+reviewed: 2026-11-18
 ---
 **What it is.** A technical summary of the app Monte Carlo Area Estimator, version 1.0.0: throw random points at a box to measure a shape. Raw file: [raw/apps/monte-carlo-area-estimator-v1.0.0.md](../../raw/apps/monte-carlo-area-estimator-v1.0.0.md).
 

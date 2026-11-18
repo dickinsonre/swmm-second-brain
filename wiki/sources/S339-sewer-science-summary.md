@@ -8,7 +8,7 @@ published: 2026-10-22
 ingested: 2026-11-18
 tags: [apps, vacuum-sewers, gravity-sewers, icm]
 drafted_by: Claude (Anthropic), from the published page
-reviewed: no
+reviewed: 2026-11-18
 ---
 **What it is.** A technical summary of the app Sewer Science, version 1.0: vacuum against gravity sewers, and how to represent a vacuum system in InfoWorks ICM. Raw file: [raw/apps/sewer-science-v1.0.md](../../raw/apps/sewer-science-v1.0.md).
 

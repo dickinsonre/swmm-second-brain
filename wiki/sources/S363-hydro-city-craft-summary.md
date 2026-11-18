@@ -8,7 +8,7 @@ published: 2026-10-26
 ingested: 2026-11-18
 tags: [apps, openstreetmap, minecraft, impervious-cover]
 drafted_by: Claude (Anthropic), from the published page
-reviewed: no
+reviewed: 2026-11-18
 ---
 **What it is.** A technical summary of the app Hydro City Craft, version 1.1: OpenStreetMap streets and water built in Minecraft blocks. Raw file: [raw/apps/hydro-city-craft-v1.1.md](../../raw/apps/hydro-city-craft-v1.1.md).
 

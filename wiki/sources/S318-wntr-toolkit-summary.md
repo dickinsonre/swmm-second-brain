@@ -8,7 +8,7 @@ published: 2026-10-25
 ingested: 2026-11-18
 tags: [apps, epanet, wntr, resilience, tanks]
 drafted_by: Claude (Anthropic), from the published page
-reviewed: no
+reviewed: 2026-11-18
 ---
 **What it is.** A technical summary of the app WNTR Toolkit, version 1.0.0: resilience ensembles for EPANET networks, from real WNTR runs on Net3. Raw file: [raw/apps/wntr-toolkit-v1.0.0.md](../../raw/apps/wntr-toolkit-v1.0.0.md).
 

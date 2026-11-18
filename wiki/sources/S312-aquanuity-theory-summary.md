@@ -8,7 +8,7 @@ published: 2026-10-24
 ingested: 2026-11-18
 tags: [apps, aquatwin, 2d-surface, diffusion-wave, numerics]
 drafted_by: Claude (Anthropic), from the published page
-reviewed: no
+reviewed: 2026-11-18
 ---
 **What it is.** A technical summary of the app Aquanuity Theory, version 1.0: a reader's edition of the numerics behind AquaTwin Sewer 2D, with a solver bench. Raw file: [raw/apps/aquanuity-theory-v1.0.md](../../raw/apps/aquanuity-theory-v1.0.md).
 

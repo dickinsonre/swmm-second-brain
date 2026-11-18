@@ -8,7 +8,7 @@ published: 2026-11-10
 ingested: 2026-11-18
 tags: [films, swmm6, hydrocouple, mograph]
 drafted_by: Claude (Anthropic), from the published page
-reviewed: no
+reviewed: 2026-11-18
 ---
 **What it is.** A technical summary of the film HydroCouple SWMM6 Mograph, version 1.1: five wonders of the hydrocouple.org home page in sixty seconds. Raw file: [raw/apps/hydrocouple-swmm6-mograph-v1.1.md](../../raw/apps/hydrocouple-swmm6-mograph-v1.1.md).
 

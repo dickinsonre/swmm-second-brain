@@ -8,7 +8,7 @@ published: 2026-10-09
 ingested: 2026-11-18
 tags: [apps, quantum, not-water]
 drafted_by: Claude (Anthropic), from the published page
-reviewed: no
+reviewed: 2026-11-18
 ---
 **What it is.** A technical summary of the app Qubit Workbench, version 1.0: exact quantum arithmetic on 1 to 12 qubits in the browser. Raw file: [raw/apps/qubit-workbench-v1.0.md](../../raw/apps/qubit-workbench-v1.0.md).
 

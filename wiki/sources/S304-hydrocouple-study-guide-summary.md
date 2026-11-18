@@ -8,7 +8,7 @@ published: 2026-10-25
 ingested: 2026-11-18
 tags: [apps, hydrocouple, cpp, api, documentation]
 drafted_by: Claude (Anthropic), from the published page
-reviewed: no
+reviewed: 2026-11-18
 ---
 **What it is.** A technical summary of the app HydroCouple Study Guide, version 1.0: the guide, checked against the headers it describes. Raw file: [raw/apps/hydrocouple-study-guide-v1.0.md](../../raw/apps/hydrocouple-study-guide-v1.0.md).
 

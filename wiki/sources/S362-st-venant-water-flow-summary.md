@@ -8,7 +8,7 @@ published: 2026-10-22
 ingested: 2026-11-18
 tags: [apps, teaching, children, saint-venant]
 drafted_by: Claude (Anthropic), from the published page
-reviewed: no
+reviewed: 2026-11-18
 ---
 **What it is.** A technical summary of the app St. Venant Water Flow for Grandkids, version 2.1: how water moves, for children under ten, with a grown-up mode. Raw file: [raw/apps/st-venant-water-flow-v2.1.md](../../raw/apps/st-venant-water-flow-v2.1.md).
 

@@ -8,7 +8,7 @@ published: 2026-10
 ingested: 2026-11-18
 tags: [apps, icm, quizzes]
 drafted_by: Claude (Anthropic), from the published page
-reviewed: no
+reviewed: 2026-11-18
 ---
 **What it is.** A technical summary of the app ICM Modeller Type, version 1.1.0: the InfoWorks ICM modeller quiz, with its scoring engine opened up. Raw file: [raw/apps/icm-modeller-type-v1.1.0.md](../../raw/apps/icm-modeller-type-v1.1.0.md).
 

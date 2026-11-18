@@ -8,7 +8,7 @@ published: 2026-10
 ingested: 2026-11-18
 tags: [apps, swmm5, model-library, wasm]
 drafted_by: Claude (Anthropic), from the published page
-reviewed: no
+reviewed: 2026-11-18
 ---
 **What it is.** A technical summary of the app SWMM5 Network Miner, version 2.0: a library tool for SWMM5 models with EPA SWMM 5.2.4 in the page. Raw file: [raw/apps/swmm5-network-miner-v2.0.md](../../raw/apps/swmm5-network-miner-v2.0.md).
 

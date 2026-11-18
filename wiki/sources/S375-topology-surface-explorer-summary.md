@@ -8,7 +8,7 @@ published: 2026-10-28
 ingested: 2026-11-18
 tags: [apps, topology, mathematics, not-water]
 drafted_by: Claude (Anthropic), from the published page
-reviewed: no
+reviewed: 2026-11-18
 ---
 **What it is.** A technical summary of the app Topology Surface Explorer, version 2026-10-28: surfaces built by gluing the edges of a polygon. Raw file: [raw/apps/topology-surface-explorer-v2026-10-28.md](../../raw/apps/topology-surface-explorer-v2026-10-28.md).
 

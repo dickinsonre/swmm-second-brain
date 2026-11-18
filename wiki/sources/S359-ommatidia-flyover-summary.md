@@ -8,7 +8,7 @@ published: 2026-11
 ingested: 2026-11-18
 tags: [apps, swmm5, out-reader, 3d]
 drafted_by: Claude (Anthropic), from the published page
-reviewed: no
+reviewed: 2026-11-18
 ---
 **What it is.** A technical summary of the app Ommatidia Flyover, version 1.4.1: a compound-eye organism that flies over a SWMM model to where flow is peaking. Raw file: [raw/apps/ommatidia-flyover-v1.4.1.md](../../raw/apps/ommatidia-flyover-v1.4.1.md).
 

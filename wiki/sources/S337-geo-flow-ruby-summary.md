@@ -8,7 +8,7 @@ published: 2026-10-21
 ingested: 2026-11-18
 tags: [apps, dry-weather-flow, population, gis, swmm5]
 drafted_by: Claude (Anthropic), from the published page
-reviewed: no
+reviewed: 2026-11-18
 ---
 **What it is.** A technical summary of the app Geo Flow Ruby, version 2026-10-21: household points to subcatchment population to SWMM dry-weather flow. Raw file: [raw/apps/geo-flow-ruby-v2026-10-21.md](../../raw/apps/geo-flow-ruby-v2026-10-21.md).
 

@@ -8,7 +8,7 @@ published: 2026-10-25
 ingested: 2026-11-18
 tags: [apps, dry-weather-flow, population, gis, swmm5]
 drafted_by: Claude (Anthropic), from the published page
-reviewed: no
+reviewed: 2026-11-18
 ---
 **What it is.** A technical summary of the app Geo Flow Population Calculator, version 2: households to subcatchments to dry weather flow in SWMM5. Raw file: [raw/apps/geo-flow-population-calculator-v2.md](../../raw/apps/geo-flow-population-calculator-v2.md).
 

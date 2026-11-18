@@ -8,7 +8,7 @@ published: 2026-10-25
 ingested: 2026-11-18
 tags: [apps, swmm5, generators, trees, wasm]
 drafted_by: Claude (Anthropic), from the published page
-reviewed: no
+reviewed: 2026-11-18
 ---
 **What it is.** A technical summary of the app Collatz Wave Maker, version 2.0: the Collatz tree as a branching sewer, run in EPA SWMM 5.2.4. Raw file: [raw/apps/collatz-wave-maker-v2.0.md](../../raw/apps/collatz-wave-maker-v2.0.md).
 

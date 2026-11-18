@@ -8,7 +8,7 @@ published: 2026-10-25
 ingested: 2026-11-18
 tags: [apps, swmm5, saint-venant, numerics, verification]
 drafted_by: Claude (Anthropic), from the published page
-reviewed: no
+reviewed: 2026-11-18
 ---
 **What it is.** A technical summary of the app Flow Solver Forge, version 1.0: build a 1D Saint-Venant solver from parts and run it beside EPA SWMM 5.2.4. Raw file: [raw/apps/flow-solver-forge-v1.0.md](../../raw/apps/flow-solver-forge-v1.0.md).
 

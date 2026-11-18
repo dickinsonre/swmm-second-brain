@@ -8,7 +8,7 @@ published: 2026-10-05
 ingested: 2026-11-18
 tags: [apps, swmm5, swmm6, dynamic-wave, momentum, verification]
 drafted_by: Claude (Anthropic), from the published page
-reviewed: no
+reviewed: 2026-11-18
 ---
 **What it is.** A technical summary of the app St. Venant Term Budget, version 1.0: does friction dominate? Per-link momentum terms, read from a SWMM .out file. Raw file: [raw/apps/st-venant-term-budget-v1.0.md](../../raw/apps/st-venant-term-budget-v1.0.md).
 

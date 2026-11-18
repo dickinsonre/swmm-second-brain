@@ -8,7 +8,7 @@ published: 2026-10-19
 ingested: 2026-11-18
 tags: [apps, ai, transformers, rag, evaluation, swmm5]
 drafted_by: Claude (Anthropic), from the published page
-reviewed: no
+reviewed: 2026-11-18
 ---
 **What it is.** A technical summary of the app AI Engineering Lab, version 1.0.0: twenty modules built from scratch, every one answering SWMM questions. Raw file: [raw/apps/ai-engineering-lab-v1.0.0.md](../../raw/apps/ai-engineering-lab-v1.0.0.md).
 

@@ -8,7 +8,7 @@ published: 2026-11-09
 ingested: 2026-11-18
 tags: [films, swmm5, swmm6, wasm, mograph]
 drafted_by: Claude (Anthropic), from the published page
-reviewed: no
+reviewed: 2026-11-18
 ---
 **What it is.** A technical summary of the film SWMM5 / SWMM6 Mograph, version 3.1: one storm, start to finish, in 60 seconds, on real engine output. Raw file: [raw/apps/swmm5-swmm6-mograph-v3.1.md](../../raw/apps/swmm5-swmm6-mograph-v3.1.md).
 

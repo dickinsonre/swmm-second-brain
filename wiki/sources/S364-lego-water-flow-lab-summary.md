@@ -8,7 +8,7 @@ published: 2026-10
 ingested: 2026-11-18
 tags: [apps, toys, lego]
 drafted_by: Claude (Anthropic), from the published page
-reviewed: no
+reviewed: 2026-11-18
 ---
 **What it is.** A technical summary of the app LEGO Water Flow Lab, version 1.0: will a molecule built from LEGO parts go down a pipe?. Raw file: [raw/apps/lego-water-flow-lab-v1.0.md](../../raw/apps/lego-water-flow-lab-v1.0.md).
 
