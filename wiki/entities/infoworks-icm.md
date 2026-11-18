@@ -1,11 +1,11 @@
 ---
 title: InfoWorks ICM
 type: entity
-updated: 2026-11-16
-sources: [S03, S13, S14, S17, S20, S65, S125, S127, S159, S160, S162, S163, S164, S166, S170, S172, S178, S179, S184, S188]
+updated: 2026-11-17
+sources: [S03, S13, S14, S17, S20, S65, S125, S127, S159, S160, S162, S163, S164, S166, S170, S172, S178, S179, S184, S188, S243, S244, S245, S246, S247, S248, S249]
 tags: [icm, engine, comparison]
 reviewed: 11/16/2026
-changed_after_review: "2026-11-16 (S159 to S165 ingest): one paragraph added at the end, headed Added 16 November 2026, on scripting, tables, result fields and conversion (S159, S160, S162, S163, S164); 2026-11-16 (S166 to S178 ingest): a second paragraph added at the end, headed Added 16 November 2026, later, on ICM 2D (S166, S170, S172, S178); 2026-11-16 (S179 ingest): the drafter of the seven ICM notes named as ChatGPT (S179); 2026-11-16 (S180 to S187 ingest): one paragraph added at the end on the shared 2D engine (S184); 2026-11-16 (S188 to S190 ingest): one paragraph added at the end on the 2021 Water Talks webinar (S188)"
+changed_after_review: "2026-11-16 (S159 to S165 ingest): one paragraph added at the end, headed Added 16 November 2026, on scripting, tables, result fields and conversion (S159, S160, S162, S163, S164); 2026-11-16 (S166 to S178 ingest): a second paragraph added at the end, headed Added 16 November 2026, later, on ICM 2D (S166, S170, S172, S178); 2026-11-16 (S179 ingest): the drafter of the seven ICM notes named as ChatGPT (S179); 2026-11-16 (S180 to S187 ingest): one paragraph added at the end on the shared 2D engine (S184); 2026-11-16 (S188 to S190 ingest): one paragraph added at the end on the 2021 Water Talks webinar (S188); 2026-11-17 (S243 to S255 ingest): a paragraph added near the end, headed Added 17 November 2026 (S243, S244, S245, S246, S247, S248, S249)"
 ---
 The commercial integrated catchment model developed by Wallingford Software in England and now maintained by Autodesk [S20](../sources/S20-li-edition-54-two-solvers.md).
 
@@ -35,3 +35,5 @@ Full comparison: [SWMM 5 versus ICM InfoWorks](../concepts/swmm5-versus-icm-info
 - ICM networks hold SWMM parts: SWMM 5 water quality, SWMM 5 LIDs (called SUDS), SWMM 5 and SWMM 4 RDII, SWMM hydrology, and Green-Ampt and modified Horton infiltration from SWMM (Q13).
 - ICM SWMM networks run the One SWMM engine, Innovyze's build of SWMM 5, which InfoSWMM and InfoDrainage share; it was tested every night on at least 500 files against EPA SWMM 5.1.015. ICM 2021.3 had 2D in ICM SWMM networks.
 - Three 1D solutions (conduit, pressure, force main), at least five computational points per link, six node head-loss types, a slot set by celerity ratio, time-step halving, and an initialization to steady state before every run. See [SWMM 5 versus ICM InfoWorks](../concepts/swmm5-versus-icm-infoworks.md) and [Time stepping in ICM and SWMM 5](../concepts/time-stepping-icm-and-swmm5.md).
+
+**Added 17 November 2026, third batch.** Seven apps on ICM, none of which ran ICM in the page: the hw_2d tables [S243](../sources/S243-icm-2d-table-atlas-summary.md), the 2021.8 Exchange manual brought to Ruby 3.4 [S244](../sources/S244-icm-exchange-2026-summary.md), support-article titles [S245](../sources/S245-icm-kcs-catalog-2026-summary.md), sediment [S246](../sources/S246-icm-sediment-field-guide-summary.md), meshing [S247](../sources/S247-meshing-field-guide-summary.md), a rule-based pipe sizer after Network Design in ICM Ultimate 2027 [S248](../sources/S248-network-design-glass-box-summary.md), and a slider layer for a calibration script [S249](../sources/S249-srtc-radio-icm-summary.md). All are summaries Claude wrote from the pages (Q108).

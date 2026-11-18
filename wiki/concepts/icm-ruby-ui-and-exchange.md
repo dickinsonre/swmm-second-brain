@@ -1,8 +1,8 @@
 ---
 title: "ICM Ruby: UI scripts and Exchange scripts"
 type: concept
-updated: 2026-11-16
-sources: [S159, S160, S161, S152, S166, S179]
+updated: 2026-11-17
+sources: [S159, S160, S161, S152, S166, S179, S244, S250]
 tags: [icm, ruby, exchange]
 reviewed: no
 ---
@@ -34,6 +34,8 @@ The note's point: a run is finished when the intended results open, not when the
 **Why Exchange.** Bob deleted his web app that ran visitors' Ruby, and said ICM Exchange is the better way anyway [S152](../sources/S152-note-ruby-script-runner-deleted.md). See [InfoWorks ICM Ruby Script Runner (app)](../entities/icm-ruby-script-runner.md).
 
 **Related.** [InfoWorks ICM](../entities/infoworks-icm.md). Bob's queued articles on Ruby and SQL for ICM (queue item 6 in the index) are the next source for this page.
+
+**Added 17 November 2026, third batch.** Through the 2026 releases ICM ran scripts on an embedded Ruby 2.4.0; from 2027.0 it runs Ruby 3.4.6 and can load gems; in 2025.0 the capitalised method names (run_SQL and others) were lowercased and the old spellings still answer. Six of Autodesk's 532 public example scripts contain calls that fail under 3.4 [S244](../sources/S244-icm-exchange-2026-summary.md). [Thirty-One Rubies (app)](../entities/thirty-one-rubies.md) runs 44 scripts on CRuby 3.4.1 in the browser against a strict stand-in for the ICM API; none has run in ICM [S250](../sources/S250-thirty-one-rubies-summary.md).
 
 **Relations**
 

@@ -815,3 +815,12 @@ Second batch of the 62. Fifteen summaries Claude wrote from the published pages 
 - Two pages, one finding: Walk the Mesh and the Quasi-2D Mesh Maker both find the obvious quasi-2D mesh stores twice the water; one fixes the timing with n x 0.841, the other with half-width links. Neither cites the other.
 - More findings at the pages' word: NORMAL_FLOW_LIMITED BOTH oscillating in a tapered channel on two engine copies (S240); the HEC-22 spread round trip in inlet.c, 0.26 % at 8 ft (S236); the fortify abort of a native Linux build, now in two pages (S229, S236) beside the build flag of S204.
 - Checked at ingest: Rule 110's 0.0926 cfs minimum pump; the HEC-22 exponent 1/2.67 = 0.3745 against 0.375; the Narrow Band's 2.6-times-narrower band; SWMMCRAFT's 350 + 23 + 23 = 396. The SWMM Inlet Library does not say which deck of fourteen disagrees on capture.
+
+## [2026-11-17] ingest | S243 to S255: 13 apps on ICM and the data that goes into models
+
+Third batch of the 62. All thirteen are summaries Claude wrote from the published pages (added to Q108).
+- New pages: thirteen app entities and [Apps summarized on 17 November 2026: ICM, data and the tools around models](wiki/concepts/apps-from-pages-icm-and-data.md).
+- Added paragraphs on twelve pages: ICM Ruby, ICM tables, ICM 2D mesh, InfoWorks ICM, calibration, negative results, evaporation, findings register, how SWMM 5 is organized, OpenSWMM 6, the InfoSewer guide, design storms.
+- Nothing in the seven ICM apps ran inside ICM. ICM 2027 runs Ruby 3.4.6 where earlier releases ran 2.4.0; six of Autodesk's 532 public example scripts fail under 3.4 (S244).
+- Q109 (new): ICM Exchange 2026 counts 335 methods in ruby_icm_help.md, Thirty-One Rubies 336.
+- Checked at ingest: the Exchange reconciliation sums (308 and 335); KCS grades sum to 77; the IFS layout (542,080 x 134 fields x 4 bytes x 23,008 = 6.69 TB); the June code map's 68 % and 16 %. The Meshing Field Guide's 87,012.9 ft2 cannot be rebuilt from the figures in the summary, which leave out the building footprints.

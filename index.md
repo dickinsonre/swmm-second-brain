@@ -5,7 +5,7 @@ Every page in the wiki, one line each. An agent reads this first. Updated on eve
 ## Start here
 - [Overview: what this wiki holds so far](wiki/overview.md): what the wiki holds so far, by Bob's six themes, and what is missing.
 - [Start here](wiki/start-here.md): for a new reader; how to read a claim, and four first tasks (modeler, developer, ICM user, maintainer) that each end in something done.
-- [Open questions](wiki/open-questions.md): <!-- state:oq -->99 open and 9 settled<!-- /state:oq -->: contradictions, doubtful numbers and gaps waiting for a source or for Bob.
+- [Open questions](wiki/open-questions.md): <!-- state:oq -->100 open and 9 settled<!-- /state:oq -->: contradictions, doubtful numbers and gaps waiting for a source or for Bob.
 - [Schema](CLAUDE.md): how the wiki is kept. [Log](log.md): what was done and when.
 
 ## Concepts
@@ -85,6 +85,7 @@ Measurement and method
 - [Replit apps: a fourth set of six summaries](wiki/concepts/replit-app-summaries-fourth-batch.md): six more Replit apps and two notes of Bob's: two run an engine, none has a test that runs, one was deleted for running visitors' code.
 - [Apps summarized on 17 November 2026: SWMM history and the insides of SWMM5](wiki/concepts/apps-from-pages-history-and-swmm5.md): eighteen apps on SWMM history and SWMM5's insides, summarized by Claude from their pages; nine run 5.2.4 in the browser.
 - [Apps summarized on 17 November 2026: generators, rain and surfaces for SWMM5](wiki/concepts/apps-from-pages-generators-rain-surfaces.md): nineteen apps: generators, rainfall and flow-data methods, inlets and quasi-2D meshes.
+- [Apps summarized on 17 November 2026: ICM, data and the tools around models](wiki/concepts/apps-from-pages-icm-and-data.md): thirteen apps on ICM and on the data that goes into models; none ran ICM in the page.
 - [LinkedIn posts that were well received](wiki/concepts/linkedin-post-reception.md): which of 50 posts were most seen, most reacted to and most answered on 15 November 2026, and where the two posts Bob named stand.
 
 Economics
@@ -255,6 +256,19 @@ Apps
 - [Non-Prismatic Channel Lab (app)](wiki/entities/non-prismatic-channel-lab.md): A shaped channel in 5.2.4 against a standard-step solution; prismatic links show 44 % of a constriction's rise, losses bring 92 %.
 - [Quasi-2D Mesh Maker for SWMM5 (app)](wiki/entities/quasi-2d-mesh-maker.md): A PCSWMM-style quasi-2D overland mesh written as a SWMM5 .inp; its half-width links store exactly the cell area.
 - [Walk the Mesh (app)](wiki/entities/walk-the-mesh.md): A surge walk inside a SWMM quasi-2D mesh; the obvious mesh stores twice the water and waves arrive 1.414 times too late.
+- [ICM 2D Table Atlas (app)](wiki/entities/icm-2d-table-atlas.md): The 21 hw_2d tables of ICM field by field from a Ruby schema dump beside Autodesk's help; 6,823 fields parsed twice.
+- [ICM Exchange 2026 (app)](wiki/entities/icm-exchange-2026.md): The 2021.8 ICM Exchange manual reconciled with the current Ruby help; 6 of Autodesk's 532 example scripts fail under Ruby 3.4.
+- [ICM + InfoDrainage KCS Catalog (app)](wiki/entities/icm-kcs-catalog-2026.md): A finder for 183 Autodesk ICM and InfoDrainage articles and a KCS audit of 77 titles; shorter titles searched worse.
+- [ICM Sediment Field Guide (app)](wiki/entities/icm-sediment-field-guide.md): 1D and 2D sediment modeling in ICM 2027 with textbook-formula labs; a half-depth bed takes 64 % of a pipe's capacity.
+- [Meshing Field Guide (app)](wiki/entities/meshing-field-guide.md): A 2014 ICM meshing note brought forward to 2026 with a teaching mesher; area bookkeeping exact on the test block.
+- [Network Design Glass Box (app)](wiki/entities/network-design-glass-box.md): A rule-based pipe sizer after ICM 2027's Network Design, from Autodesk's public description; every pipe's deciding rule shown.
+- [SRTC Radio for ICM (app)](wiki/entities/srtc-radio-icm.md): Sliders over a linear response surface harvested by an ICM Ruby script, for a first calibration; no run reported.
+- [Thirty-One Rubies (app)](wiki/entities/thirty-one-rubies.md): 44 ICM Ruby scripts from 31 apps run on CRuby 3.4.1 in the browser against a strict ICM stand-in; none run in ICM.
+- [Understand Anything for SWMM and ICM (app)](wiki/entities/understand-anything-swmm-icm.md): SWMM 5.2.4's code graph measured with the compiler; a June map from memory found 60 of 365 file links, graphify 322.
+- [CHM Reader 2026 (app)](wiki/entities/chm-reader-2026.md): Opens .chm help files in the browser and exports their text for Claude; 7,038 of 7,038 entries match 7-Zip and chmlib.
+- [Rain-on-Grid Workbench (app)](wiki/entities/rain-on-grid-workbench.md): Seven urban flood-modeling algorithms mapped to SWMM6; a rain reduction factor left a 1.06 ft sag a pipe held to 0.37 ft.
+- [Network Lift (app)](wiki/entities/network-lift.md): A CAD drainage drawing lifted into manholes and pipes, with labels matched and gaps flagged, out to Excel, ICM, SewerGEMS and SWMM5.
+- [IFS Analysis Explorer (app)](wiki/entities/ifs-analysis-explorer.md): ECMWF's 2011 to 2026 analysis on AWS laid out and bridged to a SWMM5 climate file; 6-hourly extremes give 84 % of the PET.
 
 Data
 - [1729-SWMM5-Models-2030 (the corpus)](wiki/entities/corpus-1729.md): Bob's public model repository; 480 of its models are the translations' gate set.
@@ -415,6 +429,19 @@ App summaries
 - [S240](wiki/sources/S240-non-prismatic-channel-lab-summary.md) (2026-11-02): Non-Prismatic Channel Lab v1.0, summary written from the page by Claude.
 - [S241](wiki/sources/S241-quasi-2d-mesh-maker-summary.md) (2026-10-04): Quasi-2D Mesh Maker for SWMM5 v1.0, summary written from the page by Claude.
 - [S242](wiki/sources/S242-walk-the-mesh-summary.md) (2026-10-19): Walk the Mesh v1.0, summary written from the page by Claude.
+- [S243](wiki/sources/S243-icm-2d-table-atlas-summary.md) (2026-11-02): ICM 2D Table Atlas v1.1, summary written from the page by Claude.
+- [S244](wiki/sources/S244-icm-exchange-2026-summary.md) (2026-11-02): ICM Exchange 2026 v2026.2, summary written from the page by Claude.
+- [S245](wiki/sources/S245-icm-kcs-catalog-2026-summary.md) (2026-11-06): ICM + InfoDrainage KCS Catalog v2026.5, summary written from the page by Claude.
+- [S246](wiki/sources/S246-icm-sediment-field-guide-summary.md) (2026-11-02): ICM Sediment Field Guide v1.1, summary written from the page by Claude.
+- [S247](wiki/sources/S247-meshing-field-guide-summary.md) (2026-11-02): Meshing Field Guide v1.0, summary written from the page by Claude.
+- [S248](wiki/sources/S248-network-design-glass-box-summary.md) (2026-09-30): Network Design Glass Box v1.0, summary written from the page by Claude.
+- [S249](wiki/sources/S249-srtc-radio-icm-summary.md) (2026-09-30): SRTC Radio for ICM v1.0.0, summary written from the page by Claude.
+- [S250](wiki/sources/S250-thirty-one-rubies-summary.md) (2026-11-03): Thirty-One Rubies v1.0, summary written from the page by Claude.
+- [S251](wiki/sources/S251-understand-anything-swmm-icm-summary.md) (2026-11-05): Understand Anything for SWMM and ICM v2.0, summary written from the page by Claude.
+- [S252](wiki/sources/S252-chm-reader-2026-summary.md) (2026-11-02): CHM Reader 2026 v1.0.0, summary written from the page by Claude.
+- [S253](wiki/sources/S253-rain-on-grid-workbench-summary.md) (2026-10-06): Rain-on-Grid Workbench v1.0, summary written from the page by Claude.
+- [S254](wiki/sources/S254-network-lift-summary.md) (2026-10-19): Network Lift v1.2, summary written from the page by Claude.
+- [S255](wiki/sources/S255-ifs-analysis-explorer-summary.md) (2026-10-16): IFS Analysis Explorer v1.0, summary written from the page by Claude.
 
 Manuals and reports (primary documents)
 - [S185](wiki/sources/S185-epa-swmm5-qa-report-dynamic-wave-2006.md) (2006-09): SWMM Quality Assurance Report, Dynamic Wave Flow Routing, by L. A. Rossman: SWMM 4.4h against SWMM 5.0.006 on twenty examples. Read in part: Chapters 1 to 4 and 7.

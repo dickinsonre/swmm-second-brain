@@ -1,10 +1,11 @@
 ---
 title: "How SWMM 5 is organized: objects, state and the time loop"
 type: concept
-updated: 2026-11-16
-sources: [S60, S157]
+updated: 2026-11-17
+sources: [S60, S157, S251]
 tags: [swmm5, architecture, output, units, primary-document]
 reviewed: 11/16/2026
+changed_after_review: "2026-11-17 (S243 to S255 ingest): a paragraph added near the end, headed Added 17 November 2026 (S251)"
 ---
 Sections 1.2 to 1.5 of the EPA hydraulics manual, a primary document, in digest [S60](../sources/S60-epa-swmm5-reference-manual-vol2-hydraulics.md). Its figures are not in `raw/` and its two equations did not survive the conversion, so both are described in words.
 
@@ -37,5 +38,7 @@ The hydraulic objects are on [SWMM 5 network objects, boundary and initial condi
 **Interpolation, with one exception.** Values between recorded or computed times are interpolated linearly; a reported flow comes from the computed flows on either side of the report time. Precipitation and infiltration rates are not: they hold constant through a runoff step, and a reported rainfall intensity is the value at the start of the runoff step [S60](../sources/S60-epa-swmm5-reference-manual-vol2-hydraulics.md). That agrees with what the LSTM + SWMM5 app measured: a .out holds, at each report time, the rain of the interval that starts there [S157](../sources/S157-lstm-swmm5-summary.md). See [Reading SWMM output](reading-swmm-output.md).
 
 **Units (Table 1-4), US customary** [S60](../sources/S60-epa-swmm5-reference-manual-vol2-hydraulics.md): subcatchment area in acres; storage surface area in sq ft; depth, elevation, head, length and width in ft; depression storage and rainfall volume in inches; rainfall intensity, infiltration rate and hydraulic conductivity in in/hr; evaporation in in/day; flow in cfs, gpm or mgd; storage volume in cu ft; velocity in ft/s; temperature in °F; wind in mph. Manning's n is in seconds per meter^(1/3) in both unit systems.
+
+**Added 17 November 2026, third batch.** Measured with the compiler at tag v5.2.4: 54 files, 365 file links, 967 functions, 1,916 call edges. 46 of the 54 files form one strongly connected set, and the best order still leaves 70 of 365 uses pointing backward. Dynamic wave is reached through flowrout.c line 167, not from routing.c directly [S251](../sources/S251-understand-anything-swmm-icm-summary.md).
 
 **Related.** [Where a surrogate of SWMM breaks](surrogates-hidden-state-missing-forcing.md): the hidden states that defeat a rain-driven surrogate.

@@ -1,10 +1,11 @@
 ---
 title: "InfoSewer to InfoWorks ICM (app)"
 type: entity
-updated: 2026-11-15
-sources: [S103, S146]
+updated: 2026-11-17
+sources: [S103, S146, S245]
 tags: [apps, replit, infosewer, icm, migration]
 reviewed: 11/16/2026
+changed_after_review: "2026-11-17 (S243 to S255 ingest): a paragraph added near the end, headed Added 17 November 2026 (S245)"
 ---
 Bob's Replit app InfoSewer to InfoWorks ICM: a guide to moving InfoSewer model data into InfoWorks ICM, pointing to a Ruby import tool as the preferred route and a manual ODIC workflow as the alternative, with browser tools to check IDs and CSV headers and to compose SQL; it converts nothing itself. Version 1.0.0, at `infosewericminfoworksimport.com` [S146](../sources/S146-infosewer-to-infoworks-icm-replit-summary.md).
 
@@ -24,5 +25,7 @@ Bob's Replit app InfoSewer to InfoWorks ICM: a guide to moving InfoSewer model d
 **What it does not show.** The linked Ruby conversion tool was not downloaded or run, and no real InfoSewer model was converted or validated. No production build was run and the published page was not checked. The cause of the console warnings was not investigated. [S146](../sources/S146-infosewer-to-infoworks-icm-replit-summary.md)
 
 **Noted at ingest.** The difference checks: 182 - 28 = 154 minutes, which is 2 hours 34 minutes (our arithmetic). The `date:` is the newest commit date, 12 February 2026; the change list starts on 16 August 2025 (Q75). Its `file:`, data-sewer, does not say what it is (Q77). The models it helps move are the ones the [InfoSewer and InfoSWMM Legacy Model Reader (app)](infosewer-infoswmm-legacy-model-reader.md) reads [S103](../sources/S103-legacy-model-reader-replit-summary.md); see also [InfoSWMM and InfoSewer](infoswmm-and-infosewer.md).
+
+**Added 17 November 2026, third batch.** On 6 November 2026 live Autodesk pages were found for the Overview, Step 5 and Step 8 of the InfoSewer import series, all carrying a legacy notice, and none for Steps 1, 2, 3, 4, 6, 7 or 9 [S245](../sources/S245-icm-kcs-catalog-2026-summary.md).
 
 See [Replit apps: a fourth set of six summaries](../concepts/replit-app-summaries-fourth-batch.md), [InfoSewer and InfoSWMM Legacy Model Reader (app)](infosewer-infoswmm-legacy-model-reader.md), [InfoSWMM and InfoSewer](infoswmm-and-infosewer.md).

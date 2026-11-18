@@ -1,8 +1,8 @@
 ---
 title: ICM network tables and result fields
 type: concept
-updated: 2026-11-16
-sources: [S162, S163, S17, S166, S178, S179]
+updated: 2026-11-17
+sources: [S162, S163, S17, S166, S178, S179, S243]
 tags: [icm, ruby, data-model, results, comparison]
 reviewed: no
 ---
@@ -36,6 +36,8 @@ Worked example from the note: an inlet at 106.00 ft and a level of 109.25 ft giv
 **Related.** [ICM Ruby: UI scripts and Exchange scripts](icm-ruby-ui-and-exchange.md); [SWMM 5 versus ICM InfoWorks](swmm5-versus-icm-infoworks.md); [Checking a SWMM5 model's conversion into ICM](swmm5-to-icm-conversion-checks.md).
 
 **Not in the sources yet.** Link and subcatchment result fields, and the rest of the tables. The note points to Bob's queued article on the IWR results file as the next source [S163](../sources/S163-note-icm-results-field-crosswalk.md).
+
+**Added 17 November 2026, third batch.** A Ruby schema dump of ICM printed 91 tables, 6,823 fields and 385 blob sub-fields; 21 tables start with hw_2d. Against Autodesk's help, eight field names appear only in the help and seven only in the dump. The ICM version of the dump was not recorded [S243](../sources/S243-icm-2d-table-atlas-summary.md).
 
 **Relations**
 
