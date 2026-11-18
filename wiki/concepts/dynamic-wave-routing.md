@@ -2,10 +2,10 @@
 title: Dynamic wave routing
 type: concept
 updated: 2026-11-17
-sources: [S08, S10, S17, S18, S20, S22, S55, S60, S62, S75, S77, S79, S80, S185, S186, S192, S196]
+sources: [S08, S10, S17, S18, S20, S22, S55, S60, S62, S75, S77, S79, S80, S185, S186, S192, S196, S212, S210]
 tags: [hydraulics, swmm5, routing]
 reviewed: 2026-11-15
-changed_after_review: "2026-11-16 (S180 to S187 ingest): one paragraph added at the end on four trials in 5.0.006, the 50 ft/s cap and free-fall depth (S185, S186); 2026-11-17 (S192 to S202 ingest): one paragraph added at the end on the 2006 option set and RASPIPE (S192, S196)"
+changed_after_review: "2026-11-16 (S180 to S187 ingest): one paragraph added at the end on four trials in 5.0.006, the 50 ft/s cap and free-fall depth (S185, S186); 2026-11-17 (S192 to S202 ingest): one paragraph added at the end on the 2006 option set and RASPIPE (S192, S196); 2026-11-17 (S205 to S223 ingest): a paragraph added near the end, headed Added 17 November 2026 (S212, S210)"
 ---
 Dynamic wave routing solves the full one-dimensional St. Venant equations: continuity and momentum in the conduits and a volume balance at the nodes [S17](../sources/S17-li-routing-options.md). It is the only SWMM5 routing method that handles backwater, entrance and exit losses, flow reversal, pressurized flow, loops and multiple downstream diversions [S17](../sources/S17-li-routing-options.md).
 
@@ -61,3 +61,5 @@ The method is implicit in time (backward Euler, solved by Picard iteration); ear
 **Added 17 November 2026.** Two more sources on the solver.
 - The 2006 report's option set, as the [SWMM QA Report Bench](../entities/swmm-qa-report-bench.md) writes it into 5.2.4: `INERTIAL_DAMPING NONE`, `NORMAL_FLOW_LIMITED SLOPE`, `LENGTHENING_STEP 0`, `MIN_SURFAREA 0` (engine default 12.566 ft2, `dynwave.c:62`), `MAX_TRIALS 4`, `VARIABLE_STEP 0.00`, `THREADS 1`, head tolerance left at 0.005 ft (`dynwave.c:63`). Options as distributed move no conduit peak by more than 3.12 % [S192](../sources/S192-swmm-qa-report-bench-app-md.md).
 - A replacement for the explicit update: [SWMM5 RASPIPE](../entities/swmm5-raspipe.md) solves the pipes semi-implicitly over a mesh of cells, from HEC's public manuals, behind `FLOW_ROUTING RASPIPE` [S196](../sources/S196-swmm5-raspipe-summary.md).
+
+**Added 17 November 2026.** Two apps test the iteration. [SWMM5 Residual Walk (app)](../entities/swmm5-residual-walk.md) traces the trials of 5.2.4 (OMEGA = 0.5 at dynwave.c line 61) and finds a chain whose last link at a free outfall is 0.073 ft long ending at -11,199 % continuity with no error [S212](../sources/S212-swmm5-residual-walk-summary.md). [SWMM5 Implicit Box Solver Test Bench (app)](../entities/swmm5-implicit-box-bench.md) puts an implicit Preissmann box scheme into the same engine: on 16 small models its conduit peaks fall within 5.5 % of stock at 16 times the cost [S210](../sources/S210-swmm5-implicit-box-bench-summary.md). Both summaries Claude wrote from the pages (Q108).

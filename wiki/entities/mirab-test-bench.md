@@ -1,10 +1,11 @@
 ---
 title: Mirab Test Bench (app)
 type: entity
-updated: 2026-11-15
-sources: [S71, S82]
+updated: 2026-11-17
+sources: [S71, S82, S222]
 tags: [apps, mirab, swmm5plus, swmm5, engine-comparison, findings]
 reviewed: 2026-11-15
+changed_after_review: "2026-11-17 (S205 to S223 ingest): a paragraph added near the end, headed Added 17 November 2026 (S222)"
 ---
 Bob's test bench for Mirab, Ehsan Madadi's free desktop application that runs EPA SWMM 5.2 and SWMM5+ in one project. Version 1.0, 24 October 2026 [S82](../sources/S82-mirab-test-bench-summary.md).
 
@@ -47,3 +48,5 @@ P-1 names the buffer that the translators of the engine found separately, as def
 **Credits.** Mirab and swmm5plus-capi are by Ehsan Madadi, GPL-3.0-or-later; SWMM5+ is from CIMM at the University of Texas at Austin. The page says it includes none of Mirab's code and is not affiliated with those projects [S82](../sources/S82-mirab-test-bench-summary.md).
 
 **Open.** The findings carry the page's own IDs, with no IDs in [The SWMM findings register](../concepts/findings-register.md) (Q47).
+
+**Added 17 November 2026.** [SWMM5+ Bench (app)](swmm5plus-bench.md) uses the same library, Ehsan Madadi's swmm5plus-capi v0.2.1, to run SWMM5+ 1.0.3 beside EPA SWMM 5.2.4 on 34 recorded models [S222](../sources/S222-swmm5plus-bench-summary.md). See also [SWMM5+ (CIMM finite-volume engine)](swmm5plus.md).

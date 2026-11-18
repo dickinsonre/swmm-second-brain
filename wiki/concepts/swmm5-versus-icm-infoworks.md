@@ -1,11 +1,11 @@
 ---
 title: SWMM 5 versus ICM InfoWorks
 type: concept
-updated: 2026-11-16
-sources: [S13, S14, S17, S20, S80, S165, S166, S179, S184, S188]
+updated: 2026-11-17
+sources: [S13, S14, S17, S20, S80, S165, S166, S179, S184, S188, S210]
 tags: [comparison, swmm5, icm]
 reviewed: 2026-11-15
-changed_after_review: "2026-11-16 (S159 to S165 ingest): one paragraph added at the end, headed Added 16 November 2026, on the two-pipe benchmark design (S165); 2026-11-16 (S179 ingest): the drafter of the seven ICM notes named as ChatGPT (S179); 2026-11-16 (S180 to S187 ingest): one paragraph added at the end on the 2023 2D comparison (S184); 2026-11-16 (S188 to S190 ingest): one paragraph added at the end on the 2021 Water Talks webinar (S188)"
+changed_after_review: "2026-11-16 (S159 to S165 ingest): one paragraph added at the end, headed Added 16 November 2026, on the two-pipe benchmark design (S165); 2026-11-16 (S179 ingest): the drafter of the seven ICM notes named as ChatGPT (S179); 2026-11-16 (S180 to S187 ingest): one paragraph added at the end on the 2023 2D comparison (S184); 2026-11-16 (S188 to S190 ingest): one paragraph added at the end on the 2021 Water Talks webinar (S188); 2026-11-17 (S205 to S223 ingest): a paragraph added near the end, headed Added 17 November 2026 (S210)"
 ---
 Where the two engines differ, from the four comparison sources ingested so far. ICM also contains a SWMM network type ("ICM SWMM") that runs the SWMM5 dynamic wave [S17](../sources/S17-li-routing-options.md); this page compares SWMM 5 with the InfoWorks engine.
 
@@ -47,3 +47,5 @@ See [InfoWorks ICM](../entities/infoworks-icm.md), [EPA SWMM 5](../entities/swmm
 - Graphs: ICM shows the two ends of a link and SWMM 5 the midpoint, so a graphical comparison sets an end against a midpoint [S188](../sources/S188-talk-water-talks-icm-sim-vs-icm-swmm-2021.md).
 - For a fair comparison Bob advises SLOT in SWMM 5; see [Preissmann slot and surcharge](preissmann-slot-and-surcharge.md) [S188](../sources/S188-talk-water-talks-icm-sim-vs-icm-swmm-2021.md).
 - He also says ICM contains SWMM 5 water quality and SWMM 5 LIDs (called SUDS in ICM) [S188](../sources/S188-talk-water-talks-icm-sim-vs-icm-swmm-2021.md), against the table row above that rests on [S20](../sources/S20-li-edition-54-two-solvers.md) (Q13).
+
+**Added 17 November 2026.** [SWMM5 Implicit Box Solver Test Bench (app)](../entities/swmm5-implicit-box-bench.md) adds an implicit Preissmann four-point box scheme, the published method ICM's 1D engine is documented as using, to EPA SWMM 5.2.4. It is not InfoWorks code: on 16 test models of 3 to 8 conduits it agrees with stock dynamic wave within 5.5 % on conduit peaks, and the page says Bob is running the ICM comparison himself [S210](../sources/S210-swmm5-implicit-box-bench-summary.md).

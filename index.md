@@ -5,7 +5,7 @@ Every page in the wiki, one line each. An agent reads this first. Updated on eve
 ## Start here
 - [Overview: what this wiki holds so far](wiki/overview.md): what the wiki holds so far, by Bob's six themes, and what is missing.
 - [Start here](wiki/start-here.md): for a new reader; how to read a claim, and four first tasks (modeler, developer, ICM user, maintainer) that each end in something done.
-- [Open questions](wiki/open-questions.md): <!-- state:oq -->98 open and 9 settled<!-- /state:oq -->: contradictions, doubtful numbers and gaps waiting for a source or for Bob.
+- [Open questions](wiki/open-questions.md): <!-- state:oq -->99 open and 9 settled<!-- /state:oq -->: contradictions, doubtful numbers and gaps waiting for a source or for Bob.
 - [Schema](CLAUDE.md): how the wiki is kept. [Log](log.md): what was done and when.
 
 ## Concepts
@@ -83,6 +83,7 @@ Measurement and method
 - [Replit apps: the second seventeen summaries](wiki/concepts/replit-app-summaries-second-batch.md): seventeen more Replit apps: which run an engine, which pass their tests, and what the agent found doubtful.
 - [Replit apps: six more summaries](wiki/concepts/replit-app-summaries-third-batch.md): six more Replit apps brought over on the evening of 15 November 2026: none runs an engine, one has a test suite, four have names that do not say what they are.
 - [Replit apps: a fourth set of six summaries](wiki/concepts/replit-app-summaries-fourth-batch.md): six more Replit apps and two notes of Bob's: two run an engine, none has a test that runs, one was deleted for running visitors' code.
+- [Apps summarized on 17 November 2026: SWMM history and the insides of SWMM5](wiki/concepts/apps-from-pages-history-and-swmm5.md): eighteen apps on SWMM history and SWMM5's insides, summarized by Claude from their pages; nine run 5.2.4 in the browser.
 - [LinkedIn posts that were well received](wiki/concepts/linkedin-post-reception.md): which of 50 posts were most seen, most reacted to and most answered on 15 November 2026, and where the two posts Bob named stand.
 
 Economics
@@ -125,6 +126,7 @@ Engines and programs
 - [swmm5-infosewer](wiki/entities/swmm5-infosewer.md): EPA 5.2.4 with InfoSewer's routing rules; bit-identical to InfoSewer's engine on a 2009 network.
 - [SWMM Results Kit](wiki/entities/swmm-results-kit.md): the one .rpt and .out reader of Bob's engine apps, checked on 11,738,268 values.
 - [EPANET](wiki/entities/epanet.md): EPA's water distribution program; versions Bob's apps run, PDA, and six routes that agree.
+- [SWMM5+ (CIMM finite-volume engine)](wiki/entities/swmm5plus.md): the Fortran 2008 finite-volume engine of CIMM-ORG/SWMM5plus; nine branches, explicit, measured beside EPA 5.2.4.
 
 Apps
 - [SWMM 1 Engine (app)](wiki/entities/swmm-1-engine-app.md): three engines in one page, version 3.13.
@@ -215,6 +217,24 @@ Apps
 - [One SWMM (app)](wiki/entities/one-swmm.md): v0.2.0; Bob's SWMM5, SWMM6 and ICM tools behind four doors and an expert view.
 - [InfoSewer_2009 (app)](wiki/entities/infosewer-2009.md): v1.2.0; a 2009 InfoSewer network in 3D with swmm5-infosewer results.
 - [One Model, Three Engines (app)](wiki/entities/one-model-three-engines.md): v1.1; moving the InfoSewer training model into ICM; matching flow is not enough.
+- [The Runoff Block (app)](wiki/entities/runoff-block.md): EPA SWMM 5.2.4 on one subcatchment with SWMM 1 and SWMM 4.4H beside it; 36 of 36 inputs byte-identical browser to native.
+- [Visual SWMM (app)](wiki/entities/visual-swmm.md): WebAssembly reader for XP-SWMM .xp files from the 1999 source; 18,219 of 18,296 fields equal XP-SWMM's own .xpx; no solver.
+- [SWMM Canon (app)](wiki/entities/swmm-canon.md): Layered hash fingerprints of SWMM 5 .inp files; 126 of 145 corpus models bit-identical after canonical export.
+- [The Rigid Column Test (app)](wiki/entities/rigid-column-test.md): An exact pressurised transient put to SWMM 5.2.4 and OpenSWMM 6 alpha.4; EXTRAN within 1 %, the dynamic slot 1.414 fast.
+- [SWMM5 Implicit Box Solver Test Bench (app)](wiki/entities/swmm5-implicit-box-bench.md): Stock 5.2.4 dynamic wave against an implicit Preissmann box scheme in one engine; peaks within 5.5 %, 16 times the cost.
+- [SWMM5 Self-Regeneration (app)](wiki/entities/swmm5-self-regeneration.md): Rebuilds a SWMM5 .inp from its .out in four rungs and reruns it; every conduit within 10 % at rung R2 on the demo.
+- [SWMM5 Residual Walk (app)](wiki/entities/swmm5-residual-walk.md): The dynamic wave trial walk in 5.2.4; a short last link at a free outfall gives -11,199 % continuity with no error.
+- [Low-Spot Census (app)](wiki/entities/low-spot-census.md): Every sink on a road surface checked against an inlet and a mesh; 20 of 20 exact checks; synthetic surfaces only.
+- [Lead Pump Pointer (app)](wiki/entities/lead-pump-pointer.md): Lead-pump rotation through an outage in 5.2.4; equal starts still leave a weak pump running most.
+- [SWMM Trouble Graph (app)](wiki/entities/swmm-trouble-graph.md): Report flags tied to elements and ranked by neighborhood; on 296 planted errors the graph did not beat the right single list.
+- [SWMM Rhythm Detector (app)](wiki/entities/swmm-rhythm-detector.md): Finds steady beats in a 5.2.4 .out and names their cause; found EPA's report printing "All links are stable." when the worst link is first.
+- [SWMM Run Supervisor (app)](wiki/entities/swmm-run-supervisor.md): A supervisor picks solver settings for each 15-minute window of a 5.2.4 run; restarts alone cost 0.045 ft rms.
+- [SWMM Claim Frontier (app)](wiki/entities/swmm-claim-frontier.md): Register of the claims in Bob's SWMM work by tier and build; 65 hold, 19 are walls, 20 stale.
+- [SWMM Clean Repro (app)](wiki/entities/swmm-clean-repro.md): Cuts and anonymizes a SWMM5 model and proves it still runs the same; bit-for-bit on 30 of 30 without a cut.
+- [swmm5-rs Side by Side (app)](wiki/entities/swmm5-rs-side-by-side.md): EPA 5.2.4 in C against a c2rust translation on 113 models; 91 of 91 .out identical, 25 reports differ by one warning from gage.c:251.
+- [swmm5-rust in RustGIS (app)](wiki/entities/swmm5-rust-rustgis.md): EPA 5.2.4 in safe Rust as a sandboxed RustGIS plugin; 177 of 177 models byte-identical to EPA's WebAssembly build.
+- [SWMM5+ Bench (app)](wiki/entities/swmm5plus-bench.md): SWMM5+ 1.0.3 against EPA 5.2.4 on 34 recorded models; EXTRAN4 floods 15.0 % in EPA at two nodes SWMM5+ cannot flood.
+- [SWMM5+ Branch Atlas (app)](wiki/entities/swmm5plus-branch-atlas.md): All nine branches of SWMM5+ measured; 8 of 9 build with gfortran and flang; no WebAssembly engine yet.
 
 Data
 - [1729-SWMM5-Models-2030 (the corpus)](wiki/entities/corpus-1729.md): Bob's public model repository; 480 of its models are the translations' gate set.
@@ -338,6 +358,24 @@ App summaries
 - [S201](wiki/sources/S201-infosewer-2009-app-md.md) (2026-11-12): InfoSewer_2009, technical summary, v1.2.0; swmm5-infosewer results in 3D.
 - [S202](wiki/sources/S202-one-model-three-engines-summary.md) (2026-11-02): One Model, Three Engines v1.1, summary written from the page by Claude.
 - [S203](wiki/sources/S203-topsoil-recovery-check-v2026-11-17.md) (2026-11-17): Topsoil Recovery Check, technical summary, version 2026-11-17; Windows builds, SOIL2 misread in 5.2.4, perched-drain correction.
+- [S206](wiki/sources/S206-runoff-block-summary.md) (2026-11-03): The Runoff Block v1.1, summary written from the page by Claude.
+- [S207](wiki/sources/S207-visual-swmm-summary.md) (2026-11-14): Visual SWMM v0.1.0, summary written from the page by Claude.
+- [S208](wiki/sources/S208-swmm-canon-summary.md) (2026-11-02): SWMM Canon v1.4, summary written from the page by Claude.
+- [S209](wiki/sources/S209-rigid-column-test-summary.md) (2026-09-30): The Rigid Column Test v2026-09-30, summary written from the page by Claude.
+- [S210](wiki/sources/S210-swmm5-implicit-box-bench-summary.md) (2026-10-30): SWMM5 Implicit Box Solver Test Bench v2026-10-02, summary written from the page by Claude.
+- [S211](wiki/sources/S211-swmm5-self-regeneration-summary.md) (2026-10-26): SWMM5 Self-Regeneration v1.0.0, summary written from the page by Claude.
+- [S212](wiki/sources/S212-swmm5-residual-walk-summary.md) (2026-11-04): SWMM5 Residual Walk v1.0, summary written from the page by Claude.
+- [S213](wiki/sources/S213-low-spot-census-summary.md) (2026-11-05): Low-Spot Census v1.0, summary written from the page by Claude.
+- [S214](wiki/sources/S214-lead-pump-pointer-summary.md) (2026-11-03): Lead Pump Pointer v1.1, summary written from the page by Claude.
+- [S215](wiki/sources/S215-swmm-trouble-graph-summary.md) (2026-11-04): SWMM Trouble Graph v1.3, summary written from the page by Claude.
+- [S216](wiki/sources/S216-swmm-rhythm-detector-summary.md) (2026-11-06): SWMM Rhythm Detector v1.0, summary written from the page by Claude.
+- [S217](wiki/sources/S217-swmm-run-supervisor-summary.md) (2026-10-24): SWMM Run Supervisor v2026-10-24, summary written from the page by Claude.
+- [S218](wiki/sources/S218-swmm-claim-frontier-summary.md) (2026-09-30): SWMM Claim Frontier v1.0, summary written from the page by Claude.
+- [S219](wiki/sources/S219-swmm-clean-repro-summary.md) (2026-10-13): SWMM Clean Repro v1.0, summary written from the page by Claude.
+- [S220](wiki/sources/S220-swmm5-rs-side-by-side-summary.md) (2026-10-19): swmm5-rs Side by Side v1.2, summary written from the page by Claude.
+- [S221](wiki/sources/S221-swmm5-rust-rustgis-summary.md) (2026-11-01): swmm5-rust in RustGIS v0.1.0, summary written from the page by Claude.
+- [S222](wiki/sources/S222-swmm5plus-bench-summary.md) (2026-10-24): SWMM5+ Bench v1.0, summary written from the page by Claude.
+- [S223](wiki/sources/S223-swmm5plus-branch-atlas-summary.md) (2026-10-26): SWMM5+ Branch Atlas v2026-10-26, summary written from the page by Claude.
 
 Manuals and reports (primary documents)
 - [S185](wiki/sources/S185-epa-swmm5-qa-report-dynamic-wave-2006.md) (2006-09): SWMM Quality Assurance Report, Dynamic Wave Flow Routing, by L. A. Rossman: SWMM 4.4h against SWMM 5.0.006 on twenty examples. Read in part: Chapters 1 to 4 and 7.
@@ -379,6 +417,7 @@ Notes and data
 - [S179](wiki/sources/S179-note-icm-notes-drafted-by-chatgpt.md) (2026-11-16): note, ChatGPT drafted the seven ICM notes S159 to S165 from Autodesk Help; runtime tests stay pending.
 - [S187](wiki/sources/S187-note-model-comparison-purpose-and-dogfooding.md) (2026-11-16): note, Bob: the wiki is for model comparison, the AI-drafted summaries are by design, and he dogfoods and tests his apps.
 - [S204](wiki/sources/S204-note-two-pipe-benchmark-step1-run.md) (2026-11-17): note, run record for step 1 of the two-pipe benchmark: EPA SWMM 5.2.4 and swmm5-ruby byte-identical; 59 records.
+- [S205](wiki/sources/S205-note-netlify-addresses.md) (2026-11-17): note, the Netlify addresses of the 62 apps uploaded that day, each read as deployed.
 - [S189](wiki/sources/S189-note-innovyze-start-christmas-2007.md) (2026-11-16): note, Bob agreed to join Innovyze the week of Christmas and went to Los Angeles after January 2.
 
 The old swmm-brain repository

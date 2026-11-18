@@ -2,10 +2,10 @@
 title: "Hot start: what a restart loses"
 type: concept
 updated: 2026-11-17
-sources: [S79, S196, S202]
+sources: [S79, S196, S202, S217]
 tags: [swmm5, hot-start, dynamic-wave, findings, verification]
 reviewed: 2026-11-15
-changed_after_review: "2026-11-17 (S192 to S202 ingest): one paragraph added at the end on saved states in two apps (S196, S202)"
+changed_after_review: "2026-11-17 (S192 to S202 ingest): one paragraph added at the end on saved states in two apps (S196, S202); 2026-11-17 (S205 to S223 ingest): a paragraph added near the end, headed Added 17 November 2026 (S217)"
 ---
 A SWMM hot start file saves the state of a run so that a later run can begin from it. In EPA SWMM 5.2.4 a run restarted from its own hot start file does not reproduce the run that wrote it [S79](../sources/S79-teacher-forced-swmm-summary.md). The [Teacher-Forced SWMM (app)](../entities/teacher-forced-swmm.md) measured this while trying to use the hot start as a tool, and had to repair it first.
 
@@ -47,3 +47,5 @@ See [Dynamic wave routing](dynamic-wave-routing.md), [Byte-for-byte gate](byte-f
 **Added 17 November 2026.** Two more apps touch saved states.
 - [One Model, Three Engines](../entities/one-model-three-engines.md): from a state saved at full load, a one-minute run changes no pipe's flow by more than 5.3e-7 cfs; from a state saved at 80 percent, the outlet still reports 1.62 of 2.0 cfs after a minute. The numbers are from the app's lumped teaching model [S202](../sources/S202-one-model-three-engines-summary.md).
 - [SWMM5 RASPIPE](../entities/swmm5-raspipe.md): its hot-start files carry node and link states, not the states of its pipe cells [S196](../sources/S196-swmm5-raspipe-summary.md).
+
+**Added 17 November 2026.** [SWMM Run Supervisor (app)](../entities/swmm-run-supervisor.md) cuts a 24-hour run into 96 windows of 15 minutes joined by hot-start files. With every window at the careful preset, the node depths differ from the unbroken run by 0.045 ft rms, 158 of 164 peaks within 0.1 ft and the worst 0.51 ft off. One missing flag made the first runoff step after a restart a dry step, 1 % too much runoff, since fixed [S217](../sources/S217-swmm-run-supervisor-summary.md).

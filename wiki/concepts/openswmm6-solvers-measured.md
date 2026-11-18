@@ -2,10 +2,10 @@
 title: OpenSWMM 6 solvers, measured
 type: concept
 updated: 2026-11-17
-sources: [S75, S80, S81, S186, S196, S198, S199]
+sources: [S75, S80, S81, S186, S196, S198, S199, S209, S29]
 tags: [swmm6, hydraulics, dynamic-wave, finite-volume, engine-comparison]
 reviewed: 2026-11-15
-changed_after_review: "2026-11-16 (S180 to S187 ingest): one paragraph added at the end on Register 33 (S186); 2026-11-17 (S192 to S202 ingest): one paragraph added at the end on three more apps (S196, S198, S199)"
+changed_after_review: "2026-11-16 (S180 to S187 ingest): one paragraph added at the end on Register 33 (S186); 2026-11-17 (S192 to S202 ingest): one paragraph added at the end on three more apps (S196, S198, S199); 2026-11-17 (S205 to S223 ingest): a paragraph added near the end, headed Added 17 November 2026 (S209, S29)"
 ---
 OpenSWMM 6 has two hydraulic solvers: a dynamic wave solver that extends SWMM 5's, and an explicit finite-volume solver (FV) [S75](../sources/S75-st-venant-rosetta-stone-app-md.md). Three of Bob's apps have run them beside EPA SWMM 5.2.4. This page collects what they measured. Every run is on an alpha build, and none is compared with a measurement. For the program see [OpenSWMM 6 and HydroCouple](../entities/openswmm-6-and-hydrocouple.md).
 
@@ -67,3 +67,5 @@ See [EXTRAN's three solvers: XROUTE, YROUTE, ZROUTE](extran-solvers-xroute-yrout
 - [Seven SWMM Engines](../entities/seven-swmm-engines.md), on EPA's Example 1: outfall peaks of 75.94 cfs (alpha.1 SWMM6 DW), 73.76 (alpha.4 SWMM6 DW) and 71.69 (alpha.4 FV) against EPA 5.2.4's 73.9. Flow continuity within 0.03 percent everywhere, but TSS continuity -58.54 %, -53.43 % and -53.20 % in the SWMM6 DW runs of alpha.1 to alpha.3, -1.65 % in alpha.4, -85.40 % in alpha.3 FV and -3.70 % in alpha.4 FV, against EPA's -1.96 % [S199](../sources/S199-seven-swmm-engines-summary.md).
 - [SWMM5 RASPIPE](../entities/swmm5-raspipe.md), on 87 corpus models every engine finished: SWMM6's modified DW (slot, semi-implicit and Anderson acceleration together) had a median continuity error of 0.701 % against EPA's 0.941 %. One option at a time over the sample: EXTRAN alone 0.763 %, DYNAMIC_SLOT 0.734 %, ANDERSON_ACCEL 0.696 %, the two together 0.619 %, SEMI_IMPLICIT 0.909 %, all three 0.516 %. On one deck the modified DW sent none of the 0.26 ac-ft out the outfall, where EPA and SWMM6's EXTRAN sent 0.24 [S196](../sources/S196-swmm5-raspipe-summary.md).
 - [Two Engines, One Town](../entities/two-engines-one-town.md) tried openswmm 6.0.0a3 as a drop-in engine on one model and reports "three SWMM engines produce identical numbers"; none of SWMM6's new features was exercised [S198](../sources/S198-two-engines-one-town-summary.md).
+
+**Added 17 November 2026.** On an exact pressurised transient, the stock dynamic slot runs a factor of the square root of 2 (1.414) fast, and the two virtual-junction runs fail on initial conditions rather than on the slot [S209](../sources/S209-rigid-column-test-summary.md). The summary does not name the engine of the dynamic slot; DYNAMIC_SLOT is an OpenSWMM 6 method [S29](../sources/S29-swmm6-rust-readme.md). One pipe geometry, builds of 30 September 2026; a summary Claude wrote from the page (Q108).

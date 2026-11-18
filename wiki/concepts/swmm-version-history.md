@@ -2,10 +2,10 @@
 title: SWMM version history, 1969 to 2026
 type: concept
 updated: 2026-11-17
-sources: [S01, S07, S11, S12, S19, S20, S21, S22, S55, S60, S63, S86, S126, S185, S193, S194, S199]
+sources: [S01, S07, S11, S12, S19, S20, S21, S22, S55, S60, S63, S86, S126, S185, S193, S194, S199, S206, S207]
 tags: [swmm-history, timeline]
 reviewed: 11/16/2026
-changed_after_review: "2026-11-16 (S180 to S187 ingest): one paragraph added at the end on the 2006 QA report's dates (S185); 2026-11-17 (S192 to S202 ingest): one paragraph added at the end on Version III and the SWMM 4.4 sources (S193, S194, S199)"
+changed_after_review: "2026-11-16 (S180 to S187 ingest): one paragraph added at the end on the 2006 QA report's dates (S185); 2026-11-17 (S192 to S202 ingest): one paragraph added at the end on Version III and the SWMM 4.4 sources (S193, S194, S199); 2026-11-17 (S205 to S223 ingest): a paragraph added near the end, headed Added 17 November 2026 (S206, S207)"
 ---
 The timeline as the ingested sources give it. Where two sources differ, both are shown.
 
@@ -73,3 +73,5 @@ Pages for the versions: [SWMM 1 (1971)](../entities/swmm-1.md), [EXTRAN](../enti
 **Added 17 November 2026: Version III and the SWMM 4.4 sources the apps use.**
 - SWMM Version III: the November 1981 release, documented in the User's Manual Version III by Huber, Heaney, Nix, Dickinson and Polmann (EPA-600/2-84-109a). The page that rebuilds it says it was distributed on magnetic tape, about 25,000 Fortran statements, and that no listing is known to survive [S193](../sources/S193-swmm3-runoff-transport-summary.md).
 - The SWMM 4.4 Fortran in Bob's apps comes from three releases: swmm44gu, CDM and Oregon State, 20 February 2001 [S194](../sources/S194-swmm4-twin-engines-summary.md); the Oregon State and CDM source of July 2003 / 2004 [S193](../sources/S193-swmm3-runoff-transport-summary.md); and SWMM 4.4H, the 2004 CDM/OSU release [S199](../sources/S199-seven-swmm-engines-summary.md). EPA's 2006 report compared version 4.4h of July 4, 2005 [S185](../sources/S185-epa-swmm5-qa-report-dynamic-wave-2006.md). The sources do not say how the four differ.
+
+**Added 17 November 2026.** [The Runoff Block (app)](../entities/runoff-block.md) runs one subcatchment through SWMM 1 (1971), SWMM 4.4H (2004) and 5.2.4: 4.4 and 5.2.4 agree to 0.13 % on volume and SWMM 1 is 17.6 % high because its Horton curve decays on the storm clock [S206](../sources/S206-runoff-block-summary.md). [Visual SWMM (app)](../entities/visual-swmm.md) reads XP-SWMM .xp files, versions 1.05 to 20.1, from the December 1999 XP source [S207](../sources/S207-visual-swmm-summary.md).

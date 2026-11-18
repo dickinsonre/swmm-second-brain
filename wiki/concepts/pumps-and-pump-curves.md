@@ -2,10 +2,10 @@
 title: Pumps and pump curves
 type: concept
 updated: 2026-11-17
-sources: [S60, S83, S131, S182, S183, S185, S186, S201]
+sources: [S60, S83, S131, S182, S183, S185, S186, S201, S214, S216]
 tags: [hydraulics, swmm5, pumps, primary-document]
 reviewed: 11/16/2026
-changed_after_review: "2026-11-16 (S180 to S187 ingest): one paragraph added at the end on the EXTRAN pump examples, the 2006 report and Registers 31 and 33 (S182, S183, S185, S186); 2026-11-17 (S192 to S202 ingest): one paragraph added at the end on InfoSewer's pump stations (S201)"
+changed_after_review: "2026-11-16 (S180 to S187 ingest): one paragraph added at the end on the EXTRAN pump examples, the 2006 report and Registers 31 and 33 (S182, S183, S185, S186); 2026-11-17 (S192 to S202 ingest): one paragraph added at the end on InfoSewer's pump stations (S201); 2026-11-17 (S205 to S223 ingest): a paragraph added near the end, headed Added 17 November 2026 (S214, S216)"
 ---
 SWMM 5 treats a pump as a link whose flow comes from a user-supplied pump curve [S60](../sources/S60-epa-swmm5-reference-manual-vol2-hydraulics.md). Everything on this page is from sections 2.1.6 and 6.1 of the EPA hydraulics manual unless another source is cited.
 
@@ -46,3 +46,5 @@ The manual does not say which rule holds when that inflow is larger than the hig
 **Added 16 November 2026, from the EXTRAN and QA ingest.** Bob's words for the two pumps of the EXTRAN test models: a Type 1 is "an off-line pump with a wet well where flow increases incrementally with available wet well volume" [S182](../sources/S182-li-extran-example-6-type-1-pump.md); a Type 2 is "an in-line pump where flow increases incrementally with inlet node depth" [S183](../sources/S183-li-extran-example-7-type-2-pump.md). EPA's 2006 report says SWMM 4 and SWMM 5 both limit a pump to its inlet's inflow when the curve flow would drain the node in a step, and that the two differ on Type 1 wet wells: SWMM 4 holds back the inflow so the well never floods, SWMM 5 lets it flood [S185](../sources/S185-epa-swmm5-qa-report-dynamic-wave-2006.md). Twenty years later the Rosetta Stone measures XROUTE, SWMM 4.4H's solver, pumping 5 cfs from a dry junction on Example 7 (Register 31, Q95), and OpenSWMM 6 pumping above the top of its curve (Register 33). It quotes SWMM 5.2.4's dry-node rule as `if ( y <= 0.0 ) return Node[j].inflow;` in dynwave.c, which returns the inflow without the curve's limits; on its two decks 5.2.4 pumped at the curve [S186](../sources/S186-st-venant-rosetta-stone-app-md-v2-6-2.md). This bears on Q62. Test models: [The EXTRAN manual test models](extran-manual-test-models.md).
 
 **Added 17 November 2026: InfoSewer's pump stations.** [swmm5-infosewer](../entities/swmm5-infosewer.md) copies InfoSewer's rules: a pump curve `H = H0 - a Q^b`; a station runs where pump head equals static lift plus force main loss; in extended period each wet well runs on a 1-minute pump step, pumps on at the maximum level and off at the minimum. On a 2009 network of five stations the steady flows run from 68 gpm at 46.65 ft of head to 10,960 gpm at 283.63 ft [S201](../sources/S201-infosewer-2009-app-md.md).
+
+**Added 17 November 2026.** [Lead Pump Pointer (app)](../entities/lead-pump-pointer.md) runs a three-pump station through 5.2.4: with P3 at 70 % of its curve, rotating the lead by cycle gives 223/223/221 starts but 20.2/19.3/29.3 run hours [S214](../sources/S214-lead-pump-pointer-summary.md). [SWMM Rhythm Detector (app)](../entities/swmm-rhythm-detector.md) shows a pump EPA counted starting 237 times in four hours appearing as 11 starts and a false 25-minute beat in a .out reported every five minutes [S216](../sources/S216-swmm-rhythm-detector-summary.md).
