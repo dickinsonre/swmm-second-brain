@@ -1,11 +1,11 @@
 ---
 title: Byte-for-byte gate
 type: concept
-updated: 2026-11-17
-sources: [S23, S28, S29, S30, S34, S35, S41, S70, S71, S195, S196, S197, S263]
+updated: 2026-11-19
+sources: [S23, S28, S29, S30, S34, S35, S41, S70, S71, S195, S196, S197, S263, S377]
 tags: [verification, method, translation]
 reviewed: 2026-11-15
-changed_after_review: "2026-11-17 (S192 to S202 ingest): one paragraph added at the end on three more gates (S195 to S197); 2026-11-17 (S256 to S267 ingest): a paragraph added near the end, headed Added 17 November 2026 (S263)"
+changed_after_review: "2026-11-17 (S192 to S202 ingest): one paragraph added at the end on three more gates (S195 to S197); 2026-11-17 (S256 to S267 ingest): a paragraph added near the end, headed Added 17 November 2026 (S263); 2026-11-19 (S377 to S382 ingest): a paragraph added at the end, headed Added 19 November 2026 (S377)"
 ---
 The test every SWMM5 and SWMM6 translation is held to: run the translation and the original engine on the same decks and compare the files they write, byte for byte [S23](../sources/S23-swmm6-csharp-readme.md) [S41](../sources/S41-swmm5-go-readme.md).
 
@@ -41,3 +41,5 @@ See [SWMM6 language translations](../entities/swmm6-language-ports.md), [Matchin
 All three count a run that stops at a time limit as not compared, which is the rule above.
 
 **Added 17 November 2026, fourth batch.** [SWMM Engine Map (app)](../entities/swmm-engine-map.md) gives the reason for no tolerance: a last-bit difference in dynamic wave can change the iteration count at the next step. It also measures why new engines are wanted: EPA 5.2.4 keeps its state in 415 file- and program-scope variables, and opening a second model over the first returns 0, empties the first report and leaks 361,322 bytes in 134 allocations [S263](../sources/S263-swmm-engine-map-summary.md).
+
+**Added 19 November 2026.** [swmm524-fvlink](../entities/swmm524-fvlink.md) passes the same gate with its new section left out: with no `[FV_LINKS]`, 72 of 73 EPA regression models give `.out` files byte-identical to stock, and 1 stops with the same error in both [S377](../sources/S377-fv-link-lab-app-md.md). Its patch applied to a fresh v5.2.4 clone rebuilt a byte-identical binary [S377](../sources/S377-fv-link-lab-app-md.md). Its WebAssembly build is compared with native on [WebAssembly builds against native builds](wasm-against-native-builds.md).

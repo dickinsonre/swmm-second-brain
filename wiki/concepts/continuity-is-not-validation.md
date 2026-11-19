@@ -1,11 +1,11 @@
 ---
 title: Continuity is not validation
 type: concept
-updated: 2026-11-18
-sources: [S01, S04, S05, S20, S59, S60, S62, S65, S67, S75, S81, S194, S196, S199, S201, S282, S287, S275, S273, S295, S301, S300, S328, S318]
+updated: 2026-11-19
+sources: [S01, S04, S05, S20, S59, S60, S62, S65, S67, S75, S81, S194, S196, S199, S201, S282, S287, S275, S273, S295, S301, S300, S328, S318, S380]
 tags: [verification, method]
 reviewed: 2026-11-15
-changed_after_review: "2026-11-17 (S192 to S202 ingest): one paragraph added at the end on four more cases (S194, S196, S199, S201); 2026-11-18 (S268 to S299 ingest): a paragraph added near the end, headed Added 18 November 2026 (S282, S287, S275, S273, S295); 2026-11-18 (S300 to S375 ingest): a paragraph added near the end, headed Added 18 November 2026 (S301, S300, S328, S318)"
+changed_after_review: "2026-11-17 (S192 to S202 ingest): one paragraph added at the end on four more cases (S194, S196, S199, S201); 2026-11-18 (S268 to S299 ingest): a paragraph added near the end, headed Added 18 November 2026 (S282, S287, S275, S273, S295); 2026-11-18 (S300 to S375 ingest): a paragraph added near the end, headed Added 18 November 2026 (S301, S300, S328, S318); 2026-11-19 (S377 to S382 ingest): a paragraph added at the end, headed Added 19 November 2026 (S380)"
 ---
 A closed mass balance shows that water was not lost. It does not show that the answer is right. Five cases from the sources:
 
@@ -50,3 +50,5 @@ See also [Verification against printed runs](verification-against-printed-runs.m
 - In the 2D Flood Lab the engine's default tier setting brings the flood to one survey point between 400 and 500 s instead of between 200 and 300 s, and every run closes its volume balance, so the continuity line shows none of it [S300](../sources/S300-swmm6-2d-flood-lab-summary.md).
 - A scaffolder's continuity regex captured the dot leaders, so every report read 0.00% [S328](../sources/S328-bluesky-icm-summary.md).
 - In WNTR Toolkit, EPANET 2.2's tanks are off by 119%, 122% and 53% of their working volume while the run completes [S318](../sources/S318-wntr-toolkit-summary.md).
+
+**Added 19 November 2026.** One more case, outside SWMM. The [Flood Pipeline Audit Bench](../entities/flood-audit-bench.md) re-ran an open-source flood model on a clipped raster: 92.223 % of its stored volume ended in nodata voids, and the reported peak depth was 97.5 ft against 15.1 ft, while the paragraph summary says its continuity error stayed at zero [S380](../sources/S380-flood-audit-bench-app-md.md).

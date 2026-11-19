@@ -5,7 +5,7 @@ Every page in the wiki, one line each. An agent reads this first. Updated on eve
 ## Start here
 - [Overview: what this wiki holds so far](wiki/overview.md): what the wiki holds so far, by Bob's six themes, and what is missing.
 - [Start here](wiki/start-here.md): for a new reader; how to read a claim, and four first tasks (modeler, developer, ICM user, maintainer) that each end in something done.
-- [Open questions](wiki/open-questions.md): <!-- state:oq -->109 open and 11 settled<!-- /state:oq -->: contradictions, doubtful numbers and gaps waiting for a source or for Bob.
+- [Open questions](wiki/open-questions.md): <!-- state:oq -->113 open and 11 settled<!-- /state:oq -->: contradictions, doubtful numbers and gaps waiting for a source or for Bob.
 - [Schema](CLAUDE.md): how the wiki is kept. [Log](log.md): what was done and when.
 
 ## Concepts
@@ -138,6 +138,8 @@ Engines and programs
 - [SWMM Results Kit](wiki/entities/swmm-results-kit.md): the one .rpt and .out reader of Bob's engine apps, checked on 11,738,268 values.
 - [EPANET](wiki/entities/epanet.md): EPA's water distribution program; versions Bob's apps run, PDA, and six routes that agree.
 - [SWMM5+ (CIMM finite-volume engine)](wiki/entities/swmm5plus.md): the Fortran 2008 finite-volume engine of CIMM-ORG/SWMM5plus; nine branches, explicit, measured beside EPA 5.2.4.
+- [swmm524-fvlink](wiki/entities/swmm524-fvlink.md): EPA 5.2.4 with finite volume on conduits listed in [FV_LINKS]; byte-identical to stock on 72 of 73 EPA models without them; FVL-15 open.
+- [HEC-RAS](wiki/entities/hec-ras.md): the Corps of Engineers' program; Pipe Networks 7.0.1 is one of the four engines compared, never run here.
 
 Apps
 - [SWMM 1 Engine (app)](wiki/entities/swmm-1-engine-app.md): three engines in one page, version 3.13.
@@ -395,6 +397,12 @@ Apps
 - [Qubit Workbench (app)](wiki/entities/qubit-workbench.md): Exact quantum arithmetic on 1 to 12 qubits in the browser.
 - [Four Degrees at the Bottom (app)](wiki/entities/four-degrees-at-the-bottom.md): A lake run a year at a time, with water's two oddities switched off.
 - [Topology Surface Explorer (app)](wiki/entities/topology-surface-explorer.md): Surfaces built by gluing the edges of a polygon.
+- [FV Link Lab (app)](wiki/entities/fv-link-lab.md): stock 5.2.4 and swmm524-fvlink side by side in the browser, with a Froude-scaled Mars tab; 18 of 18 .out byte-identical to native.
+- [Four-Engine Pipe Comparator (app)](wiki/entities/four-engine-pipe-comparator.md): HEC-RAS, ICM, SWMM5 and SWMM6 on pressurized pipes, from documentation and upstream numbers; 204 checks, no engine run.
+- [SWMM5 to SWMM6 EXTRAN Features Upgrader (app)](wiki/entities/swmm5-to-swmm6-extran-upgrader.md): four SWMM6 switches in a SWMM5 .inp, checked on four engines; together they lift a demo peak 34.1 %.
+- [Flood Pipeline Audit Bench (app)](wiki/entities/flood-audit-bench.md): a third-party flood model audited by re-running its own solver; its two published panels are one field twice.
+- [NetSTORM Explorer (app)](wiki/entities/netstorm-explorer.md): CDM Smith's NetSTORM page as a searchable index: 79 links, 138 release notes, 50 addresses supplied and unverified.
+- [Modeling Confluence Mograph (app)](wiki/entities/modeling-confluence-mograph.md): a 44-second film of the EWRI Modeling Confluence 2027 call for abstracts; abstracts due December 9, 2026.
 
 Data
 - [1729-SWMM5-Models-2030 (the corpus)](wiki/entities/corpus-1729.md): Bob's public model repository; 480 of its models are the translations' gate set.
@@ -402,6 +410,7 @@ Data
 Sites
 - [OpenSWMM.org (the forum)](wiki/entities/openswmm-forum.md): Bob's 4,014 posts in 2,879 threads since 1995.
 - [swmm5.org](wiki/entities/swmm5-org.md): the WordPress site and its six topic pages.
+- [ICM Script Finder](wiki/entities/icm-script-finder.md): a search page for the InfoWorks ICM community scripts in innovyze/Open-Source-Support, by keyword and README text.
 
 Repositories
 - [Bob's GitHub repositories (where the rest of the material lives)](wiki/entities/bobs-github-repositories.md): 30 repositories named in the sources, with Bob's description of each; the map for future ingests.
@@ -689,6 +698,13 @@ App summaries
 - [S374](wiki/sources/S374-four-degrees-at-the-bottom-summary.md) (2026-09-30): Four Degrees at the Bottom v2026-09-30, summary written from the page by Claude.
 - [S375](wiki/sources/S375-topology-surface-explorer-summary.md) (2026-10-28): Topology Surface Explorer v2026-10-28, summary written from the page by Claude.
 - [S376](wiki/sources/S376-note-epanet-for-swmm5-experts-one-app.md) (2026-11-18): note, Bob rules that both EPANET for SWMM5 Experts summaries are one app under that name.
+- [S377](wiki/sources/S377-fv-link-lab-app-md.md) (2026-11-18): FV Link Lab v1.1.0, app .md.
+- [S378](wiki/sources/S378-four-engine-pipe-comparator-app-md.md) (2026-11-18): Four-Engine Pipe Comparator v1.5.0, app .md.
+- [S379](wiki/sources/S379-swmm5-to-swmm6-extran-upgrader-app-md.md) (2026-11-18): SWMM5 to SWMM6 EXTRAN Features Upgrader v2.0.0, app .md.
+- [S380](wiki/sources/S380-flood-audit-bench-app-md.md) (2026-11-18): Flood Pipeline Audit Bench v1.0.0, app .md.
+- [S381](wiki/sources/S381-netstorm-explorer-app-md.md) (2026-11-18): NetSTORM Explorer v1.0.0, app .md.
+- [S382](wiki/sources/S382-modeling-confluence-mograph-app-md.md) (2026-11-18): Modeling Confluence Mograph v1.0, app .md.
+- [S383](wiki/sources/S383-note-icm-script-finder-link.md) (2026-11-19): note, Bob asks for a link to ICM Script Finder.
 
 Manuals and reports (primary documents)
 - [S185](wiki/sources/S185-epa-swmm5-qa-report-dynamic-wave-2006.md) (2006-09): SWMM Quality Assurance Report, Dynamic Wave Flow Routing, by L. A. Rossman: SWMM 4.4h against SWMM 5.0.006 on twenty examples. Read in part: Chapters 1 to 4 and 7.

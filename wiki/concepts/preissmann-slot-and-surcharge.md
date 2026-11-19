@@ -1,11 +1,11 @@
 ---
 title: Preissmann slot and surcharge
 type: concept
-updated: 2026-11-18
-sources: [S01, S04, S05, S08, S20, S21, S22, S55, S60, S75, S79, S188, S209, S280, S281, S282]
+updated: 2026-11-19
+sources: [S01, S04, S05, S08, S20, S21, S22, S55, S60, S75, S79, S188, S209, S280, S281, S282, S377, S378, S379]
 tags: [hydraulics, swmm5, icm, surcharge]
 reviewed: 2026-11-15
-changed_after_review: "2026-11-16 (S188 to S190 ingest): one paragraph added at the end on the 2021 Water Talks webinar (S188); 2026-11-17 (S205 to S223 ingest): a paragraph added near the end, headed Added 17 November 2026 (S209); 2026-11-18 (S268 to S299 ingest): a paragraph added near the end, headed Added 18 November 2026 (S280, S281, S282)"
+changed_after_review: "2026-11-16 (S188 to S190 ingest): one paragraph added at the end on the 2021 Water Talks webinar (S188); 2026-11-17 (S205 to S223 ingest): a paragraph added near the end, headed Added 17 November 2026 (S209); 2026-11-18 (S268 to S299 ingest): a paragraph added near the end, headed Added 18 November 2026 (S280, S281, S282); 2026-11-19 (S377 to S382 ingest): a paragraph added at the end, headed Added 19 November 2026 (S377, S378, S379)"
 ---
 When a closed pipe fills, the free-surface equations stop applying. The Preissmann slot keeps them valid by putting a narrow virtual slot above the crown: the water level rises into the slot, and the slot width sets the wave speed. A narrower slot gives a faster wave, closer to real pressurized behavior, and needs a smaller time step [S20](../sources/S20-li-edition-54-two-solvers.md).
 
@@ -41,3 +41,5 @@ When a closed pipe fills, the free-surface equations stop applying. The Preissma
 **Added 17 November 2026.** [The Rigid Column Test (app)](../entities/rigid-column-test.md) puts a full pipe 3,281 ft (1,000 m) long between fixed heads, which has an exact answer, to 5.2.4 and OpenSWMM 6.0.0-alpha.4. EXTRAN lands on the exact curve within 1 % in both; the 5.2.4 SLOT measured a celerity of 87.6 to 93.5 ft/s (26.7 to 28.5 m/s) against its 91.2 ft/s (27.8 m/s) and carried +3.814 % on the steady velocity; the stock dynamic slot ran a factor of 1.414 fast [S209](../sources/S209-rigid-column-test-summary.md). The conversions are ours. A summary Claude wrote from the page (Q108).
 
 **Added 18 November 2026.** Two app pages measure the slot in OpenSWMM 6 alpha 4. On a three-pipe model SLOT gives 5.31 ft at J1 and DYNAMIC_SLOT 5.40 ft, where EPA 5.2.4's SLOT gives 5.22 ft [S280](../sources/S280-run-swmm6-ten-minutes-summary.md). On a ponded chain the dynamic slot's 82 ft/s pressure wave (DPS_CELERITY 25 m/s) shrank the average step from 6.5 s to 1.3 s [S281](../sources/S281-swmm6-in-diagrams-summary.md), and on a still pool it books slot water as stored volume, +25.5% in one full pipe [S282](../sources/S282-forma-swmm6-summary.md).
+
+**Added 19 November 2026.** Three more apps put numbers on the slot. In [swmm524-fvlink](../entities/swmm524-fvlink.md)'s finite-volume links the slot is static, with a celerity of 100 ft/s and a width capped at 5 % of the maximum width, and its area is left out of friction [S377](../sources/S377-fv-link-lab-app-md.md). The [Four-Engine Pipe Comparator](../entities/four-engine-pipe-comparator.md) uses c_slot = sqrt(g*A_full/(f*D)) for a slot of width f*D. On a 3 ft pipe a 1 percent slot gives 87.07 ft/s, against a half-full open-channel celerity of 6.16 ft/s; on a 330 ft pipe at 3 ft/s and Cr 0.75 that is a SWMM5 SLOT step of 2.75 s, against 14.72 s under EXTRAN [S378](../sources/S378-four-engine-pipe-comparator-app-md.md). On OpenSWMM 6.0.0-alpha.3, SURCHARGE_METHOD DYNAMIC_SLOT alone raised the peak of the [EXTRAN Features Upgrader](../entities/swmm5-to-swmm6-extran-upgrader.md)'s demo chain from 14.38 to 16.32 cfs [S379](../sources/S379-swmm5-to-swmm6-extran-upgrader-app-md.md).

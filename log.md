@@ -869,3 +869,15 @@ Bob marked all 68 summaries of Q116 `reviewed: 2026-11-18` (commit 9c6b794) and 
 ## [2026-11-18] lint | Two GitHub branch links pinned to a commit
 
 At Bob's go-ahead, the two links the new branch-link check warned about now name a commit. The head of `van-genuchten` in SWMMBobSWMM6/swmm524-perched on 18 November 2026 was 816f2799 (committed 17 November 2026, 15:34 Eastern, with no later commit), the commit that added the `windows/` folder S203 describes. S203 records the check under "Checked 18 November 2026" and links that commit; the Windows folder link on the swmm524-perched entity page points to it too (`changed_after_review` updated). Lint: 0 errors, 0 warnings.
+
+## [2026-11-19] ingest | S377 to S382: six app summaries that ship with their apps
+
+Bob uploaded six summaries to `raw/apps/` on 18 and 19 November 2026, each shipped with its app: FV Link Lab 1.1.0 (S377), Four-Engine Pipe Comparator 1.5.0 (S378), SWMM5 to SWMM6 EXTRAN Features Upgrader 2.0.0 (S379), Flood Pipeline Audit Bench 1.0.0 (S380), NetSTORM Explorer 1.0.0 (S381) and Modeling Confluence Mograph 1.0 (S382). None was written after the fact from a page, so none joins Q116. Five of the six file names carry no version (rule 1 of the app summaries); they keep their names.
+
+Created 6 source pages and 8 entity pages: the six apps, the engine swmm524-fvlink, and HEC-RAS, a subject named on 15 pages with no page of its own. Added paragraphs to 11 pages: Thaw on the Thoth, the byte-for-byte gate, WebAssembly builds against native builds, dynamic wave routing, Preissmann slot and surcharge, OpenSWMM 6 solvers measured, OpenSWMM 6 and HydroCouple, continuity is not validation, EPA SWMM 5, EXTRAN, InfoWorks ICM. Updated overview (three bullets; counts 382 of 618), start-here (267 apps), index and open questions.
+
+FV Link Lab's `links:` line names the branch swmm524-fvlink; the wiki links its head of 19 November 2026, commit 6d64881. Contradiction found: Seven SWMM Engines (S199) puts finite volume's arrival at the alpha.3 tag, the Upgrader (S379) in the alpha.4 era (Q124). Also added: four levee hours for the Thoth runs beside Thaw on the Thoth's two (Q121, pointer in Q118); one figure, 92.2 %, given for two different measurements (Q122); NetSTORM's page credits and drops multi-structure modeling (Q123). Checked by our arithmetic and found to add up: the comparator's slot celerity and steps, the Upgrader's +34.1 %, NetSTORM's counts, the mograph's day counts.
+
+## [2026-11-19] ingest | S383: note, a link to ICM Script Finder
+
+Bob asked, mid-session: "add this as a link somewhere https://mel-meng.github.io/github_search/". Filed in his words as `raw/notes/icm-script-finder-link-2026-11-19.md`, with Claude's reading of the page marked as such, and ingested as S383. The page searches the community scripts in the InfoWorks ICM folder of innovyze/Open-Source-Support. Created the entity page ICM Script Finder (site); linked it from InfoWorks ICM and from the index's Sites list.

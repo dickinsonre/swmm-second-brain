@@ -1,0 +1,36 @@
+---
+title: "S377: FV Link Lab, app .md (v1.1.0)"
+type: source
+raw: raw/apps/fv-link-lab.md
+kind: app-md
+author: Robert Dickinson
+published: 2026-11-18
+ingested: 2026-11-19
+tags: [apps, swmm5, finite-volume, dynamic-wave, verification, gravity]
+drafted_by: Claude (Anthropic), with the app
+reviewed: no
+---
+**What it is.** A technical summary of the app FV Link Lab, version 1.1.0: finite volume on chosen SWMM conduits, dynamic wave on the rest, in the browser. Raw file: [raw/apps/fv-link-lab.md](../../raw/apps/fv-link-lab.md).
+
+**How it was written.** The app ships this file. Its AI-use section says the app, the swmm524-fvlink branch it runs, its tests and its documents "were made with Claude, Anthropic's AI model, in Claude Code sessions from October 13 to 21, 2026, and on November 18, 2026, under the direction of Robert (Bob) Dickinson, who is responsible for the work." Claude designed the method and chose its parameters, wrote `fvlink.c` and the hooks, and ran every test. The file says the checks are mechanical, and that no person has checked `fvlink.c` line by line, a project model, anything in InfoWorks ICM, or the n and weir scaling. The file does not open with an In three points block.
+
+**Claims worth keeping** (all copied from the file)
+- The app runs two engines side by side in the browser: stock EPA SWMM 5.2.4 and swmm524-fvlink, the same source with a new `[FV_LINKS]` input section. Conduits listed there are solved by an explicit finite-volume scheme on their own cells; every other link and node stays stock dynamic wave.
+- The FV link is `src/solver/fvlink.c`, 1,403 lines: HLL flux with Davis wave speeds, hydrostatic reconstruction (Audusse et al. 2004), a static Preissmann slot of celerity 100 ft/s with its width capped at 5 % of the maximum width, semi-implicit Manning friction on the real section area, and positivity limiting. Geometry comes from SWMM's own `xsect_getAofY` at 256 depths. The default cell is about 25 ft, with at least 4 cells. The substep is `dt <= 0.5 * dx / max(|u| + c)`, with a floor of 0.001 s.
+- FV links are subcycled inside every Picard iteration of the dynamic wave step. Volume crossing each end face is booked into node continuity exactly, except at a node surcharged under EXTRAN. Reported link flow is the time-averaged delivered flow. FV links take no part in dynamic wave's Courant step.
+- `[FV_LINKS]` errors: ERROR 209 for an unknown link, ERROR 211 for a bad cell count, and ERROR 116 for a link that cannot be FV (force main, culvert code, flap gate, losses, seepage, max. flow, street inlet, or a pump or dummy conduit drawing from an end node). Stock 5.2.4 stops on the `[FV_LINKS]` header with ERROR 205.
+- Null effect, native: with no `[FV_LINKS]`, 72 of 73 EPA regression models give `.out` files byte-identical to stock, and 1 stops with the same error in both.
+- FV link volume balance is at most 2.7e-12 % over 37 EPA models and 14 synthetic cases. Lake at rest with every conduit FV: max abs(Q) 1.2e-11 cfs.
+- In a 10-ft rectangular channel at 60 cfs, n 0.015 and S 0.001, the FV link gives 1.6592 ft against a Manning normal depth of 1.6559 ft (+0.20 %).
+- In a 400-pipe tree with its 10-ft trunk pipe FV: 0.19x stock wall time (n = 7 interleaved), every conduit peak within 0.53 % and every node peak within 0.80 % of stock.
+- WebAssembly against native over the EPA suite, stock and FV each: 65 identical, 1 `.rpt` with round-off only, 6 `.out` that differ (largest 16.2 cfs in 1,962 cfs, 0.83 %, user5; it follows the math library, musl against glibc) and 1 with the same error. The null effect holds exactly inside WebAssembly on all 73.
+- Version 1.1.0 adds a Mars tab. Gravity is compiled in (`consts.h:37 #define GRAVITY 32.2`), so the Mars model (g = 12.2 ft/s2) is turned into an equivalent Earth model with k = sqrt(32.2 / 12.2) = 1.624606: flows are multiplied by k and times divided by k; Manning's n 0.0244 becomes 0.0150 and the weir coefficient 2.050 becomes 3.330. Results read back as depth as is, flow divided by k and time multiplied by k.
+- The Froude check, native stock 5.2.4 at g 12.2 on the Mars input against g 32.2 on the scaled input: gate shut, the largest depth difference is 0.035 ft (BASIN), 134.830 against 134.827 Mgal over the levee, continuity -0.039 % in both; plan, BASIN crest 13.991 against 13.986 ft; Company geometry, the levee reached at Mars hour 40.92 against 40.74.
+- The Mars tab's runs in the page: nospill stock reaches the levee at Mars hour 40.49 (the native scaled run gives 40.49), and the nospill FV run at 40.41. In the story's Mars runs the culvert, Chute, intake channel and Old Canal kept Earth handbook n; scaling them too moves the gate-shut levee hour from 40.33 to 40.50.
+- Open defect FVL-15, found 2026-10-30: at the inflow end the ghost state pairs the node's level with the link's velocity, so a link fed from a still pool is handed u^2/2g of head the pool never had (5.8 ft at 11.9 ft/s on Mars) and can run water uphill. In the Company lock model the throat carries 300 cfs from the lock into the basin, whose water surface is 7.7 ft higher. Five prototype fixes were tried and none adopted. The file shows the code as it is, `fvlink.c` lines 1074 to 1103.
+
+**Limits it states.** No field data: stock dynamic wave is the reference, not the truth. The node upstream of an FV link sits +0.19 ft (12 cells) and +0.13 ft (48 cells) above stock in the 30 cfs chain, and +0.47 ft at the storage node in the mixed case; this is numerical and shrinks with refinement. Not in FV links: evaporation, seepage, conduit lengthening and hot-start cell state; quality was tested with one conservative pollutant only. Very short cells are slow (the user4 1.88-ft link: 15.5 s against 3.0 s stock). Not compared against OpenSWMM's FV engine. Nothing has been run in InfoWorks ICM, and the ICM kit's field names, shape codes and link types are unverified. The n and weir scaling is a dimensional argument with no Mars measurement behind it.
+
+**Checked at ingest.** The `links:` line names the branch `swmm524-fvlink` of SWMMBobSWMM6/Stormwater-Management-Model. On 19 November 2026 its head was commit 6d64881ef29dfffb0d8031bcad5d34e86ff1f613 (18 November 2026, 13:04 Central, "fv-link-lab.md: plain file: identifier for the second brain's manifest"), and the wiki links that commit: https://github.com/SWMMBobSWMM6/Stormwater-Management-Model/tree/6d64881ef29dfffb0d8031bcad5d34e86ff1f613/fvlink. Netlify: none yet. The file name carries no version. The levee hours above bear on the two in Thaw on the Thoth (Q118) and are set side by side in Q121. 1/k = 0.6155, the factor [S308](S308-thaw-on-the-thoth-summary.md) gives for the weir coefficient (our arithmetic).
+
+**Feeds:** [FV Link Lab (app)](../entities/fv-link-lab.md), [swmm524-fvlink](../entities/swmm524-fvlink.md), [Thaw on the Thoth (document)](../entities/thaw-on-the-thoth.md), [The byte-for-byte gate](../concepts/byte-for-byte-gate.md), [WebAssembly builds against native builds](../concepts/wasm-against-native-builds.md), [Dynamic wave routing](../concepts/dynamic-wave-routing.md), [Preissmann slot and surcharge](../concepts/preissmann-slot-and-surcharge.md), [EPA SWMM 5](../entities/swmm-5.md).

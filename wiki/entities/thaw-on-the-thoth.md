@@ -1,8 +1,8 @@
 ---
 title: "Thaw on the Thoth (document)"
 type: entity
-updated: 2026-11-18
-sources: [S308]
+updated: 2026-11-19
+sources: [S308, S377]
 tags: [documents, swmm5, fiction, gravity, weirs, finite-volume]
 reviewed: no
 ---
@@ -19,5 +19,7 @@ Bob's document Thaw on the Thoth: a story of two boys, one Martian canal and the
 **What it does not show.** As the document states: the Thoth is invented and has no survey behind it; the scaling of n and the weir coefficient is ordinary dimensional reasoning that has never been checked against flow in a lined canal on Mars; the gauge readings are fiction set near the model's values; no person has yet reviewed the story or rerun the models, and no other engineer has checked the scaling. [S308](../sources/S308-thaw-on-the-thoth-summary.md)
 
 **Noted at ingest.** The story's text says the basin reaches the top of the levee at hour 40.3; the legend of its chart "The forecast at the levee" says "at the crest by hour 40.4" (Q118). A Claude Docs document, exported as HTML with its 16 pictures for Netlify.
+
+**Added 19 November 2026.** [FV Link Lab](fv-link-lab.md) 1.1.0 runs the Thoth canal in a Mars tab [S377](../sources/S377-fv-link-lab-app-md.md). Gravity is compiled into SWMM (`consts.h:37 #define GRAVITY 32.2`), so the tab turns each Mars model into an equivalent Earth model with k = sqrt(32.2 / 12.2) = 1.624606: flows multiplied by k, times divided by k, Manning's n 0.0244 to 0.0150 and the weir coefficient 2.050 to 3.330 [S377](../sources/S377-fv-link-lab-app-md.md). Run natively, the scaled gate-shut model gives 134.827 Mgal over the levee against 134.830 from the Mars-gravity build, with continuity -0.039 % in both [S377](../sources/S377-fv-link-lab-app-md.md). The same file gives the levee hour as 40.33 in the story's runs, which kept Earth handbook n on the culvert, Chute, intake channel and Old Canal, and 40.50 with every n scaled; the tab's own nospill runs give 40.49 (stock) and 40.41 (FV) [S377](../sources/S377-fv-link-lab-app-md.md) (Q121). The defect the story found, FVL-15, is still open: five prototype fixes were tried and none adopted [S377](../sources/S377-fv-link-lab-app-md.md).
 
 See [Apps summarized on 18 November 2026: SWMM6, SWMM5+ and solvers](../concepts/apps-from-pages-swmm6-solvers-and-swmm5plus.md), [Dynamic wave routing](../concepts/dynamic-wave-routing.md), [Weirs and outlets](../concepts/weirs-and-outlets.md), [EPA SWMM 5](swmm-5.md).

@@ -1,11 +1,11 @@
 ---
 title: WebAssembly builds against native builds
 type: concept
-updated: 2026-11-18
-sources: [S68, S73, S74, S76, S77, S78, S79, S80, S81, S82, S83, S157, S193, S194, S195, S196, S197, S199, S206, S210, S211, S212, S214, S222, S224, S229, S228, S242, S231, S227, S270, S274, S275, S283, S291, S285, S271]
+updated: 2026-11-19
+sources: [S68, S73, S74, S76, S77, S78, S79, S80, S81, S82, S83, S157, S193, S194, S195, S196, S197, S199, S206, S210, S211, S212, S214, S222, S224, S229, S228, S242, S231, S227, S270, S274, S275, S283, S291, S285, S271, S377]
 tags: [wasm, verification, swmm5, math-library, apps]
 reviewed: 11/16/2026
-changed_after_review: "2026-11-17 (S192 to S202 ingest): one paragraph and a table added at the end on five more apps (S193 to S199); 2026-11-17 (S205 to S223 ingest): a paragraph added near the end, headed Added 17 November 2026 (S206, S210, S211, S212, S214, S222); 2026-11-17 (S224 to S242 ingest): a paragraph added near the end, headed Added 17 November 2026 (S224, S229, S228, S242, S231, S227); 2026-11-18 (S268 to S299 ingest): a paragraph added near the end, headed Added 18 November 2026 (S270, S274, S275, S283, S291, S285, S271)"
+changed_after_review: "2026-11-17 (S192 to S202 ingest): one paragraph and a table added at the end on five more apps (S193 to S199); 2026-11-17 (S205 to S223 ingest): a paragraph added near the end, headed Added 17 November 2026 (S206, S210, S211, S212, S214, S222); 2026-11-17 (S224 to S242 ingest): a paragraph added near the end, headed Added 17 November 2026 (S224, S229, S228, S242, S231, S227); 2026-11-18 (S268 to S299 ingest): a paragraph added near the end, headed Added 18 November 2026 (S270, S274, S275, S283, S291, S285, S271); 2026-11-19 (S377 to S382 ingest): a paragraph added at the end, headed Added 19 November 2026 (S377)"
 ---
 Most of Bob's engine apps run EPA SWMM 5.2.4 compiled to WebAssembly inside the page. Does that build give the same answers as a native build of the same C? Several apps tested it, and they do not all report the same thing. One of them found the cause [S82](../sources/S82-mirab-test-bench-summary.md).
 
@@ -72,3 +72,5 @@ Two more builds: Engine Race's stock and fast builds, Emscripten 3.1.51, wasm SH
 - Cymatic Synapse's browser and native 5.2.4 agree byte for byte on six of ten presets and within 0.059 ft on the rest [S283](../sources/S283-cymatic-synapse-generator-summary.md).
 - A prebuilt wasm 5.2.2 matched native 5.2.4 on 17 small models with a largest difference of 0 [S291](../sources/S291-seven-studies-swmm-app-md.md); SWMM6 Shoebox's 16 compared numbers matched exactly between Chromium and Node [S285](../sources/S285-swmm6-shoebox-summary.md).
 - SWMM 4.4H through f2c in the browser against native gfortran: of 1,643 numbers that differ on the Extran example, 1,250 differ in the last digit [S271](../sources/S271-swmm44h-workbench-summary.md).
+
+**Added 19 November 2026.** [FV Link Lab](../entities/fv-link-lab.md) compared its two WebAssembly engines with native over the 73 EPA regression models. Stock and finite-volume builds each gave 65 identical, 1 `.rpt` with round-off only, 6 `.out` files that differ and 1 with the same error; the largest difference is 16.2 cfs in 1,962 cfs (0.83 %, user5), and the source says it follows the math library, musl against glibc [S377](../sources/S377-fv-link-lab-app-md.md). The null effect of the `[FV_LINKS]` patch still holds exactly inside WebAssembly on all 73 [S377](../sources/S377-fv-link-lab-app-md.md). In the page, 9 samples run through its own engines and native gave 18 `.out` files byte-identical [S377](../sources/S377-fv-link-lab-app-md.md).

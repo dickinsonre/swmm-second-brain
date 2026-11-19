@@ -1,11 +1,11 @@
 ---
 title: EXTRAN
 type: entity
-updated: 2026-11-16
-sources: [S05, S07, S08, S19, S20, S21, S22, S55, S60, S74, S75, S76, S81, S180, S181, S182, S183, S185]
+updated: 2026-11-19
+sources: [S05, S07, S08, S19, S20, S21, S22, S55, S60, S74, S75, S76, S81, S180, S181, S182, S183, S185, S379]
 tags: [swmm-history, hydraulics, engine]
 reviewed: 2026-11-15
-changed_after_review: "2026-11-16 (S180 to S187 ingest): one paragraph added at the end on the test models, S185 and the Addendum date (Q94)"
+changed_after_review: "2026-11-16 (S180 to S187 ingest): one paragraph added at the end on the test models, S185 and the Addendum date (Q94); 2026-11-19 (S377 to S382 ingest): a paragraph added at the end, headed Added 19 November 2026 (S379)"
 ---
 The Extended Transport block: SWMM's dynamic-wave hydraulics before SWMM 5, and the ancestor of SWMM 5's [dynamic wave routing](../concepts/dynamic-wave-routing.md) [S20](../sources/S20-li-edition-54-two-solvers.md).
 
@@ -31,3 +31,5 @@ The Extended Transport block: SWMM's dynamic-wave hydraulics before SWMM 5, and 
 **The manual examples in use.** Bob's apps run them constantly: Example 1 in six solvers [S75](../sources/S75-st-venant-rosetta-stone-app-md.md), Examples 1, 2, 7 and 80 beside a CFD solver [S76](../sources/S76-inside-the-network-cfd-app-md.md), and the 1981 engine on a Danish sewer in the [Bellinge (app)](bellinge-app.md) [S81](../sources/S81-bellinge-summary.md).
 
 **Added 16 November 2026, from the EXTRAN and QA ingest.** The manual's ten examples, what each adds to Example 1, and what the runs have shown are on [The EXTRAN manual test models](../concepts/extran-manual-test-models.md). EPA's 2006 quality assurance report ran all ten on SWMM 4.4h and SWMM 5.0.006 [S185](../sources/S185-epa-swmm5-qa-report-dynamic-wave-2006.md); Bob's four articles of April 2025 describe Examples 1, 2, 5, 6 and 7 and say they are used in ICM SWMM daily build validation [S180](../sources/S180-li-extran1-extran2-test-files.md). The report cites the Extran Addendum as EPA/600/3-88/001b, October 1992 [S185](../sources/S185-epa-swmm5-qa-report-dynamic-wave-2006.md); Edition 29 gives the same number with August 1988 [S19](../sources/S19-li-edition-29-engine-speed.md) (Q94).
+
+**Added 19 November 2026.** The [SWMM5 to SWMM6 EXTRAN Features Upgrader](swmm5-to-swmm6-extran-upgrader.md) switches on, in a SWMM5 input file, the four features OpenSWMM 6 inherited from the EXTRAN line: SURCHARGE_METHOD DYNAMIC_SLOT, NODE_CONTINUITY SEMI_IMPLICIT, ANDERSON_ACCEL and [VIRTUAL_JUNCTIONS]. On alpha.3, all four together lifted its demo chain's peak from 14.38 to 19.29 cfs (+34.1 %) [S379](../sources/S379-swmm5-to-swmm6-extran-upgrader-app-md.md). Its embedded fleet is exam1, extran1 to extran7, extran9, extran10, user1, user2_slot, user3, user4 and user5_slot [S379](../sources/S379-swmm5-to-swmm6-extran-upgrader-app-md.md).
