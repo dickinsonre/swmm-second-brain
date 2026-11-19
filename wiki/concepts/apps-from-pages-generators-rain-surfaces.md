@@ -1,8 +1,8 @@
 ---
 title: "Apps summarized on 17 November 2026: generators, rain and surfaces for SWMM5"
 type: concept
-updated: 2026-11-17
-sources: [S205, S224, S225, S226, S227, S228, S229, S230, S231, S232, S233, S234, S235, S236, S237, S238, S239, S240, S241, S242]
+updated: 2026-11-19
+sources: [S205, S224, S225, S226, S227, S228, S229, S230, S231, S232, S233, S234, S235, S236, S237, S238, S239, S240, S241, S242, S386]
 tags: [apps, swmm5, generators, rainfall, surfaces]
 reviewed: no
 ---
@@ -29,6 +29,8 @@ Nineteen app summaries that Bob uploaded on 17 November 2026: model generators, 
 | [Non-Prismatic Channel Lab (app)](../entities/non-prismatic-channel-lab.md) | 1.0 | 2026-11-02 | [S240](../sources/S240-non-prismatic-channel-lab-summary.md) |
 | [Quasi-2D Mesh Maker for SWMM5 (app)](../entities/quasi-2d-mesh-maker.md) | 1.0 | 2026-10-04 | [S241](../sources/S241-quasi-2d-mesh-maker-summary.md) |
 | [Walk the Mesh (app)](../entities/walk-the-mesh.md) | 1.0 | 2026-10-19 | [S242](../sources/S242-walk-the-mesh-summary.md) |
+
+Since then: Four Ways to K 1.0.1 (19 November 2026) opens dark whatever the device is set to; nothing else changed [S386](../sources/S386-four-ways-to-k-summary-v1-0-1.md).
 
 **Generators.** Five write SWMM5 models from mathematics or rules: complex functions [S224](../sources/S224-conformal-swmm-app-md.md), a triangle-tiled path and Rule 30 [S226](../sources/S226-hedron-walk-summary.md), a Kleinian group [S227](../sources/S227-kleinian-swmm-summary.md), design rules over a pattern model [S228](../sources/S228-logic-based-generative-swmm5-summary.md) and an elementary cellular automaton computed with water [S229](../sources/S229-rule110-swmm5-summary.md). The first four check that their subcatchments do not overlap, and say their networks are not designs; the fifth has no subcatchments. All five run what they write.
 

@@ -6,6 +6,7 @@ kind: app-md
 author: Robert Dickinson
 published: 2026-10-29
 ingested: 2026-11-17
+superseded_by: S386
 tags: [apps, swmm5, minor-losses, manholes, wasm]
 drafted_by: Claude (Anthropic), from the published page
 reviewed: no

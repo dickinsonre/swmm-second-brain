@@ -1,8 +1,8 @@
 ---
 title: "SWMM 4.4H Workbench (app)"
 type: entity
-updated: 2026-11-18
-sources: [S271]
+updated: 2026-11-19
+sources: [S271, S391]
 tags: [apps, swmm4, fortran, wasm, conversion, swmm5, history]
 reviewed: no
 ---
@@ -20,5 +20,7 @@ Bob's app SWMM 4.4H Workbench: the 2004 SWMM 4.4H Fortran engine (the CDM/OSU re
 **What it does not show.** Which engine is right is not shown (no measurements); differences mix the engines with the translation; Extran is explicit with a fixed step; four register items remain open; Chromium only; the 121 changes and the translator are checked by machine, not read by a person. [S271](../sources/S271-swmm44h-workbench-summary.md)
 
 **Noted at ingest.** 114 + 24 + 20 + 53 = 211 and 218 + 68 + 5 + 9 = 300, as the census bars and the two-engine table give them (our arithmetic).
+
+**Its address.** The SWMM 1 Engine lists it among its related apps as "SWMM 4.4H Engine" at https://swmm44h-engine-swmm5-import.netlify.app/, the name its own summary file carries [S391](../sources/S391-swmm1-engine-app-md-v3-15.md).
 
 See [Apps summarized on 17 and 18 November 2026: SWMM5, EPANET and the checks on them](../concepts/apps-from-pages-swmm5-epanet-checks.md), [Converting SWMM 5 models for older engines](../concepts/converting-swmm5-models-for-older-engines.md), [SWMM 4 against SWMM 5: the 2006 quality assurance tests](../concepts/swmm4-versus-swmm5-qa-2006.md), [SWMM 4 Twin Engines (app)](swmm4-twin-engines.md), [1729-SWMM5-Models-2030 (the corpus)](corpus-1729.md), [WebAssembly builds against native builds](../concepts/wasm-against-native-builds.md), [EXTRAN](extran.md).

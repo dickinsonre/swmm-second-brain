@@ -1,10 +1,11 @@
 ---
 title: App complexity index (HydroCouple = 100)
 type: concept
-updated: 2026-11-15
-sources: [S01, S02, S73, S75]
+updated: 2026-11-19
+sources: [S01, S02, S73, S75, S389, S390, S391]
 tags: [apps, measurement]
 reviewed: 2026-11-15
+changed_after_review: "2026-11-19 (S384 to S391 ingest): a paragraph added at the end, headed Added 19 November 2026 (S389, S390, S391)"
 ---
 A number for how big and how tangled a modeling program's source is, on a scale where the HydroCouple GitHub organization is fixed at 100 [S02](../sources/S02-complexity-meter-app-md.md). Computed by the [SWMM App Complexity Meter (app)](../entities/swmm-app-complexity-meter.md).
 
@@ -46,3 +47,5 @@ Table from [S02](../sources/S02-complexity-meter-app-md.md).
 **In use.** The SWMM 1 Engine's Doc has carried the index in a complexity box since version 3.6 [S01](../sources/S01-swmm1-engine-app-md.md).
 
 **Added 15 November 2026.** Two more scores are on record. The SWMM 1 Engine app at v3.13 scores 72.6 over 182 source files, with the shipped .html alone at 64.8 [S73](../sources/S73-swmm1-engine-app-md-v3-13.md); the 70.2 in the table above is its v3.6 figure. The [St. Venant Solver Rosetta Stone (app)](../entities/st-venant-solver-rosetta-stone.md) page scores 51.5, with 0.0 for test markers because the page carries no tests of its own [S75](../sources/S75-st-venant-rosetta-stone-app-md.md). Both name the baseline HC-2026-11-10-h. [S75](../sources/S75-st-venant-rosetta-stone-app-md.md) describes the anchor as "the 43 repositories of github.com/HydroCouple"; the table above has a row for all 47 repositories at 106.4 from [S02](../sources/S02-complexity-meter-app-md.md).
+
+**Added 19 November 2026.** Three more scores, each from meter 1.7.0 against baseline HC-2026-11-10-h. [Bellinge (app)](../entities/bellinge-app.md) 2.4: 70.3, the shipped page alone 66.5 [S389](../sources/S389-bellinge-app-md-v2-4.md). [Ponce Hydrology Lab (app)](../entities/ponce-hydrology-lab.md) 1.3: 76.1 over 140 source files, the shipped page alone 61.0 [S390](../sources/S390-ponce-hydrology-lab-app-md-v1-3.md). [SWMM 1 Engine (app)](../entities/swmm-1-engine-app.md) 3.15: 72.9 over 185 source files, from 72.6 over 182 at 3.13, the shipped page alone 65.0 [S391](../sources/S391-swmm1-engine-app-md-v3-15.md).

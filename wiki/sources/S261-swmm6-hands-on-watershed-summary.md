@@ -6,6 +6,7 @@ kind: app-md
 author: Robert Dickinson
 published: 2026-11-08
 ingested: 2026-11-17
+superseded_by: S385
 tags: [apps, swmm6, snow, groundwater, emulator, wasm]
 drafted_by: Claude (Anthropic), from the published page
 reviewed: no

@@ -6,6 +6,7 @@ kind: app-md
 author: Robert Dickinson
 published: 2026-11-13
 ingested: 2026-11-15
+superseded_by: S391
 tags: [swmm-history, swmm1, verification, apps, wasm]
 drafted_by: Claude (Anthropic), at Bob's direction
 reviewed: 2026-11-15

@@ -6,6 +6,7 @@ kind: app-md
 author: Robert Dickinson
 published: 2026-11-14
 ingested: 2026-11-17
+superseded_by: S384
 tags: [apps, xpswmm, history, file-formats, wasm]
 drafted_by: Claude (Anthropic), from the published page
 reviewed: no

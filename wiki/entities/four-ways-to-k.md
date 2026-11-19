@@ -1,12 +1,12 @@
 ---
 title: "Four Ways to K (app)"
 type: entity
-updated: 2026-11-17
-sources: [S205, S225]
+updated: 2026-11-19
+sources: [S205, S225, S386]
 tags: [apps, swmm5, minor-losses, manholes, wasm]
 reviewed: no
 ---
-Bob's app Four Ways to K: four ways of putting a manhole loss into SWMM5 ([LOSSES], an equivalent Manning n, a side orifice and a HEC-22 calculation) plus a no-loss control, run on one two-pipe test line with EPA SWMM 5.2.4 in the page. Version 1.0, 2026-10-29 [S225](../sources/S225-four-ways-to-k-summary.md). Netlify address: https://four-ways-to-k.netlify.app [S205](../sources/S205-note-netlify-addresses.md).
+Bob's app Four Ways to K: four ways of putting a manhole loss into SWMM5 ([LOSSES], an equivalent Manning n, a side orifice and a HEC-22 calculation) plus a no-loss control, run on one two-pipe test line with EPA SWMM 5.2.4 in the page. Version 1.0.1, 2026-11-19 [S386](../sources/S386-four-ways-to-k-summary-v1-0-1.md); version 1.0 of 29 October 2026 is summarized in [S225](../sources/S225-four-ways-to-k-summary.md). Netlify address: https://four-ways-to-k.netlify.app [S205](../sources/S205-note-netlify-addresses.md).
 
 **A caution about its source.** The page ships no technical summary. [S225](../sources/S225-four-ways-to-k-summary.md) was written by Claude on 17 November 2026 from the page, with nothing rerun, and Bob has not yet read it (Q108).
 
@@ -20,5 +20,7 @@ Bob's app Four Ways to K: four ways of putting a manhole loss into SWMM5 ([LOSSE
 **What it does not show.** One test line and four flow cases; no field data. [S225](../sources/S225-four-ways-to-k-summary.md)
 
 **Noted at ingest.** 1.5 x 0.629 = 0.9435 ft. Using [LOSSES] or an orifice when the loss must hold at all depths is the page's advice, from these runs.
+
+**Version 1.0.1.** The page followed the device's light setting on first paint, against the dark-first rule. `<html>` now carries `data-theme="dark"`, and the theme falls back to dark rather than to `prefers-color-scheme`; Light is used only when chosen. No engine run was repeated [S386](../sources/S386-four-ways-to-k-summary-v1-0-1.md).
 
 See [Apps summarized on 17 November 2026: generators, rain and surfaces for SWMM5](../concepts/apps-from-pages-generators-rain-surfaces.md), [Seven SWMM Engines (app)](seven-swmm-engines.md), [SWMM Results Kit](swmm-results-kit.md), [Orifices](../concepts/orifices.md), [SWMM 5 network objects, boundary and initial conditions](../concepts/swmm5-network-objects.md).

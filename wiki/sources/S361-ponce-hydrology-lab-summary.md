@@ -6,6 +6,7 @@ kind: app-md
 author: Robert Dickinson
 published: 2026-10-22
 ingested: 2026-11-18
+superseded_by: S390
 tags: [apps, hydrology, calculators, audits]
 drafted_by: Claude (Anthropic), from the published page
 reviewed: 2026-11-18

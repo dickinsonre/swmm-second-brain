@@ -6,6 +6,7 @@ kind: app-md
 author: Robert Dickinson
 published: 2026-10-18
 ingested: 2026-11-15
+superseded_by: S389
 tags: [apps, swmm5, swmm6, swmm4, extran, engine-comparison, bellinge, wasm]
 drafted_by: Claude (Anthropic), from the published page
 reviewed: 2026-11-15

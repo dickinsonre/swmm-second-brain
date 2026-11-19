@@ -5,7 +5,7 @@ Every page in the wiki, one line each. An agent reads this first. Updated on eve
 ## Start here
 - [Overview: what this wiki holds so far](wiki/overview.md): what the wiki holds so far, by Bob's six themes, and what is missing.
 - [Start here](wiki/start-here.md): for a new reader; how to read a claim, and four first tasks (modeler, developer, ICM user, maintainer) that each end in something done.
-- [Open questions](wiki/open-questions.md): <!-- state:oq -->113 open and 11 settled<!-- /state:oq -->: contradictions, doubtful numbers and gaps waiting for a source or for Bob.
+- [Open questions](wiki/open-questions.md): <!-- state:oq -->116 open and 11 settled<!-- /state:oq -->: contradictions, doubtful numbers and gaps waiting for a source or for Bob.
 - [Schema](CLAUDE.md): how the wiki is kept. [Log](log.md): what was done and when.
 
 ## Concepts
@@ -142,7 +142,7 @@ Engines and programs
 - [HEC-RAS](wiki/entities/hec-ras.md): the Corps of Engineers' program; Pipe Networks 7.0.1 is one of the four engines compared, never run here.
 
 Apps
-- [SWMM 1 Engine (app)](wiki/entities/swmm-1-engine-app.md): three engines in one page, version 3.13.
+- [SWMM 1 Engine (app)](wiki/entities/swmm-1-engine-app.md): three engines in one page, version 3.15; as far as its authors know, the only copy of SWMM Version 1 that runs.
 - [SWMM App Complexity Meter (app)](wiki/entities/swmm-app-complexity-meter.md): version 1.9.1, its checks and limits.
 - [SWMM and ICM St. Venant comparison (app)](wiki/entities/swmm-icm-st-venant-app.md): the Replit comparison app behind Edition 54.
 - [Claude chat archive (app)](wiki/entities/claude-chat-archive.md): 1,671 conversations and 800 apps as of 14 October 2026.
@@ -382,7 +382,7 @@ Apps
 - [Bob Dickinson's SWMM Universe (app)](wiki/entities/bob-dickinsons-swmm-universe.md): A hub page for Robert Dickinson's apps, repositories and writing.
 - [Ommatidia Flyover (app)](wiki/entities/ommatidia-flyover.md): A compound-eye organism that flies over a SWMM model to where flow is peaking.
 - [HydroCalc Studio (app)](wiki/entities/hydrocalc-studio.md): Eight open-channel and routing calculators, each showing its equation.
-- [Ponce Hydrology Lab (app)](wiki/entities/ponce-hydrology-lab.md): Thirty-six hydrology and hydraulics modules after Victor Miguel Ponce's web library.
+- [Ponce Hydrology Lab (app)](wiki/entities/ponce-hydrology-lab.md): Thirty-six hydrology and hydraulics modules after Victor Miguel Ponce's web library; 57 defects fixed and quoted, 26 checks against his calculator pages within 0.027 %.
 - [St. Venant Water Flow for Grandkids (app)](wiki/entities/st-venant-water-flow.md): How water moves, for children under ten, with a grown-up mode.
 - [Hydro City Craft (app)](wiki/entities/hydro-city-craft.md): OpenStreetMap streets and water built in Minecraft blocks.
 - [LEGO Water Flow Lab (app)](wiki/entities/lego-water-flow-lab.md): Will a molecule built from LEGO parts go down a pipe?.
@@ -403,6 +403,7 @@ Apps
 - [Flood Pipeline Audit Bench (app)](wiki/entities/flood-audit-bench.md): a third-party flood model audited by re-running its own solver; its two published panels are one field twice.
 - [NetSTORM Explorer (app)](wiki/entities/netstorm-explorer.md): CDM Smith's NetSTORM page as a searchable index: 79 links, 138 release notes, 50 addresses supplied and unverified.
 - [Modeling Confluence Mograph (app)](wiki/entities/modeling-confluence-mograph.md): a 44-second film of the EWRI Modeling Confluence 2027 call for abstracts; abstracts due December 9, 2026.
+- [SWMM Enablement Showcase (app)](wiki/entities/swmm-enablement-showcase.md): one page of twelve apps in four groups, each card with one finding and one limit copied from the app's own summary.
 
 Data
 - [1729-SWMM5-Models-2030 (the corpus)](wiki/entities/corpus-1729.md): Bob's public model repository; 480 of its models are the translations' gate set.
@@ -705,6 +706,14 @@ App summaries
 - [S381](wiki/sources/S381-netstorm-explorer-app-md.md) (2026-11-18): NetSTORM Explorer v1.0.0, app .md.
 - [S382](wiki/sources/S382-modeling-confluence-mograph-app-md.md) (2026-11-18): Modeling Confluence Mograph v1.0, app .md.
 - [S383](wiki/sources/S383-note-icm-script-finder-link.md) (2026-11-19): note, Bob asks for a link to ICM Script Finder.
+- [S384](wiki/sources/S384-visual-swmm-summary-v0-1-1.md) (2026-11-19): Visual SWMM v0.1.1, summary written from the page by Claude, with a phone-width patch; replaces S207.
+- [S385](wiki/sources/S385-swmm6-hands-on-watershed-summary-v1-1-1.md) (2026-11-19): SWMM6 Hands-On Watershed v1.1.1, summary written from the page by Claude, with a phone-width patch; replaces S261.
+- [S386](wiki/sources/S386-four-ways-to-k-summary-v1-0-1.md) (2026-11-19): Four Ways to K v1.0.1, summary written from the page by Claude, with a dark-first patch; replaces S225.
+- [S387](wiki/sources/S387-swmm-enablement-showcase-app-md.md) (2026-11-19): SWMM Enablement Showcase v1.0, app .md.
+- [S388](wiki/sources/S388-note-walk-the-mesh-address.md) (2026-11-19): note, Bob says Walk the Mesh is at walk-the-swmm6-2d-mesh.netlify.app.
+- [S389](wiki/sources/S389-bellinge-app-md-v2-4.md) (2026-11-19): Bellinge v2.4, app .md; replaces S81.
+- [S390](wiki/sources/S390-ponce-hydrology-lab-app-md-v1-3.md) (2026-11-19): Ponce Hydrology Lab v1.3, app .md; replaces S361.
+- [S391](wiki/sources/S391-swmm1-engine-app-md-v3-15.md) (2026-11-19): SWMM 1 Engine, technical summary, v3.15; replaces S73.
 
 Manuals and reports (primary documents)
 - [S185](wiki/sources/S185-epa-swmm5-qa-report-dynamic-wave-2006.md) (2006-09): SWMM Quality Assurance Report, Dynamic Wave Flow Routing, by L. A. Rossman: SWMM 4.4h against SWMM 5.0.006 on twenty examples. Read in part: Chapters 1 to 4 and 7.

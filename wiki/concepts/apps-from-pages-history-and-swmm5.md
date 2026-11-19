@@ -1,8 +1,8 @@
 ---
 title: "Apps summarized on 17 November 2026: SWMM history and the insides of SWMM5"
 type: concept
-updated: 2026-11-17
-sources: [S205, S206, S207, S208, S209, S210, S211, S212, S213, S214, S215, S216, S217, S218, S219, S220, S221, S222, S223]
+updated: 2026-11-19
+sources: [S205, S206, S207, S208, S209, S210, S211, S212, S213, S214, S215, S216, S217, S218, S219, S220, S221, S222, S223, S384]
 tags: [apps, swmm5, history, verification]
 reviewed: no
 ---
@@ -28,6 +28,8 @@ Eighteen app summaries that Bob uploaded on 17 November 2026, on the history of 
 | [swmm5-rust in RustGIS (app)](../entities/swmm5-rust-rustgis.md) | 0.1.0 | 2026-11-01 | [S221](../sources/S221-swmm5-rust-rustgis-summary.md) |
 | [SWMM5+ Bench (app)](../entities/swmm5plus-bench.md) | 1.0 | 2026-10-24 | [S222](../sources/S222-swmm5plus-bench-summary.md) |
 | [SWMM5+ Branch Atlas (app)](../entities/swmm5plus-branch-atlas.md) | 2026-10-26 | 2026-10-26 | [S223](../sources/S223-swmm5plus-branch-atlas-summary.md) |
+
+Since then: Visual SWMM 0.1.1 (19 November 2026) fits a 390 px phone screen; nothing else changed [S384](../sources/S384-visual-swmm-summary-v0-1-1.md).
 
 **What runs.** Nine run an engine in the page, EPA SWMM 5.2.4 compiled to WebAssembly in each: [The Runoff Block (app)](../entities/runoff-block.md), [SWMM5 Implicit Box Solver Test Bench (app)](../entities/swmm5-implicit-box-bench.md), [SWMM5 Self-Regeneration (app)](../entities/swmm5-self-regeneration.md), [SWMM5 Residual Walk (app)](../entities/swmm5-residual-walk.md), [Lead Pump Pointer (app)](../entities/lead-pump-pointer.md), [SWMM Run Supervisor (app)](../entities/swmm-run-supervisor.md), [SWMM Clean Repro (app)](../entities/swmm-clean-repro.md), [swmm5-rust in RustGIS (app)](../entities/swmm5-rust-rustgis.md) and [SWMM5+ Bench (app)](../entities/swmm5plus-bench.md). The others read files, show recorded runs, or measure source code.
 

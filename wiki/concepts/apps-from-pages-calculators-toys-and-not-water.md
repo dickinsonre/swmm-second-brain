@@ -1,8 +1,8 @@
 ---
 title: "Apps summarized on 18 November 2026: calculators, toys and apps that are not about water"
 type: concept
-updated: 2026-11-18
-sources: [S360, S361, S362, S363, S364, S365, S366, S367, S368, S369, S370, S371, S372, S373, S374, S375]
+updated: 2026-11-19
+sources: [S360, S361, S362, S363, S364, S365, S366, S367, S368, S369, S370, S371, S372, S373, S374, S375, S390]
 tags: [apps, calculators, teaching, not-water]
 reviewed: no
 ---
@@ -26,6 +26,8 @@ Sixteen summaries that Bob uploaded on 18 November 2026: hydraulics calculators 
 | [Qubit Workbench (app)](../entities/qubit-workbench.md) | 1.0 | 2026-10-09 | [S373](../sources/S373-qubit-workbench-summary.md) |
 | [Four Degrees at the Bottom (app)](../entities/four-degrees-at-the-bottom.md) | 2026-09-30 | 2026-09-30 | [S374](../sources/S374-four-degrees-at-the-bottom-summary.md) |
 | [Topology Surface Explorer (app)](../entities/topology-surface-explorer.md) | 2026-10-28 | 2026-10-28 | [S375](../sources/S375-topology-surface-explorer-summary.md) |
+
+Since then: Ponce Hydrology Lab 1.3 (19 November 2026) ships its own summary and changed no calculation [S390](../sources/S390-ponce-hydrology-lab-app-md-v1-3.md).
 
 **Calculators rebuilt.** HydroCalc Studio's original drew its flow profile as normal depth with a 5% sine wave; the edition solves the gradually varied flow by direct step [S360](../sources/S360-hydrocalc-studio-summary.md). Ponce Hydrology Lab fixed 57 calculation defects across three versions and passes 208 unit tests [S361](../sources/S361-ponce-hydrology-lab-summary.md). Pipes & Cistern sets the exam answer beside a real tank with a hole: the exam line fills at 9 h, the real tank at 11.66 h [S365](../sources/S365-pipes-and-cistern-summary.md). Hydro City Craft's ponding no longer depends on the grid: 8.29 in at every size, where version 1.0 went from 12.60 to 9.26 in [S363](../sources/S363-hydro-city-craft-summary.md).
 

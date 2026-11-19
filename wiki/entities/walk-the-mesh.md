@@ -1,12 +1,12 @@
 ---
 title: "Walk the Mesh (app)"
 type: entity
-updated: 2026-11-17
-sources: [S205, S241, S242]
+updated: 2026-11-19
+sources: [S205, S241, S242, S387, S388]
 tags: [apps, swmm5, quasi-2d, waves, mesh, wasm]
 reviewed: no
 ---
-Bob's app Walk the Mesh: an app adapted from a Perplexity "Clairaut" app about walking on a 4D surface: you stand inside a SWMM quasi-2D mesh (a grid of junctions, storage and conduits) and see where a surge launched from you would be after each second, then run EPA SWMM 5.2.4 in the browser on the same mesh for surge and flood runs. Version 1.0, 2026-10-19 [S242](../sources/S242-walk-the-mesh-summary.md). Netlify address: https://walk-the-mesh.netlify.app [S205](../sources/S205-note-netlify-addresses.md).
+Bob's app Walk the Mesh: an app adapted from a Perplexity "Clairaut" app about walking on a 4D surface: you stand inside a SWMM quasi-2D mesh (a grid of junctions, storage and conduits) and see where a surge launched from you would be after each second, then run EPA SWMM 5.2.4 in the browser on the same mesh for surge and flood runs. Version 1.0, 2026-10-19 [S242](../sources/S242-walk-the-mesh-summary.md). Netlify address: https://walk-the-swmm6-2d-mesh.netlify.app, by Bob's answer of 19 November 2026 [S388](../sources/S388-note-walk-the-mesh-address.md). The note of 17 November gave https://walk-the-mesh.netlify.app [S205](../sources/S205-note-netlify-addresses.md), which is not on his Netlify team [S388](../sources/S388-note-walk-the-mesh-address.md).
 
 **A caution about its source.** The page ships no technical summary. [S242](../sources/S242-walk-the-mesh-summary.md) was written by Claude on 17 November 2026 from the page, with nothing rerun, and Bob has not yet read it (Q108).
 
@@ -22,5 +22,7 @@ Bob's app Walk the Mesh: an app adapted from a Perplexity "Clairaut" app about w
 **What it does not show.** No current-carried waves, infiltration, buildings, pipes, or any mesh tool other than the page's own generator. [S242](../sources/S242-walk-the-mesh-summary.md)
 
 **Noted at ingest.** 600 x 600 ft = 360,000 ft2 = 8.26 ac. 2^(-1/4) = 0.8409. [Quasi-2D Mesh Maker for SWMM5 (app)](quasi-2d-mesh-maker.md) reports the same doubling and fixes it with half-width links instead [S241](../sources/S241-quasi-2d-mesh-maker-summary.md).
+
+**On the showcase.** Walk the Mesh is one of the twelve apps on the [SWMM Enablement Showcase](swmm-enablement-showcase.md), in the group "Surfaces, meshes and sediment" [S387](../sources/S387-swmm-enablement-showcase-app-md.md).
 
 See [Apps summarized on 17 November 2026: generators, rain and surfaces for SWMM5](../concepts/apps-from-pages-generators-rain-surfaces.md), [Quasi-2D Mesh Maker for SWMM5 (app)](quasi-2d-mesh-maker.md), [ICM 2D: terrain, mesh and subgrid sampling](../concepts/icm-2d-mesh-and-subgrid.md), [The SWMM findings register](../concepts/findings-register.md), [WebAssembly builds against native builds](../concepts/wasm-against-native-builds.md).

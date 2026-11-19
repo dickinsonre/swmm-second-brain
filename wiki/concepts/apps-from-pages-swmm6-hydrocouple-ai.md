@@ -1,8 +1,8 @@
 ---
 title: "Apps summarized on 17 November 2026: SWMM6, HydroCouple and AI"
 type: concept
-updated: 2026-11-17
-sources: [S205, S256, S257, S258, S259, S260, S261, S262, S263, S264, S265, S266, S267]
+updated: 2026-11-19
+sources: [S205, S256, S257, S258, S259, S260, S261, S262, S263, S264, S265, S266, S267, S385]
 tags: [apps, swmm6, hydrocouple, ai-agents, source-code]
 reviewed: no
 ---
@@ -22,6 +22,8 @@ Twelve app summaries that Bob uploaded on 17 November 2026: OpenSWMM 6 and the H
 | [Selective Fidelity (app)](../entities/selective-fidelity.md) | 1.0 | 2026-10-21 | [S265](../sources/S265-selective-fidelity-summary.md) |
 | [Six Tools Workbench (app)](../entities/six-tools-workbench.md) | 1.1 | 2026-10-11 | [S266](../sources/S266-six-tools-workbench-summary.md) |
 | [BobSWMM App Catalog (app)](../entities/bobswmm-app-catalog.md) | 1.0 | 2026-10-21 | [S267](../sources/S267-bobswmm-app-catalog-summary.md) |
+
+Since then: SWMM6 Hands-On Watershed 1.1.1 (19 November 2026) fits a 390 px phone screen; nothing else changed [S385](../sources/S385-swmm6-hands-on-watershed-summary-v1-1-1.md).
 
 **OpenSWMM 6 in the browser, and around it.** One app runs OpenSWMM 6 in the page, with snow, groundwater and an emulator [S261](../sources/S261-swmm6-hands-on-watershed-summary.md). Three read HydroCouple without running it: its website [S258](../sources/S258-hydrocouple-interactive-app-md.md), its run platform [S259](../sources/S259-inside-hydrocouple-platform-summary.md) and the engine source drawn as a city [S256](../sources/S256-openswmm-3d-code-model-app-md.md). One ports parts of a third party's Apache-licensed flood sandbox that ran OpenSWMM 6 on its author's computer [S260](../sources/S260-sandbox-companion-summary.md).
 

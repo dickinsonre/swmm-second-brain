@@ -1,11 +1,11 @@
 ---
 title: SWMM 1 Engine (app)
 type: entity
-updated: 2026-11-18
-sources: [S01, S06, S07, S73, S324]
+updated: 2026-11-19
+sources: [S01, S06, S07, S73, S324, S391]
 tags: [apps, swmm-history, swmm1]
 reviewed: 2026-11-15
-changed_after_review: "2026-11-18 (S300 to S375 ingest): a paragraph added near the end, headed Added 18 November 2026 (S324)"
+changed_after_review: "2026-11-18 (S300 to S375 ingest): a paragraph added near the end, headed Added 18 November 2026 (S324); 2026-11-19 (S384 to S391 ingest): a paragraph added at the end, headed Added 19 November 2026 (S391)"
 ---
 Bob's browser app that runs [SWMM 1 (1971)](swmm-1.md) from its own Fortran. File `swmm1-runoff-engine.html`; the name is kept from version 1.4, when the page ran the Runoff Block only [S73](../sources/S73-swmm1-engine-app-md-v3-13.md). Version 3.13; the summary's front matter is dated 13 November 2026 and its change list dates 3.13 to 14 November [S73](../sources/S73-swmm1-engine-app-md-v3-13.md). The earlier source page, for version 3.6, is [S01](../sources/S01-swmm1-engine-app-md.md).
 
@@ -46,3 +46,5 @@ The change list says "No engine change" for each version from 3.1 to 3.10 [S73](
 **Stale text elsewhere.** [S07](../sources/S07-swmm5org-topic-swmm-history.md) still describes it as "the 1971 SWMM 1 Runoff engine". Open question Q09 in [Open questions](../open-questions.md).
 
 **Added 18 November 2026.** A 60-second film of the app, SWMM 1 Engine Mograph, holds 43 distinct numbers in 9 settled frames, all in its facts file; its block counts add to the app's 12,200 [S324](../sources/S324-swmm1-engine-mograph-app-md.md).
+
+**Added 19 November 2026.** Version 3.15 is current, at https://swmm1-engine-imports-swmm5.netlify.app/ [S391](../sources/S391-swmm1-engine-app-md-v3-15.md). Its summary opens: "As far as we know, this is the only copy of SWMM Version 1 that runs" [S391](../sources/S391-swmm1-engine-app-md-v3-15.md). Version 3.14 answered an outside review of 3.13 (ChatGPT, 92 of 100) and fixed five faults. The first averaged PctZero by total area, `pzSum+=a.pz*s.area`, so PctZero 0 or 100 on 10 unpaved acres beside one paved acre punched PCTZER 2.273 or 93.18 and Runoff printed 180 or 345 cu ft of gutter flow; the mean is now weighted by paved area. Rain from an external file and parallel barrels now fail their status rows instead of passing [S391](../sources/S391-swmm1-engine-app-md-v3-15.md). 3.15 changed no engine, converter or test model; complexity 72.9, from 72.6 [S391](../sources/S391-swmm1-engine-app-md-v3-15.md). Its related-apps list includes [SWMM 4.4H Workbench (app)](swmm44h-workbench.md), [Water Modeling to 3000 (app)](water-modeling-to-3000.md), at an address that is not a project on Bob's team (Q125), and this wiki's reader [S391](../sources/S391-swmm1-engine-app-md-v3-15.md).

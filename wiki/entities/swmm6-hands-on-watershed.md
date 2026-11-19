@@ -1,12 +1,12 @@
 ---
 title: "SWMM6 Hands-On Watershed (app)"
 type: entity
-updated: 2026-11-17
-sources: [S205, S261]
+updated: 2026-11-19
+sources: [S205, S261, S385]
 tags: [apps, swmm6, snow, groundwater, emulator, wasm]
 reviewed: no
 ---
-Bob's app SWMM6 Hands-On Watershed: one page that carries the OpenSWMM 6 engine compiled to WebAssembly (swmm6_rel at 137e65e of 10 September 2026, reporting 6.0.0-alpha.4), a 179.06 ac synthetic catchment with snow and groundwater, eight knobs moved by hand gestures through the webcam, and a neural-network emulator that answers while the hand moves. The idea follows Alireza Razeghi Haghighi's Riverlight post; none of Riverlight's code is used. Version 1.1.0, 2026-11-08 [S261](../sources/S261-swmm6-hands-on-watershed-summary.md). Netlify address: https://swmm6-hands-on-watershed.netlify.app [S205](../sources/S205-note-netlify-addresses.md).
+Bob's app SWMM6 Hands-On Watershed: one page that carries the OpenSWMM 6 engine compiled to WebAssembly (swmm6_rel at 137e65e of 10 September 2026, reporting 6.0.0-alpha.4), a 179.06 ac synthetic catchment with snow and groundwater, eight knobs moved by hand gestures through the webcam, and a neural-network emulator that answers while the hand moves. The idea follows Alireza Razeghi Haghighi's Riverlight post; none of Riverlight's code is used. Version 1.1.1, 2026-11-19 [S385](../sources/S385-swmm6-hands-on-watershed-summary-v1-1-1.md); version 1.1.0 of 8 November 2026 is summarized in [S261](../sources/S261-swmm6-hands-on-watershed-summary.md). Netlify address: https://swmm6-hands-on-watershed.netlify.app [S205](../sources/S205-note-netlify-addresses.md).
 
 **A caution about its source.** The page ships no technical summary. [S261](../sources/S261-swmm6-hands-on-watershed-summary.md) was written by Claude on 17 November 2026 from the page, with nothing rerun, and Bob has not yet read it (Q108).
 
@@ -22,5 +22,7 @@ Bob's app SWMM6 Hands-On Watershed: one page that carries the OpenSWMM 6 engine 
 **What it does not show.** No real place: the catchment is synthetic and uncalibrated. The snow comes from a September build; OpenSWMM reworked snowmelt after 10 September 2026. The emulator knows one catchment. Live hand tracking was not tested, for want of a camera where it was built. The Doc's limits list still says six knobs and alpha.2. [S261](../sources/S261-swmm6-hands-on-watershed-summary.md)
 
 **Noted at ingest.** 2.500 - 0.104 - 1.018 = 1.378 in, against the 1.379 printed; the difference is rounding in the three terms. The page says the camera is blocked in sandboxed previews; Netlify reported a finished deploy on 17 November 2026 [S205](../sources/S205-note-netlify-addresses.md), which is where the page says the camera works.
+
+**Version 1.1.1.** Six tables (`table.t`) had no sideways scroller: after one engine run the session log made the Emulator tab 445 px wide on a 390 px screen, and the About table was 601 px. Each is now wrapped in `<div class="tw">` with `overflow-x:auto`, and both tabs fit at 390 px. No engine run was repeated [S385](../sources/S385-swmm6-hands-on-watershed-summary-v1-1-1.md).
 
 See [Apps summarized on 17 November 2026: SWMM6, HydroCouple and AI](../concepts/apps-from-pages-swmm6-hydrocouple-ai.md), [OpenSWMM 6 and HydroCouple](openswmm-6-and-hydrocouple.md), [OpenSWMM 6 solvers, measured](../concepts/openswmm6-solvers-measured.md), [A surrogate distilled from SWMM](../concepts/surrogate-distilled-from-swmm.md), [The SWMM findings register](../concepts/findings-register.md).
